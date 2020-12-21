@@ -28,7 +28,9 @@ public class Items {
     public static final Item CRACKED_STONE_BRICK_STAIRS = register("cracked_stone_brick_stairs", new BlockItem(Blocks.CRACKED_STONE_BRICK_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
     public static final Item SMOOTH_STONE_STAIRS = register("smooth_stone_stairs", new BlockItem(Blocks.SMOOTH_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
     public static final Item CRACKED_STONE_BRICK_WALL = register("cracked_stone_brick_wall", new BlockItem(Blocks.CRACKED_STONE_BRICK_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+//Blackstone stuff
 public static final Item SMOOTH_BLACKSTONE = register("smooth_blackstone", new BlockItem(Blocks.SMOOTH_BLACKSTONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+public static final Item SMOOTH_BLACKSTONE_SLAB = register("smooth_blackstone_slab", new BlockItem(Blocks.SMOOTH_BLACKSTONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
 
 

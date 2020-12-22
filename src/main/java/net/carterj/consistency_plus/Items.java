@@ -43,8 +43,8 @@ public class Items {
     //Smooth
         public static final Item SMOOTH_BLACKSTONE = register("smooth_blackstone", new BlockItem(Blocks.SMOOTH_BLACKSTONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         public static final Item SMOOTH_BLACKSTONE_SLAB = register("smooth_blackstone_slab", new BlockItem(Blocks.SMOOTH_BLACKSTONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-        //smooth_blackstone_stairs
-        //smooth_blackstone_wall
+        public static final Item SMOOTH_BLACKSTONE_STAIRS = register("smooth_blackstone_stairs", new BlockItem(Blocks.SMOOTH_BLACKSTONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_BLACKSTONE_WALL = register("smooth_blackstone_wall", new BlockItem(Blocks.SMOOTH_BLACKSTONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cut
         //cut_blackstone

@@ -1,5 +1,4 @@
-package net.consistencyteam
-.consistency_plus;
+package net.consistencyteam.consistency_plus;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;

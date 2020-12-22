@@ -34,5 +34,10 @@
 
   "block.minecraft.purpur_block": "Cut Purpur",
   "block.minecraft.purpur_slab": "Cut Purpur Slab",
-  "block.minecraft.purpur_stairs": "Cut Purpur Stairs"
+  "block.minecraft.purpur_stairs": "Cut Purpur Stairs",
+
+  "block.consistency_plus.smooth_end_stone": "Smooth End Stone",
+  "block.consistency_plus.smooth_end_stone_slab": "Smooth End Stone Slab",
+  "block.consistency_plus.smooth_end_stone_stairs": "Smooth End Stone Stairs",
+  "block.consistency_plus.smooth_end_stone_wall": "Smooth End Stone Wall"
 }

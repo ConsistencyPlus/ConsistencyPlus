@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import static net.minecraft.block.Blocks.STONE_BRICKS;
 import static net.minecraft.block.Blocks.BLACKSTONE;
+import static net.minecraft.block.Blocks.END_STONE;
 
 public class Blocks {
 
@@ -574,10 +575,11 @@ public class Blocks {
         //end_stone_wall
 
     //Smooth
-        //smooth_end_stone
-        //smooth_end_stone_slab
-        //smooth_end_stone_stairs
-        //smooth_end_stone_wall
+        public static final Block SMOOTH_END_STONE = register("smooth_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
+        public static final Block SMOOTH_END_STONE_SLAB = register("smooth_end_stone_slab", new SlabBlock(FabricBlockSettings.copy(BLACKSTONE)));
+        public static final Block SMOOTH_END_STONE_STAIRS = register("smooth_end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(),FabricBlockSettings.of(Material.STONE)));
+        public static final Block SMOOTH_END_STONE_WALL = register("smooth_end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
+
 
     //Polished
         //polished_end_stone

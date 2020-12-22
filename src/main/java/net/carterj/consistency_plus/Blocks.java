@@ -69,10 +69,9 @@ public class Blocks {
     //Pillars and Chiseled
         //mossy_chiseled_blackstone_bricks
         //cracked_chiseled_blackstone_bricks
-        //blackstone_brick_pillar
+        public static final Block BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(BLACKSTONE)));
         //mossy_chiseled_blackstone_pillar
         //cracked_chiseled_blackstone_pillar
-
 
 //Sandstone
 

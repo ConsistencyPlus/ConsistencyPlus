@@ -2,7 +2,14 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "consistency_plus:smooth_blackstone"
+      "consistency_plus:smooth_blackstone",
+      "consistency_plus:smooth_blackstone_slab",
+      "consistency_plus:smooth_blackstone_slab_furnace",
+      "consistency_plus:smooth_blackstone_slab_stonecutter",
+      "consistency_plus:blackstone_brick_pillar",
+      "consistency_plus:blackstone_brick_stonecutter",
+      "consistency_blackstone_brick_furnace"
+    ]
   },
   "criteria": {
     "has_stone": {

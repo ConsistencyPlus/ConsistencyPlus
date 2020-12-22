@@ -66,7 +66,7 @@ public class Items {
     //Pillars and Chiseled
         //mossy_chiseled_blackstone_bricks
         //cracked_chiseled_blackstone_bricks
-        //blackstone_brick_pillar
+        public static final Item BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new BlockItem(Blocks.BLACKSTONE_BRICK_PILLAR, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //mossy_chiseled_blackstone_pillar
         //cracked_chiseled_blackstone_pillar
 

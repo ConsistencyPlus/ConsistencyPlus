@@ -15,4 +15,4 @@ public class ConsistencyPlus implements ModInitializer {
         Items.init();
         Registry.register(Registry.ITEM, new Identifier("consistency_plus", "warped_nether_wart"), WARPED_NETHER_WART);
     }
-	}
+}

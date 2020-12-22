@@ -9,9 +9,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import static net.minecraft.block.Blocks.STONE_BRICKS;
-import static net.minecraft.block.Blocks.BLACKSTONE;
-import static net.minecraft.block.Blocks.END_STONE;
+import static net.minecraft.block.Blocks.*;
 
 public class Blocks {
 
@@ -528,16 +526,16 @@ public class Blocks {
         //purpur_wall
 
     //Smooth
-        //smooth_purpur
-        //smooth_purpur_slab
-        //smooth_purpur_stairs
-        //smooth_purpur_wall
+    public static final Block SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block SMOOTH_PURPUR_SLAB = register("smooth_purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block SMOOTH_PURPUR_STAIRS = register("smooth_purpur_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(),FabricBlockSettings.of(Material.STONE)));
+    public static final Block SMOOTH_PURPUR_WALL = register("smooth_purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
     //Polished
-        //polished_purpur
-        //polished_purpur_slab
-        //polished_purpur_stairs
-        //polished_purpur_wall
+    public static final Block POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block POLISHED_PURPUR_SLAB = register("polished_purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block POLISHED_PURPUR_STAIRS = register("polished_purpur_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(),FabricBlockSettings.of(Material.STONE)));
+    public static final Block POLISHED_PURPUR_WALL = register("polished_purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
     //Cut
         //cut_purpur_wall
@@ -561,7 +559,7 @@ public class Blocks {
         //mossy_purpur_brick_wall
 
     //Pillars and Chiseled
-        //chiseled_purpur
+    public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
         //mossy_chiseled_purpur
         //cracked_chiseled_purpur
         //mossy_purpur_pillar

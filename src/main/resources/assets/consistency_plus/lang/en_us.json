@@ -36,6 +36,18 @@
   "block.minecraft.purpur_slab": "Cut Purpur Slab",
   "block.minecraft.purpur_stairs": "Cut Purpur Stairs",
 
+  "block.consistency_plus.smooth_purpur_block": "Smooth Purpur",
+  "block.consistency_plus.smooth_purpur_slab": "Smooth Purpur Slab",
+  "block.consistency_plus.smooth_purpur_stairs": "Smooth Purpur Stairs",
+  "block.consistency_plus.smooth_purpur_wall": "Smooth Purpur Wall",
+
+  "block.consistency_plus.polished_purpur_block": "Polished Purpur",
+  "block.consistency_plus.polished_purpur_slab": "Polished Purpur Slab",
+  "block.consistency_plus.polished_purpur_stairs": "Polished Purpur Stairs",
+  "block.consistency_plus.polished_purpur_wall": "Polished Purpur Wall",
+
+  "block.consistency_plus.chiseled_purpur_block": "Chiseled Purpur",
+
   "block.consistency_plus.smooth_end_stone": "Smooth End Stone",
   "block.consistency_plus.smooth_end_stone_slab": "Smooth End Stone Slab",
   "block.consistency_plus.smooth_end_stone_stairs": "Smooth End Stone Stairs",

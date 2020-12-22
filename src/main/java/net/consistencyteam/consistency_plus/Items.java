@@ -524,16 +524,17 @@ public class Items {
         //purpur_wall
 
     //Smooth
-        //smooth_purpur
-        //smooth_purpur_slab
-        //smooth_purpur_stairs
-        //smooth_purpur_wall
+    public static final Item SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new BlockItem(Blocks.SMOOTH_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item SMOOTH_PURPUR_SLAB = register("smooth_purpur_slab", new BlockItem(Blocks.SMOOTH_PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item SMOOTH_PURPUR_STAIRS = register("smooth_purpur_stairs", new BlockItem(Blocks.SMOOTH_PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item SMOOTH_PURPUR_WALL = register("smooth_purpur_wall", new BlockItem(Blocks.SMOOTH_PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Polished
-        //polished_purpur
-        //polished_purpur_slab
-        //polished_purpur_stairs
-        //polished_purpur_wall
+    public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new BlockItem(Blocks.POLISHED_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item POLISHED_PURPUR_SLAB = register("polished_purpur_slab", new BlockItem(Blocks.POLISHED_PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item POLISHED_PURPUR_STAIRS = register("polished_purpur_stairs", new BlockItem(Blocks.POLISHED_PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item POLISHED_PURPUR_WALL = register("polished_purpur_wall", new BlockItem(Blocks.POLISHED_PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+
 
     //Cut
         //cut_purpur_wall
@@ -557,7 +558,7 @@ public class Items {
         //mossy_purpur_brick_wall
 
     //Pillars and Chiseled
-        //chiseled_purpur
+    public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new BlockItem(Blocks.CHISELED_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //mossy_chiseled_purpur
         //cracked_chiseled_purpur
         //mossy_purpur_pillar

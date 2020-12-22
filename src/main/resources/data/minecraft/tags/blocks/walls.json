@@ -5,6 +5,24 @@
     "consistency_plus:cut_stone_wall",
     "consistency_plus:smooth_stone_wall",
     "consistency_plus:cracked_stone_brick_wall",
-    "consistency_plus:polished_stone_wall"
+    "consistency_plus:polished_stone_wall",
+    "consistency_plus:smooth_blackstone_wall",
+    "minecraft:cobblestone_wall",
+    "minecraft:mossy_cobblestone_wall",
+    "minecraft:brick_wall",
+    "minecraft:prismarine_wall",
+    "minecraft:red_sandstone_wall",
+    "minecraft:mossy_stone_brick_wall",
+    "minecraft:granite_wall",
+    "minecraft:stone_brick_wall",
+    "minecraft:nether_brick_wall",
+    "minecraft:andesite_wall",
+    "minecraft:red_nether_brick_wall",
+    "minecraft:sandstone_wall",
+    "minecraft:end_stone_brick_wall",
+    "minecraft:diorite_wall",
+    "minecraft:blackstone_wall",
+    "minecraft:polished_blackstone_brick_wall",
+    "minecraft:polished_blackstone_wall"
   ]
 }

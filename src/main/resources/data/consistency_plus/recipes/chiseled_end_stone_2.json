@@ -6,10 +6,10 @@
     " XX"
   ],
   "key": {
-    "X": {"item": "minecraft:cracked_stone_bricks"}
+    "X": {"item": "minecraft:end_stone_bricks"}
   },
   "result": {
-    "item": "consistency_plus:cracked_chiseled_stone_bricks",
+    "item": "consistency_plus:chiseled_end_stone",
     "count": 4
   }
 }

@@ -575,10 +575,10 @@ public class Blocks {
     public static final Block END_STONE_WALL = register("end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 
     //Smooth
-        public static final Block SMOOTH_END_STONE = register("smooth_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
-        public static final Block SMOOTH_END_STONE_SLAB = register("smooth_end_stone_slab", new SlabBlock(FabricBlockSettings.copy(BLACKSTONE)));
-        public static final Block SMOOTH_END_STONE_STAIRS = register("smooth_end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(),FabricBlockSettings.of(Material.STONE)));
-        public static final Block SMOOTH_END_STONE_WALL = register("smooth_end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
+    public static final Block SMOOTH_END_STONE = register("smooth_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
+    public static final Block SMOOTH_END_STONE_SLAB = register("smooth_end_stone_slab", new SlabBlock(FabricBlockSettings.copy(BLACKSTONE)));
+    public static final Block SMOOTH_END_STONE_STAIRS = register("smooth_end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(),FabricBlockSettings.of(Material.STONE)));
+    public static final Block SMOOTH_END_STONE_WALL = register("smooth_end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 
 
     //Polished
@@ -600,7 +600,7 @@ public class Blocks {
         //mossy_end_stone_brick_wall
 
     //Pillars and Chiseled
-        //chiseled_end_stone_bricks
+        public static final Block CHISELED_END_STONE = register("chiseled_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
         //mossy_chiseled_end_stone_bricks
         //cracked_chiseled_end_stone_bricks
         //end_stone_brick_pillar

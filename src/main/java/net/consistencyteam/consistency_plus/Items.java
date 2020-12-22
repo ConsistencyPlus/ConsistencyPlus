@@ -596,7 +596,8 @@ public class Items {
         //mossy_end_stone_brick_wall
 
     //Pillars and Chiseled
-        //chiseled_end_stone_bricks
+    public static final Item CHISELED_END_STONE = register("chiseled_end_stone", new BlockItem(Blocks.CHISELED_END_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+
         //mossy_chiseled_end_stone_bricks
         //cracked_chiseled_end_stone_bricks
         //end_stone_brick_pillar

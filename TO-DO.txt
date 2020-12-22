@@ -40,8 +40,8 @@ Types included in the pack:
 * Block Brick Pillar
 * Cracked Block Brick Pillar
 * Mossy Block Brick Pillar
-Cart3r12/18/2020
-Stone
+
+Stone -Complete
   * Stone Wall
   * Smooth Stone Stairs
   * Smooth Stone Wall
@@ -61,11 +61,12 @@ Stone
   * Mossy Stone Brick Pillar
   * Cracked Chiseled Stone Bricks
   * Mossy Chiseled Stone Bricks
+
 Blackstone
-  * Smooth Blackstone
-  * Smooth Blackstone Slab
-  * Smooth Blackstone Stairs
-  * Smooth Blackstone Wall
+  * Smooth Blackstone -Complete
+  * Smooth Blackstone Slab -Complete
+  * Smooth Blackstone Stairs -Complete
+  * Smooth Blackstone Wall -Complete
   * Cut Smooth Blackstone
   * Cut Smooth Blackstone Slab
   * Cut Smooth Blackstone Stairs
@@ -77,7 +78,7 @@ Blackstone
   * Mossy Blackstone Brick Slab
   * Mossy Blackstone Brick Stairs
   * Mossy Blackstone Brick Wall
-  * Blackstone Brick Pillar
+  * Blackstone Brick Pillar -Complete
   * Cracked Blackstone Brick Pillar
   * Mossy Blackstone Brick Pillar
   * Cracked Chiseled Blackstone Bricks
@@ -331,13 +332,13 @@ Prismarine
   * Cracked Chiseled Prismarine
   * Mossy Chiseled Prismarine
 End Stone
-  * End Stone Slab
-  * End Stone Stairs
-  * End Stone Wall
-  * Smooth End Stone
-  * Smooth End Stone Slab
-  * Smooth End Stone Stairs
-  * Smooth End Stone Wall
+  * End Stone Slab -Complete
+  * End Stone Stairs -Complete
+  * End Stone Wall -Complete
+  * Smooth End Stone -Complete
+  * Smooth End Stone Slab -Complete
+  * Smooth End Stone Stairs -Complete
+  * Smooth End Stone Wall -Complete
   * Polished End Stone
   * Polished End Stone Slab
   * Polished End Stone Stairs
@@ -357,7 +358,7 @@ End Stone
   * End Stone Pillar
   * Cracked End Stone Pillar
   * Mossy End Stone Pillar
-  * Chiseled End Stone
+  * Chiseled End Stone -Complete
   * Cracked Chiseled End Stone
   * Mossy Chiseled End Stone
 Purpur
@@ -429,7 +430,7 @@ Dark Prismarine
   * Chiseled Dark Prismarine
   * Cracked Chiseled Dark Prismarine
   * Mossy Chiseled Dark Prismarine
-Cart3rYesterday at 10:23 PM
+
 Uncategorized Things that will possibly be included
   * Charcoal Block
   * Gold Variants of things like iron doors/trapdoors

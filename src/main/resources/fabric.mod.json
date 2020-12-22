@@ -10,16 +10,16 @@
   ],
   "contact": {
     "homepage": "",
-    "sources": ""
+    "sources": "https://github.com/ConsistencyPlus/ConsistencyPlus"
   },
 
-  "license": "CC0-1.0",
+  "license": "GPLv3",
   "icon": "assets/consistency_plus/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.carterj.consistency_plus.ConsistencyPlus"
+      "net.consistencyteam.consistency_plus.ConsistencyPlus"
     ]
   },
   "mixins": [

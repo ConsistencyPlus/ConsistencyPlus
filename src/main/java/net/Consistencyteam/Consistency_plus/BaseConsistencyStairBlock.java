@@ -1,4 +1,5 @@
-package net.carterj.consistency_plus;
+package net.consistencyteam
+.consistency_plus;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;

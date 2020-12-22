@@ -570,9 +570,9 @@ public class Blocks {
 //End Stone
 
     //Block
-        //end_stone_slab
-        //end_stone_stairs
-        //end_stone_wall
+    public static final Block END_STONE_SLAB = register("end_stone_slab", new SlabBlock(FabricBlockSettings.copy(END_STONE)));
+    public static final Block END_STONE_STAIRS = register("end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(),FabricBlockSettings.of(Material.STONE)));
+    public static final Block END_STONE_WALL = register("end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 
     //Smooth
         public static final Block SMOOTH_END_STONE = register("smooth_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));

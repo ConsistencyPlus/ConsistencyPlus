@@ -567,9 +567,9 @@ public class Items {
 //End Stone
 
     //Block
-        //end_stone_slab
-        //end_stone_stairs
-        //end_stone_wall
+    public static final Item END_STONE_SLAB = register("end_stone_slab", new BlockItem(Blocks.END_STONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item END_STONE_STAIRS = register("end_stone_stairs", new BlockItem(Blocks.END_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item END_STONE_WALL = register("end_stone_wall", new BlockItem(Blocks.END_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Smooth
     public static final Item SMOOTH_END_STONE = register("smooth_end_stone", new BlockItem(Blocks.SMOOTH_END_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));

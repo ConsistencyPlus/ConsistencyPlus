@@ -55,5 +55,10 @@
   "block.consistency_plus.chiseled_end_stone": "Chiseled End Stone",
   "block.consistency_plus.end_stone_slab": "End Stone Slab",
   "block.consistency_plus.end_stone_stairs": "End Stone Stairs",
-  "block.consistency_plus.end_stone_wall": "End Stone Wall"
+  "block.consistency_plus.end_stone_wall": "End Stone Wall",
+
+  "block.consistency_plus.purpur_block": "Purpur Block",
+  "block.consistency_plus.purpur_slab": "Purpur Slab",
+  "block.consistency_plus.purpur_stairs": "Purpur Stairs",
+  "block.consistency_plus.purpur_wall": "Purpur Wall"
 }

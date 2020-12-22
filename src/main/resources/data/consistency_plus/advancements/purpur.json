@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:purpur_block",
+      "consistency_plus:purpur_slab",
+      "consistency_plus:purpur_slab_stonecutter",
+      "consistency_plus:purpur_stairs",
+      "consistency_plus:purpur_stairs_stonecutter",
+      "consistency_plus:polished_purpur_block"
+    ]
+  },
+  "criteria": {
+    "has_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chorus_fruit"
+          }
+        ]
+      }
+    }
+  }
+}

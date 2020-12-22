@@ -518,10 +518,10 @@ public class Items {
 //Purpur
 
     //Block
-        //purpur
-        //purpur_slab
-        //purpur_stairs
-        //purpur_wall
+    public static final Item PURPUR_BLOCK = register("purpur_block", new BlockItem(Blocks.PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item PURPUR_SLAB = register("purpur_slab", new BlockItem(Blocks.PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item PURPUR_STAIRS = register("purpur_stairs", new BlockItem(Blocks.PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item PURPUR_WALL = register("purpur_wall", new BlockItem(Blocks.PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Smooth
     public static final Item SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new BlockItem(Blocks.SMOOTH_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));

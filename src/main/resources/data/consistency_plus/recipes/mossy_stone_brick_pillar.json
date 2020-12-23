@@ -1,14 +1,9 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " Y ",
-    " X "
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "consistency_plus:stone_brick_pillar"},
+    {"item": "minecraft:vine"}
   ],
-  "key": {
-    "X": {"item": "consistency_plus:stone_brick_pillar"},
-    "Y": {"item": "minecraft:vine"}
-  },
   "result": {
     "item": "consistency_plus:mossy_stone_brick_pillar",
     "count": 1

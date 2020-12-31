@@ -541,10 +541,10 @@ public class Blocks {
         //cut_purpur_wall
 
     //Bricks
-        //purpur_bricks
-        //purpur_brick_slab
-        //purpur_brick_stairs
-        //purpur_brick_wall
+    public static final Block PURPUR_BRICKS = register("purpur_bricks", new Block(FabricBlockSettings.copy(PURPUR_PILLAR)));
+    public static final Block PURPUR_BRICK_SLAB = register("purpur_brick_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block PURPUR_BRICK_STAIRS = register("purpur_brick_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(),FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block PURPUR_BRICK_WALL = register("purpur_brick_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
     //Cracked Bricks
         //cracked_purpur_bricks

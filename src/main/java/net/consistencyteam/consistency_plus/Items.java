@@ -540,10 +540,10 @@ public class Items {
         //cut_purpur_wall
 
     //Bricks
-        //purpur_bricks
-        //purpur_brick_slab
-        //purpur_brick_stairs
-        //purpur_brick_wall
+    public static final Item PURPUR_BRICKS = register("purpur_bricks", new BlockItem(Blocks.PURPUR_BRICKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item PURPUR_BRICK_SLAB = register("purpur_brick_slab", new BlockItem(Blocks.PURPUR_BRICK_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item PURPUR_BRICK_STAIRS = register("purpur_brick_stairs", new BlockItem(Blocks.PURPUR_BRICK_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item PURPUR_BRICK_WALL = register("purpur_brick_wall", new BlockItem(Blocks.PURPUR_BRICK_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cracked Bricks
         //cracked_purpur_bricks

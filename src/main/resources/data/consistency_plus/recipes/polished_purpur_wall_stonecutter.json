@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "consistency_plus:polished_purpur_block"
   },
-  "result": "consistency_plus:purpur_brick_slab",
-  "count": 2
+  "result": "consistency_plus:polished_purpur_wall",
+  "count": 1
 }

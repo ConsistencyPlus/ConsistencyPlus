@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " XX",
-    " XX"
+    "XXX",
+    "XXX"
   ],
   "key": {
     "X": {"item": "consistency_plus:polished_purpur_block"}
   },
   "result": {
-    "item": "consistency_plus:purpur_bricks",
-    "count": 4
+    "item": "consistency_plus:polished_purpur_wall",
+    "count": 6
   }
 }

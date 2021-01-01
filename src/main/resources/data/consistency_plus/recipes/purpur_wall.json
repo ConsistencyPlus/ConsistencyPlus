@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    "   ",
+    "XXX",
     "XXX"
   ],
   "key": {
-    "X": {"item": "minecraft:end_stone"}
+    "X": {"item": "consistency_plus:purpur_block"}
   },
   "result": {
-    "item": "consistency_plus:end_stone_slab",
+    "item": "consistency_plus:purpur_wall",
     "count": 6
   }
 }

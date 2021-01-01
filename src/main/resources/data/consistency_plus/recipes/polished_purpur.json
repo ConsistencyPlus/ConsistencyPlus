@@ -6,10 +6,10 @@
     " XX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:polished_purpur_block"}
+    "X": {"item": "consistency_plus:purpur_block"}
   },
   "result": {
-    "item": "consistency_plus:purpur_bricks",
+    "item": "consistency_plus:polished_purpur_block",
     "count": 4
   }
 }

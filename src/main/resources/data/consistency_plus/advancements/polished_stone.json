@@ -7,7 +7,12 @@
       "consistency_plus:polished_stone_stairs",
       "consistency_plus:polished_stone_stairs_stonecutter",
       "consistency_plus:polished_stone_wall",
-      "consistency_plus:polished_stone_wall_stonecutter"
+      "consistency_plus:polished_stone_wall_stonecutter",
+      "consistency_plus:stone_bricks_stonecutter",
+      "consistency_plus:chiseled_stone_bricks_stonecutter",
+      "consistency_plus:stone_brick_slab_stonecutter",
+      "consistency_plus:stone_brick_stairs_stonecutter",
+      "consistency_plus:stone_brick_wall_stonecutter"
     ]
   },
   "criteria": {

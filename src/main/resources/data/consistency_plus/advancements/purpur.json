@@ -7,7 +7,10 @@
       "consistency_plus:purpur_slab_stonecutter",
       "consistency_plus:purpur_stairs",
       "consistency_plus:purpur_stairs_stonecutter",
-      "consistency_plus:polished_purpur_block"
+      "consistency_plus:purpur_wall",
+      "consistency_plus:purpur_wall_stonecutter",
+      "consistency_plus:polished_purpur_block",
+      "consistency_plus:polished_purpur_block_stonecutter"
     ]
   },
   "criteria": {
@@ -16,7 +19,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:chorus_fruit"
+            "item": "consistency_plus:purpur_block"
           }
         ]
       }

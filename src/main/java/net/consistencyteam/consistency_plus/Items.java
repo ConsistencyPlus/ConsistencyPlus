@@ -518,32 +518,32 @@ public class Items {
 //Purpur
 
     //Block
-    public static final Item PURPUR_BLOCK = register("purpur_block", new BlockItem(Blocks.PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item PURPUR_SLAB = register("purpur_slab", new BlockItem(Blocks.PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item PURPUR_STAIRS = register("purpur_stairs", new BlockItem(Blocks.PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item PURPUR_WALL = register("purpur_wall", new BlockItem(Blocks.PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item PURPUR_BLOCK = register("purpur_block", new BlockItem(Blocks.PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item PURPUR_SLAB = register("purpur_slab", new BlockItem(Blocks.PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item PURPUR_STAIRS = register("purpur_stairs", new BlockItem(Blocks.PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item PURPUR_WALL = register("purpur_wall", new BlockItem(Blocks.PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Smooth
-    public static final Item SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new BlockItem(Blocks.SMOOTH_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item SMOOTH_PURPUR_SLAB = register("smooth_purpur_slab", new BlockItem(Blocks.SMOOTH_PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item SMOOTH_PURPUR_STAIRS = register("smooth_purpur_stairs", new BlockItem(Blocks.SMOOTH_PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item SMOOTH_PURPUR_WALL = register("smooth_purpur_wall", new BlockItem(Blocks.SMOOTH_PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new BlockItem(Blocks.SMOOTH_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_PURPUR_SLAB = register("smooth_purpur_slab", new BlockItem(Blocks.SMOOTH_PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_PURPUR_STAIRS = register("smooth_purpur_stairs", new BlockItem(Blocks.SMOOTH_PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_PURPUR_WALL = register("smooth_purpur_wall", new BlockItem(Blocks.SMOOTH_PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Polished
-    public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new BlockItem(Blocks.POLISHED_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item POLISHED_PURPUR_SLAB = register("polished_purpur_slab", new BlockItem(Blocks.POLISHED_PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item POLISHED_PURPUR_STAIRS = register("polished_purpur_stairs", new BlockItem(Blocks.POLISHED_PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item POLISHED_PURPUR_WALL = register("polished_purpur_wall", new BlockItem(Blocks.POLISHED_PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new BlockItem(Blocks.POLISHED_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item POLISHED_PURPUR_SLAB = register("polished_purpur_slab", new BlockItem(Blocks.POLISHED_PURPUR_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item POLISHED_PURPUR_STAIRS = register("polished_purpur_stairs", new BlockItem(Blocks.POLISHED_PURPUR_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item POLISHED_PURPUR_WALL = register("polished_purpur_wall", new BlockItem(Blocks.POLISHED_PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
 
     //Cut
-        //cut_purpur_wall
+        public static final Item CUT_PURPUR_WALL = register("cut_purpur_wall", new BlockItem(Blocks.CUT_PURPUR_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Bricks
-    public static final Item PURPUR_BRICKS = register("purpur_bricks", new BlockItem(Blocks.PURPUR_BRICKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item PURPUR_BRICK_SLAB = register("purpur_brick_slab", new BlockItem(Blocks.PURPUR_BRICK_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item PURPUR_BRICK_STAIRS = register("purpur_brick_stairs", new BlockItem(Blocks.PURPUR_BRICK_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item PURPUR_BRICK_WALL = register("purpur_brick_wall", new BlockItem(Blocks.PURPUR_BRICK_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item PURPUR_BRICKS = register("purpur_bricks", new BlockItem(Blocks.PURPUR_BRICKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item PURPUR_BRICK_SLAB = register("purpur_brick_slab", new BlockItem(Blocks.PURPUR_BRICK_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item PURPUR_BRICK_STAIRS = register("purpur_brick_stairs", new BlockItem(Blocks.PURPUR_BRICK_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item PURPUR_BRICK_WALL = register("purpur_brick_wall", new BlockItem(Blocks.PURPUR_BRICK_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cracked Bricks
         //cracked_purpur_bricks
@@ -558,7 +558,7 @@ public class Items {
         //mossy_purpur_brick_wall
 
     //Pillars and Chiseled
-    public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new BlockItem(Blocks.CHISELED_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new BlockItem(Blocks.CHISELED_PURPUR_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //mossy_chiseled_purpur
         //cracked_chiseled_purpur
         //mossy_purpur_pillar
@@ -568,15 +568,15 @@ public class Items {
 //End Stone
 
     //Block
-    public static final Item END_STONE_SLAB = register("end_stone_slab", new BlockItem(Blocks.END_STONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item END_STONE_STAIRS = register("end_stone_stairs", new BlockItem(Blocks.END_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item END_STONE_WALL = register("end_stone_wall", new BlockItem(Blocks.END_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item END_STONE_SLAB = register("end_stone_slab", new BlockItem(Blocks.END_STONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item END_STONE_STAIRS = register("end_stone_stairs", new BlockItem(Blocks.END_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item END_STONE_WALL = register("end_stone_wall", new BlockItem(Blocks.END_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Smooth
-    public static final Item SMOOTH_END_STONE = register("smooth_end_stone", new BlockItem(Blocks.SMOOTH_END_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item SMOOTH_END_STONE_SLAB = register("smooth_end_stone_slab", new BlockItem(Blocks.SMOOTH_END_STONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item SMOOTH_END_STONE_STAIRS = register("smooth_end_stone_stairs", new BlockItem(Blocks.SMOOTH_END_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item SMOOTH_END_STONE_WALL = register("smooth_end_stone_wall", new BlockItem(Blocks.SMOOTH_END_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_END_STONE = register("smooth_end_stone", new BlockItem(Blocks.SMOOTH_END_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_END_STONE_SLAB = register("smooth_end_stone_slab", new BlockItem(Blocks.SMOOTH_END_STONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_END_STONE_STAIRS = register("smooth_end_stone_stairs", new BlockItem(Blocks.SMOOTH_END_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_END_STONE_WALL = register("smooth_end_stone_wall", new BlockItem(Blocks.SMOOTH_END_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Polished
         //polished_end_stone
@@ -597,7 +597,7 @@ public class Items {
         //mossy_end_stone_brick_wall
 
     //Pillars and Chiseled
-    public static final Item CHISELED_END_STONE = register("chiseled_end_stone", new BlockItem(Blocks.CHISELED_END_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CHISELED_END_STONE = register("chiseled_end_stone", new BlockItem(Blocks.CHISELED_END_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
         //mossy_chiseled_end_stone_bricks
         //cracked_chiseled_end_stone_bricks

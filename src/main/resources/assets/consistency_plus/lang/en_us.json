@@ -65,5 +65,7 @@
   "block.consistency_plus.purpur_bricks": "Purpur Bricks",
   "block.consistency_plus.purpur_brick_slab": "Purpur Brick Slab",
   "block.consistency_plus.purpur_brick_stairs": "Purpur Brick Stairs",
-  "block.consistency_plus.purpur_brick_wall": "Purpur Brick Wall"
+  "block.consistency_plus.purpur_brick_wall": "Purpur Brick Wall",
+
+  "block.consistency_plus.cut_purpur_wall": "Cut Purpur Wall"
 }

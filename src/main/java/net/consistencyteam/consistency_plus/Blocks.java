@@ -52,7 +52,7 @@ public class Blocks {
     //Cut
         public static final Block CUT_BLACKSTONE = register("cut_blackstone", new Block(FabricBlockSettings.copy(BLACKSTONE)));
         public static final Block CUT_BLACKSTONE_SLAB = register("cut_blackstone_slab", new SlabBlock(FabricBlockSettings.copy(BLACKSTONE)));
-        public static final Block CUT_BLACKSTONE_STAIRS = register("cut_blackstone_stairs.json", new BaseConsistencyStairBlock(BLACKSTONE.getDefaultState(),FabricBlockSettings.copy(BLACKSTONE)));
+        public static final Block CUT_BLACKSTONE_STAIRS = register("cut_blackstone_stairs", new BaseConsistencyStairBlock(BLACKSTONE.getDefaultState(),FabricBlockSettings.copy(BLACKSTONE)));
         public static final Block CUT_BLACKSTONE_WALL = register("cut_blackstone_wall", new WallBlock(FabricBlockSettings.copy(BLACKSTONE)));
 
     //Cracked

@@ -49,7 +49,7 @@ public class Items {
     //Cut
         public static final Item CUT_BLACKSTONE = register("cut_blackstone", new BlockItem(Blocks.CUT_BLACKSTONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         public static final Item CUT_BLACKSTONE_SLAB = register("cut_blackstone_slab", new BlockItem(Blocks.CUT_BLACKSTONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-        public static final Item CUT_BLACKSTONE_STAIRS = register("cut_blackstone_stairs.json", new BlockItem(Blocks.CUT_BLACKSTONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CUT_BLACKSTONE_STAIRS = register("cut_blackstone_stairs", new BlockItem(Blocks.CUT_BLACKSTONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         public static final Item CUT_BLACKSTONE_WALL = register("cut_blackstone_wall", new BlockItem(Blocks.CUT_BLACKSTONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cracked

@@ -47,10 +47,10 @@ public class Items {
         public static final Item SMOOTH_BLACKSTONE_WALL = register("smooth_blackstone_wall", new BlockItem(Blocks.SMOOTH_BLACKSTONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cut
-        //cut_blackstone
-        //cut_blackstone_slab
-        //cut_blackstone_stairs
-        //cut_blackstone_wall
+        public static final Item CUT_BLACKSTONE = register("cut_blackstone", new BlockItem(Blocks.CUT_BLACKSTONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CUT_BLACKSTONE_SLAB = register("cut_blackstone_slab", new BlockItem(Blocks.CUT_BLACKSTONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CUT_BLACKSTONE_STAIRS = register("cut_blackstone_stairs.json", new BlockItem(Blocks.CUT_BLACKSTONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CUT_BLACKSTONE_WALL = register("cut_blackstone_wall", new BlockItem(Blocks.CUT_BLACKSTONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cracked
         //cracked_blackstone_brick_slab

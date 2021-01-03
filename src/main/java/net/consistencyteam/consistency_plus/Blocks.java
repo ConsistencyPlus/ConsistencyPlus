@@ -50,10 +50,10 @@ public class Blocks {
         public static final Block SMOOTH_BLACKSTONE_WALL = register("smooth_blackstone_wall", new WallBlock(FabricBlockSettings.copy(BLACKSTONE)));
 
     //Cut
-        //cut_blackstone
-        //cut_blackstone_slab
-        //cut_blackstone_stairs
-        //cut_blackstone_wall
+        public static final Block CUT_BLACKSTONE = register("cut_blackstone", new Block(FabricBlockSettings.copy(BLACKSTONE)));
+        public static final Block CUT_BLACKSTONE_SLAB = register("cut_blackstone_slab", new SlabBlock(FabricBlockSettings.copy(BLACKSTONE)));
+        public static final Block CUT_BLACKSTONE_STAIRS = register("cut_blackstone_stairs.json", new BaseConsistencyStairBlock(BLACKSTONE.getDefaultState(),FabricBlockSettings.copy(BLACKSTONE)));
+        public static final Block CUT_BLACKSTONE_WALL = register("cut_blackstone_wall", new WallBlock(FabricBlockSettings.copy(BLACKSTONE)));
 
     //Cracked
         //cracked_blackstone_brick_slab

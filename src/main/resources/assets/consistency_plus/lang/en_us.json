@@ -31,6 +31,10 @@
   "block.consistency_plus.smooth_blackstone_stairs": "Smooth Blackstone Stairs",
   "block.consistency_plus.smooth_blackstone_wall": "Smooth Blackstone Wall",
   "block.consistency_plus.blackstone_brick_pillar": "Blackstone Brick Pillar",
+  "block.consistency_plus.cut_blackstone": "Cut Blackstone",
+  "block.consistency_plus.cut_blackstone_slab": "Cut Blackstone Slab",
+  "block.consistency_plus.cut_blackstone_stairs": "Cut Blackstone Stairs",
+  "block.consistency_plus.cut_blackstone_wall": "Cut Blackstone Wall",
 
   "block.minecraft.purpur_block": "Cut Purpur",
   "block.minecraft.purpur_slab": "Cut Purpur Slab",

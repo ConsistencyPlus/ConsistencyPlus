@@ -155,10 +155,11 @@ public class Items {
 //Quartz
 
     //Block
-        //quartz_wall
+        public static final Item QUARTZ_WALL = register("quartz_wall", new BlockItem(Blocks.QUARTZ_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+
 
     //Smooth
-        //smooth_quartz_wall
+        public static final Item SMOOTH_QUARTZ_WALL = register("smooth_quartz_wall", new BlockItem(Blocks.SMOOTH_QUARTZ_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cut
         public static final Item CUT_QUARTZ = register("cut_quartz", new BlockItem(Blocks.CUT_QUARTZ, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));

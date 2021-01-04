@@ -163,10 +163,10 @@ public class Blocks {
         //smooth_quartz_wall
 
     //Cut
-        //cut_quartz
-        //cut_quartz_slab
-        //cut_quartz_stairs
-        //cut_quartz_wall
+    public static final Block CUT_QUARTZ = register("cut_quartz", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
+    public static final Block CUT_QUARTZ_SLAB = register("cut_quartz_slab", new SlabBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
+    public static final Block CUT_QUARTZ_STAIRS = register("cut_quartz_stairs", new BaseConsistencyStairBlock(QUARTZ_BLOCK.getDefaultState(),FabricBlockSettings.copy(QUARTZ_BLOCK)));
+    public static final Block CUT_QUARTZ_WALL = register("cut_quartz_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 
     //Polished
         //polished_quartz
@@ -582,10 +582,10 @@ public class Blocks {
 
 
     //Polished
-        //polished_end_stone
-        //polished_end_stone_slab
-        //polished_end_stone_stairs
-        //polished_end_stone_wall
+    public static final Block CUT_END_STONE = register("cut_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
+    public static final Block CUT_END_STONE_SLAB = register("cut_end_stone_slab", new SlabBlock(FabricBlockSettings.copy(END_STONE)));
+    public static final Block CUT_END_STONE_STAIRS = register("cut_end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(),FabricBlockSettings.copy(END_STONE)));
+    public static final Block CUT_END_STONE_WALL = register("cut_end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 
     //Cracked Bricks
         //cracked_end_stone_bricks

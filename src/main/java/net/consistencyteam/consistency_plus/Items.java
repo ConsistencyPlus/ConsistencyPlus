@@ -161,10 +161,10 @@ public class Items {
         //smooth_quartz_wall
 
     //Cut
-        //cut_quartz
-        //cut_quartz_slab
-        //cut_quartz_stairs
-        //cut_quartz_wall
+    public static final Item CUT_QUARTZ = register("cut_quartz", new BlockItem(Blocks.CUT_QUARTZ, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_QUARTZ_SLAB = register("cut_quartz_slab", new BlockItem(Blocks.CUT_QUARTZ_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_QUARTZ_STAIRS = register("cut_quartz_stairs", new BlockItem(Blocks.CUT_QUARTZ_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_QUARTZ_WALL = register("cut_quartz_wall", new BlockItem(Blocks.CUT_QUARTZ_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Polished
         //polished_quartz
@@ -579,10 +579,10 @@ public class Items {
         public static final Item SMOOTH_END_STONE_WALL = register("smooth_end_stone_wall", new BlockItem(Blocks.SMOOTH_END_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Polished
-        //polished_end_stone
-        //polished_end_stone_slab
-        //polished_end_stone_stairs
-        //polished_end_stone_wall
+    public static final Item CUT_END_STONE = register("cut_end_stone", new BlockItem(Blocks.CUT_END_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_END_STONE_SLAB = register("cut_end_stone_slab", new BlockItem(Blocks.CUT_END_STONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_END_STONE_STAIRS = register("cut_end_stone_stairs", new BlockItem(Blocks.CUT_END_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_END_STONE_WALL = register("cut_end_stone_wall", new BlockItem(Blocks.CUT_END_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cracked Bricks
         //cracked_end_stone_bricks

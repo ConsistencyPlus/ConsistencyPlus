@@ -6,10 +6,10 @@
     " XX"
   ],
   "key": {
-    "X": {"item": "minecraft:polished_blackstone_bricks"}
+    "X": {"item": "consistency_plus:polished_end_stone"}
   },
   "result": {
-    "item": "minecraft:chiseled_polished_blackstone",
+    "item": "minecraft:end_stone_bricks",
     "count": 4
   }
 }

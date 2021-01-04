@@ -15,6 +15,7 @@
     "consistency_plus:smooth_end_stone_slab",
     "consistency_plus:cut_blackstone_slab",
     "consistency_plus:cut_quartz_slab",
+    "consistency_plus:polished_end_stone_slab",
     "#minecraft:wooden_slabs",
     "minecraft:stone_slab",
     "minecraft:smooth_stone_slab",

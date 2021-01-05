@@ -75,7 +75,6 @@
   "block.consistency_plus.purpur_brick_wall": "Purpur Brick Wall",
 
 
-  "block.consistency_plus.cut_purpur_wall": "Cut Purpur Wall",
 
   "block.consistency_plus.netherite_stairs": "Netherite Stairs",
 
@@ -94,7 +93,7 @@
   "block.consistency_plus.smooth_clay_slab": "Smooth Clay Slab",
   "block.consistency_plus.smooth_clay_stairs": "Smooth Clay Stairs",
   "block.consistency_plus.smooth_clay_wall": "Smooth Clay Wall",
-  "block.consistency_plus.suspicious_slab": "Suspicious Slab"
+  "block.consistency_plus.suspicious_slab": "Suspicious Slab",
   "block.consistency_plus.cut_purpur_wall": "Cut Purpur Wall",
   "block.consistency_plus.cracked_purpur_bricks": "Cracked Purpur Bricks",
   "block.consistency_plus.cracked_purpur_brick_slab": "Cracked Purpur Brick Slab",
@@ -114,7 +113,7 @@
   "block.consistency_plus.mossy_blackstone_bricks": "Mossy Blackstone Bricks",
   "block.consistency_plus.mossy_blackstone_brick_slab": "Mossy Blackstone Brick Slab",
   "block.consistency_plus.mossy_blackstone_brick_stairs": "Mossy Blackstone Brick Stairs",
-  "block.consistency_plus.mossy_blackstone_brick_wall": "Mossy Blackstone Brick Wall"
+  "block.consistency_plus.mossy_blackstone_brick_wall": "Mossy Blackstone Brick Wall",
   "block.consistency_plus.devin_blockera": "Devin Blockera",
   "block.consistency_plus.broken_modifikation": "Broken Modifikation"
 }

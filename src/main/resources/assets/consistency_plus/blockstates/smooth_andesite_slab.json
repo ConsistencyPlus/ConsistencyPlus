@@ -4,7 +4,7 @@
       "model": "consistency_plus:block/smooth_andesite_slab"
     },
     "type=double": {
-      "model": "minecraft:block/smooth_andesite"
+      "model": "consistency_plus:block/smooth_andesite"
     },
     "type=top": {
       "model": "consistency_plus:block/smooth_andesite_slab_top"

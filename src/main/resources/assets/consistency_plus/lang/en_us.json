@@ -71,5 +71,24 @@
   "block.consistency_plus.purpur_brick_stairs": "Purpur Brick Stairs",
   "block.consistency_plus.purpur_brick_wall": "Purpur Brick Wall",
 
-  "block.consistency_plus.cut_purpur_wall": "Cut Purpur Wall"
+  "block.consistency_plus.cut_purpur_wall": "Cut Purpur Wall",
+
+  "block.consistency_plus.netherite_stairs": "Netherite Stairs",
+
+  "block.consistency_plus.clay_slab": "Clay Slab",
+  "block.consistency_plus.clay_stairs": "Clay Stairs",
+  "block.consistency_plus.clay_wall": "Clay Wall",
+  "block.consistency_plus.cut_clay": "Cut Clay",
+  "block.consistency_plus.cut_clay_slab": "Cut Clay Slab",
+  "block.consistency_plus.cut_clay_stairs": "Cut Clay Stairs",
+  "block.consistency_plus.cut_clay_wall": "Cut Clay Wall",
+  "block.consistency_plus.polished_clay": "Polished Clay",
+  "block.consistency_plus.polished_clay_slab": "Polished Clay Slab",
+  "block.consistency_plus.polished_clay_stairs": "Polished Clay Stairs",
+  "block.consistency_plus.polished_clay_wall": "Polished Clay Wall",
+  "block.consistency_plus.smooth_clay": "Smooth Clay",
+  "block.consistency_plus.smooth_clay_slab": "Smooth Clay Slab",
+  "block.consistency_plus.smooth_clay_stairs": "Smooth Clay Stairs",
+  "block.consistency_plus.smooth_clay_wall": "Smooth Clay Wall",
+  "block.consistency_plus.suspicious_slab": "Suspicious Slab"
 }

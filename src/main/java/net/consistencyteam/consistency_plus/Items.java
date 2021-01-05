@@ -1,15 +1,24 @@
 package net.consistencyteam.consistency_plus;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static net.minecraft.block.Blocks.CLAY;
+
 public class Items {
 
+    /*
+    templates:
+    block item: public static final Item SMOOTH_STONE_WALL = register("smooth_stone_wall", new BlockItem(Blocks.SMOOTH_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+     */
 //Stone
-
     //Smooth
         public static final Item SMOOTH_STONE_WALL = register("smooth_stone_wall", new BlockItem(Blocks.SMOOTH_STONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         public static final Item SMOOTH_STONE_STAIRS = register("smooth_stone_stairs", new BlockItem(Blocks.SMOOTH_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
@@ -326,7 +335,27 @@ public class Items {
         //cracked_chiseled_granite_bricks
         //mossy_chiseled_granite_bricks
 
-//Bricks
+    //h
+    public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(Blocks.NETHERITE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(Blocks.SUSPICIOUS_SLAB, new Item.Settings()));
+    //clay
+    public static final Item CLAY_SLAB = register("clay_slab", new BlockItem(Blocks.CLAY_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CLAY_STAIRS = register("clay_stairs", new BlockItem(Blocks.CLAY_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CLAY_WALL = register("clay_wall", new BlockItem(Blocks.CLAY_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item POLISHED_CLAY = register("polished_clay", new BlockItem(Blocks.POLISHED_CLAY, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item POLISHED_CLAY_SLAB = register("polished_clay_slab", new BlockItem(Blocks.POLISHED_CLAY_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item POLISHED_CLAY_STAIRS = register("polished_clay_stairs", new BlockItem(Blocks.POLISHED_CLAY_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item POLISHED_CLAY_WALL = register("polished_clay_wall", new BlockItem(Blocks.POLISHED_CLAY_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_CLAY = register("cut_clay", new BlockItem(Blocks.CUT_CLAY, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_CLAY_SLAB = register("cut_clay_slab", new BlockItem(Blocks.CUT_CLAY_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_CLAY_STAIRS = register("cut_clay_stairs", new BlockItem(Blocks.CUT_CLAY_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item CUT_CLAY_WALL = register("cut_clay_wall", new BlockItem(Blocks.CUT_CLAY_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item SMOOTH_CLAY = register("smooth_clay", new BlockItem(Blocks.SMOOTH_CLAY, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item SMOOTH_CLAY_SLAB = register("smooth_clay_slab", new BlockItem(Blocks.SMOOTH_CLAY_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item SMOOTH_CLAY_STAIRS = register("smooth_clay_stairs", new BlockItem(Blocks.SMOOTH_CLAY_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+    public static final Item SMOOTH_CLAY_WALL = register("smooth_clay_wall", new BlockItem(Blocks.SMOOTH_CLAY_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+
+    //Bricks
 
     //Cracked Bricks
         //cracked_bricks

@@ -20,7 +20,25 @@
       "consistency_plus:end_stone_stairs",
       "consistency_plus:end_stone_stairs_stonecutter",
       "consistency_plus:end_stone_wall",
-      "consistency_plus:end_stone_wall_stonecutter"
+      "consistency_plus:end_stone_wall_stonecutter",
+	 "consistency_plus:cut_end_stone",
+	 "consistency_plus:cut_end_stone_slab",
+      "consistency_plus:cut_end_stone_slab_stonecutter",
+      "consistency_plus:cut_end_stone_stairs",
+      "consistency_plus:cut_end_stone_stairs_stonecutter",
+      "consistency_plus:cut_end_stone_wall",
+      "consistency_plus:cut_end_stone_wall_stonecutter",
+      "consistency_plus:polished_end_stone",
+      "consistency_plus:polished_end_stone_stonecutter",
+      "consistency_plus:polished_end_stone_slab",
+      "consistency_plus:polished_end_stone_slab_stonecutter",
+      "consistency_plus:polished_end_stone_slab_stonecutter_2",
+      "consistency_plus:polished_end_stone_stairs",
+      "consistency_plus:polished_end_stone_stairs_stonecutter",
+      "consistency_plus:polished_end_stone_stairs_stonecutter_2",
+      "consistency_plus:polished_end_stone_wall",
+      "consistency_plus:polished_end_stone_wall_stonecutter",
+      "consistency_plus:polished_end_stone_wall_stonecutter_2"
     ]
   },
   "criteria": {

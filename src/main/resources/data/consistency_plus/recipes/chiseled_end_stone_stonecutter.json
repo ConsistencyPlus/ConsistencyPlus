@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "minecraft:end_stone_bricks"
   },
-  "result": "consistency_plus:chiseled_end_stone_bricks",
+  "result": "consistency_plus:chiseled_end_stone",
   "count": 1
 }

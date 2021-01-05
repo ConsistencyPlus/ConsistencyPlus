@@ -88,5 +88,8 @@
   "block.consistency_plus.smooth_andesite": "Smooth Andesite",
   "block.consistency_plus.smooth_andesite_stairs": "Smooth Andesite Stairs",
   "block.consistency_plus.smooth_andesite_wall": "Smooth Andesite Wall",
-  "block.consistency_plus.smooth_andesite_slab": "Smooth Andesite Slab"
+  "block.consistency_plus.smooth_andesite_slab": "Smooth Andesite Slab",
+
+  "block.consistency_plus.devin_blockera": "Devin Blockera",
+  "block.consistency_plus.broken_modifikation": "Broken Modifikation"
 }

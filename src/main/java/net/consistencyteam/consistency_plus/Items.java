@@ -614,8 +614,8 @@ public class Items {
         //cracked_end_stone_brick_pillar
 
 
-
-
+    public static final Item DEVIN_BLOCKERA = register("devin_blockera", new BlockItem(Blocks.DEVIN_BLOCKERA, new Item.Settings()));
+    public static final Item BROKEN_MODIFIKATION = register("broken_modifikation", new BlockItem(Blocks.BROKEN_MODIFIKATION, new Item.Settings()));
 
     private static Item register(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier("consistency_plus", name), item);

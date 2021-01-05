@@ -61,10 +61,10 @@ public class Blocks {
         public static final Block CRACKED_BLACKSTONE_BRICK_WALL = register("cracked_blackstone_brick_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 
     //Mossy
-        //mossy_blackstone_bricks
-        //mossy_blackstone_brick_slab
-        //mossy_blackstone_brick_stairs
-        //mossy_blackstone_brick_wall
+        public static final Block MOSSY_BLACKSTONE_BRICKS = register("mossy_blackstone_bricks", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block MOSSY_BLACKSTONE_BRICK_SLAB  = register("mossy_blackstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block MOSSY_BLACKSTONE_BRICK_STAIRS = register("mossy_blackstone_brick_stairs", new BaseConsistencyStairBlock(POLISHED_BLACKSTONE_BRICKS.getDefaultState(),FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block MOSSY_BLACKSTONE_BRICK_WALL = register("mossy_blackstone_brick_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 
     //Pillars and Chiseled
         //mossy_chiseled_blackstone_bricks

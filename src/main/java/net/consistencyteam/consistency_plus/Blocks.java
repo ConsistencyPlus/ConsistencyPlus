@@ -56,10 +56,9 @@ public class Blocks {
         public static final Block CUT_BLACKSTONE_WALL = register("cut_blackstone_wall", new WallBlock(FabricBlockSettings.copy(BLACKSTONE)));
 
     //Cracked
-        //cracked_blackstone_brick_slab
-
-        //cracked_blackstone_brick_stairs
-        //cracked_blackstone_brick_wall
+        public static final Block CRACKED_BLACKSTONE_BRICK_SLAB  = register("cracked_blackstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block CRACKED_BLACKSTONE_BRICK_STAIRS = register("cracked_blackstone_brick_stairs", new BaseConsistencyStairBlock(POLISHED_BLACKSTONE_BRICKS.getDefaultState(),FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block CRACKED_BLACKSTONE_BRICK_WALL = register("cracked_blackstone_brick_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 
     //Mossy
         //mossy_blackstone_bricks

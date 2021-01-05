@@ -54,9 +54,9 @@ public class Items {
         public static final Item CUT_BLACKSTONE_WALL = register("cut_blackstone_wall", new BlockItem(Blocks.CUT_BLACKSTONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cracked
-    public static final Item CRACKED_BLACKSTONE_BRICK_SLAB = register("cracked_blackstone_brick_slab", new BlockItem(Blocks.CRACKED_BLACKSTONE_BRICK_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item CRACKED_BLACKSTONE_BRICK_STAIRS = register("cracked_blackstone_brick_stairs", new BlockItem(Blocks.CRACKED_BLACKSTONE_BRICK_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-    public static final Item CRACKED_BLACKSTONE_BRICK_WALL = register("cracked_blackstone_brick_wall", new BlockItem(Blocks.CRACKED_BLACKSTONE_BRICK_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CRACKED_BLACKSTONE_BRICK_SLAB = register("cracked_blackstone_brick_slab", new BlockItem(Blocks.CRACKED_BLACKSTONE_BRICK_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CRACKED_BLACKSTONE_BRICK_STAIRS = register("cracked_blackstone_brick_stairs", new BlockItem(Blocks.CRACKED_BLACKSTONE_BRICK_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CRACKED_BLACKSTONE_BRICK_WALL = register("cracked_blackstone_brick_wall", new BlockItem(Blocks.CRACKED_BLACKSTONE_BRICK_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Mossy
         //mossy_blackstone_bricks
@@ -76,7 +76,7 @@ public class Items {
 
     //Smooth
         //smooth_sandstone_wall
-        //public static final Item SMOOTH_SANDSTONE_WALL = register("smooth_sandstone_wall", new BlockItem(Blocks.SMOOTH_SANDSTONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+
     //Cut
         //cut_sandstone_stairs
         //cut_sandstone_wall

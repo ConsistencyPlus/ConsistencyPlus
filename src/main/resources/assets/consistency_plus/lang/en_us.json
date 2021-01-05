@@ -84,5 +84,9 @@
   "block.consistency_plus.polished_end_stone_wall": "Polished End Stone Wall",
   "block.consistency_plus.cracked_blackstone_brick_slab": "Cracked Blackstone Brick Slab",
   "block.consistency_plus.cracked_blackstone_brick_stairs": "Cracked Blackstone Brick Stairs",
-  "block.consistency_plus.cracked_blackstone_brick_wall": "Cracked Blackstone Brick Wall"
+  "block.consistency_plus.cracked_blackstone_brick_wall": "Cracked Blackstone Brick Wall",
+  "block.consistency_plus.smooth_andesite": "Smooth Andesite",
+  "block.consistency_plus.smooth_andesite_stairs": "Smooth Andesite Stairs",
+  "block.consistency_plus.smooth_andesite_wall": "Smooth Andesite Wall",
+  "block.consistency_plus.smooth_andesite_slab": "Smooth Andesite Slab"
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "YYY",
+    "YXY",
+    "YYY"
+  ],
+  "key": {
+    "X": {"item": "minecraft:sugar"},
+    "Y": {"item": "minecraft:rotten_flesh"}
+  },
+  "result": {
+    "item": "consistency_plus:devin_blockera",
+    "count": 1
+  }
+}
+

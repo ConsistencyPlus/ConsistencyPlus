@@ -242,20 +242,36 @@ Granite
   * Cracked Chiseled Granite
   * Mossy Chiseled Granite
 Clay
-  * Cracked Clay Bricks 
-  * Cracked Clay Brick Slab
-  * Cracked Clay Brick Stairs
-  * Cracked Clay Brick Wall
-  * Mossy Clay Bricks
-  * Mossy Clay Brick Slab
-  * Mossy Clay Brick Stairs
-  * Mossy Clay Brick Wall
-  * Clay Bricks Pillar
-  * Cracked Clay Bricks Pillar
-  * Mossy Clay Bricks Pillar
-  * Chiseled Clay Bricks
-  * Cracked Chiseled Clay Bricks
-  * Mossy Chiseled Clay Bricks
+  * Clay Slab
+  * Clay Stairs
+  * Clay Wall
+  * Polished Clay
+  * Polished Clay Slab
+  * Polished Clay Stairs
+  * Polished Clay Wall
+  * Cut Clay
+  * Cut Clay Slab
+  * Cut Clay Stairs
+  * Cut Clay Wall
+  * Smooth Clay
+  * Smooth Clay Slab
+  * Smooth Clay Stairs
+  * Smooth Clay Wall
+(clay) Bricks
+  * Cracked Bricks
+  * Cracked Brick Slab
+  * Cracked Brick Stairs
+  * Cracked Brick Wall
+  * Mossy Bricks
+  * Mossy Brick Slab
+  * Mossy Brick Stairs
+  * Mossy Brick Wall
+  * Chiseled Brick
+  * Cracked Chiseled Brick
+  * Mossy Chiseled Brick
+  * Brick Pillar
+  * Cracked Brick Pillar
+  * Mossy Brick Pillar
 Nether Bricks
   * Cracked Nether Brick Slab
   * Cracked Nether Brick Stairs

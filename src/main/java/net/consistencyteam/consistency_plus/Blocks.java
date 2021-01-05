@@ -57,6 +57,7 @@ public class Blocks {
 
     //Cracked
         //cracked_blackstone_brick_slab
+
         //cracked_blackstone_brick_stairs
         //cracked_blackstone_brick_wall
 
@@ -77,7 +78,7 @@ public class Blocks {
 
     //Smooth
         //smooth_sandstone_wall
-
+        //public static final Block SMOOTH_SANDSTONE_WALL = register("smooth_blackstone_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
     //Cut
         //cut_sandstone_stairs
         //cut_sandstone_wall
@@ -205,10 +206,10 @@ public class Blocks {
         //polished_andesite_wall
 
     //Smooth
-        //smooth_andesite
-        //smooth_andesite_slab
-        //smooth_andesite_stairs
-        //smooth_andesite_wall
+        public static final Block SMOOTH_ANDESITE = register("smooth_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
+        public static final Block SMOOTH_ANDESITE_SLAB = register("smooth_andesite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
+        public static final Block SMOOTH_ANDESITE_STAIRS = register("smooth_andesite_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(),FabricBlockSettings.copy(POLISHED_ANDESITE)));
+        public static final Block SMOOTH_ANDESITE_WALL = register("smooth_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 
     //Cut
         //cut_andesite

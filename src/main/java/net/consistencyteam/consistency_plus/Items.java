@@ -6,6 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+
 public class Items {
 
 //Stone
@@ -75,7 +76,7 @@ public class Items {
 
     //Smooth
         //smooth_sandstone_wall
-
+        //public static final Item SMOOTH_SANDSTONE_WALL = register("smooth_sandstone_wall", new BlockItem(Blocks.SMOOTH_SANDSTONE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
     //Cut
         //cut_sandstone_stairs
         //cut_sandstone_wall
@@ -204,9 +205,10 @@ public class Items {
 
     //Smooth
         //smooth_andesite
-        //smooth_andesite_slab
-        //smooth_andesite_stairs
-        //smooth_andesite_wall
+        public static final Item SMOOTH_ANDESITE = register("smooth_andesite", new BlockItem(Blocks.SMOOTH_ANDESITE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_ANDESITE_SLAB = register("smooth_andesite_slab", new BlockItem(Blocks.SMOOTH_ANDESITE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_ANDESITE_STAIRS = register("smooth_andesite_stairs", new BlockItem(Blocks.SMOOTH_ANDESITE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item SMOOTH_ANDESITE_WALL = register("smooth_andesite_wall", new BlockItem(Blocks.SMOOTH_ANDESITE_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Cut
         //cut_andesite

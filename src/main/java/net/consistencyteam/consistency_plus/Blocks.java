@@ -13,8 +13,16 @@ import static net.minecraft.block.Blocks.*;
 
 public class Blocks {
 
-//Stone
+    /*
+    templates
+    block:  public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+    slab:   public static final Block POLISHED_STONE_SLAB  = register("polished_stone_slab", new SlabBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+    stairs: public static final Block POLISHED_STONE_STAIRS = register("polished_stone_stairs", new BaseConsistencyStairBlock(STONE_BRICKS.getDefaultState(),FabricBlockSettings.copy(STONE_BRICKS)));
+    pillar: public static final Block STONE_BRICK_PILLAR = register("stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+    wall:   public static final Block STONE_WALL = register("stone_wall", new WallBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+     */
 
+//Stone
     //Smooth
         public static final Block SMOOTH_STONE_STAIRS = register("smooth_stone_stairs", new BaseConsistencyStairBlock(STONE_BRICKS.getDefaultState(),FabricBlockSettings.copy(STONE_BRICKS)));
         public static final Block SMOOTH_STONE_WALL = register("smooth_stone_wall", new WallBlock(FabricBlockSettings.copy(STONE_BRICKS)));
@@ -329,8 +337,27 @@ public class Blocks {
         //cracked_chiseled_granite_bricks
         //mossy_chiseled_granite_bricks
 
-//Bricks
+    //h
+        public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(),FabricBlockSettings.copy(NETHERITE_BLOCK)));
+        public static final Block SUSPICIOUS_SLAB  = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
+    //Clay
+        public static final Block CLAY_SLAB  = register("clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
+        public static final Block CLAY_STAIRS = register("clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(),FabricBlockSettings.copy(CLAY)));
+        public static final Block CLAY_WALL = register("clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
+        public static final Block POLISHED_CLAY = register("polished_clay", new Block(FabricBlockSettings.copy(CLAY)));
+        public static final Block POLISHED_CLAY_SLAB  = register("polished_clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
+        public static final Block POLISHED_CLAY_STAIRS = register("polished_clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(),FabricBlockSettings.copy(CLAY)));
+        public static final Block POLISHED_CLAY_WALL = register("polished_clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
+        public static final Block CUT_CLAY = register("cut_clay", new Block(FabricBlockSettings.copy(CLAY)));
+        public static final Block CUT_CLAY_SLAB  = register("cut_clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
+        public static final Block CUT_CLAY_STAIRS = register("cut_clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(),FabricBlockSettings.copy(CLAY)));
+        public static final Block CUT_CLAY_WALL = register("cut_clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
+        public static final Block SMOOTH_CLAY = register("smooth_clay", new Block(FabricBlockSettings.copy(CLAY)));
+        public static final Block SMOOTH_CLAY_SLAB  = register("smooth_clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
+        public static final Block SMOOTH_CLAY_STAIRS = register("smooth_clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(),FabricBlockSettings.copy(CLAY)));
+        public static final Block SMOOTH_CLAY_WALL = register("smooth_clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
 
+//Bricks
     //Cracked Bricks
         //cracked_bricks
         //cracked_brick_slab

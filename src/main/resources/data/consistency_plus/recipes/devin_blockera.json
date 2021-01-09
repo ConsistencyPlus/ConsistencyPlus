@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "YYY",
+    "ZYZ",
     "YXY",
-    "YYY"
+    "ZYZ"
   ],
   "key": {
     "X": {"item": "minecraft:sugar"},
-    "Y": {"item": "minecraft:rotten_flesh"}
+    "Y": {"item": "minecraft:rotten_flesh"},
+    "Z": {"item": "minecraft:diamond"}
   },
   "result": {
     "item": "consistency_plus:devin_blockera",

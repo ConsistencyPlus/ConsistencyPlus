@@ -75,11 +75,11 @@ public class Items {
         public static final Item MOSSY_BLACKSTONE_BRICK_WALL = register("mossy_blackstone_brick_wall", new BlockItem(Blocks.MOSSY_BLACKSTONE_BRICK_WALL, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
     //Pillars and Chiseled
-        //mossy_chiseled_blackstone_bricks
-        //cracked_chiseled_blackstone_bricks
+        public static final Item MOSSY_CHISELED_BLACKSTONE = register("mossy_chiseled_blackstone", new BlockItem(Blocks.MOSSY_CHISELED_BLACKSTONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item CRACKED_CHISELED_BLACKSTONE = register("cracked_chiseled_blackstone", new BlockItem(Blocks.CRACKED_CHISELED_BLACKSTONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         public static final Item BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new BlockItem(Blocks.BLACKSTONE_BRICK_PILLAR, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-        //mossy_chiseled_blackstone_pillar
-        //cracked_chiseled_blackstone_pillar
+        public static final Item CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new BlockItem(Blocks.CRACKED_BLACKSTONE_BRICK_PILLAR, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        public static final Item MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new BlockItem(Blocks.MOSSY_BLACKSTONE_BRICK_PILLAR, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
 
 //Sandstone

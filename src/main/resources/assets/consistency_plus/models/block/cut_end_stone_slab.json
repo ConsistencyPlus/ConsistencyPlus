@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "consistency_plus:block/cut_end_stone",
-    "top": "consistency_plus:block/cut_end_stone",
-    "side": "consistency_plus:block/cut_end_stone"
-  }
-}

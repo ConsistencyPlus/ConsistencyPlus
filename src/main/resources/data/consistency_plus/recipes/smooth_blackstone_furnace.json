@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "minecraft:blackstone"
-  },
-  "result": "consistency_plus:smooth_blackstone",
-  "experience": 1,
-  "cooking_time": 200
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:cracked_stone_bricks"
-  },
-  "result": "consistency_plus:cracked_stone_brick_slab",
-  "count": 2
-}

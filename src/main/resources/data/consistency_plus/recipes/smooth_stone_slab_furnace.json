@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "minecraft:stone_slab"
-  },
-  "result": "minecraft:smooth_stone_slab",
-  "experience": 1,
-  "cooking_time": 200
-}

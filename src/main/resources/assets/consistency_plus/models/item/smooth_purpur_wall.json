@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/wall_inventory",
-  "textures": {
-    "wall": "consistency_plus:block/smooth_purpur_block"
-  }
-}

@@ -81,13 +81,11 @@ public class Blocks {
         public static final Block MOSSY_CHISELED_BLACKSTONE = register("mossy_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
         public static final Block CRACKED_CHISELED_BLACKSTONE = register("cracked_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 
-    //cracked_chiseled_blackstone_pillar
 
 //Sandstone
 
     //Smooth
-        //smooth_sandstone_wall
-        //public static final Block SMOOTH_SANDSTONE_WALL = register("smooth_blackstone_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
+        public static final Block SMOOTH_SANDSTONE_WALL = register("smooth_blackstone_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
     //Cut
         //cut_sandstone_stairs
         //cut_sandstone_wall

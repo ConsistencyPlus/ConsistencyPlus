@@ -86,8 +86,7 @@ public class Blocks {
 //Sandstone
 
     //Smooth
-        //smooth_sandstone_wall
-        //public static final Block SMOOTH_SANDSTONE_WALL = register("smooth_blackstone_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
+        public static final Block SMOOTH_SANDSTONE_WALL = register("smooth_sandstone_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
     //Cut
         //cut_sandstone_stairs
         //cut_sandstone_wall
@@ -127,7 +126,7 @@ public class Blocks {
 //Red Sandstone
 
     //Smooth
-        //smooth_red_sandstone_wall
+        public static final Block SMOOTH_RED_SANDSTONE_WALL = register("smooth_red_sandstone_wall", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 
     //Cut
         //cut_red_sandstone_stairs

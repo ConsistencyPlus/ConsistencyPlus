@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:smooth_red_sandstone_wall",
+      "consistency_plus:smooth_red_sandstone_wall_stonecutter",
+      "consistency_plus:smooth_red_sandstone_wall_furnace"
+    ]
+  },
+  "criteria": {
+    "has_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:smooth_red_sandstone"
+          }
+        ]
+      }
+    }
+  }
+}

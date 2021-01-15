@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:jack_o_soul"
+    ]
+  },
+  "criteria": {
+    "Carved Pumpkin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:carved_pumpkin"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -11,7 +11,12 @@
       "consistency_plus:blackstone_brick_furnace",
       "minecraft:chiseled_polished_blackstone",
       "consistency_plus:chiseled_polished_blackstone_stonecutter",
-      "minecraft:polished_blackstone_bricks"
+      "minecraft:polished_blackstone_bricks",
+      "consistency_plus:cut_blackstone",
+      "consistency_plus:cut_blackstone_stonecutter",
+      "consistency_plus:mossy_blackstone_brick_pillar",
+      "consistency_plus:mossy_blackstone_brick_pillar_2",
+      "consistency_plus:mossy_blackstone_brick_pillar_stonecutter"
     ]
   },
   "criteria": {

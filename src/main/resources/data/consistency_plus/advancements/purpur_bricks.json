@@ -13,7 +13,9 @@
       "consistency_plus:purpur_brick_stairs_stonecutter_2",
       "consistency_plus:purpur_brick_wall",
       "consistency_plus:purpur_brick_wall_stonecutter",
-      "consistency_plus:purpur_brick_wall_stonecutter_2"
+      "consistency_plus:purpur_brick_wall_stonecutter_2",
+      "consistency_plus:chiseled_purpur",
+      "consistency_plus:chiseled_purpur_stonecutter"
     ]
   },
   "criteria": {

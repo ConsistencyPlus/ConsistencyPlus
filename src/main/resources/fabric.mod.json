@@ -4,13 +4,14 @@
   "version": "${version}",
 
   "name": "Consistency Plus",
-  "description": "Builders Rejoice, I've added all the missing block variants!",
-  "authors": [
-    "Carter",
-    "IMS",
-    "Siuol",
-    "Tropheus Jay"
+  "description": "Builders Rejoice, We've added all the missing block variants!",
+  "contributors": [
+    {"name": "Carter","contact": {"Discord": "Cart3r#1234"}},
+    {"name": "IMS","contact": {"Discord": "IMS#7902"}},
+    {"name": "Siuol","contact": {"Discord": "\"Siuol\" Appeared\n#5729"}},
+    {"name": "Tropheus Jay","contact": {"Discord": "Tropheus Jay\n#7241"}}
   ],
+
   "contact": {
     "homepage": "",
     "sources": "https://github.com/ConsistencyPlus/ConsistencyPlus"
@@ -25,9 +26,7 @@
       "net.consistencyteam.consistency_plus.ConsistencyPlus"
     ]
   },
-  "mixins": [
-
-  ],
+  "mixins": [],
 
   "depends": {
     "fabricloader": ">=0.7.4",

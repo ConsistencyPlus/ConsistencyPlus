@@ -20,7 +20,7 @@ Many of the blocks we have added so far have been done by hand, but we will be s
 Eventually.
 
 ### Could you guys add [Thing]?
-Well, if your interested, you can put it as a suggestion in the issue tracker, or even code it in yourself!
+Well, if you're interested, you can put it as a suggestion in the issue tracker, or even code it in yourself!
 
 ### How many blocks are you going to add?
 Current Planned Additions Count is at 1377, and may raise if we feel like it.

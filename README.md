@@ -12,7 +12,7 @@ Anything that's inconsistent block wise in the game. Such as there being purpur 
 As of 0.1.0, we have substantial additions in Stone, Blackstone, Endstone, Purpur and Quartz. With minor additions in other areas. All of our block additions currently reach almost 110.
 
 ### How do you guys add so much?
-Alot of it is done through a json generation tool we use which is mainly developed by Deviouslrd. Which is found in another repository. We may change to ARRP or the alike.
+Alot of it is done through a json generation tool we use which is mainly developed by Deviouslrd. Which is found in another repository.
 
 ### When is it going to be finished?
 Eventually.

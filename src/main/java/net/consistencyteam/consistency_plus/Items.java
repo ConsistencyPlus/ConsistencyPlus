@@ -1295,6 +1295,8 @@ public class Items {
         //gray_concrete_slab
         //black_concrete_slab
         //brown_concrete_slab
+    //Soul O Lantern
+    public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, itemSettings()));
 
     public static final Item DEVIN_BLOCKERA = register("devin_blockera", new BlockItem(Blocks.DEVIN_BLOCKERA, new Item.Settings()));
     public static final Item BROKEN_MODIFIKATION = register("broken_modifikation", new BlockItem(Blocks.BROKEN_MODIFIKATION, new Item.Settings()));

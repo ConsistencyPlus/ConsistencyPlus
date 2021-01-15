@@ -13,6 +13,8 @@
     "consistency_plus:end_stone_wall",
     "consistency_plus:cut_end_stone_wall",
     "consistency_plus:smooth_end_stone_wall",
+    "consistency_plus:smooth_sandstone_wall",
+    "consistency_plus:smooth_red_sandstone_wall",
     "consistency_plus:smooth_purpur_wall",
     "consistency_plus:polished_purpur_wall",
     "consistency_plus:purpur_brick_wall",

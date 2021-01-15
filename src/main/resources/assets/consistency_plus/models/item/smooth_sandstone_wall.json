@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "wall": "minecraft:block/smooth_sandstone"
+    "wall": "minecraft:block/sandstone_top"
   }
 }

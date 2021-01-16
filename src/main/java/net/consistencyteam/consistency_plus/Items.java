@@ -1186,22 +1186,24 @@ public class Items {
 //Terracotta
 
     //Terracotta Slab
-        //red_terracotta_slab
-        //orange_terracotta_slab
-        //yellow_terracotta_slab
-        //lime_terracotta_slab
-        //green_terracotta_slab
-        //blue_terracotta_slab
-        //cyan_terracotta_slab
-        //light_blue_terracotta_slab
-        //purple_terracotta_slab
-        //magenta_terracotta_slab
-        //pink_terracotta_slab
-        //white_terracotta_slab
-        //light_gray_terracotta_slab
-        //gray_terracotta_slab
-        //black_terracotta_slab
-        //brown_terracotta_slab
+        public static final Item RED_TERRACOTTA_SLAB = register("red_terracotta_slab", new BlockItem(Blocks.RED_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item ORANGE_TERRACOTTA_SLAB = register("orange_terracotta_slab", new BlockItem(Blocks.ORANGE_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item YELLOW_TERRACOTTA_SLAB = register("yellow_terracotta_slab", new BlockItem(Blocks.YELLOW_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item LIME_TERRACOTTA_SLAB = register("lime_terracotta_slab", new BlockItem(Blocks.LIME_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item GREEN_TERRACOTTA_SLAB = register("green_terracotta_slab", new BlockItem(Blocks.GREEN_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item BLUE_TERRACOTTA_SLAB = register("blue_terracotta_slab", new BlockItem(Blocks.BLUE_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item CYAN_TERRACOTTA_SLAB = register("cyan_terracotta_slab", new BlockItem(Blocks.CYAN_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item LIGHT_BLUE_TERRACOTTA_SLAB = register("light_blue_terracotta_slab", new BlockItem(Blocks.LIGHT_BLUE_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item PURPLE_TERRACOTTA_SLAB = register("purple_terracotta_slab", new BlockItem(Blocks.PURPLE_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item MAGENTA_TERRACOTTA_SLAB = register("magenta_terracotta_slab", new BlockItem(Blocks.MAGENTA_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item PINK_TERRACOTTA_SLAB = register("pink_terracotta_slab", new BlockItem(Blocks.PINK_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item WHITE_TERRACOTTA_SLAB = register("white_terracotta_slab", new BlockItem(Blocks.WHITE_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item LIGHT_GRAY_TERRACOTTA_SLAB = register("light_gray_terracotta_slab", new BlockItem(Blocks.LIGHT_GRAY_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item GRAY_TERRACOTTA_SLAB = register("gray_terracotta_slab", new BlockItem(Blocks.GRAY_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item BLACK_TERRACOTTA_SLAB = register("black_terracotta_slab", new BlockItem(Blocks.BLACK_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item BROWN_TERRACOTTA_SLAB = register("brown_terracotta_slab", new BlockItem(Blocks.BROWN_TERRACOTTA_SLAB, itemSettings()));
+        public static final Item TERRACOTTA_SLAB = register("terracotta_slab", new BlockItem(Blocks.TERRACOTTA_SLAB, itemSettings()));
+
 
     //Terracotta Stairs
         //red_terracotta_slab
@@ -1295,6 +1297,7 @@ public class Items {
         //gray_concrete_slab
         //black_concrete_slab
         //brown_concrete_slab
+
     //Soul O Lantern
     public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, itemSettings()));
 

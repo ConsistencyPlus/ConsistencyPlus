@@ -1183,6 +1183,122 @@ public class Blocks {
         //cracked carved
         //mossy carved
 
+//Terracotta
+
+    //Terracotta Slab
+        public static final Block RED_TERRACOTTA_SLAB = register("red_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(RED_TERRACOTTA)));
+        public static final Block ORANGE_TERRACOTTA_SLAB = register("orange_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
+        public static final Block YELLOW_TERRACOTTA_SLAB = register("yellow_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
+        public static final Block LIME_TERRACOTTA_SLAB = register("lime_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(LIME_TERRACOTTA)));
+        public static final Block GREEN_TERRACOTTA_SLAB = register("green_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(GREEN_TERRACOTTA)));
+        public static final Block BLUE_TERRACOTTA_SLAB = register("blue_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(BLUE_TERRACOTTA)));
+        public static final Block CYAN_TERRACOTTA_SLAB = register("cyan_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(CYAN_TERRACOTTA)));
+        public static final Block LIGHT_BLUE_TERRACOTTA_SLAB = register("light_blue_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(LIGHT_BLUE_TERRACOTTA)));
+        public static final Block PURPLE_TERRACOTTA_SLAB = register("purple_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(PURPLE_TERRACOTTA)));
+        public static final Block MAGENTA_TERRACOTTA_SLAB = register("magenta_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(MAGENTA_TERRACOTTA)));
+        public static final Block PINK_TERRACOTTA_SLAB = register("pink_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(PINK_TERRACOTTA)));
+        public static final Block WHITE_TERRACOTTA_SLAB = register("white_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(WHITE_TERRACOTTA)));
+        public static final Block LIGHT_GRAY_TERRACOTTA_SLAB = register("light_gray_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(LIGHT_GRAY_TERRACOTTA)));
+        public static final Block GRAY_TERRACOTTA_SLAB = register("gray_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(GRAY_TERRACOTTA)));
+        public static final Block BLACK_TERRACOTTA_SLAB = register("black_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
+        public static final Block BROWN_TERRACOTTA_SLAB = register("brown_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
+        public static final Block TERRACOTTA_SLAB = register("terracotta_slab", new SlabBlock(FabricBlockSettings.copy(TERRACOTTA)));
+
+
+    //Terracotta Stairs
+        //red_terracotta_slab
+        //orange_terracotta_slab
+        //yellow_terracotta_slab
+        //lime_terracotta_slab
+        //green_terracotta_slab
+        //blue_terracotta_slab
+        //cyan_terracotta_slab
+        //light_blue_terracotta_slab
+        //purple_terracotta_slab
+        //magenta_terracotta_slab
+        //pink_terracotta_slab
+        //white_terracotta_slab
+        //light_gray_terracotta_slab
+        //gray_terracotta_slab
+        //black_terracotta_slab
+        //brown_terracotta_slab
+
+    //Terracotta Wall
+        //red_terracotta_slab
+        //orange_terracotta_slab
+        //yellow_terracotta_slab
+        //lime_terracotta_slab
+        //green_terracotta_slab
+        //blue_terracotta_slab
+        //cyan_terracotta_slab
+        //light_blue_terracotta_slab
+        //purple_terracotta_slab
+        //magenta_terracotta_slab
+        //pink_terracotta_slab
+        //white_terracotta_slab
+        //light_gray_terracotta_slab
+        //gray_terracotta_slab
+        //black_terracotta_slab
+        //brown_terracotta_slab
+
+
+//Concrete
+
+    //Concrete Slab
+        //red_concrete_slab
+        //orange_concrete_slab
+        //yellow_concrete_slab
+        //lime_concrete_slab
+        //green_concrete_slab
+        //blue_concrete_slab
+        //cyan_concrete_slab
+        //light_blue_concrete_slab
+        //purple_concrete_slab
+        //magenta_concrete_slab
+        //pink_concrete_slab
+        //white_concrete_slab
+        //light_gray_concrete_slab
+        //gray_concrete_slab
+        //black_concrete_slab
+        //brown_concrete_slab
+
+    //Concrete Stairs
+        //red_concrete_slab
+        //orange_concrete_slab
+        //yellow_concrete_slab
+        //lime_concrete_slab
+        //green_concrete_slab
+        //blue_concrete_slab
+        //cyan_concrete_slab
+        //light_blue_concrete_slab
+        //purple_concrete_slab
+        //magenta_concrete_slab
+        //pink_concrete_slab
+        //white_concrete_slab
+        //light_gray_concrete_slab
+        //gray_concrete_slab
+        //black_concrete_slab
+        //brown_concrete_slab
+
+    //Concrete Wall
+        //red_concrete_slab
+        //orange_concrete_slab
+        //yellow_concrete_slab
+        //lime_concrete_slab
+        //green_concrete_slab
+        //blue_concrete_slab
+        //cyan_concrete_slab
+        //light_blue_concrete_slab
+        //purple_concrete_slab
+        //magenta_concrete_slab
+        //pink_concrete_slab
+        //white_concrete_slab
+        //light_gray_concrete_slab
+        //gray_concrete_slab
+        //black_concrete_slab
+        //brown_concrete_slab
+
+
     // Oh god this isnt cursed idea at all nope
     public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MaterialColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));
 

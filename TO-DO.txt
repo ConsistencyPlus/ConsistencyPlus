@@ -1,6 +1,3 @@
-Vanilla blocks are excluded from this list
-
-
 Stone
 - Cracked Cut
 - Cracked Cut Slab

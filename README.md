@@ -2,11 +2,13 @@
 
 Consistency+ is a minecraft mod for 1.16.4+ Fabric Mod Loader about making blocks consistent. 
 
+
 ## What's added?
 
 Anything that's inconsistent block wise in the game. Such as there being purpur pillars but no stone brick pillars. Or there being cobblestone walls but no quartz walls. These issues and many, many more are fixed in this mod!
 
 NOTE: We went a little overkill with the brainstorming for this mod.  Many of the variants we plan on adding are not things that we seriously would expect mojang to consider adding, but moreso as extra blocks for the builders out there.  While a lot of the variants we plan on adding are things that really should be in vanilla, most are not.
+
 
 ## FAQ
 
@@ -29,3 +31,10 @@ Current Planned Additions Count is at 1377, and may raise if we feel like it.
 There are currently no plans for CTM in the base mod, however we may add this in the future through either updates, addons, or a resource pack. 
 
 
+## How do I contribute?
+
+### Programmers & Texture Artists
+If you wish to contribute and are a programmer or a texture artist contact either Carter ( Cart3r#1234 ) or Siuol ( "Siuol" Appeared#5729 ) on Discord. In the future we will have a few paragraphs on how to assist on these regards
+
+### Regulars
+If you cant code or make textures you can assist by either finding bugs, suggest ideas, or just simply getting the word out.

@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:polished_granite_wall",
+      "consistency_plus:polished_granite_wall_stonecutter"
+    ]
+  },
+  "criteria": {
+    "has_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:polished_granite"
+          }
+        ]
+      }
+    }
+  }
+}

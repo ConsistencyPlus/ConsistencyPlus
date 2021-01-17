@@ -427,7 +427,7 @@ public class Blocks {
 //Andesite
 
     //Polished
-        //polished_andesite_wall
+        public static final Block POLISHED_ANDESITE_WALL = register("polished_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 
     //Smooth
         public static final Block SMOOTH_ANDESITE = register("smooth_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
@@ -512,7 +512,7 @@ public class Blocks {
 //Diorite
 
     //Polished
-        //polished_diorite_wall
+        public static final Block POLISHED_DIORITE_WALL = register("polished_diorite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_DIORITE)));
 
     //Smooth
         //smooth_diorite
@@ -598,7 +598,7 @@ public class Blocks {
 //Granite
 
     //Polished
-        //polished_granite_wall
+        public static final Block POLISHED_GRANITE_WALL = register("polished_granite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
 
     //Smooth
         //smooth_granite

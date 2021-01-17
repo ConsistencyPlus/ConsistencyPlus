@@ -122,13 +122,18 @@
   "block.consistency_plus.smooth_andesite": "Smooth Andesite",
   "block.consistency_plus.smooth_andesite_stairs": "Smooth Andesite Stairs",
   "block.consistency_plus.smooth_andesite_wall": "Smooth Andesite Wall",
+  "block.consistency_plus.polished_andesite_wall": "Polished Andesite Wall",
   "block.consistency_plus.smooth_andesite_slab": "Smooth Andesite Slab",
+
+  "block.consistency_plus.polished_diorite_wall": "Polished Diorite Wall",
+
+  "block.consistency_plus.polished_granite_wall": "Polished Granite Wall",
 
   "block.consistency_plus.smooth_sandstone_wall": "Smooth Sandstone Wall",
 
   "block.consistency_plus.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
 
-  "block.consistency_plus.jack_o_soul": "Jack O Soul",
+  "block.consistency_plus.jack_o_soul": "Jack o'Soul",
 
   "block.consistency_plus.terracotta_slab": "Terracotta Slab",
   "block.consistency_plus.red_terracotta_slab": "Red Terracotta Slab",

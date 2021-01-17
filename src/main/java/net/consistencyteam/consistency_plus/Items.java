@@ -417,7 +417,7 @@ public class Items {
 //Andesite
 
     //Polished
-        //polished_andesite_wall
+        public static final Item POLISHED_ANDESITE_WALL = register("polished_andesite_wall", new BlockItem(Blocks.POLISHED_ANDESITE_WALL, itemSettings()));
 
     //Cracked Polished
         //block
@@ -501,7 +501,7 @@ public class Items {
 //Diorite
 
     //Polished
-        //polished_diorite_wall
+        public static final Item POLISHED_DIORITE_WALL = register("polished_diorite_wall", new BlockItem(Blocks.POLISHED_DIORITE_WALL, itemSettings()));
 
     //Cracked Polished
         //block
@@ -586,7 +586,7 @@ public class Items {
 //Granite
 
     //Polished
-        //polished_granite_wall
+        public static final Item POLISHED_GRANITE_WALL = register("polished_granite_wall", new BlockItem(Blocks.POLISHED_GRANITE_WALL, itemSettings()));
 
     //Cracked Polished
         //block

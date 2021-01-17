@@ -89,7 +89,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new BlockItem(Blocks.CARVED_STONE_BRICKS, itemSettings()));
         //cracked carved
         //mossy carved
 //Blackstone
@@ -154,6 +154,7 @@ public class Items {
         public static final Item MOSSY_BLACKSTONE_BRICK_WALL = register("mossy_blackstone_brick_wall", new BlockItem(Blocks.MOSSY_BLACKSTONE_BRICK_WALL, itemSettings()));
 
     //Pillars and Chiseled
+        public static final Item CHISELED_BLACKSTONE = register("chiseled_blackstone", new BlockItem(Blocks.CHISELED_BLACKSTONE, itemSettings()));
         public static final Item MOSSY_CHISELED_BLACKSTONE = register("mossy_chiseled_blackstone", new BlockItem(Blocks.MOSSY_CHISELED_BLACKSTONE, itemSettings()));
         public static final Item CRACKED_CHISELED_BLACKSTONE = register("cracked_chiseled_blackstone", new BlockItem(Blocks.CRACKED_CHISELED_BLACKSTONE, itemSettings()));
         public static final Item BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new BlockItem(Blocks.BLACKSTONE_BRICK_PILLAR, itemSettings()));
@@ -162,9 +163,9 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //chiseled
-        //cracked chiseled
-        //mossy chiseled
+        public static final Item CRACKED_CARVED_BLACKSTONE = register("cracked_carved_blackstone", new BlockItem(Blocks.CRACKED_CARVED_BLACKSTONE, itemSettings()));
+        public static final Item MOSSY_CARVED_BLACKSTONE = register("mossy_carved_blackstone", new BlockItem(Blocks.MOSSY_CARVED_BLACKSTONE, itemSettings()));
+
 
 //Sandstone
 
@@ -386,9 +387,9 @@ public class Items {
         //wall
 
     //Bricks
-        //quartz_brick_slab
-        //quartz_brick_stairs
-        //quartz_brick_wall
+        public static final Item QUARTZ_BRICK_SLAB = register("quartz_bric_slab", new BlockItem(Blocks.QUARTZ_BRICK_SLAB, itemSettings()));
+        public static final Item QUARTZ_BRICK_STAIRS = register("quartz_brick_stairs", new BlockItem(Blocks.QUARTZ_BRICK_STAIRS, itemSettings()));
+        public static final Item QUARTZ_BRICK_WALL = register("quartz_brick_wall", new BlockItem(Blocks.QUARTZ_BRICK_WALL, itemSettings()));
 
     //Cracked Bricks
         //cracked_quartz_bricks
@@ -468,10 +469,11 @@ public class Items {
         //wall
 
     //Bricks
-        //andesite_bricks
-        //andesite_brick_slab
-        //andesite_brick_stairs
-        //andesite_brick_wall
+        public static final Item ANDESITE_BRICKS = register("andesite", new BlockItem(Blocks.ANDESITE_BRICKS, itemSettings()));
+        public static final Item ANDESITE_BRICK_SLAB = register("andesite_slab", new BlockItem(Blocks.ANDESITE_BRICK_SLAB, itemSettings()));
+        public static final Item ANDESITE_BRICK_STAIRS = register("andesite_stairs", new BlockItem(Blocks.ANDESITE_BRICKS_STAIRS, itemSettings()));
+        public static final Item ANDESITE_BRICK_WALL = register("andesite_wall", new BlockItem(Blocks.ANDESITE_BRICKS_WALL, itemSettings()));
+
 
     //Cracked Bricks
         //cracked_andesite_bricks
@@ -534,10 +536,11 @@ public class Items {
         //wall
 
     //Cut
-        //cut_diorite
-        //cut_diorite_slab
-        //cut_diorite_stairs
-        //cut_diorite_wall
+        public static final Item CUT_DIORITE = register("cut_diorite", new BlockItem(Blocks.CUT_DIORITE, itemSettings()));
+        public static final Item CUT_DIORITE_SLAB = register("cut_diorite_slab", new BlockItem(Blocks.CUT_DIORITE_SLAB, itemSettings()));
+        public static final Item CUT_DIORITE_STAIRS = register("cut_diorite_stairs", new BlockItem(Blocks.CUT_DIORITE_STAIRS, itemSettings()));
+        public static final Item CUT_DIORITE_WALL = register("cut_diorite_wall", new BlockItem(Blocks.CUT_DIORITE_WALL, itemSettings()));
+
 
     //Cracked Cut
         //block
@@ -601,10 +604,11 @@ public class Items {
         //wall
 
     //Smooth
-        //smooth_granite
-        //smooth_granite_slab
-        //smooth_granite_stairs
-        //smooth_granite_wall
+        public static final Item SMOOTH_GRANITE = register("smooth_granite", new BlockItem(Blocks.SMOOTH_GRANITE, itemSettings()));
+        public static final Item SMOOTH_GRANITE_SLAB = register("smooth_granite_slab", new BlockItem(Blocks.SMOOTH_GRANITE_SLAB, itemSettings()));
+        public static final Item SMOOTH_GRANITE_STAIRS = register("smooth_granite_stairs", new BlockItem(Blocks.SMOOTH_GRANITE_STAIRS, itemSettings()));
+        public static final Item SMOOTH_GRANITE_WALL = register("smooth_granite_wall", new BlockItem(Blocks.SMOOTH_GRANITE_WALL, itemSettings()));
+
 
     //Cracked Smooth
         //block
@@ -833,10 +837,11 @@ public class Items {
 //Prismarine
 
     //Polished
-        //polished_prismarine
-        //polished_prismarine_slabs
-        //polished_prismarine_stairs
-        //polished_prismarine_wall
+        public static final Item POLISHED_PRISMARINE = register("polished_prismarine", new BlockItem(Blocks.POLISHED_PRISMARINE, itemSettings()));
+        public static final Item POLISHED_PRISMARINE_SLAB = register("polished_prismarine_slab", new BlockItem(Blocks.POLISHED_PRISMARINE_SLAB, itemSettings()));
+        public static final Item POLISHED_PRISMARINE_STAIRS = register("polished_prismarine_stairs", new BlockItem(Blocks.POLISHED_PRISMARINE_STAIRS, itemSettings()));
+        public static final Item POLISHED_PRISMARINE_WALL = register("polished_prismarine_wall", new BlockItem(Blocks.POLISHED_PRISMARINE_WALL, itemSettings()));
+
 
     //Cracked Polished
         //block
@@ -851,10 +856,10 @@ public class Items {
         //wall
 
     //Smooth
-        //smooth_prismarine
-        //smooth_prismarine_slab
-        //smooth_prismarine_stairs
-        //smooth_prismarine_wall
+        public static final Item SMOOTH_PRISMARINE = register("smooth_prismarine", new BlockItem(Blocks.SMOOTH_PRISMARINE, itemSettings()));
+        public static final Item SMOOTH_PRISMARINE_SLAB = register("smooth_prismarine_slab", new BlockItem(Blocks.SMOOTH_PRISMARINE_SLAB, itemSettings()));
+        public static final Item SMOOTH_PRISMARINE_STAIRS = register("smooth_prismarine_stairs", new BlockItem(Blocks.SMOOTH_PRISMARINE_STAIRS, itemSettings()));
+        public static final Item SMOOTH_PRISMARINE_WALL = register("smooth_prismarine_wall", new BlockItem(Blocks.SMOOTH_PRISMARINE_WALL, itemSettings()));
 
     //Cracked Smooth
         //block
@@ -869,10 +874,11 @@ public class Items {
         //wall
 
     //Cut
-        //cut_prismarine
-        //cut_prismarine_slab
-        //cut_prismarine_stairs
-        //cut_prismarine_wall
+        public static final Item CUT_PRISMARINE = register("cut_prismarine", new BlockItem(Blocks.CUT_PRISMARINE, itemSettings()));
+        public static final Item CUT_PRISMARINE_SLAB = register("cut_prismarine_slab", new BlockItem(Blocks.CUT_PRISMARINE_SLAB, itemSettings()));
+        public static final Item CUT_PRISMARINE_STAIRS = register("cut_prismarine_stairs", new BlockItem(Blocks.CUT_PRISMARINE_STAIRS, itemSettings()));
+        public static final Item CUT_PRISMARINE_WALL = register("cut_prismarine_wall", new BlockItem(Blocks.CUT_PRISMARINE_WALL, itemSettings()));
+
 
     //Cracked Cut
         //block
@@ -887,7 +893,7 @@ public class Items {
         //wall
 
     //Bricks
-        //prismarine_brick_wall
+        public static final Item PRISMARINE_BRICK_WALL = register("prismarine_brick_wall", new BlockItem(Blocks.PRISMARINE_BRICK_WALL, itemSettings()));
 
     //Cracked Bricks
         //cracked_prismarine_bricks
@@ -911,20 +917,20 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_PRISMARINE = register("carved_prismarine", new BlockItem(Blocks.CARVED_PRISMARINE, itemSettings()));
         //cracked carved
         //mossy carved
 
 //Dark Prismarine
 
     //Block
-        //dark_prismarine_wall
+        public static final Item DARK_PRISMARINE_WALL = register("dark_prismarine_wall", new BlockItem(Blocks.DARK_PRISMARINE_WALL, itemSettings()));
 
     //Polished
-        //polished_dark_prismarine
-        //polished_dark_prismarine_slabs
-        //polished_dark_prismarine_stairs
-        //polished_dark_prismarine_wall
+        public static final Item POLISHED_DARK_PRISMARINE = register("polished_dark_prismarine", new BlockItem(Blocks.POLISHED_DARK_PRISMARINE, itemSettings()));
+        public static final Item POLISHED_DARK_PRISMARINE_SLAB = register("polished_dark_prismarine_slab", new BlockItem(Blocks.POLISHED_DARK_PRISMARINE_SLAB, itemSettings()));
+        public static final Item POLISHED_DARK_PRISMARINE_STAIRS = register("polished_dark_prismarine_stairs", new BlockItem(Blocks.POLISHED_DARK_PRISMARINE_STAIRS, itemSettings()));
+        public static final Item POLISHED_DARK_PRISMARINE_WALL = register("polished_dark_prismarine_wall", new BlockItem(Blocks.POLISHED_DARK_PRISMARINE_WALL, itemSettings()));
 
     //Cracked Polished
         //block
@@ -939,10 +945,10 @@ public class Items {
         //wall
 
     //Smooth
-        //smooth_dark_prismarine
-        //smooth_dark_prismarine_slab
-        //smooth_dark_prismarine_stairs
-        //smooth_dark_prismarine_wall
+        public static final Item SMOOTH_DARK_PRISMARINE = register("smooth_dark_prismarine", new BlockItem(Blocks.SMOOTH_DARK_PRISMARINE, itemSettings()));
+        public static final Item SMOOTH_DARK_PRISMARINE_SLAB = register("smooth_dark_prismarine_slab", new BlockItem(Blocks.SMOOTH_DARK_PRISMARINE_SLAB, itemSettings()));
+        public static final Item SMOOTH_DARK_PRISMARINE_STAIRS = register("smooth_dark_prismarine_stairs", new BlockItem(Blocks.SMOOTH_DARK_PRISMARINE_STAIRS, itemSettings()));
+        public static final Item SMOOTH_DARK_PRISMARINE_WALL = register("smooth_dark_prismarine_wall", new BlockItem(Blocks.SMOOTH_DARK_PRISMARINE_WALL, itemSettings()));
 
     //Cracked Smooth
         //block
@@ -957,10 +963,10 @@ public class Items {
         //wall
 
     //Cut
-        //cut_dark_prismarine
-        //cut_dark_prismarine_slab
-        //cut_dark_prismarine_stairs
-        //cut_dark_prismarine_wall
+        public static final Item CUT_DARK_PRISMARINE = register("cut_dark_prismarine", new BlockItem(Blocks.CUT_DARK_PRISMARINE, itemSettings()));
+        public static final Item CUT_DARK_PRISMARINE_SLAB = register("cut_dark_prismarine_slab", new BlockItem(Blocks.CUT_DARK_PRISMARINE_SLAB, itemSettings()));
+        public static final Item CUT_DARK_PRISMARINE_STAIRS = register("cut_dark_prismarine_stairs", new BlockItem(Blocks.CUT_DARK_PRISMARINE_STAIRS, itemSettings()));
+        public static final Item CUT_DARK_PRISMARINE_WALL = register("cut_dark_prismarine_wall", new BlockItem(Blocks.CUT_DARK_PRISMARINE_WALL, itemSettings()));
 
     //Cracked Cut
         //block
@@ -993,10 +999,10 @@ public class Items {
         //mossy_dark_prismarine_brick_wall
 
     //Pillar and Chiseled
-        //chiseled_dark_prismarine
+        public static final Item CHISELED_DARK_PRISMARINE = register("chiseled_dark_prismarine", new BlockItem(Blocks.CHISELED_DARK_PRISMARINE, itemSettings()));
         //mossy_chiseled_dark_prismarine
         //cracked_chiseled_dark_prismarine
-        //dark_prismarine_pillar
+        public static final Item DARK_PRISMARINE_PILLAR = register("dark_prismarine_pillar", new BlockItem(Blocks.DARK_PRISMARINE_PILLAR, itemSettings()));
         //mossy_dark_prismarine_pillar
         //cracked_dark_prismarine_pillar
         //corner pillar
@@ -1092,7 +1098,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_PURPUR = register("carved_purpur", new BlockItem(Blocks.CARVED_PURPUR, itemSettings()));
         //cracked carved
         //mossy carved
 
@@ -1179,7 +1185,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_END_STONE = register("carved_end_stone", new BlockItem(Blocks.CARVED_END_STONE, itemSettings()));
         //cracked carved
         //mossy carved
 

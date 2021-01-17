@@ -69,7 +69,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_STONE_BRICKS = register("carved_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
         //cracked carved
         //mossy carved
 
@@ -162,14 +162,14 @@ public class Blocks {
         public static final Block MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
         public static final Block CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
         public static final Block BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block CHISELED_BLACKSTONE = register("chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
         public static final Block MOSSY_CHISELED_BLACKSTONE = register("mossy_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
         public static final Block CRACKED_CHISELED_BLACKSTONE = register("cracked_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //chiseled
-        //cracked carved
-        //mossy carved
+        public static final Block MOSSY_CARVED_BLACKSTONE = register("mossy_carved_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block CRACKED_CARVED_BLACKSTONE = register("cracked_carved_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 
 
 //Sandstone
@@ -395,9 +395,9 @@ public class Blocks {
         //wall
 
     //Bricks
-        //quartz_brick_slab
-        //quartz_brick_stairs
-        //quartz_brick_wall
+        public static final Block QUARTZ_BRICK_SLAB = register("quartz_brick_slab", new SlabBlock(FabricBlockSettings.copy(QUARTZ_BRICKS)));
+        public static final Block QUARTZ_BRICK_STAIRS = register("quartz_brick_stairs", new BaseConsistencyStairBlock(QUARTZ_BRICKS.getDefaultState(),FabricBlockSettings.copy(QUARTZ_BRICKS)));
+        public static final Block QUARTZ_BRICK_WALL = register("quartz_brick_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BRICKS)));
 
     //Cracked Bricks
         //cracked_quartz_bricks
@@ -478,10 +478,11 @@ public class Blocks {
         //wall
 
     //Bricks
-        //andesite_bricks
-        //andesite_brick_slab
-        //andesite_brick_stairs
-        //andesite_brick_wall
+        public static final Block ANDESITE_BRICKS = register("andesite_bricks", new Block(FabricBlockSettings.copy(ANDESITE)));
+        public static final Block ANDESITE_BRICK_SLAB = register("andesite_brick_slab", new SlabBlock(FabricBlockSettings.copy(ANDESITE)));
+        public static final Block ANDESITE_BRICKS_STAIRS = register("andesite_brick_stairs", new BaseConsistencyStairBlock(ANDESITE.getDefaultState(),FabricBlockSettings.copy(ANDESITE)));
+        public static final Block ANDESITE_BRICKS_WALL = register("andesite_brick_wall", new WallBlock(FabricBlockSettings.copy(ANDESITE)));
+
 
     //Cracked Bricks
         //cracked_andesite_bricks
@@ -545,10 +546,10 @@ public class Blocks {
         //wall
 
     //Cut
-        //cut_diorite
-        //cut_diorite_slab
-        //cut_diorite_stairs
-        //cut_diorite_wall
+        public static final Block CUT_DIORITE = register("cut_diorite", new Block(FabricBlockSettings.copy(DIORITE)));
+        public static final Block CUT_DIORITE_SLAB = register("cut_diorite_slab", new SlabBlock(FabricBlockSettings.copy(DIORITE)));
+        public static final Block CUT_DIORITE_STAIRS = register("cut_diorite_stairs", new BaseConsistencyStairBlock(DIORITE.getDefaultState(),FabricBlockSettings.copy(DIORITE)));
+        public static final Block CUT_DIORITE_WALL = register("cut_diorite_wall", new WallBlock(FabricBlockSettings.copy(DIORITE)));
 
     //Cracked Cut
         //block
@@ -601,10 +602,11 @@ public class Blocks {
         public static final Block POLISHED_GRANITE_WALL = register("polished_granite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
 
     //Smooth
-        //smooth_granite
-        //smooth_granite_slab
-        //smooth_granite_stairs
-        //smooth_granite_wall
+        public static final Block SMOOTH_GRANITE = register("smooth_granite", new Block(FabricBlockSettings.copy(GRANITE)));
+        public static final Block SMOOTH_GRANITE_SLAB = register("smooth_granite_slab", new SlabBlock(FabricBlockSettings.copy(GRANITE)));
+        public static final Block SMOOTH_GRANITE_STAIRS = register("smooth_granite_stairs", new BaseConsistencyStairBlock(GRANITE.getDefaultState(),FabricBlockSettings.copy(GRANITE)));
+        public static final Block SMOOTH_GRANITE_WALL = register("smooth_granite_wall", new WallBlock(FabricBlockSettings.copy(GRANITE)));
+
 
     //Cracked Smooth
         //block
@@ -830,10 +832,10 @@ public class Blocks {
 //Prismarine
 
     //Polished
-        //polished_prismarine
-        //polished_prismarine_slabs
-        //polished_prismarine_stairs
-        //polished_prismarine_wall
+        public static final Block POLISHED_PRISMARINE = register("polished_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block POLISHED_PRISMARINE_SLAB = register("polished_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block POLISHED_PRISMARINE_STAIRS = register("polished_prismarine_stairs", new BaseConsistencyStairBlock(POLISHED_PRISMARINE.getDefaultState(),FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block POLISHED_PRISMARINE_WALL = register("polished_prismarine_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE)));
 
     //Cracked Polished
         //block
@@ -848,10 +850,11 @@ public class Blocks {
         //wall
 
     //Smooth
-        //smooth_prismarine
-        //smooth_prismarine_slab
-        //smooth_prismarine_stairs
-        //smooth_prismarine_wall
+        public static final Block SMOOTH_PRISMARINE = register("smooth_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block SMOOTH_PRISMARINE_SLAB = register("smooth_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block SMOOTH_PRISMARINE_STAIRS = register("smooth_prismarine_stairs", new BaseConsistencyStairBlock(SMOOTH_PRISMARINE.getDefaultState(),FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block SMOOTH_PRISMARINE_WALL = register("smooth_prismarine_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE)));
+
 
     //Cracked Smooth
         //block
@@ -866,10 +869,10 @@ public class Blocks {
         //wall
 
     //Cut
-        //cut_prismarine
-        //cut_prismarine_slab
-        //cut_prismarine_stairs
-        //cut_prismarine_wall
+        public static final Block CUT_PRISMARINE = register("cut_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block CUT_PRISMARINE_SLAB = register("cut_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block CUT_PRISMARINE_STAIRS = register("cut_prismarine_stairs", new BaseConsistencyStairBlock(CUT_PRISMARINE.getDefaultState(),FabricBlockSettings.copy(PRISMARINE)));
+        public static final Block CUT_PRISMARINE_WALL = register("cut_prismarine_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE)));
 
     //Cracked Cut
         //block
@@ -884,7 +887,7 @@ public class Blocks {
         //wall
 
     //Bricks
-        //prismarine_brick_wall
+        public static final Block PRISMARINE_BRICK_WALL = register("prismarine_brick_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
 
     //Cracked Bricks
         //cracked_prismarine_bricks
@@ -908,7 +911,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_PRISMARINE = register("carved_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
         //cracked carved
         //mossy carved
 
@@ -916,13 +919,13 @@ public class Blocks {
 //Dark Prismarine
 
     //Block
-        //dark_prismarine_wall
+        public static final Block DARK_PRISMARINE_WALL = register("dark_prismarine", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 
     //Polished
-        //polished_dark_prismarine
-        //polished_dark_prismarine_slabs
-        //polished_dark_prismarine_stairs
-        //polished_dark_prismarine_wall
+        public static final Block POLISHED_DARK_PRISMARINE = register("polished_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block POLISHED_DARK_PRISMARINE_SLAB = register("polished_dark_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block POLISHED_DARK_PRISMARINE_STAIRS = register("polished_dark_prismarine_stairs", new BaseConsistencyStairBlock(DARK_PRISMARINE.getDefaultState(),FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block POLISHED_DARK_PRISMARINE_WALL = register("polished_dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 
     //Cracked Polished
         //block
@@ -937,10 +940,11 @@ public class Blocks {
         //wall
 
     //Smooth
-        //smooth_dark_prismarine
-        //smooth_dark_prismarine_slab
-        //smooth_dark_prismarine_stairs
-        //smooth_dark_prismarine_wall
+        public static final Block SMOOTH_DARK_PRISMARINE = register("smooth_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block SMOOTH_DARK_PRISMARINE_SLAB = register("smooth_dark_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block SMOOTH_DARK_PRISMARINE_STAIRS = register("smooth_dark_prismarine_stairs", new BaseConsistencyStairBlock(SMOOTH_DARK_PRISMARINE.getDefaultState(),FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block SMOOTH_DARK_PRISMARINE_WALL = register("smooth_dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+
 
     //Cracked Smooth
         //block
@@ -955,10 +959,10 @@ public class Blocks {
         //wall
 
     //Cut
-        //cut_dark_prismarine
-        //cut_dark_prismarine_slab
-        //cut_dark_prismarine_stairs
-        //cut_dark_prismarine_wall
+        public static final Block CUT_DARK_PRISMARINE = register("cut_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block CUT_DARK_PRISMARINE_SLAB = register("cut_dark_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block CUT_DARK_PRISMARINE_STAIRS = register("cut_dark_prismarine_stairs", new BaseConsistencyStairBlock(DARK_PRISMARINE.getDefaultState(),FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block CUT_DARK_PRISMARINE_WALL = register("cut_dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 
     //Cracked Cut
         //block
@@ -991,10 +995,10 @@ public class Blocks {
         //mossy_dark_prismarine_brick_wall
 
     //Pillar and Chiseled
-        //chiseled_dark_prismarine
+        public static final Block CHISELED_DARK_PRISMARINE = register("chiseled_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
         //mossy_chiseled_dark_prismarine
         //cracked_chiseled_dark_prismarine
-        //dark_prismarine_pillar
+        public static final Block DARK_PRISMARINE_PILLAR = register("dark_prismarine_pillar", new PillarBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
         //mossy_dark_prismarine_pillar
         //cracked_dark_prismarine_pillar
         //corner pillar
@@ -1091,7 +1095,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_PURPUR = register("carved_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
         //cracked carved
         //mossy carved
 
@@ -1179,7 +1183,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_END_STONE = register("carved_end_stone", new Block(FabricBlockSettings.copy(END_STONE_BRICKS)));
         //cracked carved
         //mossy carved
 

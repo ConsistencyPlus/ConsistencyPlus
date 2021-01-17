@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "bottom": "consistency_plus:block/quartz_brick",
+        "top": "consistency_plus:block/quartz_brick",
+        "side": "consistency_plus:block/quartz_brick"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/stairs",
+    "textures": {
+        "bottom": "consistency_plus:block/cut_diorite",
+        "top": "consistency_plus:block/cut_diorite",
+        "side": "consistency_plus:block/cut_diorite"
+    }
+}

@@ -190,8 +190,8 @@ public class Blocks {
         //wall
 
     //Cut
-        //cut_sandstone_stairs
-        //cut_sandstone_wall
+        public static final Block CUT_SANDSTONE_STAIRS = register("cut_sandstone_stairs", new BaseConsistencyStairBlock(CUT_SANDSTONE.getDefaultState(),FabricBlockSettings.copy(CUT_SANDSTONE)));
+        public static final Block CUT_SANDSTONE_WALL = register("cut_sandstone_wall", new WallBlock(FabricBlockSettings.copy(CUT_SANDSTONE)));
 
     //Cracked Cut
         //block
@@ -273,8 +273,8 @@ public class Blocks {
         //wall
 
     //Cut
-        //cut_red_sandstone_stairs
-        //cut_red_sandstone_wall
+        public static final Block CUT_RED_SANDSTONE_STAIRS = register("cut_red_sandstone_stairs", new BaseConsistencyStairBlock(CUT_SANDSTONE.getDefaultState(),FabricBlockSettings.copy(CUT_SANDSTONE)));
+        public static final Block CUT_RED_SANDSTONE_WALL = register("cut_red_sandstone_wall", new WallBlock(FabricBlockSettings.copy(CUT_SANDSTONE)));
 
     //Cracked Cut
         //block
@@ -919,7 +919,7 @@ public class Blocks {
 //Dark Prismarine
 
     //Block
-        public static final Block DARK_PRISMARINE_WALL = register("dark_prismarine", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block DARK_PRISMARINE_WALL = register("dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 
     //Polished
         public static final Block POLISHED_DARK_PRISMARINE = register("polished_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));

@@ -26,7 +26,6 @@ Stone
 - Corner Pillar
 - Cracked Corner Pillar
 - Mossy Corner Pillar
-- Carved
 - Cracked Carved
 - Mossy Carved
 
@@ -58,13 +57,8 @@ Blackstone
 - Corner Pillar
 - Cracked Corner Pillar
 - Mossy Corner Pillar
-- Chiseled
-- Cracked Carved
-- Mossy Carved
 
 Sandstone
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -118,8 +112,6 @@ Sandstone
 - Mossy Chiseled
 
 Red Sandstone
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -267,9 +259,6 @@ Quartz
 - Mossy Polished Slab
 - Mossy Polished Stairs
 - Mossy Polished Wall
-- Brick Slab
-- Brick Stairs
-- Brick Wall
 - Cracked Bricks
 - Cracked Brick Slab
 - Cracked Brick Stairs
@@ -317,10 +306,6 @@ Andesite
 - Mossy Polished Slab
 - Mossy Polished Stairs
 - Mossy Polished Wall
-- Bricks
-- Brick Slab
-- Brick Stairs
-- Brick Wall
 - Cracked Bricks
 - Cracked Brick Slab
 - Cracked Brick Stairs
@@ -343,10 +328,6 @@ Andesite
 - Mossy Chiseled
 
 Diorite
-- Cut
-- Cut Slab
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -413,10 +394,6 @@ Granite
 - Mossy Cut Slab
 - Mossy Cut Stairs
 - Mossy Cut Wall
-- Smooth
-- Smooth Slab
-- Smooth Stairs
-- Smooth Walls
 - Cracked Smooth
 - Cracked Smooth Slab
 - Cracked Smooth Stairs
@@ -527,10 +504,6 @@ Blue Nether Bricks
 - Mossy Carved
 
 Prismarine
-- Cut
-- Cut Slab
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -539,10 +512,6 @@ Prismarine
 - Mossy Cut Slab
 - Mossy Cut Stairs
 - Mossy Cut Wall
-- Smooth
-- Smooth Slab
-- Smooth Stairs
-- Smooth Wall
 - Cracked Smooth
 - Cracked Smooth Slab
 - Cracked Smooth Stairs
@@ -551,10 +520,6 @@ Prismarine
 - Mossy Smooth Slab
 - Mossy Smooth Stairs
 - Mossy Smooth Wall
-- Polished
-- Polished Slab
-- Polished Stairs
-- Polished Wall
 - Cracked Polished
 - Cracked Polished Slab
 - Cracked Polished Stairs
@@ -563,7 +528,6 @@ Prismarine
 - Mossy Polished Slab
 - Mossy Polished Stairs
 - Mossy Polished Wall
-- Brick Wall
 - Cracked Bricks
 - Cracked Brick Slab
 - Cracked Brick Stairs
@@ -578,7 +542,6 @@ Prismarine
 - Corner Pillar
 - Cracked Corner Pillar
 - Mossy Corner Pillar
-- Carved
 - Cracked Carved
 - Mossy Carved
 - Chiseled
@@ -586,11 +549,6 @@ Prismarine
 - Mossy Chiseled
 
 Dark Prismarine
-- Wall
-- Cut
-- Cut Slab
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -599,10 +557,6 @@ Dark Prismarine
 - Mossy Cut Slab
 - Mossy Cut Stairs
 - Mossy Cut Wall
-- Smooth
-- Smooth Slab
-- Smooth Stairs
-- Smooth Wall
 - Cracked Smooth
 - Cracked Smooth Slab
 - Cracked Smooth Stairs
@@ -611,10 +565,6 @@ Dark Prismarine
 - Mossy Smooth Slab
 - Mossy Smooth Stairs
 - Mossy Smooth Wall
-- Polished
-- Polished Slab
-- Polished Stairs
-- Polished Wall
 - Cracked Polished
 - Cracked Polished Slab
 - Cracked Polished Stairs
@@ -635,7 +585,6 @@ Dark Prismarine
 - Mossy Brick Slab
 - Mossy Brick Stairs
 - Mossy Brick Wall
-- Pillar
 - Cracked Pillar
 - Mossy Pillar
 - Corner Pillar
@@ -644,7 +593,6 @@ Dark Prismarine
 - Carved
 - Cracked Carved
 - Mossy Carved
-- Chiseled
 - Cracked Chiseled
 - Mossy Chiseled
 
@@ -691,7 +639,6 @@ End Stone
 - Corner Pillar
 - Cracked Corner Pillar
 - Mossy Corner Pillar
-- Carved
 - Cracked Carved
 - Mossy Carved
 - Cracked Chiseled
@@ -735,7 +682,6 @@ Purpur
 - Corner Pillar
 - Cracked Corner Pillar
 - Mossy Corner Pillar
-- Carved
 - Cracked Carved
 - Mossy Carved
 - Cracked Chiseled

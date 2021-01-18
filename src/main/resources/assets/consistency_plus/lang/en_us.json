@@ -93,7 +93,7 @@
   "block.consistency_plus.polished_purpur_stairs": "Polished Purpur Stairs",
   "block.consistency_plus.polished_purpur_wall": "Polished Purpur Wall",
   "block.consistency_plus.chiseled_purpur_block": "Chiseled Purpur",
-  "block.consistency_plus.carved_purpur_block": "Carved Purpur",
+  "block.consistency_plus.carved_purpur": "Carved Purpur",
 
   "block.consistency_plus.clay_slab": "Clay Slab",
   "block.consistency_plus.clay_stairs": "Clay Stairs",
@@ -153,8 +153,12 @@
   "block.consistency_plus.smooth_granite_wall": "Smooth Granite Wall",
 
   "block.consistency_plus.smooth_sandstone_wall": "Smooth Sandstone Wall",
+  "block.consistency_plus.cut_sandstone_wall": "Cut Sandstone Wall",
+  "block.consistency_plus.cut_sandstone_stairs": "Cut Sandstone Stairs",
 
   "block.consistency_plus.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
+  "block.consistency_plus.cut_red_sandstone_wall": "Cut Red Sandstone Wall",
+  "block.consistency_plus.cut_red_sandstone_stairs": "Cut Sandstone Stairs",
 
   "block.consistency_plus.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.consistency_plus.cut_prismarine": "Cut Prismarine",
@@ -171,7 +175,7 @@
   "block.consistency_plus.polished_prismarine_wall": "Polished Prismarine Wall",
   "block.consistency_plus.carved_prismarine": "Carved Prismarine",
 
-  "block.consistency_plus.dark_prismarine": "Dark Prismarine Wall",
+  "block.consistency_plus.dark_prismarine_wall": "Dark Prismarine Wall",
   "block.consistency_plus.dark_prismarine_pillar": "Dark Prismarine Pillar",
   "block.consistency_plus.chiseled_dark_prismarine": "Chiseled Dark Prismarine",
   "block.consistency_plus.cut_dark_prismarine": "Cut Dark Prismarine",

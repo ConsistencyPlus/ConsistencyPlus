@@ -1,0 +1,99 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "template_wall_post",
+	"textures": {
+		"3": "minecraft:block/red_sandstone_top",
+		"4": "minecraft:block/cut_red_sandstone",
+		"particle": "minecraft:block/cut_red_sandstone"
+	},
+	"elements": [
+		{
+			"name": "Center post",
+			"from": [4, 0, 4],
+			"to": [12, 16, 12],
+			"faces": {
+				"north": {"uv": [4, 0, 12, 16], "texture": "#4"},
+				"east": {"uv": [4, 0, 12, 16], "texture": "#4"},
+				"south": {"uv": [4, 0, 12, 16], "texture": "#4"},
+				"west": {"uv": [4, 0, 12, 16], "texture": "#4"},
+				"up": {"uv": [4, 4, 12, 12], "texture": "#3", "cullface": "up"},
+				"down": {"uv": [4, 4, 12, 12], "texture": "#3", "cullface": "down"}
+			}
+		},
+		{
+			"name": "wall",
+			"from": [0, 0, 5],
+			"to": [8, 14, 11],
+			"faces": {
+				"north": {"uv": [8, 2, 16, 16], "texture": "#4"},
+				"south": {"uv": [0, 2, 8, 16], "texture": "#4"},
+				"west": {"uv": [5, 2, 11, 16], "texture": "#4", "cullface": "north"},
+				"up": {"uv": [5, 0, 11, 8], "rotation": 270, "texture": "#3"},
+				"down": {"uv": [5, 8, 11, 16], "rotation": 90, "texture": "#3", "cullface": "down"}
+			}
+		},
+		{
+			"name": "wall",
+			"from": [8, 0, 5],
+			"to": [16, 14, 11],
+			"faces": {
+				"north": {"uv": [0, 2, 8, 16], "texture": "#4"},
+				"east": {"uv": [5, 2, 11, 16], "texture": "#4", "cullface": "north"},
+				"south": {"uv": [8, 2, 16, 16], "texture": "#4"},
+				"up": {"uv": [5, 8, 11, 16], "rotation": 90, "texture": "#3"},
+				"down": {"uv": [5, 0, 11, 8], "rotation": 270, "texture": "#3", "cullface": "down"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 135, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 135, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"translation": [0, 13, 7]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "template_wall_post",
+			"origin": [8, 8, 8],
+			"children": [0]
+		},
+		{
+			"name": "template_wall_side",
+			"origin": [8, 8, 8],
+			"children": [1]
+		},
+		{
+			"name": "template_wall_side",
+			"origin": [8, 8, 8],
+			"children": [2]
+		}
+	]
+}

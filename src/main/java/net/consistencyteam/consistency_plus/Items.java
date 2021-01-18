@@ -185,8 +185,8 @@ public class Items {
         //wall
 
     //Cut
-        //cut_sandstone_stairs
-        //cut_sandstone_wall
+        public static final Item CUT_SANDSTONE_STAIRS = register("cut_sandstone_stairs", new BlockItem(Blocks.CUT_SANDSTONE_STAIRS, itemSettings()));
+        public static final Item CUT_SANDSTONE_WALL = register("cut_sandstone_wall", new BlockItem(Blocks.CUT_SANDSTONE_WALL, itemSettings()));
 
     //Cracked Cut
         //block
@@ -267,8 +267,8 @@ public class Items {
         //wall
 
     //Cut
-        //cut_red_sandstone_stairs
-        //cut_red_sandstone_wall
+        public static final Item CUT_RED_SANDSTONE_STAIRS = register("cut_red_sandstone_stairs", new BlockItem(Blocks.CUT_RED_SANDSTONE_STAIRS, itemSettings()));
+        public static final Item CUT_RED_SANDSTONE_WALL = register("cut_red_sandstone_wall", new BlockItem(Blocks.CUT_RED_SANDSTONE_WALL, itemSettings()));
 
     //Cracked Cut
         //block
@@ -387,7 +387,7 @@ public class Items {
         //wall
 
     //Bricks
-        public static final Item QUARTZ_BRICK_SLAB = register("quartz_bric_slab", new BlockItem(Blocks.QUARTZ_BRICK_SLAB, itemSettings()));
+        public static final Item QUARTZ_BRICK_SLAB = register("quartz_brick_slab", new BlockItem(Blocks.QUARTZ_BRICK_SLAB, itemSettings()));
         public static final Item QUARTZ_BRICK_STAIRS = register("quartz_brick_stairs", new BlockItem(Blocks.QUARTZ_BRICK_STAIRS, itemSettings()));
         public static final Item QUARTZ_BRICK_WALL = register("quartz_brick_wall", new BlockItem(Blocks.QUARTZ_BRICK_WALL, itemSettings()));
 
@@ -469,10 +469,10 @@ public class Items {
         //wall
 
     //Bricks
-        public static final Item ANDESITE_BRICKS = register("andesite", new BlockItem(Blocks.ANDESITE_BRICKS, itemSettings()));
-        public static final Item ANDESITE_BRICK_SLAB = register("andesite_slab", new BlockItem(Blocks.ANDESITE_BRICK_SLAB, itemSettings()));
-        public static final Item ANDESITE_BRICK_STAIRS = register("andesite_stairs", new BlockItem(Blocks.ANDESITE_BRICKS_STAIRS, itemSettings()));
-        public static final Item ANDESITE_BRICK_WALL = register("andesite_wall", new BlockItem(Blocks.ANDESITE_BRICKS_WALL, itemSettings()));
+        public static final Item ANDESITE_BRICKS = register("andesite_bricks", new BlockItem(Blocks.ANDESITE_BRICKS, itemSettings()));
+        public static final Item ANDESITE_BRICK_SLAB = register("andesite_brick_slab", new BlockItem(Blocks.ANDESITE_BRICK_SLAB, itemSettings()));
+        public static final Item ANDESITE_BRICK_STAIRS = register("andesite_brick_stairs", new BlockItem(Blocks.ANDESITE_BRICKS_STAIRS, itemSettings()));
+        public static final Item ANDESITE_BRICK_WALL = register("andesite_brick_wall", new BlockItem(Blocks.ANDESITE_BRICKS_WALL, itemSettings()));
 
 
     //Cracked Bricks

@@ -919,7 +919,8 @@ public class Blocks {
 //Dark Prismarine
 
     //Block
-        public static final Block DARK_PRISMARINE_WALL = register("dark_prismarine", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block DARK_PRISMARINE_WALL = register("dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+// I have made a colossal error in my judgement.
 
     //Polished
         public static final Block POLISHED_DARK_PRISMARINE = register("polished_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));

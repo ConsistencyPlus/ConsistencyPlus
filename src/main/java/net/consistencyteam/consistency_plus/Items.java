@@ -451,10 +451,10 @@ public class Items {
         //wall
 
     //Cut
-        //cut_andesite
-        //cut_andesite_slab
-        //cut_andesite_stairs
-        //cut_andesite_wall
+        public static final Item CUT_ANDESITE = register("cut_andesite", new BlockItem(Blocks.CUT_ANDESITE, itemSettings()));
+        public static final Item CUT_ANDESITE_SLAB = register("cut_andesite_slab", new BlockItem(Blocks.CUT_ANDESITE_SLAB, itemSettings()));
+        public static final Item CUT_ANDESITE_STAIRS = register("cut_andesite_stairs", new BlockItem(Blocks.CUT_ANDESITE_STAIRS, itemSettings()));
+        public static final Item CUT_ANDESITE_WALL = register("cut_andesite_wall", new BlockItem(Blocks.CUT_ANDESITE_WALL, itemSettings()));
 
     //Cracked Cut
         //block

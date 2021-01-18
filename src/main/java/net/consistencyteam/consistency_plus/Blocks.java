@@ -460,10 +460,10 @@ public class Blocks {
         //wall
 
     //Cut
-        //cut_andesite
-        //cut_andesite_slab
-        //cut_andesite_stairs
-        //cut_andesite_wall
+        public static final Block CUT_ANDESITE = register("cut_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
+        public static final Block CUT_ANDESITE_SLAB = register("cut_andesite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
+        public static final Block CUT_ANDESITE_STAIRS = register("cut_andesite_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(),FabricBlockSettings.copy(QUARTZ_BLOCK)));
+        public static final Block CUT_ANDESITE_WALL = register("cut_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 
     //Cracked Cut
         //block

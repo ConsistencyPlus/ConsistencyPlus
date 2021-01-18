@@ -34,7 +34,7 @@ There are currently no plans for CTM in the base mod, however we may add this in
 ## How do I contribute?
 
 ### Programmers & Texture Artists
-If you wish to contribute and are a programmer or a texture artist contact either Carter ( Cart3r#1234 ) or Siuol ( "Siuol" Appeared#5729 ) on Discord. In the future we will have a few paragraphs on how to assist on these regards
+If you wish to contribute and are a programmer or a texture artist contact either Carter ( Cart3r#7285 ) or Siuol ( "Siuol" Appeared#5729 ) on Discord. In the future we will have a few paragraphs on how to assist on these regards
 
 ### Regulars
 If you cant code or make textures you can assist by either finding bugs, suggest ideas, or just simply getting the word out.

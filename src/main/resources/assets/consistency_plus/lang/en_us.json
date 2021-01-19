@@ -155,6 +155,10 @@
   "block.consistency_plus.smooth_granite_slab": "Smooth Granite Slab",
   "block.consistency_plus.smooth_granite_stairs": "Smooth Granite Stairs",
   "block.consistency_plus.smooth_granite_wall": "Smooth Granite Wall",
+  "block.consistency_plus.cut_granite": "Cut Granite",
+  "block.consistency_plus.cut_granite_slab": "Cut Granite Slab",
+  "block.consistency_plus.cut_granite_stairs": "Cut Granite Stairs",
+  "block.consistency_plus.cut_granite_wall": "Cut Granite Wall",
 
   "block.consistency_plus.smooth_sandstone_wall": "Smooth Sandstone Wall",
   "block.consistency_plus.cut_sandstone_wall": "Cut Sandstone Wall",

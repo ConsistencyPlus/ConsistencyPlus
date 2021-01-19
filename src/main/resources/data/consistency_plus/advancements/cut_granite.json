@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:cut_granite_slab",
+      "consistency_plus:cut_granite_slab_stonecutter",
+      "consistency_plus:cut_granite_stairs",
+      "consistency_plus:cut_granite_stairs_stonecutter",
+      "consistency_plus:cut_granite_wall",
+      "consistency_plus:cut_granite_wall_stonecutter"
+    ]
+  },
+  "criteria": {
+    "has_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "consistency_plus:cut_granite"
+          }
+        ]
+      }
+    }
+  }
+}

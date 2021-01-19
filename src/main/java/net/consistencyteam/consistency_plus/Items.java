@@ -623,10 +623,10 @@ public class Items {
         //wall
 
     //Cut
-        //cut_granite
-        //cut_granite_slab
-        //cut_granite_stairs
-        //cut_granite_wall
+        public static final Item CUT_GRANITE = register("cut_granite", new BlockItem(Blocks.CUT_GRANITE, itemSettings()));
+        public static final Item CUT_GRANITE_SLAB = register("cut_granite_slab", new BlockItem(Blocks.CUT_GRANITE_SLAB, itemSettings()));
+        public static final Item CUT_GRANITE_STAIRS = register("cut_granite_stairs", new BlockItem(Blocks.CUT_GRANITE_STAIRS, itemSettings()));
+        public static final Item CUT_GRANITE_WALL = register("cut_granite_wall", new BlockItem(Blocks.CUT_GRANITE_WALL, itemSettings()));
 
     //Cracked Cut
         //block

@@ -638,10 +638,10 @@ public class Blocks {
         //wall
 
     //Cut
-        //cut_granite
-        //cut_granite_slab
-        //cut_granite_stairs
-        //cut_granite_wall
+        public static final Block CUT_GRANITE = register("cut_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
+        public static final Block CUT_GRANITE_SLAB = register("cut_granite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
+        public static final Block CUT_GRANITE_STAIRS = register("cut_granite_stairs", new BaseConsistencyStairBlock(POLISHED_GRANITE.getDefaultState(),FabricBlockSettings.copy(QUARTZ_BLOCK)));
+        public static final Block CUT_GRANITE_WALL = register("cut_granite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
 
     //Cracked Cut
         //block

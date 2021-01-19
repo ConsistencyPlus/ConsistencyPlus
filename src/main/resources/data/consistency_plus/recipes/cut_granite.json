@@ -6,10 +6,10 @@
     " X "
   ],
   "key": {
-    "X": {"item": "consistency_plus:andesite_brick_slab"}
+    "X": {"item": "consistency_plus:granite_brick_slab"}
   },
   "result": {
-    "item": "consistency_plus:cut_andesite",
-    "count": 1
+    "item": "consistency_plus:cut_granite",
+    "count": 4
   }
 }

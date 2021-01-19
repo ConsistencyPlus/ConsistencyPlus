@@ -2,8 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "consistency_plus:smooth_andesite",
-      "consistency_plus:cut_andesite"
+      "consistency_plus:smooth_granite",
+      "consistency_plus:cut_granite"
     ]
   },
   "criteria": {
@@ -12,7 +12,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:andesite"
+            "item": "minecraft:granite"
           }
         ]
       }

@@ -2,7 +2,7 @@
 name: Feature request
 about: New ideas go here! Be sure to check our TO-DO.txt first!
 title: "[FEATURE REQUEST]"
-labels: enhancement
+labels: ''
 assignees: ''
 
 ---

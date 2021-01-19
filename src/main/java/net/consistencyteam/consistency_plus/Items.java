@@ -1306,6 +1306,11 @@ public class Items {
         //black_concrete_slab
         //brown_concrete_slab
 
+    //Obsidian
+        public static final Item OBSIDIAN_WALL = register("obsidian_wall", new BlockItem(Blocks.OBSIDIAN_WALL, itemSettings()));
+        public static final Item OBSIDIAN_SLAB = register("obsidian_slab", new BlockItem(Blocks.OBSIDIAN_SLAB, itemSettings()));
+        public static final Item OBSIDIAN_STAIRS = register("obsidian_stairs", new BlockItem(Blocks.OBSIDIAN_STAIRS, itemSettings()));
+
     //Soul O Lantern
     public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, itemSettings()));
 

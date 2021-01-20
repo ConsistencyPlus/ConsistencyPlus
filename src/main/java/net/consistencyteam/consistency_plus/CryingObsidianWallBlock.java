@@ -1,9 +1,7 @@
 package net.consistencyteam.consistency_plus;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.WallBlock;
 import net.minecraft.particle.ParticleTypes;

@@ -22,12 +22,12 @@ public class ItemGroups {
         return new Item.Settings().group(CONSISTENCY_PLUS_BRICK);
     }
 
-    public static final ItemGroup CONSISTENCY_PLUS_LESSER_STONE = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "lesser_stone"), () -> new ItemStack(Blocks.CUT_GRANITE_WALL));
+    public static final ItemGroup CONSISTENCY_PLUS_LESSER_STONE = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "lesser_stone"), () -> new ItemStack(Blocks.ANDESITE_BRICKS));
     public static Item.Settings consistencyPlusLesserStoneItemSettings() {
         return new Item.Settings().group(CONSISTENCY_PLUS_LESSER_STONE);
     }
 
-    public static final ItemGroup CONSISTENCY_PLUS_DYEABLE = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "dyeable"), () -> new ItemStack(Blocks.TERRACOTTA_SLAB));
+    public static final ItemGroup CONSISTENCY_PLUS_DYEABLE = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "dyeable"), () -> new ItemStack(Blocks.TERRACOTTA_STAIRS));
     public static Item.Settings consistencyPlusDyeableItemSettings() {
         return new Item.Settings().group(CONSISTENCY_PLUS_DYEABLE);
     }
@@ -37,7 +37,7 @@ public class ItemGroups {
         return new Item.Settings().group(CONSISTENCY_PLUS_MISC);
     }
 
-    public static final ItemGroup CONSISTENCY_PLUS_EXTRA = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "extra"), () -> new ItemStack(Blocks.BROKEN_MODIFIKATION));
+    public static final ItemGroup CONSISTENCY_PLUS_EXTRA = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "extra"), () -> new ItemStack(Blocks.JACK_O_SOUL));
     public static Item.Settings consistencyPlusExtraItemSettings() {
         return new Item.Settings().group(CONSISTENCY_PLUS_EXTRA);
     }

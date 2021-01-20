@@ -250,11 +250,11 @@
 
   "block.consistency_plus.netherite_stairs": "Netherite Stairs",
 
-  "itemGroup.consistency_plus.stone": "Consistency+ Stone",
-  "itemGroup.consistency_plus.sandstone": "Consistency+ Sandstone",
-  "itemGroup.consistency_plus.brick": "Consistency+ Brick",
-  "itemGroup.consistency_plus.lesser_stone": "Consistency+ Lesser Stone",
-  "itemGroup.consistency_plus.dyeable": "Consistency+ Dyeable",
+  "itemGroup.consistency_plus.stone": "Consistency+ Stones",
+  "itemGroup.consistency_plus.sandstone": "Consistency+ Sandstones",
+  "itemGroup.consistency_plus.brick": "Consistency+ Bricks",
+  "itemGroup.consistency_plus.lesser_stone": "Consistency+ Lesser Stones",
+  "itemGroup.consistency_plus.dyeable": "Consistency+ Dyeables",
   "itemGroup.consistency_plus.misc": "Consistency+ Misc",
-  "itemGroup.consistency_plus.extra": "Consistency+ Extra"
+  "itemGroup.consistency_plus.extra": "Consistency+ Extras"
 }

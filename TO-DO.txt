@@ -278,10 +278,6 @@ Quartz
 - Mossy Chiseled
 
 Andesite
-- Cut
-- Cut Slab
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -382,10 +378,6 @@ Diorite
 - Mossy Chiseled
 
 Granite
-- Cut
-- Cut Slab
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -597,10 +589,6 @@ Dark Prismarine
 - Mossy Chiseled
 
 End Stone
-- Cut
-- Cut Slab
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -645,10 +633,6 @@ End Stone
 - Mossy Chiseled
 
 Purpur
-- Cut
-- Cut Slab
-- Cut Stairs
-- Cut Wall
 - Cracked Cut
 - Cracked Cut Slab
 - Cracked Cut Stairs
@@ -686,3 +670,5 @@ Purpur
 - Mossy Carved
 - Cracked Chiseled
 - Mossy Chiseled
+
+A fuckton of crafting recipes

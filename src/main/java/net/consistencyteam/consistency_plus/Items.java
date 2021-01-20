@@ -11,15 +11,6 @@ import net.minecraft.util.registry.Registry;
 
 
 public class Items {
-
-    //private static final ItemGroup CONSISTENCY_PLUS_GROUP = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "group"), () -> new ItemStack(Blocks.STONE_BRICK_PILLAR));
-
-    //public static Item.Settings ItemGroups.consistencyPlusStoneItemSettings() {
-    //    return new Item.Settings().group(CONSISTENCY_PLUS_GROUP);
-    //}
-    
-
-
     /*
     templates:
     block item: public static final Item SMOOTH_STONE_WALL = register("smooth_stone_wall", new BlockItem(Blocks.SMOOTH_STONE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));

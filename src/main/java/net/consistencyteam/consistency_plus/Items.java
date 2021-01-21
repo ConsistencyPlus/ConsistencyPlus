@@ -360,10 +360,10 @@ public class Items {
         //wall
 
     //Polished
-        public static final Item POLISHED_QUARTZ = register("polished_quartz", new BlockItem(Blocks.POLISHED_QUARTZ, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item POLISHED_QUARTZ_WALL = register("polished_quartz_wall", new BlockItem(Blocks.POLISHED_QUARTZ_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item POLISHED_QUARTZ_STAIRS = register("polished_quartz_stairs", new BlockItem(Blocks.POLISHED_QUARTZ_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item POLISHED_QUARTZ_SLAB = register("polished_quartz_slab", new BlockItem(Blocks.POLISHED_QUARTZ_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item POLISHED_QUARTZ = register("polished_quartz", new BlockItem(Blocks.POLISHED_QUARTZ, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item POLISHED_QUARTZ_WALL = register("polished_quartz_wall", new BlockItem(Blocks.POLISHED_QUARTZ_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item POLISHED_QUARTZ_STAIRS = register("polished_quartz_stairs", new BlockItem(Blocks.POLISHED_QUARTZ_STAIRS, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item POLISHED_QUARTZ_SLAB = register("polished_quartz_slab", new BlockItem(Blocks.POLISHED_QUARTZ_SLAB, ItemGroups.consistencyPlusMiscItemSettings()));
 
 
     //Cracked Polished
@@ -1311,7 +1311,7 @@ public class Items {
         public static final Item CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new BlockItem(Blocks.CRYING_OBSIDIAN_SLAB, ItemGroups.consistencyPlusExtraItemSettings()));
         public static final Item CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new BlockItem(Blocks.CRYING_OBSIDIAN_STAIRS, ItemGroups.consistencyPlusExtraItemSettings()));
 
-    //Soul O Lantern
+    //Soul o'Lantern
     public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, ItemGroups.consistencyPlusExtraItemSettings()));
 
     public static final Item DEVIN_BLOCKERA = register("devin_blockera", new BlockItem(Blocks.DEVIN_BLOCKERA, new Item.Settings()));

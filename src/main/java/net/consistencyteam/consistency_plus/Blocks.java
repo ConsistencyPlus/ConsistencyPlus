@@ -316,9 +316,9 @@ public class Blocks {
 
     //Bricks
         public static final Block RED_SANDSTONE_BRICKS = register("red_sandstone_bricks", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
-        public static final Block RED_SANDSTONE_BRICK_SLAB  = register("red_sandstone_slab_brick", new SlabBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
-        public static final Block RED_SANDSTONE_BRICK_STAIRS = register("red_sandstone_stairs_brick", new BaseConsistencyStairBlock(RED_SANDSTONE.getDefaultState(),FabricBlockSettings.copy(RED_SANDSTONE)));
-        public static final Block RED_SANDSTONE_BRICK_WALL = register("red_sandstone_wall_brick", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block RED_SANDSTONE_BRICK_SLAB  = register("red_sandstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block RED_SANDSTONE_BRICK_STAIRS = register("red_sandstone_brick_stairs", new BaseConsistencyStairBlock(RED_SANDSTONE.getDefaultState(),FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block RED_SANDSTONE_BRICK_WALL = register("red_sandstone_brick_wall", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 
     //Cracked Bricks
         //cracked_red_sandstone_bricks

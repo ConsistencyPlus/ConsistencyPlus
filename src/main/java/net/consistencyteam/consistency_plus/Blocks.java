@@ -230,10 +230,11 @@ public class Blocks {
         //wall
 
     //Bricks
-        //sandstone_bricks
-        //sandstone_brick_slab
-        //sandstone_brick_stairs
-        //sandstone_brick_wall
+        public static final Block SANDSTONE_BRICKS = register("sandstone_bricks", new Block(FabricBlockSettings.copy(SANDSTONE)));
+        public static final Block SANDSTONE_BRICK_SLAB  = register("sandstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(SANDSTONE)));
+        public static final Block SANDSTONE_BRICK_STAIRS = register("sandstone_brick_stairs", new BaseConsistencyStairBlock(SANDSTONE.getDefaultState(),FabricBlockSettings.copy(SANDSTONE)));
+        public static final Block SANDSTONE_BRICK_WALL = register("sandstone_brick_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
+
 
     //Cracked Bricks
         //cracked_sandstone_bricks
@@ -295,10 +296,11 @@ public class Blocks {
         //wall
 
     //Polished
-        //polished_red_sandstone
-        //polished_red_sandstone_slab
-        //polished_red_sandstone_stairs
-        //polished_red_sandstone_wall
+        public static final Block POLISHED_RED_SANDSTONE = register("polished_red_sandstone", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block POLISHED_RED_SANDSTONE_SLAB  = register("polished_red_sandstone_slab", new SlabBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block POLISHED_RED_SANDSTONE_STAIRS = register("polished_red_sandstone_stairs", new BaseConsistencyStairBlock(RED_SANDSTONE.getDefaultState(),FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block POLISHED_RED_SANDSTONE_WALL = register("polished_red_sandstone_wall", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
+
 
     //Cracked Polished
         //block
@@ -313,10 +315,10 @@ public class Blocks {
         //wall
 
     //Bricks
-        //red_sandstone_bricks
-        //red_sandstone_brick_slab
-        //red_sandstone_brick_stairs
-        //red_sandstone_brick_wall
+        public static final Block RED_SANDSTONE_BRICKS = register("red_sandstone_bricks", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block RED_SANDSTONE_BRICK_SLAB  = register("red_sandstone_slab_brick", new SlabBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block RED_SANDSTONE_BRICK_STAIRS = register("red_sandstone_stairs_brick", new BaseConsistencyStairBlock(RED_SANDSTONE.getDefaultState(),FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block RED_SANDSTONE_BRICK_WALL = register("red_sandstone_wall_brick", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 
     //Cracked Bricks
         //cracked_red_sandstone_bricks
@@ -383,10 +385,10 @@ public class Blocks {
         //wall
 
     //Polished
-        //polished_quartz
-        //polished_quartz_slab
-        //polished_quartz_stairs
-        //polished_quartz_wall
+        public static final Block POLISHED_QUARTZ = register("polished_quartz", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
+        public static final Block POLISHED_QUARTZ_SLAB  = register("polished_quartz_slab", new SlabBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
+        public static final Block POLISHED_QUARTZ_STAIRS = register("polished_quartz_stairs", new BaseConsistencyStairBlock(QUARTZ_BLOCK.getDefaultState(),FabricBlockSettings.copy(QUARTZ_BLOCK)));
+        public static final Block POLISHED_QUARTZ_WALL = register("polished_quartz_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 
     //Cracked Polished
         //block

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:light_gray_concrete"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:light_gray_concrete_slab",
+        "count": 6
+    }
+}

@@ -4,7 +4,7 @@
             "model": "consistency_plus:block/brown_concrete_slab"
         },
         "type=double": {
-            "model": "consistency_plus:block/brown_concrete"
+            "model": "minecraft:block/brown_concrete"
         },
         "type=top": {
             "model": "consistency_plus:block/brown_concrete_slab_top"

@@ -191,9 +191,9 @@ public class Items {
 
     //Polished
         public static final Item POLISHED_SANDSTONE = register("polished_sandstone", new BlockItem(Blocks.POLISHED_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item POLISHED_SANDSTONE_WALL = register("polished_sandstone_wall", new BlockItem(Blocks.POLISHED_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item POLISHED_SANDSTONE_STAIRS = register("polished_sandstone_stairs", new BlockItem(Blocks.POLISHED_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
         public static final Item POLISHED_SANDSTONE_SLAB = register("polished_sandstone_slab", new BlockItem(Blocks.POLISHED_SANDSTONE_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item POLISHED_SANDSTONE_STAIRS = register("polished_sandstone_stairs", new BlockItem(Blocks.POLISHED_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item POLISHED_SANDSTONE_WALL = register("polished_sandstone_wall", new BlockItem(Blocks.POLISHED_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
 
     //Cracked Polished
         //block
@@ -209,9 +209,9 @@ public class Items {
 
     //Bricks
         public static final Item SANDSTONE_BRICKS = register("sandstone_bricks", new BlockItem(Blocks.SANDSTONE_BRICKS, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item SANDSTONE_BRICK_WALL = register("sandstone_brick_wall", new BlockItem(Blocks.SANDSTONE_BRICK_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item SANDSTONE_BRICk_STAIRS = register("sandstone_brick_stairs", new BlockItem(Blocks.SANDSTONE_BRICK_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
         public static final Item SANDSTONE_BRICK_SLAB = register("sandstone_brick_slab", new BlockItem(Blocks.SANDSTONE_BRICK_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SANDSTONE_BRICk_STAIRS = register("sandstone_brick_stairs", new BlockItem(Blocks.SANDSTONE_BRICK_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SANDSTONE_BRICK_WALL = register("sandstone_brick_wall", new BlockItem(Blocks.SANDSTONE_BRICK_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
 
 
     //Cracked Bricks
@@ -274,9 +274,9 @@ public class Items {
 
     //Polished
         public static final Item POLISHED_RED_SANDSTONE = register("polished_red_sandstone", new BlockItem(Blocks.POLISHED_RED_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item POLISHED_RED_SANDSTONE_WALL = register("polished_red_sandstone_wall", new BlockItem(Blocks.POLISHED_RED_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item POLISHED_RED_SANDSTONE_STAIRS = register("polished_red_sandstone_stairs", new BlockItem(Blocks.POLISHED_RED_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
         public static final Item POLISHED_RED_SANDSTONE_SLAB = register("polished_red_sandstone_slab", new BlockItem(Blocks.POLISHED_RED_SANDSTONE_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item POLISHED_RED_SANDSTONE_STAIRS = register("polished_red_sandstone_stairs", new BlockItem(Blocks.POLISHED_RED_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item POLISHED_RED_SANDSTONE_WALL = register("polished_red_sandstone_wall", new BlockItem(Blocks.POLISHED_RED_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
 
 
     //Cracked Polished
@@ -293,9 +293,9 @@ public class Items {
 
     //Bricks
         public static final Item RED_SANDSTONE_BRICKS = register("red_sandstone_bricks", new BlockItem(Blocks.RED_SANDSTONE_BRICKS, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item RED_SANDSTONE_BRICK_WALL = register("red_sandstone_brick_wall", new BlockItem(Blocks.RED_SANDSTONE_BRICK_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
-        public static final Item RED_SANDSTONE_BRICk_STAIRS = register("red_sandstone_brick_stairs", new BlockItem(Blocks.RED_SANDSTONE_BRICK_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
         public static final Item RED_SANDSTONE_BRICK_SLAB = register("red_sandstone_brick_slab", new BlockItem(Blocks.RED_SANDSTONE_BRICK_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item RED_SANDSTONE_BRICk_STAIRS = register("red_sandstone_brick_stairs", new BlockItem(Blocks.RED_SANDSTONE_BRICK_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item RED_SANDSTONE_BRICK_WALL = register("red_sandstone_brick_wall", new BlockItem(Blocks.RED_SANDSTONE_BRICK_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
 
     //Cracked Bricks
         //cracked_red_sandstone_bricks
@@ -361,9 +361,9 @@ public class Items {
 
     //Polished
         public static final Item POLISHED_QUARTZ = register("polished_quartz", new BlockItem(Blocks.POLISHED_QUARTZ, ItemGroups.consistencyPlusMiscItemSettings()));
-        public static final Item POLISHED_QUARTZ_WALL = register("polished_quartz_wall", new BlockItem(Blocks.POLISHED_QUARTZ_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
-        public static final Item POLISHED_QUARTZ_STAIRS = register("polished_quartz_stairs", new BlockItem(Blocks.POLISHED_QUARTZ_STAIRS, ItemGroups.consistencyPlusMiscItemSettings()));
         public static final Item POLISHED_QUARTZ_SLAB = register("polished_quartz_slab", new BlockItem(Blocks.POLISHED_QUARTZ_SLAB, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item POLISHED_QUARTZ_STAIRS = register("polished_quartz_stairs", new BlockItem(Blocks.POLISHED_QUARTZ_STAIRS, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item POLISHED_QUARTZ_WALL = register("polished_quartz_wall", new BlockItem(Blocks.POLISHED_QUARTZ_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
 
 
     //Cracked Polished
@@ -741,9 +741,10 @@ public class Items {
 //Nether Bricks
 
     //Cracked Bricks
-        //cracked_nether_brick_slab
-        //cracked_nether_brick_stairs
-        //cracked_nether_brick_wall
+        public static final Item CRACKED_NETHER_BRICK_SLAB = register("cracked_nether_brick_slab", new BlockItem(Blocks.CRACKED_NETHER_BRICK_SLAB, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item CRACKED_NETHER_BRICK_STAIRS = register("cracked_nether_brick_stairs", new BlockItem(Blocks.CRACKED_NETHER_BRICK_STAIRS, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item CRACKED_NETHER_BRICK_WALL = register("cracked_nether_brick_wall", new BlockItem(Blocks.CRACKED_NETHER_BRICK_WALL, ItemGroups.consistencyPlusBrickItemSettings()));
+
 
     //Mossy Bricks
         //mossy_nether_bricks

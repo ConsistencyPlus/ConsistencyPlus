@@ -123,6 +123,10 @@
   "block.consistency_plus.smooth_clay_wall": "Smooth Clay Wall",
   "block.consistency_plus.suspicious_slab": "Suspicious Slab",
 
+  "block.consistency_plus.cracked_nether_brick_slab": "Cracked Nether Brick Slab",
+  "block.consistency_plus.cracked_nether_brick_stairs": "Cracked Nether Brick Stairs",
+  "block.consistency_plus.cracked_nether_brick_wall": "Cracked Nether Brick Wall",
+
   "block.consistency_plus.polished_end_stone": "Polished End Stone",
   "block.consistency_plus.polished_end_stone_slab": "Polished End Stone Slab",
   "block.consistency_plus.polished_end_stone_stairs": "Polished End Stone Stairs",

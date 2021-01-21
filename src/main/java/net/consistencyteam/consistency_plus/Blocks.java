@@ -755,9 +755,9 @@ public class Blocks {
 //Nether Bricks
 
     //Cracked Bricks
-        //cracked_nether_brick_slab
-        //cracked_nether_brick_stairs
-        //cracked_nether_brick_wall
+        public static final Block CRACKED_NETHER_BRICK_SLAB  = register("cracked_nether_brick_slab", new SlabBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
+        public static final Block CRACKED_NETHER_BRICK_STAIRS = register("cracked_nether_brick_stairs", new BaseConsistencyStairBlock(NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copy(NETHER_BRICKS)));
+        public static final Block CRACKED_NETHER_BRICK_WALL = register("cracked_nether_brick_wall", new WallBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
 
     //Mossy Bricks
         //mossy_nether_bricks

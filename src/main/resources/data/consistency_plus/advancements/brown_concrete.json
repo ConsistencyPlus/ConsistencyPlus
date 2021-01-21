@@ -1,0 +1,28 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "consistency_plus:brown_concrete_slab_craft",
+            "consistency_plus:brown_concrete_slab_craft2",
+            "consistency_plus:brown_concrete_slab_cut",
+            "consistency_plus:brown_concrete_stairs_craft",
+            "consistency_plus:brown_concrete_stairs_craft2",
+            "consistency_plus:brown_concrete_stairs_cut",
+            "consistency_plus:brown_concrete_wall_craft",
+            "consistency_plus:brown_concrete_wall_craft2",
+            "consistency_plus:brown_concrete_wall_cut"
+        ]
+    },
+    "criteria": {
+        "has_item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:brown_concrete"
+                    }
+                ]
+            }
+        }
+    }
+}

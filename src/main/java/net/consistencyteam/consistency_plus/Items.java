@@ -190,10 +190,10 @@ public class Items {
         //wall
 
     //Polished
-        //polished_sandstone
-        //polished_sandstone_slab
-        //polished_sandstone_stairs
-        //polished_sandstone_wall
+        public static final Item POLISHED_SANDSTONE = register("polished_sandstone", new BlockItem(Blocks.POLISHED_SANDSTONE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item POLISHED_SANDSTONE_WALL = register("polished_sandstone_wall", new BlockItem(Blocks.POLISHED_SANDSTONE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item POLISHED_SANDSTONE_STAIRS = register("polished_sandstone_stairs", new BlockItem(Blocks.POLISHED_SANDSTONE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item POLISHED_SANDSTONE_SLAB = register("polished_sandstone_slab", new BlockItem(Blocks.POLISHED_SANDSTONE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Polished
         //block
@@ -1221,79 +1221,82 @@ public class Items {
 
 
     //Terracotta Wall
-        //red_terracotta_slab
-        //orange_terracotta_slab
-        //yellow_terracotta_slab
-        //lime_terracotta_slab
-        //green_terracotta_slab
-        //blue_terracotta_slab
-        //cyan_terracotta_slab
-        //light_blue_terracotta_slab
-        //purple_terracotta_slab
-        //magenta_terracotta_slab
-        //pink_terracotta_slab
-        //white_terracotta_slab
-        //light_gray_terracotta_slab
-        //gray_terracotta_slab
-        //black_terracotta_slab
-        //brown_terracotta_slab
+        public static final Item RED_TERRACOTTA_WALL = register("red_terracotta_wall", new BlockItem(Blocks.RED_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item ORANGE_TERRACOTTA_WALL = register("orange_terracotta_wall", new BlockItem(Blocks.ORANGE_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item YELLOW_TERRACOTTA_WALL = register("yellow_terracotta_wall", new BlockItem(Blocks.YELLOW_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIME_TERRACOTTA_WALL = register("lime_terracotta_wall", new BlockItem(Blocks.LIME_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item GREEN_TERRACOTTA_WALL = register("green_terracotta_wall", new BlockItem(Blocks.GREEN_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BLUE_TERRACOTTA_WALL = register("blue_terracotta_wall", new BlockItem(Blocks.BLUE_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item CYAN_TERRACOTTA_WALL = register("cyan_terracotta_wall", new BlockItem(Blocks.CYAN_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIGHT_BLUE_TERRACOTTA_WALL = register("light_blue_terracotta_wall", new BlockItem(Blocks.LIGHT_BLUE_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item PURPLE_TERRACOTTA_WALL = register("purple_terracotta_wall", new BlockItem(Blocks.PURPLE_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item MAGENTA_TERRACOTTA_WALL = register("magenta_terracotta_wall", new BlockItem(Blocks.MAGENTA_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item PINK_TERRACOTTA_WALL = register("pink_terracotta_wall", new BlockItem(Blocks.PINK_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item WHITE_TERRACOTTA_WALL = register("white_terracotta_wall", new BlockItem(Blocks.WHITE_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIGHT_GRAY_TERRACOTTA_WALL = register("light_gray_terracotta_wall", new BlockItem(Blocks.LIGHT_GRAY_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item GRAY_TERRACOTTA_WALL = register("gray_terracotta_wall", new BlockItem(Blocks.GRAY_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BLACK_TERRACOTTA_WALL = register("black_terracotta_wall", new BlockItem(Blocks.BLACK_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BROWN_TERRACOTTA_WALL = register("brown_terracotta_wall", new BlockItem(Blocks.BROWN_TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item TERRACOTTA_WALL = register("terracotta_wall", new BlockItem(Blocks.TERRACOTTA_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+
 
 
 //Concrete
 
-    //Concrete Slab
-        //red_concrete_slab
-        //orange_concrete_slab
-        //yellow_concrete_slab
-        //lime_concrete_slab
-        //green_concrete_slab
-        //blue_concrete_slab
-        //cyan_concrete_slab
-        //light_blue_concrete_slab
-        //purple_concrete_slab
-        //magenta_concrete_slab
-        //pink_concrete_slab
-        //white_concrete_slab
-        //light_gray_concrete_slab
-        //gray_concrete_slab
-        //black_concrete_slab
-        //brown_concrete_slab
+    //Terracotta Slab
+        public static final Item RED_CONCRETE_SLAB = register("red_concrete_slab", new BlockItem(Blocks.RED_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item ORANGE_CONCRETE_SLAB = register("orange_concrete_slab", new BlockItem(Blocks.ORANGE_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item YELLOW_CONCRETE_SLAB = register("yellow_concrete_slab", new BlockItem(Blocks.YELLOW_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIME_CONCRETE_SLAB = register("lime_concrete_slab", new BlockItem(Blocks.LIME_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item GREEN_CONCRETE_SLAB = register("green_concrete_slab", new BlockItem(Blocks.GREEN_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BLUE_CONCRETE_SLAB = register("blue_concrete_slab", new BlockItem(Blocks.BLUE_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item CYAN_CONCRETE_SLAB = register("cyan_concrete_slab", new BlockItem(Blocks.CYAN_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIGHT_BLUE_CONCRETE_SLAB = register("light_blue_concrete_slab", new BlockItem(Blocks.LIGHT_BLUE_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item PURPLE_CONCRETE_SLAB = register("purple_concrete_slab", new BlockItem(Blocks.PURPLE_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item MAGENTA_CONCRETE_SLAB = register("magenta_concrete_slab", new BlockItem(Blocks.MAGENTA_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item PINK_CONCRETE_SLAB = register("pink_concrete_slab", new BlockItem(Blocks.PINK_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item WHITE_CONCRETE_SLAB = register("white_concrete_slab", new BlockItem(Blocks.WHITE_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIGHT_GRAY_CONCRETE_SLAB = register("light_gray_concrete_slab", new BlockItem(Blocks.LIGHT_GRAY_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item GRAY_CONCRETE_SLAB = register("gray_concrete_slab", new BlockItem(Blocks.GRAY_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BLACK_CONCRETE_SLAB = register("black_concrete_slab", new BlockItem(Blocks.BLACK_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BROWN_CONCRETE_SLAB = register("brown_concrete_slab", new BlockItem(Blocks.BROWN_CONCRETE_SLAB, ItemGroups.consistencyPlusDyeableItemSettings()));
 
-    //Concrete Stairs
-        //red_concrete_slab
-        //orange_concrete_slab
-        //yellow_concrete_slab
-        //lime_concrete_slab
-        //green_concrete_slab
-        //blue_concrete_slab
-        //cyan_concrete_slab
-        //light_blue_concrete_slab
-        //purple_concrete_slab
-        //magenta_concrete_slab
-        //pink_concrete_slab
-        //white_concrete_slab
-        //light_gray_concrete_slab
-        //gray_concrete_slab
-        //black_concrete_slab
-        //brown_concrete_slab
+    //Terracotta Stairs
+        public static final Item RED_CONCRETE_STAIRS = register("red_concrete_stairs", new BlockItem(Blocks.RED_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item ORANGE_CONCRETE_STAIRS = register("orange_concrete_stairs", new BlockItem(Blocks.ORANGE_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item YELLOW_CONCRETE_STAIRS = register("yellow_concrete_stairs", new BlockItem(Blocks.YELLOW_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIME_CONCRETE_STAIRS = register("lime_concrete_stairs", new BlockItem(Blocks.LIME_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item GREEN_CONCRETE_STAIRS = register("green_concrete_stairs", new BlockItem(Blocks.GREEN_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BLUE_CONCRETE_STAIRS = register("blue_concrete_stairs", new BlockItem(Blocks.BLUE_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item CYAN_CONCRETE_STAIRS = register("cyan_concrete_stairs", new BlockItem(Blocks.CYAN_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIGHT_BLUE_CONCRETE_STAIRS = register("light_blue_concrete_stairs", new BlockItem(Blocks.LIGHT_BLUE_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item PURPLE_CONCRETE_STAIRS = register("purple_concrete_stairs", new BlockItem(Blocks.PURPLE_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item MAGENTA_CONCRETE_STAIRS = register("magenta_concrete_stairs", new BlockItem(Blocks.MAGENTA_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item PINK_CONCRETE_STAIRS = register("pink_concrete_stairs", new BlockItem(Blocks.PINK_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item WHITE_CONCRETE_STAIRS = register("white_concrete_stairs", new BlockItem(Blocks.WHITE_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIGHT_GRAY_CONCRETE_STAIRS = register("light_gray_concrete_stairs", new BlockItem(Blocks.LIGHT_GRAY_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item GRAY_CONCRETE_STAIRS = register("gray_concrete_stairs", new BlockItem(Blocks.GRAY_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BLACK_CONCRETE_STAIRS = register("black_concrete_stairs", new BlockItem(Blocks.BLACK_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BROWN_CONCRETE_STAIRS = register("brown_concrete_stairs", new BlockItem(Blocks.BROWN_CONCRETE_STAIRS, ItemGroups.consistencyPlusDyeableItemSettings()));
 
-    //Concrete Wall
-        //red_concrete_slab
-        //orange_concrete_slab
-        //yellow_concrete_slab
-        //lime_concrete_slab
-        //green_concrete_slab
-        //blue_concrete_slab
-        //cyan_concrete_slab
-        //light_blue_concrete_slab
-        //purple_concrete_slab
-        //magenta_concrete_slab
-        //pink_concrete_slab
-        //white_concrete_slab
-        //light_gray_concrete_slab
-        //gray_concrete_slab
-        //black_concrete_slab
-        //brown_concrete_slab
+
+    //Terracotta Wall
+        public static final Item RED_CONCRETE_WALL = register("red_concrete_wall", new BlockItem(Blocks.RED_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item ORANGE_CONCRETE_WALL = register("orange_concrete_wall", new BlockItem(Blocks.ORANGE_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item YELLOW_CONCRETE_WALL = register("yellow_concrete_wall", new BlockItem(Blocks.YELLOW_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIME_CONCRETE_WALL = register("lime_concrete_wall", new BlockItem(Blocks.LIME_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item GREEN_CONCRETE_WALL = register("green_concrete_wall", new BlockItem(Blocks.GREEN_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BLUE_CONCRETE_WALL = register("blue_concrete_wall", new BlockItem(Blocks.BLUE_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item CYAN_CONCRETE_WALL = register("cyan_concrete_wall", new BlockItem(Blocks.CYAN_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIGHT_BLUE_CONCRETE_WALL = register("light_blue_concrete_wall", new BlockItem(Blocks.LIGHT_BLUE_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item PURPLE_CONCRETE_WALL = register("purple_concrete_wall", new BlockItem(Blocks.PURPLE_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item MAGENTA_CONCRETE_WALL = register("magenta_concrete_wall", new BlockItem(Blocks.MAGENTA_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item PINK_CONCRETE_WALL = register("pink_concrete_wall", new BlockItem(Blocks.PINK_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item WHITE_CONCRETE_WALL = register("white_concrete_wall", new BlockItem(Blocks.WHITE_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item LIGHT_GRAY_CONCRETE_WALL = register("light_gray_concrete_wall", new BlockItem(Blocks.LIGHT_GRAY_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item GRAY_CONCRETE_WALL = register("gray_concrete_wall", new BlockItem(Blocks.GRAY_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BLACK_CONCRETE_WALL = register("black_concrete_wall", new BlockItem(Blocks.BLACK_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
+        public static final Item BROWN_CONCRETE_WALL = register("brown_concrete_wall", new BlockItem(Blocks.BROWN_CONCRETE_WALL, ItemGroups.consistencyPlusDyeableItemSettings()));
 
     //Obsidian
         public static final Item OBSIDIAN_WALL = register("obsidian_wall", new BlockItem(Blocks.OBSIDIAN_WALL, ItemGroups.consistencyPlusExtraItemSettings()));

@@ -182,7 +182,7 @@
       "uvlock": true
     },
     "facing=west,half=top,shape=inner_right": {
-      "model": "consistency_plus:block/smooth_andesite_inner",
+      "model": "consistency_plus:block/smooth_andesite_stairs_inner",
       "x": 180,
       "y": 270,
       "uvlock": true

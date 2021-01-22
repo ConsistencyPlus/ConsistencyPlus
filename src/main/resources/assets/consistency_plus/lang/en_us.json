@@ -169,6 +169,10 @@
   "block.consistency_plus.cut_diorite_slab": "Cut Diorite Slab",
   "block.consistency_plus.cut_diorite_stairs": "Cut Diorite Stairs",
   "block.consistency_plus.cut_diorite_wall": "Cut Diorite Wall",
+  "block.consistency_plus.smooth_diorite": "Smooth Diorite",
+  "block.consistency_plus.smooth_diorite_slab": "Smooth Diorite Slab",
+  "block.consistency_plus.smooth_diorite_stairs": "Smooth Diorite Stairs",
+  "block.consistency_plus.smooth_diorite_wall": "Smooth Diorite Wall",
 
   "block.consistency_plus.polished_granite_wall": "Polished Granite Wall",
   "block.consistency_plus.smooth_granite": "Smooth Granite",

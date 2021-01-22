@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "minecraft:block/red_sandstone_top",
     "top": "minecraft:block/red_sandstone_top",
-    "side": "minecraft:block/red_cut_sandstone"
+    "side": "minecraft:block/cut_red_sandstone"
   }
 }

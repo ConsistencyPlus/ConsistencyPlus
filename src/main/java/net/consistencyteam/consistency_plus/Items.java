@@ -159,7 +159,7 @@ public class Items {
 //Sandstone
 
     //Smooth
-        public static final Item SMOOTH_SANDSTONE_WALL = register("smooth_sandstone_wall", new BlockItem(Blocks.SMOOTH_SANDSTONE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_SANDSTONE_WALL = register("smooth_sandstone_wall", new BlockItem(Blocks.SMOOTH_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
 
     //Cracked Smooth
         //block
@@ -510,10 +510,10 @@ public class Items {
         //wall
 
     //Smooth
-        //smooth_diorite
-        //smooth_diorite_slab
-        //smooth_diorite_stairs
-        //smooth_diorite_wall
+        public static final Item SMOOTH_DIORITE = register("smooth_diorite", new BlockItem(Blocks.SMOOTH_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item SMOOTH_DIORITE_SLAB = register("smooth_diorite_slab", new BlockItem(Blocks.SMOOTH_DIORITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item SMOOTH_DIORITE_STAIRS = register("smooth_diorite_stairs", new BlockItem(Blocks.SMOOTH_DIORITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item SMOOTH_DIORITE_WALL = register("smooth_diorite_wall", new BlockItem(Blocks.SMOOTH_DIORITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
 
     //Cracked Smooth
         //block

@@ -804,11 +804,10 @@ public class Blocks {
 //Blue Nether Bricks
 
     //Bricks
-        //blue_nether_bricks
-        //blue_nether_brick_slab
-        //blue_nether_brick_stairs
-        //blue_nether_brick_wall
-
+        public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", new Block(FabricBlockSettings.copy(NETHER_BRICKS)));
+        public static final Block BLUE_NETHER_BRICK_SLAB  = register("blue_nether_brick_slab", new SlabBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
+        public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new BaseConsistencyStairBlock(NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copy(NETHER_BRICKS)));
+        public static final Block BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new WallBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
     //Cracked Bricks
         //cracked_blue_nether_bricks
         //cracked_blue_nether_brick_slab

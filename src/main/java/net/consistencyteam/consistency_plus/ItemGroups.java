@@ -12,12 +12,12 @@ public class ItemGroups {
         return new Item.Settings().group(CONSISTENCY_PLUS_STONE);
     }
 
-    public static final ItemGroup CONSISTENCY_PLUS_SANDSTONE = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "sandstone"), () -> new ItemStack(Blocks.CUT_SANDSTONE_WALL));
+    public static final ItemGroup CONSISTENCY_PLUS_SANDSTONE = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "sandstone"), () -> new ItemStack(Blocks.SANDSTONE_BRICKS));
     public static Item.Settings consistencyPlusSandstoneItemSettings() {
         return new Item.Settings().group(CONSISTENCY_PLUS_SANDSTONE);
     }
 
-    public static final ItemGroup CONSISTENCY_PLUS_BRICK = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "brick"), () -> new ItemStack(Blocks.BLACKSTONE_BRICK_PILLAR));
+    public static final ItemGroup CONSISTENCY_PLUS_BRICK = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "brick"), () -> new ItemStack(Blocks.BLUE_NETHER_BRICKS));
     public static Item.Settings consistencyPlusBrickItemSettings() {
         return new Item.Settings().group(CONSISTENCY_PLUS_BRICK);
     }

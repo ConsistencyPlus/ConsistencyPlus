@@ -66,7 +66,7 @@
     "consistency_plus:light_gray_terracotta_wall",
     "consistency_plus:gray_terracotta_wall",
     "consistency_plus:black_terracotta_wall",
-    "consistency_plus:white_concrete_wall",
+    "consistency_plus:white_terracotta_wall",
     "consistency_plus:sandstone_brick_wall",
     "consistency_plus:red_sandstone_brick_wall",
     "consistency_plus:polished_quartz_wall",
@@ -106,6 +106,7 @@
     "minecraft:diorite_wall",
     "minecraft:blackstone_wall",
     "minecraft:polished_blackstone_brick_wall",
-    "minecraft:polished_blackstone_wall"
+    "minecraft:polished_blackstone_wall",
+    "consistency_plus:blue_nether_brick_wall"
   ]
 }

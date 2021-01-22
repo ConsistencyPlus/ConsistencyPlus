@@ -796,10 +796,11 @@ public class Items {
 //Blue Nether Bricks
 
     //Bricks
-        //blue_nether_bricks
-        //blue_nether_brick_slab
-        //blue_nether_brick_stairs
-        //blue_nether_brick_wall
+        public static final Item BLUE_NETHER_BRICKS = register("blue_nether_bricks", new BlockItem(Blocks.BLUE_NETHER_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new BlockItem(Blocks.BLUE_NETHER_BRICK_SLAB, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new BlockItem(Blocks.BLUE_NETHER_BRICK_STAIRS, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new BlockItem(Blocks.BLUE_NETHER_BRICK_WALL, ItemGroups.consistencyPlusBrickItemSettings()));
+
 
     //Cracked Bricks
         //cracked_blue_nether_bricks

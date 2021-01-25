@@ -6,10 +6,10 @@
     " XX"
   ],
   "key": {
-    "X": {"item": "minecraft:purpur_bricks"}
+    "X": {"item": "consistency_plus:purpur_bricks"}
   },
   "result": {
-    "item": "consistency_plus:chiseled_purpur",
+    "item": "consistency_plus:chiseled_purpur_block",
     "count": 4
   }
 }

@@ -6,7 +6,7 @@
     " XX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:mossy_stone_bricks"}
+    "X": {"item": "minecraft:mossy_stone_bricks"}
   },
   "result": {
     "item": "consistency_plus:mossy_chiseled_stone_bricks",

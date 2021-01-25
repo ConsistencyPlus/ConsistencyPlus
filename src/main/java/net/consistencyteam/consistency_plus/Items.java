@@ -431,10 +431,10 @@ public class Items {
         public static final Item SMOOTH_ANDESITE_WALL = register("smooth_andesite_wall", new BlockItem(Blocks.SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
 
     //Cracked Smooth
-        //block
-        //slab
-        //stairs
-        //wall
+        public static final Item CRACKED_SMOOTH_ANDESITE = register("cracked_smooth_andesite", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CRACKED_SMOOTH_ANDESITE_SLAB = register("cracked_smooth_andesite_slab", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CRACKED_SMOOTH_ANDESITE_STAIRS = register("cracked_smooth_andesite_stairs", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CRACKED_SMOOTH_ANDESITE_WALL = register("cracked_smooth_andesite_wall", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
 
     //Mossy Smooth
         //block

@@ -162,7 +162,10 @@
   "block.consistency_plus.andesite_bricks": "Andesite Bricks",
   "block.consistency_plus.andesite_brick_stairs": "Andesite Brick Stairs",
   "block.consistency_plus.andesite_brick_wall": "Andesite Brick Wall",
-  "block.consistency_plus.andesite_brick_slab": "Andesite Brick Slab",
+  "block.consistency_plus.cracked_smooth_andesite": "Cracked Smooth Andesite",
+  "block.consistency_plus.cracked_smooth_andesite_wall": "Cracked Smooth Andesite Wall",
+  "block.consistency_plus.cracked_smooth_andesite_stairs": "Cracked Smooth Andesite Stairs",
+  "block.consistency_plus.cracked_smooth_andesite_slab": "Cracked Smooth Andesite Slab",
 
   "block.consistency_plus.polished_diorite_wall": "Polished Diorite Wall",
   "block.consistency_plus.cut_diorite": "Cut Diorite",

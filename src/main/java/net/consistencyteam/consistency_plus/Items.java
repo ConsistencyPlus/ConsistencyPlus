@@ -437,10 +437,10 @@ public class Items {
         public static final Item CRACKED_SMOOTH_ANDESITE_WALL = register("cracked_smooth_andesite_wall", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
 
     //Mossy Smooth
-        //block
-        //slab
-        //stairs
-        //wall
+        public static final Item MOSSY_SMOOTH_ANDESITE = register("mossy_smooth_andesite", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item MOSSY_SMOOTH_ANDESITE_SLAB = register("mossy_smooth_andesite_slab", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item MOSSY_SMOOTH_ANDESITE_STAIRS = register("mossy_smooth_andesite_stairs", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item MOSSY_SMOOTH_ANDESITE_WALL = register("mossy_smooth_andesite_wall", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
 
     //Cut
         public static final Item CUT_ANDESITE = register("cut_andesite", new BlockItem(Blocks.CUT_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));

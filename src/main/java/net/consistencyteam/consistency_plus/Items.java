@@ -497,8 +497,8 @@ public class Items {
     //Bricks
         public static final Item ANDESITE_BRICKS = register("andesite_bricks", new BlockItem(Blocks.ANDESITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
         public static final Item ANDESITE_BRICK_SLAB = register("andesite_brick_slab", new BlockItem(Blocks.ANDESITE_BRICK_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item ANDESITE_BRICK_STAIRS = register("andesite_brick_stairs", new BlockItem(Blocks.ANDESITE_BRICKS_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item ANDESITE_BRICK_WALL = register("andesite_brick_wall", new BlockItem(Blocks.ANDESITE_BRICKS_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item ANDESITE_BRICK_STAIRS = register("andesite_brick_stairs", new BlockItem(Blocks.ANDESITE_BRICK_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item ANDESITE_BRICK_WALL = register("andesite_brick_wall", new BlockItem(Blocks.ANDESITE_BRICK_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
 
 
     //Cracked Bricks
@@ -587,10 +587,10 @@ public class Items {
         //gate
 
     //Bricks
-        //diorite_bricks
-        //diorite_brick_slab
-        //diorite_brick_stairs
-        //diorite_brick_wall
+        public static final Item DIORITE_BRICKS = register("andesite_bricks", new BlockItem(Blocks.DIORITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item DIORITE_BRICK_SLAB = register("andesite_brick_slab", new BlockItem(Blocks.DIORITE_BRICK_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item DIORITE_BRICK_STAIRS = register("andesite_brick_stairs", new BlockItem(Blocks.DIORITE_BRICK_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item DIORITE_BRICK_WALL = register("andesite_brick_wall", new BlockItem(Blocks.DIORITE_BRICK_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
 
     //Cracked Bricks
         //cracked_diorite_bricks
@@ -679,10 +679,11 @@ public class Items {
         //gate
 
     //Bricks
-        //granite_bricks
-        //granite_brick_slab
-        //granite_brick_stairs
-        //granite_brick_wall
+        public static final Item GRANITE_BRICKS = register("granite_bricks", new BlockItem(Blocks.GRANITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item GRANITE_BRICK_SLAB = register("granite_brick_slab", new BlockItem(Blocks.GRANITE_BRICK_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item GRANITE_BRICK_STAIRS = register("granite_brick_stairs", new BlockItem(Blocks.GRANITE_BRICK_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item GRANITE_BRICK_WALL = register("granite_brick_wall", new BlockItem(Blocks.GRANITE_BRICK_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+
 
     //Cracked Bricks
         //cracked_granite_bricks

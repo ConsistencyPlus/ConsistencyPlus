@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/wall_inventory",
     "textures": {
-        "wall": "consistency_plus:block/cut_andesite"
+        "wall": "consistency_plus:block/granite_bricks"
     }
 }

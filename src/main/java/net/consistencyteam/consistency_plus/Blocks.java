@@ -599,7 +599,6 @@ public class Blocks {
         public static final Block SMOOTH_DIORITE_WALL = register("smooth_diorite_wall", new WallBlock(FabricBlockSettings.copy(DIORITE)));
         //gate
 
-
     //Cracked Smooth
         //block
         //slab
@@ -650,10 +649,10 @@ public class Blocks {
         //gate
 
     //Bricks
-        //diorite_bricks
-        //diorite_brick_slab
-        //diorite_brick_stairs
-        //diorite_brick_wall
+        public static final Block DIORITE_BRICKS = register("diorite_bricks", new Block(FabricBlockSettings.copy(DIORITE)));
+        public static final Block DIORITE_BRICK_SLAB = register("diorite_brick_slab", new SlabBlock(FabricBlockSettings.copy(DIORITE)));
+        public static final Block DIORITE_BRICK_STAIRS = register("diorite_brick_stairs", new BaseConsistencyStairBlock(DIORITE.getDefaultState(),FabricBlockSettings.copy(DIORITE)));
+        public static final Block DIORITE_BRICK_WALL = register("diorite_brick_wall", new WallBlock(FabricBlockSettings.copy(DIORITE)));
         //gate
 
     //Cracked Bricks
@@ -748,10 +747,10 @@ public class Blocks {
         //gate
 
     //Bricks
-        //granite_bricks
-        //granite_brick_slab
-        //granite_brick_stairs
-        //granite_brick_wall
+        public static final Block GRANITE_BRICKS = register("granite_bricks", new Block(FabricBlockSettings.copy(GRANITE)));
+        public static final Block GRANITE_BRICK_SLAB = register("granite_brick_slab", new SlabBlock(FabricBlockSettings.copy(GRANITE)));
+        public static final Block GRANITE_BRICK_STAIRS = register("granite_brick_stairs", new BaseConsistencyStairBlock(GRANITE.getDefaultState(),FabricBlockSettings.copy(GRANITE)));
+        public static final Block GRANITE_BRICK_WALL = register("granite_brick_wall", new WallBlock(FabricBlockSettings.copy(GRANITE)));
         //gate
 
     //Cracked Bricks

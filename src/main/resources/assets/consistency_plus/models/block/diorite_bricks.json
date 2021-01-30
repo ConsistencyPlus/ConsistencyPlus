@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/cube_all",
     "textures": {
-        "all": "consistency_plus:block/diorite_bricks"
+        "all": "minecraft:block/diorite_bricks"
     }
 }

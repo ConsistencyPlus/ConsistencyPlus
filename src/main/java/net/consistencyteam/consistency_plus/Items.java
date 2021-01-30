@@ -21,12 +21,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
         public static final Item CUT_STONE = register("cut_stone", new BlockItem(Blocks.CUT_STONE, ItemGroups.consistencyPlusStoneItemSettings()));
         public static final Item CUT_STONE_SLAB = register("cut_stone_slab", new BlockItem(Blocks.CUT_STONE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -38,12 +40,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Polished
         public static final Item POLISHED_STONE = register("polished_stone", new BlockItem(Blocks.POLISHED_STONE, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -56,12 +60,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cracked Bricks
         public static final Item CRACKED_STONE_BRICK_SLAB = register("cracked_stone_brick_slab", new BlockItem(Blocks.CRACKED_STONE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -88,12 +94,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Smooth
         public static final Item SMOOTH_BLACKSTONE = register("smooth_blackstone", new BlockItem(Blocks.SMOOTH_BLACKSTONE, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -106,12 +114,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_BLACKSTONE = register("cut_blackstone", new BlockItem(Blocks.CUT_BLACKSTONE, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -124,12 +134,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cracked Bricks
         public static final Item CRACKED_BLACKSTONE_BRICK_SLAB = register("cracked_blackstone_brick_slab", new BlockItem(Blocks.CRACKED_BLACKSTONE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -166,12 +178,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_SANDSTONE_STAIRS = register("cut_sandstone_stairs", new BlockItem(Blocks.CUT_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
@@ -182,12 +196,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Polished
         public static final Item POLISHED_SANDSTONE = register("polished_sandstone", new BlockItem(Blocks.POLISHED_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
@@ -200,12 +216,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         public static final Item SANDSTONE_BRICKS = register("sandstone_bricks", new BlockItem(Blocks.SANDSTONE_BRICKS, ItemGroups.consistencyPlusSandstoneItemSettings()));
@@ -249,12 +267,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_RED_SANDSTONE_STAIRS = register("cut_red_sandstone_stairs", new BlockItem(Blocks.CUT_RED_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
@@ -265,12 +285,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Polished
         public static final Item POLISHED_RED_SANDSTONE = register("polished_red_sandstone", new BlockItem(Blocks.POLISHED_RED_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
@@ -284,12 +306,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         public static final Item RED_SANDSTONE_BRICKS = register("red_sandstone_bricks", new BlockItem(Blocks.RED_SANDSTONE_BRICKS, ItemGroups.consistencyPlusSandstoneItemSettings()));
@@ -334,12 +358,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_QUARTZ = register("cut_quartz", new BlockItem(Blocks.CUT_QUARTZ, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -352,12 +378,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Polished
         public static final Item POLISHED_QUARTZ = register("polished_quartz", new BlockItem(Blocks.POLISHED_QUARTZ, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -371,12 +399,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         public static final Item QUARTZ_BRICK_SLAB = register("quartz_brick_slab", new BlockItem(Blocks.QUARTZ_BRICK_SLAB, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -417,12 +447,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Smooth
         public static final Item SMOOTH_ANDESITE = register("smooth_andesite", new BlockItem(Blocks.SMOOTH_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
@@ -453,12 +485,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         public static final Item ANDESITE_BRICKS = register("andesite_bricks", new BlockItem(Blocks.ANDESITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
@@ -502,12 +536,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Smooth
         public static final Item SMOOTH_DIORITE = register("smooth_diorite", new BlockItem(Blocks.SMOOTH_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
@@ -520,12 +556,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_DIORITE = register("cut_diorite", new BlockItem(Blocks.CUT_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
@@ -539,12 +577,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         //diorite_bricks
@@ -588,12 +628,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Smooth
         public static final Item SMOOTH_GRANITE = register("smooth_granite", new BlockItem(Blocks.SMOOTH_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
@@ -607,12 +649,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_GRANITE = register("cut_granite", new BlockItem(Blocks.CUT_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
@@ -625,12 +669,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         //granite_bricks
@@ -683,12 +729,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     public static final Item CUT_CLAY = register("cut_clay", new BlockItem(Blocks.CUT_CLAY, ItemGroups.consistencyPlusBrickItemSettings()));
         public static final Item CUT_CLAY_SLAB = register("cut_clay_slab", new BlockItem(Blocks.CUT_CLAY_SLAB, ItemGroups.consistencyPlusBrickItemSettings()));
@@ -705,12 +753,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cracked Bricks
         //cracked_bricks
@@ -842,12 +892,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Smooth
         public static final Item SMOOTH_PRISMARINE = register("smooth_prismarine", new BlockItem(Blocks.SMOOTH_PRISMARINE, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -860,12 +912,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_PRISMARINE = register("cut_prismarine", new BlockItem(Blocks.CUT_PRISMARINE, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -879,12 +933,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         public static final Item PRISMARINE_BRICK_WALL = register("prismarine_brick_wall", new BlockItem(Blocks.PRISMARINE_BRICK_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -931,12 +987,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Smooth
         public static final Item SMOOTH_DARK_PRISMARINE = register("smooth_dark_prismarine", new BlockItem(Blocks.SMOOTH_DARK_PRISMARINE, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -949,12 +1007,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_DARK_PRISMARINE = register("cut_dark_prismarine", new BlockItem(Blocks.CUT_DARK_PRISMARINE, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -967,12 +1027,14 @@ public class Items {
         //slab
         //stairs
          //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         //dark_prismarine_bricks
@@ -1025,12 +1087,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Polished
         public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new BlockItem(Blocks.POLISHED_PURPUR_BLOCK, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -1043,12 +1107,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cut
         public static final Item CUT_PURPUR_WALL = register("cut_purpur_wall", new BlockItem(Blocks.CUT_PURPUR_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -1058,12 +1124,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Bricks
         public static final Item PURPUR_BRICKS = register("purpur_bricks", new BlockItem(Blocks.PURPUR_BRICKS, ItemGroups.consistencyPlusMiscItemSettings()));
@@ -1114,12 +1182,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Smooth
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //CUT
         public static final Item CUT_END_STONE = register("cut_end_stone", new BlockItem(Blocks.CUT_END_STONE, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -1132,12 +1202,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Cut
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Polished
         public static final Item POLISHED_END_STONE = register("polished_end_stone", new BlockItem(Blocks.POLISHED_END_STONE, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -1150,12 +1222,14 @@ public class Items {
         //slab
         //stairs
         //wall
+        //gate
 
     //Mossy Polished
         //block
         //slab
         //stairs
         //wall
+        //gate
 
     //Cracked Bricks
         //cracked_end_stone_bricks

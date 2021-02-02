@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "consistency_plus:block/cracked_blue_nether_bricks"
+    }
+}

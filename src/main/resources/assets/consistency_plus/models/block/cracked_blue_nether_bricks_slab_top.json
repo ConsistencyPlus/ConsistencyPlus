@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+        "top": "consistency_plus:block/cracked_blue_nether_bricks",
+        "bottom": "consistency_plus:block/cracked_blue_nether_bricks",
+        "side": "consistency_plus:block/cracked_blue_nether_bricks"
+    }
+}

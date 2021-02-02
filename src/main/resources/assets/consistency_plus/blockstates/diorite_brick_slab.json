@@ -4,7 +4,7 @@
             "model": "consistency_plus:block/diorite_brick_slab"
         },
         "type=double": {
-            "model": "consistency_plus:block/diorite_brick"
+            "model": "consistency_plus:block/diorite_bricks"
         },
         "type=top": {
             "model": "consistency_plus:block/diorite_brick_slab_top"

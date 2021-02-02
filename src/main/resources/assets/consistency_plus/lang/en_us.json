@@ -1,6 +1,7 @@
 {
   "item.consistency_plus.warped_nether_wart": "Warped Nether Wart",
   "item.minecraft.nether_wart": "Crimson Nether Wart",
+
   "block.minecraft.purpur_block": "Cut Purpur",
   "block.minecraft.purpur_slab": "Cut Purpur Slab",
   "block.minecraft.purpur_stairs": "Cut Purpur Stairs",
@@ -129,12 +130,20 @@
   "block.consistency_plus.smooth_clay_slab": "Smooth Clay Slab",
   "block.consistency_plus.smooth_clay_stairs": "Smooth Clay Stairs",
   "block.consistency_plus.smooth_clay_wall": "Smooth Clay Wall",
+  "block.consistency_plus.carved_bricks": "Carved Bricks",
   "block.consistency_plus.suspicious_slab": "Suspicious Slab",
 
   "block.consistency_plus.blue_nether_bricks": "Blue Nether Bricks",
   "block.consistency_plus.blue_nether_brick_stairs": "Blue Nether Brick Stairs",
   "block.consistency_plus.blue_nether_brick_wall": "Blue Nether Brick Wall",
   "block.consistency_plus.blue_nether_brick_slab": "Blue Nether Brick Slab",
+  "block.consistency_plus.cracked_blue_nether_bricks": "Cracked Blue Nether Bricks",
+  "block.consistency_plus.cracked_blue_nether_brick_stairs": "Cracked Blue Nether Brick Stairs",
+  "block.consistency_plus.cracked_blue_nether_brick_wall": "Cracked Blue Nether Brick Wall",
+  "block.consistency_plus.cracked_blue_nether_brick_slab": "Cracked Blue Nether Brick Slab",
+  "block.consistency_plus.carved_blue_nether_bricks": "Carved Blue Nether Bricks",
+
+  "block.consistency_plus.carved_red_nether_bricks": "Carved Red Nether Bricks",
 
   "block.consistency_plus.cracked_nether_brick_slab": "Cracked Nether Brick Slab",
   "block.consistency_plus.cracked_nether_brick_stairs": "Cracked Nether Brick Stairs",
@@ -179,6 +188,7 @@
   "block.consistency_plus.mossy_smooth_andesite_stairs": "Mossy Smooth Andesite Stairs",
   "block.consistency_plus.mossy_smooth_andesite_wall": "Mossy Smooth Andesite Wall",
   "block.consistency_plus.mossy_smooth_andesite": "Mossy Smooth Andesite",
+  "block.consistency_plus.carved_andesite": "Carved Andesite",
 
   "block.consistency_plus.polished_diorite_wall": "Polished Diorite Wall",
   "block.consistency_plus.cut_diorite": "Cut Diorite",
@@ -193,6 +203,7 @@
   "block.consistency_plus.smooth_diorite_slab": "Smooth Diorite Slab",
   "block.consistency_plus.smooth_diorite_stairs": "Smooth Diorite Stairs",
   "block.consistency_plus.smooth_diorite_wall": "Smooth Diorite Wall",
+  "block.consistency_plus.carved_diorite": "Carved Diorite",
 
   "block.consistency_plus.polished_granite_wall": "Polished Granite Wall",
   "block.consistency_plus.smooth_granite": "Smooth Granite",
@@ -207,6 +218,7 @@
   "block.consistency_plus.cut_granite_slab": "Cut Granite Slab",
   "block.consistency_plus.cut_granite_stairs": "Cut Granite Stairs",
   "block.consistency_plus.cut_granite_wall": "Cut Granite Wall",
+  "block.consistency_plus.carved_granite": "Carved Granite",
 
   "block.consistency_plus.smooth_sandstone_wall": "Smooth Sandstone Wall",
   "block.consistency_plus.cut_sandstone_wall": "Cut Sandstone Wall",
@@ -237,6 +249,7 @@
   "block.consistency_plus.polished_prismarine_stairs": "Polished Prismarine Stairs",
   "block.consistency_plus.polished_prismarine_wall": "Polished Prismarine Wall",
   "block.consistency_plus.carved_prismarine": "Carved Prismarine",
+  "block.consistency_plus.chiseled_prismarine": "Chiseled Prismarine",
 
   "block.consistency_plus.dark_prismarine_wall": "Dark Prismarine Wall",
   "block.consistency_plus.dark_prismarine_pillar": "Dark Prismarine Pillar",
@@ -253,6 +266,10 @@
   "block.consistency_plus.polished_dark_prismarine_slab": "Polished Dark Prismarine Slab",
   "block.consistency_plus.polished_dark_prismarine_stairs": "Polished Dark Prismarine Stairs",
   "block.consistency_plus.polished_dark_prismarine_wall": "Polished Dark Prismarine Wall",
+  "block.consistency_plus.dark_prismarine_bricks": "Polished Dark Prismarine Bricks",
+  "block.consistency_plus.dark_prismarine_brick_slab": "Polished Dark Prismarine Brick Slab",
+  "block.consistency_plus.dark_prismarine_brick_stairs": "Polished Dark Prismarine Brick Stairs",
+  "block.consistency_plus.dark_prismarine_brick_wall": "Polished Dark Prismarine Brick Wall",
 
   "block.consistency_plus.jack_o_soul": "Jack o'Soul",
 

@@ -582,7 +582,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_ANDESITE = register("carved_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
         //cracked carved
         //mossy carved
 
@@ -679,7 +679,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_DIORITE = register("carved_diorite", new Block(FabricBlockSettings.copy(POLISHED_DIORITE)));
         //cracked carved
         //mossy carved
 
@@ -777,7 +777,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_GRANITE = register("carved_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
         //cracked carved
         //mossy carved
 
@@ -841,7 +841,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_BRICKS = register("carved_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
         //cracked carved
         //mossy carved
 
@@ -894,7 +894,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new Block(FabricBlockSettings.copy(RED_NETHER_BRICKS)));
         //cracked carved
         //mossy carved
 
@@ -909,10 +909,10 @@ public class Blocks {
         //gate
 
     //Cracked Bricks
-        //cracked_blue_nether_bricks
-        //cracked_blue_nether_brick_slab
-        //cracked_blue_nether_brick_stairs
-        //cracked_blue_nether_brick_wall
+        public static final Block CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new Block(FabricBlockSettings.copy(CRACKED_NETHER_BRICKS)));
+        public static final Block CRACKED_BLUE_NETHER_BRICK_SLAB  = register("cracked_blue_nether_brick_slab", new SlabBlock(FabricBlockSettings.copy(CRACKED_NETHER_BRICKS)));
+        public static final Block CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new BaseConsistencyStairBlock(CRACKED_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copy(NETHER_BRICKS)));
+        public static final Block CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new WallBlock(FabricBlockSettings.copy(CRACKED_NETHER_BRICKS)));
         //gate
 
     //Mossy Bricks
@@ -932,7 +932,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+    public static final Block CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new Block(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
         //cracked carved
         //mossy carved
 
@@ -1104,10 +1104,10 @@ public class Blocks {
         //gate
 
     //Bricks
-        //dark_prismarine_bricks
-        //dark_prismarine_brick_slab
-        //dark_prismarine_brick_stairs
-        //dark_prismarine_brick_wall
+        public static final Block DARK_PRISMARINE_BRICKS = register("dark_prismarine_bricks", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block DARK_PRISMARINE_BRICK_SLAB = register("dark_prismarine_brick_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block DARK_PRISMARINE_BRICK_STAIRS = register("dark_prismarine_brick_stairs", new BaseConsistencyStairBlock(DARK_PRISMARINE.getDefaultState(),FabricBlockSettings.copy(DARK_PRISMARINE)));
+        public static final Block DARK_PRISMARINE_BRICK_WALL = register("dark_prismarine_brick_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
         //gate
 
     //Cracked Bricks

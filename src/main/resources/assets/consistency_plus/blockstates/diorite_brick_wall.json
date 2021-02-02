@@ -52,7 +52,7 @@
                 "north": "tall"
             },
             "apply": {
-                "model": "consistency_plus:block/diorite_brick_wall_tall",
+                "model": "consistency_plus:block/diorite_brick_wall_side_tall",
                 "uvlock": true
             }
         },
@@ -61,7 +61,7 @@
                 "east": "tall"
             },
             "apply": {
-                "model": "consistency_plus:block/diorite_brick_wall_tall",
+                "model": "consistency_plus:block/diorite_brick_wall_side_tall",
                 "y": 90,
                 "uvlock": true
             }
@@ -71,7 +71,7 @@
                 "south": "tall"
             },
             "apply": {
-                "model": "consistency_plus:block/diorite_brick_wall_tall",
+                "model": "consistency_plus:block/diorite_brick_wall_side_tall",
                 "y": 180,
                 "uvlock": true
             }
@@ -81,7 +81,7 @@
                 "west": "tall"
             },
             "apply": {
-                "model": "consistency_plus:block/diorite_brick_wall_tall",
+                "model": "consistency_plus:block/diorite_brick_wall_side_tall",
                 "y": 270,
                 "uvlock": true
             }

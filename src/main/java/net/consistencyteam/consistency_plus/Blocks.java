@@ -1332,7 +1332,7 @@ public class Blocks {
         public static final Block CHISELED_END_STONE = register("chiseled_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
         //mossy_chiseled_end_stone_bricks
         //cracked_chiseled_end_stone_bricks
-        //end_stone_brick_pillar
+        public static final Block END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
         //mossy_end_stone_brick_pillar
         //cracked_end_stone_brick_pillar
         //corner pillar

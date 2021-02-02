@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/template_wall_side",
     "textures": {
-        "wall": "consistency_plus:block/cracked_blue_nether_brick"
+        "wall": "consistency_plus:block/cracked_blue_nether_bricks"
     }
 }

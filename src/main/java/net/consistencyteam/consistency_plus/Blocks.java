@@ -1021,7 +1021,7 @@ public class Blocks {
         //gate
 
     //Pillar and Chiseled
-        //chiseled_prismarine
+        public static final Block CHISELED_PRISMARINE = register("chiseled_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
         //mossy_chiseled_prismarine
         //cracked_chiseled_prismarine
         //prismarine_pillar

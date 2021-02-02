@@ -523,7 +523,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_ANDESITE = register("carved_andesite", new BlockItem(Blocks.CARVED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
         //cracked carved
         //mossy carved
 //Diorite
@@ -614,7 +614,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_DIORITE = register("carved_diorite", new BlockItem(Blocks.CARVED_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
         //cracked carved
         //mossy carved
 
@@ -707,7 +707,7 @@ public class Items {
     //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_GRANITE = register("carved_granite", new BlockItem(Blocks.CARVED_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
         //cracked carved
         //mossy carved
 
@@ -785,7 +785,7 @@ public class Items {
     //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_BRICKS = register("carved_bricks", new BlockItem(Blocks.CARVED_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
         //cracked carved
         //mossy carved
 
@@ -840,7 +840,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new BlockItem(Blocks.CARVED_RED_NETHER_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
         //cracked carved
         //mossy carved
 
@@ -854,10 +854,10 @@ public class Items {
 
 
     //Cracked Bricks
-        //cracked_blue_nether_bricks
-        //cracked_blue_nether_brick_slab
-        //cracked_blue_nether_brick_stairs
-        //cracked_blue_nether_brick_wall
+        public static final Item CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new BlockItem(Blocks.CRACKED_BLUE_NETHER_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new BlockItem(Blocks.CRACKED_BLUE_NETHER_BRICK_SLAB, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new BlockItem(Blocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new BlockItem(Blocks.CRACKED_BLUE_NETHER_BRICK_WALL, ItemGroups.consistencyPlusBrickItemSettings()));
 
     //Mossy Bricks
         //mossy_blue_nether_bricks
@@ -875,7 +875,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new BlockItem(Blocks.CARVED_BLUE_NETHER_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
         //cracked carved
         //mossy carved
 
@@ -959,7 +959,7 @@ public class Items {
         //mossy_prismarine_brick_wall
 
     //Pillar and Chiseled
-        //chiseled_prismarine
+        public static final Item CHISELED_PRISMARINE = register("chiseled_prismarine", new BlockItem(Blocks.CHISELED_PRISMARINE, ItemGroups.consistencyPlusMiscItemSettings()));
         //mossy_chiseled_prismarine
         //cracked_chiseled_prismarine
         //prismarine_pillar
@@ -1038,10 +1038,11 @@ public class Items {
         //gate
 
     //Bricks
-        //dark_prismarine_bricks
-        //dark_prismarine_brick_slab
-        //dark_prismarine_brick_stairs
-        //dark_prismarine_brick_wall
+        public static final Item DARK_PRISMARINE_BRICKS = register("dark_prismarine_bricks", new BlockItem(Blocks.DARK_PRISMARINE_BRICKS, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item DARK_PRISMARINE_BRICK_SLAB = register("dark_prismarine_brick_slab", new BlockItem(Blocks.DARK_PRISMARINE_BRICK_SLAB, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item DARK_PRISMARINE_BRICK_STAIRS = register("dark_prismarine_brick_stairs", new BlockItem(Blocks.DARK_PRISMARINE_BRICK_STAIRS, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item DARK_PRISMARINE_BRICK_WALL = register("dark_prismarine_brick_wall", new BlockItem(Blocks.DARK_PRISMARINE_BRICK_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
+
 
     //Cracked Bricks
         //cracked_dark_prismarine_bricks

@@ -8,12 +8,15 @@ import net.minecraft.util.registry.Registry;
 
 
 public class ConsistencyPlus implements ModInitializer {
-    public static final Item WARPED_NETHER_WART = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     @Override
 	public void onInitialize() {
+        System.out.println("Consistency+ Main - Starting Initialization");
+        System.out.println("Consistency+ Main - Beginning Block Initialization");
         Blocks.init();
+        System.out.println("Consistency+ Main - Blocks Initialized");
+        System.out.println("Consistency+ Main - Beginning Item Initialization");
         Items.init();
-        //Items_new.init(); // for testing
-        Registry.register(Registry.ITEM, new Identifier("consistency_plus", "warped_nether_wart"), WARPED_NETHER_WART);
+        System.out.println("Consistency+ Main - Items Initialized");
+        System.out.println("Consistency+ Main - Finished Initialization");
     }
 }

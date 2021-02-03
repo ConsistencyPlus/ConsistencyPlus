@@ -2,6 +2,7 @@ package net.consistencyteam.consistency_plus;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -1392,8 +1393,10 @@ public class Items {
     //Soul o'Lantern
         public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, ItemGroups.consistencyPlusExtraItemSettings()));
 
-    public static final Item DEVIN_BLOCKERA = register("devin_blockera", new BlockItem(Blocks.DEVIN_BLOCKERA, new Item.Settings()));
-    public static final Item BROKEN_MODIFIKATION = register("broken_modifikation", new BlockItem(Blocks.BROKEN_MODIFIKATION, new Item.Settings()));
+        public static final Item DEVIN_BLOCKERA = register("devin_blockera", new BlockItem(Blocks.DEVIN_BLOCKERA, new Item.Settings()));
+        public static final Item BROKEN_MODIFIKATION = register("broken_modifikation", new BlockItem(Blocks.BROKEN_MODIFIKATION, new Item.Settings()));
+
+        public static final Item WARPED_NETHER_WART = register("warped_nether_wart", new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
 
     private static Item register(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier("consistency_plus", name), item);

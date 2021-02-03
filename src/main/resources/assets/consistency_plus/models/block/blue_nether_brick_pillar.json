@@ -2,6 +2,6 @@
     "parent": "minecraft:block/cube_column",
     "textures": {
         "end": "consistency_plus:block/blue_nether_brick_pillar_top",
-        "side": "consistency_plus\"block/blue_nether_brick_pillar"
+        "side": "consistency_plus:block/blue_nether_brick_pillar"
     }
 }

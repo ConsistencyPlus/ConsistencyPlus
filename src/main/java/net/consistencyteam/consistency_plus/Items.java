@@ -1249,7 +1249,7 @@ public class Items {
         public static final Item CHISELED_END_STONE = register("chiseled_end_stone", new BlockItem(Blocks.CHISELED_END_STONE, ItemGroups.consistencyPlusStoneItemSettings()));
         //mossy_chiseled_end_stone_bricks
         //cracked_chiseled_end_stone_bricks
-        public static final Item END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new BlockItem(Blocks.END_STONE_BRICK_PILLAR, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new BlockItem(Blocks.END_STONE_BRICK_PILLAR, ItemGroups.consistencyPlusStoneItemSettings()));
         //mossy_end_stone_brick_pillar
         //cracked_end_stone_brick_pillar
         //corner pillar

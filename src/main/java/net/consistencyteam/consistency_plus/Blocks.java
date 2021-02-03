@@ -284,7 +284,7 @@ public class Blocks {
     //Pillars and Chiseled
         //cracked_chiseled_sandstone_bricks
         //mossy_chiseled_sandstone_bricks
-        //sandstone_brick_pillar
+        public static final Block SANDSTONE_PILLAR = register("sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(SANDSTONE)));
         //cracked_sandstone_brick_pillar
         //mossy_sandstone_brick_pillar
         //corner pillar
@@ -379,7 +379,7 @@ public class Blocks {
     //Pillars and Chiseled
         //cracked_chiseled_red_sandstone_bricks
         //mossy_chiseled_red_sandstone_bricks
-        //red_sandstone_brick_pillar
+        public static final Block RED_SANDSTONE_PILLAR = register("red_sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
         //cracked_red_sandstone_brick_pillar
         //mossy_red_sandstone_brick_pillar
         //corner pillar
@@ -484,7 +484,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_QUARTZ = register("carved_quartz", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
         //cracked carved
         //mossy carved
 
@@ -864,7 +864,7 @@ public class Blocks {
     //Pillars and Chiseled
         //mossy_chiseled_nether_bricks
         //cracked_chiseled_nether_bricks
-        //nether_brick_pillar
+        public static final Block NETHER_BRICK_PILLAR = register("nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
         //mossy_nether_brick_pillar
         //cracked_nether_brick_pillar
 
@@ -888,7 +888,7 @@ public class Blocks {
         //chiseled_red_nether_bricks
         //mossy_chiseled_red_nether_bricks
         //cracked_chiseled_red_nether_bricks
-        //red_nether_brick_pillar
+        public static final Block RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(RED_NETHER_BRICKS)));
         //mossy_red_nether_brick_pillar
         //cracked_red_nether_brick_pillar
         //corner pillar
@@ -926,13 +926,13 @@ public class Blocks {
         //chiseled_blue_nether_bricks
         //mossy_chiseled_blue_nether_bricks
         //cracked_chiseled_blue_nether_bricks
-        //blue_nether_brick_pillar
+        public static final Block BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
         //mossy_blue_nether_brick_pillar
         //cracked_blue_nether_brick_pillar
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-    public static final Block CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new Block(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
+        public static final Block CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new Block(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
         //cracked carved
         //mossy carved
 

@@ -247,7 +247,7 @@ public class Items {
     //Pillars and Chiseled
         //cracked_chiseled_sandstone_bricks
         //mossy_chiseled_sandstone_bricks
-        //sandstone_brick_pillar
+        public static final Item SANDSTONE_PILLAR = register("sandstone_pillar", new BlockItem(Blocks.SANDSTONE_PILLAR, ItemGroups.consistencyPlusSandstoneItemSettings()));
         //cracked_sandstone_brick_pillar
         //mossy_sandstone_brick_pillar
         //corner pillar
@@ -336,7 +336,7 @@ public class Items {
     //Pillars and Chiseled
         //cracked_chiseled_red_sandstone_bricks
         //mossy_chiseled_red_sandstone_bricks
-        //red_sandstone_brick_pillar
+        public static final Item RED_SANDSTONE_PILLAR = register("red_sandstone_pillar", new BlockItem(Blocks.RED_SANDSTONE_PILLAR, ItemGroups.consistencyPlusSandstoneItemSettings()));
         //cracked_red_sandstone_brick_pillar
         //mossy_red_sandstone_brick_pillar
         //corner pillar
@@ -433,7 +433,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_QUARTZ = register("carved_quartz", new BlockItem(Blocks.CARVED_QUARTZ, ItemGroups.consistencyPlusMiscItemSettings()));
         //cracked carved
         //mossy carved
 
@@ -806,7 +806,7 @@ public class Items {
     //Pillars and Chiseled
         //mossy_chiseled_nether_bricks
         //cracked_chiseled_nether_bricks
-        //nether_brick_pillar
+        public static final Item NETHER_BRICK_PILLAR = register("nether_brick_pillar", new BlockItem(Blocks.NETHER_BRICK_PILLAR, ItemGroups.consistencyPlusBrickItemSettings()));
         //mossy_nether_brick_pillar
         //cracked_nether_brick_pillar
         //corner pillar
@@ -834,7 +834,7 @@ public class Items {
         //chiseled_red_nether_bricks
         //mossy_chiseled_red_nether_bricks
         //cracked_chiseled_red_nether_bricks
-        //red_nether_brick_pillar
+        public static final Item RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new BlockItem(Blocks.RED_NETHER_BRICK_PILLAR, ItemGroups.consistencyPlusBrickItemSettings()));
         //mossy_red_nether_brick_pillar
         //cracked_red_nether_brick_pillar
         //corner pillar
@@ -869,7 +869,7 @@ public class Items {
         //chiseled_blue_nether_bricks
         //mossy_chiseled_blue_nether_bricks
         //cracked_chiseled_blue_nether_bricks
-        //blue_nether_brick_pillar
+        public static final Item BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new BlockItem(Blocks.BLUE_NETHER_BRICK_PILLAR, ItemGroups.consistencyPlusBrickItemSettings()));
         //mossy_blue_nether_brick_pillar
         //cracked_blue_nether_brick_pillar
         //corner pillar

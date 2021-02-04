@@ -805,6 +805,7 @@ public class Items {
         //mossy_nether_brick_wall
 
     //Pillars and Chiseled
+        public static final Item CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new BlockItem(Blocks.CHISELED_NETHER_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
         //mossy_chiseled_nether_bricks
         //cracked_chiseled_nether_bricks
         public static final Item NETHER_BRICK_PILLAR = register("nether_brick_pillar", new BlockItem(Blocks.NETHER_BRICK_PILLAR, ItemGroups.consistencyPlusBrickItemSettings()));
@@ -832,7 +833,7 @@ public class Items {
         //mossy_red_nether_brick_wall
 
     //Pillars and Chiseled
-        //chiseled_red_nether_bricks
+        public static final Item CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new BlockItem(Blocks.CHISELED_RED_NETHER_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
         //mossy_chiseled_red_nether_bricks
         //cracked_chiseled_red_nether_bricks
         public static final Item RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new BlockItem(Blocks.RED_NETHER_BRICK_PILLAR, ItemGroups.consistencyPlusBrickItemSettings()));
@@ -867,7 +868,7 @@ public class Items {
         //mossy_blue_nether_brick_wall
 
     //Pillars and Chiseled
-        //chiseled_blue_nether_bricks
+        public static final Item CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new BlockItem(Blocks.CHISELED_BLUE_NETHER_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
         //mossy_chiseled_blue_nether_bricks
         //cracked_chiseled_blue_nether_bricks
         public static final Item BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new BlockItem(Blocks.BLUE_NETHER_BRICK_PILLAR, ItemGroups.consistencyPlusBrickItemSettings()));
@@ -963,7 +964,7 @@ public class Items {
         public static final Item CHISELED_PRISMARINE = register("chiseled_prismarine", new BlockItem(Blocks.CHISELED_PRISMARINE, ItemGroups.consistencyPlusMiscItemSettings()));
         //mossy_chiseled_prismarine
         //cracked_chiseled_prismarine
-        //prismarine_pillar
+        public static final Item PRISMARINE_PILLAR = register("prismarine_pillar", new BlockItem(Blocks.PRISMARINE_PILLAR, ItemGroups.consistencyPlusMiscItemSettings()));
         //mossy_prismarine_pillar
         //cracked_prismarine_pillar
         //corner pillar

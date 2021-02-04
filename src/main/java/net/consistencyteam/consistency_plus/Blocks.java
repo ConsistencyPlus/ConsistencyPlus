@@ -1135,7 +1135,7 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Block CARVED_DARK_PRISMARINE = register("carved_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
         //cracked carved
         //mossy carved
 

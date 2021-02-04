@@ -282,6 +282,7 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
+        public static final Block CHISELED_SANDSTONE = register("chiseled_sandstone", new Block(FabricBlockSettings.copy(SANDSTONE)));
         //cracked_chiseled_sandstone_bricks
         //mossy_chiseled_sandstone_bricks
         public static final Block SANDSTONE_PILLAR = register("sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(SANDSTONE)));
@@ -290,7 +291,6 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //chiseled
         //cracked carved
         //mossy carved
 
@@ -377,6 +377,7 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
+        public static final Block CHISELED_RED_SANDSTONE = register("chiseled_sandstone", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
         //cracked_chiseled_red_sandstone_bricks
         //mossy_chiseled_red_sandstone_bricks
         public static final Block RED_SANDSTONE_PILLAR = register("red_sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
@@ -385,7 +386,6 @@ public class Blocks {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //chiseled
         //cracked carved
         //mossy carved
 
@@ -573,10 +573,10 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
-        //andesite_pillar
+        public static final Block ANDESITE_PILLAR = register("andesite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
         //cracked_andesite_pillar
         //mossy_andesite_pillar
-        //chiseled_andesite_bricks
+        public static final Block CHISELED_ANDESITE = register("chiseled_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
         //cracked_chiseled_andesite_bricks
         //mossy_chiseled_andesite_bricks
         //corner pillar
@@ -670,10 +670,10 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
-        //diorite_pillar
+        public static final Block DIORITE_PILLAR = register("diorite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_DIORITE)));
         //cracked_diorite_pillar
         //mossy_diorite_pillar
-        //chiseled_diorite_bricks
+        public static final Block CHISELED_DIORITE = register("chiseled_diorite", new Block(FabricBlockSettings.copy(POLISHED_DIORITE)));
         //cracked_chiseled_diorite_bricks
         //mossy_chiseled_diorite_bricks
         //corner pillar
@@ -768,10 +768,10 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
-        //granite_pillar
+        public static final Block GRANITE_PILLAR = register("granite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
         //cracked_granite_pillar
         //mossy_granite_pillar
-        //chiseled_granite_bricks
+        public static final Block CHISELED_GRANITE = register("chiseled_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
         //cracked_chiseled_granite_bricks
         //mossy_chiseled_granite_bricks
         //corner pillar
@@ -832,10 +832,10 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
-        //chiseled_bricks
+        public static final Block CHISELED_BRICKS = register("chiseled_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
         //mossy_chiseled_bricks
         //cracked_chiseled_bricks
-        //brick_pillar
+        public static final Block BRICK_PILLAR = register("brick_pillar", new PillarBlock(FabricBlockSettings.copy(BRICKS)));
         //mossy_brick_pillar
         //cracked_brick_pillar
         //corner pillar

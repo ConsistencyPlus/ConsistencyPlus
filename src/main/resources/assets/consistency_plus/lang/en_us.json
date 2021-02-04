@@ -81,6 +81,8 @@
   "block.consistency_plus.cut_sandstone_wall": "Cut Sandstone Wall",
   "block.consistency_plus.cut_sandstone_stairs": "Cut Sandstone Stairs",
   "block.consistency_plus.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
+  "block.consistency_plus.chiseled_sandstone": "Chiseled Sandstone",
+
   "block.consistency_plus.cut_red_sandstone_wall": "Cut Red Sandstone Wall",
   "block.consistency_plus.cut_red_sandstone_stairs": "Cut Sandstone Stairs",
   "block.consistency_plus.polished_red_sandstone": "Polished Red Sandstone",
@@ -92,6 +94,7 @@
   "block.consistency_plus.red_sandstone_brick_stairs": "Red Sandstone Brick Stairs",
   "block.consistency_plus.red_sandstone_brick_wall": "Red Sandstone Brick Wall",
   "block.consistency_plus.red_sandstone_pillar": "Red Sandstone Pillar",
+  "block.consistency_plus.chiseled_red_sandstone": "Chiseled Red Sandstone",
 
   "block.consistency_plus.cut_quartz": "Cut Quartz",
   "block.consistency_plus.cut_quartz_slab": "Cut Quartz Slab",
@@ -148,6 +151,9 @@
   "block.consistency_plus.smooth_clay_stairs": "Smooth Clay Stairs",
   "block.consistency_plus.smooth_clay_wall": "Smooth Clay Wall",
   "block.consistency_plus.carved_bricks": "Carved Bricks",
+  "block.consistency_plus.brick_pillar": "Brick Pillar",
+  "block.consistency_plus.chiseled_bricks": "Chiseled Bricks",
+
   "block.consistency_plus.suspicious_slab": "Suspicious Slab",
 
   "block.consistency_plus.blue_nether_bricks": "Blue Nether Bricks",
@@ -160,14 +166,17 @@
   "block.consistency_plus.cracked_blue_nether_brick_slab": "Cracked Blue Nether Brick Slab",
   "block.consistency_plus.carved_blue_nether_bricks": "Carved Blue Nether Bricks",
   "block.consistency_plus.blue_nether_brick_pillar": "Blue Nether Brick Pillar",
+  "block.consistency_plus.chiseled_blue_nether_bricks": "Chiseled Blue Nether Bricks",
 
   "block.consistency_plus.carved_red_nether_bricks": "Carved Red Nether Bricks",
   "block.consistency_plus.red_nether_brick_pillar": "Red Nether Brick Pillar",
+  "block.consistency_plus.chiseled_red_nether_bricks": "Chiseled Red Nether Bricks",
 
   "block.consistency_plus.cracked_nether_brick_slab": "Cracked Nether Brick Slab",
   "block.consistency_plus.cracked_nether_brick_stairs": "Cracked Nether Brick Stairs",
   "block.consistency_plus.cracked_nether_brick_wall": "Cracked Nether Brick Wall",
   "block.consistency_plus.nether_brick_pillar": "Nether Brick Pillar",
+  "block.consistency_plus.chiseled_nether_bricks": "Chiseled Nether Bricks",
 
   "block.consistency_plus.polished_end_stone": "Polished End Stone",
   "block.consistency_plus.polished_end_stone_slab": "Polished End Stone Slab",
@@ -210,6 +219,8 @@
   "block.consistency_plus.mossy_smooth_andesite_wall": "Mossy Smooth Andesite Wall",
   "block.consistency_plus.mossy_smooth_andesite": "Mossy Smooth Andesite",
   "block.consistency_plus.carved_andesite": "Carved Andesite",
+  "block.consistency_plus.chiseled_andesite": "Chiseled Andesite",
+  "block.consistency_plus.andesite_pillar": "Andesite Pillar",
 
   "block.consistency_plus.polished_diorite_wall": "Polished Diorite Wall",
   "block.consistency_plus.cut_diorite": "Cut Diorite",
@@ -225,6 +236,8 @@
   "block.consistency_plus.smooth_diorite_stairs": "Smooth Diorite Stairs",
   "block.consistency_plus.smooth_diorite_wall": "Smooth Diorite Wall",
   "block.consistency_plus.carved_diorite": "Carved Diorite",
+  "block.consistency_plus.chiseled_diorite": "Chiseled Diorite",
+  "block.consistency_plus.diorite_pillar": "Diorite Pillar",
 
   "block.consistency_plus.polished_granite_wall": "Polished Granite Wall",
   "block.consistency_plus.smooth_granite": "Smooth Granite",
@@ -240,6 +253,8 @@
   "block.consistency_plus.cut_granite_stairs": "Cut Granite Stairs",
   "block.consistency_plus.cut_granite_wall": "Cut Granite Wall",
   "block.consistency_plus.carved_granite": "Carved Granite",
+  "block.consistency_plus.chiseled_granite": "Chiseled Granite",
+  "block.consistency_plus.granite_pillar": "Granite Pillar",
 
   "block.consistency_plus.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.consistency_plus.cut_prismarine": "Cut Prismarine",
@@ -256,10 +271,12 @@
   "block.consistency_plus.polished_prismarine_wall": "Polished Prismarine Wall",
   "block.consistency_plus.carved_prismarine": "Carved Prismarine",
   "block.consistency_plus.chiseled_prismarine": "Chiseled Prismarine",
+  "block.consistency_plus.prismarine_pillar": "Prismarine Pillar",
 
   "block.consistency_plus.dark_prismarine_wall": "Dark Prismarine Wall",
   "block.consistency_plus.dark_prismarine_pillar": "Dark Prismarine Pillar",
   "block.consistency_plus.chiseled_dark_prismarine": "Chiseled Dark Prismarine",
+  "block.consistency_plus.carved_dark_prismarine": "Carved Dark Prismarine",
   "block.consistency_plus.cut_dark_prismarine": "Cut Dark Prismarine",
   "block.consistency_plus.cut_dark_prismarine_slab": "Cut Dark Prismarine Slab",
   "block.consistency_plus.cut_dark_prismarine_stairs": "Cut Dark Prismarine Stairs",

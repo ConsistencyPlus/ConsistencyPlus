@@ -862,6 +862,7 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
+        public static final Block CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new Block(FabricBlockSettings.copy(NETHER_BRICKS)));
         //mossy_chiseled_nether_bricks
         //cracked_chiseled_nether_bricks
         public static final Block NETHER_BRICK_PILLAR = register("nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
@@ -885,7 +886,7 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
-        //chiseled_red_nether_bricks
+        public static final Block CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new Block(FabricBlockSettings.copy(RED_NETHER_BRICKS)));
         //mossy_chiseled_red_nether_bricks
         //cracked_chiseled_red_nether_bricks
         public static final Block RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(RED_NETHER_BRICKS)));
@@ -923,7 +924,7 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
-        //chiseled_blue_nether_bricks
+        public static final Block CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new Block(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
         //mossy_chiseled_blue_nether_bricks
         //cracked_chiseled_blue_nether_bricks
         public static final Block BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
@@ -1024,7 +1025,7 @@ public class Blocks {
         public static final Block CHISELED_PRISMARINE = register("chiseled_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
         //mossy_chiseled_prismarine
         //cracked_chiseled_prismarine
-        //prismarine_pillar
+        public static final Block PRISMARINE_PILLAR = register("prismarine_pillar", new PillarBlock(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
         //mossy_prismarine_pillar
         //cracked_prismarine_pillar
         //corner pillar

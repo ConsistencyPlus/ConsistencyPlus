@@ -254,7 +254,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //chiseled
+        public static final Item CHISELED_SANDSTONE = register("chiseled_sandstone", new BlockItem(Blocks.CHISELED_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
         //cracked carved
         //mossy carved
 
@@ -343,7 +343,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //chiseled
+        public static final Item CHISELED_RED_SANDSTONE = register("chiseled_red_sandstone", new BlockItem(Blocks.CHISELED_RED_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
         //cracked carved
         //mossy carved
 //Quartz
@@ -515,7 +515,8 @@ public class Items {
         //mossy_andesite_brick_wall
 
     //Pillars and Chiseled
-        //andesite_pillar
+        public static final Item CHISELED_ANDESITE = register("chiseled_andesite", new BlockItem(Blocks.CHISELED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item ANDESITE_PILLAR = register("andesite_pillar", new BlockItem(Blocks.ANDESITE_PILLAR, ItemGroups.consistencyPlusLesserStoneItemSettings()));
         //cracked_andesite_pillar
         //mossy_andesite_pillar
         //chiseled_andesite_bricks
@@ -606,7 +607,8 @@ public class Items {
         //mossy_diorite_brick_wall
 
     //Pillars and Chiseled
-        //diorite_pillar
+        public static final Item CHISELED_DIORITE = register("chiseled_diorite", new BlockItem(Blocks.CHISELED_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item DIORITE_PILLAR = register("diorite_pillar", new BlockItem(Blocks.DIORITE_PILLAR, ItemGroups.consistencyPlusLesserStoneItemSettings()));
         //cracked_diorite_pillar
         //mossy_diorite_pillar
         //chiseled_diorite_bricks
@@ -699,13 +701,14 @@ public class Items {
         //mossy_granite_brick_wall
 
     //Pillars and Chiseled
-        //granite_pillar
+        public static final Item CHISELED_GRANITE = register("chiseled_granite", new BlockItem(Blocks.CHISELED_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item GRANITE_PILLAR = register("granite_pillar", new BlockItem(Blocks.GRANITE_PILLAR, ItemGroups.consistencyPlusLesserStoneItemSettings()));
         //cracked_granite_pillar
         //mossy_granite_pillar
         //chiseled_granite_bricks
         //cracked_chiseled_granite_bricks
         //mossy_chiseled_granite_bricks
-    //corner pillar
+        //corner pillar
         //cracked corner pillar
         //mossy corner pillar
         public static final Item CARVED_GRANITE = register("carved_granite", new BlockItem(Blocks.CARVED_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
@@ -777,13 +780,13 @@ public class Items {
         //mossy_brick_wall
 
     //Pillars and Chiseled
-        //chiseled_bricks
+        public static final Item CHISELED_BRICKS = register("chiseled_bricks", new BlockItem(Blocks.CHISELED_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));
+        public static final Item BRICK_PILLAR = register("brick_pillar", new BlockItem(Blocks.BRICK_PILLAR, ItemGroups.consistencyPlusBrickItemSettings()));
         //mossy_chiseled_bricks
         //cracked_chiseled_bricks
-        //brick_pillar
         //mossy_brick_pillar
         //cracked_brick_pillar
-    //corner pillar
+        //corner pillar
         //cracked corner pillar
         //mossy corner pillar
         public static final Item CARVED_BRICKS = register("carved_bricks", new BlockItem(Blocks.CARVED_BRICKS, ItemGroups.consistencyPlusBrickItemSettings()));

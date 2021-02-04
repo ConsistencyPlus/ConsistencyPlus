@@ -1068,7 +1068,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        //carved
+        public static final Item CARVED_DARK_PRISMARINE = register("carved_dark_prismarine", new BlockItem(Blocks.CARVED_DARK_PRISMARINE, ItemGroups.consistencyPlusMiscItemSettings()));
         //cracked carved
         //mossy carved
 

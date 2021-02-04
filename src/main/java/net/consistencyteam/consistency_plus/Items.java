@@ -254,14 +254,14 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        public static final Item CHISELED_SANDSTONE = register("chiseled_sandstone", new BlockItem(Blocks.CHISELED_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item CHISELED_SANDSTONE = register("chiseled_sandstone", new BlockItem(net.consistencyteam.consistency_plus.Blocks.CHISELED_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
         //cracked carved
         //mossy carved
 
 //Red Sandstone
 
     //Smooth
-        public static final Item SMOOTH_RED_SANDSTONE_WALL = register("smooth_red_sandstone_wall", new BlockItem(Blocks.SMOOTH_RED_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SMOOTH_RED_SANDSTONE_WALL = register("smooth_red_sandstone_wall", new BlockItem(net.consistencyteam.consistency_plus.Blocks.SMOOTH_RED_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
 
     //Cracked Smooth
         //block

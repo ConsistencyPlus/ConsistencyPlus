@@ -377,7 +377,7 @@ public class Blocks {
         //gate
 
     //Pillars and Chiseled
-        public static final Block CHISELED_RED_SANDSTONE = register("chiseled_sandstone", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
+        public static final Block CHISELED_RED_SANDSTONE = register("chiseled_red_sandstone", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
         //cracked_chiseled_red_sandstone_bricks
         //mossy_chiseled_red_sandstone_bricks
         public static final Block RED_SANDSTONE_PILLAR = register("red_sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(RED_SANDSTONE)));

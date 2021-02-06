@@ -6,11 +6,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:cut_purpur"
+            "item": "consistency_plus:sandstone_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:carved_purpur",
+        "item": "minecraft:chiseled_sandstone",
         "count": 4
     }
 }

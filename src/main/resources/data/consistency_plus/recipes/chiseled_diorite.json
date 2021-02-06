@@ -6,10 +6,10 @@
     " XX"
   ],
   "key": {
-    "X": {"item": "minecraft:red_sandstone"}
+    "X": {"item": "consistency_plus:diorite_bricks"}
   },
   "result": {
-    "item": "consistency_plus:polished_red_sandstone",
+    "item": "consistency_plus:chiseled_diorite",
     "count": 4
   }
 }

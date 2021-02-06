@@ -6,11 +6,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:red_sandstone_bricks"
+            "item": "consistency_plus:cut_blackstone"
         }
     },
     "result": {
-        "item": "consistency_plus:chiseled_red_sandstone",
+        "item": "minecraft:chiseled_polished_blackstone",
         "count": 4
     }
 }

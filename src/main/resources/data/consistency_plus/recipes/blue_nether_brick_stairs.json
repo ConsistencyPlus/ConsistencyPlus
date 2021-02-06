@@ -7,11 +7,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:mossy_smooth_andesite"
+            "item": "consistency_plus:blue_nether_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:mossy_smooth_andesite_stairs",
+        "item": "consistency_plus:blue_nether_brick_stairs",
         "count": 4
     }
 }

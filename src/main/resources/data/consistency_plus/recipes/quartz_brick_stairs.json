@@ -1,16 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "XX",
-        "XX"
+        "X  ",
+        "XX ",
+        "XXX"
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:polished_dark_prismarine"
+            "item": "consistency_plus:quartz_brick"
         }
     },
     "result": {
-        "item": "consistency_plus:dark_prismarine_bricks",
+        "item": "consistency_plus:quartz_brick_stairs",
         "count": 4
     }
 }

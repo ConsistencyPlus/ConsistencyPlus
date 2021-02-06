@@ -1,7 +1,8 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "XXX",
+        "X  ",
+        "XX ",
         "XXX"
     ],
     "key": {
@@ -10,7 +11,7 @@
         }
     },
     "result": {
-        "item": "consistency_plus:dark_prismarine_bricks_wall",
-        "count": 6
+        "item": "consistency_plus:dark_prismarine_brick_stairs",
+        "count": 4
     }
 }

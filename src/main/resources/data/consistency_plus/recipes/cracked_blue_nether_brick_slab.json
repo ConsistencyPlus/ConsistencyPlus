@@ -5,11 +5,11 @@
     ],
     "key": {
         "X": {
-            "item": "minecraft:cracked_nether_bricks"
+            "item": "consistency_plus:cracked_blue_nether_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:cracked_nether_bricks_slab",
+        "item": "consistency_plus:cracked_blue_nether_brick_slab",
         "count": 6
     }
 }

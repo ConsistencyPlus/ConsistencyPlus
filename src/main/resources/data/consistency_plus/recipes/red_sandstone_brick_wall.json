@@ -1,8 +1,7 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "X  ",
-        "XX ",
+        "XXX",
         "XXX"
     ],
     "key": {
@@ -11,7 +10,7 @@
         }
     },
     "result": {
-        "item": "consistency_plus:red_sandstone_bricks_stairs",
-        "count": 4
+        "item": "consistency_plus:red_sandstone_brick_wall",
+        "count": 6
     }
 }

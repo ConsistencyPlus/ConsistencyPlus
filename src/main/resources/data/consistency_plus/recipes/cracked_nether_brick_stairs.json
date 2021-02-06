@@ -7,11 +7,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:dark_prismarine_bricks"
+            "item": "consistency_plus:cracked_nether_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:dark_prismarine_bricks_stairs",
+        "item": "consistency_plus:cracked_nether_brick_stairs",
         "count": 4
     }
 }

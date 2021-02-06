@@ -5,11 +5,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:blue_nether_bricks"
+            "item": "consistency_plus:quartz_brick"
         }
     },
     "result": {
-        "item": "consistency_plus:blue_nether_bricks_slab",
+        "item": "consistency_plus:quartz_brick_slab",
         "count": 6
     }
 }

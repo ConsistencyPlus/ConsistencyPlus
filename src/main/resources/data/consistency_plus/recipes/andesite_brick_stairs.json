@@ -7,11 +7,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:sandstone_bricks"
+            "item": "consistency_plus:andesite_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:sandstone_bricks_stairs",
+        "item": "consistency_plus:andesite_brick_stairs",
         "count": 4
     }
 }

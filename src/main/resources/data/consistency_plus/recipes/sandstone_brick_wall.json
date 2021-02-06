@@ -6,11 +6,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:mossy_smooth_andesite"
+            "item": "consistency_plus:sandstone_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:mossy_smooth_andesite_wall",
+        "item": "consistency_plus:sandstone_brick_wall",
         "count": 6
     }
 }

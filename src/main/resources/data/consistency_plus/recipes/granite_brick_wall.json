@@ -6,11 +6,11 @@
     ],
     "key": {
         "X": {
-            "item": "minecraft:quartz_bricks"
+            "item": "consistency_plus:granite_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:quartz_bricks_wall",
+        "item": "consistency_plus:granite_brick_wall",
         "count": 6
     }
 }

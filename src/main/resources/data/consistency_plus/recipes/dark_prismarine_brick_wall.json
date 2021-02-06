@@ -6,11 +6,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:mossy_smooth_andesite"
+            "item": "consistency_plus:dark_prismarine_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:mossy_smooth_andesite_wall",
+        "item": "consistency_plus:dark_prismarine_brick_wall",
         "count": 6
     }
 }

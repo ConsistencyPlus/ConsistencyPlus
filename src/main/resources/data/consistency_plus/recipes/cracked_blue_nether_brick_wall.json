@@ -1,15 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
+        "XXX",
         "XXX"
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:dark_prismarine_bricks"
+            "item": "consistency_plus:cracked_blue_nether_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:dark_prismarine_bricks_slab",
+        "item": "consistency_plus:cracked_blue_nether_brick_wall",
         "count": 6
     }
 }

@@ -6,11 +6,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:sandstone_bricks"
+            "item": "consistency_plus:cracked_nether_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:sandstone_bricks_wall",
+        "item": "consistency_plus:cracked_nether_brick_wall",
         "count": 6
     }
 }

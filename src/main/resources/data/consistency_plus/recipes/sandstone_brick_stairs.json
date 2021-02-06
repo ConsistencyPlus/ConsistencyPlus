@@ -7,11 +7,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:blue_nether_bricks"
+            "item": "consistency_plus:sandstone_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:blue_nether_bricks_stairs",
+        "item": "consistency_plus:sandstone_brick_stairs",
         "count": 4
     }
 }

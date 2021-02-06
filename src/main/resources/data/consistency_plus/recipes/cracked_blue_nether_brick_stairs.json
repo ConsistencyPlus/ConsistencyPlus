@@ -7,11 +7,11 @@
     ],
     "key": {
         "X": {
-            "item": "minecraft:quartz_bricks"
+            "item": "consistency_plus:cracked_blue_nether_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:quartz_bricks_stairs",
+        "item": "consistency_plus:cracked_blue_nether_brick_stairs",
         "count": 4
     }
 }

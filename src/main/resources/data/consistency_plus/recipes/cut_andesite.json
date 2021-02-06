@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " X ",
-    " X "
+    " XX",
+    " XX"
   ],
   "key": {
     "X": {"item": "consistency_plus:andesite_brick_slab"}
   },
   "result": {
     "item": "consistency_plus:cut_andesite",
-    "count": 1
+    "count": 2
   }
 }

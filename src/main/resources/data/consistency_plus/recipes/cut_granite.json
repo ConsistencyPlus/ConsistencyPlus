@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " X ",
-    " X "
+    " XX",
+    " XX"
   ],
   "key": {
     "X": {"item": "consistency_plus:granite_brick_slab"}
   },
   "result": {
     "item": "consistency_plus:cut_granite",
-    "count": 4
+    "count": 2
   }
 }

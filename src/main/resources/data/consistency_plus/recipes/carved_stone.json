@@ -1,17 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "X  ",
-        "XX ",
-        "XXX"
+        "XX",
+        "XX"
     ],
     "key": {
         "X": {
-            "item": "minecraft:quartz_bricks"
+            "item": "consistency_plus:cut_stone"
         }
     },
     "result": {
-        "item": "consistency_plus:quartz_brick_stairs",
+        "item": "consistency_plus:carved_stone_bricks",
         "count": 4
     }
 }

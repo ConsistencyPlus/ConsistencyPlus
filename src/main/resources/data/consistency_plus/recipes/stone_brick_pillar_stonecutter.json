@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:stone_bricks"
+    "item": "minecraft:polished_stone"
   },
   "result": "consistency_plus:stone_brick_pillar",
   "count": 1

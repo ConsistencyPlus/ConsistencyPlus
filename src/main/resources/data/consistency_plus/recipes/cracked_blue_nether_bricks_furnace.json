@@ -1,9 +1,9 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "item": "minecraft:andesite_slab"
+        "item": "minecraft:blue_nether_bricks"
     },
-    "result": "consistency_plus:smooth_andesite_slab",
+    "result": "consistency_plus:cracked_blue_nether_bricks",
     "experience": 0.1,
     "cooking_time": 200
 }

@@ -1469,11 +1469,9 @@ public class Blocks {
         public static final Block CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
         public static final Block CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new BaseConsistencyStairBlock(CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 
-
-
     // Oh god this isn't cursed idea at all nope
         public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MaterialColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));
-
+        public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.LIGHT_BLUE).strength(0.3F).sounds(BlockSoundGroup.GLASS).luminance(11)));
 
     public static final Block DEVIN_BLOCKERA = register("devin_blockera", new Block(FabricBlockSettings.copy(STONE)));
     public static final Block BROKEN_MODIFIKATION = register("broken_modifikation", new Block(FabricBlockSettings.copy(BEDROCK)));

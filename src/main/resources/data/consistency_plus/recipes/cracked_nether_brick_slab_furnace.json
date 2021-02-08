@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "item": "consistency_plus:nether_brick_slab"
+        "item": "minecraft:nether_brick_slab"
     },
     "result": "consistency_plus:cracked_nether_brick_slab",
     "experience": 0.1,

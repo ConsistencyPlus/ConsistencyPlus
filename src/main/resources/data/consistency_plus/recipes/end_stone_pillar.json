@@ -6,11 +6,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:end_stone_bricks"
+            "item": "minecraft:end_stone_bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:end_stone_pillar",
+        "item": "consistency_plus:end_stone_brick_pillar",
         "count": 2
     }
 }

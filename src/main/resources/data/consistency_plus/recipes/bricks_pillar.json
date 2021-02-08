@@ -6,11 +6,11 @@
     ],
     "key": {
         "X": {
-            "item": "consistency_plus:bricks_bricks"
+            "item": "minecraft:bricks"
         }
     },
     "result": {
-        "item": "consistency_plus:bricks_pillar",
+        "item": "consistency_plus:brick_pillar",
         "count": 2
     }
 }

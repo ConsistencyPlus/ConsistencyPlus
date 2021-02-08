@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "consistency_plus:cut_red_sandstone_slab",
+                    "name": "minecraft:cut_red_sandstone_slab",
                     "functions": [
                         {
                             "function": "minecraft:explosion_decay"
@@ -17,7 +17,7 @@
                             "conditions": [
                                 {
                                     "condition": "minecraft:block_state_property",
-                                    "block": "consistency_plus:cut_red_sandstone_slab",
+                                    "block": "minecraft:cut_red_sandstone_slab",
                                     "properties": {
                                         "type": "double"
                                     }

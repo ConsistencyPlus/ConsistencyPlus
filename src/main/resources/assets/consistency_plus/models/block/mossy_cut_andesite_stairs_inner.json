@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/inner_stairs",
+    "textures": {
+        "bottom": "consistency_plus:block/mossy_cut_andesite",
+        "top": "consistency_plus:block/mossy_cut_andesite",
+        "side": "consistency_plus:block/mossy_cut_andesite"
+    }
+}

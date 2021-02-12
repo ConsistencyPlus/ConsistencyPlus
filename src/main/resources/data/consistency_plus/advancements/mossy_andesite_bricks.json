@@ -1,0 +1,23 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "consistency_plus:mossy_andesite_bricks_slab",
+            "consistency_plus:mossy_andesite_bricks_stairs",
+            "consistency_plus:mossy_andesite_bricks_pillar",
+            "consistency_plus:mossy_andesite_bricks_wall"
+        ]
+    },
+    "criteria": {
+        "has_item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "consistency_plus:andesite_bricks"
+                    }
+                ]
+            }
+        }
+    }
+}

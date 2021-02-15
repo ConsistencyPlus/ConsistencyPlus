@@ -2,10 +2,10 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
         "recipes": [
-            "consistency_plus:mossy_andesite_bricks_slab",
-            "consistency_plus:mossy_andesite_bricks_stairs",
-            "consistency_plus:mossy_andesite_bricks_pillar",
-            "consistency_plus:mossy_andesite_bricks_wall"
+            "consistency_plus:mossy_andesite_brick_slab",
+            "consistency_plus:mossy_andesite_brick_stairs",
+            "consistency_plus:mossy_andesite_brick_pillar",
+            "consistency_plus:mossy_andesite_brick_wall"
         ]
     },
     "criteria": {

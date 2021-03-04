@@ -30,6 +30,12 @@ Current Planned Additions Count is at 1377, and may raise if we feel like it.
 ### Will the blocks have CTM support?
 There are currently no plans for CTM in the base mod, however we may add this in the future through either updates, addons, or a resource pack. 
 
+### Will you be making a forge port?
+No, and we do not plan to anytime soon.
+
+### Can **I** make a forge port?
+We'd prefer if you didn't, but the license allows for it.
+
 
 ## How do I contribute?
 

@@ -34,7 +34,7 @@ There are currently no plans for CTM in the base mod, however we may add this in
 No, and we do not plan to anytime soon.
 
 ### Can **I** make a forge port?
-We'd prefer if you didn't, but the license allows for it.
+We'd prefer if you asked us about it first, however the license allows for it.
 
 
 ## How do I contribute?

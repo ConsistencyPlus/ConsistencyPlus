@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "template_wall_post",
+	"parent": "minecraft:block/template_wall_post",
 	"textures": {
 		"3": "consistency_plus:block/cut_clay_top_bottom",
 		"4": "consistency_plus:block/cut_clay",

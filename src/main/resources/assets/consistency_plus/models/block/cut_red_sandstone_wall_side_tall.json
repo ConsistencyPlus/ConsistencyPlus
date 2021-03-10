@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "template_wall_post",
+	"parent": "minecraft:block/template_wall_post",
 	"textures": {
 		"3": "minecraft:block/red_sandstone_top",
 		"4": "minecraft:block/cut_red_sandstone",

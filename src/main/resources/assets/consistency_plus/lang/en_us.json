@@ -179,6 +179,7 @@
   "block.consistency_plus.chiseled_bricks": "Chiseled Bricks",
 
   "block.consistency_plus.suspicious_slab": "Suspicious Slab",
+  "me.when.the": "Slab is sus",
 
   "block.consistency_plus.blue_nether_bricks": "Blue Nether Bricks",
   "block.consistency_plus.blue_nether_brick_stairs": "Blue Nether Brick Stairs",
@@ -346,6 +347,27 @@
   "block.consistency_plus.dark_prismarine_brick_slab": "Dark Prismarine Brick Slab",
   "block.consistency_plus.dark_prismarine_brick_stairs": "Dark Prismarine Brick Stairs",
   "block.consistency_plus.dark_prismarine_brick_wall": "Dark Prismarine Brick Wall",
+
+  "block.consistency_plus.soul_sandstone": "Soul Sandstone",
+  "block.consistency_plus.soul_sandstone_slab": "Soul Sandstone Slab",
+  "block.consistency_plus.soul_sandstone_stairs": "Soul Sandstone Stairs",
+  "block.consistency_plus.soul_sandstone_wall": "Soul Sandstone Wall",
+  "block.consistency_plus.polished_soul_sandstone": "Polished Soul Sandstone",
+  "block.consistency_plus.polished_soul_sandstone_slab": "Polished Soul Sandstone Slab",
+  "block.consistency_plus.polished_soul_sandstone_stairs": "Polished Soul Sandstone Stairs",
+  "block.consistency_plus.polished_soul_sandstone_wall": "Polished Soul Sandstone Wall",
+  "block.consistency_plus.soul_sandstone_bricks": "Soul Sandstone Bricks",
+  "block.consistency_plus.soul_sandstone_brick_slab": "Soul Sandstone Brick Slab",
+  "block.consistency_plus.soul_sandstone_brick_stairs": "Soul Sandstone Brick Stairs",
+  "block.consistency_plus.soul_sandstone_brick_wall": "Soul Sandstone Brick Wall",
+  "block.consistency_plus.smooth_soul_sandstone": "Smooth Soul Sandstone",
+  "block.consistency_plus.smooth_soul_sandstone_slab": "Smooth Soul Sandstone Slab",
+  "block.consistency_plus.smooth_soul_sandstone_stairs": "Smooth Soul Sandstone Stairs",
+  "block.consistency_plus.smooth_soul_sandstone_wall": "Smooth Soul Sandstone Wall",
+  "block.consistency_plus.cut_soul_sandstone": "Cut Soul Sandstone",
+  "block.consistency_plus.cut_soul_sandstone_slab": "Cut Soul Sandstone Slab",
+  "block.consistency_plus.cut_soul_sandstone_stairs": "Cut Soul Sandstone Stairs",
+  "block.consistency_plus.cut_soul_sandstone_wall": "Cut Soul Sandstone Wall",
 
   "block.consistency_plus.jack_o_soul": "Jack o'Soul",
 

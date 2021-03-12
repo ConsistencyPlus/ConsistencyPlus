@@ -1269,6 +1269,39 @@ public class Items {
         //cracked carved
         //mossy carved
 
+
+// Soul Sandstone
+
+    //Block
+        public static final Item SOUL_SANDSTONE = register("soul_sandstone", new BlockItem(Blocks.SOUL_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SOUL_SANDSTONE_SLAB = register("soul_sandstone_slab", new BlockItem(Blocks.SOUL_SANDSTONE_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SOUL_SANDSTONE_STAIRS = register("soul_sandstone_stairs", new BlockItem(Blocks.SOUL_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SOUL_SANDSTONE_WALL = register("soul_sandstone_wall", new BlockItem(Blocks.SOUL_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
+
+    //Smooth
+        public static final Item SMOOTH_SOUL_SANDSTONE = register("smooth_soul_sandstone", new BlockItem(Blocks.SMOOTH_SOUL_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SMOOTH_SOUL_SANDSTONE_SLAB = register("smooth_soul_sandstone_slab", new BlockItem(Blocks.SMOOTH_SOUL_SANDSTONE_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SMOOTH_SOUL_SANDSTONE_STAIRS = register("smooth_soul_sandstone_stairs", new BlockItem(Blocks.SMOOTH_SOUL_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SMOOTH_SOUL_SANDSTONE_WALL = register("smooth_soul_sandstone_wall", new BlockItem(Blocks.SMOOTH_SOUL_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
+
+    //Polished
+        public static final Item POLISHED_SOUL_SANDSTONE = register("polished_soul_sandstone", new BlockItem(Blocks.POLISHED_SOUL_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item POLISHED_SOUL_SANDSTONE_SLAB = register("polished_soul_sandstone_slab", new BlockItem(Blocks.POLISHED_SOUL_SANDSTONE_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item POLISHED_SOUL_SANDSTONE_STAIRS = register("polished_soul_sandstone_stairs", new BlockItem(Blocks.POLISHED_SOUL_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item POLISHED_SOUL_SANDSTONE_WALL = register("polished_soul_sandstone_wall", new BlockItem(Blocks.POLISHED_SOUL_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
+
+    //Bricks
+        public static final Item SOUL_SANDSTONE_BRICKS = register("soul_sandstone_bricks", new BlockItem(Blocks.SOUL_SANDSTONE_BRICKS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SOUL_SANDSTONE_BRICK_SLAB = register("soul_sandstone_brick_slab", new BlockItem(Blocks.SOUL_SANDSTONE_BRICK_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SOUL_SANDSTONE_BRICk_STAIRS = register("soul_sandstone_brick_stairs", new BlockItem(Blocks.SOUL_SANDSTONE_BRICK_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item SOUL_SANDSTONE_BRICK_WALL = register("soul_sandstone_brick_wall", new BlockItem(Blocks.SOUL_SANDSTONE_BRICK_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
+
+    //Cut
+        public static final Item CUT_SOUL_SANDSTONE = register("cut_soul_sandstone", new BlockItem(Blocks.CUT_SOUL_SANDSTONE, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item CUT_SOUL_SANDSTONE_SLAB = register("cut_soul_sandstone_slab", new BlockItem(Blocks.CUT_SOUL_SANDSTONE_SLAB, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item CUT_SOUL_SANDSTONE_STAIRS = register("cut_soul_sandstone_stairs", new BlockItem(Blocks.CUT_SOUL_SANDSTONE_STAIRS, ItemGroups.consistencyPlusSandstoneItemSettings()));
+        public static final Item CUT_SOUL_SANDSTONE_WALL = register("cut_soul_sandstone_wall", new BlockItem(Blocks.CUT_SOUL_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
+
 //Terracotta
 
     //Terracotta Slab

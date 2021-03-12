@@ -2,7 +2,7 @@
     "parent": "minecraft:block/slab_top",
     "textures": {
         "top": "consistency_plus:block/soul_sandstone_top",
-        "bottom": "consistency_plus:block/soul_sandstone_top",
-        "side": "consistency_plus:block/soul_sandstone_top"
+        "bottom": "consistency_plus:block/soul_sandstone_bottom",
+        "side": "consistency_plus:block/cut_soul_sandstone"
     }
 }

@@ -22,11 +22,6 @@ public class ItemGroups {
         return new Item.Settings().group(CONSISTENCY_PLUS_BRICK);
     }
 
-    public static final ItemGroup CONSISTENCY_PLUS_LESSER_STONE = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "lesser_stone"), () -> new ItemStack(Blocks.ANDESITE_BRICKS));
-    public static Item.Settings consistencyPlusLesserStoneItemSettings() {
-        return new Item.Settings().group(CONSISTENCY_PLUS_LESSER_STONE);
-    }
-
     public static final ItemGroup CONSISTENCY_PLUS_DYEABLE = FabricItemGroupBuilder.build(new Identifier("consistency_plus", "dyeable"), () -> new ItemStack(Blocks.TERRACOTTA_STAIRS));
     public static Item.Settings consistencyPlusDyeableItemSettings() {
         return new Item.Settings().group(CONSISTENCY_PLUS_DYEABLE);

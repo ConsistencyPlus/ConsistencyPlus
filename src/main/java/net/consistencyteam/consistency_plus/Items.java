@@ -263,7 +263,7 @@ public class Items {
     //Smooth
         public static final Item SMOOTH_RED_SANDSTONE_WALL = register("smooth_red_sandstone_wall", new BlockItem(net.consistencyteam.consistency_plus.Blocks.SMOOTH_RED_SANDSTONE_WALL, ItemGroups.consistencyPlusSandstoneItemSettings()));
 
-    //Cracked Smooth
+    //Cracked Smootha
         //block
         //slab
         //stairs
@@ -440,103 +440,103 @@ public class Items {
 
 //Andesite
     //Mossy
-        public static final Item MOSSY_ANDESITE = register("mossy_andesite", new BlockItem(Blocks.MOSSY_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_ANDESITE_SLAB = register("mossy_andesite_slab", new BlockItem(Blocks.MOSSY_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_ANDESITE_STAIRS = register("mossy_andesite_stairs", new BlockItem(Blocks.MOSSY_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_ANDESITE_WALL = register("mossy_andesite_wall", new BlockItem(Blocks.MOSSY_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE = register("mossy_andesite", new BlockItem(Blocks.MOSSY_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE_SLAB = register("mossy_andesite_slab", new BlockItem(Blocks.MOSSY_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE_STAIRS = register("mossy_andesite_stairs", new BlockItem(Blocks.MOSSY_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE_WALL = register("mossy_andesite_wall", new BlockItem(Blocks.MOSSY_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
     
     //Polished
-        public static final Item POLISHED_ANDESITE_WALL = register("polished_andesite_wall", new BlockItem(Blocks.POLISHED_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item POLISHED_ANDESITE_WALL = register("polished_andesite_wall", new BlockItem(Blocks.POLISHED_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Polished
-        public static final Item MOSSY_POLISHED_ANDESITE = register("mossy_polished_andesite", new BlockItem(Blocks.MOSSY_POLISHED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_POLISHED_ANDESITE_SLAB = register("mossy_polished_andesite_slab", new BlockItem(Blocks.MOSSY_POLISHED_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_POLISHED_ANDESITE_STAIRS = register("mossy_polished_andesite_stairs", new BlockItem(Blocks.MOSSY_POLISHED_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_POLISHED_ANDESITE_WALL = register("mossy_polished_andesite_wall", new BlockItem(Blocks.MOSSY_POLISHED_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item MOSSY_POLISHED_ANDESITE = register("mossy_polished_andesite", new BlockItem(Blocks.MOSSY_POLISHED_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_POLISHED_ANDESITE_SLAB = register("mossy_polished_andesite_slab", new BlockItem(Blocks.MOSSY_POLISHED_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_POLISHED_ANDESITE_STAIRS = register("mossy_polished_andesite_stairs", new BlockItem(Blocks.MOSSY_POLISHED_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_POLISHED_ANDESITE_WALL = register("mossy_polished_andesite_wall", new BlockItem(Blocks.MOSSY_POLISHED_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
         //gate
 
     //Mossy Polished
-        public static final Item CRACKED_POLISHED_ANDESITE = register("cracked_polished_andesite", new BlockItem(Blocks.CRACKED_POLISHED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_POLISHED_ANDESITE_SLAB = register("cracked_polished_andesite_slab", new BlockItem(Blocks.CRACKED_POLISHED_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_POLISHED_ANDESITE_STAIRS = register("cracked_polished_andesite_stairs", new BlockItem(Blocks.CRACKED_POLISHED_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_POLISHED_ANDESITE_WALL = register("cracked_polished_andesite_wall", new BlockItem(Blocks.CRACKED_POLISHED_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CRACKED_POLISHED_ANDESITE = register("cracked_polished_andesite", new BlockItem(Blocks.CRACKED_POLISHED_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_POLISHED_ANDESITE_SLAB = register("cracked_polished_andesite_slab", new BlockItem(Blocks.CRACKED_POLISHED_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_POLISHED_ANDESITE_STAIRS = register("cracked_polished_andesite_stairs", new BlockItem(Blocks.CRACKED_POLISHED_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_POLISHED_ANDESITE_WALL = register("cracked_polished_andesite_wall", new BlockItem(Blocks.CRACKED_POLISHED_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
         //gate
 
     //Smooth
-        public static final Item SMOOTH_ANDESITE = register("smooth_andesite", new BlockItem(Blocks.SMOOTH_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_ANDESITE_SLAB = register("smooth_andesite_slab", new BlockItem(Blocks.SMOOTH_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_ANDESITE_STAIRS = register("smooth_andesite_stairs", new BlockItem(Blocks.SMOOTH_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_ANDESITE_WALL = register("smooth_andesite_wall", new BlockItem(Blocks.SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item SMOOTH_ANDESITE = register("smooth_andesite", new BlockItem(Blocks.SMOOTH_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_ANDESITE_SLAB = register("smooth_andesite_slab", new BlockItem(Blocks.SMOOTH_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_ANDESITE_STAIRS = register("smooth_andesite_stairs", new BlockItem(Blocks.SMOOTH_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_ANDESITE_WALL = register("smooth_andesite_wall", new BlockItem(Blocks.SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Smooth
-        public static final Item CRACKED_SMOOTH_ANDESITE = register("cracked_smooth_andesite", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_SMOOTH_ANDESITE_SLAB = register("cracked_smooth_andesite_slab", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_SMOOTH_ANDESITE_STAIRS = register("cracked_smooth_andesite_stairs", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_SMOOTH_ANDESITE_WALL = register("cracked_smooth_andesite_wall", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CRACKED_SMOOTH_ANDESITE = register("cracked_smooth_andesite", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_SMOOTH_ANDESITE_SLAB = register("cracked_smooth_andesite_slab", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_SMOOTH_ANDESITE_STAIRS = register("cracked_smooth_andesite_stairs", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_SMOOTH_ANDESITE_WALL = register("cracked_smooth_andesite_wall", new BlockItem(Blocks.CRACKED_SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Mossy Smooth
-        public static final Item MOSSY_SMOOTH_ANDESITE = register("mossy_smooth_andesite", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_SMOOTH_ANDESITE_SLAB = register("mossy_smooth_andesite_slab", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_SMOOTH_ANDESITE_STAIRS = register("mossy_smooth_andesite_stairs", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_SMOOTH_ANDESITE_WALL = register("mossy_smooth_andesite_wall", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item MOSSY_SMOOTH_ANDESITE = register("mossy_smooth_andesite", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_SMOOTH_ANDESITE_SLAB = register("mossy_smooth_andesite_slab", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_SMOOTH_ANDESITE_STAIRS = register("mossy_smooth_andesite_stairs", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_SMOOTH_ANDESITE_WALL = register("mossy_smooth_andesite_wall", new BlockItem(Blocks.MOSSY_SMOOTH_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cut
-        public static final Item CUT_ANDESITE = register("cut_andesite", new BlockItem(Blocks.CUT_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_ANDESITE_SLAB = register("cut_andesite_slab", new BlockItem(Blocks.CUT_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_ANDESITE_STAIRS = register("cut_andesite_stairs", new BlockItem(Blocks.CUT_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_ANDESITE_WALL = register("cut_andesite_wall", new BlockItem(Blocks.CUT_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CUT_ANDESITE = register("cut_andesite", new BlockItem(Blocks.CUT_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_ANDESITE_SLAB = register("cut_andesite_slab", new BlockItem(Blocks.CUT_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_ANDESITE_STAIRS = register("cut_andesite_stairs", new BlockItem(Blocks.CUT_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_ANDESITE_WALL = register("cut_andesite_wall", new BlockItem(Blocks.CUT_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Cut
-        public static final Item CRACKED_CUT_ANDESITE = register("cracked_cut_andesite", new BlockItem(Blocks.CRACKED_CUT_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_CUT_ANDESITE_SLAB = register("cracked_cut_andesite_slab", new BlockItem(Blocks.CRACKED_CUT_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_CUT_ANDESITE_STAIRS = register("cracked_cut_andesite_stairs", new BlockItem(Blocks.CRACKED_CUT_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_CUT_ANDESITE_WALL = register("cracked_cut_andesite_wall", new BlockItem(Blocks.CRACKED_CUT_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CRACKED_CUT_ANDESITE = register("cracked_cut_andesite", new BlockItem(Blocks.CRACKED_CUT_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_CUT_ANDESITE_SLAB = register("cracked_cut_andesite_slab", new BlockItem(Blocks.CRACKED_CUT_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_CUT_ANDESITE_STAIRS = register("cracked_cut_andesite_stairs", new BlockItem(Blocks.CRACKED_CUT_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_CUT_ANDESITE_WALL = register("cracked_cut_andesite_wall", new BlockItem(Blocks.CRACKED_CUT_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
         //gate
 
     //Mossy Cut
-        public static final Item MOSSY_CUT_ANDESITE = register("mossy_cut_andesite", new BlockItem(Blocks.MOSSY_CUT_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_CUT_ANDESITE_SLAB = register("mossy_cut_andesite_slab", new BlockItem(Blocks.MOSSY_CUT_ANDESITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_CUT_ANDESITE_STAIRS = register("mossy_cut_andesite_stairs", new BlockItem(Blocks.MOSSY_CUT_ANDESITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_CUT_ANDESITE_WALL = register("mossy_cut_andesite_wall", new BlockItem(Blocks.MOSSY_CUT_ANDESITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item MOSSY_CUT_ANDESITE = register("mossy_cut_andesite", new BlockItem(Blocks.MOSSY_CUT_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_CUT_ANDESITE_SLAB = register("mossy_cut_andesite_slab", new BlockItem(Blocks.MOSSY_CUT_ANDESITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_CUT_ANDESITE_STAIRS = register("mossy_cut_andesite_stairs", new BlockItem(Blocks.MOSSY_CUT_ANDESITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_CUT_ANDESITE_WALL = register("mossy_cut_andesite_wall", new BlockItem(Blocks.MOSSY_CUT_ANDESITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
         //gate
 
     //Bricks
-        public static final Item ANDESITE_BRICKS = register("andesite_bricks", new BlockItem(Blocks.ANDESITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item ANDESITE_BRICK_SLAB = register("andesite_brick_slab", new BlockItem(Blocks.ANDESITE_BRICK_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item ANDESITE_BRICK_STAIRS = register("andesite_brick_stairs", new BlockItem(Blocks.ANDESITE_BRICK_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item ANDESITE_BRICK_WALL = register("andesite_brick_wall", new BlockItem(Blocks.ANDESITE_BRICK_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item ANDESITE_BRICKS = register("andesite_bricks", new BlockItem(Blocks.ANDESITE_BRICKS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item ANDESITE_BRICK_SLAB = register("andesite_brick_slab", new BlockItem(Blocks.ANDESITE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item ANDESITE_BRICK_STAIRS = register("andesite_brick_stairs", new BlockItem(Blocks.ANDESITE_BRICK_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item ANDESITE_BRICK_WALL = register("andesite_brick_wall", new BlockItem(Blocks.ANDESITE_BRICK_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
 
     //Cracked Bricks
-        public static final Item CRACKED_ANDESITE_BRICKS = register("cracked_andesite_bricks", new BlockItem(Blocks.CRACKED_ANDESITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_ANDESITE_BRICK_SLAB = register("cracked_andesite_brick_slab", new BlockItem(Blocks.CRACKED_ANDESITE_BRICK_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_ANDESITE_BRICK_STAIRS = register("cracked_andesite_brick_stairs", new BlockItem(Blocks.CRACKED_ANDESITE_BRICK_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_ANDESITE_BRICK_WALL = register("cracked_andesite_brick_wall", new BlockItem(Blocks.CRACKED_ANDESITE_BRICK_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CRACKED_ANDESITE_BRICKS = register("cracked_andesite_bricks", new BlockItem(Blocks.CRACKED_ANDESITE_BRICKS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_ANDESITE_BRICK_SLAB = register("cracked_andesite_brick_slab", new BlockItem(Blocks.CRACKED_ANDESITE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_ANDESITE_BRICK_STAIRS = register("cracked_andesite_brick_stairs", new BlockItem(Blocks.CRACKED_ANDESITE_BRICK_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_ANDESITE_BRICK_WALL = register("cracked_andesite_brick_wall", new BlockItem(Blocks.CRACKED_ANDESITE_BRICK_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Mossy Bricks
-        public static final Item MOSSY_ANDESITE_BRICKS = register("mossy_andesite_bricks", new BlockItem(Blocks.MOSSY_ANDESITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_ANDESITE_BRICK_SLAB = register("mossy_andesite_brick_slab", new BlockItem(Blocks.MOSSY_ANDESITE_BRICK_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_ANDESITE_BRICK_STAIRS = register("mossy_andesite_brick_stairs", new BlockItem(Blocks.MOSSY_ANDESITE_BRICK_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_ANDESITE_BRICK_WALL = register("mossy_andesite_brick_wall", new BlockItem(Blocks.MOSSY_ANDESITE_BRICK_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE_BRICKS = register("mossy_andesite_bricks", new BlockItem(Blocks.MOSSY_ANDESITE_BRICKS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE_BRICK_SLAB = register("mossy_andesite_brick_slab", new BlockItem(Blocks.MOSSY_ANDESITE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE_BRICK_STAIRS = register("mossy_andesite_brick_stairs", new BlockItem(Blocks.MOSSY_ANDESITE_BRICK_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE_BRICK_WALL = register("mossy_andesite_brick_wall", new BlockItem(Blocks.MOSSY_ANDESITE_BRICK_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Pillars and Chiseled
-        public static final Item CHISELED_ANDESITE = register("chiseled_andesite", new BlockItem(Blocks.CHISELED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_CHISELED_ANDESITE = register("cracked_chiseled_andesite", new BlockItem(Blocks.CRACKED_CHISELED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_CHISELED_ANDESITE = register("mossy_chiseled_andesite", new BlockItem(Blocks.MOSSY_CHISELED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item ANDESITE_PILLAR = register("andesite_pillar", new BlockItem(Blocks.ANDESITE_PILLAR, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_ANDESITE_PILLAR = register("cracked_andesite_pillar", new BlockItem(Blocks.CRACKED_ANDESITE_PILLAR, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_ANDESITE_PILLAR = register("mossy_andesite_pillar", new BlockItem(Blocks.MOSSY_ANDESITE_PILLAR, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CHISELED_ANDESITE = register("chiseled_andesite", new BlockItem(Blocks.CHISELED_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_CHISELED_ANDESITE = register("cracked_chiseled_andesite", new BlockItem(Blocks.CRACKED_CHISELED_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_CHISELED_ANDESITE = register("mossy_chiseled_andesite", new BlockItem(Blocks.MOSSY_CHISELED_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item ANDESITE_PILLAR = register("andesite_pillar", new BlockItem(Blocks.ANDESITE_PILLAR, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_ANDESITE_PILLAR = register("cracked_andesite_pillar", new BlockItem(Blocks.CRACKED_ANDESITE_PILLAR, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_ANDESITE_PILLAR = register("mossy_andesite_pillar", new BlockItem(Blocks.MOSSY_ANDESITE_PILLAR, ItemGroups.consistencyPlusStoneItemSettings()));
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        public static final Item CARVED_ANDESITE = register("carved_andesite", new BlockItem(Blocks.CARVED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CRACKED_CARVED_ANDESITE = register("cracked_carved_andesite", new BlockItem(Blocks.CRACKED_CARVED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item MOSSY_CARVED_ANDESITE = register("mossy_carved_andesite", new BlockItem(Blocks.MOSSY_CARVED_ANDESITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CARVED_ANDESITE = register("carved_andesite", new BlockItem(Blocks.CARVED_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_CARVED_ANDESITE = register("cracked_carved_andesite", new BlockItem(Blocks.CRACKED_CARVED_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_CARVED_ANDESITE = register("mossy_carved_andesite", new BlockItem(Blocks.MOSSY_CARVED_ANDESITE, ItemGroups.consistencyPlusStoneItemSettings()));
 
 //Diorite
 
     //Polished
-        public static final Item POLISHED_DIORITE_WALL = register("polished_diorite_wall", new BlockItem(Blocks.POLISHED_DIORITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item POLISHED_DIORITE_WALL = register("polished_diorite_wall", new BlockItem(Blocks.POLISHED_DIORITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Polished
         //block
@@ -553,10 +553,10 @@ public class Items {
         //gate
 
     //Smooth
-        public static final Item SMOOTH_DIORITE = register("smooth_diorite", new BlockItem(Blocks.SMOOTH_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_DIORITE_SLAB = register("smooth_diorite_slab", new BlockItem(Blocks.SMOOTH_DIORITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_DIORITE_STAIRS = register("smooth_diorite_stairs", new BlockItem(Blocks.SMOOTH_DIORITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_DIORITE_WALL = register("smooth_diorite_wall", new BlockItem(Blocks.SMOOTH_DIORITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item SMOOTH_DIORITE = register("smooth_diorite", new BlockItem(Blocks.SMOOTH_DIORITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_DIORITE_SLAB = register("smooth_diorite_slab", new BlockItem(Blocks.SMOOTH_DIORITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_DIORITE_STAIRS = register("smooth_diorite_stairs", new BlockItem(Blocks.SMOOTH_DIORITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_DIORITE_WALL = register("smooth_diorite_wall", new BlockItem(Blocks.SMOOTH_DIORITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Smooth
         //block
@@ -573,10 +573,10 @@ public class Items {
         //gate
 
     //Cut
-        public static final Item CUT_DIORITE = register("cut_diorite", new BlockItem(Blocks.CUT_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_DIORITE_SLAB = register("cut_diorite_slab", new BlockItem(Blocks.CUT_DIORITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_DIORITE_STAIRS = register("cut_diorite_stairs", new BlockItem(Blocks.CUT_DIORITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_DIORITE_WALL = register("cut_diorite_wall", new BlockItem(Blocks.CUT_DIORITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CUT_DIORITE = register("cut_diorite", new BlockItem(Blocks.CUT_DIORITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_DIORITE_SLAB = register("cut_diorite_slab", new BlockItem(Blocks.CUT_DIORITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_DIORITE_STAIRS = register("cut_diorite_stairs", new BlockItem(Blocks.CUT_DIORITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_DIORITE_WALL = register("cut_diorite_wall", new BlockItem(Blocks.CUT_DIORITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
 
     //Cracked Cut
@@ -594,10 +594,10 @@ public class Items {
         //gate
 
     //Bricks
-        public static final Item DIORITE_BRICKS = register("diorite_bricks", new BlockItem(Blocks.DIORITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item DIORITE_BRICK_SLAB = register("diorite_brick_slab", new BlockItem(Blocks.DIORITE_BRICK_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item DIORITE_BRICK_STAIRS = register("diorite_brick_stairs", new BlockItem(Blocks.DIORITE_BRICK_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item DIORITE_BRICK_WALL = register("diorite_brick_wall", new BlockItem(Blocks.DIORITE_BRICK_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item DIORITE_BRICKS = register("diorite_bricks", new BlockItem(Blocks.DIORITE_BRICKS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item DIORITE_BRICK_SLAB = register("diorite_brick_slab", new BlockItem(Blocks.DIORITE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item DIORITE_BRICK_STAIRS = register("diorite_brick_stairs", new BlockItem(Blocks.DIORITE_BRICK_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item DIORITE_BRICK_WALL = register("diorite_brick_wall", new BlockItem(Blocks.DIORITE_BRICK_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Bricks
         //cracked_diorite_bricks
@@ -612,8 +612,8 @@ public class Items {
         //mossy_diorite_brick_wall
 
     //Pillars and Chiseled
-        public static final Item CHISELED_DIORITE = register("chiseled_diorite", new BlockItem(Blocks.CHISELED_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item DIORITE_PILLAR = register("diorite_pillar", new BlockItem(Blocks.DIORITE_PILLAR, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CHISELED_DIORITE = register("chiseled_diorite", new BlockItem(Blocks.CHISELED_DIORITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item DIORITE_PILLAR = register("diorite_pillar", new BlockItem(Blocks.DIORITE_PILLAR, ItemGroups.consistencyPlusStoneItemSettings()));
         //cracked_diorite_pillar
         //mossy_diorite_pillar
         //chiseled_diorite_bricks
@@ -622,14 +622,14 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        public static final Item CARVED_DIORITE = register("carved_diorite", new BlockItem(Blocks.CARVED_DIORITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CARVED_DIORITE = register("carved_diorite", new BlockItem(Blocks.CARVED_DIORITE, ItemGroups.consistencyPlusStoneItemSettings()));
         //cracked carved
         //mossy carved
 
 //Granite
 
     //Polished
-        public static final Item POLISHED_GRANITE_WALL = register("polished_granite_wall", new BlockItem(Blocks.POLISHED_GRANITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item POLISHED_GRANITE_WALL = register("polished_granite_wall", new BlockItem(Blocks.POLISHED_GRANITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Polished
         //block
@@ -646,10 +646,10 @@ public class Items {
         //gate
 
     //Smooth
-        public static final Item SMOOTH_GRANITE = register("smooth_granite", new BlockItem(Blocks.SMOOTH_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_GRANITE_SLAB = register("smooth_granite_slab", new BlockItem(Blocks.SMOOTH_GRANITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_GRANITE_STAIRS = register("smooth_granite_stairs", new BlockItem(Blocks.SMOOTH_GRANITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item SMOOTH_GRANITE_WALL = register("smooth_granite_wall", new BlockItem(Blocks.SMOOTH_GRANITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item SMOOTH_GRANITE = register("smooth_granite", new BlockItem(Blocks.SMOOTH_GRANITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_GRANITE_SLAB = register("smooth_granite_slab", new BlockItem(Blocks.SMOOTH_GRANITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_GRANITE_STAIRS = register("smooth_granite_stairs", new BlockItem(Blocks.SMOOTH_GRANITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item SMOOTH_GRANITE_WALL = register("smooth_granite_wall", new BlockItem(Blocks.SMOOTH_GRANITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
 
     //Cracked Smooth
@@ -667,10 +667,10 @@ public class Items {
         //gate
 
     //Cut
-        public static final Item CUT_GRANITE = register("cut_granite", new BlockItem(Blocks.CUT_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_GRANITE_SLAB = register("cut_granite_slab", new BlockItem(Blocks.CUT_GRANITE_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_GRANITE_STAIRS = register("cut_granite_stairs", new BlockItem(Blocks.CUT_GRANITE_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item CUT_GRANITE_WALL = register("cut_granite_wall", new BlockItem(Blocks.CUT_GRANITE_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CUT_GRANITE = register("cut_granite", new BlockItem(Blocks.CUT_GRANITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_GRANITE_SLAB = register("cut_granite_slab", new BlockItem(Blocks.CUT_GRANITE_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_GRANITE_STAIRS = register("cut_granite_stairs", new BlockItem(Blocks.CUT_GRANITE_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CUT_GRANITE_WALL = register("cut_granite_wall", new BlockItem(Blocks.CUT_GRANITE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Cracked Cut
         //block
@@ -687,10 +687,10 @@ public class Items {
         //gate
 
     //Bricks
-        public static final Item GRANITE_BRICKS = register("granite_bricks", new BlockItem(Blocks.GRANITE_BRICKS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item GRANITE_BRICK_SLAB = register("granite_brick_slab", new BlockItem(Blocks.GRANITE_BRICK_SLAB, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item GRANITE_BRICK_STAIRS = register("granite_brick_stairs", new BlockItem(Blocks.GRANITE_BRICK_STAIRS, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item GRANITE_BRICK_WALL = register("granite_brick_wall", new BlockItem(Blocks.GRANITE_BRICK_WALL, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item GRANITE_BRICKS = register("granite_bricks", new BlockItem(Blocks.GRANITE_BRICKS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item GRANITE_BRICK_SLAB = register("granite_brick_slab", new BlockItem(Blocks.GRANITE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item GRANITE_BRICK_STAIRS = register("granite_brick_stairs", new BlockItem(Blocks.GRANITE_BRICK_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item GRANITE_BRICK_WALL = register("granite_brick_wall", new BlockItem(Blocks.GRANITE_BRICK_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
 
 
     //Cracked Bricks
@@ -706,8 +706,8 @@ public class Items {
         //mossy_granite_brick_wall
 
     //Pillars and Chiseled
-        public static final Item CHISELED_GRANITE = register("chiseled_granite", new BlockItem(Blocks.CHISELED_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
-        public static final Item GRANITE_PILLAR = register("granite_pillar", new BlockItem(Blocks.GRANITE_PILLAR, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CHISELED_GRANITE = register("chiseled_granite", new BlockItem(Blocks.CHISELED_GRANITE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item GRANITE_PILLAR = register("granite_pillar", new BlockItem(Blocks.GRANITE_PILLAR, ItemGroups.consistencyPlusStoneItemSettings()));
         //cracked_granite_pillar
         //mossy_granite_pillar
         //chiseled_granite_bricks
@@ -716,7 +716,7 @@ public class Items {
         //corner pillar
         //cracked corner pillar
         //mossy corner pillar
-        public static final Item CARVED_GRANITE = register("carved_granite", new BlockItem(Blocks.CARVED_GRANITE, ItemGroups.consistencyPlusLesserStoneItemSettings()));
+        public static final Item CARVED_GRANITE = register("carved_granite", new BlockItem(Blocks.CARVED_GRANITE, ItemGroups.consistencyPlusStoneItemSettings()));
         //cracked carved
         //mossy carved
 

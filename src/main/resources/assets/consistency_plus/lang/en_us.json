@@ -1,6 +1,6 @@
 {
-  "item.consistency_plus.warped_nether_wart": "Warped Nether Wart",
-  "item.minecraft.nether_wart": "Crimson Nether Wart",
+  "item.consistency_plus.warped_nether_wart": "Warped Wart",
+  "item.minecraft.nether_wart": "Crimson Wart",
 
   "block.minecraft.red_nether_brick_slab": "Crimson Nether Brick Slab",
   "block.minecraft.red_nether_brick_stairs": "Crimson Nether Brick Stairs",
@@ -472,11 +472,10 @@
 
   "block.consistency_plus.netherite_stairs": "Netherite Stairs",
   "block.consistency_plus.soul_glowstone": "Soul Glowstone",
+  "block.consistency_plus.warped_wart": "Warped Wart",
 
   "itemGroup.consistency_plus.stone": "Consistency+ Stones",
-  "itemGroup.consistency_plus.sandstone": "Consistency+ Sandstones",
   "itemGroup.consistency_plus.brick": "Consistency+ Bricks",
   "itemGroup.consistency_plus.dyeable": "Consistency+ Dyeables",
-  "itemGroup.consistency_plus.misc": "Consistency+ Misc",
-  "itemGroup.consistency_plus.extra": "Consistency+ Extras"
+  "itemGroup.consistency_plus.misc": "Consistency+ Misc"
 }

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:magenta_dye",
+        "consistency_plus:terracotta_gate"
+    ],
+    "result": {
+        "item": "consistency_plus:magenta_terracotta_gate",
+        "count": 1
+    }
+}

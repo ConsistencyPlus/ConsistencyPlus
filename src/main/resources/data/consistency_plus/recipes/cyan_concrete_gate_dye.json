@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:cyan_dye",
+        "consistency_plus:white_concrete_gate"
+    ],
+    "result": {
+        "item": "consistency_plus:cyan_concrete_gate",
+        "count": 1
+    }
+}

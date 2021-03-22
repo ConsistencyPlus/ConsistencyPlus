@@ -1,6 +1,1 @@
-{
-    "parent": "minecraft:block/template_wall_post",
-    "textures": {
-        "wall": "consistency_plus:block/polished_soul_sandstone"
-    }
-}
+{}

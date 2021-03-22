@@ -1,7 +1,7 @@
 {
     "parent": "minecraft:block/outer_stairs",
     "textures": {
-        "bottom": "consistency_plus:block/soul_sandstone_bottom",
+        "bottom": "consistency_plus:block/soul_sandstone_top",
         "top": "consistency_plus:block/soul_sandstone_top",
         "side": "consistency_plus:block/cut_soul_sandstone"
     }

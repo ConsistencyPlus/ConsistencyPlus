@@ -1,0 +1,22 @@
+Translation Statuses:
+
+English-US (Base) - Obviously up to date
+
+Japanese - Up to date as of 0.3.0-Alpha, 3.15.21. Translated by Siuol without any actual knowledge on the words.
+Note: If you are a Japanese speaker, feel free to fix these translations
+
+Spanish - Not Started, Siuol may do base translation for 0.3.0, but most likely it would be inaccurate.
+
+French - Not Started, Siuol may do base translation for 0.3.0, but most likely it would be inaccurate.
+
+German - Not Started, Siuol may do base translation for 0.3.0, but most likely it would be inaccurate.
+
+
+
+Translator Comments:
+
+Siuol - Alright, I would like to point out the following.
+1. I do not actually know any other languages besides English, though I would like to learn them.
+2. Im not dumb enough to use google translate. I perfer scuffed lang files.
+3. Ill probably do inital translations, with occasional updates every couple hundred blocks or so.  ``
+IF you actually can translate DM me on discord at "Siuol" Appeared#5729 and we can work something out.

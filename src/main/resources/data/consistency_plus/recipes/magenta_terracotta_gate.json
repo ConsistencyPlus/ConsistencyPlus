@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aba",
+        "aba"
+    ],
+    "key": {
+        "b": "minecraft:magenta_terracotta",
+        "a": "consistency_plus:magenta_terracotta_wall"
+    },
+    "result": {
+        "item": "consistency_plus:magenta_terracotta_gate",
+        "count": 4
+    }
+}

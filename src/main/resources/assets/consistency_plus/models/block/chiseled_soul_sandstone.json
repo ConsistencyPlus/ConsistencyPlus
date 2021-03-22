@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+        "top": "consistency_plus:block/soul_sandstone_top",
+        "bottom": "consistency_plus:block/soul_sandstone_top",
+        "side": "consistency_plus:block/chiseled_soul_sandstone"
+    }
+}

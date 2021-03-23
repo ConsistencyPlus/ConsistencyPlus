@@ -1,5 +1,5 @@
 {
-    "parent": "consistency_plus:block/template_consistency_gate_wall",
+    "parent": "consistency_plus:block/template_consistency_gate",
     "textures": {
         "texture": "consistency_plus:block/smooth_purpur"
     }

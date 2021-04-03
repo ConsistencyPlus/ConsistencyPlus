@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:block/orientable",
+    "parent": "minecraft:block/cube_bottom_top",
     "textures": {
         "top": "consistency_plus:block/soul_sandstone_top",
         "bottom": "consistency_plus:block/soul_sandstone_top",

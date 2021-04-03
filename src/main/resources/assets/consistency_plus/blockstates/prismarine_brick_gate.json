@@ -13,7 +13,12 @@
         "facing=east,in_wall=true,open=false": {
             "uvlock": true,
             "y": 270,
-            "model": "consistency_plus:block/prismarine_brick_gate_open"
+            "model": "consistency_plus:block/prismarine_brick_gate_wall"
+        },
+        "facing=east,in_wall=true,open=true": {
+            "uvlock": true,
+            "y": 270,
+            "model": "consistency_plus:block/prismarine_brick_gate_wall_open"
         },
         "facing=north,in_wall=false,open=false": {
             "uvlock": true,
@@ -28,12 +33,12 @@
         "facing=north,in_wall=true,open=false": {
             "uvlock": true,
             "y": 180,
-            "model": "consistency_plus:block/prismarine_brick_gate"
+            "model": "consistency_plus:block/prismarine_brick_gate_wall"
         },
         "facing=north,in_wall=true,open=true": {
             "uvlock": true,
             "y": 180,
-            "model": "consistency_plus:block/prismarine_brick_gate_open"
+            "model": "consistency_plus:block/prismarine_brick_gate_wall_open"
         },
         "facing=south,in_wall=false,open=false": {
             "uvlock": true,
@@ -45,11 +50,11 @@
         },
         "facing=south,in_wall=true,open=false": {
             "uvlock": true,
-            "model": "consistency_plus:block/prismarine_brick_gate"
+            "model": "consistency_plus:block/prismarine_brick_gate_wall"
         },
         "facing=south,in_wall=true,open=true": {
             "uvlock": true,
-            "model": "consistency_plus:block/prismarine_brick_gate_open"
+            "model": "consistency_plus:block/prismarine_brick_gate_wall_open"
         },
         "facing=west,in_wall=false,open=false": {
             "uvlock": true,
@@ -64,12 +69,12 @@
         "facing=west,in_wall=true,open=false": {
             "uvlock": true,
             "y": 90,
-            "model": "consistency_plus:block/prismarine_brick_gate"
+            "model": "consistency_plus:block/prismarine_brick_gate_wall"
         },
         "facing=west,in_wall=true,open=true": {
             "uvlock": true,
             "y": 90,
-            "model": "consistency_plus:block/prismarine_brick_gate_open"
+            "model": "consistency_plus:block/prismarine_brick_gate_wall_open"
         }
     }
 }

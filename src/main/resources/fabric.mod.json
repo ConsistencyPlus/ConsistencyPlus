@@ -28,6 +28,9 @@
   "entrypoints": {
     "main": [
       "net.consistencyteam.consistency_plus.ConsistencyPlus"
+    ],
+    "client": [
+      "net.consistencyteam.consistency_plus.ConsistencyPlusClientside"
     ]
   },
   "mixins": [],

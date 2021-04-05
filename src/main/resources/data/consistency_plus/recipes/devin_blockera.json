@@ -8,7 +8,7 @@
   "key": {
     "X": {"item": "minecraft:sugar"},
     "Y": {"item": "minecraft:rotten_flesh"},
-    "Z": {"item": "minecraft:diamond"}
+    "Z": {"item": "minecraft:barrier"}
   },
   "result": {
     "item": "consistency_plus:devin_blockera",

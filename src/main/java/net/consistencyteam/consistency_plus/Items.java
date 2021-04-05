@@ -6,7 +6,6 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-
 public class Items {
     /*
     templates:
@@ -19,6 +18,7 @@ public class Items {
         public static final Item STONE_GATE = register("stone_gate", new BlockItem(Blocks.STONE_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
         public static final Item SMOOTH_STONE_GATE = register("smooth_stone_gate", new BlockItem(Blocks.SMOOTH_STONE_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
         public static final Item COBBLESTONE_GATE = register("cobblestone_gate", new BlockItem(Blocks.COBBLESTONE_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item MOSSY_COBBLESTONE_GATE = register("mossy_cobblestone_gate", new BlockItem(Blocks.MOSSY_COBBLESTONE_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
 
 
     //Cracked Smooth
@@ -80,8 +80,9 @@ public class Items {
         public static final Item CRACKED_STONE_BRICK_SLAB = register("cracked_stone_brick_slab", new BlockItem(Blocks.CRACKED_STONE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
         public static final Item CRACKED_STONE_BRICK_STAIRS = register("cracked_stone_brick_stairs", new BlockItem(Blocks.CRACKED_STONE_BRICK_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
         public static final Item CRACKED_STONE_BRICK_WALL = register("cracked_stone_brick_wall", new BlockItem(Blocks.CRACKED_STONE_BRICK_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
-        public static final Item CRACKED_STONE_BRICK_GATE = register("crackedstone_brick_gate", new BlockItem(Blocks.CRACKED_STONE_BRICK_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_STONE_BRICK_GATE = register("cracked_stone_brick_gate", new BlockItem(Blocks.CRACKED_STONE_BRICK_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
 
+        public static final Item MOSSY_STONE_BRICK_GATE = register("mossy_stone_brick_gate", new BlockItem(Blocks.MOSSY_STONE_BRICK_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
 
     //Pillar and Chiseled
         public static final Item STONE_BRICK_PILLAR = register("stone_brick_pillar", new BlockItem(Blocks.STONE_BRICK_PILLAR, ItemGroups.consistencyPlusStoneItemSettings()));
@@ -1539,14 +1540,16 @@ public class Items {
         public static final Item BROWN_CONCRETE_GATE = register("brown_concrete_gate", new BlockItem(Blocks.BROWN_CONCRETE_GATE, ItemGroups.consistencyPlusDyeableItemSettings()));
 
     // Obsidian
-        public static final Item OBSIDIAN_WALL = register("obsidian_wall", new BlockItem(Blocks.OBSIDIAN_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
         public static final Item OBSIDIAN_SLAB = register("obsidian_slab", new BlockItem(Blocks.OBSIDIAN_SLAB, ItemGroups.consistencyPlusMiscItemSettings()));
         public static final Item OBSIDIAN_STAIRS = register("obsidian_stairs", new BlockItem(Blocks.OBSIDIAN_STAIRS, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item OBSIDIAN_WALL = register("obsidian_wall", new BlockItem(Blocks.OBSIDIAN_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item OBSIDIAN_GATE = register("obsidian_gate", new BlockItem(Blocks.OBSIDIAN_GATE, ItemGroups.consistencyPlusMiscItemSettings()));
 
-     // Crying Obsidian
-        public static final Item CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new BlockItem(Blocks.CRYING_OBSIDIAN_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
+    // Crying Obsidian
         public static final Item CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new BlockItem(Blocks.CRYING_OBSIDIAN_SLAB, ItemGroups.consistencyPlusMiscItemSettings()));
         public static final Item CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new BlockItem(Blocks.CRYING_OBSIDIAN_STAIRS, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new BlockItem(Blocks.CRYING_OBSIDIAN_WALL, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new BlockItem(Blocks.CRYING_OBSIDIAN_GATE, ItemGroups.consistencyPlusMiscItemSettings()));
 
     // Soul o'Lantern
         public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, ItemGroups.consistencyPlusMiscItemSettings()));

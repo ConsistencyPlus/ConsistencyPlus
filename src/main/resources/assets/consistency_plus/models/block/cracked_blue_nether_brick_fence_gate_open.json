@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/template_fence_gate_open",
     "textures": {
-        "texture": "minecraft:block/cracked_blue_nether_bricks"
+        "texture": "consistency_plus:block/cracked_blue_nether_bricks"
     }
 }

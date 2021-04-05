@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab",
-    "textures": {
-        "top": "consistency_plus:block/cracked_carved_andesite",
-        "bottom": "consistency_plus:block/cracked_carved_andesite",
-        "side": "consistency_plus:block/cracked_carved_andesite"
-    }
-}

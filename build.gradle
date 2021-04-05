@@ -15,10 +15,6 @@ repositories {
 		name = "JitPack"
 		url = "https://jitpack.io"
 	}
-	maven {
-		url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/'
-
-	}
 }
 
 dependencies {
@@ -26,10 +22,6 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	 modRuntime ("com.github.SuperCoder7979:databreaker:master-SNAPSHOT") {
-		exclude module: "fabric-loader"
-	 }
 
 	//
 

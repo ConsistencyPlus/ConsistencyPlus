@@ -80,7 +80,7 @@ public class Items {
         public static final Item CRACKED_STONE_BRICK_SLAB = register("cracked_stone_brick_slab", new BlockItem(Blocks.CRACKED_STONE_BRICK_SLAB, ItemGroups.consistencyPlusStoneItemSettings()));
         public static final Item CRACKED_STONE_BRICK_STAIRS = register("cracked_stone_brick_stairs", new BlockItem(Blocks.CRACKED_STONE_BRICK_STAIRS, ItemGroups.consistencyPlusStoneItemSettings()));
         public static final Item CRACKED_STONE_BRICK_WALL = register("cracked_stone_brick_wall", new BlockItem(Blocks.CRACKED_STONE_BRICK_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
-        public static final Item CRACKED_STONE_BRICK_GATE = register("stone_brick_gate", new BlockItem(Blocks.CRACKED_STONE_BRICK_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
+        public static final Item CRACKED_STONE_BRICK_GATE = register("crackedstone_brick_gate", new BlockItem(Blocks.CRACKED_STONE_BRICK_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
 
 
     //Pillar and Chiseled

@@ -317,6 +317,7 @@
   "block.consistency_plus.mossy_andesite_slab": "Mossy Andesite Slab",
   "block.consistency_plus.mossy_andesite_stairs": "Mossy Andesite Stairs",
   "block.consistency_plus.mossy_andesite_wall": "Mossy Andesite Wall",
+  "block.consistency_plus.mossy_andesite_gate": "Mossy Andesite Gate",
   "block.consistency_plus.mossy_andesite": "Mossy Andesite",
   "block.consistency_plus.cracked_polished_andesite": "Cracked Polished Andesite",
   "block.consistency_plus.cracked_polished_andesite_slab": "Cracked Polished Andesite Slab",
@@ -591,10 +592,12 @@
   "block.consistency_plus.obsidian_slab": "Obsidian Slab",
   "block.consistency_plus.obsidian_stairs": "Obsidian Stairs",
   "block.consistency_plus.obsidian_wall": "Obsidian Wall",
+  "block.consistency_plus.obsidian_gate": "Obsidian Gate",
 
   "block.consistency_plus.crying_obsidian_slab": "Crying Obsidian Slab",
   "block.consistency_plus.crying_obsidian_stairs": "Crying Obsidian Stairs",
   "block.consistency_plus.crying_obsidian_wall": "Crying Obsidian Wall",
+  "block.consistency_plus.crying_obsidian_gate": "Crying Obsidian Gate",
 
   "block.consistency_plus.devin_blockera": "Devin Blockera",
   "block.consistency_plus.broken_modifikation": "Trasig Modifiering",

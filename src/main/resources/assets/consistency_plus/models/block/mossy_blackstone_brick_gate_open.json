@@ -1,6 +1,6 @@
 {
     "parent": "consistency_plus:block/template_consistency_gate_open",
     "textures": {
-        "texture": "consistency_plus:block/mossy_blackstone_bricks"
+        "texture": "consistency_plus:block/mossy_polished_blackstone_bricks"
     }
 }

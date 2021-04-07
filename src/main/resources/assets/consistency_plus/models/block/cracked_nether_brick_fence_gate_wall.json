@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/template_fence_gate_wall",
     "textures": {
-        "texture": "consistency_plus:block/cracked_nether_bricks"
+        "texture": "minecraft:block/cracked_nether_bricks"
     }
 }

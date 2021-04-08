@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:cobblestone"
-    },
-    "result": "consistency_plus:cobblestone_gate_gate",
-    "count": 1
-}

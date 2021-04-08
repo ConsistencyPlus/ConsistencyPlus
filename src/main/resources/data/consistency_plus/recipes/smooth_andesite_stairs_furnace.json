@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "minecraft:andesite_stairs"
-    },
-    "result": "consistency_plus:smooth_andesite_stairs",
-    "experience": 0.1,
-    "cooking_time": 200
-}

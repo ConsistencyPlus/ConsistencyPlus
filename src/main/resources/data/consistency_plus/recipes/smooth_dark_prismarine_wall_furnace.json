@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "consistency_plus:dark_prismarine_wall"
-    },
-    "result": "consistency_plus:smooth_dark_prismarine_wall",
-    "experience": 0.1,
-    "cooking_time": 200
-}

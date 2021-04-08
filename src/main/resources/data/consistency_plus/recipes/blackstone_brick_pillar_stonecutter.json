@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:polished_blackstone"
-  },
-  "result": "consistency_plus:blackstone_brick_pillar",
-  "count": 1
-}
-

@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "consistency_plus:blue_nether_brick_stairs"
-    },
-    "result": "consistency_plus:cracked_blue_nether_brick_stairs",
-    "experience": 0.1,
-    "cooking_time": 200
-}

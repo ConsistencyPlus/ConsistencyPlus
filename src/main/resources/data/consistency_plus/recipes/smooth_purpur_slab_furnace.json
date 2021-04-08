@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "consistency_plus:purpur_slab"
-    },
-    "result": "consistency_plus:smooth_purpur_slab",
-    "experience": 0.1,
-    "cooking_time": 200
-}

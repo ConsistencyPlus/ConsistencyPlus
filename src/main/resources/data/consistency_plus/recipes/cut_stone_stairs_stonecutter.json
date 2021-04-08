@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:cut_stone"
-  },
-  "result": "consistency_plus:cut_stone_stairs",
-  "count": 1
-}

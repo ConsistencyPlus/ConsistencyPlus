@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:polished_quartz"
-  },
-  "result": "consistency_plus:carved_quartz",
-  "count": 1
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:dark_prismarine"
-  },
-  "result": "consistency_plus:chiseled_dark_prismarine",
-  "count": 1
-}

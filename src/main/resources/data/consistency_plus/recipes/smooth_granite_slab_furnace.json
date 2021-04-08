@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "minecraft:granite_slab"
-  },
-  "result": "consistency_plus:smooth_granite_slab",
-  "experience": 1,
-  "cooking_time": 200
-}

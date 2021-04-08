@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:mossy_polished_andesite"
-    },
-    "result": "consistency_plus:mossy_polished_andesite_wall",
-    "count": 4
-}

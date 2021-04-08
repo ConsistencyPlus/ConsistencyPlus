@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "minecraft:blackstone_stairs"
-  },
-  "result": "consistency_plus:smooth_blackstone_stairs",
-  "experience": 1,
-  "cooking_time": 200
-}

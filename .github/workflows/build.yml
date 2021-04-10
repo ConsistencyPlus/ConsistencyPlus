@@ -35,5 +35,5 @@ jobs:
         if: ${{ runner.os == 'Linux' && matrix.java == '1.8' }} # Only upload artifacts built from LTS java on one OS
         uses: actions/upload-artifact@v2
         with:
-          name: Artifacts
+          name: Consistency-Plus-Artifacts
           path: build/libs/

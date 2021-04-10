@@ -48,6 +48,9 @@ As for conflicting recipes, if you make a modpack you can use datapacks to overr
 ### Why did you guys add [Block X] when [Mod Y] does the same thing?
 We look at our mod more in a bubble. As such, we may add features that overlap, but its not important to us.
 
+### Why does Siuol put weird commit names
+He does it as its kinda like an inside joke to him.
+
 ## Contact us:
 Our discord server can be found here: https://discord.gg/VeNX7h8bAK
 If you need to contact us directly, you can join the server and DM Siuol or Carter.

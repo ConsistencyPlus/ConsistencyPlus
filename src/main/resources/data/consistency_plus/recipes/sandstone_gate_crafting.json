@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sandstone"
+        },
+        "A": {
+            "item": "minecraft:sandstone_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:sandstone_gate",
+        "count": 4
+    }
+}

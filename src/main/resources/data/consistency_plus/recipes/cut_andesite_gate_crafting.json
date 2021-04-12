@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:cut_andesite"
+        },
+        "A": {
+            "item": "consistency_plus:cut_andesite_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cut_andesite_gate",
+        "count": 4
+    }
+}

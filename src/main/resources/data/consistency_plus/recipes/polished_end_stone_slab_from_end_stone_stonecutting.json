@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:end_stone"
+    },
+    "result": "consistency_plus:polished_end_stone_slab",
+    "count": 2
+}

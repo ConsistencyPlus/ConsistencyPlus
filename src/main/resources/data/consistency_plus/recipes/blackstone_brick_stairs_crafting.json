@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:smooth_blackstone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:smooth_blackstone_stairs",
+        "count": 4
+    }
+}

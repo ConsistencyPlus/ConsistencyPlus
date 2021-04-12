@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:magenta_concrete"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:magenta_concrete_stairs",
+        "count": 4
+    }
+}

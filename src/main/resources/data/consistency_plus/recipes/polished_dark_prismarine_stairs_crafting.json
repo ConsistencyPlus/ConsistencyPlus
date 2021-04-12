@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:polished_dark_prismarine"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_dark_prismarine_stairs",
+        "count": 4
+    }
+}

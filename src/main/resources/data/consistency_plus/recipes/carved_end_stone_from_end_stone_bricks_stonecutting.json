@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:end_stone_bricks"
+    },
+    "result": "consistency_plus:carved_end_stone",
+    "count": 1
+}

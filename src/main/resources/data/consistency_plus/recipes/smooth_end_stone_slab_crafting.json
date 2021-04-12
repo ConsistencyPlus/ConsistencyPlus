@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:smooth_end_stone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:smooth_end_stone_slab",
+        "count": 6
+    }
+}

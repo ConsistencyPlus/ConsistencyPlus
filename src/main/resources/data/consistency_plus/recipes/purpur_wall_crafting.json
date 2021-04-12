@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:purpur"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:purpur_wall",
+        "count": 6
+    }
+}

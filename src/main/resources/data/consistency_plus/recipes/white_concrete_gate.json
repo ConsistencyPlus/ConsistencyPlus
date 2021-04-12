@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aba",
+        "aba"
+    ],
+    "key": {
+        "b": "minecraft:white_concrete",
+        "a": "consistency_plus:white_concrete_wall"
+    },
+    "result": {
+        "item": "consistency_plus:white_concrete_gate",
+        "count": 1
+    }
+}

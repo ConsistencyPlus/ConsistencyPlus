@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:cut_stone"
+        },
+        "A": {
+            "item": "consistency_plus:cut_stone_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cut_stone_gate",
+        "count": 4
+    }
+}

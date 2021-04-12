@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:andesite_brick_gate"
+    },
+    "result": "consistency_plus:cut_andesite_gate",
+    "count": 1
+}

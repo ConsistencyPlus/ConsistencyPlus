@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:cut_diorite"
+    },
+    "result": "consistency_plus:cut_diorite_gate",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:cut_purpur"
+    },
+    "result": "consistency_plus:chiseled_purpur",
+    "count": 1
+}

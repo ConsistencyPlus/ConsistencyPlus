@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:polished_blackstone"
+    },
+    "result": "consistency_plus:polished_blackstone_gate",
+    "count": 1
+}

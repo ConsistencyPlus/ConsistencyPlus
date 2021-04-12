@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "consistency_plus:end_stone_stairs"
+    },
+    "result": "consistency_plus:smooth_end_stone_stairs",
+    "count": 1,
+    "experience": 0.1,
+    "cookingtime": 200
+}

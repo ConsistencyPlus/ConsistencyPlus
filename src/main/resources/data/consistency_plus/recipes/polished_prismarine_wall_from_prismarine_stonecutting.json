@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:prismarine"
+    },
+    "result": "consistency_plus:polished_prismarine_wall",
+    "count": 1
+}

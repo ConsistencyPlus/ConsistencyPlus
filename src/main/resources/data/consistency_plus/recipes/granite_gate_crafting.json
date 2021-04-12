@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:granite"
+        },
+        "A": {
+            "item": "minecraft:granite_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:granite_gate",
+        "count": 4
+    }
+}

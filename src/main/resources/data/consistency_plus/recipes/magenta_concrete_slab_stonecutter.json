@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:magenta_concrete"
+    },
+    "result": "consistency_plus:magenta_concrete_slab",
+    "count": 2
+}

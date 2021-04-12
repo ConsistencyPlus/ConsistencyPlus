@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:polished_andesite"
+        },
+        "A": {
+            "item": "minecraft:polished_andesite_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_andesite_gate",
+        "count": 4
+    }
+}

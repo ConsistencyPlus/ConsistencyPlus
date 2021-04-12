@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:prismarine_slab"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:prismarine_pillar",
+        "count": 1
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cut_red_sandstone"
+        },
+        "A": {
+            "item": "minecraft:cut_red_sandstone_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cut_red_sandstone_gate",
+        "count": 4
+    }
+}

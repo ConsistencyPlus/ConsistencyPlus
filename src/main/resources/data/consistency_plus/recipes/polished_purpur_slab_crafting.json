@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:polished_purpur"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_purpur_slab",
+        "count": 6
+    }
+}

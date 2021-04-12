@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_dark_prismarine_stairs"
+    },
+    "result": "consistency_plus:dark_prismarine_brick_stairs",
+    "count": 1
+}

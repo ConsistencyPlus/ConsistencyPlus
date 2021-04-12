@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:smooth_sandstone"
+    },
+    "result": "consistency_plus:smooth_sandstone_stairs",
+    "count": 1
+}

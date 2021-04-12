@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:cut_stone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:chiseled_stone",
+        "count": 4
+    }
+}

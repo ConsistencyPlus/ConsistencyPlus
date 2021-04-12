@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {"item": "consistency_plus:terracotta_stairs"},
+    "Y": {"item": "minecraft:red_dye"}
+  },
+  "result": {
+    "item": "consistency_plus:red_terracotta_stairs",
+    "count": 8
+  }
+}

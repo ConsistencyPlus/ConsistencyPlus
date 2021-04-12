@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone_bricks"
+        },
+        "A": {
+            "item": "minecraft:stone_brick_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:stone_brick_gate",
+        "count": 4
+    }
+}

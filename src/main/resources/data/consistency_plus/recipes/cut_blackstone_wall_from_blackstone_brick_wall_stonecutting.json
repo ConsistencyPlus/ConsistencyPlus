@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:blackstone_brick_wall"
+    },
+    "result": "consistency_plus:cut_blackstone_wall",
+    "count": 1
+}

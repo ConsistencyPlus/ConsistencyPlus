@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_quartz_stairs"
+    },
+    "result": "consistency_plus:cut_quartz_stairs",
+    "count": 1
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:andesite_slab"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:andesite_pillar",
+        "count": 1
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:polished_diorite"
+        },
+        "A": {
+            "item": "minecraft:polished_diorite_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_diorite_gate",
+        "count": 4
+    }
+}

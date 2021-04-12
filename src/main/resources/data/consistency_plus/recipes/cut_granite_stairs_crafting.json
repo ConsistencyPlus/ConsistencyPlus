@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:cut_granite"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cut_granite_stairs",
+        "count": 4
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:sandstone_bricks"
+    },
+    "result": "minecraft:chiseled_sandstone",
+    "count": 1
+}

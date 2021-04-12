@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:cut_prismarine"
+    },
+    "result": "consistency_plus:cut_prismarine_slab",
+    "count": 2
+}

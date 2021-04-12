@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:polished_blackstone"
+        },
+        "A": {
+            "item": "minecraft:polished_blackstone_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_blackstone_gate",
+        "count": 4
+    }
+}

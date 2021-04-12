@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:cut_end_stone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cut_end_stone_stairs",
+        "count": 4
+    }
+}

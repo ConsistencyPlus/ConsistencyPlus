@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:quartz"
+    },
+    "result": "consistency_plus:cut_quartz_wall",
+    "count": 1
+}

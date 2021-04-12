@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:prismarine_bricks"
+        },
+        "A": {
+            "item": "consistency_plus:prismarine_brick_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:prismarine_brick_gate",
+        "count": 4
+    }
+}

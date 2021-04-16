@@ -1,8 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "minecraft:light_gray_dye",
-        "consistency_plus:terracotta_gate"
+        {
+            "item": "minecraft:light_gray_dye"
+        },
+        {
+            "item": "consistency_plus:terracotta_gate"
+        }
     ],
     "result": {
         "item": "consistency_plus:light_gray_terracotta_gate",

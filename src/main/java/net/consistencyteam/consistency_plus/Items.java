@@ -1554,6 +1554,8 @@ public class Items {
     // Soul o'Lantern
         public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, ItemGroups.consistencyPlusMiscItemSettings()));
         public static final Item SOUL_GLOWSTONE = register("soul_glowstone", new BlockItem(Blocks.SOUL_GLOWSTONE, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item RED_ICE = register("red_ice", new BlockItem(Blocks.RED_ICE, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item SOUL_ICE = register("soul_ice", new BlockItem(Blocks.SOUL_ICE, ItemGroups.consistencyPlusMiscItemSettings()));
 
         public static final Item DEVIN_BLOCKERA = register("devin_blockera", new BlockItem(Blocks.DEVIN_BLOCKERA, new Item.Settings()));
         public static final Item BROKEN_MODIFIKATION = register("broken_modifikation", new BlockItem(Blocks.BROKEN_MODIFIKATION, new Item.Settings()));

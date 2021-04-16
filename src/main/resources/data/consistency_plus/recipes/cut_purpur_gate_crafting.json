@@ -6,10 +6,10 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:cut_purpur"
+            "item": "minecraft:purpur_block"
         },
         "A": {
-            "item": "minecraft:cut_purpur_wall"
+            "item": "consistency_plus:cut_purpur_wall"
         }
     },
     "result": {

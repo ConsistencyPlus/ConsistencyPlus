@@ -13,6 +13,11 @@
         "facing=east,in_wall=true,open=false": {
             "uvlock": true,
             "y": 270,
+            "model": "consistency_plus:block/cracked_blue_nether_brick_fence_gate_wall"
+        },
+        "facing=east,in_wall=true,open=true": {
+            "uvlock": true,
+            "y": 270,
             "model": "consistency_plus:block/cracked_blue_nether_brick_fence_gate_wall_open"
         },
         "facing=north,in_wall=false,open=false": {

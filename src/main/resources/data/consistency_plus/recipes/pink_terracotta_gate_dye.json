@@ -1,8 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "minecraft:pink_dye",
-        "consistency_plus:terracotta_gate"
+        {
+            "item": "minecraft:pink_dye"
+        },
+        {
+            "item": "consistency_plus:terracotta_gate"
+        }
     ],
     "result": {
         "item": "consistency_plus:pink_terracotta_gate",

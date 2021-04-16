@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/template_wall_side",
     "textures": {
-        "wall": "minecraft:block/polished_sandstone"
+        "wall": "consistency_plus:block/polished_sandstone"
     }
 }

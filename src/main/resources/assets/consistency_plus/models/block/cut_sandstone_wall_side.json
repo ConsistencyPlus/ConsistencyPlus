@@ -1,5 +1,5 @@
 {
-    "parent": "consistency_plus:block/consistency_template_wall_side_tri",
+    "parent": "consistency_plus:block/template_consistency_wall_side_tri",
     "textures": {
         "wall": "minecraft:block/cut_sandstone",
         "wall_top": "minecraft:block/sandstone_top",

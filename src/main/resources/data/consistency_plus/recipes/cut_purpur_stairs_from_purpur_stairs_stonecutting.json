@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "consistency_plus:purpur_stairs"
     },
-    "result": "minecraft:cut_purpur_stairs",
+    "result": "minecraft:purpur_stairs",
     "count": 1
 }

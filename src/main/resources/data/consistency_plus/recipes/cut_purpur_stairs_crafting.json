@@ -7,11 +7,11 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:cut_purpur"
+            "item": "minecraft:purpur_block"
         }
     },
     "result": {
-        "item": "minecraft:cut_purpur_stairs",
+        "item": "minecraft:purpur_stairs",
         "count": 4
     }
 }

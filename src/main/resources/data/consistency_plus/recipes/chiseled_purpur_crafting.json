@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:cut_purpur"
+            "item": "minecraft:purpur_block"
         }
     },
     "result": {
-        "item": "consistency_plus:chiseled_purpur",
+        "item": "consistency_plus:chiseled_purpur_block",
         "count": 4
     }
 }

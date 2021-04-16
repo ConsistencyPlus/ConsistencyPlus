@@ -28,6 +28,8 @@
     "consistency_plus:soul_sandstone_brick_wall",
     "consistency_plus:soul_sandstone_brick_gate",
     "consistency_plus:carved_soul_sandstone",
-    "consistency_plus:chiseled_soul_sandstone"
+    "consistency_plus:chiseled_soul_sandstone",
+    "consistency_plus:soul_glowstone",
+    "consistency_plus:soul_ice"
   ]
 }

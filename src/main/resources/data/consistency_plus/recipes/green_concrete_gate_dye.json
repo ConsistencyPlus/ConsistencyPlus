@@ -1,8 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "minecraft:green_dye",
-        "consistency_plus:white_concrete_gate"
+        {
+            "item": "minecraft:green_dye"
+        },
+        {
+            "item": "consistency_plus:white_concrete_gate"
+        }
     ],
     "result": {
         "item": "consistency_plus:green_concrete_gate",

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "RRR",
+        "RWR",
+        "RRR"
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:blue_ice"
+        },
+        "W": {
+            "item": "minecraft:red_dye"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:red_ice",
+        "count": 8
+    }
+}

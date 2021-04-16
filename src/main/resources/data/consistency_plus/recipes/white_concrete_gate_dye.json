@@ -1,8 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "minecraft:white_dye",
-        "consistency_plus:white_concrete_gate"
+        {
+            "item": "minecraft:white_dye"
+        },
+        {
+            "item": "consistency_plus:white_concrete_gate"
+        }
     ],
     "result": {
         "item": "consistency_plus:white_concrete_gate",

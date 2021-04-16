@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "item": "minecraft:blackstone_bricks"
+        "item": "minecraft:polished_blackstone_bricks"
     },
     "result": "consistency_plus:cut_blackstone",
     "count": 1

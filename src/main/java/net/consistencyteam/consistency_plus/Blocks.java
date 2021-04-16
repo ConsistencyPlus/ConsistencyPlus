@@ -1583,8 +1583,10 @@ public class Blocks {
     // Oh god this isn't cursed idea at all nope
         public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MaterialColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));
         public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.LIGHT_BLUE).strength(0.3F).sounds(BlockSoundGroup.GLASS).luminance(11)));
+        public static final Block RED_ICE = register("red_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.RED).strength(2.0F).slipperiness(1.0f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block SOUL_ICE = register("soul_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(3.0F).slipperiness(1.25f).sounds(BlockSoundGroup.GLASS)));
 
-        public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MaterialColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
+    public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MaterialColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
 
     public static final Block DEVIN_BLOCKERA = register("devin_blockera", new Block(FabricBlockSettings.copy(STONE)));
     public static final Block BROKEN_MODIFIKATION = register("broken_modifikation", new Block(FabricBlockSettings.copy(BEDROCK)));

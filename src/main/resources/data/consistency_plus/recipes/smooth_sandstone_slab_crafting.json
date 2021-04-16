@@ -5,11 +5,11 @@
     ],
     "key": {
         "#": {
-            "item": "consistency_plus:smooth_sandstone"
+            "item": "minecraft:smooth_sandstone"
         }
     },
     "result": {
-        "item": "consistency_plus:smooth_sandstone_slab",
+        "item": "minecraft:smooth_sandstone_slab",
         "count": 6
     }
 }

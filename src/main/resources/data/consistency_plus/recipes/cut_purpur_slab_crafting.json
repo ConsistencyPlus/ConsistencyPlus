@@ -5,11 +5,11 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:cut_purpur"
+            "item": "minecraft:purpur_block"
         }
     },
     "result": {
-        "item": "minecraft:cut_purpur_slab",
+        "item": "minecraft:purpur_slab",
         "count": 6
     }
 }

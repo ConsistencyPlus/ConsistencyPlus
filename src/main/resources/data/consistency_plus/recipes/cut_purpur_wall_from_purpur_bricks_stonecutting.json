@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "consistency_plus:purpur_bricks"
     },
-    "result": "minecraft:cut_purpur_wall",
+    "result": "consistency_plus:cut_purpur_wall",
     "count": 1
 }

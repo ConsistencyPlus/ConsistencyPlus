@@ -1,8 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "minecraft:pink_dye",
-        "consistency_plus:white_concrete_gate"
+        {
+            "item": "minecraft:pink_dye"
+        },
+        {
+            "item": "consistency_plus:white_concrete_gate"
+        }
     ],
     "result": {
         "item": "consistency_plus:pink_concrete_gate",

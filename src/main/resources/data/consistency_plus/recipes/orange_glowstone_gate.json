@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aba",
+        "aba"
+    ],
+    "key": {
+        "b": "consistency_plus:orange_glowstone",
+        "a": "consistency_plus:orange_glowstone_wall"
+    },
+    "result": {
+        "item": "consistency_plus:orange_glowstone_gate",
+        "count": 4
+    }
+}

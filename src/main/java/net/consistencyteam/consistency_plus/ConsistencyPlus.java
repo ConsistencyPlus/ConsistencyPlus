@@ -1,5 +1,7 @@
 package net.consistencyteam.consistency_plus;
 
+import net.consistencyteam.consistency_plus.registry.Blocks;
+import net.consistencyteam.consistency_plus.registry.Items;
 import net.fabricmc.api.ModInitializer;
 
 public class ConsistencyPlus implements ModInitializer {

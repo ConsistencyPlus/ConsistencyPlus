@@ -1,0 +1,6 @@
+{
+    "parent": "consistency_plus:block/template_consistency_gate",
+    "textures": {
+        "texture": "consistency_plus:block/purple_ice"
+    }
+}

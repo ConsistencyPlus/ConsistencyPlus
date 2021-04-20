@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:magenta_dye",
+        "consistency_plus:white_ice_gate"
+    ],
+    "result": {
+        "item": "consistency_plus:magenta_ice_gate",
+        "count": 4
+    }
+}

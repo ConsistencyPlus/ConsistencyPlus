@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:orange_ice"
+    },
+    "result": "consistency_plus:orange_ice_stairs",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:glowstone"
+  },
+  "result": "consistency_plus:glowstone_stairs",
+  "count": 1
+}

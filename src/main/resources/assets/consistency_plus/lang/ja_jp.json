@@ -463,8 +463,7 @@
   "block.consistency_plus.soul_glowstone": "\u9b42\u306e\u30b0\u30ed\u30a6\u30b9\u30c8\u30fc\u30f3",
   "block.consistency_plus.warped_wart": "\u6b6a\u3093\u3060\u306e\u30a6\u30a9\u30fc\u30c8",
 
-  "itemGroup.consistency_plus.stone": "Consistency+ \u77f3",
-  "itemGroup.consistency_plus.brick": "Consistency+ \u30ec\u30f3\u30ac",
+  "itemGroup.consistency_plus.stone": "Consistency+ \u77f3", ,
   "itemGroup.consistency_plus.dyeable": "Consistency+ \u67d3\u8272\u6e08\u307f",
   "itemGroup.consistency_plus.misc": "Consistency+ \u305d\u306e\u4ed6"
 }

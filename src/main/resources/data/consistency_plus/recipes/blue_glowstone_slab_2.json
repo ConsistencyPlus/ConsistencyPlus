@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {"item": "consistency_plus:glowstone_slab"},
+    "Y": {"item": "minecraft:blue_dye"}
+  },
+  "result": {
+    "item": "consistency_plus:blue_glowstone_slab",
+    "count": 8
+  }
+}

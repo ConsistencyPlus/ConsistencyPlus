@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:yellow_ice"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:yellow_ice_wall",
+        "count": 6
+    }
+}

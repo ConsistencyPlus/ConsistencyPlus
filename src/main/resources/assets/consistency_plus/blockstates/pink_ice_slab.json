@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/pink_ice_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/pink_ice"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/pink_ice_slab_top"
+        }
+    }
+}

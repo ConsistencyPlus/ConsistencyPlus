@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "consistency_plus:gray_glowstone"
+  },
+  "result": "consistency_plus:gray_glowstone_slab",
+  "count": 2
+}

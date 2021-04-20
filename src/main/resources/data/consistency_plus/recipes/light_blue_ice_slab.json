@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:light_blue_ice"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:light_blue_ice_slab",
+        "count": 6
+    }
+}

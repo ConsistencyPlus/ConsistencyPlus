@@ -10,7 +10,7 @@
         }
     },
     "result": {
-        "item": "minecraft:chiseled_stone",
+        "item": "consistency_plus:carved_stone",
         "count": 2
     }
 }

@@ -2,19 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
         "recipes": [
-            "consistency_plus:cracked_cut_andesite_slab",
-            "consistency_plus:cracked_cut_andesite_stairs",
-            "consistency_plus:cracked_cut_andesite_pillar",
-            "consistency_plus:cracked_cut_andesite_wall"
+            "consistency_plus:cracked_cut_andesite_smelting",
+            "consistency_plus:cracked_cut_andesite_crafting"
         ]
     },
     "criteria": {
-        "has_item": {
+        "has_block": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "item": "consistency_plus:cut_andesite"
+                        "item": "minecraft:andesite"
                     }
                 ]
             }

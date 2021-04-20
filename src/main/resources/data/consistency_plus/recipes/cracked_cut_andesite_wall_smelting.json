@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "experience": "0.1",
+    "ingredient": {
+        "item": "consistency_plus:cut_andesite_wall"
+    },
+    "result": "consistency_plus:cracked_cut_andesite_wall",
+    "count": 1
+}

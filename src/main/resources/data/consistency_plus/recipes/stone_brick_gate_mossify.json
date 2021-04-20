@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "consistency_plus:stone_brick_gate"
+        },
+        {
+            "item": "minecraft:vines"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:mossy_stone_brick_gate",
+        "count": 1
+    }
+}

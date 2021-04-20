@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "consistency_plus:mossy_polished_andesite_stairs_crafting",
+            "consistency_plus:polished_andesite_stairs_mossify"
+        ],
+        "criteria": {
+            "has_MossyBlock": {
+                "trigger": "minecraft:inventory_changed",
+                "conditions": {
+                    "items": [
+                        {
+                            "item": "minecraft:andesite"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

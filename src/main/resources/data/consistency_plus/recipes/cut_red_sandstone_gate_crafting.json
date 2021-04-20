@@ -9,7 +9,7 @@
             "item": "minecraft:cut_red_sandstone"
         },
         "A": {
-            "item": "minecraft:cut_red_sandstone_wall"
+            "item": "consistency_plus:cut_red_sandstone_wall"
         }
     },
     "result": {

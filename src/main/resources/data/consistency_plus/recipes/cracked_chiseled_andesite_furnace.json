@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "consistency_plus:chiseled_andesite"
-    },
-    "result": "consistency_plus:cracked_chiseled_andesite",
-    "experience": 0.1,
-    "cooking_time": 200
-}

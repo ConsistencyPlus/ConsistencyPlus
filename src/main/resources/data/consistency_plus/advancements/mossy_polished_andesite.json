@@ -2,21 +2,19 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
         "recipes": [
-            "consistency_plus:mossy_polished_andesite_slab",
-            "consistency_plus:mossy_polished_andesite_stairs",
-            "consistency_plus:mossy_polished_andesite_pillar",
-            "consistency_plus:mossy_polished_andesite_wall"
-        ]
-    },
-    "criteria": {
-        "has_item": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "item": "minecraft:polished_andesite"
-                    }
-                ]
+            "consistency_plus:mossy_polished_andesite_crafting",
+            "consistency_plus:polished_andesite_mossify"
+        ],
+        "criteria": {
+            "has_MossyBlock": {
+                "trigger": "minecraft:inventory_changed",
+                "conditions": {
+                    "items": [
+                        {
+                            "item": "minecraft:andesite"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "consistency_plus:red_sandstone_brick_wall"
     },
-    "result": "minecraft:cut_red_sandstone_wall",
+    "result": "consistency_plus:cut_red_sandstone_wall",
     "count": 1
 }

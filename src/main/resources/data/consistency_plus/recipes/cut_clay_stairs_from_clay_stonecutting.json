@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:clay"
+    },
+    "result": "consistency_plus:cut_clay_stairs",
+    "count": 1
+}

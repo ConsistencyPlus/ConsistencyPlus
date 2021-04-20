@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "experience": "0.1",
+    "ingredient": {
+        "item": "consistency_plus:blackstone_brick_gate"
+    },
+    "result": "consistency_plus:cracked_blackstone_brick_gate",
+    "count": 1
+}

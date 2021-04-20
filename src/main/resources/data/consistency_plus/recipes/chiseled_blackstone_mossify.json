@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "consistency_plus:chiseled_blackstone"
+        },
+        {
+            "item": "minecraft:vines"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:mossy_chiseled_blackstone",
+        "count": 1
+    }
+}

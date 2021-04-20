@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:cracked_andesite_bricks"
-    },
-    "result": "consistency_plus:cracked_andesite_brick_stairs",
-    "count": 4
-}

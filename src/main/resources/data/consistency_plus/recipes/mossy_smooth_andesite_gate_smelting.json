@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "consistency_plus:mossy_andesite_gate"
+    },
+    "result": "consistency_plus:mossy_smooth_andesite_gate",
+    "count": 1,
+    "experience": 0.1,
+    "cookingtime": 200
+}

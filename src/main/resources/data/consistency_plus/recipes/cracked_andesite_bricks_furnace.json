@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "consistency_plus:andesite_bricks"
-    },
-    "result": "consistency_plus:cracked_andesite_bricks",
-    "experience": 0.1,
-    "cooking_time": 200
-}

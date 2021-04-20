@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "consistency_plus:mossy_blackstone_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:mossy_blackstone_brick_stairs",
+        "count": 4
+    }
+}

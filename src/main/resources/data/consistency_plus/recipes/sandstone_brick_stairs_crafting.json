@@ -7,11 +7,11 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:smooth_sandstone"
+            "item": "consistency_plus:sandstone_bricks"
         }
     },
     "result": {
-        "item": "minecraft:smooth_sandstone",
+        "item": "consistency_plus:sandstone_brick_stairs",
         "count": 4
     }
 }

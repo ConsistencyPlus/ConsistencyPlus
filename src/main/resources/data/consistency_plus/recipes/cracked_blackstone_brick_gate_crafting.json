@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A#A",
+        "A#A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cracked_blackstone_bricks"
+        },
+        "A": {
+            "item": "consistency_plus:cracked_blackstone_brick_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cracked_blackstone_brick_gate",
+        "count": 4
+    }
+}

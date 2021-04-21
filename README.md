@@ -1,6 +1,6 @@
 # Consistency+
 
-Consistency+ is a Minecraft mod for 1.16.4+ Fabric Mod Loader about making a consistent block list. 
+Consistency+ is a Minecraft mod for 1.16.4+ Fabric and Quilt Mod Loader about making a consistent block list. 
 
 
 ## What's added?
@@ -47,6 +47,9 @@ As for conflicting recipes, if you make a modpack you can use datapacks to overr
 
 ### Why did you guys add [Block X] when [Mod Y] does the same thing?
 We look at our mod more in a bubble. As such, we may add features that overlap, but its not important to us.
+
+### Is there Quilt support?
+Yes. When Quilt fully releases Consistency+ should be supported. Infact, Consistency+ was one of the first content mods tested on the Quilt Production Beta. However it requires Fabric API regardless as of right now.
 
 ### Why does Siuol put weird commit names
 He does it as its kinda like an inside joke to him.

@@ -1575,22 +1575,22 @@ public class Blocks {
 
 
     // Ice
-        public static final Block RED_ICE = register("red_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.RED).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block ORANGE_ICE = register("orange_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.ORANGE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block YELLOW_ICE = register("yellow_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.YELLOW).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block LIME_ICE = register("lime_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIME).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block GREEN_ICE = register("green_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.GREEN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block CYAN_ICE = register("cyan_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.CYAN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block LIGHT_BLUE_ICE = register("light_blue_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block PURPLE_ICE = register("purple_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.PURPLE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block MAGENTA_ICE = register("magenta_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.MAGENTA).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block PINK_ICE = register("pink_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.PINK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block WHITE_ICE = register("white_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.WHITE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block LIGHT_GRAY_ICE = register("light_gray_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block GRAY_ICE = register("gray_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block BLACK_ICE = register("black_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BLACK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block BROWN_ICE = register("brown_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BROWN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block SOUL_ICE = register("soul_ice", new BaseConsistencyTransparentBlock(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(3.0F).slipperiness(1.05f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block RED_ICE = register("red_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.RED).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block ORANGE_ICE = register("orange_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.ORANGE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block YELLOW_ICE = register("yellow_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.YELLOW).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block LIME_ICE = register("lime_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIME).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block GREEN_ICE = register("green_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.GREEN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block CYAN_ICE = register("cyan_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.CYAN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block LIGHT_BLUE_ICE = register("light_blue_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block PURPLE_ICE = register("purple_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.PURPLE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block MAGENTA_ICE = register("magenta_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.MAGENTA).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block PINK_ICE = register("pink_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.PINK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block WHITE_ICE = register("white_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.WHITE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block LIGHT_GRAY_ICE = register("light_gray_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block GRAY_ICE = register("gray_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block BLACK_ICE = register("black_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BLACK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block BROWN_ICE = register("brown_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BROWN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block SOUL_ICE = register("soul_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(3.0F).slipperiness(1.1f).sounds(BlockSoundGroup.GLASS)));
 
     // Ice Slab
         public static final Block RED_ICE_SLAB = register("red_ice_slab", new SlabBlock(FabricBlockSettings.copy(RED_ICE)));

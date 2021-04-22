@@ -4,7 +4,8 @@
         "recipes": [
             "consistency_plus:mossy_cut_andesite_crafting",
             "consistency_plus:cut_andesite_mossify"
-        ],
+        ]
+},
         "criteria": {
             "has_MossyBlock": {
                 "trigger": "minecraft:inventory_changed",
@@ -18,4 +19,3 @@
             }
         }
     }
-}

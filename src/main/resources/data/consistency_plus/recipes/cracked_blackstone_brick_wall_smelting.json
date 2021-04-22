@@ -1,8 +1,8 @@
 {
     "type": "minecraft:smelting",
-    "experience": "0.1",
+    "experience": 0.1,
     "ingredient": {
-        "item": "minecraft:blackstone_brick_wall"
+        "item": "minecraft:polished_blackstone_brick_wall"
     },
     "result": "consistency_plus:cracked_blackstone_brick_wall",
     "count": 1

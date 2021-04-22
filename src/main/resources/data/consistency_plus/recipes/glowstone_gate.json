@@ -5,11 +5,15 @@
     "aba"
   ],
   "key": {
-    "b": "minecraft:glowstone",
-    "a": "consistency_plus:glowstone_wall"
+    "b": {
+      "item": "minecraft:glowstone"
+    },
+    "a": {
+      "item": "consistency_plus:glowstone_wall"
+    }
   },
   "result": {
-    "item": "consistency_plus:white_ice_gate",
+    "item": "consistency_plus:glowstone_gate",
     "count": 4
   }
 }

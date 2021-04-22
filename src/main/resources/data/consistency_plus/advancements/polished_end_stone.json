@@ -3,7 +3,8 @@
     "rewards": {
         "recipes": [
             "consistency_plus:polished_end_stone_crafting"
-        ],
+        ]
+},
         "criteria": {
             "has_block": {
                 "trigger": "minecraft:inventory_changed",
@@ -17,4 +18,3 @@
             }
         }
     }
-}

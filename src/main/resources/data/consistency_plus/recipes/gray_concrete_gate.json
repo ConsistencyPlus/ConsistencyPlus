@@ -5,9 +5,13 @@
         "aba"
     ],
     "key": {
-        "b": "minecraft:gray_concrete",
-        "a": "consistency_plus:gray_concrete_wall"
-    },
+        "b": {
+                    "item": "minecraft:gray_concrete"
+},
+        "a": {
+                    "item": "consistency_plus:gray_concrete_wall"
+    }
+},
     "result": {
         "item": "consistency_plus:gray_concrete_gate",
         "count": 4

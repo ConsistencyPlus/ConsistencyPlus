@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "consistency_plus:cut_stone"
     },
-    "result": "consistency_plus:chiseled_stone",
+    "result": "minecraft:chiseled_stone_bricks",
     "count": 1
 }

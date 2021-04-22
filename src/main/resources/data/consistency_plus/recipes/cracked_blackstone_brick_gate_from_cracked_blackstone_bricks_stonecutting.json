@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "item": "minecraft:cracked_blackstone_bricks"
+        "item": "minecraft:cracked_polished_blackstone_bricks"
     },
     "result": "consistency_plus:cracked_blackstone_brick_gate",
     "count": 1

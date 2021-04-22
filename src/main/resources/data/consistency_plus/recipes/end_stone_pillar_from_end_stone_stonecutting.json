@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "minecraft:end_stone"
     },
-    "result": "consistency_plus:end_stone_pillar",
+    "result": "consistency_plus:end_stone_brick_pillar",
     "count": 1
 }

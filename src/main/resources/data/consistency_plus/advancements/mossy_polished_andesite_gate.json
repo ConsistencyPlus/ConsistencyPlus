@@ -4,7 +4,8 @@
         "recipes": [
             "consistency_plus:mossy_polished_andesite_gate_crafting",
             "consistency_plus:polished_andesite_gate_mossify"
-        ],
+        ]
+},
         "criteria": {
             "has_MossyBlock": {
                 "trigger": "minecraft:inventory_changed",
@@ -18,4 +19,3 @@
             }
         }
     }
-}

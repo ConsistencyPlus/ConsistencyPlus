@@ -4,7 +4,8 @@
         "recipes": [
             "consistency_plus:mossy_blackstone_bricks_crafting",
             "consistency_plus:blackstone_bricks_mossify"
-        ],
+        ]
+},
         "criteria": {
             "has_MossyBlock": {
                 "trigger": "minecraft:inventory_changed",
@@ -18,4 +19,3 @@
             }
         }
     }
-}

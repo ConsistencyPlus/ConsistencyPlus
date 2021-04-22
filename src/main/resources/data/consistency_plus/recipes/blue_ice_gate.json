@@ -5,9 +5,9 @@
         "aba"
     ],
     "key": {
-        "b": "minecraft:blue_ice",
-        "a": "consistency_plus:blue_ice_wall"
-    },
+        "b": {"item": "minecraft:blue_ice"},
+        "a": {"item": "consistency_plus:blue_ice_wall"}
+	    },
     "result": {
         "item": "consistency_plus:blue_ice_gate",
         "count": 4

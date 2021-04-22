@@ -3,7 +3,8 @@
     "rewards": {
         "recipes": [
             "consistency_plus:mossy_chiseled_blackstone_crafting"
-        ],
+        ]
+},
         "criteria": {
             "has_MossyBlock": {
                 "trigger": "minecraft:inventory_changed",
@@ -17,4 +18,3 @@
             }
         }
     }
-}

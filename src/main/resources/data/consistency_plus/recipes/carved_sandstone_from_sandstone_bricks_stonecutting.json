@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "consistency_plus:sandstone_bricks"
     },
-    "result": "consistency_plus:carved_sandstone",
+    "result": "minecraft:chiseled_sandstone",
     "count": 1
 }

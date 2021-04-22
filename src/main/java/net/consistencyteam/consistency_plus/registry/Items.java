@@ -1749,7 +1749,7 @@ public class Items {
         public static final Item DEVIN_BLOCKERA = register("devin_blockera", new BlockItem(Blocks.DEVIN_BLOCKERA, new Item.Settings()));
         public static final Item BROKEN_MODIFIKATION = register("broken_modifikation", new BlockItem(Blocks.BROKEN_MODIFIKATION, new Item.Settings()));
 
-        public static final Item WARPED_NETHER_WART = register("warped_nether_wart", new AliasedBlockItem(Blocks.WARPED_WART, ItemGroups.consistencyPlusMiscItemSettings()));
+        public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(Blocks.WARPED_WART, ItemGroups.consistencyPlusMiscItemSettings()));
 
     private static Item register(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier("consistency_plus", name), item);

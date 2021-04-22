@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "minecraft:stone"
     },
-    "result": "consistency_plus:stone_pillar",
+    "result": "consistency_plus:stone_brick_pillar",
     "count": 1
 }

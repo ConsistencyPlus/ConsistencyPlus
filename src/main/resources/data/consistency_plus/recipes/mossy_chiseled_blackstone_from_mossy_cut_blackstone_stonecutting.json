@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "item": "consistency_plus:mossy_cut_blackstone"
+        "item": "consistency_plus:mossy_blackstone_bricks"
     },
     "result": "consistency_plus:mossy_chiseled_blackstone",
     "count": 1

@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "item": "consistency_plus:mossy_blackstone_slab"
+            "item": "consistency_plus:mossy_blackstone_brick_slab"
         }
     },
     "result": {
-        "item": "consistency_plus:mossy_blackstone_pillar",
+        "item": "consistency_plus:mossy_blackstone_brick_pillar",
         "count": 1
     }
 }

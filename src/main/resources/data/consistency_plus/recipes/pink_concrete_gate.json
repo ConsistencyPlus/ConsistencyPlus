@@ -5,9 +5,13 @@
         "aba"
     ],
     "key": {
-        "b": "minecraft:pink_concrete",
-        "a": "consistency_plus:pink_concrete_wall"
-    },
+        "b": {
+                    "item": "minecraft:pink_concrete"
+},
+        "a": {
+                    "item": "consistency_plus:pink_concrete_wall"
+    }
+},
     "result": {
         "item": "consistency_plus:pink_concrete_gate",
         "count": 4

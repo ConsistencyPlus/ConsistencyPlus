@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "consistency_plus:polished_quartz"
     },
-    "result": "minecraft:chiseled_quartz",
+    "result": "minecraft:chiseled_quartz_block",
     "count": 1
 }

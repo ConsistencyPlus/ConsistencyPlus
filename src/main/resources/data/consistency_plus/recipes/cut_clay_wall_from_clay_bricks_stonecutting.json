@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:clay_bricks"
-    },
-    "result": "consistency_plus:cut_clay_wall",
-    "count": 1
-}

@@ -9,7 +9,7 @@
             "item": "minecraft:stone"
         },
         "A": {
-            "item": "minecraft:stone_wall"
+            "item": "consistency_plus:stone_wall"
         }
     },
     "result": {

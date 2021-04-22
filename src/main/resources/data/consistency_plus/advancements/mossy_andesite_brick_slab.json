@@ -4,7 +4,8 @@
         "recipes": [
             "consistency_plus:mossy_andesite_brick_slab_crafting",
             "consistency_plus:andesite_brick_slab_mossify"
-        ],
+        ]
+},
         "criteria": {
             "has_MossyBlock": {
                 "trigger": "minecraft:inventory_changed",
@@ -18,4 +19,3 @@
             }
         }
     }
-}

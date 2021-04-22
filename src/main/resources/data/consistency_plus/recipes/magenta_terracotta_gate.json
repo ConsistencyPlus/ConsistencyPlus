@@ -5,9 +5,13 @@
         "aba"
     ],
     "key": {
-        "b": "minecraft:magenta_terracotta",
-        "a": "consistency_plus:magenta_terracotta_wall"
-    },
+        "b": {
+                    "item": "minecraft:magenta_terracotta"
+},
+        "a": {
+                    "item": "consistency_plus:magenta_terracotta_wall"
+    }
+},
     "result": {
         "item": "consistency_plus:magenta_terracotta_gate",
         "count": 4

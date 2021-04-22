@@ -5,9 +5,13 @@
         "aba"
     ],
     "key": {
-        "b": "consistency_plus:lime_ice",
-        "a": "consistency_plus:lime_ice_wall"
-    },
+        "b": {
+                    "item": "consistency_plus:lime_ice"
+},
+        "a": {
+                    "item": "consistency_plus:lime_ice_wall"
+    }
+},
     "result": {
         "item": "consistency_plus:lime_ice_gate",
         "count": 4

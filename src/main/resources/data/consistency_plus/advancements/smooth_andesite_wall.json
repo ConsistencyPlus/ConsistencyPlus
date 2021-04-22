@@ -5,7 +5,8 @@
             "consistency_plus:smooth_andesite_wall_crafting",
             "consistency_plus:smooth_andesite_wall_smelting",
             "consistency_plus:smooth_andesite_wall_mossify"
-        ],
+        ]
+},
         "criteria": {
             "has_MossyBlock": {
                 "trigger": "minecraft:inventory_changed",
@@ -19,4 +20,3 @@
             }
         }
     }
-}

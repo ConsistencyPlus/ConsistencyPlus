@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "consistency_plus:purpur_block"
     },
-    "result": "consistency_plus:purpur_pillar",
+    "result": "minecraft:purpur_pillar",
     "count": 1
 }

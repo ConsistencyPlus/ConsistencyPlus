@@ -2,8 +2,8 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
         "recipes": [
-            "consistency_plus: cracked_cut_andesite_gate_crafting",
-            "consistency_plus: cracked_cut_andesite_gate_smelting"
+            "consistency_plus:cracked_cut_andesite_gate_crafting",
+            "consistency_plus:cracked_cut_andesite_gate_smelting"
         ]
     },
     "criteria": {

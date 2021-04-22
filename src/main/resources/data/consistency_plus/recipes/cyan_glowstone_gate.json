@@ -5,9 +5,13 @@
         "aba"
     ],
     "key": {
-        "b": "consistency_plus:cyan_glowstone",
-        "a": "consistency_plus:cyan_glowstone_wall"
-    },
+        "b": {
+                    "item": "consistency_plus:cyan_glowstone"
+},
+        "a": {
+                    "item": "consistency_plus:cyan_glowstone_wall"
+    }
+},
     "result": {
         "item": "consistency_plus:cyan_glowstone_gate",
         "count": 4

@@ -5,9 +5,13 @@
         "aba"
     ],
     "key": {
-        "b": "minecraft:cyan_concrete",
-        "a": "consistency_plus:cyan_concrete_wall"
-    },
+        "b": {
+                    "item": "minecraft:cyan_concrete"
+},
+        "a": {
+                    "item": "consistency_plus:cyan_concrete_wall"
+    }
+},
     "result": {
         "item": "consistency_plus:cyan_concrete_gate",
         "count": 4

@@ -2,10 +2,10 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "consistency_plus:blackstone_bricks"
+            "item": "minecraft:polished_blackstone_bricks"
         },
         {
-            "item": "minecraft:vines"
+            "item": "minecraft:vine"
         }
     ],
     "result": {

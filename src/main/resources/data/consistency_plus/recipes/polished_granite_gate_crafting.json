@@ -9,7 +9,7 @@
             "item": "minecraft:polished_granite"
         },
         "A": {
-            "item": "minecraft:polished_granite_wall"
+            "item": "consistency_plus:polished_granite_wall"
         }
     },
     "result": {

@@ -9,7 +9,7 @@
             "item": "minecraft:polished_diorite"
         },
         "A": {
-            "item": "minecraft:polished_diorite_wall"
+            "item": "consistency_plus:polished_diorite_wall"
         }
     },
     "result": {

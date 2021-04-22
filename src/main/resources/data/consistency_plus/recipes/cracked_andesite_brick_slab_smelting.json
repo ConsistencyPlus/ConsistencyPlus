@@ -1,6 +1,6 @@
 {
     "type": "minecraft:smelting",
-    "experience": "0.1",
+    "experience": 0.1,
     "ingredient": {
         "item": "consistency_plus:andesite_brick_slab"
     },

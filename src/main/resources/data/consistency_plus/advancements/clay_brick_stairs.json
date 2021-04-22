@@ -2,9 +2,10 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
         "recipes": [
-            "consistency_plus:clay_brick_stairs_crafting",
-            "consistency_plus:clay_brick_stairs_smelting"
-        ],
+            "consistency_plus:polished_clay_stairs_crafting",
+            "consistency_plus:polished_clay_stairs_smelting"
+        ]
+},
         "criteria": {
             "has_block": {
                 "trigger": "minecraft:inventory_changed",
@@ -18,4 +19,3 @@
             }
         }
     }
-}

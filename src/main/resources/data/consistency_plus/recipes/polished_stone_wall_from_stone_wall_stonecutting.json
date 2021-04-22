@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "item": "minecraft:stone_wall"
+        "item": "consistency_plus:stone_wall"
     },
     "result": "consistency_plus:polished_stone_wall",
     "count": 1

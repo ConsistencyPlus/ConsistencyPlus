@@ -5,9 +5,13 @@
         "aba"
     ],
     "key": {
-        "b": "minecraft:lime_concrete",
-        "a": "consistency_plus:lime_concrete_wall"
-    },
+        "b": {
+                    "item": "minecraft:lime_concrete"
+},
+        "a": {
+                    "item": "consistency_plus:lime_concrete_wall"
+    }
+},
     "result": {
         "item": "consistency_plus:lime_concrete_gate",
         "count": 4

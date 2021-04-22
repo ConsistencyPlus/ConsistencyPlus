@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "minecraft:blackstone"
     },
-    "result": "consistency_plus:blackstone_pillar",
+    "result": "consistency_plus:blackstone_brick_pillar",
     "count": 1
 }

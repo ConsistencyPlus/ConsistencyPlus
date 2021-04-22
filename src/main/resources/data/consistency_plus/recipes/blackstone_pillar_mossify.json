@@ -2,14 +2,14 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "consistency_plus:mossy_blackstone_pillar"
+            "item": "consistency_plus:blackstone_brick_pillar"
         },
         {
-            "item": "minecraft:vines"
+            "item": "minecraft:vine"
         }
     ],
     "result": {
-        "item": "consistency_plus:mossy_blackstone_pillar",
+        "item": "consistency_plus:mossy_blackstone_brick_pillar",
         "count": 1
     }
 }

@@ -14,7 +14,7 @@ public class WarpedNetherWartPlantBlock extends NetherWartBlock {
 
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(Items.WARPED_NETHER_WART);
+        return new ItemStack(Items.WARPED_WART);
     }
 
 }

@@ -5,9 +5,13 @@
         "aba"
     ],
     "key": {
-        "b": "minecraft:magenta_concrete",
-        "a": "consistency_plus:magenta_concrete_wall"
-    },
+        "b": {
+                    "item": "minecraft:magenta_concrete"
+},
+        "a": {
+                    "item": "consistency_plus:magenta_concrete_wall"
+    }
+},
     "result": {
         "item": "consistency_plus:magenta_concrete_gate",
         "count": 4

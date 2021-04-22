@@ -3,7 +3,8 @@
     "rewards": {
         "recipes": [
             "consistency_plus:soul_sandstone_pillar_crafting"
-        ],
+        ]
+},
         "criteria": {
             "has_block": {
                 "trigger": "minecraft:inventory_changed",
@@ -17,4 +18,3 @@
             }
         }
     }
-}

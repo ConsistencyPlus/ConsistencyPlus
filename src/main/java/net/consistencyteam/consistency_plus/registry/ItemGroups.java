@@ -1,6 +1,5 @@
 package net.consistencyteam.consistency_plus.registry;
 
-import net.consistencyteam.consistency_plus.registry.Blocks;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

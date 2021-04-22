@@ -11,7 +11,7 @@ French - Not Started, Siuol may do base translation for 0.3.0, but most likely i
 
 German - Not Started, Siuol may do base translation for 0.3.0, but most likely it would be inaccurate.
 
-Polish - Managed by RDK.
+Polish - Managed by RDK. Up to date to 0.3.0-RC1. 4.22.21
 
 
 Translator Comments:

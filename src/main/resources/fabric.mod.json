@@ -8,11 +8,11 @@
   "contributors": [
     {"name": "Carter","contact": {"Discord": "Cart3r#1234"}},
     {"name": "IMS","contact": {"Discord": "IMS#7902"}},
-    {"name": "Siuol","contact": {"Discord": "\"Siuol\" Appeared\n#5729"}},
-    {"name": "Tyler","contact": {"Discord": "Digital_Tech\n#0001"}},
+    {"name": "Siuol","contact": {"Discord": "\"Siuol\" Appeared#5729"}},
+    {"name": "Tyler","contact": {"Discord": "Digital_Tech#0001"}},
     {"name": "Devin","contact": {"Github": "HiItsDevin"}},
     {"name": "Devious","contact": {"Discord": "Deviouslrd#9151"}},
-    {"name": "Tropheus Jay","contact": {"Discord": "Tropheus Jay\n#7241"}}
+    {"name": "Tropheus Jay","contact": {"Discord": "Tropheus Jay#7241"}}
   ],
 
   "contact": {
@@ -33,7 +33,9 @@
       "net.consistencyteam.consistency_plus.ConsistencyPlusClientside"
     ]
   },
-  "mixins": [],
+  "mixins": [
+    "consistency_plus.mixins.json"
+  ],
 
   "depends": {
     "fabric": "*",

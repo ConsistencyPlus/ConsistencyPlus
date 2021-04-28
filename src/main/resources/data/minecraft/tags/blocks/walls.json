@@ -143,6 +143,8 @@
     "consistency_plus:soul_sandstone_brick_wall",
     "consistency_plus:polished_soul_sandstone_wall",
     "consistency_plus:cut_soul_sandstone_wall",
-    "consistency_plus:smooth_soul_sandstone_wall"
+    "consistency_plus:smooth_soul_sandstone_wall",
+    "consistency_plus:dirt_wall",
+    "consistency_plus:grass_wall"
   ]
 }

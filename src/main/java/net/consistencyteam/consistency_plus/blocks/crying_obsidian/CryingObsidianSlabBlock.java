@@ -1,6 +1,4 @@
-package net.consistencyteam.consistency_plus.blocks;
-
-import java.util.Random;
+package net.consistencyteam.consistency_plus.blocks.crying_obsidian;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
@@ -8,6 +6,8 @@ import net.minecraft.block.SlabBlock;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class CryingObsidianSlabBlock extends SlabBlock {
 

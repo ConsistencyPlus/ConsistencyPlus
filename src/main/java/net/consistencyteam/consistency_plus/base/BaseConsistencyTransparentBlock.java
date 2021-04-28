@@ -1,6 +1,5 @@
 package net.consistencyteam.consistency_plus.base;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.TransparentBlock;
 
 public class BaseConsistencyTransparentBlock extends TransparentBlock {

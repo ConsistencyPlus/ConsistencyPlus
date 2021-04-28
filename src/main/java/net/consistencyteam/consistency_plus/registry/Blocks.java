@@ -809,9 +809,6 @@ public class Blocks {
         //cracked carved
         //mossy carved
 
-    //h
-        public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(),FabricBlockSettings.copy(NETHERITE_BLOCK)));
-        public static final Block SUSPICIOUS_SLAB  = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
     //Clay
         public static final Block CLAY_SLAB  = register("clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
         public static final Block CLAY_STAIRS = register("clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(),FabricBlockSettings.copy(CLAY)));
@@ -1590,7 +1587,7 @@ public class Blocks {
         public static final Block GRAY_ICE = register("gray_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
         public static final Block BLACK_ICE = register("black_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BLACK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
         public static final Block BROWN_ICE = register("brown_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BROWN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-        public static final Block SOUL_ICE = register("soul_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(3.0F).slipperiness(1.1f).sounds(BlockSoundGroup.GLASS)));
+        public static final Block SOUL_ICE = register("soul_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(3.0F).slipperiness(0.995f).luminance(10).sounds(BlockSoundGroup.GLASS)));
 
     // Ice Slab
         public static final Block RED_ICE_SLAB = register("red_ice_slab", new SlabBlock(FabricBlockSettings.copy(RED_ICE)));
@@ -1784,8 +1781,13 @@ public class Blocks {
 
         public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MaterialColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
 
-    public static final Block DEVIN_BLOCKERA = register("devin_blockera", new Block(FabricBlockSettings.copy(STONE)));
-    public static final Block BROKEN_MODIFIKATION = register("broken_modifikation", new Block(FabricBlockSettings.copy(BEDROCK)));
+        //Joke Blocks
+        public static final Block DEVIN_BLOCKERA = register("devin_blockera", new Block(FabricBlockSettings.copy(STONE)));
+        public static final Block BROKEN_MODIFIKATION = register("broken_modifikation", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BLACK).strength(5.0F).slipperiness(1.1f).luminance(10)));
+        public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(),FabricBlockSettings.copy(NETHERITE_BLOCK)));
+        public static final Block SUSPICIOUS_SLAB  = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
+//      public static final Block SIUOLS_SANITY = register("is_a_crab", new Block(FabricBlockSettings.copy(HELP_ME)));
+    //  You are having funny fun because your playing a Siuolplexplex contributed mod
 
     private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier("consistency_plus", name), block);

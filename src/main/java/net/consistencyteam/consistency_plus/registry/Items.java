@@ -290,7 +290,7 @@ public class Items {
         public static final Item SMOOTH_RED_SANDSTONE_WALL = register("smooth_red_sandstone_wall", new BlockItem(Blocks.SMOOTH_RED_SANDSTONE_WALL, ItemGroups.consistencyPlusStoneItemSettings()));
         public static final Item SMOOTH_RED_SANDSTONE_GATE = register("smooth_red_sandstone_gate", new BlockItem(Blocks.SMOOTH_RED_SANDSTONE_GATE, ItemGroups.consistencyPlusStoneItemSettings()));
 
-    //Cracked Smootha
+    //Cracked Smooth
         //block
         //slab
         //stairs

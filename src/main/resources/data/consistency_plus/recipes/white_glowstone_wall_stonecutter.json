@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:white_glowstone"
+    },
+    "result": "consistency_plus:white_glowstone_wall",
+    "count": 1
+}

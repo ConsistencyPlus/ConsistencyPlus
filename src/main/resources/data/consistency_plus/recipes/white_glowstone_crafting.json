@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XAX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:white_dye"
+        },
+        "A": {
+            "item": "minecraft:glowstone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:white_glowstone",
+        "count": 8
+    }
+}

@@ -15,6 +15,6 @@ public class ConsistencyPlus implements ModInitializer {
         Items.init();
         System.out.println("Consistency+ Main - Items Initialized");
         System.out.println("Consistency+ Main - Finished Initialization");
-        System.out.println("Consistency+ Info - Version RC-0.3");
+        System.out.println("Consistency+ Info - Version RC2 - 0.3");
     }
 }

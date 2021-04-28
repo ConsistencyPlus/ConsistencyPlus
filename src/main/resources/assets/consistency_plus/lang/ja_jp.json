@@ -455,10 +455,12 @@
   "block.consistency_plus.obsidian_slab": "\u9ed2\u66dc\u77f3\u306e\u30cf\u30fc\u30d5\u30d6\u30ed\u30c3\u30af",
   "block.consistency_plus.obsidian_stairs": "\u9ed2\u66dc\u77f3\u306e\u968e\u6bb5",
   "block.consistency_plus.obsidian_wall": "\u9ed2\u66dc\u77f3\u306e\u5840",
+  "block.consistency_plus.obsidian_gate": "\u9ed2\u66dc\u77f3のゲート",
 
   "block.consistency_plus.crying_obsidian_slab": "\u6ce3\u304f\u9ed2\u66dc\u77f3\u306e\u30cf\u30fc\u30d5\u30d6\u30ed\u30c3\u30af",
   "block.consistency_plus.crying_obsidian_stairs": "\u6ce3\u304f\u9ed2\u66dc\u77f3\u306e\u968e\u6bb5",
   "block.consistency_plus.crying_obsidian_wall": "\u6ce3\u304f\u9ed2\u66dc\u77f3\u306e\u5840",
+  "block.consistency_plus.crying_obsidian_gate": "\u6ce3\u304f\u9ed2\u66dc\u77f3のゲート",
 
   "block.consistency_plus.soul_glowstone": "\u9b42\u306e\u30b0\u30ed\u30a6\u30b9\u30c8\u30fc\u30f3",
   "block.consistency_plus.warped_wart": "\u6b6a\u3093\u3060\u306e\u30a6\u30a9\u30fc\u30c8",

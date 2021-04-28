@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "aaa"
+    ],
+    "key": {
+        "a": "minecraft:gray_terracotta"
+    },
+    "result": {
+        "item": "consistency_plus:gray_terracotta_wall",
+        "count": 1
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "aaa"
+    ],
+    "key": {
+        "a": "minecraft:orange_terracotta"
+    },
+    "result": {
+        "item": "consistency_plus:orange_terracotta_wall",
+        "count": 1
+    }
+}

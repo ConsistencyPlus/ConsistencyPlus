@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XAX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:green_dye"
+        },
+        "A": {
+            "item": "minecraft:blue_ice"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:green_ice",
+        "count": 8
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "aaa"
+    ],
+    "key": {
+        "a": "consistency_plus:purple_glowstone"
+    },
+    "result": {
+        "item": "consistency_plus:purple_glowstone_wall",
+        "count": 1
+    }
+}

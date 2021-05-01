@@ -7,8 +7,8 @@
   "description": "Builders Rejoice, We've added all the missing block variants!",
   "contributors": [
     {"name": "Carter","contact": {"Discord": "Cart3r#1234"}},
-    {"name": "IMS","contact": {"Discord": "IMS#7902"}},
     {"name": "Siuol","contact": {"Discord": "\"Siuol\" Appeared#5729"}},
+    {"name": "IMS","contact": {"Discord": "IMS#7902"}},
     {"name": "Tyler","contact": {"Discord": "Digital_Tech#0001"}},
     {"name": "Devin","contact": {"Github": "HiItsDevin"}},
     {"name": "Devious","contact": {"Discord": "Deviouslrd#9151"}},
@@ -21,7 +21,7 @@
     "sources": "https://github.com/ConsistencyPlus/ConsistencyPlus"
   },
 
-  "license": "GPLv3",
+  "license": "LGPLv3",
   "icon": "assets/consistency_plus/icon.png",
 
   "environment": "*",

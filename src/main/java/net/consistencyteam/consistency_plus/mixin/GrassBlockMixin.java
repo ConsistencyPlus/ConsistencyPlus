@@ -8,12 +8,15 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 
+import static net.consistencyteam.consistency_plus.ConsistencyPlus.DIRT_ID;
 import static net.minecraft.block.Blocks.DIRT;
 
 @Mixin(GrassBlock.class)
 public abstract class GrassBlockMixin implements HasUngrownVariant {
+	
 	@Override
 	public BlockState getUngrownVariant(World world, BlockPos pos) {
-		return Registry.BLOCK.get(Registry.BLOCK.getRawId(DIRT)).getDefaultState();
+		BlockState state = Registry.BLOCK.get(DIRT_ID).getDefaultState();
+		return state;
 	}
 }

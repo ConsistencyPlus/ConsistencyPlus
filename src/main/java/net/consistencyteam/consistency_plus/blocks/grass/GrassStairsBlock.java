@@ -37,15 +37,17 @@ public class GrassStairsBlock extends StairsBlock implements HasUngrownVariant, 
 	}
 	
 	@Override
-	public boolean canSurvive(BlockState state, WorldView worldView, BlockPos pos) {
+	public boolean customCanSurvive(BlockState state, WorldView worldView, BlockPos pos) {
 		BlockState stateAbove = worldView.getBlockState(pos.up());
 		if (stateAbove.isOf(Blocks.SNOW) && stateAbove.get(SnowBlock.LAYERS) == 1) {
 			return true;
 		} else if (stateAbove.getFluidState().getLevel() == 8) {
 			return false;
 		} else {
-			if (worldView.getBlockState(pos).get(HALF) == BlockHalf.TOP) {
-				return true; // technically not correct but good enough
+			if (worldView.getBlockState(pos).getBlock() instanceof GrassStairsBlock) {
+				if (worldView.getBlockState(pos).get(HALF) == BlockHalf.TOP) {
+					return true; // technically not correct but good enough
+				}
 			}
 			int i = ChunkLightProvider.getRealisticOpacity(worldView, state, pos, stateAbove, pos.up(), Direction.UP, stateAbove.getOpacity(worldView, pos.up()));
 			return i < worldView.getMaxLightLevel();

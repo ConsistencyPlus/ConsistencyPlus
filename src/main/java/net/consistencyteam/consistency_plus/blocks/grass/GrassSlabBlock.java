@@ -39,21 +39,28 @@ public class GrassSlabBlock extends SlabBlock implements HasUngrownVariant, IsSp
 	}
 	
 	@Override
-	public boolean canSurvive(BlockState state, WorldView worldView, BlockPos pos) {
+	public boolean customCanSurvive(BlockState state, WorldView worldView, BlockPos pos) {
 		BlockState stateAbove = worldView.getBlockState(pos.up());
 		if (stateAbove.isOf(Blocks.SNOW) && stateAbove.get(SnowBlock.LAYERS) == 1) {
 			return true;
 		} else if (stateAbove.getFluidState().getLevel() == 8) {
 			return false;
 		} else {
-			if (worldView.getBlockState(pos).get(TYPE) == SlabType.TOP) {
-				return true; // technically not correct but good enough
+			if (worldView.getBlockState(pos).getBlock() instanceof GrassSlabBlock) {
+				if (worldView.getBlockState(pos).get(TYPE) == SlabType.TOP) {
+					return true; // technically not correct but good enough
+				}
 			}
 			int i = ChunkLightProvider.getRealisticOpacity(worldView, state, pos, stateAbove, pos.up(), Direction.UP, stateAbove.getOpacity(worldView, pos.up()));
 			return i < worldView.getMaxLightLevel();
 		}
 	}
-
+	
+	@Override
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+		grow(state, world, pos, random);
+	}
+	
 	@Override
 	public BlockState getUngrownVariant(World world, BlockPos pos) {
 		if (world.getBlockState(pos) == getDefaultState().with(TYPE, SlabType.BOTTOM)) {

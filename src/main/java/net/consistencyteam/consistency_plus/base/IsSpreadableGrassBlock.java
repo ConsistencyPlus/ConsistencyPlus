@@ -1,5 +1,6 @@
 package net.consistencyteam.consistency_plus.base;
 
+import net.consistencyteam.consistency_plus.blocks.grass.GrassWallBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.server.world.ServerWorld;
@@ -14,7 +15,7 @@ import java.util.Random;
 import static net.minecraft.block.SnowyBlock.SNOWY;
 
 public interface IsSpreadableGrassBlock {
-	default boolean canSurvive(BlockState state, WorldView worldView, BlockPos pos) {
+	default boolean customCanSurvive(BlockState state, WorldView worldView, BlockPos pos) {
 		BlockState stateAbove = worldView.getBlockState(pos.up());
 		if (stateAbove.isOf(Blocks.SNOW) && stateAbove.get(SnowBlock.LAYERS) == 1) {
 			return true;
@@ -28,11 +29,11 @@ public interface IsSpreadableGrassBlock {
 	
 	default boolean canSpread(BlockState state, WorldView worldView, BlockPos pos) {
 		BlockPos blockPos = pos.up();
-		return canSurvive(state, worldView, pos) && !worldView.getFluidState(blockPos).isIn(FluidTags.WATER);
+		return customCanSurvive(state, worldView, pos) && !worldView.getFluidState(blockPos).isIn(FluidTags.WATER);
 	}
 	
 	default void grow(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-		if (!canSurvive(state, world, pos)) {
+		if (!customCanSurvive(state, world, pos)) {
 			world.setBlockState(pos, ((HasUngrownVariant) this).getUngrownVariant(world, pos));
 		} else {
 			if (world.getLightLevel(pos.up()) >= 9) {
@@ -53,6 +54,7 @@ public interface IsSpreadableGrassBlock {
 					// HasGrownGrassVariant handling
 					if (world.getBlockState(targetPos).getBlock() instanceof HasGrownGrassVariant && canSpread(world.getBlockState(pos), world, targetPos)) {
 						HasGrownGrassVariant targetBlock = (HasGrownGrassVariant) world.getBlockState(targetPos).getBlock();
+						
 						// snow check
 						if (world.getBlockState(targetPos.up()).isOf(Blocks.SNOW_BLOCK) || world.getBlockState(targetPos.up()).isOf(Blocks.SNOW)) {
 							world.setBlockState(targetPos, targetBlock.getGrownGrassVariant(world, targetPos).with(SNOWY, true));

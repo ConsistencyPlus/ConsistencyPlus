@@ -16,4 +16,5 @@ public class DirtBlock extends Block implements HasGrownGrassVariant {
 	public BlockState getGrownGrassVariant(World world, BlockPos pos) {
 		return Blocks.GRASS_BLOCK.getDefaultState();
 	}
+	
 }

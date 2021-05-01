@@ -20,6 +20,7 @@ import org.apache.logging.log4j.Logger;
 
 public class ConsistencyPlus implements ModInitializer {
     public static final Logger LOGGER = LogManager.getLogger();
+    public static int DIRT_ID;
     
     @Override
 	public void onInitialize() {
@@ -28,14 +29,16 @@ public class ConsistencyPlus implements ModInitializer {
         Blocks.init();
         
         // making dirt not stupid
-        Registry.BLOCK.set(Registry.BLOCK.getRawId(net.minecraft.block.Blocks.DIRT), RegistryKey.of(RegistryKey.ofRegistry(new Identifier("block")),
+        DIRT_ID = Registry.BLOCK.getRawId(net.minecraft.block.Blocks.DIRT);
+        Registry.BLOCK.set(DIRT_ID, RegistryKey.of(Registry.BLOCK_KEY,
                 new Identifier("minecraft", "dirt")),
                 new DirtBlock(AbstractBlock.Settings.of(Material.SOIL, MaterialColor.DIRT).strength(0.5F).sounds(BlockSoundGroup.GRAVEL)),
                 Lifecycle.stable());
         
-        Registry.ITEM.set(Registry.ITEM.getRawId(net.minecraft.item.Items.DIRT), RegistryKey.of(Registry.ITEM_KEY, new Identifier("dirt")),
-                new BlockItem(Registry.BLOCK.get(Registry.BLOCK.getRawId(net.minecraft.block.Blocks.DIRT)), new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)),
-                Lifecycle.stable());
+        Registry.ITEM.set(Registry.ITEM.getRawId(net.minecraft.item.Items.DIRT), RegistryKey.of(Registry.ITEM_KEY,
+                new Identifier("minecraft", "dirt")),
+                new BlockItem(Registry.BLOCK.get(Registry.BLOCK.getRawId(net.minecraft.block.Blocks.DIRT)),
+                        new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)), Lifecycle.stable());
         
         LOGGER.debug("Consistency+ Main - Blocks initialized");
         LOGGER.debug("Consistency+ Main - Beginning item initialization");

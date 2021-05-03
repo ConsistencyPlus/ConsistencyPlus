@@ -1,8 +1,8 @@
 package net.consistencyteam.consistency_plus.base;
 
-import net.consistencyteam.consistency_plus.blocks.grass.GrassWallBlock;
-import net.minecraft.block.*;
-import net.minecraft.block.enums.SlabType;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SnowBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
@@ -14,7 +14,7 @@ import java.util.Random;
 
 import static net.minecraft.block.SnowyBlock.SNOWY;
 
-public interface IsSpreadableGrassBlock {
+public interface IsSpreadableMyceliumBlock {
 	default boolean customCanSurvive(BlockState state, WorldView worldView, BlockPos pos) {
 		BlockState stateAbove = worldView.getBlockState(pos.up());
 		if (stateAbove.isOf(Blocks.SNOW) && stateAbove.get(SnowBlock.LAYERS) == 1) {
@@ -45,21 +45,21 @@ public interface IsSpreadableGrassBlock {
 					if (world.getBlockState(targetPos).isOf(Blocks.DIRT) && customCanSpread(world.getBlockState(pos), world, targetPos)) {
 						// snow check
 						if (world.getBlockState(targetPos.up()).isOf(Blocks.SNOW_BLOCK) || world.getBlockState(targetPos.up()).isOf(Blocks.SNOW)) {
-							world.setBlockState(targetPos, Blocks.GRASS_BLOCK.getDefaultState().with(SNOWY, true));
+							world.setBlockState(targetPos, Blocks.MYCELIUM.getDefaultState().with(SNOWY, true));
 						} else {
-							world.setBlockState(targetPos, Blocks.GRASS_BLOCK.getDefaultState());
+							world.setBlockState(targetPos, Blocks.MYCELIUM.getDefaultState());
 						}
 					}
 					
 					// HasGrownGrassVariant handling
-					if (world.getBlockState(targetPos).getBlock() instanceof HasGrownGrassVariant && customCanSpread(world.getBlockState(pos), world, targetPos)) {
-						HasGrownGrassVariant targetBlock = (HasGrownGrassVariant) world.getBlockState(targetPos).getBlock();
+					if (world.getBlockState(targetPos).getBlock() instanceof HasGrownMyceliumVariant && customCanSpread(world.getBlockState(pos), world, targetPos)) {
+						HasGrownMyceliumVariant targetBlock = (HasGrownMyceliumVariant) world.getBlockState(targetPos).getBlock();
 						
 						// snow check
 						if (world.getBlockState(targetPos.up()).isOf(Blocks.SNOW_BLOCK) || world.getBlockState(targetPos.up()).isOf(Blocks.SNOW)) {
-							world.setBlockState(targetPos, targetBlock.getGrownGrassVariant(world, targetPos).with(SNOWY, true));
+							world.setBlockState(targetPos, targetBlock.getGrownMyceliumVariant(world, targetPos).with(SNOWY, true));
 						} else {
-							world.setBlockState(targetPos, targetBlock.getGrownGrassVariant(world, targetPos));
+							world.setBlockState(targetPos, targetBlock.getGrownMyceliumVariant(world, targetPos));
 						}
 					}
 				}

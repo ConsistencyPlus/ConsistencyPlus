@@ -7,7 +7,7 @@
     "BlockColorsMixin",
     "GrassBlockMixin",
     "LivingEntityMixin",
-    "SpreadableBlockMixin"
+    "MyceliumBlockMixin"
   ],
   "client": [
   ],

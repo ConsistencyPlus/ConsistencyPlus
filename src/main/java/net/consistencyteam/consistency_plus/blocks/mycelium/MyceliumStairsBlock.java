@@ -1,7 +1,6 @@
 package net.consistencyteam.consistency_plus.blocks.mycelium;
 
 import net.consistencyteam.consistency_plus.base.HasUngrownVariant;
-import net.consistencyteam.consistency_plus.base.IsSpreadableGrassBlock;
 import net.consistencyteam.consistency_plus.base.IsSpreadableMyceliumBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

@@ -1748,13 +1748,13 @@ public class Items {
 	public static final Item GRASS_STAIRS = register("grass_stairs", new BlockItem(Blocks.GRASS_STAIRS, new Item.Settings().group(ItemGroups.CONSISTENCY_PLUS_MISC)));
 	public static final Item GRASS_WALL = register("grass_wall", new BlockItem(Blocks.GRASS_WALL, new Item.Settings().group(ItemGroups.CONSISTENCY_PLUS_MISC)));
 	
-	// Grass
+	// Mycelium
 	public static final Item MYCELIUM_SLAB = register("mycelium_slab", new BlockItem(Blocks.MYCELIUM_SLAB, new Item.Settings().group(ItemGroups.CONSISTENCY_PLUS_MISC)));
 	public static final Item MYCELIUM_STAIRS = register("mycelium_stairs", new BlockItem(Blocks.MYCELIUM_STAIRS, new Item.Settings().group(ItemGroups.CONSISTENCY_PLUS_MISC)));
 	public static final Item MYCELIUM_WALL = register("mycelium_wall", new BlockItem(Blocks.MYCELIUM_WALL, new Item.Settings().group(ItemGroups.CONSISTENCY_PLUS_MISC)));
 	
 	
-	// misc
+	// Miscellaneous
 	public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, ItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(Blocks.WARPED_WART, ItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(Blocks.NETHERITE_STAIRS, new Item.Settings()));

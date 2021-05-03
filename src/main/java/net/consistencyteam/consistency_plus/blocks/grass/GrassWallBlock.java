@@ -2,7 +2,10 @@ package net.consistencyteam.consistency_plus.blocks.grass;
 
 import net.consistencyteam.consistency_plus.base.HasUngrownVariant;
 import net.consistencyteam.consistency_plus.base.IsSpreadableGrassBlock;
-import net.minecraft.block.*;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SnowBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;

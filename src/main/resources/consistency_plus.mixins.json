@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "BlockColorsMixin",
+    "BlockMixin",
     "GrassBlockMixin",
     "LivingEntityMixin",
     "MyceliumBlockMixin"

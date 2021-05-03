@@ -1799,15 +1799,15 @@ public class Blocks {
 	public static final Block MYCELIUM_STAIRS = register("mycelium_stairs", new MyceliumStairsBlock(MYCELIUM.getDefaultState(), FabricBlockSettings.copy(MYCELIUM)));
 	public static final Block MYCELIUM_WALL = register("mycelium_wall", new MyceliumWallBlock(FabricBlockSettings.copy(MYCELIUM)));
 	
-	// misc
+	// Miscellaneous
 	public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MaterialColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));
 	public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MaterialColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
-	public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(),FabricBlockSettings.copy(NETHERITE_BLOCK)));
-    public static final Block SUSPICIOUS_SLAB  = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
+	public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(), FabricBlockSettings.copy(NETHERITE_BLOCK)));
+	public static final Block SUSPICIOUS_SLAB = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
 //  public static final Block SIUOLS_SANITY = register("is_a_crab", new Block(FabricBlockSettings.copy(HELP_ME)));
-    //  You are having funny fun because your playing a Siuolplexplex contributed mod
+	//  You are having funny fun because your playing a Siuolplexplex contributed mod
 	
-    private static Block register(String name, Block block) {
+	private static Block register(String name, Block block) {
 		return Registry.register(Registry.BLOCK, new Identifier("consistency_plus", name), block);
 	}
 	

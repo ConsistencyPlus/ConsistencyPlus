@@ -792,6 +792,10 @@
   "block.consistency_plus.grass_stairs": "Grass Stairs",
   "block.consistency_plus.grass_wall": "Grass Wall",
 
+  "block.consistency_plus.mycelium_slab": "Mycelium Slab",
+  "block.consistency_plus.mycelium_stairs": "Mycelium Stairs",
+  "block.consistency_plus.mycelium_wall": "Mycelium Wall",
+
   "block.consistency_plus.netherite_stairs": "Netherite Stairs",
   "block.consistency_plus.warped_wart": "Warped Wart",
 

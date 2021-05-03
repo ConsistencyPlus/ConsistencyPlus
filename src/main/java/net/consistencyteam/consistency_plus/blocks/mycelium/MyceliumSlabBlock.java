@@ -2,7 +2,6 @@ package net.consistencyteam.consistency_plus.blocks.mycelium;
 
 import net.consistencyteam.consistency_plus.base.HasUngrownVariant;
 import net.consistencyteam.consistency_plus.base.IsSpreadableMyceliumBlock;
-import net.consistencyteam.consistency_plus.blocks.grass.GrassSlabBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -49,12 +48,7 @@ public class MyceliumSlabBlock extends SlabBlock implements HasUngrownVariant, I
 	
 	@Override
 	public BlockState getUngrownVariant(World world, BlockPos pos) {
-		if (world.getBlockState(pos) == getDefaultState().with(TYPE, SlabType.BOTTOM)) {
-			return DIRT_SLAB.getDefaultState().with(TYPE, SlabType.BOTTOM);
-		} else if (world.getBlockState(pos) == getDefaultState().with(TYPE, SlabType.DOUBLE)) {
-			return DIRT_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE);
-		} else {
-			return DIRT_SLAB.getDefaultState().with(TYPE, SlabType.TOP);
-		}
+		BlockState oldState = world.getBlockState(pos);
+		return DIRT_SLAB.getDefaultState().with(TYPE, oldState.get(TYPE));
 	}
 }

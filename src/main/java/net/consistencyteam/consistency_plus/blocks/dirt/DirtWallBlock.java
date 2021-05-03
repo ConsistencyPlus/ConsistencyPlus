@@ -7,7 +7,8 @@ import net.minecraft.block.WallBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static net.consistencyteam.consistency_plus.registry.Blocks.*;
+import static net.consistencyteam.consistency_plus.registry.Blocks.GRASS_WALL;
+import static net.consistencyteam.consistency_plus.registry.Blocks.MYCELIUM_WALL;
 
 public class DirtWallBlock extends WallBlock implements HasGrownGrassVariant, HasGrownMyceliumVariant {
 	public DirtWallBlock(Settings settings) {

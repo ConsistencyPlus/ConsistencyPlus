@@ -9,6 +9,9 @@ import net.consistencyteam.consistency_plus.blocks.dirt.DirtWallBlock;
 import net.consistencyteam.consistency_plus.blocks.grass.GrassSlabBlock;
 import net.consistencyteam.consistency_plus.blocks.grass.GrassStairsBlock;
 import net.consistencyteam.consistency_plus.blocks.grass.GrassWallBlock;
+import net.consistencyteam.consistency_plus.blocks.mycelium.MyceliumSlabBlock;
+import net.consistencyteam.consistency_plus.blocks.mycelium.MyceliumStairsBlock;
+import net.consistencyteam.consistency_plus.blocks.mycelium.MyceliumWallBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricMaterialBuilder;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
@@ -1790,6 +1793,11 @@ public class Blocks {
 	public static final Block GRASS_SLAB = register("grass_slab", new GrassSlabBlock(FabricBlockSettings.copy(GRASS_BLOCK)));
 	public static final Block GRASS_STAIRS = register("grass_stairs", new GrassStairsBlock(GRASS_BLOCK.getDefaultState(), FabricBlockSettings.copy(GRASS_BLOCK)));
 	public static final Block GRASS_WALL = register("grass_wall", new GrassWallBlock(FabricBlockSettings.copy(GRASS_BLOCK)));
+	
+	// Mycelium
+	public static final Block MYCELIUM_SLAB = register("mycelium_slab", new MyceliumSlabBlock(FabricBlockSettings.copy(MYCELIUM)));
+	public static final Block MYCELIUM_STAIRS = register("mycelium_stairs", new MyceliumStairsBlock(MYCELIUM.getDefaultState(), FabricBlockSettings.copy(MYCELIUM)));
+	public static final Block MYCELIUM_WALL = register("mycelium_wall", new MyceliumWallBlock(FabricBlockSettings.copy(MYCELIUM)));
 	
 	// misc
 	public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MaterialColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));

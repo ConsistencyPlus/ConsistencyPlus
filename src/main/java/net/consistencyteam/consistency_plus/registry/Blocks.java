@@ -1782,7 +1782,6 @@ public class Blocks {
         public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MaterialColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
 
         //Joke Blocks
-        public static final Block DEVIN_BLOCKERA = register("devin_blockera", new Block(FabricBlockSettings.copy(STONE)));
         public static final Block BROKEN_MODIFIKATION = register("broken_modifikation", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BLACK).strength(5.0F).slipperiness(1.1f).luminance(10)));
         public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(),FabricBlockSettings.copy(NETHERITE_BLOCK)));
         public static final Block SUSPICIOUS_SLAB  = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));

@@ -9,15 +9,15 @@ import net.minecraft.util.Identifier;
 // That code is licensed under MIT.
 // Thanks for your work, Draylar!
 
-// Also, code is not being registered/initalized due to the fact that it does not have its usage JUST yet.
+// Also, code is not being registered/initialized due to the fact that it does not have its usage JUST yet.
 
 public class Tags {
-    public static final Tag<Block> GATES = register("gates");
-
-    private static Tag<Block> register(String id) {
-        return TagRegistry.block(new Identifier("consistency_plus", id));
-    }
-
-    public static void init() {
-    }
+	public static final Tag<Block> GATES = register("gates");
+	
+	private static Tag<Block> register(String id) {
+		return TagRegistry.block(new Identifier("consistency_plus", id));
+	}
+	
+	public static void init() {
+	}
 }

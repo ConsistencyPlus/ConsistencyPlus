@@ -51,6 +51,9 @@
     "consistency_plus:black_terracotta_stairs",
     "consistency_plus:brown_terracotta_stairs",
     "consistency_plus:obsidian_stairs",
-    "consistency_plus:crying_obsidian_stairs"
+    "consistency_plus:crying_obsidian_stairs",
+    "consistency_plus:dirt_stairs",
+    "consistency_plus:grass_stairs",
+    "consistency_plus:mycelium_stairs"
   ]
 }

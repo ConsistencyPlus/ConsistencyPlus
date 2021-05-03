@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"3": "minecraft:block/grass_block_side",
+		"5": "minecraft:block/dirt",
+		"6": "minecraft:block/grass_block_top",
+		"7": "minecraft:block/grass_block_side_overlay",
+		"particle": "minecraft:block/dirt"
+	},
+	"elements": [
+		{
+			"name": "Center post",
+			"from": [5, 0, 0],
+			"to": [11, 16, 8],
+			"faces": {
+				"north": {"uv": [5, 0, 11, 16], "texture": "#3"},
+				"east": {"uv": [5, 0, 13, 16], "texture": "#3"},
+				"south": {"uv": [5, 0, 11, 16], "texture": "#3"},
+				"west": {"uv": [5, 0, 13, 16], "texture": "#3"},
+				"up": {"uv": [5, 0, 11, 8], "texture": "#6", "tintindex": 0},
+				"down": {"uv": [5, 0, 11, 8], "texture": "#5"}
+			}
+		},
+		{
+			"name": "Center post Overlay",
+			"from": [5, 0, 0],
+			"to": [11, 16, 8],
+			"faces": {
+				"north": {"uv": [5, 0, 11, 16], "texture": "#7", "tintindex": 0},
+				"east": {"uv": [5, 0, 13, 16], "texture": "#7", "tintindex": 0},
+				"south": {"uv": [5, 0, 11, 16], "texture": "#7", "tintindex": 0},
+				"west": {"uv": [5, 0, 13, 16], "texture": "#7", "tintindex": 0}
+			}
+		}
+	]
+}

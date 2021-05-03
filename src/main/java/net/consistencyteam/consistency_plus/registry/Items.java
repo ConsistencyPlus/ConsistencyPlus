@@ -1753,8 +1753,8 @@ public class Items {
 	public static final Item GRASS_WALL = register("grass_wall", new BlockItem(Blocks.GRASS_WALL, new Item.Settings().group(ItemGroups.CONSISTENCY_PLUS_MISC)));
 	
 	// misc
+	
 	public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, ItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item DEVIN_BLOCKERA = register("devin_blockera", new BlockItem(Blocks.DEVIN_BLOCKERA, new Item.Settings()));
 	public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(Blocks.WARPED_WART, ItemGroups.consistencyPlusMiscItemSettings()));
 	
 	private static Item register(String name, Item item) {

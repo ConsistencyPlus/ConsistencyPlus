@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 // That code is licensed under MIT.
 // Thanks for your work, Draylar!
 
-// Also, code is not being registered/initalized due to the fact that it does not have its usage JUST yet.
+// Also, code is not being registered/initialized due to the fact that it does not have its usage JUST yet.
 
 public class Tags {
     public static final Tag<Block> GATES = register("gates");

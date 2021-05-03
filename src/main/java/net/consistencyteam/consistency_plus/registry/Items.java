@@ -770,10 +770,6 @@ public class Items {
 	//cracked carved
 	//mossy carved
 	
-	
-	//h
-	public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(Blocks.NETHERITE_STAIRS, new Item.Settings()));
-	public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(Blocks.SUSPICIOUS_SLAB, new Item.Settings()));
 	//clay
 	public static final Item CLAY_SLAB = register("clay_slab", new BlockItem(Blocks.CLAY_SLAB, new Item.Settings()));
 	public static final Item CLAY_STAIRS = register("clay_stairs", new BlockItem(Blocks.CLAY_STAIRS, new Item.Settings()));
@@ -1753,9 +1749,10 @@ public class Items {
 	public static final Item GRASS_WALL = register("grass_wall", new BlockItem(Blocks.GRASS_WALL, new Item.Settings().group(ItemGroups.CONSISTENCY_PLUS_MISC)));
 	
 	// misc
-	
 	public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(Blocks.JACK_O_SOUL, ItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(Blocks.WARPED_WART, ItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(Blocks.NETHERITE_STAIRS, new Item.Settings()));
+	public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(Blocks.SUSPICIOUS_SLAB, new Item.Settings()));
 	
 	private static Item register(String name, Item item) {
 		return Registry.register(Registry.ITEM, new Identifier("consistency_plus", name), item);

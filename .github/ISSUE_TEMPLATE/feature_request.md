@@ -1,8 +1,7 @@
 ---
-name: Feature request about: New ideas go here! Check our roadmap first. title: "[FEATURE REQUEST]"
-labels: ''
-assignees: ''
-
+name: Feature request
+about: New ideas go here! Check our roadmap first.
+labels: 'feature request'
 ---
 
 **Feature**

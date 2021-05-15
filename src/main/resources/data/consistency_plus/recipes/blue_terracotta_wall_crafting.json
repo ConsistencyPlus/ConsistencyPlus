@@ -5,10 +5,10 @@
         "aaa"
     ],
     "key": {
-        "a": "minecraft:blue_terracotta"
+        "a": {"item": "minecraft:blue_terracotta"}
     },
     "result": {
         "item": "consistency_plus:blue_terracotta_wall",
-        "count": 1
+        "count": 6
     }
 }

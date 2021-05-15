@@ -1,20 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "XXX",
-        "XAX",
-        "XXX"
-    ],
-    "key": {
-        "X": {
-            "item": "minecraft:lime_dye"
-        },
-        "A": {
-            "item": "minecraft:blue_ice"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XAX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:lime_dye"
     },
-    "result": {
-        "item": "consistency_plus:lime_ice",
-        "count": 8
+    "A": {
+      "item": "minecraft:blue_ice"
     }
+  },
+  "result": {
+    "item": "consistency_plus:lime_ice",
+    "count": 8
+  }
 }

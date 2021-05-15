@@ -1,14 +1,14 @@
 {
-    "type": "minecraft:block",
-    "pools": [
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "consistency_plus:cracked_blue_nether_brick_fence_gate"
-                }
-            ]
+          "type": "minecraft:item",
+          "name": "consistency_plus:cracked_blue_nether_brick_fence_gate"
         }
-    ]
+      ]
+    }
+  ]
 }

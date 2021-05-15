@@ -1,16 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "##",
-        "##"
-    ],
-    "key": {
-        "#": {
-            "item": "consistency_plus:mossy_blackstone_bricks"
-        }
-    },
-    "result": {
-        "item": "consistency_plus:mossy_chiseled_blackstone",
-        "count": 4
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "consistency_plus:mossy_blackstone_bricks"
     }
+  },
+  "result": {
+    "item": "consistency_plus:mossy_chiseled_blackstone",
+    "count": 4
+  }
 }

@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/carved_end_stone"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/carved_end_stone"
     }
+  }
 }

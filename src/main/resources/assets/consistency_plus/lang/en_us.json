@@ -2,7 +2,6 @@
   "item.consistency_plus.warped_wart": "Warped Wart",
   "item.minecraft.nether_wart": "Crimson Wart",
   "block.minecraft.nether_wart_block": "Crimson Wart Block",
-
   "block.minecraft.red_nether_brick_slab": "Crimson Nether Brick Slab",
   "block.minecraft.red_nether_brick_stairs": "Crimson Nether Brick Stairs",
   "block.minecraft.red_nether_brick_wall": "Crimson Nether Brick Wall",
@@ -20,7 +19,6 @@
   "block.minecraft.polished_blackstone_brick_slab": "Blackstone Brick Slab",
   "block.minecraft.polished_blackstone_stairs": "Blackstone Brick Stairs",
   "block.minecraft.polished_blackstone_brick_wall": "Blackstone Brick Wall",
-
   "block.minecraft.oak_fence_gate": "Oak Gate",
   "block.minecraft.birch_fence_gate": "Birch Gate",
   "block.minecraft.spruce_fence_gate": "Spruce Gate",
@@ -30,7 +28,6 @@
   "block.minecraft.warped_fence_gate": "Warped Gate",
   "block.minecraft.crimson_fence_gate": "Crimson Gate",
   "block.minecraft.nether_brick_fence_gate": "Nether Brick Gate",
-
   "block.consistency_plus.stone_brick_pillar": "Stone Brick Pillar",
   "block.consistency_plus.mossy_stone_brick_pillar": "Mossy Stone Brick Pillar",
   "block.consistency_plus.cracked_stone_brick_pillar": "Cracked Stone Brick Pillar",
@@ -60,8 +57,6 @@
   "block.consistency_plus.mossy_stone_brick_gate": "Mossy Stone Brick Gate",
   "block.consistency_plus.cobblestone_gate": "Cobblestone Gate",
   "block.consistency_plus.mossy_cobblestone_gate": "Mossy Cobblestone Gate",
-
-
   "block.consistency_plus.smooth_blackstone": "Smooth Blackstone",
   "block.consistency_plus.smooth_blackstone_slab": "Smooth Blackstone Slab",
   "block.consistency_plus.smooth_blackstone_stairs": "Smooth Blackstone Stairs",
@@ -92,7 +87,6 @@
   "block.consistency_plus.blackstone_brick_gate": "Blackstone Brick Gate",
   "block.consistency_plus.cracked_blackstone_brick_gate": "Cracked Blackstone Brick Gate",
   "block.consistency_plus.mossy_blackstone_brick_gate": "Mossy Blackstone Brick Gate",
-
   "block.consistency_plus.polished_sandstone": "Polished Sandstone",
   "block.consistency_plus.polished_sandstone_slab": "Polished Sandstone Slab",
   "block.consistency_plus.polished_sandstone_stairs": "Polished Sandstone Stairs",
@@ -111,7 +105,6 @@
   "block.consistency_plus.cut_sandstone_gate": "Cut Sandstone Gate",
   "block.consistency_plus.polished_sandstone_gate": "Polished Sandstone Gate",
   "block.consistency_plus.sandstone_brick_gate": "Sandstone Brick Gate",
-
   "block.consistency_plus.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
   "block.consistency_plus.cut_red_sandstone_wall": "Cut Red Sandstone Wall",
   "block.consistency_plus.cut_red_sandstone_stairs": "Cut Red Sandstone Stairs",
@@ -130,7 +123,6 @@
   "block.consistency_plus.cut_red_sandstone_gate": "Cut Red Sandstone Gate",
   "block.consistency_plus.polished_red_sandstone_gate": "Polished Red Sandstone Gate",
   "block.consistency_plus.red_sandstone_brick_gate": "Red Sandstone Brick Gate",
-
   "block.consistency_plus.soul_sandstone": "Soul Sandstone",
   "block.consistency_plus.soul_sandstone_slab": "Soul Sandstone Slab",
   "block.consistency_plus.soul_sandstone_stairs": "Soul Sandstone Stairs",
@@ -159,7 +151,6 @@
   "block.consistency_plus.soul_sandstone_brick_gate": "Soul Sandstone Brick Gate",
   "block.consistency_plus.carved_soul_sandstone": "Carved Soul Sandstone",
   "block.consistency_plus.chiseled_soul_sandstone": "Chiseled Soul Sandstone",
-
   "block.consistency_plus.cut_quartz": "Cut Quartz",
   "block.consistency_plus.cut_quartz_slab": "Cut Quartz Slab",
   "block.consistency_plus.cut_quartz_stairs": "Cut Quartz Stairs",
@@ -179,7 +170,6 @@
   "block.consistency_plus.cut_quartz_gate": "Cut Quartz Gate",
   "block.consistency_plus.polished_quartz_gate": "Polished Quartz Gate",
   "block.consistency_plus.quartz_brick_gate": "Quartz Brick Gate",
-
   "block.consistency_plus.purpur_block": "Purpur Block",
   "block.consistency_plus.purpur_slab": "Purpur Slab",
   "block.consistency_plus.purpur_stairs": "Purpur Stairs",
@@ -208,7 +198,6 @@
   "block.consistency_plus.cut_purpur_gate": "Cut Purpur Gate",
   "block.consistency_plus.polished_purpur_gate": "Polished Purpur Gate",
   "block.consistency_plus.purpur_brick_gate": "Purpur Brick Gate",
-
   "block.consistency_plus.clay_slab": "Clay Slab",
   "block.consistency_plus.clay_stairs": "Clay Stairs",
   "block.consistency_plus.clay_wall": "Clay Wall",
@@ -228,9 +217,7 @@
   "block.consistency_plus.brick_pillar": "Brick Pillar",
   "block.consistency_plus.chiseled_bricks": "Chiseled Bricks",
   "block.consistency_plus.brick_gate": "Brick Gate",
-
   "block.consistency_plus.suspicious_slab": "Suspicious Slab",
-
   "block.consistency_plus.blue_nether_bricks": "Warped Nether Bricks",
   "block.consistency_plus.blue_nether_brick_fence_gate": "Warped Nether Brick Gate",
   "block.consistency_plus.blue_nether_brick_stairs": "Warped Nether Brick Stairs",
@@ -244,19 +231,16 @@
   "block.consistency_plus.blue_nether_brick_pillar": "Warped Nether Brick Pillar",
   "block.consistency_plus.chiseled_blue_nether_bricks": "Chiseled Warped Nether Bricks",
   "block.consistency_plus.cracked_blue_nether_brick_fence_gate": "Cracked Warped Nether Brick Gate",
-
   "block.consistency_plus.carved_red_nether_bricks": "Carved Crimson Nether Bricks",
   "block.consistency_plus.red_nether_brick_pillar": "Crimson Nether Brick Pillar",
   "block.consistency_plus.chiseled_red_nether_bricks": "Chiseled Crimson Nether Bricks",
   "block.consistency_plus.red_nether_brick_fence_gate": "Crimson Nether Brick Gate",
-
   "block.consistency_plus.cracked_nether_brick_slab": "Cracked Nether Brick Slab",
   "block.consistency_plus.cracked_nether_brick_stairs": "Cracked Nether Brick Stairs",
   "block.consistency_plus.cracked_nether_brick_wall": "Cracked Nether Brick Wall",
   "block.consistency_plus.cracked_nether_brick_fence_gate": "Cracked Nether Brick Gate",
   "block.consistency_plus.nether_brick_pillar": "Nether Brick Pillar",
   "block.consistency_plus.chiseled_nether_bricks": "Chiseled Nether Bricks",
-
   "block.consistency_plus.polished_end_stone": "Polished End Stone",
   "block.consistency_plus.polished_end_stone_slab": "Polished End Stone Slab",
   "block.consistency_plus.polished_end_stone_stairs": "Polished End Stone Stairs",
@@ -280,7 +264,6 @@
   "block.consistency_plus.cut_end_stone_gate": "Cut End Stone Gate",
   "block.consistency_plus.polished_end_stone_gate": "Polished End Stone Gate",
   "block.consistency_plus.end_stone_brick_gate": "End Stone Brick Gate",
-
   "block.consistency_plus.smooth_andesite": "Smooth Andesite",
   "block.consistency_plus.smooth_andesite_slab": "Smooth Andesite Slab",
   "block.consistency_plus.smooth_andesite_stairs": "Smooth Andesite Stairs",
@@ -354,7 +337,6 @@
   "block.consistency_plus.mossy_smooth_andesite_gate": "Mossy Smooth Andesite Gate",
   "block.consistency_plus.mossy_cut_andesite_gate": "Mossy Cut Andesite Gate",
   "block.consistency_plus.mossy_polished_andesite_gate": "Mossy Polished Andesite Gate",
-
   "block.consistency_plus.polished_diorite_wall": "Polished Diorite Wall",
   "block.consistency_plus.cut_diorite": "Cut Diorite",
   "block.consistency_plus.cut_diorite_slab": "Cut Diorite Slab",
@@ -376,7 +358,6 @@
   "block.consistency_plus.cut_diorite_gate": "Cut Diorite Gate",
   "block.consistency_plus.polished_diorite_gate": "Polished Diorite Gate",
   "block.consistency_plus.diorite_brick_gate": "Diorite Brick Gate",
-
   "block.consistency_plus.polished_granite_wall": "Polished Granite Wall",
   "block.consistency_plus.smooth_granite": "Smooth Granite",
   "block.consistency_plus.smooth_granite_slab": "Smooth Granite Slab",
@@ -398,7 +379,6 @@
   "block.consistency_plus.cut_granite_gate": "Cut Granite Gate",
   "block.consistency_plus.polished_granite_gate": "Polished Granite Gate",
   "block.consistency_plus.granite_brick_gate": "Granite Brick Gate",
-
   "block.consistency_plus.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.consistency_plus.cut_prismarine": "Cut Prismarine",
   "block.consistency_plus.cut_prismarine_slab": "Cut Prismarine Slab",
@@ -420,7 +400,6 @@
   "block.consistency_plus.cut_prismarine_gate": "Cut Prismarine Gate",
   "block.consistency_plus.polished_prismarine_gate": "Polished Prismarine Gate",
   "block.consistency_plus.prismarine_brick_gate": "Prismarine Brick Gate",
-
   "block.consistency_plus.dark_prismarine_wall": "Dark Prismarine Wall",
   "block.consistency_plus.dark_prismarine_pillar": "Dark Prismarine Pillar",
   "block.consistency_plus.chiseled_dark_prismarine": "Chiseled Dark Prismarine",
@@ -446,9 +425,7 @@
   "block.consistency_plus.cut_dark_prismarine_gate": "Cut Dark Prismarine Gate",
   "block.consistency_plus.polished_dark_prismarine_gate": "Polished Dark Prismarine Gate",
   "block.consistency_plus.dark_prismarine_brick_gate": "Dark Prismarine Brick Gate",
-
   "block.consistency_plus.jack_o_soul": "Jack o'Soul",
-
   "block.consistency_plus.terracotta_slab": "Terracotta Slab",
   "block.consistency_plus.red_terracotta_slab": "Red Terracotta Slab",
   "block.consistency_plus.orange_terracotta_slab": "Orange Terracotta Slab",
@@ -466,7 +443,6 @@
   "block.consistency_plus.gray_terracotta_slab": "Gray Terracotta Slab",
   "block.consistency_plus.black_terracotta_slab": "Black Terracotta Slab",
   "block.consistency_plus.brown_terracotta_slab": "Brown Terracotta Slab",
-
   "block.consistency_plus.terracotta_stairs": "Terracotta Stairs",
   "block.consistency_plus.red_terracotta_stairs": "Red Terracotta Stairs",
   "block.consistency_plus.orange_terracotta_stairs": "Orange Terracotta Stairs",
@@ -484,7 +460,6 @@
   "block.consistency_plus.gray_terracotta_stairs": "Gray Terracotta Stairs",
   "block.consistency_plus.black_terracotta_stairs": "Black Terracotta Stairs",
   "block.consistency_plus.brown_terracotta_stairs": "Brown Terracotta Stairs",
-
   "block.consistency_plus.terracotta_wall": "Terracotta Wall",
   "block.consistency_plus.red_terracotta_wall": "Red Terracotta Wall",
   "block.consistency_plus.orange_terracotta_wall": "Orange Terracotta Wall",
@@ -502,7 +477,6 @@
   "block.consistency_plus.gray_terracotta_wall": "Gray Terracotta Wall",
   "block.consistency_plus.black_terracotta_wall": "Black Terracotta Wall",
   "block.consistency_plus.brown_terracotta_wall": "Brown Terracotta Wall",
-
   "block.consistency_plus.terracotta_gate": "Terracotta Gate",
   "block.consistency_plus.red_terracotta_gate": "Red Terracotta Gate",
   "block.consistency_plus.orange_terracotta_gate": "Orange Terracotta Gate",
@@ -520,7 +494,6 @@
   "block.consistency_plus.gray_terracotta_gate": "Gray Terracotta Gate",
   "block.consistency_plus.black_terracotta_gate": "Black Terracotta Gate",
   "block.consistency_plus.brown_terracotta_gate": "Brown Terracotta Gate",
-
   "block.consistency_plus.red_concrete_slab": "Red Concrete Slab",
   "block.consistency_plus.orange_concrete_slab": "Orange Concrete Slab",
   "block.consistency_plus.yellow_concrete_slab": "Yellow Concrete Slab",
@@ -537,7 +510,6 @@
   "block.consistency_plus.gray_concrete_slab": "Gray Concrete Slab",
   "block.consistency_plus.black_concrete_slab": "Black Concrete Slab",
   "block.consistency_plus.brown_concrete_slab": "Brown Concrete Slab",
-
   "block.consistency_plus.red_concrete_stairs": "Red Concrete Stairs",
   "block.consistency_plus.orange_concrete_stairs": "Orange Concrete Stairs",
   "block.consistency_plus.yellow_concrete_stairs": "Yellow Concrete Stairs",
@@ -554,7 +526,6 @@
   "block.consistency_plus.gray_concrete_stairs": "Gray Concrete Stairs",
   "block.consistency_plus.black_concrete_stairs": "Black Concrete Stairs",
   "block.consistency_plus.brown_concrete_stairs": "Brown Concrete Stairs",
-
   "block.consistency_plus.red_concrete_wall": "Red Concrete Wall",
   "block.consistency_plus.orange_concrete_wall": "Orange Concrete Wall",
   "block.consistency_plus.yellow_concrete_wall": "Yellow Concrete Wall",
@@ -571,7 +542,6 @@
   "block.consistency_plus.gray_concrete_wall": "Gray Concrete Wall",
   "block.consistency_plus.black_concrete_wall": "Black Concrete Wall",
   "block.consistency_plus.brown_concrete_wall": "Brown Concrete Wall",
-
   "block.consistency_plus.concrete_gate": "Concrete Gate",
   "block.consistency_plus.red_concrete_gate": "Red Concrete Gate",
   "block.consistency_plus.orange_concrete_gate": "Orange Concrete Gate",
@@ -589,7 +559,6 @@
   "block.consistency_plus.gray_concrete_gate": "Gray Concrete Gate",
   "block.consistency_plus.black_concrete_gate": "Black Concrete Gate",
   "block.consistency_plus.brown_concrete_gate": "Brown Concrete Gate",
-
   "block.consistency_plus.red_glowstone": "Red Glowstone",
   "block.consistency_plus.orange_glowstone": "Orange Glowstone",
   "block.consistency_plus.yellow_glowstone": "Yellow Glowstone",
@@ -607,7 +576,6 @@
   "block.consistency_plus.black_glowstone": "Black Glowstone",
   "block.consistency_plus.brown_glowstone": "Brown Glowstone",
   "block.consistency_plus.soul_glowstone": "Soul Glowstone",
-
   "block.consistency_plus.glowstone_slab": "Glowstone Slab",
   "block.consistency_plus.red_glowstone_slab": "Red Glowstone Slab",
   "block.consistency_plus.orange_glowstone_slab": "Orange Glowstone Slab",
@@ -626,7 +594,6 @@
   "block.consistency_plus.black_glowstone_slab": "Black Glowstone Slab",
   "block.consistency_plus.brown_glowstone_slab": "Brown Glowstone Slab",
   "block.consistency_plus.soul_glowstone_slab": "Soul Glowstone Slab",
-
   "block.consistency_plus.glowstone_stairs": "Glowstone Stairs",
   "block.consistency_plus.red_glowstone_stairs": "Red Glowstone Stairs",
   "block.consistency_plus.orange_glowstone_stairs": "Orange Glowstone Stairs",
@@ -645,7 +612,6 @@
   "block.consistency_plus.black_glowstone_stairs": "Black Glowstone Stairs",
   "block.consistency_plus.brown_glowstone_stairs": "Brown Glowstone Stairs",
   "block.consistency_plus.soul_glowstone_stairs": "Soul Glowstone Stairs",
-
   "block.consistency_plus.glowstone_wall": "Glowstone Wall",
   "block.consistency_plus.red_glowstone_wall": "Red Glowstone Wall",
   "block.consistency_plus.orange_glowstone_wall": "Orange Glowstone Wall",
@@ -664,7 +630,6 @@
   "block.consistency_plus.black_glowstone_wall": "Black Glowstone Wall",
   "block.consistency_plus.brown_glowstone_wall": "Brown Glowstone Wall",
   "block.consistency_plus.soul_glowstone_wall": "Soul Glowstone Wall",
-
   "block.consistency_plus.glowstone_gate": "Glowstone Gate",
   "block.consistency_plus.red_glowstone_gate": "Red Glowstone Gate",
   "block.consistency_plus.orange_glowstone_gate": "Orange Glowstone Gate",
@@ -683,7 +648,6 @@
   "block.consistency_plus.black_glowstone_gate": "Black Glowstone Gate",
   "block.consistency_plus.brown_glowstone_gate": "Brown Glowstone Gate",
   "block.consistency_plus.soul_glowstone_gate": "Soul Glowstone Gate",
-
   "block.consistency_plus.red_ice": "Red Ice",
   "block.consistency_plus.orange_ice": "Orange Ice",
   "block.consistency_plus.yellow_ice": "Yellow Ice",
@@ -700,7 +664,6 @@
   "block.consistency_plus.black_ice": "Black Ice",
   "block.consistency_plus.brown_ice": "Brown Ice",
   "block.consistency_plus.soul_ice": "Soul Ice",
-
   "block.consistency_plus.red_ice_slab": "Red Ice Slab",
   "block.consistency_plus.orange_ice_slab": "Orange Ice Slab",
   "block.consistency_plus.yellow_ice_slab": "Yellow Ice Slab",
@@ -718,7 +681,6 @@
   "block.consistency_plus.black_ice_slab": "Black Ice Slab",
   "block.consistency_plus.brown_ice_slab": "Brown Ice Slab",
   "block.consistency_plus.soul_ice_slab": "Soul Ice Slab",
-
   "block.consistency_plus.red_ice_stairs": "Red Ice Stairs",
   "block.consistency_plus.orange_ice_stairs": "Orange Ice Stairs",
   "block.consistency_plus.yellow_ice_stairs": "Yellow Ice Stairs",
@@ -736,7 +698,6 @@
   "block.consistency_plus.black_ice_stairs": "Black Ice Stairs",
   "block.consistency_plus.brown_ice_stairs": "Brown Ice Stairs",
   "block.consistency_plus.soul_ice_stairs": "Soul Ice Stairs",
-
   "block.consistency_plus.red_ice_wall": "Red Ice Wall",
   "block.consistency_plus.orange_ice_wall": "Orange Ice Wall",
   "block.consistency_plus.yellow_ice_wall": "Yellow Ice Wall",
@@ -754,7 +715,6 @@
   "block.consistency_plus.black_ice_wall": "Black Ice Wall",
   "block.consistency_plus.brown_ice_wall": "Brown Ice Wall",
   "block.consistency_plus.soul_ice_wall": "Soul Ice Wall",
-
   "block.consistency_plus.ice_gate": "Ice Gate",
   "block.consistency_plus.red_ice_gate": "Red Ice Gate",
   "block.consistency_plus.orange_ice_gate": "Orange Ice Gate",
@@ -773,32 +733,25 @@
   "block.consistency_plus.black_ice_gate": "Black Ice Gate",
   "block.consistency_plus.brown_ice_gate": "Brown Ice Gate",
   "block.consistency_plus.soul_ice_gate": "Soul Ice Gate",
-
   "block.consistency_plus.obsidian_slab": "Obsidian Slab",
   "block.consistency_plus.obsidian_stairs": "Obsidian Stairs",
   "block.consistency_plus.obsidian_wall": "Obsidian Wall",
   "block.consistency_plus.obsidian_gate": "Obsidian Gate",
-
   "block.consistency_plus.crying_obsidian_slab": "Crying Obsidian Slab",
   "block.consistency_plus.crying_obsidian_stairs": "Crying Obsidian Stairs",
   "block.consistency_plus.crying_obsidian_wall": "Crying Obsidian Wall",
   "block.consistency_plus.crying_obsidian_gate": "Crying Obsidian Gate",
-
   "block.consistency_plus.dirt_slab": "Dirt Slab",
   "block.consistency_plus.dirt_stairs": "Dirt Stairs",
   "block.consistency_plus.dirt_wall": "Dirt Wall",
-
   "block.consistency_plus.grass_slab": "Grass Slab",
   "block.consistency_plus.grass_stairs": "Grass Stairs",
   "block.consistency_plus.grass_wall": "Grass Wall",
-
   "block.consistency_plus.mycelium_slab": "Mycelium Slab",
   "block.consistency_plus.mycelium_stairs": "Mycelium Stairs",
   "block.consistency_plus.mycelium_wall": "Mycelium Wall",
-
   "block.consistency_plus.netherite_stairs": "Netherite Stairs",
   "block.consistency_plus.warped_wart": "Warped Wart",
-
   "itemGroup.consistency_plus.stone": "Consistency+ Stones",
   "itemGroup.consistency_plus.dyeable": "Consistency+ Dyeables",
   "itemGroup.consistency_plus.misc": "Consistency+ Misc"

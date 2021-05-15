@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-
     "XXX",
     "XXX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:cracked_purpur_bricks"}
+    "X": {
+      "item": "consistency_plus:cracked_purpur_bricks"
+    }
   },
   "result": {
     "item": "consistency_plus:cracked_purpur_brick_wall",

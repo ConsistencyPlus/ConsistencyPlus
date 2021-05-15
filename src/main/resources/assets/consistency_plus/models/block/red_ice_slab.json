@@ -1,8 +1,8 @@
 {
-    "parent": "minecraft:block/slab",
-    "textures": {
-        "top": "consistency_plus:block/red_ice",
-        "bottom": "consistency_plus:block/red_ice",
-        "side": "consistency_plus:block/red_ice"
-    }
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "top": "consistency_plus:block/red_ice",
+    "bottom": "consistency_plus:block/red_ice",
+    "side": "consistency_plus:block/red_ice"
+  }
 }

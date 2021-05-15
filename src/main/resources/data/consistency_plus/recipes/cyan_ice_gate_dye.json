@@ -1,15 +1,15 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:cyan_dye"
-        },
-        {
-            "item": "consistency_plus:blue_ice_gate"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:cyan_ice_gate",
-        "count": 4
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "item": "consistency_plus:blue_ice_gate"
     }
+  ],
+  "result": {
+    "item": "consistency_plus:cyan_ice_gate",
+    "count": 4
+  }
 }

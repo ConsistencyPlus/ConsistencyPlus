@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/polished_quartz"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/polished_quartz"
     }
+  }
 }

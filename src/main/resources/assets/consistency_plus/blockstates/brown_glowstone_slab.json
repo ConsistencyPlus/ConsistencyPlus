@@ -1,13 +1,13 @@
 {
-    "variants": {
-        "type=bottom": {
-            "model": "consistency_plus:block/brown_glowstone_slab"
-        },
-        "type=double": {
-            "model": "consistency_plus:block/brown_glowstone"
-        },
-        "type=top": {
-            "model": "consistency_plus:block/brown_glowstone_slab_top"
-        }
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/brown_glowstone_slab"
+    },
+    "type=double": {
+      "model": "consistency_plus:block/brown_glowstone"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/brown_glowstone_slab_top"
     }
+  }
 }

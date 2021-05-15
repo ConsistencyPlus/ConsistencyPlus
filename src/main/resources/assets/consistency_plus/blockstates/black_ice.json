@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/black_ice"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/black_ice"
     }
+  }
 }

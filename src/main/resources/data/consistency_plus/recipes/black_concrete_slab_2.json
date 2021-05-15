@@ -1,15 +1,15 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "consistency_plus:white_concrete_slab"
-        },
-        {
-            "item": "minecraft:black_dye"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:black_concrete_slab",
-        "count": 1
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "consistency_plus:white_concrete_slab"
+    },
+    {
+      "item": "minecraft:black_dye"
     }
+  ],
+  "result": {
+    "item": "consistency_plus:black_concrete_slab",
+    "count": 1
+  }
 }

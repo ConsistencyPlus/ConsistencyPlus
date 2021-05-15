@@ -5,8 +5,12 @@
     "AXA"
   ],
   "key": {
-    "X": {"item": "minecraft:crying_obsidian"},
-    "A": {"item": "consistency_plus:crying_obsidian_wall"}
+    "X": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "A": {
+      "item": "consistency_plus:crying_obsidian_wall"
+    }
   },
   "result": {
     "item": "consistency_plus:crying_obsidian_gate",

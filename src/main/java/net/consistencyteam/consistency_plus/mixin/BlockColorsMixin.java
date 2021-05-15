@@ -16,11 +16,11 @@ import static net.consistencyteam.consistency_plus.registry.Blocks.*;
 @Environment(EnvType.CLIENT)
 @Mixin(BlockColors.class)
 public abstract class BlockColorsMixin {
-	@Inject(at = @At("TAIL"), method = "Lnet/minecraft/client/color/block/BlockColors;create()Lnet/minecraft/client/color/block/BlockColors;")
-	private static void create(CallbackInfoReturnable<BlockColors> cir) {
-		cir.getReturnValue().registerColorProvider((state, world, pos, tintIndex) -> {
-			return world != null && pos != null ? BiomeColors.getGrassColor(world, pos) : GrassColors.getColor(0.5D, 1.0D);
-		}, GRASS_SLAB, GRASS_STAIRS, GRASS_WALL);
-		
-	}
+    @Inject(at = @At("TAIL"), method = "Lnet/minecraft/client/color/block/BlockColors;create()Lnet/minecraft/client/color/block/BlockColors;")
+    private static void create(CallbackInfoReturnable<BlockColors> cir) {
+        cir.getReturnValue().registerColorProvider((state, world, pos, tintIndex) -> {
+            return world != null && pos != null ? BiomeColors.getGrassColor(world, pos) : GrassColors.getColor(0.5D, 1.0D);
+        }, GRASS_SLAB, GRASS_STAIRS, GRASS_WALL);
+
+    }
 }

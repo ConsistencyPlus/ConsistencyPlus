@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-
-
     "XXX"
   ],
   "key": {
-    "X": {"item": "minecraft:lime_terracotta"}
+    "X": {
+      "item": "minecraft:lime_terracotta"
+    }
   },
   "result": {
     "item": "consistency_plus:lime_terracotta_slab",

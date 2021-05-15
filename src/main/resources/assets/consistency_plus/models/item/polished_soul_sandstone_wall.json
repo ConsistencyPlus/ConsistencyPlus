@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:block/wall_inventory",
-    "textures": {
-        "wall": "consistency_plus:block/polished_soul_sandstone"
-    }
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "consistency_plus:block/polished_soul_sandstone"
+  }
 }

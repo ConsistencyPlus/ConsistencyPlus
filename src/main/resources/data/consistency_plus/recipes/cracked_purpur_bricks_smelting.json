@@ -1,9 +1,9 @@
 {
-    "type": "minecraft:smelting",
-    "experience": 0.1,
-    "ingredient": {
-        "item": "consistency_plus:purpur_bricks"
-    },
-    "result": "consistency_plus:cracked_purpur_bricks",
-    "count": 1
+  "type": "minecraft:smelting",
+  "experience": 0.1,
+  "ingredient": {
+    "item": "consistency_plus:purpur_bricks"
+  },
+  "result": "consistency_plus:cracked_purpur_bricks",
+  "count": 1
 }

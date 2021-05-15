@@ -5,7 +5,9 @@
     "XX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:polished_prismarine"}
+    "X": {
+      "item": "consistency_plus:polished_prismarine"
+    }
   },
   "result": {
     "item": "minecraft:prismarine_bricks",

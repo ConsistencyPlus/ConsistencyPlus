@@ -5,7 +5,9 @@
     "XXX"
   ],
   "key": {
-    "X": {"item": "minecraft:obsidian"}
+    "X": {
+      "item": "minecraft:obsidian"
+    }
   },
   "result": {
     "item": "consistency_plus:obsidian_wall",

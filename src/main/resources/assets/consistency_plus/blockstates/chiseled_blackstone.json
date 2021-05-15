@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/chiseled_blackstone"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/chiseled_blackstone"
     }
+  }
 }

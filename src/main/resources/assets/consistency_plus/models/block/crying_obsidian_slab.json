@@ -1,8 +1,8 @@
 {
-    "parent": "minecraft:block/slab",
-    "textures": {
-        "bottom": "minecraft:block/crying_obsidian",
-        "top": "minecraft:block/crying_obsidian",
-        "side": "minecraft:block/crying_obsidian"
-    }
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "minecraft:block/crying_obsidian",
+    "top": "minecraft:block/crying_obsidian",
+    "side": "minecraft:block/crying_obsidian"
+  }
 }

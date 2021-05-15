@@ -5,7 +5,9 @@
     "XX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:red_sandstone_brick_slab"}
+    "X": {
+      "item": "consistency_plus:red_sandstone_brick_slab"
+    }
   },
   "result": {
     "item": "minecraft:cut_red_sandstone",

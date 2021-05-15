@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:polished_clay_stairs"
-    },
-    "result": "consistency_plus:cut_clay_stairs",
-    "count": 1
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "consistency_plus:polished_clay_stairs"
+  },
+  "result": "consistency_plus:cut_clay_stairs",
+  "count": 1
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:block/cube_all",
-    "textures": {
-        "all": "consistency_plus:block/red_glowstone"
-    }
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "consistency_plus:block/red_glowstone"
+  }
 }

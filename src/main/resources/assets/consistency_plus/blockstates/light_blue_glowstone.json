@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/light_blue_glowstone"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/light_blue_glowstone"
     }
+  }
 }

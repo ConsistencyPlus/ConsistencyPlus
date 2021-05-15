@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:green_concrete"
-    },
-    "result": "consistency_plus:green_concrete_wall",
-    "count": 1
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:green_concrete"
+  },
+  "result": "consistency_plus:green_concrete_wall",
+  "count": 1
 }

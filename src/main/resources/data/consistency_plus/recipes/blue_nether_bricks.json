@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "RS",
-        "SR"
-    ],
-    "key": {
-        "R": {
-            "item": "minecraft:nether_brick"
-        },
-        "S": {
-            "item": "consistency_plus:warped_wart"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RS",
+    "SR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:nether_brick"
     },
-    "result": {
-        "item": "consistency_plus:blue_nether_bricks",
-        "count": 2
+    "S": {
+      "item": "consistency_plus:warped_wart"
     }
+  },
+  "result": {
+    "item": "consistency_plus:blue_nether_bricks",
+    "count": 2
+  }
 }

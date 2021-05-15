@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:purpur_slab"
-    },
-    "result": "minecraft:purpur_slab",
-    "count": 1
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "consistency_plus:purpur_slab"
+  },
+  "result": "minecraft:purpur_slab",
+  "count": 1
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:block/wall_inventory",
-    "textures": {
-        "wall": "consistency_plus:block/red_ice"
-    }
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "consistency_plus:block/red_ice"
+  }
 }

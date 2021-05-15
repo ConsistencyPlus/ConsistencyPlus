@@ -2,28 +2,59 @@
   "schemaVersion": 1,
   "id": "consistency_plus",
   "version": "${version}",
-
   "name": "Consistency Plus",
   "description": "Builders Rejoice, We've added all the missing block variants!",
   "contributors": [
-    {"name": "Carter","contact": {"Discord": "Cart3r#1234"}},
-    {"name": "Siuol","contact": {"Discord": "\"Siuol\" Appeared#5729"}},
-    {"name": "IMS","contact": {"Discord": "IMS#7902"}},
-    {"name": "Tyler","contact": {"Discord": "Digital_Tech#0001"}},
-    {"name": "Devin","contact": {"Github": "HiItsDevin"}},
-    {"name": "Devious","contact": {"Discord": "Deviouslrd#9151"}},
-    {"name": "Tropheus Jay","contact": {"Discord": "Tropheus Jay#7241"}}
+    {
+      "name": "Carter",
+      "contact": {
+        "Discord": "Cart3r#1234"
+      }
+    },
+    {
+      "name": "Siuol",
+      "contact": {
+        "Discord": "\"Siuol\" Appeared#5729"
+      }
+    },
+    {
+      "name": "IMS",
+      "contact": {
+        "Discord": "IMS#7902"
+      }
+    },
+    {
+      "name": "Tyler",
+      "contact": {
+        "Discord": "Digital_Tech#0001"
+      }
+    },
+    {
+      "name": "Devin",
+      "contact": {
+        "Github": "HiItsDevin"
+      }
+    },
+    {
+      "name": "Devious",
+      "contact": {
+        "Discord": "Deviouslrd#9151"
+      }
+    },
+    {
+      "name": "Tropheus Jay",
+      "contact": {
+        "Discord": "Tropheus Jay#7241"
+      }
+    }
   ],
-
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/consistency",
     "issues": "https://github.com/ConsistencyPlus/ConsistencyPlus/issues",
     "sources": "https://github.com/ConsistencyPlus/ConsistencyPlus"
   },
-
   "license": "LGPLv3",
   "icon": "assets/consistency_plus/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -36,7 +67,6 @@
   "mixins": [
     "consistency_plus.mixins.json"
   ],
-
   "depends": {
     "fabric": "*",
     "minecraft": "*"

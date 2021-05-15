@@ -5,8 +5,12 @@
     "AXA"
   ],
   "key": {
-    "X": {"item": "minecraft:obsidian"},
-    "A": {"item": "consistency_plus:obsidian_wall"}
+    "X": {
+      "item": "minecraft:obsidian"
+    },
+    "A": {
+      "item": "consistency_plus:obsidian_wall"
+    }
   },
   "result": {
     "item": "consistency_plus:obsidian_gate",

@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/red_sandstone_bricks"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/red_sandstone_bricks"
     }
+  }
 }

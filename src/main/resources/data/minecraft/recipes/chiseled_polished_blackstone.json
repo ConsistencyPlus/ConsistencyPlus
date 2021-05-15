@@ -5,7 +5,9 @@
     "XX"
   ],
   "key": {
-    "X": {"item": "minecraft:polished_blackstone_bricks"}
+    "X": {
+      "item": "minecraft:polished_blackstone_bricks"
+    }
   },
   "result": {
     "item": "minecraft:chiseled_polished_blackstone",

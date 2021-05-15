@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:blue_concrete"
-    },
-    "result": "consistency_plus:blue_concrete_slab",
-    "count": 2
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:blue_concrete"
+  },
+  "result": "consistency_plus:blue_concrete_slab",
+  "count": 2
 }

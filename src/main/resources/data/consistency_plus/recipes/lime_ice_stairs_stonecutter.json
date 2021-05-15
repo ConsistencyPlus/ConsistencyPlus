@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:lime_ice"
-    },
-    "result": "consistency_plus:lime_ice_stairs",
-    "count": 1
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "consistency_plus:lime_ice"
+  },
+  "result": "consistency_plus:lime_ice_stairs",
+  "count": 1
 }

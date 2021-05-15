@@ -1,13 +1,13 @@
 {
-    "variants": {
-        "type=bottom": {
-            "model": "consistency_plus:block/grass_slab"
-        },
-        "type=double": {
-            "model": "minecraft:block/grass_block"
-        },
-        "type=top": {
-            "model": "consistency_plus:block/grass_slab_top"
-        }
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/grass_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/grass_block"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/grass_slab_top"
     }
+  }
 }

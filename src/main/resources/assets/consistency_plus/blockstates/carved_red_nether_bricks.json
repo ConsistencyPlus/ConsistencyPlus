@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/carved_red_nether_bricks"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/carved_red_nether_bricks"
     }
+  }
 }

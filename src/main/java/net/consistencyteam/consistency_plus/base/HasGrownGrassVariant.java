@@ -5,5 +5,5 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public interface HasGrownGrassVariant {
-	BlockState getGrownGrassVariant(World world, BlockPos pos);
+    BlockState getGrownGrassVariant(World world, BlockPos pos);
 }

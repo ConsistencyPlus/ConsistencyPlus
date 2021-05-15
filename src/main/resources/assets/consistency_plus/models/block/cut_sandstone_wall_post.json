@@ -1,8 +1,8 @@
 {
-    "parent": "consistency_plus:block/template_consistency_wall_post_tri",
-    "textures": {
-        "wall": "minecraft:block/cut_sandstone",
-        "wall_top": "minecraft:block/sandstone_top",
-        "wall_bottom": "minecraft:block/sandstone_top"
-    }
+  "parent": "consistency_plus:block/template_consistency_wall_post_tri",
+  "textures": {
+    "wall": "minecraft:block/cut_sandstone",
+    "wall_top": "minecraft:block/sandstone_top",
+    "wall_bottom": "minecraft:block/sandstone_top"
+  }
 }

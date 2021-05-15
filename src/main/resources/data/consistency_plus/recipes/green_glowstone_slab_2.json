@@ -6,8 +6,12 @@
     "XXX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:glowstone_slab"},
-    "Y": {"item": "minecraft:green_dye"}
+    "X": {
+      "item": "consistency_plus:glowstone_slab"
+    },
+    "Y": {
+      "item": "minecraft:green_dye"
+    }
   },
   "result": {
     "item": "consistency_plus:green_glowstone_slab",

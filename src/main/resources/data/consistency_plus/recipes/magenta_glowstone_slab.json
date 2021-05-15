@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-
-
     "XXX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:magenta_glowstone"}
+    "X": {
+      "item": "consistency_plus:magenta_glowstone"
+    }
   },
   "result": {
     "item": "consistency_plus:magenta_glowstone_slab",

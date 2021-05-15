@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/carved_soul_sandstone"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/carved_soul_sandstone"
     }
+  }
 }

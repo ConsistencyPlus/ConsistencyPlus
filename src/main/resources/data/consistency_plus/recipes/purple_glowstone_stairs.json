@@ -6,7 +6,9 @@
     "XXX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:purple_glowstone"}
+    "X": {
+      "item": "consistency_plus:purple_glowstone"
+    }
   },
   "result": {
     "item": "consistency_plus:purple_glowstone_stairs",

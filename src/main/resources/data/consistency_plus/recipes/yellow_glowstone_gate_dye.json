@@ -1,15 +1,15 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:yellow_dye"
-        },
-        {
-            "item": "consistency_plus:glowstone_gate"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:yellow_glowstone_gate",
-        "count": 4
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "item": "consistency_plus:glowstone_gate"
     }
+  ],
+  "result": {
+    "item": "consistency_plus:yellow_glowstone_gate",
+    "count": 4
+  }
 }

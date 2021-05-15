@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/cut_diorite"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/cut_diorite"
     }
+  }
 }

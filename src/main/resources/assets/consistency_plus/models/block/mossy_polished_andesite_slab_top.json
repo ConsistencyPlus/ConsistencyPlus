@@ -1,8 +1,8 @@
 {
-    "parent": "minecraft:block/slab_top",
-    "textures": {
-        "top": "consistency_plus:block/mossy_polished_andesite",
-        "bottom": "consistency_plus:block/mossy_polished_andesite",
-        "side": "consistency_plus:block/mossy_polished_andesite"
-    }
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "top": "consistency_plus:block/mossy_polished_andesite",
+    "bottom": "consistency_plus:block/mossy_polished_andesite",
+    "side": "consistency_plus:block/mossy_polished_andesite"
+  }
 }

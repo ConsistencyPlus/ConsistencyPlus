@@ -1,21 +1,21 @@
 {
-    "parent": "minecraft:recipes/root",
-    "rewards": {
-        "recipes": [
-            "consistency_plus:smooth_end_stone_gate_crafting",
-            "consistency_plus:smooth_end_stone_gate_smelting"
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:smooth_end_stone_gate_crafting",
+      "consistency_plus:smooth_end_stone_gate_smelting"
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_stone"
+          }
         ]
-},
-        "criteria": {
-            "has_block": {
-                "trigger": "minecraft:inventory_changed",
-                "conditions": {
-                    "items": [
-                        {
-                            "item": "minecraft:end_stone"
-                        }
-                    ]
-                }
-            }
-        }
+      }
     }
+  }
+}

@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/mossy_chiseled_andesite"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/mossy_chiseled_andesite"
     }
+  }
 }

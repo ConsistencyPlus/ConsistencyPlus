@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/dark_prismarine_bricks"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/dark_prismarine_bricks"
     }
+  }
 }

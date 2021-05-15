@@ -6,8 +6,12 @@
     "XXX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:terracotta_stairs"},
-    "Y": {"item": "minecraft:gray_dye"}
+    "X": {
+      "item": "consistency_plus:terracotta_stairs"
+    },
+    "Y": {
+      "item": "minecraft:gray_dye"
+    }
   },
   "result": {
     "item": "consistency_plus:gray_terracotta_stairs",

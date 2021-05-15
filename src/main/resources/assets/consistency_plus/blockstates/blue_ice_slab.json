@@ -1,13 +1,13 @@
 {
-    "variants": {
-        "type=bottom": {
-            "model": "consistency_plus:block/blue_ice_slab"
-        },
-        "type=double": {
-            "model": "minecraft:block/blue_ice"
-        },
-        "type=top": {
-            "model": "consistency_plus:block/blue_ice_slab_top"
-        }
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/blue_ice_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/blue_ice"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/blue_ice_slab_top"
     }
+  }
 }

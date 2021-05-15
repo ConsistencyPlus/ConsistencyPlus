@@ -5,8 +5,12 @@
     "aba"
   ],
   "key": {
-    "b": {"item": "minecraft:terracotta"},
-    "a": {"item": "consistency_plus:terracotta_wall"}
+    "b": {
+      "item": "minecraft:terracotta"
+    },
+    "a": {
+      "item": "consistency_plus:terracotta_wall"
+    }
   },
   "result": {
     "item": "consistency_plus:terracotta_gate",

@@ -3,8 +3,8 @@
   "rewards": {
     "recipes": [
       "consistency_plus:obsidian_slab",
-	"consistency_plus:obsidian_stairs",
-	"consistency_plus:obsidian_wall"
+      "consistency_plus:obsidian_stairs",
+      "consistency_plus:obsidian_wall"
     ]
   },
   "criteria": {

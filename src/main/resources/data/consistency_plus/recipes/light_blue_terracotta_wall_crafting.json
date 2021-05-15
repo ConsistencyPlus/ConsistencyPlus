@@ -1,14 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aaa",
-        "aaa"
-    ],
-    "key": {
-        "a": {"item": "minecraft:light_blue_terracotta"}
-    },
-    "result": {
-        "item": "consistency_plus:light_blue_terracotta_wall",
-        "count": 6
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:light_blue_terracotta"
     }
+  },
+  "result": {
+    "item": "consistency_plus:light_blue_terracotta_wall",
+    "count": 6
+  }
 }

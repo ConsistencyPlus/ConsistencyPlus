@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/purple_ice"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/purple_ice"
     }
+  }
 }

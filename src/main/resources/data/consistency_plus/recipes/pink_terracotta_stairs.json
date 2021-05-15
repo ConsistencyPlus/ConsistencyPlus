@@ -6,7 +6,9 @@
     "XXX"
   ],
   "key": {
-    "X": {"item": "minecraft:pink_terracotta"}
+    "X": {
+      "item": "minecraft:pink_terracotta"
+    }
   },
   "result": {
     "item": "consistency_plus:pink_terracotta_stairs",

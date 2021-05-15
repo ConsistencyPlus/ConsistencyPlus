@@ -5,7 +5,9 @@
     "XX"
   ],
   "key": {
-    "X": {"item": "consistency_plus:polished_stone"}
+    "X": {
+      "item": "consistency_plus:polished_stone"
+    }
   },
   "result": {
     "item": "minecraft:stone_bricks",

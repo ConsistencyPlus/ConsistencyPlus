@@ -1,22 +1,22 @@
 {
-    "parent": "minecraft:recipes/root",
-    "rewards": {
-        "recipes": [
-            "consistency_plus:mossy_smooth_andesite_crafting",
-            "consistency_plus:mossy_smooth_andesite_smelting",
-            "consistency_plus:smooth_andesite_mossify"
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:mossy_smooth_andesite_crafting",
+      "consistency_plus:mossy_smooth_andesite_smelting",
+      "consistency_plus:smooth_andesite_mossify"
+    ]
+  },
+  "criteria": {
+    "has_MossyBlock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:andesite"
+          }
         ]
-},
-        "criteria": {
-            "has_MossyBlock": {
-                "trigger": "minecraft:inventory_changed",
-                "conditions": {
-                    "items": [
-                        {
-                            "item": "minecraft:andesite"
-                        }
-                    ]
-                }
-            }
-        }
+      }
     }
+  }
+}

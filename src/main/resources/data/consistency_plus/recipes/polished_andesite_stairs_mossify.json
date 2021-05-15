@@ -1,15 +1,15 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:polished_andesite_stairs"
-        },
-        {
-            "item": "minecraft:vine"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:mossy_polished_andesite_stairs",
-        "count": 1
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:polished_andesite_stairs"
+    },
+    {
+      "item": "minecraft:vine"
     }
+  ],
+  "result": {
+    "item": "consistency_plus:mossy_polished_andesite_stairs",
+    "count": 1
+  }
 }

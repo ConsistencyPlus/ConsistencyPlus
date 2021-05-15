@@ -11,18 +11,18 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ConsistencyPlusClientside implements ClientModInitializer {
-	private static final Logger LOGGER = LogManager.getLogger();
-	
-	@Override
-	public void onInitializeClient() {
-		LOGGER.info("Consistency+ Main - Starting client initialization");
-		BlockRenderLayerMap.INSTANCE.putBlock(Blocks.WARPED_WART, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_SLAB, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_STAIRS, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_WALL, RenderLayer.getCutout());
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
-			return GrassColors.getColor(0.5D, 1.0D);
-		}, Items.GRASS_SLAB, Items.GRASS_STAIRS, Items.GRASS_WALL);
-		LOGGER.info("Consistency+ Main - Finished client initialization");
-	}
+    private static final Logger LOGGER = LogManager.getLogger();
+
+    @Override
+    public void onInitializeClient() {
+        LOGGER.info("Consistency+ Main - Starting client initialization");
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.WARPED_WART, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_SLAB, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_STAIRS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_WALL, RenderLayer.getCutout());
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
+            return GrassColors.getColor(0.5D, 1.0D);
+        }, Items.GRASS_SLAB, Items.GRASS_STAIRS, Items.GRASS_WALL);
+        LOGGER.info("Consistency+ Main - Finished client initialization");
+    }
 }

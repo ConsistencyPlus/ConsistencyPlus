@@ -9,17 +9,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class DirtBlock extends Block implements HasGrownGrassVariant, HasGrownMyceliumVariant {
-	public DirtBlock(Settings settings) {
-		super(settings);
-	}
-	
-	@Override
-	public BlockState getGrownGrassVariant(World world, BlockPos pos) {
-		return Blocks.GRASS_BLOCK.getDefaultState();
-	}
-	
-	@Override
-	public BlockState getGrownMyceliumVariant(World world, BlockPos pos) {
-		return Blocks.MYCELIUM.getDefaultState();
-	}
+    public DirtBlock(Settings settings) {
+        super(settings);
+    }
+
+    @Override
+    public BlockState getGrownGrassVariant(World world, BlockPos pos) {
+        return Blocks.GRASS_BLOCK.getDefaultState();
+    }
+
+    @Override
+    public BlockState getGrownMyceliumVariant(World world, BlockPos pos) {
+        return Blocks.MYCELIUM.getDefaultState();
+    }
 }

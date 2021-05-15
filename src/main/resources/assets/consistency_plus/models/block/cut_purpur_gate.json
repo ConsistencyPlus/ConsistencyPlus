@@ -1,6 +1,6 @@
 {
-    "parent": "consistency_plus:block/template_consistency_gate",
-    "textures": {
-        "texture": "minecraft:block/purpur_block"
-    }
+  "parent": "consistency_plus:block/template_consistency_gate",
+  "textures": {
+    "texture": "minecraft:block/purpur_block"
+  }
 }

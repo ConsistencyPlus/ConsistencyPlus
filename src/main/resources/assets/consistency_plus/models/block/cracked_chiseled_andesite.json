@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:block/cube_all",
-    "textures": {
-        "all": "consistency_plus:block/cracked_chiseled_andesite"
-    }
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "consistency_plus:block/cracked_chiseled_andesite"
+  }
 }

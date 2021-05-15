@@ -1,14 +1,14 @@
 {
-    "type": "minecraft:block",
-    "pools": [
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "consistency_plus:chiseled_dark_prismarine"
-                }
-            ]
+          "type": "minecraft:item",
+          "name": "consistency_plus:chiseled_dark_prismarine"
         }
-    ]
+      ]
+    }
+  ]
 }

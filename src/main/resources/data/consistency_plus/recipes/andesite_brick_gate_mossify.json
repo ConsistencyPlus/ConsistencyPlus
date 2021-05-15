@@ -1,15 +1,15 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "consistency_plus:andesite_brick_gate"
-        },
-        {
-            "item": "minecraft:vine"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:mossy_andesite_brick_gate",
-        "count": 4
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "consistency_plus:andesite_brick_gate"
+    },
+    {
+      "item": "minecraft:vine"
     }
+  ],
+  "result": {
+    "item": "consistency_plus:mossy_andesite_brick_gate",
+    "count": 4
+  }
 }

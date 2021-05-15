@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:block/wall_inventory",
-    "textures": {
-        "wall": "consistency_plus:block/cracked_chiseled_andesite"
-    }
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "consistency_plus:block/cracked_chiseled_andesite"
+  }
 }

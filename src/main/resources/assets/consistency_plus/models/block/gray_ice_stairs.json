@@ -1,8 +1,8 @@
 {
-    "parent": "minecraft:block/stairs",
-    "textures": {
-        "bottom": "consistency_plus:block/gray_ice",
-        "top": "consistency_plus:block/gray_ice",
-        "side": "consistency_plus:block/gray_ice"
-    }
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/gray_ice",
+    "top": "consistency_plus:block/gray_ice",
+    "side": "consistency_plus:block/gray_ice"
+  }
 }

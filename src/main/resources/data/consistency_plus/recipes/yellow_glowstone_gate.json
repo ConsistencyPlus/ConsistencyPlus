@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aba",
-        "aba"
-    ],
-    "key": {
-        "b": {
-                    "item": "consistency_plus:yellow_glowstone"
-},
-        "a": {
-                    "item": "consistency_plus:yellow_glowstone_wall"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "b": {
+      "item": "consistency_plus:yellow_glowstone"
+    },
+    "a": {
+      "item": "consistency_plus:yellow_glowstone_wall"
     }
-},
-    "result": {
-        "item": "consistency_plus:yellow_glowstone_gate",
-        "count": 4
-    }
+  },
+  "result": {
+    "item": "consistency_plus:yellow_glowstone_gate",
+    "count": 4
+  }
 }

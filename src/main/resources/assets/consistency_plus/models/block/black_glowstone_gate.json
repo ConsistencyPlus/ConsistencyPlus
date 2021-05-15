@@ -1,6 +1,6 @@
 {
-    "parent": "consistency_plus:block/template_consistency_gate",
-    "textures": {
-        "texture": "consistency_plus:block/black_glowstone"
-    }
+  "parent": "consistency_plus:block/template_consistency_gate",
+  "textures": {
+    "texture": "consistency_plus:block/black_glowstone"
+  }
 }

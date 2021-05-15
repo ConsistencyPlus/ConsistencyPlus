@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:mossy_polished_andesite"
-    },
-    "result": "consistency_plus:mossy_cut_andesite_stairs",
-    "count": 1
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "consistency_plus:mossy_polished_andesite"
+  },
+  "result": "consistency_plus:mossy_cut_andesite_stairs",
+  "count": 1
 }

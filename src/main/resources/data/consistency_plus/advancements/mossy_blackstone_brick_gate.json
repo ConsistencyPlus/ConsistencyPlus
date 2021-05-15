@@ -1,21 +1,21 @@
 {
-    "parent": "minecraft:recipes/root",
-    "rewards": {
-        "recipes": [
-            "consistency_plus:mossy_blackstone_brick_gate_crafting",
-            "consistency_plus:blackstone_brick_gate_mossify"
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:mossy_blackstone_brick_gate_crafting",
+      "consistency_plus:blackstone_brick_gate_mossify"
+    ]
+  },
+  "criteria": {
+    "has_MossyBlock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blackstone"
+          }
         ]
-},
-        "criteria": {
-            "has_MossyBlock": {
-                "trigger": "minecraft:inventory_changed",
-                "conditions": {
-                    "items": [
-                        {
-                            "item": "minecraft:blackstone"
-                        }
-                    ]
-                }
-            }
-        }
+      }
     }
+  }
+}

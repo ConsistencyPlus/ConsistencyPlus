@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/chiseled_red_sandstone"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/chiseled_red_sandstone"
     }
+  }
 }

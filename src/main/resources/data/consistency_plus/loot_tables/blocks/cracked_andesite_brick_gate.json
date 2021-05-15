@@ -1,12 +1,14 @@
 {
-    "type": "minecraft:block",
-    "pools": [
-        {"rolls": 1,
-            "entries": [
-                {        "type": "minecraft:item",
-                    "name": "consistency_plus:cracked_andesite_brick_gate"
-                }
-            ]
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "consistency_plus:cracked_andesite_brick_gate"
         }
-    ]
+      ]
+    }
+  ]
 }

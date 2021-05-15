@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:brown_glowstone"
-    },
-    "result": "consistency_plus:brown_glowstone_wall",
-    "count": 1
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "consistency_plus:brown_glowstone"
+  },
+  "result": "consistency_plus:brown_glowstone_wall",
+  "count": 1
 }

@@ -1,17 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-
-        "XXX",
-        "XXX"
-    ],
-    "key": {
-        "X": {
-            "item": "consistency_plus:mossy_andesite"
-        }
-    },
-    "result": {
-        "item": "consistency_plus:mossy_andesite_wall",
-        "count": 6
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "consistency_plus:mossy_andesite"
     }
+  },
+  "result": {
+    "item": "consistency_plus:mossy_andesite_wall",
+    "count": 6
+  }
 }

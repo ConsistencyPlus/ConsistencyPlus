@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aba",
-        "aba"
-    ],
-    "key": {
-        "b": {
-                    "item": "minecraft:light_gray_terracotta"
-},
-        "a": {
-                    "item": "consistency_plus:light_gray_terracotta_wall"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:light_gray_terracotta"
+    },
+    "a": {
+      "item": "consistency_plus:light_gray_terracotta_wall"
     }
-},
-    "result": {
-        "item": "consistency_plus:light_gray_terracotta_gate",
-        "count": 4
-    }
+  },
+  "result": {
+    "item": "consistency_plus:light_gray_terracotta_gate",
+    "count": 4
+  }
 }

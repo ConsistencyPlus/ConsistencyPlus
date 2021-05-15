@@ -1,14 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "aaa",
-        "aaa"
-    ],
-    "key": {
-        "a": {"item": "consistency_plus:black_glowstone"}
-    },
-    "result": {
-        "item": "consistency_plus:black_glowstone_wall",
-        "count": 6
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "consistency_plus:black_glowstone"
     }
+  },
+  "result": {
+    "item": "consistency_plus:black_glowstone_wall",
+    "count": 6
+  }
 }

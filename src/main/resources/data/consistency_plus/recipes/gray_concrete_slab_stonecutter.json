@@ -1,8 +1,8 @@
 {
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:gray_concrete"
-    },
-    "result": "consistency_plus:gray_concrete_slab",
-    "count": 2
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:gray_concrete"
+  },
+  "result": "consistency_plus:gray_concrete_slab",
+  "count": 2
 }

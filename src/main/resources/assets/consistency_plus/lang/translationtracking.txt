@@ -18,6 +18,6 @@ Translator Comments:
 
 Siuol - Alright, I would like to point out the following.
 1. I do not actually know any other languages besides English, though I would like to learn them.
-2. Im not dumb enough to use google translate. I prefer scuffed lang files.
-3. Ill probably do initial translations, with occasional updates every couple hundred blocks or so.  ``
-IF you actually can translate DM me on discord at "Siuol" Appeared#5729 and we can work something out.
+2. I'm not dumb enough to use Google Translate. I prefer scuffed lang files.
+3. I'll probably do initial translations, with occasional updates every couple hundred blocks or so.
+If you actually can translate, DM me on Discord at `"Siuol" Appeared#5729` and we can work something out.

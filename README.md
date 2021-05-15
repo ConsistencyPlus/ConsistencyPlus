@@ -81,6 +81,5 @@ He does it as it's kinda like an inside joke to him.
 
 ## Contact us:
 
-Our discord server can be found here: https://discord.gg/VeNX7h8bAK
+Our Discord server can be found here: https://discord.gg/VeNX7h8bAK
 If you need to contact us directly, you can join the server and DM Siuol or Carter.
-

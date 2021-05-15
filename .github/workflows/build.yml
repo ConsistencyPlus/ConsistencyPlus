@@ -12,27 +12,30 @@ jobs:
       matrix:
         # Use these Java versions
         java: [
-            1.8  # Minimum supported by Minecraft
+            8.0,  # Minimum supported by Minecraft
+            11,   # LTS
+            16    # Latest
         ]
         # and run on both Linux and Windows
         os: [ ubuntu-20.04, windows-latest ]
     runs-on: ${{ matrix.os }}
     steps:
-      - name: checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v2
-      - name: validate gradle wrapper
+      - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@v1
-      - name: setup jdk ${{ matrix.java }}
-        uses: actions/setup-java@v1
+      - name: Set up JDK ${{ matrix.java }}
+        uses: actions/setup-java@v2
         with:
           java-version: ${{ matrix.java }}
-      - name: make gradle wrapper executable
+          distribution: adopt
+      - name: Make Gradle wrapper executable
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
-      - name: build
+      - name: Build
         run: ./gradlew build
-      - name: capture build artifacts
-        if: ${{ runner.os == 'Linux' && matrix.java == '1.8' }} # Only upload artifacts built from LTS java on one OS
+      - name: Capture build artifacts
+        if: ${{ runner.os == 'Linux' && matrix.java == '11' }} # Only upload artifacts built from LTS java on one OS
         uses: actions/upload-artifact@v2
         with:
           name: Consistency-Plus-Artifacts

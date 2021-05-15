@@ -1,8 +1,7 @@
 ---
-name: Bug report about: Submit bugs with this one!
-title: "[BUG]"
-labels: bug assignees: ''
-
+name: Bug report
+about: Submit bugs with this one!
+labels: 'bug'
 ---
 
 **Describe the bug**
@@ -14,8 +13,8 @@ C+ version:
 Fabric API version:
 
 **Other mods**
-Somehow list all mods that are used. could be in the form of a list of the filenames, a google drive link of the mod
-folder, etc. Just make sure all mods used are known!
+List all mods that you're using; could be in the form of a list of the filenames, a crash report list, a screenshot of
+the mods folder, etc. Just make sure all mods used are known!
 
 **Logs**
 *Even if the game does not crash they may be useful!*
@@ -30,8 +29,6 @@ Steps to reproduce the behavior. Format it as a numbered list of steps.
 1.
 2.
 3.
-
-etc.
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.

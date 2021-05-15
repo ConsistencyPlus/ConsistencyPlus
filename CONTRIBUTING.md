@@ -2,7 +2,7 @@
 
 Contributing, for the purposes of this, can include a lot of things. So that's what this page is here for. If you want
 to directly help, we highly recommend getting into contact with Carter ( `Cart3r#7285` ) or Siuol ( `"Siuol"
-Appeared#5729` ) on Discord. Alternatively, you can join our Discord server at https://discord.gg/sc835yTy3q.
+Appeared#5729` ) on Discord. Alternatively, you can join our Discord server at https://discord.gg/VeNX7h8bAK.
 
 ### Code Contributors
 

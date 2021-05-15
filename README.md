@@ -8,15 +8,15 @@ Anything that's inconsistent block wise in the game. Such as there being purpur 
 there being cobblestone walls but no quartz walls. These issues and many, many more are fixed in this mod!
 
 NOTE: We went a little overkill with the brainstorming for this mod. Many of the variants we plan on adding are not
-things that we seriously would expect mojang to consider adding, but moreso as extra blocks for the builders out there.
-While a lot of the variants we plan on adding are things that really should be in vanilla, most are not.
+things that we seriously would expect Mojang to consider adding, but rather just extra blocks for the builders out
+there. While a lot of the variants we plan on adding are things that really should be in vanilla, most are not.
 
 ## FAQ
 
 ### How much has been added?
 
-As of 0.3.0, we currently have Regular, Polished, Cut, Smooth, and Bricks for all of the stones (Stone, Endstone,
-Blackstone, Purpur, ETC.) type blocks, each of those have Slabs, Stairs, Walls, Gates, and regular block types.
+As of 0.3.0, we currently have Regular, Polished, Cut, Smooth, and Bricks for all stones (i.e. stone, end stone,
+blackstone, purpur, etc.) type blocks, each of those have Slabs, Stairs, Walls, Gates, and regular block types.
 Furthermore, we have more categories for blocks.
 
 ### How do you guys add so much? Do you guys use something like Artifice or ARRP for resource/datagen?

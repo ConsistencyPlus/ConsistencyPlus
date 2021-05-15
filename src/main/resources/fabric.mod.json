@@ -3,7 +3,7 @@
   "id": "consistency_plus",
   "version": "${version}",
   "name": "Consistency Plus",
-  "description": "Builders Rejoice, We've added all the missing block variants!",
+  "description": "Builders rejoice; we've added all the missing block variants!",
   "contributors": [
     {
       "name": "Carter",
@@ -46,10 +46,16 @@
       "contact": {
         "Discord": "Tropheus Jay#7241"
       }
+    },
+    {
+      "name": "Emmaffle",
+      "contact": {
+        "Discord": "Emmaffle#1787"
+      }
     }
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/consistency",
+    "homepage": "https://modrinth.com/mod/consistencyplus",
     "issues": "https://github.com/ConsistencyPlus/ConsistencyPlus/issues",
     "sources": "https://github.com/ConsistencyPlus/ConsistencyPlus"
   },
@@ -58,10 +64,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.consistencyteam.consistency_plus.ConsistencyPlus"
+      "io.github.consistencyplus.consistency_plus.ConsistencyPlus"
     ],
     "client": [
-      "net.consistencyteam.consistency_plus.ConsistencyPlusClientside"
+      "io.github.consistencyplus.consistency_plus.ConsistencyPlusClientside"
     ]
   },
   "mixins": [

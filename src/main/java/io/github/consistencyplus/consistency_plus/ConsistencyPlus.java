@@ -24,7 +24,7 @@ public class ConsistencyPlus implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Consistency+ Main - Version RC-0.3 - Starting initialization");
+        LOGGER.info("Consistency+ Main - Version 0.3.1 - Starting initialization");
         LOGGER.debug("Consistency+ Main - Beginning block initialization");
         Blocks.init();
 

@@ -11,6 +11,10 @@ NOTE: We went a little overkill with the brainstorming for this mod. Many of the
 things that we seriously would expect Mojang to consider adding, but rather just extra blocks for the builders out
 there. While a lot of the variants we plan on adding are things that really should be in vanilla, most are not.
 
+## Contact us:
+Our discord server can be found here: https://discord.gg/VeNX7h8bAK
+If you need to contact us directly, you can join the server and DM Siuol or Carter.
+
 ## FAQ
 
 ### How much has been added?
@@ -49,22 +53,21 @@ CTM format support. For now, though, it's not in our mod.
 
 ### Will you be making a Forge/Bedrock/<1.14 port?
 
-Currently, we do not have plans for any of those ports. We MAY have some post 1.0.0, but for now, it's not looking
-likely.
+We'll see, but for now, take it into your own hands if you want it on a specific platform
 
 ### Can **I** make a port?
 
 We'd prefer if you asked us about it first, however, the license allows for it.
 
-### Can we get an ETA?
+### Can we get an ETA on anything?
 
-No.
+Our ETA is when we feel like it.
 
 ### Does Consistency+ work with other mods block lists?
 
 Not really; Consistency+ is more a manually-adding-blocks sorta mod. Currently, we only support vanilla. In the future,
 we may add support through a potential add-on system. As for conflicting recipes, if you make a modpack, you can use
-datapacks to override ours; otherwise just use Polymorph to use both recipes.
+datapacks to override ours; otherwise, for now, just use Polymorph to use both recipes.
 
 ### Why did you guys add [Block X] when [Mod Y] does the same thing?
 
@@ -79,7 +82,3 @@ mods tested on the Quilt Production Beta. Regardless, Consistency+ requires Fabr
 
 He does it as it's kinda like an inside joke to him.
 
-## Contact us:
-
-Our Discord server can be found here: https://discord.gg/VeNX7h8bAK
-If you need to contact us directly, you can join the server and DM Siuol or Carter.

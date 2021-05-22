@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "clay_slab",
+    "clay_stairs",
+    "clay_wall",
+    "polished_clay",
+    "polished_clay_slab",
+    "polished_clay_stairs",
+    "polished_clay_wall",
+    "cut_clay",
+    "cut_clay_slab",
+    "cut_clay_stairs",
+    "cut_clay_wall",
+    "smooth_clay",
+    "smooth_clay_slab",
+    "smooth_clay_stairs",
+    "smooth_clay_wall",
+    "dirt_slab",
+    "dirt_stairs",
+    "dirt_wall",
+    "grass_slab",
+    "grass_stairs",
+    "grass_wall",
+    "mycelium_slab",
+    "mycelium_stairs",
+    "mycelium_wall"
+  ]}

@@ -4,13 +4,13 @@
   "package": "io.github.consistencyplus.consistency_plus.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "BlockColorsMixin",
     "BlockMixin",
     "GrassBlockMixin",
     "LivingEntityMixin",
     "MyceliumBlockMixin"
   ],
   "client": [
+    "BlockColorsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

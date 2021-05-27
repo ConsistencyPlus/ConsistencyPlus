@@ -4,7 +4,7 @@
   "package": "io.github.consistencyplus.consistency_plus.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "BlockMixin",
+    "BlocksMixin",
     "GrassBlockMixin",
     "LivingEntityMixin",
     "MyceliumBlockMixin"

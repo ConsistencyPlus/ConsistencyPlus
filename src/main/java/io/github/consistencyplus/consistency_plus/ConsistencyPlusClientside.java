@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus;
 
-import io.github.consistencyplus.consistency_plus.registry.Blocks;
-import io.github.consistencyplus.consistency_plus.registry.Items;
+import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
@@ -16,13 +16,13 @@ public class ConsistencyPlusClientside implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         LOGGER.info("Consistency+ Main - Starting client initialization");
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.WARPED_WART, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_SLAB, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_STAIRS, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GRASS_WALL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.WARPED_WART, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_SLAB, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_STAIRS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_WALL, RenderLayer.getCutout());
         ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
             return GrassColors.getColor(0.5D, 1.0D);
-        }, Items.GRASS_SLAB, Items.GRASS_STAIRS, Items.GRASS_WALL);
+        }, CPlusItems.GRASS_SLAB, CPlusItems.GRASS_STAIRS, CPlusItems.GRASS_WALL);
         LOGGER.info("Consistency+ Main - Finished client initialization");
     }
 }

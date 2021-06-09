@@ -7,8 +7,8 @@ import net.minecraft.block.StairsBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static io.github.consistencyplus.consistency_plus.registry.Blocks.GRASS_STAIRS;
-import static io.github.consistencyplus.consistency_plus.registry.Blocks.MYCELIUM_STAIRS;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.GRASS_STAIRS;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.MYCELIUM_STAIRS;
 
 public class DirtStairsBlock extends StairsBlock implements HasGrownGrassVariant, HasGrownMyceliumVariant {
     public DirtStairsBlock(BlockState baseBlockState, Settings settings) {

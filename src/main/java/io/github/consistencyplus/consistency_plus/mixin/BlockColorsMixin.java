@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import static io.github.consistencyplus.consistency_plus.registry.Blocks.*;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.*;
 
 // couldn't figure out how to get grass working with the regular color provider method so here we are
 @Environment(EnvType.CLIENT)

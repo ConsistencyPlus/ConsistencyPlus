@@ -16,7 +16,7 @@ import net.minecraft.world.chunk.light.ChunkLightProvider;
 
 import java.util.Random;
 
-import static io.github.consistencyplus.consistency_plus.registry.Blocks.DIRT_STAIRS;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DIRT_STAIRS;
 
 public class MyceliumStairsBlock extends StairsBlock implements HasUngrownVariant, IsSpreadableMyceliumBlock {
     public MyceliumStairsBlock(BlockState baseBlockState, Settings settings) {

@@ -1,10 +1,13 @@
-plugins { id "fabric-loom" version "0.8-SNAPSHOT" }
+plugins {
+    id "fabric-loom" version "0.8-SNAPSHOT"
+    id 'org.ajoberstar.grgit' version '4.1.0'
+}
 
 sourceCompatibility = JavaVersion.VERSION_16
 targetCompatibility = JavaVersion.VERSION_16
 
-archivesBaseName = project.archives_base_name
-version = project.mod_version
+archivesBaseName = "${project.archives_base_name}+${project.minecraft_version}"
+version = "${project.mod_version}+${getVersionMetadata()}"
 group = project.maven_group
 
 dependencies {
@@ -27,3 +30,15 @@ tasks.withType(JavaCompile) { it.options.encoding = "UTF-8" }
 java { withSourcesJar() }
 
 jar { from("LICENSE") { rename { "${it}_${project.archivesBaseName}" } } }
+
+def getVersionMetadata() {
+    def build_id = System.getenv("GITHUB_RUN_NUMBER")
+    if (build_id != null) { return "build.${build_id}" }
+    if (grgit != null) {
+        def head = grgit.head()
+        def id = head.abbreviatedId
+        if (!grgit.status().clean) { id += "-dirty" }
+        return "rev.${id}"
+    }
+    return "unknown"
+}

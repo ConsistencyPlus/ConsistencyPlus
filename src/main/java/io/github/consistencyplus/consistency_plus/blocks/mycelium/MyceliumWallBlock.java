@@ -15,7 +15,7 @@ import net.minecraft.world.chunk.light.ChunkLightProvider;
 
 import java.util.Random;
 
-import static io.github.consistencyplus.consistency_plus.registry.Blocks.DIRT_WALL;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DIRT_WALL;
 import static net.minecraft.block.Blocks.AIR;
 
 public class MyceliumWallBlock extends WallBlock implements HasUngrownVariant, IsSpreadableGrassBlock {

@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 
 // Also, code is not being registered/initialized due to the fact that it does not have its usage JUST yet.
 
-public class Tags {
+public class CPlusTags {
     public static final Tag<Block> GATES = register("gates");
 
     private static Tag<Block> register(String id) {

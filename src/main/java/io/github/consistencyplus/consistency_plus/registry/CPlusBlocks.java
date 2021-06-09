@@ -23,7 +23,7 @@ import net.minecraft.util.registry.Registry;
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
-public class Blocks {
+public class CPlusBlocks {
 
     /*
     templates

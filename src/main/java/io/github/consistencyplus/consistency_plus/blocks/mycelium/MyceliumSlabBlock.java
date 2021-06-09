@@ -16,7 +16,7 @@ import net.minecraft.world.chunk.light.ChunkLightProvider;
 
 import java.util.Random;
 
-import static io.github.consistencyplus.consistency_plus.registry.Blocks.DIRT_SLAB;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DIRT_SLAB;
 
 public class MyceliumSlabBlock extends SlabBlock implements HasUngrownVariant, IsSpreadableMyceliumBlock {
     public MyceliumSlabBlock(Settings settings) {

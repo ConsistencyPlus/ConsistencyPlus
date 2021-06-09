@@ -1,23 +1,35 @@
 package io.github.consistencyplus.consistency_plus;
 
-import io.github.consistencyplus.consistency_plus.registry.Blocks;
-import io.github.consistencyplus.consistency_plus.registry.Items;
+import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.ModContainer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ConsistencyPlus implements ModInitializer {
 	private static final Logger LOGGER = LogManager.getLogger();
-	
+
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Consistency+ Main - Version 0.3.1 - Starting initialization");
+		ModContainer mod = FabricLoader.getInstance()
+						.getModContainer("consistency_plus")
+						.orElseThrow(NullPointerException::new);
+
+		String MOD_VERSION = mod.getMetadata()
+						.getVersion()
+						.getFriendlyString();
+
+		LOGGER.info("Consistency+ Main - Version " + MOD_VERSION + " - Starting initialization");
 		LOGGER.debug("Consistency+ Main - Beginning block initialization");
-		Blocks.init();
-		LOGGER.debug("Consistency+ Main - Blocks initialized");
+		CPlusBlocks.init();
+		LOGGER.debug("Consistency+ Main - CPlusBlocks initialized");
 		LOGGER.debug("Consistency+ Main - Beginning item initialization");
-		Items.init();
-		LOGGER.debug("Consistency+ Main - Items initialized");
+		CPlusItems.init();
+		LOGGER.debug("Consistency+ Main - CPlusItems initialized");
 		LOGGER.info("Consistency+ Main - Finished initialization");
+
+
 	}
 }

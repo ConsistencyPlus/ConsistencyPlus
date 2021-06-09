@@ -7,8 +7,8 @@ import net.minecraft.block.SlabBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static io.github.consistencyplus.consistency_plus.registry.Blocks.GRASS_SLAB;
-import static io.github.consistencyplus.consistency_plus.registry.Blocks.MYCELIUM_SLAB;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.GRASS_SLAB;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.MYCELIUM_SLAB;
 
 public class DirtSlabBlock extends SlabBlock implements HasGrownGrassVariant, HasGrownMyceliumVariant {
     public DirtSlabBlock(Settings settings) {

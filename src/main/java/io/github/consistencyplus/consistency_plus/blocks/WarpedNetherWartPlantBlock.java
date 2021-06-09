@@ -1,6 +1,6 @@
 package io.github.consistencyplus.consistency_plus.blocks;
 
-import io.github.consistencyplus.consistency_plus.registry.Items;
+import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.NetherWartBlock;
 import net.minecraft.item.ItemStack;
@@ -14,7 +14,7 @@ public class WarpedNetherWartPlantBlock extends NetherWartBlock {
 
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(Items.WARPED_WART);
+        return new ItemStack(CPlusItems.WARPED_WART);
     }
 
 }

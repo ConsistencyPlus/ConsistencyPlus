@@ -1385,7 +1385,7 @@ public class Blocks {
 //Soul Sandstone
 
     // Block
-    public static final Block SOUL_SANDSTONE = register("soul_sandstone", new Block(FabricBlockSettings.of(Material.STONE, MaterialColor.BROWN).strength(0.8F)));
+    public static final Block SOUL_SANDSTONE = register("soul_sandstone", new Block(FabricBlockSettings.of(Material.STONE).strength(0.8F)));
     public static final Block SOUL_SANDSTONE_SLAB = register("soul_sandstone_slab", new SlabBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
     public static final Block SOUL_SANDSTONE_STAIRS = register("soul_sandstone_stairs", new BaseConsistencyStairBlock(SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(SOUL_SANDSTONE)));
     public static final Block SOUL_SANDSTONE_WALL = register("soul_sandstone_wall", new WallBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
@@ -1580,22 +1580,22 @@ public class Blocks {
 
 
     // Ice
-    public static final Block RED_ICE = register("red_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.RED).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block ORANGE_ICE = register("orange_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.ORANGE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block YELLOW_ICE = register("yellow_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.YELLOW).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block LIME_ICE = register("lime_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIME).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block GREEN_ICE = register("green_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.GREEN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block CYAN_ICE = register("cyan_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.CYAN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block LIGHT_BLUE_ICE = register("light_blue_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block PURPLE_ICE = register("purple_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.PURPLE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block MAGENTA_ICE = register("magenta_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.MAGENTA).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block PINK_ICE = register("pink_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.PINK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block WHITE_ICE = register("white_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.WHITE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block LIGHT_GRAY_ICE = register("light_gray_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block GRAY_ICE = register("gray_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block BLACK_ICE = register("black_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BLACK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block BROWN_ICE = register("brown_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.BROWN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
-    public static final Block SOUL_ICE = register("soul_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MaterialColor.LIGHT_BLUE).strength(3.0F).slipperiness(1.1f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block RED_ICE = register("red_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.RED).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block ORANGE_ICE = register("orange_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.ORANGE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block YELLOW_ICE = register("yellow_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.YELLOW).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block LIME_ICE = register("lime_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.LIME).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block GREEN_ICE = register("green_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.GREEN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block CYAN_ICE = register("cyan_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.CYAN).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block LIGHT_BLUE_ICE = register("light_blue_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.LIGHT_BLUE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block PURPLE_ICE = register("purple_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.PURPLE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block MAGENTA_ICE = register("magenta_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.MAGENTA).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block PINK_ICE = register("pink_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.PINK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block WHITE_ICE = register("white_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.WHITE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block LIGHT_GRAY_ICE = register("light_gray_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.LIGHT_GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block GRAY_ICE = register("gray_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.GRAY).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block BLACK_ICE = register("black_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.BLACK).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block BROWN_ICE = register("brown_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
+    public static final Block SOUL_ICE = register("soul_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.LIGHT_BLUE).strength(3.0F).slipperiness(1.1f).sounds(BlockSoundGroup.GLASS)));
 
     // Ice Slab
     public static final Block RED_ICE_SLAB = register("red_ice_slab", new SlabBlock(FabricBlockSettings.copy(RED_ICE)));
@@ -1675,23 +1675,23 @@ public class Blocks {
 
 
     //Glowstone
-    public static final Block RED_GLOWSTONE = register("red_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.RED).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block ORANGE_GLOWSTONE = register("orange_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.YELLOW).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block YELLOW_GLOWSTONE = register("yellow_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.ORANGE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block LIME_GLOWSTONE = register("lime_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.LIME).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block GREEN_GLOWSTONE = register("green_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.GREEN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block BLUE_GLOWSTONE = register("blue_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block CYAN_GLOWSTONE = register("cyan_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.CYAN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block LIGHT_BLUE_GLOWSTONE = register("light_blue_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block PURPLE_GLOWSTONE = register("purple_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.PURPLE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block MAGENTA_GLOWSTONE = register("magenta_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.MAGENTA).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block PINK_GLOWSTONE = register("pink_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.PINK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block WHITE_GLOWSTONE = register("white_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.WHITE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block LIGHT_GRAY_GLOWSTONE = register("light_gray_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.LIGHT_GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block GRAY_GLOWSTONE = register("gray_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block BLACK_GLOWSTONE = register("black_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.BLACK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block BROWN_GLOWSTONE = register("brown_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.BROWN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-    public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MaterialColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(10)));
+    public static final Block RED_GLOWSTONE = register("red_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.RED).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block ORANGE_GLOWSTONE = register("orange_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.YELLOW).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block YELLOW_GLOWSTONE = register("yellow_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.ORANGE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block LIME_GLOWSTONE = register("lime_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIME).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block GREEN_GLOWSTONE = register("green_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.GREEN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block BLUE_GLOWSTONE = register("blue_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block CYAN_GLOWSTONE = register("cyan_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.CYAN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block LIGHT_BLUE_GLOWSTONE = register("light_blue_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block PURPLE_GLOWSTONE = register("purple_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.PURPLE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block MAGENTA_GLOWSTONE = register("magenta_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.MAGENTA).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block PINK_GLOWSTONE = register("pink_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.PINK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block WHITE_GLOWSTONE = register("white_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.WHITE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block LIGHT_GRAY_GLOWSTONE = register("light_gray_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block GRAY_GLOWSTONE = register("gray_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block BLACK_GLOWSTONE = register("black_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.BLACK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block BROWN_GLOWSTONE = register("brown_glowstone", new Block(FabricBlockSettings.of(Material.GLASS).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
+    public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(10)));
 
     // Glowstone Slab
     public static final Block RED_GLOWSTONE_SLAB = register("red_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(RED_GLOWSTONE)));
@@ -1774,15 +1774,15 @@ public class Blocks {
     public static final Block GLOWSTONE_GATE = register("glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(GLOWSTONE)));
 
     //Obsidian
-    public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-    public static final Block OBSIDIAN_STAIRS = register("obsidian_stairs", new BaseConsistencyStairBlock(OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-    public static final Block OBSIDIAN_WALL = register("obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-    public static final Block OBSIDIAN_GATE = register("obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
+    public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
+    public static final Block OBSIDIAN_STAIRS = register("obsidian_stairs", new BaseConsistencyStairBlock(OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
+    public static final Block OBSIDIAN_WALL = register("obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
+    public static final Block OBSIDIAN_GATE = register("obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 
-    public static final Block CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-    public static final Block CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new BaseConsistencyStairBlock(CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-    public static final Block CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-    public static final Block CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MaterialColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
+    public static final Block CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
+    public static final Block CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new BaseConsistencyStairBlock(CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
+    public static final Block CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
+    public static final Block CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 
     // Dirt
     public static final Block DIRT_SLAB = register("dirt_slab", new DirtSlabBlock(FabricBlockSettings.copy(DIRT)));
@@ -1800,8 +1800,8 @@ public class Blocks {
     public static final Block MYCELIUM_WALL = register("mycelium_wall", new MyceliumWallBlock(FabricBlockSettings.copy(MYCELIUM)));
 
     // Miscellaneous
-    public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MaterialColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));
-    public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MaterialColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
+    public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));
+    public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MapColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
     public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(), FabricBlockSettings.copy(NETHERITE_BLOCK)));
     public static final Block SUSPICIOUS_SLAB = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
 //  public static final Block SIUOLS_SANITY = register("is_a_crab", new Block(FabricBlockSettings.copy(HELP_ME)));

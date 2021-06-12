@@ -1,9 +1,3 @@
-buildscript {
-    dependencies {
-        classpath 'com.guardsquare:proguard-gradle:7.1.0-beta5'
-    }
-}
-
 plugins {
     id "fabric-loom" version "0.8-SNAPSHOT"
     id "org.ajoberstar.grgit" version "4.1.0"
@@ -15,7 +9,6 @@ targetCompatibility = JavaVersion.VERSION_16
 
 archivesBaseName = "consistency_plus-${project.minecraft_version}"
 version = "${project.mod_version}-${getVersionMetadata()}_UNMINIFIED"
-def minVersion = "${project.mod_version}-${getVersionMetadata()}"
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -48,33 +41,3 @@ def getVersionMetadata() {
     }
     return "unknown"
 }
-
-apply from: "https://raw.githubusercontent.com/NerdHubMC/Gradle-Scripts/master/scripts/utilities.gradle"
-
-task('proguard', type: proguard.gradle.ProGuardTask) {
-    configuration './proguard.conf'
-    verbose
-    injars project.buildDir.toString() + '/libs/' + archivesBaseName + "-" + version + ".jar"
-    outjars project.buildDir.toString() + '/libs/' + archivesBaseName + "-" + minVersion + ".jar"
-    keepparameternames
-    renamesourcefileattribute 'SourceFile'
-    keepattributes 'Signature,Exceptions,InnerClasses,PermittedSubclasses,EnclosingMethod,Deprecated,SourceFile,LineNumberTable'
-    keepattributes '*Annotation*'
-
-    keep 'public class * { \
-        public protected *; \
-    }'
-
-    keepclassmembernames 'class * { \
-        java.lang.Class class$(java.lang.String); \
-        java.lang.Class class$(java.lang.String, boolean); \
-    }'
-
-    keepclassmembers 'class io.github.consistencyplus.consistency_plus.mixin.* { \
-        <fields>; \
-        <init>(); \
-        <methods>; \
-    }'
-}
-
-remapJar.finalizedBy proguard

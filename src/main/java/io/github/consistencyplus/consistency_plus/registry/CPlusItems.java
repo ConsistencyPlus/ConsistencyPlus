@@ -20,7 +20,6 @@ public class CPlusItems {
     public static final Item COBBLESTONE_GATE = register("cobblestone_gate", new BlockItem(CPlusBlocks.COBBLESTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item MOSSY_COBBLESTONE_GATE = register("mossy_cobblestone_gate", new BlockItem(CPlusBlocks.MOSSY_COBBLESTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
-
     //Cracked Smooth
     //block
     //slab
@@ -50,6 +49,24 @@ public class CPlusItems {
 
     //Mossy Cut
     //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
     //slab
     //stairs
     //wall
@@ -145,7 +162,6 @@ public class CPlusItems {
     public static final Item CUT_BLACKSTONE_WALL = register("cut_blackstone_wall", new BlockItem(CPlusBlocks.CUT_BLACKSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item CUT_BLACKSTONE_GATE = register("cut_blackstone_gate", new BlockItem(CPlusBlocks.CUT_BLACKSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
-
     //Cracked Cut
     //block
     //slab
@@ -155,6 +171,24 @@ public class CPlusItems {
 
     //Mossy Cut
     //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
     //slab
     //stairs
     //wall
@@ -223,6 +257,24 @@ public class CPlusItems {
 
     //Mossy Cut
     //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
     //slab
     //stairs
     //wall
@@ -322,6 +374,24 @@ public class CPlusItems {
     //wall
     //gate
 
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
     //Polished
     public static final Item POLISHED_RED_SANDSTONE = register("polished_red_sandstone", new BlockItem(CPlusBlocks.POLISHED_RED_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item POLISHED_RED_SANDSTONE_SLAB = register("polished_red_sandstone_slab", new BlockItem(CPlusBlocks.POLISHED_RED_SANDSTONE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -414,6 +484,24 @@ public class CPlusItems {
 
     //Mossy Cut
     //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
     //slab
     //stairs
     //wall
@@ -540,6 +628,24 @@ public class CPlusItems {
     public static final Item MOSSY_CUT_ANDESITE_WALL = register("mossy_cut_andesite_wall", new BlockItem(CPlusBlocks.MOSSY_CUT_ANDESITE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item MOSSY_CUT_ANDESITE_GATE = register("mossy_cut_andesite_gate", new BlockItem(CPlusBlocks.MOSSY_CUT_ANDESITE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
     //Bricks
     public static final Item ANDESITE_BRICKS = register("andesite_bricks", new BlockItem(CPlusBlocks.ANDESITE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item ANDESITE_BRICK_SLAB = register("andesite_brick_slab", new BlockItem(CPlusBlocks.ANDESITE_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -633,6 +739,24 @@ public class CPlusItems {
 
     //Mossy Cut
     //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
     //slab
     //stairs
     //wall
@@ -736,6 +860,24 @@ public class CPlusItems {
     //wall
     //gate
 
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
     //Bricks
     public static final Item GRANITE_BRICKS = register("granite_bricks", new BlockItem(CPlusBlocks.GRANITE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item GRANITE_BRICK_SLAB = register("granite_brick_slab", new BlockItem(CPlusBlocks.GRANITE_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -771,6 +913,7 @@ public class CPlusItems {
     //mossy carved
 
     //clay
+    //clay is weird so I'm not gonna bother updating these placeholders yet
     public static final Item CLAY_SLAB = register("clay_slab", new BlockItem(CPlusBlocks.CLAY_SLAB, new Item.Settings()));
     public static final Item CLAY_STAIRS = register("clay_stairs", new BlockItem(CPlusBlocks.CLAY_STAIRS, new Item.Settings()));
     public static final Item CLAY_WALL = register("clay_wall", new BlockItem(CPlusBlocks.CLAY_WALL, new Item.Settings()));
@@ -1006,6 +1149,24 @@ public class CPlusItems {
     //wall
     //gate
 
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
     //Bricks
     public static final Item PRISMARINE_BRICK_WALL = register("prismarine_brick_wall", new BlockItem(CPlusBlocks.PRISMARINE_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item PRISMARINE_BRICK_GATE = register("prismarine_brick_gate", new BlockItem(CPlusBlocks.PRISMARINE_BRICK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
@@ -1100,6 +1261,24 @@ public class CPlusItems {
 
     //Mossy Cut
     //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
     //slab
     //stairs
     //wall
@@ -1208,6 +1387,24 @@ public class CPlusItems {
     //wall
     //gate
 
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
     //Bricks
     public static final Item PURPUR_BRICKS = register("purpur_bricks", new BlockItem(CPlusBlocks.PURPUR_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item PURPUR_BRICK_SLAB = register("purpur_brick_slab", new BlockItem(CPlusBlocks.PURPUR_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
@@ -1293,6 +1490,24 @@ public class CPlusItems {
     //wall
     //gate
 
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
     //Polished
     public static final Item POLISHED_END_STONE = register("polished_end_stone", new BlockItem(CPlusBlocks.POLISHED_END_STONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item POLISHED_END_STONE_SLAB = register("polished_end_stone_slab", new BlockItem(CPlusBlocks.POLISHED_END_STONE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -1349,7 +1564,18 @@ public class CPlusItems {
     public static final Item SOUL_SANDSTONE_STAIRS = register("soul_sandstone_stairs", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SOUL_SANDSTONE_WALL = register("soul_sandstone_wall", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SOUL_SANDSTONE_GATE = register("soul_sandstone_gate", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-    public static final Item SOUL_SANDSTONE_PILLAR = register("soul_sandstone_pillar", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
 
     // Smooth
     public static final Item SMOOTH_SOUL_SANDSTONE = register("smooth_soul_sandstone", new BlockItem(CPlusBlocks.SMOOTH_SOUL_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -1358,12 +1584,36 @@ public class CPlusItems {
     public static final Item SMOOTH_SOUL_SANDSTONE_WALL = register("smooth_soul_sandstone_wall", new BlockItem(CPlusBlocks.SMOOTH_SOUL_SANDSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SMOOTH_SOUL_SANDSTONE_GATE = register("smooth_soul_sandstone_gate", new BlockItem(CPlusBlocks.SMOOTH_SOUL_SANDSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
+
     // Polished
     public static final Item POLISHED_SOUL_SANDSTONE = register("polished_soul_sandstone", new BlockItem(CPlusBlocks.POLISHED_SOUL_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item POLISHED_SOUL_SANDSTONE_SLAB = register("polished_soul_sandstone_slab", new BlockItem(CPlusBlocks.POLISHED_SOUL_SANDSTONE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item POLISHED_SOUL_SANDSTONE_STAIRS = register("polished_soul_sandstone_stairs", new BlockItem(CPlusBlocks.POLISHED_SOUL_SANDSTONE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item POLISHED_SOUL_SANDSTONE_WALL = register("polished_soul_sandstone_wall", new BlockItem(CPlusBlocks.POLISHED_SOUL_SANDSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item POLISHED_SOUL_SANDSTONE_GATE = register("polished_soul_sandstone_gate", new BlockItem(CPlusBlocks.POLISHED_SOUL_SANDSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
 
     // Bricks
     public static final Item SOUL_SANDSTONE_BRICKS = register("soul_sandstone_bricks", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -1372,6 +1622,18 @@ public class CPlusItems {
     public static final Item SOUL_SANDSTONE_BRICK_WALL = register("soul_sandstone_brick_wall", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SOUL_SANDSTONE_BRICK_GATE = register("soul_sandstone_brick_gate", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
+
     // Cut
     public static final Item CUT_SOUL_SANDSTONE = register("cut_soul_sandstone", new BlockItem(CPlusBlocks.CUT_SOUL_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item CUT_SOUL_SANDSTONE_SLAB = register("cut_soul_sandstone_slab", new BlockItem(CPlusBlocks.CUT_SOUL_SANDSTONE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -1379,8 +1641,1535 @@ public class CPlusItems {
     public static final Item CUT_SOUL_SANDSTONE_WALL = register("cut_soul_sandstone_wall", new BlockItem(CPlusBlocks.CUT_SOUL_SANDSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item CUT_SOUL_SANDSTONE_GATE = register("cut_soul_sandstone_gate", new BlockItem(CPlusBlocks.CUT_SOUL_SANDSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
     public static final Item CHISELED_SOUL_SANDSTONE = register("chiseled_soul_sandstone", new BlockItem(CPlusBlocks.CHISELED_SOUL_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
+    public static final Item SOUL_SANDSTONE_PILLAR = register("soul_sandstone_pillar", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
+    //corner pillar
+    //mossy
+    //cracked
     public static final Item CARVED_SOUL_SANDSTONE = register("carved_soul_sandstone", new BlockItem(CPlusBlocks.CARVED_SOUL_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
+
+
+    // Obsidian
+    public static final Item OBSIDIAN_SLAB = register("obsidian_slab", new BlockItem(CPlusBlocks.OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_STAIRS = register("obsidian_stairs", new BlockItem(CPlusBlocks.OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_WALL = register("obsidian_wall", new BlockItem(CPlusBlocks.OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_GATE = register("obsidian_gate", new BlockItem(CPlusBlocks.OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+    public static final Item CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Calcite
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Dripstone
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Tuff
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Deepslate
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //brick gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked brick slab
+    //cracked brick stairs
+    //cracked brick wall
+    //cracked brick gate
+
+    //cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tile gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles slab
+    //cracked tiles stairs
+    //cracked tiles wall
+    //cracked tiles gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+    //Note about copper and other metals: Raw metal blocks will be used as the 'base' and will be converted into a new version of the mineral block for C+ purposes.
+//The Vanilla metal blocks will continue to work the same (aside from copper, which will have a replacement) and the Raw Metal block will be used as the starting block for the C+ variants.
+//This also means raw metal blocks will rust, so the vanilla textures will be slightly modified to reflect this.
+//                             |
+//  X X X                      |   X X _
+//  X X X -> Y                 |   X X _ -> Y x4
+//  X X X                      |   _ _ _
+//                             |
+//  X - Metal Ingot            |   X - Raw Metal Block
+//  Y - Metal Block (Vanilla)  |   Y - Decorative Metal Block (Consistency+)
+//
+//ALL DECORATIVE METAL BLOCKS WILL HAVE A WEATHERING PROCESS
+//Decorative Copper -> Exposed Copper -> Weathered Copper -> Oxidized Copper (Teal)
+//Decorative Gold -> Exposed Gold -> Weathered Gold -> Corroded Gold (Deep Blue/Green)
+//Decorative Iron -> Exposed Iron -> Weathered Iron -> Rusted Iron (Brown/Red)
+//
+//This allows for every metal to have a decoration-based variant for building like copper does, while not affecting the existing metal blocks.
+//~~this also allows us to add the decorative gold blocks from Minecraft Dungeons but that's totally not the reason for this to be like this~~
+//The gold and iron won't be in the code for now since they aren't a priority (since copper won't be either until we can figure out the rust) but once copper is in I'll add in the placeholders for them
+
+//Clean Decorative Copper
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished slab
+    //polished stairs
+    //polished wall
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Exposed Decorative Copper
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished slab
+    //polished stairs
+    //polished wall
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Weathered Decorative Copper
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished slab
+    //polished stairs
+    //polished wall
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Oxidized Decorative Copper
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished slab
+    //polished stairs
+    //polished wall
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Waxes Clean Decorative Copper
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished slab
+    //polished stairs
+    //polished wall
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Waxed Exposed Decorative Copper
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished slab
+    //polished stairs
+    //polished wall
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Waxed Weathered Decorative Copper
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished slab
+    //polished stairs
+    //polished wall
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+//Waxed Oxidized Decorative Copper
+    //block
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished slab
+    //polished stairs
+    //polished wall
+    //polished gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+
+
 
 // Terracotta
 
@@ -1460,6 +3249,110 @@ public class CPlusItems {
     public static final Item BROWN_TERRACOTTA_GATE = register("brown_terracotta_gate", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item TERRACOTTA_GATE = register("terracotta_gate", new BlockItem(CPlusBlocks.TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+
 // Concrete
 
     // Concrete Slab
@@ -1534,6 +3427,112 @@ public class CPlusItems {
     public static final Item BLACK_CONCRETE_GATE = register("black_concrete_gate", new BlockItem(CPlusBlocks.BLACK_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item BROWN_CONCRETE_GATE = register("brown_concrete_gate", new BlockItem(CPlusBlocks.BROWN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
+    //smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked smooth
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked polished
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked bricks
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked cut
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //mossy tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked tiles
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //pillar
+    //mossy pillar
+    //cracked pillar
+    //corner pillar
+    //mossy corner pillar
+    //cracked corner pillar
+    //chiseled
+    //mossy chiseled
+    //cracked chiseled
+    //carved
+    //mossy carved
+    //cracked carved
+
+
+
+    //Glowstone
     public static final Item RED_GLOWSTONE = register("red_glowstone", new BlockItem(CPlusBlocks.RED_GLOWSTONE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item ORANGE_GLOWSTONE = register("orange_glowstone", new BlockItem(CPlusBlocks.ORANGE_GLOWSTONE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item YELLOW_GLOWSTONE = register("yellow_glowstone", new BlockItem(CPlusBlocks.YELLOW_GLOWSTONE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
@@ -1726,17 +3725,6 @@ public class CPlusItems {
     public static final Item BROWN_ICE_GATE = register("brown_ice_gate", new BlockItem(CPlusBlocks.BROWN_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item SOUL_ICE_GATE = register("soul_ice_gate", new BlockItem(CPlusBlocks.SOUL_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-    // Obsidian
-    public static final Item OBSIDIAN_SLAB = register("obsidian_slab", new BlockItem(CPlusBlocks.OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    public static final Item OBSIDIAN_STAIRS = register("obsidian_stairs", new BlockItem(CPlusBlocks.OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    public static final Item OBSIDIAN_WALL = register("obsidian_wall", new BlockItem(CPlusBlocks.OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    public static final Item OBSIDIAN_GATE = register("obsidian_gate", new BlockItem(CPlusBlocks.OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-    // Crying Obsidian
-    public static final Item CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    public static final Item CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    public static final Item CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    public static final Item CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     // Dirt
     public static final Item DIRT_SLAB = register("dirt_slab", new BlockItem(CPlusBlocks.DIRT_SLAB, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));

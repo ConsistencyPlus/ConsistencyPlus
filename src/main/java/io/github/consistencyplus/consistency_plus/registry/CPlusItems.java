@@ -54,11 +54,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item STONE_TILES = register("stone_tiles", new BlockItem(CPlusBlocks.STONE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item STONE_TILE_SLAB = register("stone_tile_slab", new BlockItem(CPlusBlocks.STONE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item STONE_TILE_STAIRS = register("stone_tile_stairs", new BlockItem(CPlusBlocks.STONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item STONE_TILE_WALL = register("stone_tile_wall", new BlockItem(CPlusBlocks.STONE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item STONE_TILE_GATE = register("stone_tile_gate", new BlockItem(CPlusBlocks.STONE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -176,11 +176,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item BLACKSTONE_TILES = register("blackstone_tiles", new BlockItem(CPlusBlocks.BLACKSTONE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item BLACKSTONE_TILE_SLAB = register("blackstone_tile_slab", new BlockItem(CPlusBlocks.BLACKSTONE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item BLACKSTONE_TILE_STAIRS = register("blackstone_tile_stairs", new BlockItem(CPlusBlocks.BLACKSTONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item BLACKSTONE_TILE_WALL = register("blackstone_tile_wall", new BlockItem(CPlusBlocks.BLACKSTONE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item BLACKSTONE_TILE_GATE = register("blackstone_tile_gate", new BlockItem(CPlusBlocks.BLACKSTONE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -262,11 +262,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item SANDSTONE_TILES = register("sandstone_tiles", new BlockItem(CPlusBlocks.SANDSTONE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SANDSTONE_TILE_SLAB = register("sandstone_tile_slab", new BlockItem(CPlusBlocks.SANDSTONE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SANDSTONE_TILE_STAIRS = register("sandstone_tile_stairs", new BlockItem(CPlusBlocks.SANDSTONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SANDSTONE_TILE_WALL = register("sandstone_tile_wall", new BlockItem(CPlusBlocks.SANDSTONE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SANDSTONE_TILE_GATE = register("sandstone_tile_gate", new BlockItem(CPlusBlocks.SANDSTONE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -304,7 +304,7 @@ public class CPlusItems {
     //Bricks
     public static final Item SANDSTONE_BRICKS = register("sandstone_bricks", new BlockItem(CPlusBlocks.SANDSTONE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SANDSTONE_BRICK_SLAB = register("sandstone_brick_slab", new BlockItem(CPlusBlocks.SANDSTONE_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-    public static final Item SANDSTONE_BRICk_STAIRS = register("sandstone_brick_stairs", new BlockItem(CPlusBlocks.SANDSTONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SANDSTONE_BRICK_STAIRS = register("sandstone_brick_stairs", new BlockItem(CPlusBlocks.SANDSTONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SANDSTONE_BRICK_WALL = register("sandstone_brick_wall", new BlockItem(CPlusBlocks.SANDSTONE_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SANDSTONE_BRICK_GATE = register("sandstone_brick_gate", new BlockItem(CPlusBlocks.SANDSTONE_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
@@ -374,11 +374,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item RED_SANDSTONE_TILES = register("red_sandstone_tiles", new BlockItem(CPlusBlocks.RED_SANDSTONE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item RED_SANDSTONE_TILE_SLAB = register("red_sandstone_tile_slab", new BlockItem(CPlusBlocks.RED_SANDSTONE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item RED_SANDSTONE_TILE_STAIRS = register("red_sandstone_tile_stairs", new BlockItem(CPlusBlocks.RED_SANDSTONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item RED_SANDSTONE_TILE_WALL = register("red_sandstone_tile_wall", new BlockItem(CPlusBlocks.RED_SANDSTONE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item RED_SANDSTONE_TILE_GATE = register("red_sandstone_tile_gate", new BlockItem(CPlusBlocks.RED_SANDSTONE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -416,7 +416,7 @@ public class CPlusItems {
     //Bricks
     public static final Item RED_SANDSTONE_BRICKS = register("red_sandstone_bricks", new BlockItem(CPlusBlocks.RED_SANDSTONE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item RED_SANDSTONE_BRICK_SLAB = register("red_sandstone_brick_slab", new BlockItem(CPlusBlocks.RED_SANDSTONE_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-    public static final Item RED_SANDSTONE_BRICk_STAIRS = register("red_sandstone_brick_stairs", new BlockItem(CPlusBlocks.RED_SANDSTONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item RED_SANDSTONE_BRICK_STAIRS = register("red_sandstone_brick_stairs", new BlockItem(CPlusBlocks.RED_SANDSTONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item RED_SANDSTONE_BRICK_WALL = register("red_sandstone_brick_wall", new BlockItem(CPlusBlocks.RED_SANDSTONE_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item RED_SANDSTONE_BRICK_GATE = register("red_sandstone_brick_gate", new BlockItem(CPlusBlocks.RED_SANDSTONE_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
@@ -489,11 +489,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item QUARTZ_TILES = register("quartz_tiles", new BlockItem(CPlusBlocks.QUARTZ_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item QUARTZ_TILE_SLAB = register("quartz_tile_slab", new BlockItem(CPlusBlocks.QUARTZ_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item QUARTZ_TILE_STAIRS = register("quartz_tile_stairs", new BlockItem(CPlusBlocks.QUARTZ_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item QUARTZ_TILE_WALL = register("quartz_tile_wall", new BlockItem(CPlusBlocks.QUARTZ_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item QUARTZ_TILE_GATE = register("quartz_tile_gate", new BlockItem(CPlusBlocks.QUARTZ_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy tiles
     //slab
@@ -628,23 +628,25 @@ public class CPlusItems {
     public static final Item MOSSY_CUT_ANDESITE_WALL = register("mossy_cut_andesite_wall", new BlockItem(CPlusBlocks.MOSSY_CUT_ANDESITE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item MOSSY_CUT_ANDESITE_GATE = register("mossy_cut_andesite_gate", new BlockItem(CPlusBlocks.MOSSY_CUT_ANDESITE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item ANDESITE_TILES = register("andesite_tiles", new BlockItem(CPlusBlocks.ANDESITE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item ANDESITE_TILE_SLAB = register("andesite_tile_slab", new BlockItem(CPlusBlocks.ANDESITE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item ANDESITE_TILE_STAIRS = register("andesite_tile_stairs", new BlockItem(CPlusBlocks.ANDESITE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item ANDESITE_TILE_WALL = register("andesite_tile_wall", new BlockItem(CPlusBlocks.ANDESITE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item ANDESITE_TILE_GATE = register("andesite_tile_gate", new BlockItem(CPlusBlocks.ANDESITE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
-    //mossy tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    //Cracked Bricks
+    public static final Item CRACKED_ANDESITE_TILES = register("cracked_andesite_tiles", new BlockItem(CPlusBlocks.CRACKED_ANDESITE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CRACKED_ANDESITE_TILE_SLAB = register("cracked_andesite_tile_slab", new BlockItem(CPlusBlocks.CRACKED_ANDESITE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CRACKED_ANDESITE_TILE_STAIRS = register("cracked_andesite_tile_stairs", new BlockItem(CPlusBlocks.CRACKED_ANDESITE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CRACKED_ANDESITE_TILE_WALL = register("cracked_andesite_tile_wall", new BlockItem(CPlusBlocks.CRACKED_ANDESITE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CRACKED_ANDESITE_TILE_GATE = register("cracked_andesite_tile_gate", new BlockItem(CPlusBlocks.CRACKED_ANDESITE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
-    //cracked tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    //Mossy Bricks
+    public static final Item MOSSY_ANDESITE_TILES = register("mossy_andesite_tiles", new BlockItem(CPlusBlocks.MOSSY_ANDESITE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item MOSSY_ANDESITE_TILE_SLAB = register("mossy_andesite_tile_slab", new BlockItem(CPlusBlocks.MOSSY_ANDESITE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item MOSSY_ANDESITE_TILE_STAIRS = register("mossy_andesite_tile_stairs", new BlockItem(CPlusBlocks.MOSSY_ANDESITE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item MOSSY_ANDESITE_TILE_WALL = register("mossy_andesite_tile_wall", new BlockItem(CPlusBlocks.MOSSY_ANDESITE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item MOSSY_ANDESITE_TILE_GATE = register("mossy_andesite_tile_gate", new BlockItem(CPlusBlocks.MOSSY_ANDESITE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //Bricks
     public static final Item ANDESITE_BRICKS = register("andesite_bricks", new BlockItem(CPlusBlocks.ANDESITE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -744,11 +746,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item DIORITE_TILES = register("diorite_tiles", new BlockItem(CPlusBlocks.DIORITE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DIORITE_TILE_SLAB = register("diorite_tile_slab", new BlockItem(CPlusBlocks.DIORITE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DIORITE_TILE_STAIRS = register("diorite_tile_stairs", new BlockItem(CPlusBlocks.DIORITE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DIORITE_TILE_WALL = register("diorite_tile_wall", new BlockItem(CPlusBlocks.DIORITE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DIORITE_TILE_GATE = register("diorite_tile_gate", new BlockItem(CPlusBlocks.DIORITE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -860,11 +862,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item GRANITE_TILES = register("granite_tiles", new BlockItem(CPlusBlocks.GRANITE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item GRANITE_TILE_SLAB = register("granite_tile_slab", new BlockItem(CPlusBlocks.GRANITE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item GRANITE_TILE_STAIRS = register("granite_tile_stairs", new BlockItem(CPlusBlocks.GRANITE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item GRANITE_TILE_WALL = register("granite_tile_wall", new BlockItem(CPlusBlocks.GRANITE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item GRANITE_TILE_GATE = register("granite_tile_gate", new BlockItem(CPlusBlocks.GRANITE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -1149,11 +1151,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item PRISMARINE_TILES = register("prismarine_tiles", new BlockItem(CPlusBlocks.PRISMARINE_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item PRISMARINE_TILE_SLAB = register("prismarine_tile_slab", new BlockItem(CPlusBlocks.PRISMARINE_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item PRISMARINE_TILE_STAIRS = register("prismarine_tile_stairs", new BlockItem(CPlusBlocks.PRISMARINE_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item PRISMARINE_TILE_WALL = register("prismarine_tile_wall", new BlockItem(CPlusBlocks.PRISMARINE_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item PRISMARINE_TILE_GATE = register("prismarine_tile_gate", new BlockItem(CPlusBlocks.PRISMARINE_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy tiles
     //slab
@@ -1266,11 +1268,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item DARK_PRISMARINE_TILES = register("dark_prismarine_tiles", new BlockItem(CPlusBlocks.DARK_PRISMARINE_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item DARK_PRISMARINE_TILE_SLAB = register("dark_prismarine_tile_slab", new BlockItem(CPlusBlocks.DARK_PRISMARINE_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item DARK_PRISMARINE_TILE_STAIRS = register("dark_prismarine_tile_stairs", new BlockItem(CPlusBlocks.DARK_PRISMARINE_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item DARK_PRISMARINE_TILE_WALL = register("dark_prismarine_tile_wall", new BlockItem(CPlusBlocks.DARK_PRISMARINE_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item DARK_PRISMARINE_TILE_GATE = register("dark_prismarine_tile_gate", new BlockItem(CPlusBlocks.DARK_PRISMARINE_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy tiles
     //slab
@@ -1370,6 +1372,9 @@ public class CPlusItems {
     //gate
 
     //Cut
+    public static final Item CUT_PURPUR = register("cut_purpur", new BlockItem(CPlusBlocks.CUT_PURPUR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_PURPUR_SLAB = register("cut_purpur_slab", new BlockItem(CPlusBlocks.CUT_PURPUR_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_PURPUR_STAIRS = register("cut_purpur_stairs", new BlockItem(CPlusBlocks.CUT_PURPUR_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item CUT_PURPUR_WALL = register("cut_purpur_wall", new BlockItem(CPlusBlocks.CUT_PURPUR_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item CUT_PURPUR_GATE = register("cut_purpur_gate", new BlockItem(CPlusBlocks.CUT_PURPUR_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
@@ -1387,11 +1392,8 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item PURPUR_TILE_WALL = register("purpur_tile_wall", new BlockItem(CPlusBlocks.PURPUR_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item PURPUR_TILE_GATE = register("purpur_tile_gate", new BlockItem(CPlusBlocks.PURPUR_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy tiles
     //slab
@@ -1490,11 +1492,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item END_STONE_TILES = register("end_stone_tiles", new BlockItem(CPlusBlocks.END_STONE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item END_STONE_TILE_SLAB = register("end_stone_tile_slab", new BlockItem(CPlusBlocks.END_STONE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item END_STONE_TILE_STAIRS = register("end_stone_tile_stairs", new BlockItem(CPlusBlocks.END_STONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item END_STONE_TILE_WALL = register("end_stone_tile_wall", new BlockItem(CPlusBlocks.END_STONE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item END_STONE_TILE_GATE = register("end_stone_tile_gate", new BlockItem(CPlusBlocks.END_STONE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -1618,7 +1620,7 @@ public class CPlusItems {
     // Bricks
     public static final Item SOUL_SANDSTONE_BRICKS = register("soul_sandstone_bricks", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SOUL_SANDSTONE_BRICK_SLAB = register("soul_sandstone_brick_slab", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-    public static final Item SOUL_SANDSTONE_BRICk_STAIRS = register("soul_sandstone_brick_stairs", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SOUL_SANDSTONE_BRICK_STAIRS = register("soul_sandstone_brick_stairs", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SOUL_SANDSTONE_BRICK_WALL = register("soul_sandstone_brick_wall", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item SOUL_SANDSTONE_BRICK_GATE = register("soul_sandstone_brick_gate", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
@@ -1653,11 +1655,11 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item SOUL_SANDSTONE_TILES = register("soul_sandstone_tiles", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SOUL_SANDSTONE_TILE_SLAB = register("soul_sandstone_tile_slab", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SOUL_SANDSTONE_TILE_STAIRS = register("soul_sandstone_tile_stairs", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SOUL_SANDSTONE_TILE_WALL = register("soul_sandstone_tile_wall", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SOUL_SANDSTONE_TILE_GATE = register("soul_sandstone_tile_gate", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -1696,16 +1698,17 @@ public class CPlusItems {
     public static final Item CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-    //smooth
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item SMOOTH_OBSIDIAN = register("smooth_obsidian", new BlockItem(CPlusBlocks.SMOOTH_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item SMOOTH_OBSIDIAN_SLAB = register("smooth_obsidian_slab", new BlockItem(CPlusBlocks.SMOOTH_OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item SMOOTH_OBSIDIAN_STAIRS = register("smooth_obsidian_stairs", new BlockItem(CPlusBlocks.SMOOTH_OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item SMOOTH_OBSIDIAN_WALL = register("smooth_obsidian_wall", new BlockItem(CPlusBlocks.SMOOTH_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item SMOOTH_OBSIDIAN_GATE = register("smooth_obsidian_gate", new BlockItem(CPlusBlocks.SMOOTH_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item SMOOTH_CRYING_OBSIDIAN = register("smooth_crying_obsidian", new BlockItem(CPlusBlocks.SMOOTH_CRYING_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item SMOOTH_CRYING_OBSIDIAN_SLAB = register("smooth_crying_obsidian_slab", new BlockItem(CPlusBlocks.SMOOTH_CRYING_OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item SMOOTH_CRYING_OBSIDIAN_STAIRS = register("smooth_crying_obsidian_stairs", new BlockItem(CPlusBlocks.SMOOTH_CRYING_OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item SMOOTH_CRYING_OBSIDIAN_WALL = register("smooth_crying_obsidian_wall", new BlockItem(CPlusBlocks.SMOOTH_CRYING_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item SMOOTH_CRYING_OBSIDIAN_GATE = register("smooth_crying_obsidian_gate", new BlockItem(CPlusBlocks.SMOOTH_CRYING_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy smooth
     //slab
@@ -1729,16 +1732,17 @@ public class CPlusItems {
     //wall
     //gate
 
-    //polished
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item POLISHED_OBSIDIAN = register("polished_obsidian", new BlockItem(CPlusBlocks.POLISHED_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item POLISHED_OBSIDIAN_SLAB = register("polished_obsidian_slab", new BlockItem(CPlusBlocks.POLISHED_OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item POLISHED_OBSIDIAN_STAIRS = register("polished_obsidian_stairs", new BlockItem(CPlusBlocks.POLISHED_OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item POLISHED_OBSIDIAN_WALL = register("polished_obsidian_wall", new BlockItem(CPlusBlocks.POLISHED_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item POLISHED_OBSIDIAN_GATE = register("polished_obsidian_gate", new BlockItem(CPlusBlocks.POLISHED_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item POLISHED_CRYING_OBSIDIAN = register("polished_crying_obsidian", new BlockItem(CPlusBlocks.POLISHED_CRYING_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item POLISHED_CRYING_OBSIDIAN_SLAB = register("polished_crying_obsidian_slab", new BlockItem(CPlusBlocks.POLISHED_CRYING_OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item POLISHED_CRYING_OBSIDIAN_STAIRS = register("polished_crying_obsidian_stairs", new BlockItem(CPlusBlocks.POLISHED_CRYING_OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item POLISHED_CRYING_OBSIDIAN_WALL = register("polished_crying_obsidian_wall", new BlockItem(CPlusBlocks.POLISHED_CRYING_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item POLISHED_CRYING_OBSIDIAN_GATE = register("polished_crying_obsidian_gate", new BlockItem(CPlusBlocks.POLISHED_CRYING_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy polished
     //slab
@@ -1762,16 +1766,17 @@ public class CPlusItems {
     //wall
     //gate
 
-    //bricks
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item OBSIDIAN_BRICKS = register("obsidian_bricks", new BlockItem(CPlusBlocks.OBSIDIAN_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_BRICK_SLAB = register("obsidian_brick_slab", new BlockItem(CPlusBlocks.OBSIDIAN_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_BRICK_STAIRS = register("obsidian_brick_stairs", new BlockItem(CPlusBlocks.OBSIDIAN_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_BRICK_WALL = register("obsidian_brick_wall", new BlockItem(CPlusBlocks.OBSIDIAN_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_BRICK_GATE = register("obsidian_brick_gate", new BlockItem(CPlusBlocks.OBSIDIAN_BRICK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item CRYING_OBSIDIAN_BRICKS = register("crying_obsidian_bricks", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_BRICK_SLAB = register("crying_obsidian_brick_slab", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_BRICK_STAIRS = register("crying_obsidian_brick_stairs", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_BRICK_WALL = register("crying_obsidian_brick_wall", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_BRICK_GATE = register("crying_obsidian_brick_gate", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_BRICK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy bricks
     //slab
@@ -1795,16 +1800,17 @@ public class CPlusItems {
     //wall
     //gate
 
-    //cut
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item CUT_OBSIDIAN = register("cut_obsidian", new BlockItem(CPlusBlocks.CUT_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_OBSIDIAN_SLAB = register("cut_obsidian_slab", new BlockItem(CPlusBlocks.CUT_OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_OBSIDIAN_STAIRS = register("cut_obsidian_stairs", new BlockItem(CPlusBlocks.CUT_OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_OBSIDIAN_WALL = register("cut_obsidian_wall", new BlockItem(CPlusBlocks.CUT_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_OBSIDIAN_GATE = register("cut_obsidian_gate", new BlockItem(CPlusBlocks.CUT_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item CUT_CRYING_OBSIDIAN = register("cut_crying_obsidian", new BlockItem(CPlusBlocks.CUT_CRYING_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_CRYING_OBSIDIAN_SLAB = register("cut_crying_obsidian_slab", new BlockItem(CPlusBlocks.CUT_CRYING_OBSIDIAN_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_CRYING_OBSIDIAN_STAIRS = register("cut_crying_obsidian_stairs", new BlockItem(CPlusBlocks.CUT_CRYING_OBSIDIAN_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_CRYING_OBSIDIAN_WALL = register("cut_crying_obsidian_wall", new BlockItem(CPlusBlocks.CUT_CRYING_OBSIDIAN_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CUT_CRYING_OBSIDIAN_GATE = register("cut_crying_obsidian_gate", new BlockItem(CPlusBlocks.CUT_CRYING_OBSIDIAN_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy cut
     //slab
@@ -1828,16 +1834,17 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item OBSIDIAN_TILES = register("obsidian_tiles", new BlockItem(CPlusBlocks.OBSIDIAN_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_TILE_SLAB = register("obsidian_tile_slab", new BlockItem(CPlusBlocks.OBSIDIAN_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_TILE_STAIRS = register("obsidian_tile_stairs", new BlockItem(CPlusBlocks.OBSIDIAN_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_TILE_WALL = register("obsidian_tile_wall", new BlockItem(CPlusBlocks.OBSIDIAN_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item OBSIDIAN_TILE_GATE = register("obsidian_tile_gate", new BlockItem(CPlusBlocks.OBSIDIAN_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item CRYING_OBSIDIAN_TILES = register("crying_obsidian_tiles", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_TILE_SLAB = register("crying_obsidian_tile_slab", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_TILE_STAIRS = register("crying_obsidian_tile_stairs", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_TILE_WALL = register("crying_obsidian_tile_wall", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item CRYING_OBSIDIAN_TILE_GATE = register("crying_obsidian_tile_gate", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     //mossy tiles
     //slab
@@ -1861,116 +1868,132 @@ public class CPlusItems {
     //wall
     //gate
 
-    //pillar
+    public static final Item OBSIDIAN_PILLAR = register("obsidian_pillar", new BlockItem(CPlusBlocks.OBSIDIAN_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     //mossy pillar
     //cracked pillar
     //corner pillar
     //mossy corner pillar
     //cracked corner pillar
-    //chiseled
+    public static final Item CHISELED_OBSIDIAN = register("chiseled_obsidian", new BlockItem(CPlusBlocks.CHISELED_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     //mossy chiseled
     //cracked chiseled
-    //carved
+    public static final Item CARVED_OBSIDIAN = register("carved_obsidian", new BlockItem(CPlusBlocks.CARVED_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     //mossy carved
     //cracked carved
 
-    //pillar
+    public static final Item CRYING_OBSIDIAN_PILLAR = register("crying_obsidian_pillar", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     //mossy pillar
     //cracked pillar
     //corner pillar
     //mossy corner pillar
     //cracked corner pillar
-    //chiseled
+    public static final Item CHISELED_CRYING_OBSIDIAN = register("chiseled_crying_obsidian", new BlockItem(CPlusBlocks.CHISELED_CRYING_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     //mossy chiseled
     //cracked chiseled
-    //carved
+    public static final Item CARVED_CRYING_OBSIDIAN = register("carved_crying_obsidian", new BlockItem(CPlusBlocks.CARVED_CRYING_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     //mossy carved
     //cracked carved
 
 //Calcite
     //block
+public static final Item CALCITE_SLAB = register("calcite_slab", new BlockItem(CPlusBlocks.CALCITE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_STAIRS = register("calcite_stairs", new BlockItem(CPlusBlocks.CALCITE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_WALL = register("calcite_wall", new BlockItem(CPlusBlocks.CALCITE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_GATE = register("calcite_gate", new BlockItem(CPlusBlocks.CALCITE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //smooth
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy smooth
+    // Smooth
+    public static final Item SMOOTH_CALCITE = register("smooth_calcite", new BlockItem(CPlusBlocks.SMOOTH_CALCITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_CALCITE_SLAB = register("smooth_calcite_slab", new BlockItem(CPlusBlocks.SMOOTH_CALCITE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_CALCITE_STAIRS = register("smooth_calcite_stairs", new BlockItem(CPlusBlocks.SMOOTH_CALCITE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_CALCITE_WALL = register("smooth_calcite_wall", new BlockItem(CPlusBlocks.SMOOTH_CALCITE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_CALCITE_GATE = register("smooth_calcite_gate", new BlockItem(CPlusBlocks.SMOOTH_CALCITE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked smooth
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //polished
+    // Polished
+    public static final Item POLISHED_CALCITE = register("polished_calcite", new BlockItem(CPlusBlocks.POLISHED_CALCITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_CALCITE_SLAB = register("polished_calcite_slab", new BlockItem(CPlusBlocks.POLISHED_CALCITE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_CALCITE_STAIRS = register("polished_calcite_stairs", new BlockItem(CPlusBlocks.POLISHED_CALCITE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_CALCITE_WALL = register("polished_calcite_wall", new BlockItem(CPlusBlocks.POLISHED_CALCITE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_CALCITE_GATE = register("polished_calcite_gate", new BlockItem(CPlusBlocks.POLISHED_CALCITE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy polished
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked polished
+    // Bricks
+    public static final Item CALCITE_BRICKS = register("calcite_bricks", new BlockItem(CPlusBlocks.CALCITE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_BRICK_SLAB = register("calcite_brick_slab", new BlockItem(CPlusBlocks.CALCITE_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_BRICk_STAIRS = register("calcite_brick_stairs", new BlockItem(CPlusBlocks.CALCITE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_BRICK_WALL = register("calcite_brick_wall", new BlockItem(CPlusBlocks.CALCITE_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_BRICK_GATE = register("calcite_brick_gate", new BlockItem(CPlusBlocks.CALCITE_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //bricks
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy bricks
+    // Cut
+    public static final Item CUT_CALCITE = register("cut_calcite", new BlockItem(CPlusBlocks.CUT_CALCITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_CALCITE_SLAB = register("cut_calcite_slab", new BlockItem(CPlusBlocks.CUT_CALCITE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_CALCITE_STAIRS = register("cut_calcite_stairs", new BlockItem(CPlusBlocks.CUT_CALCITE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_CALCITE_WALL = register("cut_calcite_wall", new BlockItem(CPlusBlocks.CUT_CALCITE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_CALCITE_GATE = register("cut_calcite_gate", new BlockItem(CPlusBlocks.CUT_CALCITE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked bricks
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //mossy cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //cracked cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item CALCITE_TILES = register("calcite_tiles", new BlockItem(CPlusBlocks.CALCITE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_TILE_SLAB = register("calcite_tile_slab", new BlockItem(CPlusBlocks.CALCITE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_TILE_STAIRS = register("calcite_tile_stairs", new BlockItem(CPlusBlocks.CALCITE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_TILE_WALL = register("calcite_tile_wall", new BlockItem(CPlusBlocks.CALCITE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CALCITE_TILE_GATE = register("calcite_tile_gate", new BlockItem(CPlusBlocks.CALCITE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -1984,103 +2007,118 @@ public class CPlusItems {
     //wall
     //gate
 
-    //pillar
-    //mossy pillar
-    //cracked pillar
+    public static final Item CHISELED_CALCITE = register("chiseled_calcite", new BlockItem(CPlusBlocks.CHISELED_CALCITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
+    public static final Item CALCITE_PILLAR = register("calcite_pillar", new BlockItem(CPlusBlocks.CALCITE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
     //corner pillar
-    //mossy corner pillar
-    //cracked corner pillar
-    //chiseled
-    //mossy chiseled
-    //cracked chiseled
-    //carved
-    //mossy carved
-    //cracked carved
+    //mossy
+    //cracked
+    public static final Item CARVED_CALCITE = register("carved_calcite", new BlockItem(CPlusBlocks.CARVED_CALCITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
 
 //Dripstone
-    //block
+public static final Item DRIPSTONE_SLAB = register("dripstone_slab", new BlockItem(CPlusBlocks.DRIPSTONE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_STAIRS = register("dripstone_stairs", new BlockItem(CPlusBlocks.DRIPSTONE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_WALL = register("dripstone_wall", new BlockItem(CPlusBlocks.DRIPSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_GATE = register("dripstone_gate", new BlockItem(CPlusBlocks.DRIPSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //smooth
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy smooth
+    // Smooth
+    public static final Item SMOOTH_DRIPSTONE = register("smooth_dripstone", new BlockItem(CPlusBlocks.SMOOTH_DRIPSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_DRIPSTONE_SLAB = register("smooth_dripstone_slab", new BlockItem(CPlusBlocks.SMOOTH_DRIPSTONE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_DRIPSTONE_STAIRS = register("smooth_dripstone_stairs", new BlockItem(CPlusBlocks.SMOOTH_DRIPSTONE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_DRIPSTONE_WALL = register("smooth_dripstone_wall", new BlockItem(CPlusBlocks.SMOOTH_DRIPSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_DRIPSTONE_GATE = register("smooth_dripstone_gate", new BlockItem(CPlusBlocks.SMOOTH_DRIPSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked smooth
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //polished
+    // Polished
+    public static final Item POLISHED_DRIPSTONE = register("polished_dripstone", new BlockItem(CPlusBlocks.POLISHED_DRIPSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_DRIPSTONE_SLAB = register("polished_dripstone_slab", new BlockItem(CPlusBlocks.POLISHED_DRIPSTONE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_DRIPSTONE_STAIRS = register("polished_dripstone_stairs", new BlockItem(CPlusBlocks.POLISHED_DRIPSTONE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_DRIPSTONE_WALL = register("polished_dripstone_wall", new BlockItem(CPlusBlocks.POLISHED_DRIPSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_DRIPSTONE_GATE = register("polished_dripstone_gate", new BlockItem(CPlusBlocks.POLISHED_DRIPSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy polished
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked polished
+    // Bricks
+    public static final Item DRIPSTONE_BRICKS = register("dripstone_bricks", new BlockItem(CPlusBlocks.DRIPSTONE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_BRICK_SLAB = register("dripstone_brick_slab", new BlockItem(CPlusBlocks.DRIPSTONE_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_BRICK_STAIRS = register("dripstone_brick_stairs", new BlockItem(CPlusBlocks.DRIPSTONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_BRICK_WALL = register("dripstone_brick_wall", new BlockItem(CPlusBlocks.DRIPSTONE_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_BRICK_GATE = register("dripstone_brick_gate", new BlockItem(CPlusBlocks.DRIPSTONE_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //bricks
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy bricks
+    // Cut
+    public static final Item CUT_DRIPSTONE = register("cut_dripstone", new BlockItem(CPlusBlocks.CUT_DRIPSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_DRIPSTONE_SLAB = register("cut_dripstone_slab", new BlockItem(CPlusBlocks.CUT_DRIPSTONE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_DRIPSTONE_STAIRS = register("cut_dripstone_stairs", new BlockItem(CPlusBlocks.CUT_DRIPSTONE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_DRIPSTONE_WALL = register("cut_dripstone_wall", new BlockItem(CPlusBlocks.CUT_DRIPSTONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_DRIPSTONE_GATE = register("cut_dripstone_gate", new BlockItem(CPlusBlocks.CUT_DRIPSTONE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked bricks
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //mossy cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //cracked cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item DRIPSTONE_TILES = register("dripstone_tiles", new BlockItem(CPlusBlocks.DRIPSTONE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_TILE_SLAB = register("dripstone_tile_slab", new BlockItem(CPlusBlocks.DRIPSTONE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_TILE_STAIRS = register("dripstone_tile_stairs", new BlockItem(CPlusBlocks.DRIPSTONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_TILE_WALL = register("dripstone_tile_wall", new BlockItem(CPlusBlocks.DRIPSTONE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DRIPSTONE_TILE_GATE = register("dripstone_tile_gate", new BlockItem(CPlusBlocks.DRIPSTONE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     //mossy tiles
     //slab
@@ -2094,93 +2132,228 @@ public class CPlusItems {
     //wall
     //gate
 
-    //pillar
-    //mossy pillar
-    //cracked pillar
+    public static final Item CHISELED_DRIPSTONE = register("chiseled_dripstone", new BlockItem(CPlusBlocks.CHISELED_DRIPSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
+    public static final Item DRIPSTONE_PILLAR = register("dripstone_pillar", new BlockItem(CPlusBlocks.DRIPSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
     //corner pillar
-    //mossy corner pillar
-    //cracked corner pillar
-    //chiseled
-    //mossy chiseled
-    //cracked chiseled
-    //carved
-    //mossy carved
-    //cracked carved
+    //mossy
+    //cracked
+    public static final Item CARVED_DRIPSTONE = register("carved_dripstone", new BlockItem(CPlusBlocks.CARVED_DRIPSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
 
 //Tuff
-    //block
+public static final Item TUFF_SLAB = register("tuff_slab", new BlockItem(CPlusBlocks.TUFF_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_STAIRS = register("tuff_stairs", new BlockItem(CPlusBlocks.TUFF_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_WALL = register("tuff_wall", new BlockItem(CPlusBlocks.TUFF_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_GATE = register("tuff_gate", new BlockItem(CPlusBlocks.TUFF_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //smooth
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy smooth
+    // Smooth
+    public static final Item SMOOTH_TUFF = register("smooth_tuff", new BlockItem(CPlusBlocks.SMOOTH_TUFF, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_TUFF_SLAB = register("smooth_tuff_slab", new BlockItem(CPlusBlocks.SMOOTH_TUFF_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_TUFF_STAIRS = register("smooth_tuff_stairs", new BlockItem(CPlusBlocks.SMOOTH_TUFF_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_TUFF_WALL = register("smooth_tuff_wall", new BlockItem(CPlusBlocks.SMOOTH_TUFF_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_TUFF_GATE = register("smooth_tuff_gate", new BlockItem(CPlusBlocks.SMOOTH_TUFF_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked smooth
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //polished
+    // Polished
+    public static final Item POLISHED_TUFF = register("polished_tuff", new BlockItem(CPlusBlocks.POLISHED_TUFF, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_TUFF_SLAB = register("polished_tuff_slab", new BlockItem(CPlusBlocks.POLISHED_TUFF_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_TUFF_STAIRS = register("polished_tuff_stairs", new BlockItem(CPlusBlocks.POLISHED_TUFF_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_TUFF_WALL = register("polished_tuff_wall", new BlockItem(CPlusBlocks.POLISHED_TUFF_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item POLISHED_TUFF_GATE = register("polished_tuff_gate", new BlockItem(CPlusBlocks.POLISHED_TUFF_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy polished
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked polished
+    // Bricks
+    public static final Item TUFF_BRICKS = register("tuff_bricks", new BlockItem(CPlusBlocks.TUFF_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_BRICK_SLAB = register("tuff_brick_slab", new BlockItem(CPlusBlocks.TUFF_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_BRICk_STAIRS = register("tuff_brick_stairs", new BlockItem(CPlusBlocks.TUFF_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_BRICK_WALL = register("tuff_brick_wall", new BlockItem(CPlusBlocks.TUFF_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_BRICK_GATE = register("tuff_brick_gate", new BlockItem(CPlusBlocks.TUFF_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //bricks
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy bricks
+    // Cut
+    public static final Item CUT_TUFF = register("cut_tuff", new BlockItem(CPlusBlocks.CUT_TUFF, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_TUFF_SLAB = register("cut_tuff_slab", new BlockItem(CPlusBlocks.CUT_TUFF_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_TUFF_STAIRS = register("cut_tuff_stairs", new BlockItem(CPlusBlocks.CUT_TUFF_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_TUFF_WALL = register("cut_tuff_wall", new BlockItem(CPlusBlocks.CUT_TUFF_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_TUFF_GATE = register("cut_tuff_gate", new BlockItem(CPlusBlocks.CUT_TUFF_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked bricks
+    //cracked
     //slab
     //stairs
     //wall
     //gate
 
-    //cut
+    public static final Item TUFF_TILES = register("tuff_tiles", new BlockItem(CPlusBlocks.TUFF_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_TILE_SLAB = register("tuff_tile_slab", new BlockItem(CPlusBlocks.TUFF_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_TILE_STAIRS = register("tuff_tile_stairs", new BlockItem(CPlusBlocks.TUFF_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_TILE_WALL = register("tuff_tile_wall", new BlockItem(CPlusBlocks.TUFF_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item TUFF_TILE_GATE = register("tuff_tile_gate", new BlockItem(CPlusBlocks.TUFF_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy tiles
     //slab
     //stairs
     //wall
     //gate
 
-    //mossy cut
+    //cracked tiles
     //slab
     //stairs
     //wall
     //gate
 
-    //cracked cut
+    public static final Item CHISELED_TUFF = register("chiseled_tuff", new BlockItem(CPlusBlocks.CHISELED_TUFF, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
+    public static final Item TUFF_PILLAR = register("tuff_pillar", new BlockItem(CPlusBlocks.TUFF_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
+    //corner pillar
+    //mossy
+    //cracked
+    public static final Item CARVED_TUFF = register("carved_tuff", new BlockItem(CPlusBlocks.CARVED_TUFF, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
+
+
+
+
+
+    public static final Item DEEPSLATE_SLAB = register("deepslate_slab", new BlockItem(CPlusBlocks.DEEPSLATE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DEEPSLATE_STAIRS = register("deepslate_stairs", new BlockItem(CPlusBlocks.DEEPSLATE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DEEPSLATE_WALL = register("deepslate_wall", new BlockItem(CPlusBlocks.DEEPSLATE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item DEEPSLATE_GATE = register("deepslate_gate", new BlockItem(CPlusBlocks.DEEPSLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    // Smooth
+    public static final Item SMOOTH_DEEPSLATE = register("smooth_deepslate", new BlockItem(CPlusBlocks.SMOOTH_DEEPSLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_DEEPSLATE_SLAB = register("smooth_deepslate_slab", new BlockItem(CPlusBlocks.SMOOTH_DEEPSLATE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_DEEPSLATE_STAIRS = register("smooth_deepslate_stairs", new BlockItem(CPlusBlocks.SMOOTH_DEEPSLATE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_DEEPSLATE_WALL = register("smooth_deepslate_wall", new BlockItem(CPlusBlocks.SMOOTH_DEEPSLATE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item SMOOTH_DEEPSLATE_GATE = register("smooth_deepslate_gate", new BlockItem(CPlusBlocks.SMOOTH_DEEPSLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    // Polished
+        public static final Item POLISHED_DEEPSLATE_GATE = register("polished_deepslate_gate", new BlockItem(CPlusBlocks.POLISHED_DEEPSLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    // Bricks
+    public static final Item DEEPSLATE_BRICK_GATE = register("deepslate_brick_gate", new BlockItem(CPlusBlocks.DEEPSLATE_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    // Cut
+    public static final Item CUT_DEEPSLATE = register("cut_deepslate", new BlockItem(CPlusBlocks.CUT_DEEPSLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_DEEPSLATE_SLAB = register("cut_deepslate_slab", new BlockItem(CPlusBlocks.CUT_DEEPSLATE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_DEEPSLATE_STAIRS = register("cut_deepslate_stairs", new BlockItem(CPlusBlocks.CUT_DEEPSLATE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_DEEPSLATE_WALL = register("cut_deepslate_wall", new BlockItem(CPlusBlocks.CUT_DEEPSLATE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CUT_DEEPSLATE_GATE = register("cut_deepslate_gate", new BlockItem(CPlusBlocks.CUT_DEEPSLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+    //mossy
+    //slab
+    //stairs
+    //wall
+    //gate
+
+    //cracked
     //slab
     //stairs
     //wall
@@ -2204,109 +2377,17 @@ public class CPlusItems {
     //wall
     //gate
 
-    //pillar
-    //mossy pillar
-    //cracked pillar
+    //mossy
+    //cracked
+    public static final Item DEEPSLATE_PILLAR = register("deepslate_pillar", new BlockItem(CPlusBlocks.DEEPSLATE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
     //corner pillar
-    //mossy corner pillar
-    //cracked corner pillar
-    //chiseled
-    //mossy chiseled
-    //cracked chiseled
-    //carved
-    //mossy carved
-    //cracked carved
-
-//Deepslate
-    //gate
-
-    //smooth
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //mossy smooth
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //cracked smooth
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //polished gate
-
-    //mossy polished
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //cracked polished
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //brick gate
-
-    //mossy bricks
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //cracked brick slab
-    //cracked brick stairs
-    //cracked brick wall
-    //cracked brick gate
-
-    //cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //mossy cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //cracked cut
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //tile gate
-
-    //mossy tiles
-    //slab
-    //stairs
-    //wall
-    //gate
-
-    //cracked tiles slab
-    //cracked tiles stairs
-    //cracked tiles wall
-    //cracked tiles gate
-
-    //pillar
-    //mossy pillar
-    //cracked pillar
-    //corner pillar
-    //mossy corner pillar
-    //cracked corner pillar
-    //mossy chiseled
-    //cracked chiseled
-    //carved
-    //mossy carved
-    //cracked carved
+    //mossy
+    //cracked
+    public static final Item CARVED_DEEPSLATE = register("carved_deepslate", new BlockItem(CPlusBlocks.CARVED_DEEPSLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    //mossy
+    //cracked
 
     //Note about copper and other metals: Raw metal blocks will be used as the 'base' and will be converted into a new version of the mineral block for C+ purposes.
 //The Vanilla metal blocks will continue to work the same (aside from copper, which will have a replacement) and the Raw Metal block will be used as the starting block for the C+ variants.
@@ -3249,11 +3330,98 @@ public class CPlusItems {
     public static final Item BROWN_TERRACOTTA_GATE = register("brown_terracotta_gate", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item TERRACOTTA_GATE = register("terracotta_gate", new BlockItem(CPlusBlocks.TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-    //smooth
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item SMOOTH_RED_TERRACOTTA = register("smooth_red_terracotta", new BlockItem(CPlusBlocks.SMOOTH_RED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_TERRACOTTA = register("smooth_orange_terracotta", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_TERRACOTTA = register("smooth_yellow_terracotta", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_TERRACOTTA = register("smooth_lime_terracotta", new BlockItem(CPlusBlocks.SMOOTH_LIME_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_TERRACOTTA = register("smooth_green_terracotta", new BlockItem(CPlusBlocks.SMOOTH_GREEN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_TERRACOTTA = register("smooth_blue_terracotta", new BlockItem(CPlusBlocks.SMOOTH_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_TERRACOTTA = register("smooth_cyan_terracotta", new BlockItem(CPlusBlocks.SMOOTH_CYAN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_TERRACOTTA = register("smooth_light_blue_terracotta", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_TERRACOTTA = register("smooth_purple_terracotta", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_TERRACOTTA = register("smooth_magenta_terracotta", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_TERRACOTTA = register("smooth_pink_terracotta", new BlockItem(CPlusBlocks.SMOOTH_PINK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_TERRACOTTA = register("smooth_white_terracotta", new BlockItem(CPlusBlocks.SMOOTH_WHITE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_TERRACOTTA = register("smooth_light_gray_terracotta", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_TERRACOTTA = register("smooth_gray_terracotta", new BlockItem(CPlusBlocks.SMOOTH_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_TERRACOTTA = register("smooth_black_terracotta", new BlockItem(CPlusBlocks.SMOOTH_BLACK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_TERRACOTTA = register("smooth_brown_terracotta", new BlockItem(CPlusBlocks.SMOOTH_BROWN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_TERRACOTTA = register("smooth_terracotta", new BlockItem(CPlusBlocks.SMOOTH_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item SMOOTH_RED_TERRACOTTA_SLAB = register("smooth_red_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_RED_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_TERRACOTTA_SLAB = register("smooth_orange_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_TERRACOTTA_SLAB = register("smooth_yellow_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_TERRACOTTA_SLAB = register("smooth_lime_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_LIME_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_TERRACOTTA_SLAB = register("smooth_green_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_GREEN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_TERRACOTTA_SLAB = register("smooth_blue_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_BLUE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_TERRACOTTA_SLAB = register("smooth_cyan_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_CYAN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_TERRACOTTA_SLAB = register("smooth_light_blue_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_TERRACOTTA_SLAB = register("smooth_purple_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_TERRACOTTA_SLAB = register("smooth_magenta_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_TERRACOTTA_SLAB = register("smooth_pink_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_PINK_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_TERRACOTTA_SLAB = register("smooth_white_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_WHITE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_TERRACOTTA_SLAB = register("smooth_light_gray_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_TERRACOTTA_SLAB = register("smooth_gray_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_GRAY_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_TERRACOTTA_SLAB = register("smooth_black_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_BLACK_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_TERRACOTTA_SLAB = register("smooth_brown_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_BROWN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_TERRACOTTA_SLAB = register("smooth_terracotta_slab", new BlockItem(CPlusBlocks.SMOOTH_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Stairs
+    public static final Item SMOOTH_RED_TERRACOTTA_STAIRS = register("smooth_red_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_RED_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_TERRACOTTA_STAIRS = register("smooth_orange_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_TERRACOTTA_STAIRS = register("smooth_yellow_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_TERRACOTTA_STAIRS = register("smooth_lime_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_LIME_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_TERRACOTTA_STAIRS = register("smooth_green_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_GREEN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_TERRACOTTA_STAIRS = register("smooth_blue_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_BLUE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_TERRACOTTA_STAIRS = register("smooth_cyan_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_CYAN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_TERRACOTTA_STAIRS = register("smooth_light_blue_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_TERRACOTTA_STAIRS = register("smooth_purple_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_TERRACOTTA_STAIRS = register("smooth_magenta_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_TERRACOTTA_STAIRS = register("smooth_pink_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_PINK_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_TERRACOTTA_STAIRS = register("smooth_white_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_WHITE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_TERRACOTTA_STAIRS = register("smooth_light_gray_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_TERRACOTTA_STAIRS = register("smooth_gray_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_GRAY_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_TERRACOTTA_STAIRS = register("smooth_black_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_BLACK_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_TERRACOTTA_STAIRS = register("smooth_brown_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_BROWN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_TERRACOTTA_STAIRS = register("smooth_terracotta_stairs", new BlockItem(CPlusBlocks.SMOOTH_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Wall
+    public static final Item SMOOTH_RED_TERRACOTTA_WALL = register("smooth_red_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_RED_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_TERRACOTTA_WALL = register("smooth_orange_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_TERRACOTTA_WALL = register("smooth_yellow_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_TERRACOTTA_WALL = register("smooth_lime_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_LIME_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_TERRACOTTA_WALL = register("smooth_green_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_GREEN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_TERRACOTTA_WALL = register("smooth_blue_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_BLUE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_TERRACOTTA_WALL = register("smooth_cyan_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_CYAN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_TERRACOTTA_WALL = register("smooth_light_blue_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_TERRACOTTA_WALL = register("smooth_purple_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_TERRACOTTA_WALL = register("smooth_magenta_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_TERRACOTTA_WALL = register("smooth_pink_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_PINK_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_TERRACOTTA_WALL = register("smooth_white_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_WHITE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_TERRACOTTA_WALL = register("smooth_light_gray_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_TERRACOTTA_WALL = register("smooth_gray_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_GRAY_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_TERRACOTTA_WALL = register("smooth_black_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_BLACK_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_TERRACOTTA_WALL = register("smooth_brown_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_BROWN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_TERRACOTTA_WALL = register("smooth_terracotta_wall", new BlockItem(CPlusBlocks.SMOOTH_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Gate
+    public static final Item SMOOTH_RED_TERRACOTTA_GATE = register("smooth_red_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_RED_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_TERRACOTTA_GATE = register("smooth_orange_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_TERRACOTTA_GATE = register("smooth_yellow_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_TERRACOTTA_GATE = register("smooth_lime_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_LIME_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_TERRACOTTA_GATE = register("smooth_green_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_GREEN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_TERRACOTTA_GATE = register("smooth_blue_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_BLUE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_TERRACOTTA_GATE = register("smooth_cyan_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_CYAN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_TERRACOTTA_GATE = register("smooth_light_blue_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_TERRACOTTA_GATE = register("smooth_purple_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_TERRACOTTA_GATE = register("smooth_magenta_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_TERRACOTTA_GATE = register("smooth_pink_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_PINK_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_TERRACOTTA_GATE = register("smooth_white_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_WHITE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_TERRACOTTA_GATE = register("smooth_light_gray_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_TERRACOTTA_GATE = register("smooth_gray_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_GRAY_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_TERRACOTTA_GATE = register("smooth_black_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_BLACK_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_TERRACOTTA_GATE = register("smooth_brown_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_BROWN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_TERRACOTTA_GATE = register("smooth_terracotta_gate", new BlockItem(CPlusBlocks.SMOOTH_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy smooth
     //slab
@@ -3267,11 +3435,98 @@ public class CPlusItems {
     //wall
     //gate
 
-    //polished
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item POLISHED_RED_TERRACOTTA = register("polished_red_terracotta", new BlockItem(CPlusBlocks.POLISHED_RED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_TERRACOTTA = register("polished_orange_terracotta", new BlockItem(CPlusBlocks.POLISHED_ORANGE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_TERRACOTTA = register("polished_yellow_terracotta", new BlockItem(CPlusBlocks.POLISHED_YELLOW_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_TERRACOTTA = register("polished_lime_terracotta", new BlockItem(CPlusBlocks.POLISHED_LIME_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_TERRACOTTA = register("polished_green_terracotta", new BlockItem(CPlusBlocks.POLISHED_GREEN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_TERRACOTTA = register("polished_blue_terracotta", new BlockItem(CPlusBlocks.POLISHED_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_TERRACOTTA = register("polished_cyan_terracotta", new BlockItem(CPlusBlocks.POLISHED_CYAN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_TERRACOTTA = register("polished_light_blue_terracotta", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_TERRACOTTA = register("polished_purple_terracotta", new BlockItem(CPlusBlocks.POLISHED_PURPLE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_TERRACOTTA = register("polished_magenta_terracotta", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_TERRACOTTA = register("polished_pink_terracotta", new BlockItem(CPlusBlocks.POLISHED_PINK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_TERRACOTTA = register("polished_white_terracotta", new BlockItem(CPlusBlocks.POLISHED_WHITE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_TERRACOTTA = register("polished_light_gray_terracotta", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_TERRACOTTA = register("polished_gray_terracotta", new BlockItem(CPlusBlocks.POLISHED_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_TERRACOTTA = register("polished_black_terracotta", new BlockItem(CPlusBlocks.POLISHED_BLACK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_TERRACOTTA = register("polished_brown_terracotta", new BlockItem(CPlusBlocks.POLISHED_BROWN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_TERRACOTTA = register("polished_terracotta", new BlockItem(CPlusBlocks.POLISHED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item POLISHED_RED_TERRACOTTA_SLAB = register("polished_red_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_RED_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_TERRACOTTA_SLAB = register("polished_orange_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_ORANGE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_TERRACOTTA_SLAB = register("polished_yellow_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_YELLOW_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_TERRACOTTA_SLAB = register("polished_lime_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_LIME_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_TERRACOTTA_SLAB = register("polished_green_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_GREEN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_TERRACOTTA_SLAB = register("polished_blue_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_BLUE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_TERRACOTTA_SLAB = register("polished_cyan_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_CYAN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_TERRACOTTA_SLAB = register("polished_light_blue_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_TERRACOTTA_SLAB = register("polished_purple_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_PURPLE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_TERRACOTTA_SLAB = register("polished_magenta_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_TERRACOTTA_SLAB = register("polished_pink_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_PINK_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_TERRACOTTA_SLAB = register("polished_white_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_WHITE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_TERRACOTTA_SLAB = register("polished_light_gray_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_TERRACOTTA_SLAB = register("polished_gray_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_GRAY_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_TERRACOTTA_SLAB = register("polished_black_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_BLACK_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_TERRACOTTA_SLAB = register("polished_brown_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_BROWN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_TERRACOTTA_SLAB = register("polished_terracotta_slab", new BlockItem(CPlusBlocks.POLISHED_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Stairs
+    public static final Item POLISHED_RED_TERRACOTTA_STAIRS = register("polished_red_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_RED_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_TERRACOTTA_STAIRS = register("polished_orange_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_ORANGE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_TERRACOTTA_STAIRS = register("polished_yellow_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_YELLOW_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_TERRACOTTA_STAIRS = register("polished_lime_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_LIME_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_TERRACOTTA_STAIRS = register("polished_green_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_GREEN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_TERRACOTTA_STAIRS = register("polished_blue_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_BLUE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_TERRACOTTA_STAIRS = register("polished_cyan_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_CYAN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_TERRACOTTA_STAIRS = register("polished_light_blue_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_TERRACOTTA_STAIRS = register("polished_purple_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_PURPLE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_TERRACOTTA_STAIRS = register("polished_magenta_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_TERRACOTTA_STAIRS = register("polished_pink_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_PINK_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_TERRACOTTA_STAIRS = register("polished_white_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_WHITE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_TERRACOTTA_STAIRS = register("polished_light_gray_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_TERRACOTTA_STAIRS = register("polished_gray_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_GRAY_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_TERRACOTTA_STAIRS = register("polished_black_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_BLACK_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_TERRACOTTA_STAIRS = register("polished_brown_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_BROWN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_TERRACOTTA_STAIRS = register("polished_terracotta_stairs", new BlockItem(CPlusBlocks.POLISHED_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Wall
+    public static final Item POLISHED_RED_TERRACOTTA_WALL = register("polished_red_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_RED_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_TERRACOTTA_WALL = register("polished_orange_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_ORANGE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_TERRACOTTA_WALL = register("polished_yellow_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_YELLOW_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_TERRACOTTA_WALL = register("polished_lime_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_LIME_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_TERRACOTTA_WALL = register("polished_green_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_GREEN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_TERRACOTTA_WALL = register("polished_blue_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_BLUE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_TERRACOTTA_WALL = register("polished_cyan_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_CYAN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_TERRACOTTA_WALL = register("polished_light_blue_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_TERRACOTTA_WALL = register("polished_purple_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_PURPLE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_TERRACOTTA_WALL = register("polished_magenta_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_TERRACOTTA_WALL = register("polished_pink_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_PINK_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_TERRACOTTA_WALL = register("polished_white_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_WHITE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_TERRACOTTA_WALL = register("polished_light_gray_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_TERRACOTTA_WALL = register("polished_gray_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_GRAY_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_TERRACOTTA_WALL = register("polished_black_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_BLACK_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_TERRACOTTA_WALL = register("polished_brown_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_BROWN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_TERRACOTTA_WALL = register("polished_terracotta_wall", new BlockItem(CPlusBlocks.POLISHED_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Gate
+    public static final Item POLISHED_RED_TERRACOTTA_GATE = register("polished_red_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_RED_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_TERRACOTTA_GATE = register("polished_orange_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_ORANGE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_TERRACOTTA_GATE = register("polished_yellow_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_YELLOW_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_TERRACOTTA_GATE = register("polished_lime_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_LIME_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_TERRACOTTA_GATE = register("polished_green_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_GREEN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_TERRACOTTA_GATE = register("polished_blue_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_BLUE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_TERRACOTTA_GATE = register("polished_cyan_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_CYAN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_TERRACOTTA_GATE = register("polished_light_blue_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_TERRACOTTA_GATE = register("polished_purple_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_PURPLE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_TERRACOTTA_GATE = register("polished_magenta_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_TERRACOTTA_GATE = register("polished_pink_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_PINK_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_TERRACOTTA_GATE = register("polished_white_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_WHITE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_TERRACOTTA_GATE = register("polished_light_gray_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_TERRACOTTA_GATE = register("polished_gray_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_GRAY_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_TERRACOTTA_GATE = register("polished_black_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_BLACK_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_TERRACOTTA_GATE = register("polished_brown_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_BROWN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_TERRACOTTA_GATE = register("polished_terracotta_gate", new BlockItem(CPlusBlocks.POLISHED_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy polished
     //slab
@@ -3285,11 +3540,98 @@ public class CPlusItems {
     //wall
     //gate
 
-    //bricks
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item RED_TERRACOTTA_BRICKS = register("red_terracotta_bricks", new BlockItem(CPlusBlocks.RED_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_BRICKS = register("orange_terracotta_bricks", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_BRICKS = register("yellow_terracotta_bricks", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_BRICKS = register("lime_terracotta_bricks", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_BRICKS = register("green_terracotta_bricks", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_BRICKS = register("blue_terracotta_bricks", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_BRICKS = register("cyan_terracotta_bricks", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_BRICKS = register("light_blue_terracotta_bricks", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_BRICKS = register("purple_terracotta_bricks", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_BRICKS = register("magenta_terracotta_bricks", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_BRICKS = register("pink_terracotta_bricks", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_BRICKS = register("white_terracotta_bricks", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_BRICKS = register("light_gray_terracotta_bricks", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_BRICKS = register("gray_terracotta_bricks", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_BRICKS = register("black_terracotta_bricks", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_BRICKS = register("brown_terracotta_bricks", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_BRICKS = register("terracotta_bricks", new BlockItem(CPlusBlocks.TERRACOTTA_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item RED_TERRACOTTA_BRICK_SLAB = register("red_terracotta_brick_slab", new BlockItem(CPlusBlocks.RED_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_BRICK_SLAB = register("orange_terracotta_brick_slab", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_BRICK_SLAB = register("yellow_terracotta_brick_slab", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_BRICK_SLAB = register("lime_terracotta_brick_slab", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_BRICK_SLAB = register("green_terracotta_brick_slab", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_BRICK_SLAB = register("blue_terracotta_brick_slab", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_BRICK_SLAB = register("cyan_terracotta_brick_slab", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_BRICK_SLAB = register("light_blue_terracotta_brick_slab", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_BRICK_SLAB = register("purple_terracotta_brick_slab", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_BRICK_SLAB = register("magenta_terracotta_brick_slab", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_BRICK_SLAB = register("pink_terracotta_brick_slab", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_BRICK_SLAB = register("white_terracotta_brick_slab", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_BRICK_SLAB = register("light_gray_terracotta_brick_slab", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_BRICK_SLAB = register("gray_terracotta_brick_slab", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_BRICK_SLAB = register("black_terracotta_brick_slab", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_BRICK_SLAB = register("brown_terracotta_brick_slab", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_BRICK_SLAB = register("terracotta_brick_slab", new BlockItem(CPlusBlocks.TERRACOTTA_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_brick Stairs
+    public static final Item RED_TERRACOTTA_BRICK_STAIRS = register("red_terracotta_brick_stairs", new BlockItem(CPlusBlocks.RED_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_BRICK_STAIRS = register("orange_terracotta_brick_stairs", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_BRICK_STAIRS = register("yellow_terracotta_brick_stairs", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_BRICK_STAIRS = register("lime_terracotta_brick_stairs", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_BRICK_STAIRS = register("green_terracotta_brick_stairs", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_BRICK_STAIRS = register("blue_terracotta_brick_stairs", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_BRICK_STAIRS = register("cyan_terracotta_brick_stairs", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_BRICK_STAIRS = register("light_blue_terracotta_brick_stairs", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_BRICK_STAIRS = register("purple_terracotta_brick_stairs", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_BRICK_STAIRS = register("magenta_terracotta_brick_stairs", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_BRICK_STAIRS = register("pink_terracotta_brick_stairs", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_BRICK_STAIRS = register("white_terracotta_brick_stairs", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_BRICK_STAIRS = register("light_gray_terracotta_brick_stairs", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_BRICK_STAIRS = register("gray_terracotta_brick_stairs", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_BRICK_STAIRS = register("black_terracotta_brick_stairs", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_BRICK_STAIRS = register("brown_terracotta_brick_stairs", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_BRICK_STAIRS = register("terracotta_brick_stairs", new BlockItem(CPlusBlocks.TERRACOTTA_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_brick Wall
+    public static final Item RED_TERRACOTTA_BRICK_WALL = register("red_terracotta_brick_wall", new BlockItem(CPlusBlocks.RED_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_BRICK_WALL = register("orange_terracotta_brick_wall", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_BRICK_WALL = register("yellow_terracotta_brick_wall", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_BRICK_WALL = register("lime_terracotta_brick_wall", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_BRICK_WALL = register("green_terracotta_brick_wall", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_BRICK_WALL = register("blue_terracotta_brick_wall", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_BRICK_WALL = register("cyan_terracotta_brick_wall", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_BRICK_WALL = register("light_blue_terracotta_brick_wall", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_BRICK_WALL = register("purple_terracotta_brick_wall", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_BRICK_WALL = register("magenta_terracotta_brick_wall", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_BRICK_WALL = register("pink_terracotta_brick_wall", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_BRICK_WALL = register("white_terracotta_brick_wall", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_BRICK_WALL = register("light_gray_terracotta_brick_wall", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_BRICK_WALL = register("gray_terracotta_brick_wall", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_BRICK_WALL = register("black_terracotta_brick_wall", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_BRICK_WALL = register("brown_terracotta_brick_wall", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_BRICK_WALL = register("terracotta_brick_wall", new BlockItem(CPlusBlocks.TERRACOTTA_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_brick Gate
+    public static final Item RED_TERRACOTTA_BRICK_GATE = register("red_terracotta_brick_gate", new BlockItem(CPlusBlocks.RED_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_BRICK_GATE = register("orange_terracotta_brick_gate", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_BRICK_GATE = register("yellow_terracotta_brick_gate", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_BRICK_GATE = register("lime_terracotta_brick_gate", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_BRICK_GATE = register("green_terracotta_brick_gate", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_BRICK_GATE = register("blue_terracotta_brick_gate", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_BRICK_GATE = register("cyan_terracotta_brick_gate", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_BRICK_GATE = register("light_blue_terracotta_brick_gate", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_BRICK_GATE = register("purple_terracotta_brick_gate", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_BRICK_GATE = register("magenta_terracotta_brick_gate", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_BRICK_GATE = register("pink_terracotta_brick_gate", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_BRICK_GATE = register("white_terracotta_brick_gate", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_BRICK_GATE = register("light_gray_terracotta_brick_gate", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_BRICK_GATE = register("gray_terracotta_brick_gate", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_BRICK_GATE = register("black_terracotta_brick_gate", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_BRICK_GATE = register("brown_terracotta_brick_gate", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_BRICK_GATE = register("terracotta_brick_gate", new BlockItem(CPlusBlocks.TERRACOTTA_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy bricks
     //slab
@@ -3303,11 +3645,98 @@ public class CPlusItems {
     //wall
     //gate
 
-    //cut
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item CUT_RED_TERRACOTTA = register("cut_red_terracotta", new BlockItem(CPlusBlocks.CUT_RED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_TERRACOTTA = register("cut_orange_terracotta", new BlockItem(CPlusBlocks.CUT_ORANGE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_TERRACOTTA = register("cut_yellow_terracotta", new BlockItem(CPlusBlocks.CUT_YELLOW_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_TERRACOTTA = register("cut_lime_terracotta", new BlockItem(CPlusBlocks.CUT_LIME_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_TERRACOTTA = register("cut_green_terracotta", new BlockItem(CPlusBlocks.CUT_GREEN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_TERRACOTTA = register("cut_blue_terracotta", new BlockItem(CPlusBlocks.CUT_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_TERRACOTTA = register("cut_cyan_terracotta", new BlockItem(CPlusBlocks.CUT_CYAN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_TERRACOTTA = register("cut_light_blue_terracotta", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_TERRACOTTA = register("cut_purple_terracotta", new BlockItem(CPlusBlocks.CUT_PURPLE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_TERRACOTTA = register("cut_magenta_terracotta", new BlockItem(CPlusBlocks.CUT_MAGENTA_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_TERRACOTTA = register("cut_pink_terracotta", new BlockItem(CPlusBlocks.CUT_PINK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_TERRACOTTA = register("cut_white_terracotta", new BlockItem(CPlusBlocks.CUT_WHITE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_TERRACOTTA = register("cut_light_gray_terracotta", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_TERRACOTTA = register("cut_gray_terracotta", new BlockItem(CPlusBlocks.CUT_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_TERRACOTTA = register("cut_black_terracotta", new BlockItem(CPlusBlocks.CUT_BLACK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_TERRACOTTA = register("cut_brown_terracotta", new BlockItem(CPlusBlocks.CUT_BROWN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_TERRACOTTA = register("cut_terracotta", new BlockItem(CPlusBlocks.CUT_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item CUT_RED_TERRACOTTA_SLAB = register("cut_red_terracotta_slab", new BlockItem(CPlusBlocks.CUT_RED_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_TERRACOTTA_SLAB = register("cut_orange_terracotta_slab", new BlockItem(CPlusBlocks.CUT_ORANGE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_TERRACOTTA_SLAB = register("cut_yellow_terracotta_slab", new BlockItem(CPlusBlocks.CUT_YELLOW_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_TERRACOTTA_SLAB = register("cut_lime_terracotta_slab", new BlockItem(CPlusBlocks.CUT_LIME_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_TERRACOTTA_SLAB = register("cut_green_terracotta_slab", new BlockItem(CPlusBlocks.CUT_GREEN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_TERRACOTTA_SLAB = register("cut_blue_terracotta_slab", new BlockItem(CPlusBlocks.CUT_BLUE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_TERRACOTTA_SLAB = register("cut_cyan_terracotta_slab", new BlockItem(CPlusBlocks.CUT_CYAN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_TERRACOTTA_SLAB = register("cut_light_blue_terracotta_slab", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_TERRACOTTA_SLAB = register("cut_purple_terracotta_slab", new BlockItem(CPlusBlocks.CUT_PURPLE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_TERRACOTTA_SLAB = register("cut_magenta_terracotta_slab", new BlockItem(CPlusBlocks.CUT_MAGENTA_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_TERRACOTTA_SLAB = register("cut_pink_terracotta_slab", new BlockItem(CPlusBlocks.CUT_PINK_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_TERRACOTTA_SLAB = register("cut_white_terracotta_slab", new BlockItem(CPlusBlocks.CUT_WHITE_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_TERRACOTTA_SLAB = register("cut_light_gray_terracotta_slab", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_TERRACOTTA_SLAB = register("cut_gray_terracotta_slab", new BlockItem(CPlusBlocks.CUT_GRAY_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_TERRACOTTA_SLAB = register("cut_black_terracotta_slab", new BlockItem(CPlusBlocks.CUT_BLACK_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_TERRACOTTA_SLAB = register("cut_brown_terracotta_slab", new BlockItem(CPlusBlocks.CUT_BROWN_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_TERRACOTTA_SLAB = register("cut_terracotta_slab", new BlockItem(CPlusBlocks.CUT_TERRACOTTA_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Stairs
+    public static final Item CUT_RED_TERRACOTTA_STAIRS = register("cut_red_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_RED_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_TERRACOTTA_STAIRS = register("cut_orange_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_ORANGE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_TERRACOTTA_STAIRS = register("cut_yellow_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_YELLOW_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_TERRACOTTA_STAIRS = register("cut_lime_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_LIME_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_TERRACOTTA_STAIRS = register("cut_green_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_GREEN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_TERRACOTTA_STAIRS = register("cut_blue_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_BLUE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_TERRACOTTA_STAIRS = register("cut_cyan_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_CYAN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_TERRACOTTA_STAIRS = register("cut_light_blue_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_TERRACOTTA_STAIRS = register("cut_purple_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_PURPLE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_TERRACOTTA_STAIRS = register("cut_magenta_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_MAGENTA_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_TERRACOTTA_STAIRS = register("cut_pink_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_PINK_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_TERRACOTTA_STAIRS = register("cut_white_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_WHITE_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_TERRACOTTA_STAIRS = register("cut_light_gray_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_TERRACOTTA_STAIRS = register("cut_gray_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_GRAY_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_TERRACOTTA_STAIRS = register("cut_black_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_BLACK_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_TERRACOTTA_STAIRS = register("cut_brown_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_BROWN_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_TERRACOTTA_STAIRS = register("cut_terracotta_stairs", new BlockItem(CPlusBlocks.CUT_TERRACOTTA_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Wall
+    public static final Item CUT_RED_TERRACOTTA_WALL = register("cut_red_terracotta_wall", new BlockItem(CPlusBlocks.CUT_RED_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_TERRACOTTA_WALL = register("cut_orange_terracotta_wall", new BlockItem(CPlusBlocks.CUT_ORANGE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_TERRACOTTA_WALL = register("cut_yellow_terracotta_wall", new BlockItem(CPlusBlocks.CUT_YELLOW_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_TERRACOTTA_WALL = register("cut_lime_terracotta_wall", new BlockItem(CPlusBlocks.CUT_LIME_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_TERRACOTTA_WALL = register("cut_green_terracotta_wall", new BlockItem(CPlusBlocks.CUT_GREEN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_TERRACOTTA_WALL = register("cut_blue_terracotta_wall", new BlockItem(CPlusBlocks.CUT_BLUE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_TERRACOTTA_WALL = register("cut_cyan_terracotta_wall", new BlockItem(CPlusBlocks.CUT_CYAN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_TERRACOTTA_WALL = register("cut_light_blue_terracotta_wall", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_TERRACOTTA_WALL = register("cut_purple_terracotta_wall", new BlockItem(CPlusBlocks.CUT_PURPLE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_TERRACOTTA_WALL = register("cut_magenta_terracotta_wall", new BlockItem(CPlusBlocks.CUT_MAGENTA_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_TERRACOTTA_WALL = register("cut_pink_terracotta_wall", new BlockItem(CPlusBlocks.CUT_PINK_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_TERRACOTTA_WALL = register("cut_white_terracotta_wall", new BlockItem(CPlusBlocks.CUT_WHITE_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_TERRACOTTA_WALL = register("cut_light_gray_terracotta_wall", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_TERRACOTTA_WALL = register("cut_gray_terracotta_wall", new BlockItem(CPlusBlocks.CUT_GRAY_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_TERRACOTTA_WALL = register("cut_black_terracotta_wall", new BlockItem(CPlusBlocks.CUT_BLACK_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_TERRACOTTA_WALL = register("cut_brown_terracotta_wall", new BlockItem(CPlusBlocks.CUT_BROWN_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_TERRACOTTA_WALL = register("cut_terracotta_wall", new BlockItem(CPlusBlocks.CUT_TERRACOTTA_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Gate
+    public static final Item CUT_RED_TERRACOTTA_GATE = register("cut_red_terracotta_gate", new BlockItem(CPlusBlocks.CUT_RED_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_TERRACOTTA_GATE = register("cut_orange_terracotta_gate", new BlockItem(CPlusBlocks.CUT_ORANGE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_TERRACOTTA_GATE = register("cut_yellow_terracotta_gate", new BlockItem(CPlusBlocks.CUT_YELLOW_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_TERRACOTTA_GATE = register("cut_lime_terracotta_gate", new BlockItem(CPlusBlocks.CUT_LIME_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_TERRACOTTA_GATE = register("cut_green_terracotta_gate", new BlockItem(CPlusBlocks.CUT_GREEN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_TERRACOTTA_GATE = register("cut_blue_terracotta_gate", new BlockItem(CPlusBlocks.CUT_BLUE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_TERRACOTTA_GATE = register("cut_cyan_terracotta_gate", new BlockItem(CPlusBlocks.CUT_CYAN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_TERRACOTTA_GATE = register("cut_light_blue_terracotta_gate", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_TERRACOTTA_GATE = register("cut_purple_terracotta_gate", new BlockItem(CPlusBlocks.CUT_PURPLE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_TERRACOTTA_GATE = register("cut_magenta_terracotta_gate", new BlockItem(CPlusBlocks.CUT_MAGENTA_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_TERRACOTTA_GATE = register("cut_pink_terracotta_gate", new BlockItem(CPlusBlocks.CUT_PINK_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_TERRACOTTA_GATE = register("cut_white_terracotta_gate", new BlockItem(CPlusBlocks.CUT_WHITE_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_TERRACOTTA_GATE = register("cut_light_gray_terracotta_gate", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_TERRACOTTA_GATE = register("cut_gray_terracotta_gate", new BlockItem(CPlusBlocks.CUT_GRAY_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_TERRACOTTA_GATE = register("cut_black_terracotta_gate", new BlockItem(CPlusBlocks.CUT_BLACK_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_TERRACOTTA_GATE = register("cut_brown_terracotta_gate", new BlockItem(CPlusBlocks.CUT_BROWN_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_TERRACOTTA_GATE = register("cut_terracotta_gate", new BlockItem(CPlusBlocks.CUT_TERRACOTTA_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy cut
     //slab
@@ -3321,11 +3750,98 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item RED_TERRACOTTA_TILES = register("red_terracotta_tiles", new BlockItem(CPlusBlocks.RED_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_TILES = register("orange_terracotta_tiles", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_TILES = register("yellow_terracotta_tiles", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_TILES = register("lime_terracotta_tiles", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_TILES = register("green_terracotta_tiles", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_TILES = register("blue_terracotta_tiles", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_TILES = register("cyan_terracotta_tiles", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_TILES = register("light_blue_terracotta_tiles", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_TILES = register("purple_terracotta_tiles", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_TILES = register("magenta_terracotta_tiles", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_TILES = register("pink_terracotta_tiles", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_TILES = register("white_terracotta_tiles", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_TILES = register("light_gray_terracotta_tiles", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_TILES = register("gray_terracotta_tiles", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_TILES = register("black_terracotta_tiles", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_TILES = register("brown_terracotta_tiles", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_TILES = register("terracotta_tiles", new BlockItem(CPlusBlocks.TERRACOTTA_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item RED_TERRACOTTA_TILE_SLAB = register("red_terracotta_tile_slab", new BlockItem(CPlusBlocks.RED_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_TILE_SLAB = register("orange_terracotta_tile_slab", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_TILE_SLAB = register("yellow_terracotta_tile_slab", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_TILE_SLAB = register("lime_terracotta_tile_slab", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_TILE_SLAB = register("green_terracotta_tile_slab", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_TILE_SLAB = register("blue_terracotta_tile_slab", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_TILE_SLAB = register("cyan_terracotta_tile_slab", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_TILE_SLAB = register("light_blue_terracotta_tile_slab", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_TILE_SLAB = register("purple_terracotta_tile_slab", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_TILE_SLAB = register("magenta_terracotta_tile_slab", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_TILE_SLAB = register("pink_terracotta_tile_slab", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_TILE_SLAB = register("white_terracotta_tile_slab", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_TILE_SLAB = register("light_gray_terracotta_tile_slab", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_TILE_SLAB = register("gray_terracotta_tile_slab", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_TILE_SLAB = register("black_terracotta_tile_slab", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_TILE_SLAB = register("brown_terracotta_tile_slab", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_TILE_SLAB = register("terracotta_tile_slab", new BlockItem(CPlusBlocks.TERRACOTTA_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_tile Stairs
+    public static final Item RED_TERRACOTTA_TILE_STAIRS = register("red_terracotta_tile_stairs", new BlockItem(CPlusBlocks.RED_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_TILE_STAIRS = register("orange_terracotta_tile_stairs", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_TILE_STAIRS = register("yellow_terracotta_tile_stairs", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_TILE_STAIRS = register("lime_terracotta_tile_stairs", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_TILE_STAIRS = register("green_terracotta_tile_stairs", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_TILE_STAIRS = register("blue_terracotta_tile_stairs", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_TILE_STAIRS = register("cyan_terracotta_tile_stairs", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_TILE_STAIRS = register("light_blue_terracotta_tile_stairs", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_TILE_STAIRS = register("purple_terracotta_tile_stairs", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_TILE_STAIRS = register("magenta_terracotta_tile_stairs", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_TILE_STAIRS = register("pink_terracotta_tile_stairs", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_TILE_STAIRS = register("white_terracotta_tile_stairs", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_TILE_STAIRS = register("light_gray_terracotta_tile_stairs", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_TILE_STAIRS = register("gray_terracotta_tile_stairs", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_TILE_STAIRS = register("black_terracotta_tile_stairs", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_TILE_STAIRS = register("brown_terracotta_tile_stairs", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_TILE_STAIRS = register("terracotta_tile_stairs", new BlockItem(CPlusBlocks.TERRACOTTA_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_tile Wall
+    public static final Item RED_TERRACOTTA_TILE_WALL = register("red_terracotta_tile_wall", new BlockItem(CPlusBlocks.RED_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_TILE_WALL = register("orange_terracotta_tile_wall", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_TILE_WALL = register("yellow_terracotta_tile_wall", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_TILE_WALL = register("lime_terracotta_tile_wall", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_TILE_WALL = register("green_terracotta_tile_wall", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_TILE_WALL = register("blue_terracotta_tile_wall", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_TILE_WALL = register("cyan_terracotta_tile_wall", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_TILE_WALL = register("light_blue_terracotta_tile_wall", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_TILE_WALL = register("purple_terracotta_tile_wall", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_TILE_WALL = register("magenta_terracotta_tile_wall", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_TILE_WALL = register("pink_terracotta_tile_wall", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_TILE_WALL = register("white_terracotta_tile_wall", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_TILE_WALL = register("light_gray_terracotta_tile_wall", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_TILE_WALL = register("gray_terracotta_tile_wall", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_TILE_WALL = register("black_terracotta_tile_wall", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_TILE_WALL = register("brown_terracotta_tile_wall", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_TILE_WALL = register("terracotta_tile_wall", new BlockItem(CPlusBlocks.TERRACOTTA_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_tile Gate
+    public static final Item RED_TERRACOTTA_TILE_GATE = register("red_terracotta_tile_gate", new BlockItem(CPlusBlocks.RED_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_TILE_GATE = register("orange_terracotta_tile_gate", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_TILE_GATE = register("yellow_terracotta_tile_gate", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_TILE_GATE = register("lime_terracotta_tile_gate", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_TILE_GATE = register("green_terracotta_tile_gate", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_TILE_GATE = register("blue_terracotta_tile_gate", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_TILE_GATE = register("cyan_terracotta_tile_gate", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_TILE_GATE = register("light_blue_terracotta_tile_gate", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_TILE_GATE = register("purple_terracotta_tile_gate", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_TILE_GATE = register("magenta_terracotta_tile_gate", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_TILE_GATE = register("pink_terracotta_tile_gate", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_TILE_GATE = register("white_terracotta_tile_gate", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_TILE_GATE = register("light_gray_terracotta_tile_gate", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_TILE_GATE = register("gray_terracotta_tile_gate", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_TILE_GATE = register("black_terracotta_tile_gate", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_TILE_GATE = register("brown_terracotta_tile_gate", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_TILE_GATE = register("terracotta_tile_gate", new BlockItem(CPlusBlocks.TERRACOTTA_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy tiles
     //slab
@@ -3339,23 +3855,72 @@ public class CPlusItems {
     //wall
     //gate
 
-    //pillar
+    public static final Item RED_TERRACOTTA_PILLAR = register("red_terracotta_pillar", new BlockItem(CPlusBlocks.RED_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_TERRACOTTA_PILLAR = register("orange_terracotta_pillar", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_TERRACOTTA_PILLAR = register("yellow_terracotta_pillar", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_TERRACOTTA_PILLAR = register("lime_terracotta_pillar", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_TERRACOTTA_PILLAR = register("green_terracotta_pillar", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_TERRACOTTA_PILLAR = register("blue_terracotta_pillar", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_TERRACOTTA_PILLAR = register("cyan_terracotta_pillar", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_TERRACOTTA_PILLAR = register("light_blue_terracotta_pillar", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_TERRACOTTA_PILLAR = register("purple_terracotta_pillar", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_TERRACOTTA_PILLAR = register("magenta_terracotta_pillar", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_TERRACOTTA_PILLAR = register("pink_terracotta_pillar", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_TERRACOTTA_PILLAR = register("white_terracotta_pillar", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_TERRACOTTA_PILLAR = register("light_gray_terracotta_pillar", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_TERRACOTTA_PILLAR = register("gray_terracotta_pillar", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_TERRACOTTA_PILLAR = register("black_terracotta_pillar", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_TERRACOTTA_PILLAR = register("brown_terracotta_pillar", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item TERRACOTTA_PILLAR = register("terracotta_pillar", new BlockItem(CPlusBlocks.TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     //mossy pillar
     //cracked pillar
     //corner pillar
     //mossy corner pillar
     //cracked corner pillar
-    //chiseled
+    public static final Item CHISELED_RED_TERRACOTTA = register("chiseled_red_terracotta", new BlockItem(CPlusBlocks.CHISELED_RED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_ORANGE_TERRACOTTA = register("chiseled_orange_terracotta", new BlockItem(CPlusBlocks.CHISELED_ORANGE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_YELLOW_TERRACOTTA = register("chiseled_yellow_terracotta", new BlockItem(CPlusBlocks.CHISELED_YELLOW_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_LIME_TERRACOTTA = register("chiseled_lime_terracotta", new BlockItem(CPlusBlocks.CHISELED_LIME_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_GREEN_TERRACOTTA = register("chiseled_green_terracotta", new BlockItem(CPlusBlocks.CHISELED_GREEN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_BLUE_TERRACOTTA = register("chiseled_blue_terracotta", new BlockItem(CPlusBlocks.CHISELED_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_CYAN_TERRACOTTA = register("chiseled_cyan_terracotta", new BlockItem(CPlusBlocks.CHISELED_CYAN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_LIGHT_BLUE_TERRACOTTA = register("chiseled_light_blue_terracotta", new BlockItem(CPlusBlocks.CHISELED_LIGHT_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_PURPLE_TERRACOTTA = register("chiseled_purple_terracotta", new BlockItem(CPlusBlocks.CHISELED_PURPLE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_MAGENTA_TERRACOTTA = register("chiseled_magenta_terracotta", new BlockItem(CPlusBlocks.CHISELED_MAGENTA_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_PINK_TERRACOTTA = register("chiseled_pink_terracotta", new BlockItem(CPlusBlocks.CHISELED_PINK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_WHITE_TERRACOTTA = register("chiseled_white_terracotta", new BlockItem(CPlusBlocks.CHISELED_WHITE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_LIGHT_GRAY_TERRACOTTA = register("chiseled_light_gray_terracotta", new BlockItem(CPlusBlocks.CHISELED_LIGHT_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_GRAY_TERRACOTTA = register("chiseled_gray_terracotta", new BlockItem(CPlusBlocks.CHISELED_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_BLACK_TERRACOTTA = register("chiseled_black_terracotta", new BlockItem(CPlusBlocks.CHISELED_BLACK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_BROWN_TERRACOTTA = register("chiseled_brown_terracotta", new BlockItem(CPlusBlocks.CHISELED_BROWN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_TERRACOTTA = register("chiseled_terracotta", new BlockItem(CPlusBlocks.CHISELED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
     //mossy chiseled
     //cracked chiseled
-    //carved
+    public static final Item CARVED_RED_TERRACOTTA = register("carved_red_terracotta", new BlockItem(CPlusBlocks.CARVED_RED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_ORANGE_TERRACOTTA = register("carved_orange_terracotta", new BlockItem(CPlusBlocks.CARVED_ORANGE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_YELLOW_TERRACOTTA = register("carved_yellow_terracotta", new BlockItem(CPlusBlocks.CARVED_YELLOW_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_LIME_TERRACOTTA = register("carved_lime_terracotta", new BlockItem(CPlusBlocks.CARVED_LIME_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_GREEN_TERRACOTTA = register("carved_green_terracotta", new BlockItem(CPlusBlocks.CARVED_GREEN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_BLUE_TERRACOTTA = register("carved_blue_terracotta", new BlockItem(CPlusBlocks.CARVED_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_CYAN_TERRACOTTA = register("carved_cyan_terracotta", new BlockItem(CPlusBlocks.CARVED_CYAN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_LIGHT_BLUE_TERRACOTTA = register("carved_light_blue_terracotta", new BlockItem(CPlusBlocks.CARVED_LIGHT_BLUE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_PURPLE_TERRACOTTA = register("carved_purple_terracotta", new BlockItem(CPlusBlocks.CARVED_PURPLE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_MAGENTA_TERRACOTTA = register("carved_magenta_terracotta", new BlockItem(CPlusBlocks.CARVED_MAGENTA_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_PINK_TERRACOTTA = register("carved_pink_terracotta", new BlockItem(CPlusBlocks.CARVED_PINK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_WHITE_TERRACOTTA = register("carved_white_terracotta", new BlockItem(CPlusBlocks.CARVED_WHITE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_LIGHT_GRAY_TERRACOTTA = register("carved_light_gray_terracotta", new BlockItem(CPlusBlocks.CARVED_LIGHT_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_GRAY_TERRACOTTA = register("carved_gray_terracotta", new BlockItem(CPlusBlocks.CARVED_GRAY_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_BLACK_TERRACOTTA = register("carved_black_terracotta", new BlockItem(CPlusBlocks.CARVED_BLACK_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_BROWN_TERRACOTTA = register("carved_brown_terracotta", new BlockItem(CPlusBlocks.CARVED_BROWN_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_TERRACOTTA = register("carved_terracotta", new BlockItem(CPlusBlocks.CARVED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     //mossy carved
     //cracked carved
 
 
 // Concrete
 
-    // Concrete Slab
+    // Terracotta Slab
     public static final Item RED_CONCRETE_SLAB = register("red_concrete_slab", new BlockItem(CPlusBlocks.RED_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item ORANGE_CONCRETE_SLAB = register("orange_concrete_slab", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item YELLOW_CONCRETE_SLAB = register("yellow_concrete_slab", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
@@ -3373,7 +3938,7 @@ public class CPlusItems {
     public static final Item BLACK_CONCRETE_SLAB = register("black_concrete_slab", new BlockItem(CPlusBlocks.BLACK_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item BROWN_CONCRETE_SLAB = register("brown_concrete_slab", new BlockItem(CPlusBlocks.BROWN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-    // Concrete Stairs
+    // Terracotta Stairs
     public static final Item RED_CONCRETE_STAIRS = register("red_concrete_stairs", new BlockItem(CPlusBlocks.RED_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item ORANGE_CONCRETE_STAIRS = register("orange_concrete_stairs", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item YELLOW_CONCRETE_STAIRS = register("yellow_concrete_stairs", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
@@ -3391,7 +3956,7 @@ public class CPlusItems {
     public static final Item BLACK_CONCRETE_STAIRS = register("black_concrete_stairs", new BlockItem(CPlusBlocks.BLACK_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item BROWN_CONCRETE_STAIRS = register("brown_concrete_stairs", new BlockItem(CPlusBlocks.BROWN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-    // Concrete Wall
+    // Terracotta Wall
     public static final Item RED_CONCRETE_WALL = register("red_concrete_wall", new BlockItem(CPlusBlocks.RED_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item ORANGE_CONCRETE_WALL = register("orange_concrete_wall", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item YELLOW_CONCRETE_WALL = register("yellow_concrete_wall", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
@@ -3409,7 +3974,7 @@ public class CPlusItems {
     public static final Item BLACK_CONCRETE_WALL = register("black_concrete_wall", new BlockItem(CPlusBlocks.BLACK_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item BROWN_CONCRETE_WALL = register("brown_concrete_wall", new BlockItem(CPlusBlocks.BROWN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-    // Concrete Gate
+    // Terracotta Gate
     public static final Item RED_CONCRETE_GATE = register("red_concrete_gate", new BlockItem(CPlusBlocks.RED_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item ORANGE_CONCRETE_GATE = register("orange_concrete_gate", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item YELLOW_CONCRETE_GATE = register("yellow_concrete_gate", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
@@ -3427,11 +3992,93 @@ public class CPlusItems {
     public static final Item BLACK_CONCRETE_GATE = register("black_concrete_gate", new BlockItem(CPlusBlocks.BLACK_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     public static final Item BROWN_CONCRETE_GATE = register("brown_concrete_gate", new BlockItem(CPlusBlocks.BROWN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-    //smooth
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item SMOOTH_RED_CONCRETE = register("smooth_red_concrete", new BlockItem(CPlusBlocks.SMOOTH_RED_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_CONCRETE = register("smooth_orange_concrete", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_CONCRETE = register("smooth_yellow_concrete", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_CONCRETE = register("smooth_lime_concrete", new BlockItem(CPlusBlocks.SMOOTH_LIME_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_CONCRETE = register("smooth_green_concrete", new BlockItem(CPlusBlocks.SMOOTH_GREEN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_CONCRETE = register("smooth_blue_concrete", new BlockItem(CPlusBlocks.SMOOTH_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_CONCRETE = register("smooth_cyan_concrete", new BlockItem(CPlusBlocks.SMOOTH_CYAN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_CONCRETE = register("smooth_light_blue_concrete", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_CONCRETE = register("smooth_purple_concrete", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_CONCRETE = register("smooth_magenta_concrete", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_CONCRETE = register("smooth_pink_concrete", new BlockItem(CPlusBlocks.SMOOTH_PINK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_CONCRETE = register("smooth_white_concrete", new BlockItem(CPlusBlocks.SMOOTH_WHITE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_CONCRETE = register("smooth_light_gray_concrete", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_CONCRETE = register("smooth_gray_concrete", new BlockItem(CPlusBlocks.SMOOTH_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_CONCRETE = register("smooth_black_concrete", new BlockItem(CPlusBlocks.SMOOTH_BLACK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_CONCRETE = register("smooth_brown_concrete", new BlockItem(CPlusBlocks.SMOOTH_BROWN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item SMOOTH_RED_CONCRETE_SLAB = register("smooth_red_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_RED_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_CONCRETE_SLAB = register("smooth_orange_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_CONCRETE_SLAB = register("smooth_yellow_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_CONCRETE_SLAB = register("smooth_lime_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_LIME_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_CONCRETE_SLAB = register("smooth_green_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_GREEN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_CONCRETE_SLAB = register("smooth_blue_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_BLUE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_CONCRETE_SLAB = register("smooth_cyan_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_CYAN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_CONCRETE_SLAB = register("smooth_light_blue_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_CONCRETE_SLAB = register("smooth_purple_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_CONCRETE_SLAB = register("smooth_magenta_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_CONCRETE_SLAB = register("smooth_pink_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_PINK_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_CONCRETE_SLAB = register("smooth_white_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_WHITE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_CONCRETE_SLAB = register("smooth_light_gray_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_CONCRETE_SLAB = register("smooth_gray_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_GRAY_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_CONCRETE_SLAB = register("smooth_black_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_BLACK_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_CONCRETE_SLAB = register("smooth_brown_concrete_slab", new BlockItem(CPlusBlocks.SMOOTH_BROWN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Stairs
+    public static final Item SMOOTH_RED_CONCRETE_STAIRS = register("smooth_red_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_RED_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_CONCRETE_STAIRS = register("smooth_orange_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_CONCRETE_STAIRS = register("smooth_yellow_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_CONCRETE_STAIRS = register("smooth_lime_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_LIME_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_CONCRETE_STAIRS = register("smooth_green_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_GREEN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_CONCRETE_STAIRS = register("smooth_blue_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_BLUE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_CONCRETE_STAIRS = register("smooth_cyan_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_CYAN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_CONCRETE_STAIRS = register("smooth_light_blue_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_CONCRETE_STAIRS = register("smooth_purple_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_CONCRETE_STAIRS = register("smooth_magenta_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_CONCRETE_STAIRS = register("smooth_pink_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_PINK_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_CONCRETE_STAIRS = register("smooth_white_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_WHITE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_CONCRETE_STAIRS = register("smooth_light_gray_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_CONCRETE_STAIRS = register("smooth_gray_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_GRAY_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_CONCRETE_STAIRS = register("smooth_black_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_BLACK_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_CONCRETE_STAIRS = register("smooth_brown_concrete_stairs", new BlockItem(CPlusBlocks.SMOOTH_BROWN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Wall
+    public static final Item SMOOTH_RED_CONCRETE_WALL = register("smooth_red_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_RED_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_CONCRETE_WALL = register("smooth_orange_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_CONCRETE_WALL = register("smooth_yellow_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_CONCRETE_WALL = register("smooth_lime_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_LIME_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_CONCRETE_WALL = register("smooth_green_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_GREEN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_CONCRETE_WALL = register("smooth_blue_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_BLUE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_CONCRETE_WALL = register("smooth_cyan_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_CYAN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_CONCRETE_WALL = register("smooth_light_blue_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_CONCRETE_WALL = register("smooth_purple_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_CONCRETE_WALL = register("smooth_magenta_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_CONCRETE_WALL = register("smooth_pink_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_PINK_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_CONCRETE_WALL = register("smooth_white_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_WHITE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_CONCRETE_WALL = register("smooth_light_gray_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_CONCRETE_WALL = register("smooth_gray_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_GRAY_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_CONCRETE_WALL = register("smooth_black_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_BLACK_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_CONCRETE_WALL = register("smooth_brown_concrete_wall", new BlockItem(CPlusBlocks.SMOOTH_BROWN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Gate
+    public static final Item SMOOTH_RED_CONCRETE_GATE = register("smooth_red_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_RED_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_ORANGE_CONCRETE_GATE = register("smooth_orange_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_ORANGE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_YELLOW_CONCRETE_GATE = register("smooth_yellow_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_YELLOW_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIME_CONCRETE_GATE = register("smooth_lime_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_LIME_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GREEN_CONCRETE_GATE = register("smooth_green_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_GREEN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLUE_CONCRETE_GATE = register("smooth_blue_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_BLUE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_CYAN_CONCRETE_GATE = register("smooth_cyan_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_CYAN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_BLUE_CONCRETE_GATE = register("smooth_light_blue_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_BLUE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PURPLE_CONCRETE_GATE = register("smooth_purple_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_PURPLE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_MAGENTA_CONCRETE_GATE = register("smooth_magenta_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_MAGENTA_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_PINK_CONCRETE_GATE = register("smooth_pink_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_PINK_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_WHITE_CONCRETE_GATE = register("smooth_white_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_WHITE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_LIGHT_GRAY_CONCRETE_GATE = register("smooth_light_gray_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_LIGHT_GRAY_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_GRAY_CONCRETE_GATE = register("smooth_gray_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_GRAY_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BLACK_CONCRETE_GATE = register("smooth_black_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_BLACK_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item SMOOTH_BROWN_CONCRETE_GATE = register("smooth_brown_concrete_gate", new BlockItem(CPlusBlocks.SMOOTH_BROWN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy smooth
     //slab
@@ -3445,11 +4092,92 @@ public class CPlusItems {
     //wall
     //gate
 
-    //polished
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item POLISHED_RED_CONCRETE = register("polished_red_concrete", new BlockItem(CPlusBlocks.POLISHED_RED_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_CONCRETE = register("polished_orange_concrete", new BlockItem(CPlusBlocks.POLISHED_ORANGE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_CONCRETE = register("polished_yellow_concrete", new BlockItem(CPlusBlocks.POLISHED_YELLOW_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_CONCRETE = register("polished_lime_concrete", new BlockItem(CPlusBlocks.POLISHED_LIME_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_CONCRETE = register("polished_green_concrete", new BlockItem(CPlusBlocks.POLISHED_GREEN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_CONCRETE = register("polished_blue_concrete", new BlockItem(CPlusBlocks.POLISHED_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_CONCRETE = register("polished_cyan_concrete", new BlockItem(CPlusBlocks.POLISHED_CYAN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_CONCRETE = register("polished_light_blue_concrete", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_CONCRETE = register("polished_purple_concrete", new BlockItem(CPlusBlocks.POLISHED_PURPLE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_CONCRETE = register("polished_magenta_concrete", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_CONCRETE = register("polished_pink_concrete", new BlockItem(CPlusBlocks.POLISHED_PINK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_CONCRETE = register("polished_white_concrete", new BlockItem(CPlusBlocks.POLISHED_WHITE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_CONCRETE = register("polished_light_gray_concrete", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_CONCRETE = register("polished_gray_concrete", new BlockItem(CPlusBlocks.POLISHED_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_CONCRETE = register("polished_black_concrete", new BlockItem(CPlusBlocks.POLISHED_BLACK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_CONCRETE = register("polished_brown_concrete", new BlockItem(CPlusBlocks.POLISHED_BROWN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item POLISHED_RED_CONCRETE_SLAB = register("polished_red_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_RED_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_CONCRETE_SLAB = register("polished_orange_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_ORANGE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_CONCRETE_SLAB = register("polished_yellow_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_YELLOW_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_CONCRETE_SLAB = register("polished_lime_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_LIME_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_CONCRETE_SLAB = register("polished_green_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_GREEN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_CONCRETE_SLAB = register("polished_blue_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_BLUE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_CONCRETE_SLAB = register("polished_cyan_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_CYAN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_CONCRETE_SLAB = register("polished_light_blue_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_CONCRETE_SLAB = register("polished_purple_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_PURPLE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_CONCRETE_SLAB = register("polished_magenta_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_CONCRETE_SLAB = register("polished_pink_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_PINK_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_CONCRETE_SLAB = register("polished_white_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_WHITE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_CONCRETE_SLAB = register("polished_light_gray_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_CONCRETE_SLAB = register("polished_gray_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_GRAY_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_CONCRETE_SLAB = register("polished_black_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_BLACK_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_CONCRETE_SLAB = register("polished_brown_concrete_slab", new BlockItem(CPlusBlocks.POLISHED_BROWN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    // Terracotta Stairs
+    public static final Item POLISHED_RED_CONCRETE_STAIRS = register("polished_red_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_RED_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_CONCRETE_STAIRS = register("polished_orange_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_ORANGE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_CONCRETE_STAIRS = register("polished_yellow_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_YELLOW_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_CONCRETE_STAIRS = register("polished_lime_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_LIME_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_CONCRETE_STAIRS = register("polished_green_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_GREEN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_CONCRETE_STAIRS = register("polished_blue_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_BLUE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_CONCRETE_STAIRS = register("polished_cyan_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_CYAN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_CONCRETE_STAIRS = register("polished_light_blue_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_CONCRETE_STAIRS = register("polished_purple_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_PURPLE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_CONCRETE_STAIRS = register("polished_magenta_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_CONCRETE_STAIRS = register("polished_pink_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_PINK_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_CONCRETE_STAIRS = register("polished_white_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_WHITE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_CONCRETE_STAIRS = register("polished_light_gray_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_CONCRETE_STAIRS = register("polished_gray_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_GRAY_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_CONCRETE_STAIRS = register("polished_black_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_BLACK_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_CONCRETE_STAIRS = register("polished_brown_concrete_stairs", new BlockItem(CPlusBlocks.POLISHED_BROWN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Wall
+    public static final Item POLISHED_RED_CONCRETE_WALL = register("polished_red_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_RED_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_CONCRETE_WALL = register("polished_orange_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_ORANGE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_CONCRETE_WALL = register("polished_yellow_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_YELLOW_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_CONCRETE_WALL = register("polished_lime_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_LIME_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_CONCRETE_WALL = register("polished_green_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_GREEN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_CONCRETE_WALL = register("polished_blue_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_BLUE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_CONCRETE_WALL = register("polished_cyan_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_CYAN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_CONCRETE_WALL = register("polished_light_blue_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_CONCRETE_WALL = register("polished_purple_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_PURPLE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_CONCRETE_WALL = register("polished_magenta_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_CONCRETE_WALL = register("polished_pink_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_PINK_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_CONCRETE_WALL = register("polished_white_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_WHITE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_CONCRETE_WALL = register("polished_light_gray_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_CONCRETE_WALL = register("polished_gray_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_GRAY_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_CONCRETE_WALL = register("polished_black_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_BLACK_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_CONCRETE_WALL = register("polished_brown_concrete_wall", new BlockItem(CPlusBlocks.POLISHED_BROWN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Gate
+    public static final Item POLISHED_RED_CONCRETE_GATE = register("polished_red_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_RED_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_ORANGE_CONCRETE_GATE = register("polished_orange_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_ORANGE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_YELLOW_CONCRETE_GATE = register("polished_yellow_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_YELLOW_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIME_CONCRETE_GATE = register("polished_lime_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_LIME_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GREEN_CONCRETE_GATE = register("polished_green_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_GREEN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLUE_CONCRETE_GATE = register("polished_blue_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_BLUE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_CYAN_CONCRETE_GATE = register("polished_cyan_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_CYAN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_BLUE_CONCRETE_GATE = register("polished_light_blue_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_LIGHT_BLUE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PURPLE_CONCRETE_GATE = register("polished_purple_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_PURPLE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_MAGENTA_CONCRETE_GATE = register("polished_magenta_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_MAGENTA_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_PINK_CONCRETE_GATE = register("polished_pink_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_PINK_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_WHITE_CONCRETE_GATE = register("polished_white_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_WHITE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_LIGHT_GRAY_CONCRETE_GATE = register("polished_light_gray_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_LIGHT_GRAY_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_GRAY_CONCRETE_GATE = register("polished_gray_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_GRAY_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BLACK_CONCRETE_GATE = register("polished_black_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_BLACK_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item POLISHED_BROWN_CONCRETE_GATE = register("polished_brown_concrete_gate", new BlockItem(CPlusBlocks.POLISHED_BROWN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy polished
     //slab
@@ -3463,11 +4191,93 @@ public class CPlusItems {
     //wall
     //gate
 
-    //bricks
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item RED_CONCRETE_BRICKS = register("red_concrete_bricks", new BlockItem(CPlusBlocks.RED_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_BRICKS = register("orange_concrete_bricks", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_BRICKS = register("yellow_concrete_bricks", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_BRICKS = register("lime_concrete_bricks", new BlockItem(CPlusBlocks.LIME_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_BRICKS = register("green_concrete_bricks", new BlockItem(CPlusBlocks.GREEN_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_BRICKS = register("blue_concrete_bricks", new BlockItem(CPlusBlocks.BLUE_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_BRICKS = register("cyan_concrete_bricks", new BlockItem(CPlusBlocks.CYAN_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_BRICKS = register("light_blue_concrete_bricks", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_BRICKS = register("purple_concrete_bricks", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_BRICKS = register("magenta_concrete_bricks", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_BRICKS = register("pink_concrete_bricks", new BlockItem(CPlusBlocks.PINK_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_BRICKS = register("white_concrete_bricks", new BlockItem(CPlusBlocks.WHITE_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_BRICKS = register("light_gray_concrete_bricks", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_BRICKS = register("gray_concrete_bricks", new BlockItem(CPlusBlocks.GRAY_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_BRICKS = register("black_concrete_bricks", new BlockItem(CPlusBlocks.BLACK_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_BRICKS = register("brown_concrete_bricks", new BlockItem(CPlusBlocks.BROWN_CONCRETE_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item RED_CONCRETE_BRICK_SLAB = register("red_concrete_brick_slab", new BlockItem(CPlusBlocks.RED_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_BRICK_SLAB = register("orange_concrete_brick_slab", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_BRICK_SLAB = register("yellow_concrete_brick_slab", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_BRICK_SLAB = register("lime_concrete_brick_slab", new BlockItem(CPlusBlocks.LIME_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_BRICK_SLAB = register("green_concrete_brick_slab", new BlockItem(CPlusBlocks.GREEN_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_BRICK_SLAB = register("blue_concrete_brick_slab", new BlockItem(CPlusBlocks.BLUE_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_BRICK_SLAB = register("cyan_concrete_brick_slab", new BlockItem(CPlusBlocks.CYAN_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_BRICK_SLAB = register("light_blue_concrete_brick_slab", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_BRICK_SLAB = register("purple_concrete_brick_slab", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_BRICK_SLAB = register("magenta_concrete_brick_slab", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_BRICK_SLAB = register("pink_concrete_brick_slab", new BlockItem(CPlusBlocks.PINK_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_BRICK_SLAB = register("white_concrete_brick_slab", new BlockItem(CPlusBlocks.WHITE_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_BRICK_SLAB = register("light_gray_concrete_brick_slab", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_BRICK_SLAB = register("gray_concrete_brick_slab", new BlockItem(CPlusBlocks.GRAY_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_BRICK_SLAB = register("black_concrete_brick_slab", new BlockItem(CPlusBlocks.BLACK_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_BRICK_SLAB = register("brown_concrete_brick_slab", new BlockItem(CPlusBlocks.BROWN_CONCRETE_BRICK_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_brick Stairs
+    public static final Item RED_CONCRETE_BRICK_STAIRS = register("red_concrete_brick_stairs", new BlockItem(CPlusBlocks.RED_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_BRICK_STAIRS = register("orange_concrete_brick_stairs", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_BRICK_STAIRS = register("yellow_concrete_brick_stairs", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_BRICK_STAIRS = register("lime_concrete_brick_stairs", new BlockItem(CPlusBlocks.LIME_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_BRICK_STAIRS = register("green_concrete_brick_stairs", new BlockItem(CPlusBlocks.GREEN_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_BRICK_STAIRS = register("blue_concrete_brick_stairs", new BlockItem(CPlusBlocks.BLUE_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_BRICK_STAIRS = register("cyan_concrete_brick_stairs", new BlockItem(CPlusBlocks.CYAN_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_BRICK_STAIRS = register("light_blue_concrete_brick_stairs", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_BRICK_STAIRS = register("purple_concrete_brick_stairs", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_BRICK_STAIRS = register("magenta_concrete_brick_stairs", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_BRICK_STAIRS = register("pink_concrete_brick_stairs", new BlockItem(CPlusBlocks.PINK_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_BRICK_STAIRS = register("white_concrete_brick_stairs", new BlockItem(CPlusBlocks.WHITE_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_BRICK_STAIRS = register("light_gray_concrete_brick_stairs", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_BRICK_STAIRS = register("gray_concrete_brick_stairs", new BlockItem(CPlusBlocks.GRAY_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_BRICK_STAIRS = register("black_concrete_brick_stairs", new BlockItem(CPlusBlocks.BLACK_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_BRICK_STAIRS = register("brown_concrete_brick_stairs", new BlockItem(CPlusBlocks.BROWN_CONCRETE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_brick Wall
+    public static final Item RED_CONCRETE_BRICK_WALL = register("red_concrete_brick_wall", new BlockItem(CPlusBlocks.RED_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_BRICK_WALL = register("orange_concrete_brick_wall", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_BRICK_WALL = register("yellow_concrete_brick_wall", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_BRICK_WALL = register("lime_concrete_brick_wall", new BlockItem(CPlusBlocks.LIME_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_BRICK_WALL = register("green_concrete_brick_wall", new BlockItem(CPlusBlocks.GREEN_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_BRICK_WALL = register("blue_concrete_brick_wall", new BlockItem(CPlusBlocks.BLUE_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_BRICK_WALL = register("cyan_concrete_brick_wall", new BlockItem(CPlusBlocks.CYAN_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_BRICK_WALL = register("light_blue_concrete_brick_wall", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_BRICK_WALL = register("purple_concrete_brick_wall", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_BRICK_WALL = register("magenta_concrete_brick_wall", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_BRICK_WALL = register("pink_concrete_brick_wall", new BlockItem(CPlusBlocks.PINK_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_BRICK_WALL = register("white_concrete_brick_wall", new BlockItem(CPlusBlocks.WHITE_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_BRICK_WALL = register("light_gray_concrete_brick_wall", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_BRICK_WALL = register("gray_concrete_brick_wall", new BlockItem(CPlusBlocks.GRAY_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_BRICK_WALL = register("black_concrete_brick_wall", new BlockItem(CPlusBlocks.BLACK_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_BRICK_WALL = register("brown_concrete_brick_wall", new BlockItem(CPlusBlocks.BROWN_CONCRETE_BRICK_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_brick Gate
+    public static final Item RED_CONCRETE_BRICK_GATE = register("red_concrete_brick_gate", new BlockItem(CPlusBlocks.RED_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_BRICK_GATE = register("orange_concrete_brick_gate", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_BRICK_GATE = register("yellow_concrete_brick_gate", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_BRICK_GATE = register("lime_concrete_brick_gate", new BlockItem(CPlusBlocks.LIME_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_BRICK_GATE = register("green_concrete_brick_gate", new BlockItem(CPlusBlocks.GREEN_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_BRICK_GATE = register("blue_concrete_brick_gate", new BlockItem(CPlusBlocks.BLUE_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_BRICK_GATE = register("cyan_concrete_brick_gate", new BlockItem(CPlusBlocks.CYAN_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_BRICK_GATE = register("light_blue_concrete_brick_gate", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_BRICK_GATE = register("purple_concrete_brick_gate", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_BRICK_GATE = register("magenta_concrete_brick_gate", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_BRICK_GATE = register("pink_concrete_brick_gate", new BlockItem(CPlusBlocks.PINK_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_BRICK_GATE = register("white_concrete_brick_gate", new BlockItem(CPlusBlocks.WHITE_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_BRICK_GATE = register("light_gray_concrete_brick_gate", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_BRICK_GATE = register("gray_concrete_brick_gate", new BlockItem(CPlusBlocks.GRAY_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_BRICK_GATE = register("black_concrete_brick_gate", new BlockItem(CPlusBlocks.BLACK_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_BRICK_GATE = register("brown_concrete_brick_gate", new BlockItem(CPlusBlocks.BROWN_CONCRETE_BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy bricks
     //slab
@@ -3481,11 +4291,93 @@ public class CPlusItems {
     //wall
     //gate
 
-    //cut
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item CUT_RED_CONCRETE = register("cut_red_concrete", new BlockItem(CPlusBlocks.CUT_RED_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_CONCRETE = register("cut_orange_concrete", new BlockItem(CPlusBlocks.CUT_ORANGE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_CONCRETE = register("cut_yellow_concrete", new BlockItem(CPlusBlocks.CUT_YELLOW_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_CONCRETE = register("cut_lime_concrete", new BlockItem(CPlusBlocks.CUT_LIME_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_CONCRETE = register("cut_green_concrete", new BlockItem(CPlusBlocks.CUT_GREEN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_CONCRETE = register("cut_blue_concrete", new BlockItem(CPlusBlocks.CUT_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_CONCRETE = register("cut_cyan_concrete", new BlockItem(CPlusBlocks.CUT_CYAN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_CONCRETE = register("cut_light_blue_concrete", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_CONCRETE = register("cut_purple_concrete", new BlockItem(CPlusBlocks.CUT_PURPLE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_CONCRETE = register("cut_magenta_concrete", new BlockItem(CPlusBlocks.CUT_MAGENTA_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_CONCRETE = register("cut_pink_concrete", new BlockItem(CPlusBlocks.CUT_PINK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_CONCRETE = register("cut_white_concrete", new BlockItem(CPlusBlocks.CUT_WHITE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_CONCRETE = register("cut_light_gray_concrete", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_CONCRETE = register("cut_gray_concrete", new BlockItem(CPlusBlocks.CUT_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_CONCRETE = register("cut_black_concrete", new BlockItem(CPlusBlocks.CUT_BLACK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_CONCRETE = register("cut_brown_concrete", new BlockItem(CPlusBlocks.CUT_BROWN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item CUT_RED_CONCRETE_SLAB = register("cut_red_concrete_slab", new BlockItem(CPlusBlocks.CUT_RED_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_CONCRETE_SLAB = register("cut_orange_concrete_slab", new BlockItem(CPlusBlocks.CUT_ORANGE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_CONCRETE_SLAB = register("cut_yellow_concrete_slab", new BlockItem(CPlusBlocks.CUT_YELLOW_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_CONCRETE_SLAB = register("cut_lime_concrete_slab", new BlockItem(CPlusBlocks.CUT_LIME_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_CONCRETE_SLAB = register("cut_green_concrete_slab", new BlockItem(CPlusBlocks.CUT_GREEN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_CONCRETE_SLAB = register("cut_blue_concrete_slab", new BlockItem(CPlusBlocks.CUT_BLUE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_CONCRETE_SLAB = register("cut_cyan_concrete_slab", new BlockItem(CPlusBlocks.CUT_CYAN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_CONCRETE_SLAB = register("cut_light_blue_concrete_slab", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_CONCRETE_SLAB = register("cut_purple_concrete_slab", new BlockItem(CPlusBlocks.CUT_PURPLE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_CONCRETE_SLAB = register("cut_magenta_concrete_slab", new BlockItem(CPlusBlocks.CUT_MAGENTA_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_CONCRETE_SLAB = register("cut_pink_concrete_slab", new BlockItem(CPlusBlocks.CUT_PINK_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_CONCRETE_SLAB = register("cut_white_concrete_slab", new BlockItem(CPlusBlocks.CUT_WHITE_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_CONCRETE_SLAB = register("cut_light_gray_concrete_slab", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_CONCRETE_SLAB = register("cut_gray_concrete_slab", new BlockItem(CPlusBlocks.CUT_GRAY_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_CONCRETE_SLAB = register("cut_black_concrete_slab", new BlockItem(CPlusBlocks.CUT_BLACK_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_CONCRETE_SLAB = register("cut_brown_concrete_slab", new BlockItem(CPlusBlocks.CUT_BROWN_CONCRETE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Stairs
+    public static final Item CUT_RED_CONCRETE_STAIRS = register("cut_red_concrete_stairs", new BlockItem(CPlusBlocks.CUT_RED_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_CONCRETE_STAIRS = register("cut_orange_concrete_stairs", new BlockItem(CPlusBlocks.CUT_ORANGE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_CONCRETE_STAIRS = register("cut_yellow_concrete_stairs", new BlockItem(CPlusBlocks.CUT_YELLOW_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_CONCRETE_STAIRS = register("cut_lime_concrete_stairs", new BlockItem(CPlusBlocks.CUT_LIME_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_CONCRETE_STAIRS = register("cut_green_concrete_stairs", new BlockItem(CPlusBlocks.CUT_GREEN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_CONCRETE_STAIRS = register("cut_blue_concrete_stairs", new BlockItem(CPlusBlocks.CUT_BLUE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_CONCRETE_STAIRS = register("cut_cyan_concrete_stairs", new BlockItem(CPlusBlocks.CUT_CYAN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_CONCRETE_STAIRS = register("cut_light_blue_concrete_stairs", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_CONCRETE_STAIRS = register("cut_purple_concrete_stairs", new BlockItem(CPlusBlocks.CUT_PURPLE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_CONCRETE_STAIRS = register("cut_magenta_concrete_stairs", new BlockItem(CPlusBlocks.CUT_MAGENTA_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_CONCRETE_STAIRS = register("cut_pink_concrete_stairs", new BlockItem(CPlusBlocks.CUT_PINK_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_CONCRETE_STAIRS = register("cut_white_concrete_stairs", new BlockItem(CPlusBlocks.CUT_WHITE_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_CONCRETE_STAIRS = register("cut_light_gray_concrete_stairs", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_CONCRETE_STAIRS = register("cut_gray_concrete_stairs", new BlockItem(CPlusBlocks.CUT_GRAY_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_CONCRETE_STAIRS = register("cut_black_concrete_stairs", new BlockItem(CPlusBlocks.CUT_BLACK_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_CONCRETE_STAIRS = register("cut_brown_concrete_stairs", new BlockItem(CPlusBlocks.CUT_BROWN_CONCRETE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Wall
+    public static final Item CUT_RED_CONCRETE_WALL = register("cut_red_concrete_wall", new BlockItem(CPlusBlocks.CUT_RED_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_CONCRETE_WALL = register("cut_orange_concrete_wall", new BlockItem(CPlusBlocks.CUT_ORANGE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_CONCRETE_WALL = register("cut_yellow_concrete_wall", new BlockItem(CPlusBlocks.CUT_YELLOW_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_CONCRETE_WALL = register("cut_lime_concrete_wall", new BlockItem(CPlusBlocks.CUT_LIME_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_CONCRETE_WALL = register("cut_green_concrete_wall", new BlockItem(CPlusBlocks.CUT_GREEN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_CONCRETE_WALL = register("cut_blue_concrete_wall", new BlockItem(CPlusBlocks.CUT_BLUE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_CONCRETE_WALL = register("cut_cyan_concrete_wall", new BlockItem(CPlusBlocks.CUT_CYAN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_CONCRETE_WALL = register("cut_light_blue_concrete_wall", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_CONCRETE_WALL = register("cut_purple_concrete_wall", new BlockItem(CPlusBlocks.CUT_PURPLE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_CONCRETE_WALL = register("cut_magenta_concrete_wall", new BlockItem(CPlusBlocks.CUT_MAGENTA_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_CONCRETE_WALL = register("cut_pink_concrete_wall", new BlockItem(CPlusBlocks.CUT_PINK_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_CONCRETE_WALL = register("cut_white_concrete_wall", new BlockItem(CPlusBlocks.CUT_WHITE_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_CONCRETE_WALL = register("cut_light_gray_concrete_wall", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_CONCRETE_WALL = register("cut_gray_concrete_wall", new BlockItem(CPlusBlocks.CUT_GRAY_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_CONCRETE_WALL = register("cut_black_concrete_wall", new BlockItem(CPlusBlocks.CUT_BLACK_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_CONCRETE_WALL = register("cut_brown_concrete_wall", new BlockItem(CPlusBlocks.CUT_BROWN_CONCRETE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta Gate
+    public static final Item CUT_RED_CONCRETE_GATE = register("cut_red_concrete_gate", new BlockItem(CPlusBlocks.CUT_RED_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_ORANGE_CONCRETE_GATE = register("cut_orange_concrete_gate", new BlockItem(CPlusBlocks.CUT_ORANGE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_YELLOW_CONCRETE_GATE = register("cut_yellow_concrete_gate", new BlockItem(CPlusBlocks.CUT_YELLOW_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIME_CONCRETE_GATE = register("cut_lime_concrete_gate", new BlockItem(CPlusBlocks.CUT_LIME_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GREEN_CONCRETE_GATE = register("cut_green_concrete_gate", new BlockItem(CPlusBlocks.CUT_GREEN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLUE_CONCRETE_GATE = register("cut_blue_concrete_gate", new BlockItem(CPlusBlocks.CUT_BLUE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_CYAN_CONCRETE_GATE = register("cut_cyan_concrete_gate", new BlockItem(CPlusBlocks.CUT_CYAN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_BLUE_CONCRETE_GATE = register("cut_light_blue_concrete_gate", new BlockItem(CPlusBlocks.CUT_LIGHT_BLUE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PURPLE_CONCRETE_GATE = register("cut_purple_concrete_gate", new BlockItem(CPlusBlocks.CUT_PURPLE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_MAGENTA_CONCRETE_GATE = register("cut_magenta_concrete_gate", new BlockItem(CPlusBlocks.CUT_MAGENTA_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_PINK_CONCRETE_GATE = register("cut_pink_concrete_gate", new BlockItem(CPlusBlocks.CUT_PINK_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_WHITE_CONCRETE_GATE = register("cut_white_concrete_gate", new BlockItem(CPlusBlocks.CUT_WHITE_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_LIGHT_GRAY_CONCRETE_GATE = register("cut_light_gray_concrete_gate", new BlockItem(CPlusBlocks.CUT_LIGHT_GRAY_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_GRAY_CONCRETE_GATE = register("cut_gray_concrete_gate", new BlockItem(CPlusBlocks.CUT_GRAY_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BLACK_CONCRETE_GATE = register("cut_black_concrete_gate", new BlockItem(CPlusBlocks.CUT_BLACK_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CUT_BROWN_CONCRETE_GATE = register("cut_brown_concrete_gate", new BlockItem(CPlusBlocks.CUT_BROWN_CONCRETE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy cut
     //slab
@@ -3499,11 +4391,93 @@ public class CPlusItems {
     //wall
     //gate
 
-    //tiles
-    //slab
-    //stairs
-    //wall
-    //gate
+    public static final Item RED_CONCRETE_TILES = register("red_concrete_tiles", new BlockItem(CPlusBlocks.RED_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_TILES = register("orange_concrete_tiles", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_TILES = register("yellow_concrete_tiles", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_TILES = register("lime_concrete_tiles", new BlockItem(CPlusBlocks.LIME_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_TILES = register("green_concrete_tiles", new BlockItem(CPlusBlocks.GREEN_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_TILES = register("blue_concrete_tiles", new BlockItem(CPlusBlocks.BLUE_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_TILES = register("cyan_concrete_tiles", new BlockItem(CPlusBlocks.CYAN_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_TILES = register("light_blue_concrete_tiles", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_TILES = register("purple_concrete_tiles", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_TILES = register("magenta_concrete_tiles", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_TILES = register("pink_concrete_tiles", new BlockItem(CPlusBlocks.PINK_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_TILES = register("white_concrete_tiles", new BlockItem(CPlusBlocks.WHITE_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_TILES = register("light_gray_concrete_tiles", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_TILES = register("gray_concrete_tiles", new BlockItem(CPlusBlocks.GRAY_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_TILES = register("black_concrete_tiles", new BlockItem(CPlusBlocks.BLACK_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_TILES = register("brown_concrete_tiles", new BlockItem(CPlusBlocks.BROWN_CONCRETE_TILES, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    public static final Item RED_CONCRETE_TILE_SLAB = register("red_concrete_tile_slab", new BlockItem(CPlusBlocks.RED_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_TILE_SLAB = register("orange_concrete_tile_slab", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_TILE_SLAB = register("yellow_concrete_tile_slab", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_TILE_SLAB = register("lime_concrete_tile_slab", new BlockItem(CPlusBlocks.LIME_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_TILE_SLAB = register("green_concrete_tile_slab", new BlockItem(CPlusBlocks.GREEN_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_TILE_SLAB = register("blue_concrete_tile_slab", new BlockItem(CPlusBlocks.BLUE_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_TILE_SLAB = register("cyan_concrete_tile_slab", new BlockItem(CPlusBlocks.CYAN_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_TILE_SLAB = register("light_blue_concrete_tile_slab", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_TILE_SLAB = register("purple_concrete_tile_slab", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_TILE_SLAB = register("magenta_concrete_tile_slab", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_TILE_SLAB = register("pink_concrete_tile_slab", new BlockItem(CPlusBlocks.PINK_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_TILE_SLAB = register("white_concrete_tile_slab", new BlockItem(CPlusBlocks.WHITE_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_TILE_SLAB = register("light_gray_concrete_tile_slab", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_TILE_SLAB = register("gray_concrete_tile_slab", new BlockItem(CPlusBlocks.GRAY_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_TILE_SLAB = register("black_concrete_tile_slab", new BlockItem(CPlusBlocks.BLACK_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_TILE_SLAB = register("brown_concrete_tile_slab", new BlockItem(CPlusBlocks.BROWN_CONCRETE_TILE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_tile Stairs
+    public static final Item RED_CONCRETE_TILE_STAIRS = register("red_concrete_tile_stairs", new BlockItem(CPlusBlocks.RED_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_TILE_STAIRS = register("orange_concrete_tile_stairs", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_TILE_STAIRS = register("yellow_concrete_tile_stairs", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_TILE_STAIRS = register("lime_concrete_tile_stairs", new BlockItem(CPlusBlocks.LIME_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_TILE_STAIRS = register("green_concrete_tile_stairs", new BlockItem(CPlusBlocks.GREEN_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_TILE_STAIRS = register("blue_concrete_tile_stairs", new BlockItem(CPlusBlocks.BLUE_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_TILE_STAIRS = register("cyan_concrete_tile_stairs", new BlockItem(CPlusBlocks.CYAN_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_TILE_STAIRS = register("light_blue_concrete_tile_stairs", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_TILE_STAIRS = register("purple_concrete_tile_stairs", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_TILE_STAIRS = register("magenta_concrete_tile_stairs", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_TILE_STAIRS = register("pink_concrete_tile_stairs", new BlockItem(CPlusBlocks.PINK_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_TILE_STAIRS = register("white_concrete_tile_stairs", new BlockItem(CPlusBlocks.WHITE_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_TILE_STAIRS = register("light_gray_concrete_tile_stairs", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_TILE_STAIRS = register("gray_concrete_tile_stairs", new BlockItem(CPlusBlocks.GRAY_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_TILE_STAIRS = register("black_concrete_tile_stairs", new BlockItem(CPlusBlocks.BLACK_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_TILE_STAIRS = register("brown_concrete_tile_stairs", new BlockItem(CPlusBlocks.BROWN_CONCRETE_TILE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_tile Wall
+    public static final Item RED_CONCRETE_TILE_WALL = register("red_concrete_tile_wall", new BlockItem(CPlusBlocks.RED_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_TILE_WALL = register("orange_concrete_tile_wall", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_TILE_WALL = register("yellow_concrete_tile_wall", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_TILE_WALL = register("lime_concrete_tile_wall", new BlockItem(CPlusBlocks.LIME_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_TILE_WALL = register("green_concrete_tile_wall", new BlockItem(CPlusBlocks.GREEN_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_TILE_WALL = register("blue_concrete_tile_wall", new BlockItem(CPlusBlocks.BLUE_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_TILE_WALL = register("cyan_concrete_tile_wall", new BlockItem(CPlusBlocks.CYAN_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_TILE_WALL = register("light_blue_concrete_tile_wall", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_TILE_WALL = register("purple_concrete_tile_wall", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_TILE_WALL = register("magenta_concrete_tile_wall", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_TILE_WALL = register("pink_concrete_tile_wall", new BlockItem(CPlusBlocks.PINK_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_TILE_WALL = register("white_concrete_tile_wall", new BlockItem(CPlusBlocks.WHITE_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_TILE_WALL = register("light_gray_concrete_tile_wall", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_TILE_WALL = register("gray_concrete_tile_wall", new BlockItem(CPlusBlocks.GRAY_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_TILE_WALL = register("black_concrete_tile_wall", new BlockItem(CPlusBlocks.BLACK_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_TILE_WALL = register("brown_concrete_tile_wall", new BlockItem(CPlusBlocks.BROWN_CONCRETE_TILE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+    // Terracotta_tile Gate
+    public static final Item RED_CONCRETE_TILE_GATE = register("red_concrete_tile_gate", new BlockItem(CPlusBlocks.RED_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_TILE_GATE = register("orange_concrete_tile_gate", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_TILE_GATE = register("yellow_concrete_tile_gate", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_TILE_GATE = register("lime_concrete_tile_gate", new BlockItem(CPlusBlocks.LIME_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_TILE_GATE = register("green_concrete_tile_gate", new BlockItem(CPlusBlocks.GREEN_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_TILE_GATE = register("blue_concrete_tile_gate", new BlockItem(CPlusBlocks.BLUE_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_TILE_GATE = register("cyan_concrete_tile_gate", new BlockItem(CPlusBlocks.CYAN_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_TILE_GATE = register("light_blue_concrete_tile_gate", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_TILE_GATE = register("purple_concrete_tile_gate", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_TILE_GATE = register("magenta_concrete_tile_gate", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_TILE_GATE = register("pink_concrete_tile_gate", new BlockItem(CPlusBlocks.PINK_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_TILE_GATE = register("white_concrete_tile_gate", new BlockItem(CPlusBlocks.WHITE_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_TILE_GATE = register("light_gray_concrete_tile_gate", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_TILE_GATE = register("gray_concrete_tile_gate", new BlockItem(CPlusBlocks.GRAY_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_TILE_GATE = register("black_concrete_tile_gate", new BlockItem(CPlusBlocks.BLACK_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_TILE_GATE = register("brown_concrete_tile_gate", new BlockItem(CPlusBlocks.BROWN_CONCRETE_TILE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
     //mossy tiles
     //slab
@@ -3517,16 +4491,62 @@ public class CPlusItems {
     //wall
     //gate
 
-    //pillar
+    public static final Item RED_CONCRETE_PILLAR = register("red_concrete_pillar", new BlockItem(CPlusBlocks.RED_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item ORANGE_CONCRETE_PILLAR = register("orange_concrete_pillar", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item YELLOW_CONCRETE_PILLAR = register("yellow_concrete_pillar", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIME_CONCRETE_PILLAR = register("lime_concrete_pillar", new BlockItem(CPlusBlocks.LIME_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GREEN_CONCRETE_PILLAR = register("green_concrete_pillar", new BlockItem(CPlusBlocks.GREEN_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLUE_CONCRETE_PILLAR = register("blue_concrete_pillar", new BlockItem(CPlusBlocks.BLUE_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CYAN_CONCRETE_PILLAR = register("cyan_concrete_pillar", new BlockItem(CPlusBlocks.CYAN_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_BLUE_CONCRETE_PILLAR = register("light_blue_concrete_pillar", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PURPLE_CONCRETE_PILLAR = register("purple_concrete_pillar", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item MAGENTA_CONCRETE_PILLAR = register("magenta_concrete_pillar", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item PINK_CONCRETE_PILLAR = register("pink_concrete_pillar", new BlockItem(CPlusBlocks.PINK_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item WHITE_CONCRETE_PILLAR = register("white_concrete_pillar", new BlockItem(CPlusBlocks.WHITE_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item LIGHT_GRAY_CONCRETE_PILLAR = register("light_gray_concrete_pillar", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item GRAY_CONCRETE_PILLAR = register("gray_concrete_pillar", new BlockItem(CPlusBlocks.GRAY_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BLACK_CONCRETE_PILLAR = register("black_concrete_pillar", new BlockItem(CPlusBlocks.BLACK_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item BROWN_CONCRETE_PILLAR = register("brown_concrete_pillar", new BlockItem(CPlusBlocks.BROWN_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     //mossy pillar
     //cracked pillar
     //corner pillar
     //mossy corner pillar
     //cracked corner pillar
-    //chiseled
+    public static final Item CHISELED_RED_CONCRETE = register("chiseled_red_concrete", new BlockItem(CPlusBlocks.CHISELED_RED_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_ORANGE_CONCRETE = register("chiseled_orange_concrete", new BlockItem(CPlusBlocks.CHISELED_ORANGE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_YELLOW_CONCRETE = register("chiseled_yellow_concrete", new BlockItem(CPlusBlocks.CHISELED_YELLOW_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_LIME_CONCRETE = register("chiseled_lime_concrete", new BlockItem(CPlusBlocks.CHISELED_LIME_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_GREEN_CONCRETE = register("chiseled_green_concrete", new BlockItem(CPlusBlocks.CHISELED_GREEN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_BLUE_CONCRETE = register("chiseled_blue_concrete", new BlockItem(CPlusBlocks.CHISELED_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_CYAN_CONCRETE = register("chiseled_cyan_concrete", new BlockItem(CPlusBlocks.CHISELED_CYAN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_LIGHT_BLUE_CONCRETE = register("chiseled_light_blue_concrete", new BlockItem(CPlusBlocks.CHISELED_LIGHT_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_PURPLE_CONCRETE = register("chiseled_purple_concrete", new BlockItem(CPlusBlocks.CHISELED_PURPLE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_MAGENTA_CONCRETE = register("chiseled_magenta_concrete", new BlockItem(CPlusBlocks.CHISELED_MAGENTA_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_PINK_CONCRETE = register("chiseled_pink_concrete", new BlockItem(CPlusBlocks.CHISELED_PINK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_WHITE_CONCRETE = register("chiseled_white_concrete", new BlockItem(CPlusBlocks.CHISELED_WHITE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_LIGHT_GRAY_CONCRETE = register("chiseled_light_gray_concrete", new BlockItem(CPlusBlocks.CHISELED_LIGHT_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_GRAY_CONCRETE = register("chiseled_gray_concrete", new BlockItem(CPlusBlocks.CHISELED_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_BLACK_CONCRETE = register("chiseled_black_concrete", new BlockItem(CPlusBlocks.CHISELED_BLACK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CHISELED_BROWN_CONCRETE = register("chiseled_brown_concrete", new BlockItem(CPlusBlocks.CHISELED_BROWN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
     //mossy chiseled
     //cracked chiseled
-    //carved
+    public static final Item CARVED_RED_CONCRETE = register("carved_red_concrete", new BlockItem(CPlusBlocks.CARVED_RED_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_ORANGE_CONCRETE = register("carved_orange_concrete", new BlockItem(CPlusBlocks.CARVED_ORANGE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_YELLOW_CONCRETE = register("carved_yellow_concrete", new BlockItem(CPlusBlocks.CARVED_YELLOW_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_LIME_CONCRETE = register("carved_lime_concrete", new BlockItem(CPlusBlocks.CARVED_LIME_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_GREEN_CONCRETE = register("carved_green_concrete", new BlockItem(CPlusBlocks.CARVED_GREEN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_BLUE_CONCRETE = register("carved_blue_concrete", new BlockItem(CPlusBlocks.CARVED_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_CYAN_CONCRETE = register("carved_cyan_concrete", new BlockItem(CPlusBlocks.CARVED_CYAN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_LIGHT_BLUE_CONCRETE = register("carved_light_blue_concrete", new BlockItem(CPlusBlocks.CARVED_LIGHT_BLUE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_PURPLE_CONCRETE = register("carved_purple_concrete", new BlockItem(CPlusBlocks.CARVED_PURPLE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_MAGENTA_CONCRETE = register("carved_magenta_concrete", new BlockItem(CPlusBlocks.CARVED_MAGENTA_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_PINK_CONCRETE = register("carved_pink_concrete", new BlockItem(CPlusBlocks.CARVED_PINK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_WHITE_CONCRETE = register("carved_white_concrete", new BlockItem(CPlusBlocks.CARVED_WHITE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_LIGHT_GRAY_CONCRETE = register("carved_light_gray_concrete", new BlockItem(CPlusBlocks.CARVED_LIGHT_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_GRAY_CONCRETE = register("carved_gray_concrete", new BlockItem(CPlusBlocks.CARVED_GRAY_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_BLACK_CONCRETE = register("carved_black_concrete", new BlockItem(CPlusBlocks.CARVED_BLACK_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+    public static final Item CARVED_BROWN_CONCRETE = register("carved_brown_concrete", new BlockItem(CPlusBlocks.CARVED_BROWN_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
     //mossy carved
     //cracked carved
 

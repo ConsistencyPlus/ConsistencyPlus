@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/template_wall_post",
-  "textures": {
-    "wall": "minecraft:block/purpur_block"
-  }
+    "parent": "minecraft:block/template_wall_post",
+    "textures": {
+        "wall": "consistency_plus:block/cut_purpur"
+    }
 }

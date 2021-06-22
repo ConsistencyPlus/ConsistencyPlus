@@ -4670,7 +4670,7 @@ public static final Block RED_CONCRETE_SLAB = register("red_concrete_slab", new 
     //cracked carved
 
 //Any sane shit ends here.  Hello to any folks crazy enough to be here, and enjoy your stay in last-minute-addition hell
-// Who wrote this, who wrote this, who? Cause its true, but it certainly wasnt me.
+// Who wrote this, who wrote this, who? Cause its true, but it certainly wasn't me.
     // Ice
     public static final Block RED_ICE = register("red_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.RED).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
     public static final Block ORANGE_ICE = register("orange_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.ORANGE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/soul_sandstone_tile_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/soul_sandstone_tiles"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/soul_sandstone_tile_slab_top"
+        }
+    }
+}

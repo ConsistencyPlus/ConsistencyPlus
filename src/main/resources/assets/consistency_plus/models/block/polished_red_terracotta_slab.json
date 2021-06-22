@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "top": "consistency_plus:block/polished_red_terracotta",
+        "bottom": "consistency_plus:block/polished_red_terracotta",
+        "side": "consistency_plus:block/polished_red_terracotta"
+    }
+}

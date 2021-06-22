@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/smooth_calcite_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/smooth_calcite"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/smooth_calcite_slab_top"
+        }
+    }
+}

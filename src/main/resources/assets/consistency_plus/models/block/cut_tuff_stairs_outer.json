@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/outer_stairs",
+    "textures": {
+        "bottom": "consistency_plus:block/cut_tuff",
+        "top": "consistency_plus:block/cut_tuff",
+        "side": "consistency_plus:block/cut_tuff"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/template_wall_side",
+    "textures": {
+        "wall": "consistency_plus:block/brown_concrete_bricks"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "top": "consistency_plus:block/cut_cyan_terracotta",
+        "bottom": "consistency_plus:block/cut_cyan_terracotta",
+        "side": "consistency_plus:block/cut_cyan_terracotta"
+    }
+}

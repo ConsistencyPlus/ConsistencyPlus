@@ -4044,10 +4044,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 
 
 // Concrete
-    // Concrete Slab
-// Terracotta
-// Terracotta Slab
-public static final Block RED_CONCRETE_SLAB = register("red_concrete_slab", new SlabBlock(FabricBlockSettings.copy(RED_CONCRETE)));
+    public static final Block RED_CONCRETE_SLAB = register("red_concrete_slab", new SlabBlock(FabricBlockSettings.copy(RED_CONCRETE)));
     public static final Block ORANGE_CONCRETE_SLAB = register("orange_concrete_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_CONCRETE)));
     public static final Block YELLOW_CONCRETE_SLAB = register("yellow_concrete_slab", new SlabBlock(FabricBlockSettings.copy(YELLOW_CONCRETE)));
     public static final Block LIME_CONCRETE_SLAB = register("lime_concrete_slab", new SlabBlock(FabricBlockSettings.copy(LIME_CONCRETE)));

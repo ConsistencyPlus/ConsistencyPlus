@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/polished_crying_obsidian_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/polished_crying_obsidian"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/polished_crying_obsidian_slab_top"
+        }
+    }
+}

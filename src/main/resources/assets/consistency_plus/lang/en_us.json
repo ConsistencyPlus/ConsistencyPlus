@@ -1607,6 +1607,9 @@
   "block.consistency_plus.black_terracotta_tile_gate": "Black Terracotta Tile Gate",
   "block.consistency_plus.brown_terracotta_tile_gate": "Brown Terracotta Tile Gate",
 
+  "block.consistency_plus.brick_pillar": "Terracotta Pillar",
+  "block.consistency_plus.chiseled_bricks": "Chiseled Terracotta",
+  "block.consistency_plus.carved_bricks": "Carved Terracotta",
 
 
   "block.consistency_plus.terracotta_pillar": "Terracotta Pillar",

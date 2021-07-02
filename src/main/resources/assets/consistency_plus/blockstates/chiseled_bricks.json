@@ -1,7 +1,7 @@
 {
-  "variants": {
-    "": {
-      "model": "consistency_plus:block/chiseled_bricks"
+    "variants": {
+        "": {
+            "model": "consistency_plus:block/chiseled_terracotta"
+        }
     }
-  }
 }

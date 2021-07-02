@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import io.github.consistencyplus.consistency_plus.base.BaseConsistencyCarvedPumpkinBlock;
-import io.github.consistencyplus.consistency_plus.base.BaseConsistencyStairBlock;
+import io.github.consistencyplus.consistency_plus.core.BaseConsistencyCarvedPumpkinBlock;
+import io.github.consistencyplus.consistency_plus.core.BaseConsistencyStairBlock;
 import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
@@ -3786,7 +3786,6 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Block GRAY_TERRACOTTA_BRICKS = register("gray_terracotta_bricks", new Block(FabricBlockSettings.copy(GRAY_TERRACOTTA)));
     public static final Block BLACK_TERRACOTTA_BRICKS = register("black_terracotta_bricks", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
     public static final Block BROWN_TERRACOTTA_BRICKS = register("brown_terracotta_bricks", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
-    public static final Block TERRACOTTA_BRICKS = register("terracotta_bricks", new Block(FabricBlockSettings.copy(TERRACOTTA)));
 
     public static final Block RED_TERRACOTTA_BRICK_SLAB = register("red_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(RED_TERRACOTTA_BRICKS)));
     public static final Block ORANGE_TERRACOTTA_BRICK_SLAB = register("orange_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA_BRICKS)));
@@ -3804,7 +3803,6 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Block GRAY_TERRACOTTA_BRICK_SLAB = register("gray_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(GRAY_TERRACOTTA_BRICKS)));
     public static final Block BLACK_TERRACOTTA_BRICK_SLAB = register("black_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_BRICKS)));
     public static final Block BROWN_TERRACOTTA_BRICK_SLAB = register("brown_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_BRICKS)));
-    public static final Block TERRACOTTA_BRICK_SLAB = register("terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(TERRACOTTA_BRICKS)));
 
     // Terracotta Stairs
     public static final Block RED_TERRACOTTA_BRICK_STAIRS = register("red_terracotta_brick_stairs", new BaseConsistencyStairBlock(RED_TERRACOTTA_BRICKS.getDefaultState(), FabricBlockSettings.copy(RED_TERRACOTTA_BRICKS)));
@@ -3823,8 +3821,6 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Block GRAY_TERRACOTTA_BRICK_STAIRS = register("gray_terracotta_brick_stairs", new BaseConsistencyStairBlock(GRAY_TERRACOTTA_BRICKS.getDefaultState(), FabricBlockSettings.copy(GRAY_TERRACOTTA_BRICKS)));
     public static final Block BLACK_TERRACOTTA_BRICK_STAIRS = register("black_terracotta_brick_stairs", new BaseConsistencyStairBlock(BLACK_TERRACOTTA_BRICKS.getDefaultState(), FabricBlockSettings.copy(BLACK_TERRACOTTA_BRICKS)));
     public static final Block BROWN_TERRACOTTA_BRICK_STAIRS = register("brown_terracotta_brick_stairs", new BaseConsistencyStairBlock(BROWN_TERRACOTTA_BRICKS.getDefaultState(), FabricBlockSettings.copy(BROWN_TERRACOTTA_BRICKS)));
-    public static final Block TERRACOTTA_BRICK_STAIRS = register("terracotta_brick_stairs", new BaseConsistencyStairBlock(TERRACOTTA_BRICKS.getDefaultState(), FabricBlockSettings.copy(TERRACOTTA_BRICKS)));
-
     // Terracotta Wall
     public static final Block RED_TERRACOTTA_BRICK_WALL = register("red_terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(RED_TERRACOTTA_BRICKS)));
     public static final Block ORANGE_TERRACOTTA_BRICK_WALL = register("orange_terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA_BRICKS)));
@@ -3842,7 +3838,6 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Block GRAY_TERRACOTTA_BRICK_WALL = register("gray_terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(GRAY_TERRACOTTA_BRICKS)));
     public static final Block BLACK_TERRACOTTA_BRICK_WALL = register("black_terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_BRICKS)));
     public static final Block BROWN_TERRACOTTA_BRICK_WALL = register("brown_terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_BRICKS)));
-    public static final Block TERRACOTTA_BRICK_WALL = register("terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(TERRACOTTA_BRICKS)));
 
     // Terracotta Gates
     public static final Block RED_TERRACOTTA_BRICK_GATE = register("red_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_TERRACOTTA_BRICKS)));
@@ -3861,7 +3856,6 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Block GRAY_TERRACOTTA_BRICK_GATE = register("gray_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(GRAY_TERRACOTTA_BRICKS)));
     public static final Block BLACK_TERRACOTTA_BRICK_GATE = register("black_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_BRICKS)));
     public static final Block BROWN_TERRACOTTA_BRICK_GATE = register("brown_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_BRICKS)));
-    public static final Block TERRACOTTA_BRICK_GATE = register("terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(TERRACOTTA_BRICKS)));
 
     //mossy bricks
     //slab

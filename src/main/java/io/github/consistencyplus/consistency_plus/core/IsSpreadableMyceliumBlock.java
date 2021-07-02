@@ -1,4 +1,4 @@
-package io.github.consistencyplus.consistency_plus.base;
+package io.github.consistencyplus.consistency_plus.core;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

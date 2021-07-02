@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.mixin;
 
-import io.github.consistencyplus.consistency_plus.base.HasUngrownVariant;
-import io.github.consistencyplus.consistency_plus.base.IsSpreadableMyceliumBlock;
+import io.github.consistencyplus.consistency_plus.core.HasUngrownVariant;
+import io.github.consistencyplus.consistency_plus.core.IsSpreadableMyceliumBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MyceliumBlock;

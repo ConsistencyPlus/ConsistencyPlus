@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/inner_stairs",
+    "textures": {
+        "bottom": "consistency_plus:block/smooth_lime_concrete",
+        "top": "consistency_plus:block/smooth_lime_concrete",
+        "side": "consistency_plus:block/smooth_lime_concrete"
+    }
+}

@@ -34,6 +34,7 @@ public class CPlusBlocks {
     wall:   public static final Block STONE_WALL = register("stone_wall", new WallBlock(FabricBlockSettings.copy(STONE_BRICKS)));
     fence: public static final Block FORMAT_FENCE = register("format_fence", new FenceBlock(FabricBlockSettings.of(Material.STONE)));
     gate: public static final Block FORMAT_FENCE_GATE = register("format_fence_gate", new FenceGateBlock(FabricBlockSettings.of(Material.STONE)));
+
     public static final Block _GATE = register("_gate", new FenceGateBlock(FabricBlockSettings.copy()));
     public static final Block CUT__GATE = register("cut__gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_)));
     public static final Block _BRICK_GATE = register("_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(_BRICKS)));

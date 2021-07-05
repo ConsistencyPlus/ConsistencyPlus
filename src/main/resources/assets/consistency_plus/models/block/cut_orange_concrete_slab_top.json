@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab_top",
+    "textures": {
+        "top": "consistency_plus:block/cut_orange_concrete",
+        "bottom": "consistency_plus:block/cut_orange_concrete",
+        "side": "consistency_plus:block/cut_orange_concrete"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/template_wall_post",
+    "textures": {
+        "wall": "consistency_plus:block/cut_light_gray_concrete"
+    }
+}

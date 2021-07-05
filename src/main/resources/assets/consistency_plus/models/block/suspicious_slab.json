@@ -1,10 +1,10 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "consistency_plus:block/cut_clay",
-    "2": "consistency_plus:block/cut_clay_top_bottom",
+    "0": "consistency_plus:block/polished_red_concrete",
+    "2": "consistency_plus:block/polished_red_concrete",
     "4": "block/quartz_block_side",
-    "particle": "consistency_plus:block/cut_clay"
+    "particle": "consistency_plus:block/polished_red_concrete"
   },
   "elements": [
     {

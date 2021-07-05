@@ -998,10 +998,6 @@ public class CPlusBlocks {
     public static final Block CLAY_STAIRS = register("clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(), FabricBlockSettings.copy(CLAY)));
     public static final Block CLAY_WALL = register("clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
 
-    public static final Block POLISHED_CLAY = register("polished_clay", new Block(FabricBlockSettings.copy(CLAY)));
-    public static final Block POLISHED_CLAY_SLAB = register("polished_clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
-    public static final Block POLISHED_CLAY_STAIRS = register("polished_clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(), FabricBlockSettings.copy(CLAY)));
-    public static final Block POLISHED_CLAY_WALL = register("polished_clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
 
     //Cracked Polished
     //block
@@ -1015,15 +1011,6 @@ public class CPlusBlocks {
     //stairs
     //wall
 
-    public static final Block CUT_CLAY = register("cut_clay", new Block(FabricBlockSettings.copy(CLAY)));
-    public static final Block CUT_CLAY_SLAB = register("cut_clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
-    public static final Block CUT_CLAY_STAIRS = register("cut_clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(), FabricBlockSettings.copy(CLAY)));
-    public static final Block CUT_CLAY_WALL = register("cut_clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
-
-    public static final Block SMOOTH_CLAY = register("smooth_clay", new Block(FabricBlockSettings.copy(CLAY)));
-    public static final Block SMOOTH_CLAY_SLAB = register("smooth_clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
-    public static final Block SMOOTH_CLAY_STAIRS = register("smooth_clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(), FabricBlockSettings.copy(CLAY)));
-    public static final Block SMOOTH_CLAY_WALL = register("smooth_clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
 
     //Bricks
     public static final Block BRICK_GATE = register("brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BRICKS)));
@@ -2476,14 +2463,8 @@ public class CPlusBlocks {
     //wall
     //gate
 
-    public static final Block DEEPSLATE_TILES = register("deepslate_tiles", new Block(FabricBlockSettings.copy(DEEPSLATE)));
-    public static final Block DEEPSLATE_TILE_SLAB = register("deepslate_tile_slab", new SlabBlock(FabricBlockSettings.copy(DEEPSLATE)));
-    public static final Block DEEPSLATE_TILE_STAIRS = register("deepslate_tile_stairs", new BaseConsistencyStairBlock(DEEPSLATE.getDefaultState(), FabricBlockSettings.copy(DEEPSLATE)));
-    public static final Block DEEPSLATE_TILE_WALL = register("deepslate_tile_wall", new WallBlock(FabricBlockSettings.copy(DEEPSLATE)));
-    public static final Block DEEPSLATE_TILE_GATE = register("deepslate_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(DEEPSLATE_BRICKS)));
 
     //Cracked Tiles
-    //block
     //slab
     //stairs
     //wall

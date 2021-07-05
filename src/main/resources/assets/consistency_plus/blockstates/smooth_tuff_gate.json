@@ -50,7 +50,7 @@
     },
     "facing=south,in_wall=true,open=false": {
       "uvlock": true,
-      "model": "consistency_plus:block/smooth_smooth_tuff_gate_wall"
+      "model": "consistency_plus:block/smooth_tuff_gate_wall"
     },
     "facing=south,in_wall=true,open=true": {
       "uvlock": true,

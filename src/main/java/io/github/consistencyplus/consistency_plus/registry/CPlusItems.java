@@ -920,10 +920,6 @@ public class CPlusItems {
     public static final Item CLAY_STAIRS = register("clay_stairs", new BlockItem(CPlusBlocks.CLAY_STAIRS, new Item.Settings()));
     public static final Item CLAY_WALL = register("clay_wall", new BlockItem(CPlusBlocks.CLAY_WALL, new Item.Settings()));
 
-    public static final Item POLISHED_CLAY = register("polished_clay", new BlockItem(CPlusBlocks.POLISHED_CLAY, new Item.Settings()));
-    public static final Item POLISHED_CLAY_SLAB = register("polished_clay_slab", new BlockItem(CPlusBlocks.POLISHED_CLAY_SLAB, new Item.Settings()));
-    public static final Item POLISHED_CLAY_STAIRS = register("polished_clay_stairs", new BlockItem(CPlusBlocks.POLISHED_CLAY_STAIRS, new Item.Settings()));
-    public static final Item POLISHED_CLAY_WALL = register("polished_clay_wall", new BlockItem(CPlusBlocks.POLISHED_CLAY_WALL, new Item.Settings()));
 
     //Cracked Polished
     //block
@@ -939,15 +935,6 @@ public class CPlusItems {
     //wall
     //gate
 
-    public static final Item CUT_CLAY = register("cut_clay", new BlockItem(CPlusBlocks.CUT_CLAY, new Item.Settings()));
-    public static final Item CUT_CLAY_SLAB = register("cut_clay_slab", new BlockItem(CPlusBlocks.CUT_CLAY_SLAB, new Item.Settings()));
-    public static final Item CUT_CLAY_STAIRS = register("cut_clay_stairs", new BlockItem(CPlusBlocks.CUT_CLAY_STAIRS, new Item.Settings()));
-    public static final Item CUT_CLAY_WALL = register("cut_clay_wall", new BlockItem(CPlusBlocks.CUT_CLAY_WALL, new Item.Settings()));
-
-    public static final Item SMOOTH_CLAY = register("smooth_clay", new BlockItem(CPlusBlocks.SMOOTH_CLAY, new Item.Settings()));
-    public static final Item SMOOTH_CLAY_SLAB = register("smooth_clay_slab", new BlockItem(CPlusBlocks.SMOOTH_CLAY_SLAB, new Item.Settings()));
-    public static final Item SMOOTH_CLAY_STAIRS = register("smooth_clay_stairs", new BlockItem(CPlusBlocks.SMOOTH_CLAY_STAIRS, new Item.Settings()));
-    public static final Item SMOOTH_CLAY_WALL = register("smooth_clay_wall", new BlockItem(CPlusBlocks.SMOOTH_CLAY_WALL, new Item.Settings()));
 
     //Cracked Cut
     //block

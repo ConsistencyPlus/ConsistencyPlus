@@ -4,7 +4,7 @@
             "model": "consistency_plus:block/obsidian_brick_slab"
         },
         "type=double": {
-            "model": "consistency_plus:block/obsidian_brick"
+            "model": "consistency_plus:block/obsidian_bricks"
         },
         "type=top": {
             "model": "consistency_plus:block/obsidian_brick_slab_top"

@@ -1436,8 +1436,8 @@ public class CPlusBlocks {
     public static final Block CUT_PURPUR = register("cut_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
     public static final Block CUT_PURPUR_SLAB = register("cut_purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
     public static final Block CUT_PURPUR_STAIRS = register("cut_purpur_stairs", new BaseConsistencyStairBlock(CUT_PURPUR.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
-    public static final Block CUT_PURPUR_WALL = register("cut_purpur_wall", new WallBlock(FabricBlockSettings.copy(net.minecraft.block.Blocks.PURPUR_BLOCK)));
-    public static final Block CUT_PURPUR_GATE = register("cut_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(net.minecraft.block.Blocks.PURPUR_BLOCK)));
+    public static final Block CUT_PURPUR_WALL = register("cut_purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block CUT_PURPUR_GATE = register("cut_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
     //Cracked Cut
     //block

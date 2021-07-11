@@ -2,6 +2,10 @@
   "item.consistency_plus.warped_wart": "Warped Wart",
   "item.minecraft.nether_wart": "Crimson Wart",
 
+  "block.consistency_plus.chiseled_bricks": "Deprecated - Chiseled Bricks",
+  "block.consistency_plus.carved_bricks": "Deprecated - Carved Bricks",
+  "block.consistency_plus.brick_pillar": "Deprecated - Chiseled Bricks",
+
   "block.minecraft.nether_wart_block": "Crimson Wart Block",
   "block.minecraft.red_nether_brick_slab": "Crimson Nether Brick Slab",
   "block.minecraft.red_nether_brick_stairs": "Crimson Nether Brick Stairs",
@@ -1594,11 +1598,6 @@
   "block.consistency_plus.gray_terracotta_tile_gate": "Gray Terracotta Tile Gate",
   "block.consistency_plus.black_terracotta_tile_gate": "Black Terracotta Tile Gate",
   "block.consistency_plus.brown_terracotta_tile_gate": "Brown Terracotta Tile Gate",
-
-  "block.consistency_plus.brick_pillar": "Terracotta Pillar",
-  "block.consistency_plus.chiseled_bricks": "Chiseled Terracotta",
-  "block.consistency_plus.carved_bricks": "Carved Terracotta",
-
 
   "block.consistency_plus.terracotta_pillar": "Terracotta Pillar",
   "block.consistency_plus.red_terracotta_pillar": "Red Terracotta Pillar",

@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -964,19 +965,10 @@ public class CPlusItems {
 
     public static final Item BRICK_GATE = register("brick_gate", new BlockItem(CPlusBlocks.BRICK_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-    //Pillars and Chiseled
-    public static final Item CHISELED_BRICKS = register("chiseled_bricks", new BlockItem(CPlusBlocks.CHISELED_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-    public static final Item BRICK_PILLAR = register("brick_pillar", new BlockItem(CPlusBlocks.BRICK_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-    //mossy_chiseled_bricks
-    //cracked_chiseled_bricks
-    //mossy_brick_pillar
-    //cracked_brick_pillar
-    //corner pillar
-    //cracked corner pillar
-    //mossy corner pillar
-    public static final Item CARVED_BRICKS = register("carved_bricks", new BlockItem(CPlusBlocks.CARVED_BRICKS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-    //cracked carved
-    //mossy carved
+    //DEPRECATED Chiseled, Carved, and Pillar Brick stuff
+    public static final Item CHISELED_BRICKS = register("chiseled_bricks", new BlockItem(CPlusBlocks.CHISELED_BRICKS, new Item.Settings()));
+    public static final Item BRICK_PILLAR = register("brick_pillar", new BlockItem(CPlusBlocks.BRICK_PILLAR, new Item.Settings()));
+    public static final Item CARVED_BRICKS = register("carved_bricks", new BlockItem(CPlusBlocks.CARVED_BRICKS, new Item.Settings()));
 
 //Nether Bricks
 

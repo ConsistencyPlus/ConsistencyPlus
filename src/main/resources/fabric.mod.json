@@ -54,11 +54,13 @@
       }
     }
   ],
+
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/consistency",
     "issues": "https://github.com/ConsistencyPlus/ConsistencyPlus/issues",
     "sources": "https://github.com/ConsistencyPlus/ConsistencyPlus"
   },
+
   "license": "LGPLv3",
   "icon": "assets/consistency_plus/icon.png",
   "environment": "*",

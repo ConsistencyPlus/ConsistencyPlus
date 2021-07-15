@@ -1857,6 +1857,7 @@
 "consistency_plus:cut_deepslate_wall",
 "consistency_plus:cut_deepslate_gate",
 "consistency_plus:carved_deepslate",
-"consistency_plus:netherite_stairs"
+"consistency_plus:netherite_stairs",
+"consistency_plus:terracotta_pillar"
   ]
 }

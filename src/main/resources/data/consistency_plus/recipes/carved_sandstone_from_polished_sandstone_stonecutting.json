@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:polished_sandstone"
-  },
-  "result": "minecraft:chiseled_sandstone",
-  "count": 1
-}

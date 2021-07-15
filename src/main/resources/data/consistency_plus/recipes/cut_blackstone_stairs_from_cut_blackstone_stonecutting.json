@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:cut_blackstone"
-  },
-  "result": "consistency_plus:cut_blackstone_stairs",
-  "count": 1
-}

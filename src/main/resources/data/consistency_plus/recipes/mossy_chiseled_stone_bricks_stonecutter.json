@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:mossy_stone_bricks"
-  },
-  "result": "consistency_plus:mossy_chiseled_stone_bricks",
-  "count": 1
-}

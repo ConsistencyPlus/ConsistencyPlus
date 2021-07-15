@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:red_sandstone_brick_stairs"
-  },
-  "result": "consistency_plus:cut_red_sandstone_stairs",
-  "count": 1
-}

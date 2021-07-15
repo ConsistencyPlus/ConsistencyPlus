@@ -30,7 +30,7 @@ public class CPlusBlocks {
     block:  public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
     slab:   public static final Block POLISHED_STONE_SLAB  = register("polished_stone_slab", new SlabBlock(FabricBlockSettings.copy(STONE_BRICKS)));
     stairs: public static final Block POLISHED_STONE_STAIRS = register("polished_stone_stairs", new BaseConsistencyStairBlock(STONE_BRICKS.getDefaultState(),FabricBlockSettings.copy(STONE_BRICKS)));
-    pillar: public static final Block STONE_BRICK_PILLAR = register("stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+    pillar: public static final Block STONE_BRICK_PILLAR = register("stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
     wall:   public static final Block STONE_WALL = register("stone_wall", new WallBlock(FabricBlockSettings.copy(STONE_BRICKS)));
     fence: public static final Block FORMAT_FENCE = register("format_fence", new FenceBlock(FabricBlockSettings.of(Material.STONE)));
     gate: public static final Block FORMAT_FENCE_GATE = register("format_fence_gate", new FenceGateBlock(FabricBlockSettings.of(Material.STONE)));
@@ -46,6 +46,7 @@ public class CPlusBlocks {
 
     public static final Block STONE_WALL = register("stone_wall", new WallBlock(FabricBlockSettings.copy(STONE)));
     public static final Block STONE_GATE = register("stone_gate", new FenceGateBlock(FabricBlockSettings.copy(STONE)));
+
     public static final Block COBBLESTONE_GATE = register("cobblestone_gate", new FenceGateBlock(FabricBlockSettings.copy(COBBLESTONE)));
     public static final Block MOSSY_COBBLESTONE_GATE = register("mossy_cobblestone_gate", new FenceGateBlock(FabricBlockSettings.copy(MOSSY_COBBLESTONE)));
     //Smooth
@@ -142,15 +143,15 @@ public class CPlusBlocks {
     public static final Block MOSSY_STONE_BRICK_GATE = register("mossy_stone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(MOSSY_STONE_BRICKS)));
 
     // Pillar and Chiseled
-    public static final Block STONE_BRICK_PILLAR = register("stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
-    public static final Block CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
-    public static final Block MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
-    public static final Block CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
-    public static final Block MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+    public static final Block STONE_PILLAR = register("stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+    public static final Block CRACKED_STONE_PILLAR = register("cracked_stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+    public static final Block MOSSY_STONE_PILLAR = register("mossy_stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+    public static final Block CRACKED_CHISELED_STONE = register("cracked_chiseled_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+    public static final Block MOSSY_CHISELED_STONE = register("mossy_chiseled_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
     //corner pillar
     //cracked corner pillar
     //mossy corner pillar
-    public static final Block CARVED_STONE_BRICKS = register("carved_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+    public static final Block CARVED_STONE = register("carved_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
     //cracked carved
     //mossy carved
 
@@ -251,9 +252,9 @@ public class CPlusBlocks {
     public static final Block MOSSY_BLACKSTONE_BRICK_GATE = register("mossy_blackstone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 
     //Pillars and Chiseled
-    public static final Block MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
-    public static final Block CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
-    public static final Block BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+    public static final Block MOSSY_BLACKSTONE_PILLAR = register("mossy_blackstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+    public static final Block CRACKED_BLACKSTONE_PILLAR = register("cracked_blackstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+    public static final Block BLACKSTONE_PILLAR = register("blackstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
     public static final Block CHISELED_BLACKSTONE = register("chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
     public static final Block MOSSY_CHISELED_BLACKSTONE = register("mossy_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
     public static final Block CRACKED_CHISELED_BLACKSTONE = register("cracked_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
@@ -378,8 +379,8 @@ public class CPlusBlocks {
     //cracked_chiseled_sandstone_bricks
     //mossy_chiseled_sandstone_bricks
     public static final Block SANDSTONE_PILLAR = register("sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(SANDSTONE)));
-    //cracked_sandstone_brick_pillar
-    //mossy_sandstone_brick_pillar
+    //cracked_sandstone_pillar
+    //mossy_sandstone_pillar
     //corner pillar
     //cracked corner pillar
     //mossy corner pillar
@@ -480,7 +481,7 @@ public class CPlusBlocks {
     //cracked_red_sandstone_bricks
     //cracked_red_sandstone_brick_slab
     //cracked_red_sandstone_brick_stairs
-    //cracked_red_sandstone_brick_pillar
+    //cracked_red_sandstone_pillar
     //gate
 
     //Mossy Bricks
@@ -503,8 +504,8 @@ public class CPlusBlocks {
     //cracked_chiseled_red_sandstone_bricks
     //mossy_chiseled_red_sandstone_bricks
     public static final Block RED_SANDSTONE_PILLAR = register("red_sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
-    //cracked_red_sandstone_brick_pillar
-    //mossy_red_sandstone_brick_pillar
+    //cracked_red_sandstone_pillar
+    //mossy_red_sandstone_pillar
     //corner pillar
     //cracked corner pillar
     //mossy corner pillar
@@ -1029,20 +1030,6 @@ public class CPlusBlocks {
     //mossy_brick_wall
     //gate
 
-    //Pillars and Chiseled
-    public static final Block CHISELED_BRICKS = register("chiseled_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
-    //mossy_chiseled_bricks
-    //cracked_chiseled_bricks
-    public static final Block BRICK_PILLAR = register("brick_pillar", new PillarBlock(FabricBlockSettings.copy(BRICKS)));
-    //mossy_brick_pillar
-    //cracked_brick_pillar
-    //corner pillar
-    //cracked corner pillar
-    //mossy corner pillar
-    public static final Block CARVED_BRICKS = register("carved_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
-    //cracked carved
-    //mossy carved
-
 
 //Nether Bricks
 //Nether Bricks will have a rework eventually, none of this is final
@@ -1391,11 +1378,11 @@ public class CPlusBlocks {
     public static final Block PURPUR_GATE = register("purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
     //Smooth
-    public static final Block SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block SMOOTH_PURPUR = register("smooth_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
     public static final Block SMOOTH_PURPUR_SLAB = register("smooth_purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
     public static final Block SMOOTH_PURPUR_STAIRS = register("smooth_purpur_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
     public static final Block SMOOTH_PURPUR_WALL = register("smooth_purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-    public static final Block SMOOTH_PURPUR_GATE = register("smooth_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_PURPUR_BLOCK)));
+    public static final Block SMOOTH_PURPUR_GATE = register("smooth_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
     //Cracked Smooth
     //block
@@ -1412,11 +1399,11 @@ public class CPlusBlocks {
     //gate
 
     //Polished
-    public static final Block POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block POLISHED_PURPUR = register("polished_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
     public static final Block POLISHED_PURPUR_SLAB = register("polished_purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
     public static final Block POLISHED_PURPUR_STAIRS = register("polished_purpur_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
     public static final Block POLISHED_PURPUR_WALL = register("polished_purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-    public static final Block POLISHED_PURPUR_GATE = register("polished_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_PURPUR_BLOCK)));
+    public static final Block POLISHED_PURPUR_GATE = register("polished_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_PURPUR)));
 
     //Cracked Polished
     //block
@@ -1492,7 +1479,7 @@ public class CPlusBlocks {
     //gate
 
     //Pillars and Chiseled
-    public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+    public static final Block CHISELED_PURPUR = register("chiseled_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
     //mossy_chiseled_purpur
     //cracked_chiseled_purpur
     //mossy_purpur_pillar
@@ -1616,9 +1603,9 @@ public class CPlusBlocks {
     public static final Block CHISELED_END_STONE = register("chiseled_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
     //mossy_chiseled_end_stone_bricks
     //cracked_chiseled_end_stone_bricks
-    public static final Block END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
-    //mossy_end_stone_brick_pillar
-    //cracked_end_stone_brick_pillar
+    public static final Block END_STONE_PILLAR = register("end_stone_pillar", new PillarBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
+    //mossy_end_stone_pillar
+    //cracked_end_stone_pillar
     //corner pillar
     //cracked corner pillar
     //mossy corner pillar
@@ -4882,6 +4869,28 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Block SUSPICIOUS_SLAB = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
 //  public static final Block SIUOLS_SANITY = register("is_a_crab", new Block(FabricBlockSettings.copy(HELP_ME)));
     //  You are having funny fun because your playing a Siuolplexplex contributed mod
+
+        // Deprecated Blocks
+        public static final Block STONE_BRICK_PILLAR = register("stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block CARVED_STONE_BRICKS = register("carved_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+
+        public static final Block MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+
+        public static final Block CHISELED_BRICKS = register("chiseled_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
+        public static final Block BRICK_PILLAR = register("brick_pillar", new PillarBlock(FabricBlockSettings.copy(BRICKS)));
+        public static final Block CARVED_BRICKS = register("carved_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
+
+        public static final Block END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
+
+        public static final Block SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+        public static final Block POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+        public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
     private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier("consistency_plus", name), block);

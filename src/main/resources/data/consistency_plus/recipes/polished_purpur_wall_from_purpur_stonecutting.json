@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:purpur_block"
-  },
-  "result": "consistency_plus:polished_purpur_wall",
-  "count": 1
-}

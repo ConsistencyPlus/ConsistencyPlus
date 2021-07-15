@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "experience": 0.1,
-  "ingredient": {
-    "item": "consistency_plus:smooth_andesite_gate"
-  },
-  "result": "consistency_plus:cracked_smooth_andesite_gate",
-  "count": 1
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:purpur_block"
-  },
-  "result": "consistency_plus:carved_purpur",
-  "count": 1
-}

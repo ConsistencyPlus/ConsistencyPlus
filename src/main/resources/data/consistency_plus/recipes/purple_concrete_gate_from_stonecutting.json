@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:purple_concrete"
-  },
-  "result": "consistency_plus:purple_concrete_gate",
-  "count": 1
-}

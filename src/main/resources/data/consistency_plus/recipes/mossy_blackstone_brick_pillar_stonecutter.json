@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:mossy_blackstone_bricks"
-  },
-  "result": "consistency_plus:mossy_blackstone_brick_pillar",
-  "count": 1
-}
-

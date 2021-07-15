@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:yellow_ice"
-  },
-  "result": "consistency_plus:yellow_ice_stairs",
-  "count": 1
-}

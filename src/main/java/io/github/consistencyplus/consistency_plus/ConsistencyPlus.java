@@ -29,12 +29,17 @@ public class ConsistencyPlus implements ModInitializer {
 		} else {
 			LOGGER.debug("Consistency+ Main - Production Environment");
 		}
+
 		if (FabricLoader.getInstance().isModLoaded("quilt_loader")) {
 			LOGGER.debug("Consistency+ Main - Running on Quilt Loader with Fabric compat");
 		} else if (FabricLoader.getInstance().isModLoaded("fabricloader")) {
 			LOGGER.debug("Consistency+ Main - Running on Fabric Loader");
 		} else {
 			LOGGER.debug("Consistency+ Main - Running on an unknown loader, have to assume its up to spec with Fabric.");
+		}
+
+		if (FabricLoader.getInstance().isModLoaded("consistency_plus_core")) {
+			LOGGER.warn("Consistency+ Main - Consistency+ Core is not supported on this version and this version cannot use its features. Please use Consistency+ 1.0.0 or newer.");
 		}
 
 		LOGGER.debug("Consistency+ Main - Beginning block initialization");

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "consistency_plus:white_ice"
-  },
-  "result": "consistency_plus:white_ice_gate",
-  "count": 1
-}

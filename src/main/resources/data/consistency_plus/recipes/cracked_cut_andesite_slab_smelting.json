@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "experience": 0.1,
-  "ingredient": {
-    "item": "consistency_plus:cut_andesite_slab"
-  },
-  "result": "consistency_plus:cracked_cut_andesite_slab",
-  "count": 2
-}

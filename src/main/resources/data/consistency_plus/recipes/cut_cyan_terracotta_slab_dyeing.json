@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:cyan_dye"
+        },
+        {
+            "item": "consistency_plus:cut_terracotta_slab"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:cut_cyan_terracotta_slab"
+    }
+}

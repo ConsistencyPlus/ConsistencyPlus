@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:black_dye"
+        },
+        {
+            "item": "consistency_plus:smooth_terracotta"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:smooth_black_terracotta"
+    }
+}

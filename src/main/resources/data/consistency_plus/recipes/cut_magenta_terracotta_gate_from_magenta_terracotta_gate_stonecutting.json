@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:magenta_terracotta_gate"
+    },
+    "result": "consistency_plus:cut_magenta_terracotta_gate",
+    "count": 1
+}

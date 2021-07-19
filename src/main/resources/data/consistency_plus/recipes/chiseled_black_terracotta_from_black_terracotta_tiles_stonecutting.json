@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:black_terracotta_tiles"
+    },
+    "result": "consistency_plus:chiseled_black_terracotta",
+    "count": 1
+}

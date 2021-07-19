@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:magenta_dye"
+        },
+        {
+            "item": "minecraft:terracotta"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_terracotta"
+    }
+}

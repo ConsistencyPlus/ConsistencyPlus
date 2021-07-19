@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:obsidian_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:obsidian_brick_slab",
+        "count": 6
+    }
+}

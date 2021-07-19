@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:lime_terracotta_brick_stairs"
+    },
+    "result": "consistency_plus:lime_terracotta_tile_stairs",
+    "count": 1
+}

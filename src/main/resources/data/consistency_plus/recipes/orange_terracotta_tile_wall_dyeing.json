@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:orange_dye"
+        },
+        {
+            "item": "consistency_plus:terracotta_tile_wall"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:orange_terracotta_tile_wall"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:orange_terracotta_bricks"
+    },
+    "result": "consistency_plus:chiseled_orange_terracotta",
+    "count": 1
+}

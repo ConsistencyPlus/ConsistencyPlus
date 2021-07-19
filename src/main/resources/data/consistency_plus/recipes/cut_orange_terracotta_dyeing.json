@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:orange_dye"
+        },
+        {
+            "item": "consistency_plus:cut_terracotta"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:cut_orange_terracotta"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:yellow_terracotta_tiles"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:yellow_terracotta_tile_slab",
+        "count": 6
+    }
+}

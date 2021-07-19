@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:red_dye"
+        },
+        {
+            "item": "consistency_plus:brick_gate"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:red_terracotta_brick_gate"
+    }
+}

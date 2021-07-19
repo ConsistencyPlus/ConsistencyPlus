@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:gray_dye"
+        },
+        {
+            "item": "minecraft:bricks"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:gray_terracotta_bricks"
+    }
+}

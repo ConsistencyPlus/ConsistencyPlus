@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:polished_deepslate"
+        }
+    },
+    "result": {
+        "item": "minecraft:polished_deepslate_stairs",
+        "count": 4
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:deepslate_brick_wall"
+    },
+    "result": "minecraft:deepslate_tile_wall",
+    "count": 1
+}

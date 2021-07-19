@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_pink_terracotta"
+    },
+    "result": "consistency_plus:carved_pink_terracotta",
+    "count": 1
+}

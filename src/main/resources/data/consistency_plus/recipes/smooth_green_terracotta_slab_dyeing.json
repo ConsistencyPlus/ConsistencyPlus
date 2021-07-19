@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:green_dye"
+        },
+        {
+            "item": "consistency_plus:smooth_terracotta_slab"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:smooth_green_terracotta_slab"
+    }
+}

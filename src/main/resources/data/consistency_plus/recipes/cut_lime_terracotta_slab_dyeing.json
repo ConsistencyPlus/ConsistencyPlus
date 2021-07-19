@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:lime_dye"
+        },
+        {
+            "item": "consistency_plus:cut_terracotta_slab"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:cut_lime_terracotta_slab"
+    }
+}

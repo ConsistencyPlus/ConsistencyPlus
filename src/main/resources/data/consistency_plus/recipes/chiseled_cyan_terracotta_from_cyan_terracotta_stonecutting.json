@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:cyan_terracotta"
+    },
+    "result": "consistency_plus:chiseled_cyan_terracotta",
+    "count": 1
+}

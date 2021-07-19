@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:pink_dye"
+        },
+        {
+            "item": "consistency_plus:terracotta_wall"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:pink_terracotta_wall"
+    }
+}

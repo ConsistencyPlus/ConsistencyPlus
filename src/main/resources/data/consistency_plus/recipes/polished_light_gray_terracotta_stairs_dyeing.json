@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:light_gray_dye"
+        },
+        {
+            "item": "consistency_plus:polished_terracotta_stairs"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:polished_light_gray_terracotta_stairs"
+    }
+}

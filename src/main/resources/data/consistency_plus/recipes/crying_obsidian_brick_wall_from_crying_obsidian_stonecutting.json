@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:crying_obsidian"
+    },
+    "result": "consistency_plus:crying_obsidian_brick_wall",
+    "count": 1
+}

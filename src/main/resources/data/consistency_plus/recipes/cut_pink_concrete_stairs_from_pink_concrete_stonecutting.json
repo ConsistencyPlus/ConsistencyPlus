@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:pink_concrete"
+    },
+    "result": "consistency_plus:cut_pink_concrete_stairs",
+    "count": 1
+}

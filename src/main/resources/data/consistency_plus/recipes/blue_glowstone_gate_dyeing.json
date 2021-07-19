@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:blue_dye"
+        },
+        {
+            "item": "consistency_plus:glowstone_gate"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:blue_glowstone_gate"
+    }
+}

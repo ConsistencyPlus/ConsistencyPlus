@@ -1,0 +1,20 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "consistency_plus:recipes/yellow_terracotta_tile_slab_from_polished_yellow_terracotta_stonecutting"
+        ]
+    },
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:terracotta"
+                    }
+                ]
+            }
+        }
+    }
+}

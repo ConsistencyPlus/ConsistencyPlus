@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:cut_orange_terracotta_stairs"
+    },
+    "result": "consistency_plus:orange_terracotta_tile_stairs",
+    "count": 1
+}

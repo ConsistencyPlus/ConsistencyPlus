@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:purple_dye"
+        },
+        {
+            "item": "consistency_plus:blue_ice_wall"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:purple_ice_wall"
+    }
+}

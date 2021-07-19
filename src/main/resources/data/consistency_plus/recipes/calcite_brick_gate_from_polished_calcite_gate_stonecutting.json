@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_calcite_gate"
+    },
+    "result": "consistency_plus:calcite_brick_gate",
+    "count": 1
+}

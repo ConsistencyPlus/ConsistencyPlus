@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:gray_dye"
+        },
+        {
+            "item": "consistency_plus:cut_terracotta_wall"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:cut_gray_terracotta_wall"
+    }
+}

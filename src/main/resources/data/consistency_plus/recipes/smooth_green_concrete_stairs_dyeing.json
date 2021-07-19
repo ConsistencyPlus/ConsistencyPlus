@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:green_dye"
+        },
+        {
+            "item": "consistency_plus:smooth_white_concrete_stairs"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:smooth_green_concrete_stairs"
+    }
+}

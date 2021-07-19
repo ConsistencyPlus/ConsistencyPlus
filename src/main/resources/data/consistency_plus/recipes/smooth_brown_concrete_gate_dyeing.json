@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:brown_dye"
+        },
+        {
+            "item": "consistency_plus:smooth_white_concrete_gate"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:smooth_brown_concrete_gate"
+    }
+}

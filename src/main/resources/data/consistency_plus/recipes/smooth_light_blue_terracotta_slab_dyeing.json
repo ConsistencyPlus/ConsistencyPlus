@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:light_blue_dye"
+        },
+        {
+            "item": "consistency_plus:smooth_terracotta_slab"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:smooth_light_blue_terracotta_slab"
+    }
+}

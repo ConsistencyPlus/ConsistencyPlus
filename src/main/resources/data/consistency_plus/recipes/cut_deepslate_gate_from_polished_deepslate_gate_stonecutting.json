@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_deepslate_gate"
+    },
+    "result": "consistency_plus:cut_deepslate_gate",
+    "count": 1
+}

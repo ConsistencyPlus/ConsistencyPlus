@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X",
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:polished_diorite"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:diorite_pillar",
+        "count": 2
+    }
+}

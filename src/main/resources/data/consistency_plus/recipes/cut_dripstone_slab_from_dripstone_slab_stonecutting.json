@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:dripstone_slab"
+    },
+    "result": "consistency_plus:cut_dripstone_slab",
+    "count": 1
+}

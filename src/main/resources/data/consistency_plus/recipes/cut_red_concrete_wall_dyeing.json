@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:red_dye"
+        },
+        {
+            "item": "consistency_plus:cut_white_concrete_wall"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:cut_red_concrete_wall"
+    }
+}

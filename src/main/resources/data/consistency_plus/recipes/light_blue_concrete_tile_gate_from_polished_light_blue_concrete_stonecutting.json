@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_light_blue_concrete"
+    },
+    "result": "consistency_plus:light_blue_concrete_tile_gate",
+    "count": 1
+}

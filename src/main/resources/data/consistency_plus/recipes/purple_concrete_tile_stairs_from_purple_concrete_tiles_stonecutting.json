@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:purple_concrete_tiles"
+    },
+    "result": "consistency_plus:purple_concrete_tile_stairs",
+    "count": 1
+}

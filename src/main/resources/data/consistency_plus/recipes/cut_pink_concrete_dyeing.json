@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:pink_dye"
+        },
+        {
+            "item": "consistency_plus:cut_white_concrete"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:cut_pink_concrete"
+    }
+}

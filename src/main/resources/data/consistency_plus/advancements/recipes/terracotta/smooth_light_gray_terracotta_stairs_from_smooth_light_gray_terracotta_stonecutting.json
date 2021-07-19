@@ -1,0 +1,20 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "consistency_plus:recipes/smooth_light_gray_terracotta_stairs_from_smooth_light_gray_terracotta_stonecutting"
+        ]
+    },
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:terracotta"
+                    }
+                ]
+            }
+        }
+    }
+}

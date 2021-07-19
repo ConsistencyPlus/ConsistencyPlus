@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X",
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:polished_granite"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:granite_pillar",
+        "count": 2
+    }
+}

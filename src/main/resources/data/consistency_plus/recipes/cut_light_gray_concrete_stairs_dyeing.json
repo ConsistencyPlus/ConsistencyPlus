@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:light_gray_dye"
+        },
+        {
+            "item": "consistency_plus:cut_white_concrete_stairs"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:cut_light_gray_concrete_stairs"
+    }
+}

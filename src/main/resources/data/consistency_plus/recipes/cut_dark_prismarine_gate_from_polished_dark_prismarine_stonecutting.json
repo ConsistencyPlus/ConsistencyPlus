@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_dark_prismarine"
+    },
+    "result": "consistency_plus:cut_dark_prismarine_gate",
+    "count": 1
+}

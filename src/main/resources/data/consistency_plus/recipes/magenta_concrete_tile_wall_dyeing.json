@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:magenta_dye"
+        },
+        {
+            "item": "consistency_plus:white_concrete_tile_wall"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:magenta_concrete_tile_wall"
+    }
+}

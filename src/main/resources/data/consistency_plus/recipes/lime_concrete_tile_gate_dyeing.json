@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:lime_dye"
+        },
+        {
+            "item": "consistency_plus:white_concrete_tile_gate"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:lime_concrete_tile_gate"
+    }
+}

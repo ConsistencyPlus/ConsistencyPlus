@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:lime_dye"
+        },
+        {
+            "item": "consistency_plus:blue_ice_gate"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:lime_ice_gate"
+    }
+}

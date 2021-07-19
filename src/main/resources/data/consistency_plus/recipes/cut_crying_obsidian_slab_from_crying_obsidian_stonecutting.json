@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:crying_obsidian"
+    },
+    "result": "consistency_plus:cut_crying_obsidian_slab",
+    "count": 2
+}

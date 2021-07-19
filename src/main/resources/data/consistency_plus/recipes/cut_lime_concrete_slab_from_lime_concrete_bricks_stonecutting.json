@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:lime_concrete_bricks"
+    },
+    "result": "consistency_plus:cut_lime_concrete_slab",
+    "count": 2
+}

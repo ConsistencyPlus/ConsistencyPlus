@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:cyan_concrete_brick_wall"
+    },
+    "result": "consistency_plus:cut_cyan_concrete_wall",
+    "count": 1
+}

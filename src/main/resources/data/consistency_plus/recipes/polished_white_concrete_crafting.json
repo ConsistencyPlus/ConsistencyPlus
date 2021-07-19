@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:white_concrete"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_white_concrete",
+        "count": 4
+    }
+}

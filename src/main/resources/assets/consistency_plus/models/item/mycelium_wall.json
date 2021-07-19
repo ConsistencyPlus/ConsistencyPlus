@@ -1,6 +1,8 @@
 {
-    "parent": "minecraft:block/wall_inventory",
+    "parent": "consistency_plus:block/template_consistency_wall_post_tri",
     "textures": {
-        "wall": "minecraft:block/mycelium"
+        "wall": "minecraft:block/mycelium_side",
+        "wall_top": "minecraft:block/mycelium_top",
+        "wall_bottom": "minecraft:block/dirt"
     }
 }

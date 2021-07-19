@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:blackstone_tiles"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:blackstone_tile_stairs",
+        "count": 4
+    }
+}

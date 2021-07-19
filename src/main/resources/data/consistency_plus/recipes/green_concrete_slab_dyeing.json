@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:green_dye"
+        },
+        {
+            "item": "consistency_plus:white_concrete_slab"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:green_concrete_slab"
+    }
+}

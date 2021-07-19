@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_magenta_concrete"
+    },
+    "result": "consistency_plus:polished_magenta_concrete_wall",
+    "count": 1
+}

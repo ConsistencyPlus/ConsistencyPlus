@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:smooth_quartz"
+    },
+    "result": "consistency_plus:smooth_quartz_gate",
+    "count": 1
+}

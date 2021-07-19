@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_white_concrete"
+    },
+    "result": "consistency_plus:polished_white_concrete_gate",
+    "count": 1
+}

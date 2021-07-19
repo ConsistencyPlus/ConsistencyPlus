@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:blue_dye"
+        },
+        {
+            "item": "minecraft:white_concrete"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blue_concrete"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:soul_sandstone"
+    },
+    "result": "consistency_plus:cut_soul_sandstone_stairs",
+    "count": 1
+}

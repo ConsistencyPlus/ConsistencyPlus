@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:magenta_dye"
+        },
+        {
+            "item": "minecraft:glowstone"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:magenta_glowstone"
+    }
+}

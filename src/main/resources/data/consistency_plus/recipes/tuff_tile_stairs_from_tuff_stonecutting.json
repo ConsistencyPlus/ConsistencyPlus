@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:tuff"
+    },
+    "result": "consistency_plus:tuff_tile_stairs",
+    "count": 1
+}

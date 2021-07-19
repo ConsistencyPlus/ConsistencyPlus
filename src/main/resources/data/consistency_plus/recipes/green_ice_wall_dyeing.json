@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:green_dye"
+        },
+        {
+            "item": "consistency_plus:blue_ice_wall"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:green_ice_wall"
+    }
+}

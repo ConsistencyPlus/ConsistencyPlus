@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:cyan_concrete"
+    },
+    "result": "consistency_plus:polished_cyan_concrete_wall",
+    "count": 1
+}

@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:yellow_dye"
+        },
+        {
+            "item": "consistency_plus:white_concrete_tile_stairs"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:yellow_concrete_tile_stairs"
+    }
+}

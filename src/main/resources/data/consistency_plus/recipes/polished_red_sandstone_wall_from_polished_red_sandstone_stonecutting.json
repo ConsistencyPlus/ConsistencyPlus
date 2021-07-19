@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_red_sandstone"
+    },
+    "result": "consistency_plus:polished_red_sandstone_wall",
+    "count": 1
+}

@@ -1,0 +1,20 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "consistency_plus:recipes/cyan_concrete_stairs_from_cyan_concrete_stonecutting"
+        ]
+    },
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:black_concrete"
+                    }
+                ]
+            }
+        }
+    }
+}

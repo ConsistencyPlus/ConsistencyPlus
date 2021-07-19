@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:lime_dye"
+        },
+        {
+            "item": "consistency_plus:smooth_white_concrete"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:smooth_lime_concrete"
+    }
+}

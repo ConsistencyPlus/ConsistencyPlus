@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:tuff_bricks"
+    },
+    "result": "consistency_plus:cut_tuff_slab",
+    "count": 2
+}

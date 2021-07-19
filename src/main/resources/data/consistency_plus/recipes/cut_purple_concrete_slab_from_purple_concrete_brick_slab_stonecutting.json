@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:purple_concrete_brick_slab"
+    },
+    "result": "consistency_plus:cut_purple_concrete_slab",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:cut_granite"
+    },
+    "result": "consistency_plus:carved_granite",
+    "count": 1
+}

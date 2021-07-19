@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_calcite_slab"
+    },
+    "result": "consistency_plus:calcite_tile_slab",
+    "count": 1
+}

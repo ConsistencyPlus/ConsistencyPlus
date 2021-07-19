@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:light_blue_concrete_bricks"
+    },
+    "result": "consistency_plus:cut_light_blue_concrete_stairs",
+    "count": 1
+}

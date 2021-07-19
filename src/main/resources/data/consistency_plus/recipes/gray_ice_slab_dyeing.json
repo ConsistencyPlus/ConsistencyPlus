@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:gray_dye"
+        },
+        {
+            "item": "consistency_plus:blue_ice_slab"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:gray_ice_slab"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:pink_terracotta"
+    },
+    "result": "consistency_plus:chiseled_pink_terracotta",
+    "count": 1
+}

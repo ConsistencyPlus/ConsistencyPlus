@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:polished_dark_prismarine"
+    },
+    "result": "consistency_plus:dark_prismarine_brick_slab",
+    "count": 2
+}

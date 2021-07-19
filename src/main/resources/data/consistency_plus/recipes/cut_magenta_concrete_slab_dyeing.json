@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:magenta_dye"
+        },
+        {
+            "item": "consistency_plus:cut_white_concrete_slab"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:cut_magenta_concrete_slab"
+    }
+}

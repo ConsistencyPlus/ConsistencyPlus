@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:cut_orange_terracotta_wall"
+    },
+    "result": "consistency_plus:orange_terracotta_tile_wall",
+    "count": 1
+}

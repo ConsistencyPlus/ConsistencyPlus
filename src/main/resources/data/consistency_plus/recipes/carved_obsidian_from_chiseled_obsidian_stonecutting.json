@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:chiseled_obsidian"
+    },
+    "result": "consistency_plus:carved_obsidian",
+    "count": 1
+}

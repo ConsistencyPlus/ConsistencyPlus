@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "consistency_plus:moss"
+        },
+        {
+            "item": "consistency_plus:stone_pillar"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:mossy_stone_pillar"
+    }
+}

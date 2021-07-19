@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cut_diorite"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:diorite_tiles",
+        "count": 4
+    }
+}

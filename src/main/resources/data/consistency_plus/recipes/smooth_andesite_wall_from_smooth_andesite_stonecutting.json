@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:smooth_andesite"
+    },
+    "result": "consistency_plus:smooth_andesite_wall",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "consistency_plus:smooth_yellow_terracotta"
+    },
+    "result": "consistency_plus:smooth_yellow_terracotta_stairs",
+    "count": 1
+}

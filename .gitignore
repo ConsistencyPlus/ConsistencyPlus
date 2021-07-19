@@ -32,6 +32,3 @@ bin/
 
 run/
 /run/
-
-# proguard
-out.map

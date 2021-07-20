@@ -2025,6 +2025,11 @@
 
   "block.consistency_plus.warped_wart": "Warped Wart",
 
+  "item.minecraft.turtle_helmet": "Turtle Helmet",
+  "item.consistency_plus.turtle_chestplate": "Turtle Chestplate",
+  "item.consistency_plus.turtle_leggings": "Turtle Leggings",
+  "item.consistency_plus.turtle_boots": "Turtle Boots",
+
   "itemGroup.consistency_plus.stone": "Consistency+ Stones",
   "itemGroup.consistency_plus.dyeable": "Consistency+ Dyeables",
   "itemGroup.consistency_plus.misc": "Consistency+ Misc"

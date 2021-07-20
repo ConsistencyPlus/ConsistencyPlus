@@ -34,7 +34,6 @@ processResources {
 
 tasks.withType(JavaCompile) { it.options.encoding = "UTF-8" }
 
-
 jar { from("LICENSE") }
 
 def getVersionMetadata() {

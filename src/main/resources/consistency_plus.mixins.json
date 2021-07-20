@@ -10,6 +10,7 @@
     "MyceliumBlockMixin"
   ],
   "client": [
+    "ArmorFeatureRendererMixin",
     "BlockColorsMixin"
   ],
   "injectors": {

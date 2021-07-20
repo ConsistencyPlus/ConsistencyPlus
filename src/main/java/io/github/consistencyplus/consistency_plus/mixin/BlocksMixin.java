@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Blocks.class)
-public class BlocksMixin {
+public abstract class BlocksMixin {
 	@Inject(at = @At("HEAD"),
 			method = "register(Ljava/lang/String;Lnet/minecraft/block/Block;)Lnet/minecraft/block/Block;", cancellable = true)
 	private static void register(String id, Block block, CallbackInfoReturnable<Block> cir) {

@@ -1,9 +1,8 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -2343,6 +2342,11 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(CPlusBlocks.NETHERITE_STAIRS, new Item.Settings()));
     public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(CPlusBlocks.SUSPICIOUS_SLAB, new Item.Settings()));
 
+    // 🐢
+    public static final Item TURTLE_CHESTPLATE = register("turtle_chestplate", new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item TURTLE_LEGGINGS = register("turtle_leggings", new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item TURTLE_BOOTS = register("turtle_boots", new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT)));
+    
     // Deprecated
     public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new BlockItem(CPlusBlocks.CARVED_STONE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
     public static final Item STONE_BRICK_PILLAR = register("stone_brick_pillar", new BlockItem(CPlusBlocks.STONE_BRICK_PILLAR, new Item.Settings()));

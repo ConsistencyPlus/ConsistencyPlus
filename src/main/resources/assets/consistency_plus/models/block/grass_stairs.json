@@ -1,5 +1,5 @@
 {
-  "credit": "Made with Blockbench",
+  "parent": "minecraft:block/stairs",
   "textures": {
     "0": "block/grass_block_side",
     "2": "block/grass_block_side_overlay",

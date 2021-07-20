@@ -4,7 +4,7 @@
       "model": "consistency_plus:block/smooth_purpur_slab"
     },
     "type=double": {
-      "model": "consistency_plus:block/smooth_purpur_block"
+      "model": "consistency_plus:block/smooth_purpur"
     },
     "type=top": {
       "model": "consistency_plus:block/smooth_purpur_slab_top"

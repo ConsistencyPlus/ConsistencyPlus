@@ -5,12 +5,6 @@ English-US (Base) - Obviously up to date
 Japanese - Up to date as of 0.3.0-Alpha, 3.15.21. Translated by Siuol without any actual knowledge on the words.
 Note: If you are a Japanese speaker, feel free to fix these translations
 
-Spanish - Not Started, Siuol may do base translation for 0.3.0, but most likely it would be inaccurate.
-
-French - Not Started, Siuol may do base translation for 0.3.0, but most likely it would be inaccurate.
-
-German - Not Started, Siuol may do base translation for 0.3.0, but most likely it would be inaccurate.
-
 Polish - Managed by RDK. Up to date to 0.3.0-RC1. 4.22.21
 
 

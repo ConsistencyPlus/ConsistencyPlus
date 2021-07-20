@@ -1,5 +1,5 @@
 {
-  "credit": "Made with Blockbench",
+  "parent": "minecraft:block/stairs",
   "textures": {
     "4": "block/dirt",
     "5": "block/mycelium_side",

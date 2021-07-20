@@ -1,5 +1,5 @@
 {
-  "credit": "Made with Blockbench",
+  "parent": "minecraft:block/slab",
   "textures": {
     "0": "block/mycelium_side",
     "1": "block/mycelium_top",

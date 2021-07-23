@@ -21,7 +21,7 @@ public class ConsistencyPlus implements ModInitializer {
 
 		if (mod.getMetadata().getVersion().getFriendlyString().contentEquals("${version}"))
 		{
-			MOD_VERSION = "0.4.0 (Dev)";
+			MOD_VERSION = "Error (Please ask Siuol to recompile.)";
 		} else {
 			MOD_VERSION = mod.getMetadata().getVersion().getFriendlyString();
 		}

@@ -2380,6 +2380,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     // Miscellaneous
     public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));
     public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MapColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
+    public static final Block KFP_BLOCK = register("kfp_block", new Block(FabricBlockSettings.copy(CARVED_ORANGE_CONCRETE)));
     public static final Block PINEAPPLE = register("pineapple", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD)));
     public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(), FabricBlockSettings.copy(NETHERITE_BLOCK)));
     public static final Block SUSPICIOUS_SLAB = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
@@ -2410,7 +2411,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
         public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
         // Calculated Non Joke/Deprecated Block Count: 1880
-    // With Joke/Deprecated Blocks: 1881+19=1899
+    // With Joke/Deprecated Blocks: 1880+20=1900
 
     // Siuol's selection regex syntax machine (?=")(.*)(?<=____")
 

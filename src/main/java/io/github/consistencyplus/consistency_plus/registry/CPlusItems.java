@@ -2339,6 +2339,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     // Miscellaneous
     public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(CPlusBlocks.JACK_O_SOUL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item PINEAPPLE = register("pineapple", new BlockItem(CPlusBlocks.PINEAPPLE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item KFP_BLOCK = register("kfp_block", new BlockItem(CPlusBlocks.KFP_BLOCK, new Item.Settings()));
     public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(CPlusBlocks.WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(CPlusBlocks.NETHERITE_STAIRS, new Item.Settings()));
     public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(CPlusBlocks.SUSPICIOUS_SLAB, new Item.Settings()));
@@ -2350,7 +2351,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Item TURTLE_BOOTS = register("turtle_boots", new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT)));
     
     // Deprecated
-    public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new BlockItem(CPlusBlocks.CARVED_STONE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+    public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new BlockItem(CPlusBlocks.CARVED_STONE_BRICKS, new Item.Settings()));
     public static final Item STONE_BRICK_PILLAR = register("stone_brick_pillar", new BlockItem(CPlusBlocks.STONE_BRICK_PILLAR, new Item.Settings()));
     public static final Item MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new BlockItem(CPlusBlocks.MOSSY_STONE_BRICK_PILLAR, new Item.Settings()));
     public static final Item CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new BlockItem(CPlusBlocks.CRACKED_STONE_BRICK_PILLAR, new Item.Settings()));

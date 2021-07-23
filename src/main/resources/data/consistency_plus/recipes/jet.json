@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "XYX",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:dirt"
+        },
+        "Y": {
+           "item": "minecraft:cobblestone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:jet",
+        "count": 1
+    }
+}

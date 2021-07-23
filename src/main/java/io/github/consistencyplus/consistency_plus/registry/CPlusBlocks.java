@@ -2383,6 +2383,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Block PINEAPPLE = register("pineapple", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD)));
     public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(), FabricBlockSettings.copy(NETHERITE_BLOCK)));
     public static final Block SUSPICIOUS_SLAB = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
+    public static final Block JET = register("jet", new Block(FabricBlockSettings.copy(BEDROCK)));
 //  public static final Block SIUOLS_SANITY = register("is_a_crab", new Block(FabricBlockSettings.copy(HELP_ME)));
     //  You are having funny fun because your playing a Siuolplexplex contributed mod
 

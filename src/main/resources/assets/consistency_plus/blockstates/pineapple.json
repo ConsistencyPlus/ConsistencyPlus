@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "consistency_plus:block/pineapple",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "consistency_plus:block/pineapple"
+    },
+    "facing=south": {
+      "model": "consistency_plus:block/pineapple",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "consistency_plus:block/pineapple",
+      "y": 270
+    }
+  }
+}

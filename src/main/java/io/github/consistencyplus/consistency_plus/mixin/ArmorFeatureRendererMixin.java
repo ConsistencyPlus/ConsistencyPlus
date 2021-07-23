@@ -17,6 +17,8 @@ public abstract class ArmorFeatureRendererMixin {
 		if (item.equals(CPlusItems.TURTLE_BOOTS) || item.equals(CPlusItems.TURTLE_LEGGINGS) || item.equals(CPlusItems.TURTLE_CHESTPLATE)) {
 			String string = "textures/models/armor/" + item.getMaterial().getName() + "_layer_" + (legs ? 2 : 1) + (overlay == null ? "" : "_" + overlay) + ".png";
 			cir.setReturnValue(new Identifier("consistency_plus", string));
+
+			// Top 10 cursed items that wernt added by Siuol. Number 1, 2, and 3.
 		}
 	}
 }

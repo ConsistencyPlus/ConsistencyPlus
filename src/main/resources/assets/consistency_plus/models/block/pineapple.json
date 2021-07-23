@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "consistency_plus:block/pineapple_side",
+    "front": "consistency_plus:block/pineapple_front",
+    "side": "consistency_plus:block/pineapple_side"
+  }
+}

@@ -3,6 +3,6 @@
     "ingredient": {
         "item": "minecraft:quartz"
     },
-    "result": "consistency_plus:quartz_bricks",
+    "result": "minecraft:quartz_bricks",
     "count": 1
 }

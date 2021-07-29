@@ -9,6 +9,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -34,5 +35,12 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) && !isSubmergedInWater()) {
 			addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 200, 0, false, false, true));
 		}
+		/* if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) &&
+				getEquippedStack(EquipmentSlot.LEGS).isOf(CPlusItems.TURTLE_LEGGINGS) &&
+				getEquippedStack(EquipmentSlot.CHEST).isOf(CPlusItems.TURTLE_CHESTPLATE) &&
+				getEquippedStack(EquipmentSlot.HEAD).isOf(Items.TURTLE_HELMET)
+				&& !isSubmergedInWater()) {
+			addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, true));
+		} */
 	}
 }

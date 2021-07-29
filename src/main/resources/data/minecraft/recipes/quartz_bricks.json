@@ -6,11 +6,11 @@
   ],
   "key": {
     "X": {
-      "item": "minecraft:soul_sand"
+      "item": "consistency_plus:polished_quartz"
     }
   },
   "result": {
-    "item": "consistency_plus:soul_sandstone",
-    "count": 1
+    "item": "minecraft:quartz_bricks",
+    "count": 4
   }
 }

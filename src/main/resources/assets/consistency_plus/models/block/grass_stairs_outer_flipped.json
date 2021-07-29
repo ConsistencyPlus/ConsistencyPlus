@@ -1,45 +1,9 @@
 {
+	"parent": "consistency_plus:block/template_consistency_overlay_flipped_stairs_outer",
 	"textures": {
-		"0": "block/grass_block_side",
-		"1": "block/grass_block_side_overlay",
-		"2": "block/grass_block_top",
-		"3": "block/dirt",
-		"particle": "block/dirt"
-	},
-	"elements": [
-		{
-			"from": [0, 8, 0],
-			"to": [16, 16, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"east": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"west": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#3"}
-			}
-		},
-		{
-			"from": [8, 0, 8],
-			"to": [16, 8, 16],
-			"faces": {
-				"north": {"uv": [0, 8, 8, 16], "texture": "#3"},
-				"east": {"uv": [0, 8, 8, 16], "texture": "#3"},
-				"south": {"uv": [0, 8, 8, 16], "texture": "#3"},
-				"west": {"uv": [0, 8, 8, 16], "texture": "#3"},
-				"down": {"uv": [8, 8, 16, 16], "texture": "#3"}
-			}
-		},
-		{
-			"from": [0, 8, 0],
-			"to": [16, 16, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 8], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [0, 0, 16, 8], "texture": "#1"},
-				"south": {"uv": [0, 0, 16, 8], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 8], "texture": "#1", "tintindex": 0}
-			}
-		}
-	],
-	"display": {}
+		"bottom": "minecraft:block/dirt",
+		"top": "minecraft:block/grass_block_top",
+		"side": "minecraft:block/grass_block_side",
+		"overlay": "minecraft:block/grass_block_side_overlay"
+	}
 }

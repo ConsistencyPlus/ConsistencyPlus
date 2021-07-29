@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:dirt_wall",
+    "count": 6
+  }
+}

@@ -78,5 +78,12 @@
   "depends": {
     "fabric": "*",
     "minecraft": "~1.17.1"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/VeNX7h8bAK"
+      }
+    }
   }
 }

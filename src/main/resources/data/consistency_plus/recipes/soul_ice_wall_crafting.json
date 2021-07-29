@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "consistency_plus:soul_ice"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:soul_ice_wall",
+    "count": 6
+  }
+}

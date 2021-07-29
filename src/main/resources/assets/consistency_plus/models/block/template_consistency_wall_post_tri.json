@@ -23,18 +23,10 @@
           "texture": "#wall_top",
           "cullface": "up"
         },
-        "north": {
-          "texture": "#wall"
-        },
-        "south": {
-          "texture": "#wall"
-        },
-        "west": {
-          "texture": "#wall"
-        },
-        "east": {
-          "texture": "#wall"
-        }
+        "north": {"texture": "#wall"},
+        "south": {"texture": "#wall"},
+        "west": {"texture": "#wall"},
+        "east": {"texture": "#wall"}
       },
       "__comment": "Center post"
     }

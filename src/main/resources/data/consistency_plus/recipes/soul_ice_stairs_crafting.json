@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X  ",
+    "XX ",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "consistency_plus:soul_ice"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:soul_ice_stairs",
+    "count": 4
+  }
+}

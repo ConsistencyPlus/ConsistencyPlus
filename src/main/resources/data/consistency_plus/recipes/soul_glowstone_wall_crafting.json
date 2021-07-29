@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "consistency_plus:soul_glowstone"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:soul_glowstone_wall",
+    "count": 6
+  }
+}

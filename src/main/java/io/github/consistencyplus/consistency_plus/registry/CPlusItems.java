@@ -2343,7 +2343,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(CPlusBlocks.WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(CPlusBlocks.NETHERITE_STAIRS, new Item.Settings()));
     public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(CPlusBlocks.SUSPICIOUS_SLAB, new Item.Settings()));
-    public static final Item JET = register("jet", new BlockItem(CPlusBlocks.JET, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
+    public static final Item JET = register("jet", new BlockItem(CPlusBlocks.JET, new Item.Settings()));
 
     // 🐢
     public static final Item TURTLE_CHESTPLATE = register("turtle_chestplate", new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT)));

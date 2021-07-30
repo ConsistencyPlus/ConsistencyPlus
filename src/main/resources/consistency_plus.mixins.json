@@ -2,13 +2,12 @@
   "required": true,
   "minVersion": "0.8",
   "package": "io.github.consistencyplus.consistency_plus.mixin",
-  "compatibilityLevel": "JAVA_16",
+  "compatibilityLevel": "JAVA_8",
   "mixins": [
     "BlocksMixin",
     "GrassBlockMixin",
     "LivingEntityMixin",
-    "MyceliumBlockMixin",
-    "PlayerEntityMixin"
+    "MyceliumBlockMixin"
   ],
   "client": [
     "ArmorFeatureRendererMixin",

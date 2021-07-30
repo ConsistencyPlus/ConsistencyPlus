@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:dripstone_block"
-    },
-    "result": "consistency_plus:polished_dripstone_gate",
-    "count": 1
-}

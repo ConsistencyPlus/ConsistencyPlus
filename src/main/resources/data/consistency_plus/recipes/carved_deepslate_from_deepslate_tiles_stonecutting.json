@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:deepslate_tiles"
-    },
-    "result": "consistency_plus:carved_deepslate",
-    "count": 1
-}

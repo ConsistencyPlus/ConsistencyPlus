@@ -1,12 +1,12 @@
 plugins {
-    id "fabric-loom" version "0.8-SNAPSHOT"
+    id "fabric-loom" version "0.7-SNAPSHOT"
     id "org.ajoberstar.grgit" version "4.1.0"
     id "java-library"
-    // id "io.github.juuxel.loom-quiltflower" version "1.1.1"
+    id "io.github.juuxel.loom-quiltflower" version "1.2.1"
 }
 
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 archivesBaseName = "consistency_plus-${project.minecraft_version}"
 version = "${project.mod_version}"

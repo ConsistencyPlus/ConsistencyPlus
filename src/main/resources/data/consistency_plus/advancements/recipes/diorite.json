@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:recipes/diorite_gate_crafting",
+      "consistency_plus:recipes/polished_diorite_wall_crafting",
+      "consistency_plus:recipes/polished_diorite_gate_crafting",
+      "consistency_plus:recipes/diorite_bricks_crafting",
+      "consistency_plus:recipes/diorite_brick_slab_crafting",
+      "consistency_plus:recipes/diorite_brick_stairs_crafting",
+      "consistency_plus:recipes/diorite_brick_wall_crafting",
+      "consistency_plus:recipes/diorite_brick_gate_crafting",
+      "consistency_plus:recipes/cut_diorite_crafting",
+      "consistency_plus:recipes/cut_diorite_slab_crafting",
+      "consistency_plus:recipes/cut_diorite_stairs_crafting",
+      "consistency_plus:recipes/cut_diorite_wall_crafting",
+      "consistency_plus:recipes/cut_diorite_gate_crafting",
+      "consistency_plus:recipes/diorite_tiles_crafting",
+      "consistency_plus:recipes/diorite_tile_slab_crafting",
+      "consistency_plus:recipes/diorite_tile_stairs_crafting",
+      "consistency_plus:recipes/diorite_tile_wall_crafting",
+      "consistency_plus:recipes/diorite_tile_gate_crafting",
+      "consistency_plus:recipes/smooth_diorite_slab_crafting",
+      "consistency_plus:recipes/smooth_diorite_stairs_crafting",
+      "consistency_plus:recipes/smooth_diorite_wall_crafting",
+      "consistency_plus:recipes/smooth_diorite_gate_crafting",
+      "consistency_plus:recipes/diorite_pillar_crafting",
+      "consistency_plus:recipes/chiseled_diorite_crafting",
+      "consistency_plus:recipes/carved_diorite_crafting"
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diorite"
+          }
+        ]
+      }
+    }
+  }
+}

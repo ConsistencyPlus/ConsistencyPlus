@@ -1,20 +1,38 @@
-{
-    "parent": "minecraft:recipes/root",
-    "rewards": {
-        "recipes": [
-            "consistency_plus:recipes/andesite_brick_gate_crafting"
-        ]
-    },
-    "criteria": {
-        "has_block": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "item": "minecraft:andesite"
-                    }
-                ]
-            }
-        }
-    }
-}
+"consistency_plus:recipes/cracked_andesite",
+"consistency_plus:recipes/cracked_andesite_slab",
+"consistency_plus:recipes/cracked_andesite_stairs",
+"consistency_plus:recipes/cracked_andesite_wall",
+"consistency_plus:recipes/cracked_andesite_gate",
+"consistency_plus:recipes/cracked_polished_andesite",
+"consistency_plus:recipes/cracked_polished_andesite_slab",
+"consistency_plus:recipes/cracked_polished_andesite_stairs",
+"consistency_plus:recipes/cracked_polished_andesite_wall",
+"consistency_plus:recipes/cracked_polished_andesite_gate",
+"consistency_plus:recipes/cracked_andesite_bricks",
+"consistency_plus:recipes/cracked_andesite_brick_slab",
+"consistency_plus:recipes/cracked_andesite_brick_stairs",
+"consistency_plus:recipes/cracked_andesite_brick_wall",
+"consistency_plus:recipes/cracked_andesite_brick_gate",
+"consistency_plus:recipes/cracked_cut_andesite",
+"consistency_plus:recipes/cracked_cut_andesite_slab",
+"consistency_plus:recipes/cracked_cut_andesite_stairs",
+"consistency_plus:recipes/cracked_cut_andesite_wall",
+"consistency_plus:recipes/cracked_cut_andesite_gate",
+"consistency_plus:recipes/cracked_andesite_tiles",
+"consistency_plus:recipes/cracked_andesite_tile_slab",
+"consistency_plus:recipes/cracked_andesite_tile_stairs",
+"consistency_plus:recipes/cracked_andesite_tile_wall",
+"consistency_plus:recipes/cracked_andesite_tile_gate",
+"consistency_plus:recipes/cracked_cut_andesite",
+"consistency_plus:recipes/cracked_cut_andesite_slab",
+"consistency_plus:recipes/cracked_cut_andesite_stairs",
+"consistency_plus:recipes/cracked_cut_andesite_wall",
+"consistency_plus:recipes/cracked_cut_andesite_gate",
+"consistency_plus:recipes/cracked_smooth_andesite",
+"consistency_plus:recipes/cracked_smooth_andesite_slab",
+"consistency_plus:recipes/cracked_smooth_andesite_stairs",
+"consistency_plus:recipes/cracked_smooth_andesite_wall",
+"consistency_plus:recipes/cracked_smooth_andesite_gate",
+"consistency_plus:recipes/cracked_chiseled_andesite",
+"consistency_plus:recipes/cracked_carved_andesite_stairs",
+"consistency_plus:recipes/cracked_andesite_pillar"

@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:recipes/turtle_chestplate",
+      "consistency_plus:recipes/turtle_leggings",
+      "consistency_plus:recipes/turtle_boots"
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:scute"
+          }
+        ]
+      }
+    }
+  }
+}

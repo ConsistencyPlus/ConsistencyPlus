@@ -35,12 +35,12 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) && !isSubmergedInWater()) {
 			addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 200, 0, false, false, true));
 		}
-		/* if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) &&
+		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) &&
 				getEquippedStack(EquipmentSlot.LEGS).isOf(CPlusItems.TURTLE_LEGGINGS) &&
 				getEquippedStack(EquipmentSlot.CHEST).isOf(CPlusItems.TURTLE_CHESTPLATE) &&
 				getEquippedStack(EquipmentSlot.HEAD).isOf(Items.TURTLE_HELMET)
 				&& !isSubmergedInWater()) {
-			addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1, false, false, true));
-		} */
+			addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, true));
+		}
 	}
 }

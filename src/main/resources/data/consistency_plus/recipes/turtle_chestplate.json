@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:scute"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:turtle_chestplate"
+  }
+}

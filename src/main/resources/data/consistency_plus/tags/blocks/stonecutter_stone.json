@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cobblestone",
+    "minecraft:ice",
+    "minecraft:obsidian",
+    "#minecraft:mineable/pickaxe"
+  ]
+}

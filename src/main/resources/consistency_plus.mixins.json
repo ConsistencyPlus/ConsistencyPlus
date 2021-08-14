@@ -8,11 +8,13 @@
     "GrassBlockMixin",
     "LivingEntityMixin",
     "MyceliumBlockMixin",
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "StonecutterScreenHandlerMixin"
   ],
   "client": [
     "ArmorFeatureRendererMixin",
-    "BlockColorsMixin"
+    "BlockColorsMixin",
+    "StonecutterScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

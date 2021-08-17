@@ -25,7 +25,8 @@ public abstract class StonecutterScreenMixin extends HandledScreen<StonecutterSc
 	@Shadow
 	private int scrollOffset;
 	
-	@Shadow private boolean canCraft;
+	@Shadow
+	private boolean canCraft;
 	
 	public StonecutterScreenMixin(StonecutterScreenHandler handler, PlayerInventory inventory, Text title) {
 		super(handler, inventory, title);
@@ -96,6 +97,7 @@ public abstract class StonecutterScreenMixin extends HandledScreen<StonecutterSc
 			ci.cancel();
 		}
 	}
+	
 	@Inject(at = @At("HEAD"), method = "shouldScroll", cancellable = true)
 	private void shouldScroll(CallbackInfoReturnable<Boolean> cir) {
 		StonecutterScreenHandlerExtensions extendedHandler = (StonecutterScreenHandlerExtensions) handler;

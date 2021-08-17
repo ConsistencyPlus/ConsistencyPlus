@@ -15,17 +15,17 @@ import java.util.Random;
 
 @Mixin(GrassBlock.class)
 public abstract class GrassBlockMixin extends SpreadableBlock implements HasUngrownVariant, IsSpreadableGrassBlock {
-    protected GrassBlockMixin(Settings settings) {
-        super(settings);
-    }
-
-    @Override
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        grow(state, world, pos, random);
-    }
-
-    @Override
-    public BlockState getUngrownVariant(World world, BlockPos pos) {
-        return Blocks.DIRT.getDefaultState();
-    }
+	protected GrassBlockMixin(Settings settings) {
+		super(settings);
+	}
+	
+	@Override
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+		grow(state, world, pos, random);
+	}
+	
+	@Override
+	public BlockState getUngrownVariant(World world, BlockPos pos) {
+		return Blocks.DIRT.getDefaultState();
+	}
 }

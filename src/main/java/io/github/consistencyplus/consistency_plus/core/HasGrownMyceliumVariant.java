@@ -5,5 +5,5 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public interface HasGrownMyceliumVariant {
-    BlockState getGrownMyceliumVariant(World world, BlockPos pos);
+	BlockState getGrownMyceliumVariant(World world, BlockPos pos);
 }

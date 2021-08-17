@@ -15,18 +15,18 @@ import java.util.Random;
 
 @Mixin(MyceliumBlock.class)
 public abstract class MyceliumBlockMixin extends SpreadableBlock implements HasUngrownVariant, IsSpreadableMyceliumBlock {
-
-    protected MyceliumBlockMixin(Settings settings) {
-        super(settings);
-    }
-
-    @Override
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        grow(state, world, pos, random);
-    }
-
-    @Override
-    public BlockState getUngrownVariant(World world, BlockPos pos) {
-        return Blocks.DIRT.getDefaultState();
-    }
+	
+	protected MyceliumBlockMixin(Settings settings) {
+		super(settings);
+	}
+	
+	@Override
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+		grow(state, world, pos, random);
+	}
+	
+	@Override
+	public BlockState getUngrownVariant(World world, BlockPos pos) {
+		return Blocks.DIRT.getDefaultState();
+	}
 }

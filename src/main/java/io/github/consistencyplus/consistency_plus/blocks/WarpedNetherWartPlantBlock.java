@@ -8,13 +8,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
 public class WarpedNetherWartPlantBlock extends NetherWartBlock {
-    public WarpedNetherWartPlantBlock(Settings settings) {
-        super(settings);
-    }
-
-    @Override
-    public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(CPlusItems.WARPED_WART);
-    }
-
+	public WarpedNetherWartPlantBlock(Settings settings) {
+		super(settings);
+	}
+	
+	@Override
+	public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
+		return new ItemStack(CPlusItems.WARPED_WART);
+	}
+	
 }

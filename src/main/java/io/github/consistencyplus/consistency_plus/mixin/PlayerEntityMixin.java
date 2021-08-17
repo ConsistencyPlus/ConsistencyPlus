@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.mixin;
 
-import com.mojang.authlib.GameProfile;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
@@ -8,10 +7,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -22,9 +18,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin extends LivingEntity {
 	@Unique
-	private long cPlus$ticksUntilEffectApplies = 1;
+	private final long cPlus$ticksUntilEffectApplies = 1;
 	@Unique
-	private boolean cPlus$wearingTurtleBoots = false;
+	private final boolean cPlus$wearingTurtleBoots = false;
 	
 	protected PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
 		super(entityType, world);

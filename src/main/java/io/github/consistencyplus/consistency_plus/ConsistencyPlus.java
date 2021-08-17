@@ -5,7 +5,6 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.loader.api.ModContainer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,7 +12,7 @@ public class ConsistencyPlus implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger("Consistency+");
 	public static final String ID = "consistency_plus";
 	public static final Registrate REGISTRATE = Registrate.create(ID);
-
+	
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Consistency+ Main - Beginning initialization process");
@@ -44,7 +43,7 @@ public class ConsistencyPlus implements ModInitializer {
 		}
 		
 		LOGGER.info("Consistency+ Main - Finished initialization process");
-
-
+		
+		
 	}
 }

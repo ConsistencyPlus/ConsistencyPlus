@@ -18,9 +18,9 @@ import java.util.Map;
 import java.util.Set;
 
 public class StonecutterHandler {
-	private static final Map<Item, Tag<Item>> cache = new HashMap<>();
 	public static final Set<Tag<Item>> ALL_STONECUTTER_TAGS = new HashSet<>();
 	public static final Tag<Item> STONECUTTER_STONE = register("stonecutter_stone");
+	private static final Map<Item, Tag<Item>> cache = new HashMap<>();
 	
 	private static Tag<Item> register(String path) {
 		Tag<Item> tag = TagRegistry.item(new Identifier(ConsistencyPlus.ID, path));

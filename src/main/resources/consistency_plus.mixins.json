@@ -9,7 +9,8 @@
     "LivingEntityMixin",
     "MyceliumBlockMixin",
     "PlayerEntityMixin",
-    "StonecutterScreenHandlerMixin"
+    "StonecutterScreenHandlerMixin",
+    "StonecutterScreenHandlerOutputSlotMixin"
   ],
   "client": [
     "ArmorFeatureRendererMixin",

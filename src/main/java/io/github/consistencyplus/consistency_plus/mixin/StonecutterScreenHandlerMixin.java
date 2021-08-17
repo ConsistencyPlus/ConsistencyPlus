@@ -1,11 +1,12 @@
 package io.github.consistencyplus.consistency_plus.mixin;
 
+import io.github.consistencyplus.consistency_plus.core.StonecutterHandler;
 import io.github.consistencyplus.consistency_plus.core.StonecutterScreenHandlerExtensions;
-import io.github.consistencyplus.consistency_plus.core.TagUtil;
 import net.minecraft.block.Block;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.StonecuttingRecipe;
 import net.minecraft.screen.Property;
 import net.minecraft.screen.ScreenHandler;
@@ -38,34 +39,33 @@ public abstract class StonecutterScreenHandlerMixin extends ScreenHandler implem
 	private Property selectedRecipe;
 	@Shadow
 	@Final
-	private Slot outputSlot;
+	Slot outputSlot;
 	@Shadow
 	private List<StonecuttingRecipe> availableRecipes;
 	@Unique
-	private ItemStack selectedStack;
-	@Unique
 	private boolean optimizedRecipeMode = false;
+	@Unique
+	private boolean crafting = false;
+	
 	protected StonecutterScreenHandlerMixin(@Nullable ScreenHandlerType<?> type, int syncId) {
 		super(type, syncId);
 	}
 
 	@Shadow
-	protected abstract boolean isInBounds(int id);
+	@Final
+	Slot inputSlot;
 	
-	@Shadow
-	abstract void populateResult();
-	
-	@Shadow @Final private Slot inputSlot;
+	@Shadow private ItemStack inputStack;
 	
 	@Inject(at = @At("HEAD"), method = "updateInput", cancellable = true)
 	private void updateInput(Inventory input, ItemStack stack, CallbackInfo ci) {
 		recipes.clear();
 		if (!stack.isEmpty()) {
-			Pair<Boolean, Tag<Block>> result = TagUtil.blockHasOptimizedStonecutterRecipe(stack);
-			if (result.getLeft()) {
-				for (Block block : result.getRight().values()) {
-					if (!stack.isOf(block.asItem())) {
-						recipes.add(new ItemStack(block.asItem()));
+			Pair<Boolean, Tag<Item>> result = StonecutterHandler.blockHasOptimizedStonecutterRecipe(stack);
+			if (result.getLeft() && StonecutterHandler.getCountForItem(stack) <= stack.getCount()) {
+				for (Item item : result.getRight().values()) {
+					if (!stack.isOf(item)) {
+						recipes.add(new ItemStack(item));
 					}
 				}
 				optimizedRecipeMode = true;
@@ -87,28 +87,43 @@ public abstract class StonecutterScreenHandlerMixin extends ScreenHandler implem
 				: id >= 0 && id < availableRecipes.size());
 	}
 	
-	@Inject(at = @At("HEAD"), method = "onButtonClick", cancellable = true)
-	private void onButtonClick(PlayerEntity player, int id, CallbackInfoReturnable<Boolean> cir) {
-		if (optimizedRecipeMode()) {
-			if (isInBounds(id)) {
-				this.selectedRecipe.set(id);
-				this.selectedStack = recipes.get(id);
-				populateResult();
-				cir.setReturnValue(true);
-			}
-		}
+//	@Inject(at = @At("HEAD"), method = "onButtonClick", cancellable = true)
+//	private void onButtonClick(PlayerEntity player, int id, CallbackInfoReturnable<Boolean> cir) {
+//		if (optimizedRecipeMode()) {
+//			if (isInBounds(id)) {
+//				this.selectedRecipe.set(id);
+//				populateResult();
+//				cir.setReturnValue(true);
+//			}
+//		}
+//	}
+	
+	@Redirect(method = "onContentChanged", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
+	private boolean onContentsChanged(ItemStack itemStack, Item item) {
+		// inputStack is old item
+		// itemStack is new item
+		boolean differentItem = !itemStack.isOf(inputStack.getItem());
+		int lastCount = inputStack.getCount();
+		int lastRequiredCount = StonecutterHandler.getCountForItem(inputStack);
+		int newCount = itemStack.getCount();
+		int newRequiredCount = StonecutterHandler.getCountForItem(itemStack);
+		boolean nowMeetsCountRequirement = lastCount < lastRequiredCount && newCount >= newRequiredCount;
+		return !(differentItem || nowMeetsCountRequirement); // redirected method is inverted, invert here to make it Good:tm:
 	}
 	
 	@Inject(at = @At("HEAD"), method = "populateResult", cancellable = true)
 	private void populateResult(CallbackInfo ci) {
 		if (optimizedRecipeMode()) {
-			if (!this.recipes.isEmpty()) {
-				this.outputSlot.setStack(recipes.get(selectedRecipe.get()).copy());
+			int neededCount = StonecutterHandler.getCountForItem(inputStack);
+			if (!this.recipes.isEmpty() && inputStack.getCount() - (crafting ? neededCount : 0) >= neededCount) {
+				ItemStack stack = recipes.get(selectedRecipe.get()).copy();
+				stack.setCount(StonecutterHandler.getCountForItem(stack.getItem()));
+				outputSlot.setStack(stack);
 			} else {
-				this.outputSlot.setStack(ItemStack.EMPTY);
+				outputSlot.setStack(ItemStack.EMPTY);
 			}
 			
-			this.sendContentUpdates();
+			sendContentUpdates();
 			ci.cancel();
 		}
 	}
@@ -133,5 +148,10 @@ public abstract class StonecutterScreenHandlerMixin extends ScreenHandler implem
 	@Override
 	public List<ItemStack> getRecipeStacks() {
 		return recipes;
+	}
+	
+	@Override
+	public void setCrafting(boolean value) {
+		crafting = value;
 	}
 }

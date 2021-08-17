@@ -4,6 +4,6 @@
     "minecraft:cobblestone",
     "minecraft:ice",
     "minecraft:obsidian",
-    "#minecraft:mineable/pickaxe"
+    "minecraft:stone_slab"
   ]
 }

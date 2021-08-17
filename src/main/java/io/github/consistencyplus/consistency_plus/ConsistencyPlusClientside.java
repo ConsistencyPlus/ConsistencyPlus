@@ -20,9 +20,8 @@ public class ConsistencyPlusClientside implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_SLAB, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_STAIRS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_WALL, RenderLayer.getCutout());
-        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
-            return GrassColors.getColor(0.5D, 1.0D);
-        }, CPlusItems.GRASS_SLAB, CPlusItems.GRASS_STAIRS, CPlusItems.GRASS_WALL);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D),
+                CPlusItems.GRASS_SLAB, CPlusItems.GRASS_STAIRS, CPlusItems.GRASS_WALL);
         LOGGER.info("Consistency+ Main - Finished client initialization");
     }
 }

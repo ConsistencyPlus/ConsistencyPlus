@@ -4,6 +4,7 @@
     "minecraft:cobblestone",
     "minecraft:ice",
     "minecraft:obsidian",
-    "minecraft:stone_slab"
+    "minecraft:stone_slab",
+    "consistency_plus:dirt_slab"
   ]
 }

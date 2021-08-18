@@ -3,6 +3,7 @@ package io.github.consistencyplus.consistency_plus;
 import com.tterrag.registrarrp.Registrate;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
+import io.github.consistencyplus.consistency_plus.registry.CPlusStonecutterTags;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import org.apache.logging.log4j.LogManager;
@@ -37,6 +38,7 @@ public class ConsistencyPlus implements ModInitializer {
 		}
 		
 		CPlusItems.init();
+		CPlusStonecutterTags.init();
 		
 		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			LOGGER.info("Consistency+ Main - CPlusItems initialized");

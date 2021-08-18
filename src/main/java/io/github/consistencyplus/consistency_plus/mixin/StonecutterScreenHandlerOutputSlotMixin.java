@@ -1,6 +1,6 @@
 package io.github.consistencyplus.consistency_plus.mixin;
 
-import io.github.consistencyplus.consistency_plus.core.StonecutterHandler;
+import io.github.consistencyplus.consistency_plus.core.StonecutterTagRecipeHandler;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.StonecutterScreenHandler;
 import org.spongepowered.asm.mixin.Dynamic;
@@ -18,10 +18,10 @@ public class StonecutterScreenHandlerOutputSlotMixin {
 	@ModifyConstant(method = "onTakeItem", constant = @Constant(intValue = 1))
 	private int redirectIntToShrinkInput(int original) {
 		ItemStack inputStack = field_17639.input.getStack(0);
-		int toTake = StonecutterHandler.getCountForItem(inputStack);
+		int toTake = StonecutterTagRecipeHandler.getItemCraftCount(inputStack);
 		if (toTake > inputStack.getCount()) {
 			return 0;
 		}
-		return StonecutterHandler.getCountForItem(inputStack.getItem());
+		return StonecutterTagRecipeHandler.getItemCraftCount(inputStack.getItem());
 	}
 }

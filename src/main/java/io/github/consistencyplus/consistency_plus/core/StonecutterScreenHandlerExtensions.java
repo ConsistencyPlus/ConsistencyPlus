@@ -5,7 +5,7 @@ import net.minecraft.item.ItemStack;
 import java.util.List;
 
 public interface StonecutterScreenHandlerExtensions {
-	boolean optimizedRecipeMode();
+	boolean tagRecipeMode();
 	
 	List<ItemStack> getRecipeStacks();
 }

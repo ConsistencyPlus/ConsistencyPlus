@@ -35,7 +35,7 @@ public abstract class StonecutterScreenMixin extends HandledScreen<StonecutterSc
 	@Inject(at = @At("HEAD"), method = "renderRecipeIcons", cancellable = true)
 	private void renderRecipeIcons(int x, int y, int scrollOffset, CallbackInfo ci) {
 		StonecutterScreenHandlerExtensions extendedHandler = (StonecutterScreenHandlerExtensions) handler;
-		if (extendedHandler.optimizedRecipeMode()) {
+		if (extendedHandler.tagRecipeMode()) {
 			List<ItemStack> list = extendedHandler.getRecipeStacks();
 			for (int i = this.scrollOffset; i < scrollOffset && i < list.size(); i++) {
 				ItemStack stack = list.get(i);
@@ -52,10 +52,8 @@ public abstract class StonecutterScreenMixin extends HandledScreen<StonecutterSc
 	@Inject(at = @At("HEAD"), method = "renderRecipeBackground")
 	private void renderRecipeBackground(MatrixStack matrices, int mouseX, int mouseY, int x, int y, int scrollOffset, CallbackInfo ci) {
 		StonecutterScreenHandlerExtensions extendedHandler = (StonecutterScreenHandlerExtensions) handler;
-		if (extendedHandler.optimizedRecipeMode()) {
+		if (extendedHandler.tagRecipeMode()) {
 			List<ItemStack> stacks = extendedHandler.getRecipeStacks();
-			ItemStack input = handler.input.getStack(0);
-			stacks.removeIf(stack -> stack.isItemEqual(input));
 			
 			for (int i = this.scrollOffset; i < scrollOffset && i < stacks.size(); ++i) {
 				int j = i - this.scrollOffset;
@@ -77,7 +75,7 @@ public abstract class StonecutterScreenMixin extends HandledScreen<StonecutterSc
 	@Inject(at = @At("HEAD"), method = "drawMouseoverTooltip", cancellable = true)
 	private void drawMouseoverTooltip(MatrixStack matrices, int x, int y, CallbackInfo ci) {
 		StonecutterScreenHandlerExtensions extendedHandler = (StonecutterScreenHandlerExtensions) handler;
-		if (extendedHandler.optimizedRecipeMode()) {
+		if (extendedHandler.tagRecipeMode()) {
 			super.drawMouseoverTooltip(matrices, x, y);
 			if (canCraft) {
 				int i = this.x + 52;
@@ -101,7 +99,7 @@ public abstract class StonecutterScreenMixin extends HandledScreen<StonecutterSc
 	@Inject(at = @At("HEAD"), method = "shouldScroll", cancellable = true)
 	private void shouldScroll(CallbackInfoReturnable<Boolean> cir) {
 		StonecutterScreenHandlerExtensions extendedHandler = (StonecutterScreenHandlerExtensions) handler;
-		if (extendedHandler.optimizedRecipeMode()) {
+		if (extendedHandler.tagRecipeMode()) {
 			cir.setReturnValue(canCraft && extendedHandler.getRecipeStacks().size() > 12);
 		}
 	}
@@ -109,7 +107,7 @@ public abstract class StonecutterScreenMixin extends HandledScreen<StonecutterSc
 	@Inject(at = @At("HEAD"), method = "getMaxScroll", cancellable = true)
 	private void getMaxScroll(CallbackInfoReturnable<Integer> cir) {
 		StonecutterScreenHandlerExtensions extendedHandler = (StonecutterScreenHandlerExtensions) handler;
-		if (extendedHandler.optimizedRecipeMode()) {
+		if (extendedHandler.tagRecipeMode()) {
 			cir.setReturnValue((extendedHandler.getRecipeStacks().size() + 4 - 1) / 4 - 3);
 		}
 	}

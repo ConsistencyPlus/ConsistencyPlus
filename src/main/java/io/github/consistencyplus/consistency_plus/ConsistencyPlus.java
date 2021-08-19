@@ -9,7 +9,7 @@ import net.fabricmc.loader.api.FabricLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static io.github.consistencyplus.consistency_plus.registry.CPlusItems.CHARCOAL_BLOCK;
+// import static io.github.consistencyplus.consistency_plus.registry.CPlusItems.CHARCOAL_BLOCK;
 
 public class ConsistencyPlus implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger("Consistency+");
@@ -49,6 +49,6 @@ public class ConsistencyPlus implements ModInitializer {
 
 
 
-		FuelRegistry.INSTANCE.add(CHARCOAL_BLOCK, 200);
+		// FuelRegistry.INSTANCE.add(CHARCOAL_BLOCK, 200);
 	}
 }

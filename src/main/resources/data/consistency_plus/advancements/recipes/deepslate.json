@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:recipes/deepslate_slab_crafting",
+      "consistency_plus:recipes/deepslate_stairs_crafting",
+      "consistency_plus:recipes/deepslate_wall_crafting",
+      "consistency_plus:recipes/deepslate_gate_crafting",
+      "consistency_plus:recipes/polished_deepslate_gate_crafting",
+      "consistency_plus:recipes/deepslate_brick_gate_crafting",
+      "consistency_plus:recipes/cut_deepslate_crafting",
+      "consistency_plus:recipes/cut_deepslate_slab_crafting",
+      "consistency_plus:recipes/cut_deepslate_stairs_crafting",
+      "consistency_plus:recipes/cut_deepslate_wall_crafting",
+      "consistency_plus:recipes/cut_deepslate_gate_crafting",
+      "consistency_plus:recipes/deepslate_tile_gate_crafting",
+      "consistency_plus:recipes/smooth_deepslate_slab_crafting",
+      "consistency_plus:recipes/smooth_deepslate_stairs_crafting",
+      "consistency_plus:recipes/smooth_deepslate_wall_crafting",
+      "consistency_plus:recipes/smooth_deepslate_gate_crafting",
+      "consistency_plus:recipes/deepslate_pillar_crafting",
+      "consistency_plus:recipes/carved_deepslate_crafting",
+      "consistency_plus:recipes/cracked_deepslate_brick_slab",
+      "consistency_plus:recipes/cracked_deepslate_brick_stairs",
+      "consistency_plus:recipes/cracked_deepslate_brick_wall",
+      "consistency_plus:recipes/cracked_deepslate_brick_gate",
+      "consistency_plus:recipes/cracked_deepslate_tile_slab",
+      "consistency_plus:recipes/cracked_deepslate_tile_stairs",
+      "consistency_plus:recipes/cracked_deepslate_tile_wall",
+      "consistency_plus:recipes/cracked_deepslate_tile_gate"
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:deepslate"
+          }
+        ]
+      }
+    }
+  }
+}

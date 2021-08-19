@@ -2340,11 +2340,11 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Item TURTLE_BOOTS = register("turtle_boots", new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT)));
 
     // Miscellaneous
-    public static final Item JACK_O_RED = register("jack_o_red", new BlockItem(CPlusBlocks.JACK_O_RED, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    // public static final Item JACK_O_RED = register("jack_o_red", new BlockItem(CPlusBlocks.JACK_O_RED, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(CPlusBlocks.JACK_O_SOUL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    public static final Item CHARCOAL_BLOCK = register("charcoal_block", new BlockItem(CPlusBlocks.CHARCOAL_BLOCK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    // public static final Item CHARCOAL_BLOCK = register("charcoal_block", new BlockItem(CPlusBlocks.CHARCOAL_BLOCK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(CPlusBlocks.WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    public static final Item COPPER_NUGGET = register("copper_nugget", new Item(CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    // public static final Item COPPER_NUGGET = register("copper_nugget", new Item(CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     public static final Item PINEAPPLE = register("pineapple", new BlockItem(CPlusBlocks.PINEAPPLE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item KFP_BLOCK = register("kfp_block", new BlockItem(CPlusBlocks.KFP_BLOCK, new Item.Settings()));

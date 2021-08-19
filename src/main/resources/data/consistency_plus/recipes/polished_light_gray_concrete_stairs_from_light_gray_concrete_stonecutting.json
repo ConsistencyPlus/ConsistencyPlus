@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:light_gray_concrete"
-    },
-    "result": "consistency_plus:polished_light_gray_concrete_stairs",
-    "count": 1
-}

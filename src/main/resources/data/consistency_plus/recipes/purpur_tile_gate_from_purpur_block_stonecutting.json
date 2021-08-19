@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:purpur_block"
-    },
-    "result": "consistency_plus:purpur_tile_gate",
-    "count": 1
-}t": 1
-}

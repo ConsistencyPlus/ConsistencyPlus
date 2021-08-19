@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:polished_sandstone"
-    },
-    "result": "consistency_plus:sandstone_tile_slab",
-    "count": 2
-}

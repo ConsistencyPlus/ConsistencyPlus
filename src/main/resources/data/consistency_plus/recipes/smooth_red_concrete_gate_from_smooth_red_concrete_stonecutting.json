@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:smooth_red_concrete"
-    },
-    "result": "consistency_plus:smooth_red_concrete_gate",
-    "count": 1
-}

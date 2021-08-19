@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:polished_light_gray_terracotta_wall"
-    },
-    "result": "consistency_plus:light_gray_terracotta_tile_wall",
-    "count": 1
-}

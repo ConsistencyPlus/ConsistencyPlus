@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:granite"
-    },
-    "result": "consistency_plus:granite_tile_slab",
-    "count": 2
-}

@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:calcite"
-    },
-    "result": "consistency_plus:carved_calcite",
-    "count": 1
-}

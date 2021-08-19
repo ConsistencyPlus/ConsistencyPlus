@@ -72,9 +72,11 @@
       "io.github.consistencyplus.consistency_plus.ConsistencyPlusClientside"
     ]
   },
+
   "mixins": [
     "consistency_plus.mixins.json"
   ],
+
   "depends": {
     "fabric": "*",
     "minecraft": "~1.17.1"

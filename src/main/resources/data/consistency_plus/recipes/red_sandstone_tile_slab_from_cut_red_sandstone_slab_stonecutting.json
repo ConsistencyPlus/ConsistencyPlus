@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:cut_red_sandstone_slab"
-    },
-    "result": "consistency_plus:red_sandstone_tile_slab",
-    "count": 1
-}

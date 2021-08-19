@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:light_blue_terracotta"
-    },
-    "result": "consistency_plus:light_blue_terracotta_gate",
-    "count": 1
-}

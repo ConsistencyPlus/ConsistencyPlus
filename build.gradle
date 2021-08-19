@@ -24,8 +24,8 @@ dependencies {
 
     modImplementation "maven.modrinth:lazydfu:0.1.2"
 
-    include "com.tterrag:registrarrp:0.+"
-    modImplementation "com.tterrag:registrarrp:0.+"
+    // include "com.tterrag:registrarrp:0.+"
+    // modImplementation "com.tterrag:registrarrp:0.+"
 }
 
 processResources {

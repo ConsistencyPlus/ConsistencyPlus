@@ -1,5 +1,8 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import io.github.consistencyplus.consistency_plus.blocks.RedstonePumpkinBlock;
+import io.github.consistencyplus.consistency_plus.core.BaseConsistencyCarvedPumpkinBlock;
+import io.github.consistencyplus.consistency_plus.core.BaseConsistencyStairBlock;
 import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
@@ -25,49 +28,49 @@ import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
 //Stone
-	
+
 	public static final Block STONE_WALL = register("stone_wall", new WallBlock(FabricBlockSettings.copy(STONE)));
 	public static final Block STONE_GATE = register("stone_gate", new FenceGateBlock(FabricBlockSettings.copy(STONE)));
-	
+
 	public static final Block COBBLESTONE_GATE = register("cobblestone_gate", new FenceGateBlock(FabricBlockSettings.copy(COBBLESTONE)));
 	public static final Block MOSSY_COBBLESTONE_GATE = register("mossy_cobblestone_gate", new FenceGateBlock(FabricBlockSettings.copy(MOSSY_COBBLESTONE)));
 	//Smooth
 	public static final Block SMOOTH_STONE_STAIRS = register("smooth_stone_stairs", new BaseConsistencyStairBlock(SMOOTH_STONE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_STONE)));
 	public static final Block SMOOTH_STONE_WALL = register("smooth_stone_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_STONE)));
 	public static final Block SMOOTH_STONE_GATE = register("smooth_stone_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_STONE)));
-	
+
 	//Polished
 	public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block POLISHED_STONE_SLAB = register("polished_stone_slab", new SlabBlock(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block POLISHED_STONE_STAIRS = register("polished_stone_stairs", new BaseConsistencyStairBlock(STONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block POLISHED_STONE_WALL = register("polished_stone_wall", new WallBlock(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block POLISHED_STONE_GATE = register("polished_stone_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_STONE)));
-	
+
 	//Cut
 	public static final Block CUT_STONE = register("cut_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block CUT_STONE_SLAB = register("cut_stone_slab", new SlabBlock(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block CUT_STONE_STAIRS = register("cut_stone_stairs", new BaseConsistencyStairBlock(STONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block CUT_STONE_WALL = register("cut_stone_wall", new WallBlock(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block CUT_STONE_GATE = register("cut_stone_gate", new FenceGateBlock(FabricBlockSettings.copy(STONE_BRICKS)));
-	
+
 	public static final Block STONE_TILES = register("stone_tiles", new Block(FabricBlockSettings.copy(STONE)));
 	public static final Block STONE_TILE_SLAB = register("stone_tile_slab", new SlabBlock(FabricBlockSettings.copy(STONE)));
 	public static final Block STONE_TILE_STAIRS = register("stone_tile_stairs", new BaseConsistencyStairBlock(STONE_TILES.getDefaultState(), FabricBlockSettings.copy(STONE)));
 	public static final Block STONE_TILE_WALL = register("stone_tile_wall", new WallBlock(FabricBlockSettings.copy(STONE)));
 	public static final Block STONE_TILE_GATE = register("stone_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(STONE)));
-	
+
 	// Bricks
 	public static final Block STONE_BRICK_GATE = register("stone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(STONE_BRICKS)));
-	
+
 	// Cracked
 	public static final Block CRACKED_STONE_BRICK_SLAB = register("cracked_stone_brick_slab", new SlabBlock(FabricBlockSettings.copy(CRACKED_STONE_BRICKS)));
 	public static final Block CRACKED_STONE_BRICK_STAIRS = register("cracked_stone_brick_stairs", new BaseConsistencyStairBlock(CRACKED_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(CRACKED_STONE_BRICKS)));
 	public static final Block CRACKED_STONE_BRICK_WALL = register("cracked_stone_brick_wall", new WallBlock(FabricBlockSettings.copy(CRACKED_STONE_BRICKS)));
 	public static final Block CRACKED_STONE_BRICK_GATE = register("cracked_stone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(CRACKED_STONE_BRICKS)));
-	
+
 	// Mossy
 	public static final Block MOSSY_STONE_BRICK_GATE = register("mossy_stone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(MOSSY_STONE_BRICKS)));
-	
+
 	// Pillar and Chiseled
 	public static final Block STONE_PILLAR = register("stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block CRACKED_STONE_PILLAR = register("cracked_stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
@@ -77,44 +80,44 @@ public class CPlusBlocks {
 	public static final Block CARVED_STONE = register("carved_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
 
 //Blackstone
-	
+
 	public static final Block BLACKSTONE_GATE = register("blackstone_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block BLACKSTONE_BRICK_GATE = register("blackstone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block POLISHED_BLACKSTONE_GATE = register("polished_blackstone_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_BLACKSTONE = register("smooth_blackstone", new Block(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block SMOOTH_BLACKSTONE_SLAB = register("smooth_blackstone_slab", new SlabBlock(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block SMOOTH_BLACKSTONE_STAIRS = register("smooth_blackstone_stairs", new BaseConsistencyStairBlock(BLACKSTONE.getDefaultState(), FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block SMOOTH_BLACKSTONE_WALL = register("smooth_blackstone_wall", new WallBlock(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block SMOOTH_BLACKSTONE_GATE = register("smooth_blackstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_BLACKSTONE)));
-	
+
 	//Cut
 	public static final Block CUT_BLACKSTONE = register("cut_blackstone", new Block(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block CUT_BLACKSTONE_SLAB = register("cut_blackstone_slab", new SlabBlock(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block CUT_BLACKSTONE_STAIRS = register("cut_blackstone_stairs", new BaseConsistencyStairBlock(BLACKSTONE.getDefaultState(), FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block CUT_BLACKSTONE_WALL = register("cut_blackstone_wall", new WallBlock(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block CUT_BLACKSTONE_GATE = register("cut_blackstone_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_BLACKSTONE)));
-	
+
 	public static final Block BLACKSTONE_TILES = register("blackstone_tiles", new Block(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block BLACKSTONE_TILE_SLAB = register("blackstone_tile_slab", new SlabBlock(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block BLACKSTONE_TILE_STAIRS = register("blackstone_tile_stairs", new BaseConsistencyStairBlock(BLACKSTONE_TILES.getDefaultState(), FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block BLACKSTONE_TILE_WALL = register("blackstone_tile_wall", new WallBlock(FabricBlockSettings.copy(BLACKSTONE)));
 	public static final Block BLACKSTONE_TILE_GATE = register("blackstone_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACKSTONE)));
-	
+
 	//Cracked
 	public static final Block CRACKED_BLACKSTONE_BRICK_SLAB = register("cracked_blackstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(CRACKED_POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block CRACKED_BLACKSTONE_BRICK_STAIRS = register("cracked_blackstone_brick_stairs", new BaseConsistencyStairBlock(CRACKED_POLISHED_BLACKSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(CRACKED_STONE_BRICKS)));
 	public static final Block CRACKED_BLACKSTONE_BRICK_WALL = register("cracked_blackstone_brick_wall", new WallBlock(FabricBlockSettings.copy(CRACKED_POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block CRACKED_BLACKSTONE_BRICK_GATE = register("cracked_blackstone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(CRACKED_POLISHED_BLACKSTONE_BRICKS)));
-	
+
 	//Mossy
 	public static final Block MOSSY_BLACKSTONE_BRICKS = register("mossy_blackstone_bricks", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block MOSSY_BLACKSTONE_BRICK_SLAB = register("mossy_blackstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block MOSSY_BLACKSTONE_BRICK_STAIRS = register("mossy_blackstone_brick_stairs", new BaseConsistencyStairBlock(POLISHED_BLACKSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block MOSSY_BLACKSTONE_BRICK_WALL = register("mossy_blackstone_brick_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block MOSSY_BLACKSTONE_BRICK_GATE = register("mossy_blackstone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block MOSSY_BLACKSTONE_PILLAR = register("mossy_blackstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block CRACKED_BLACKSTONE_PILLAR = register("cracked_blackstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
@@ -124,229 +127,229 @@ public class CPlusBlocks {
 	public static final Block CRACKED_CHISELED_BLACKSTONE = register("cracked_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block MOSSY_CARVED_BLACKSTONE = register("mossy_carved_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block CRACKED_CARVED_BLACKSTONE = register("cracked_carved_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
-	
-	
+
+
 	//Sandstone
 	public static final Block SANDSTONE_GATE = register("sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SANDSTONE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_SANDSTONE_WALL = register("smooth_sandstone_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_SANDSTONE)));
 	public static final Block SMOOTH_SANDSTONE_GATE = register("smooth_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_SANDSTONE)));
-	
+
 	//Cut
 	public static final Block CUT_SANDSTONE_STAIRS = register("cut_sandstone_stairs", new BaseConsistencyStairBlock(CUT_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(CUT_SANDSTONE)));
 	public static final Block CUT_SANDSTONE_WALL = register("cut_sandstone_wall", new WallBlock(FabricBlockSettings.copy(CUT_SANDSTONE)));
 	public static final Block CUT_SANDSTONE_GATE = register("cut_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_SANDSTONE)));
-	
+
 	//Polished
 	public static final Block POLISHED_SANDSTONE = register("polished_sandstone", new Block(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block POLISHED_SANDSTONE_SLAB = register("polished_sandstone_slab", new SlabBlock(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block POLISHED_SANDSTONE_STAIRS = register("polished_sandstone_stairs", new BaseConsistencyStairBlock(SANDSTONE.getDefaultState(), FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block POLISHED_SANDSTONE_WALL = register("polished_sandstone_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block POLISHED_SANDSTONE_GATE = register("polished_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_SANDSTONE)));
-	
+
 	//Bricks
 	public static final Block SANDSTONE_BRICKS = register("sandstone_bricks", new Block(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_BRICK_SLAB = register("sandstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_BRICK_STAIRS = register("sandstone_brick_stairs", new BaseConsistencyStairBlock(SANDSTONE.getDefaultState(), FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_BRICK_WALL = register("sandstone_brick_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_BRICK_GATE = register("sandstone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(SANDSTONE_BRICKS)));
-	
+
 	public static final Block SANDSTONE_TILES = register("sandstone_tiles", new Block(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_TILE_SLAB = register("sandstone_tile_slab", new SlabBlock(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_TILE_STAIRS = register("sandstone_tile_stairs", new BaseConsistencyStairBlock(SANDSTONE_TILES.getDefaultState(), FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_TILE_WALL = register("sandstone_tile_wall", new WallBlock(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_TILE_GATE = register("sandstone_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(SANDSTONE)));
-	
+
 	//Pillars and Chiseled
 	public static final Block CHISELED_SANDSTONE = register("chiseled_sandstone", new Block(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_PILLAR = register("sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(SANDSTONE)));
-	
+
 	//Red Sandstone
 	public static final Block RED_SANDSTONE_GATE = register("red_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_RED_SANDSTONE_WALL = register("smooth_red_sandstone_wall", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block SMOOTH_RED_SANDSTONE_GATE = register("smooth_red_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_RED_SANDSTONE)));
-	
+
 	//Cut
 	public static final Block CUT_RED_SANDSTONE_STAIRS = register("cut_red_sandstone_stairs", new BaseConsistencyStairBlock(CUT_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(CUT_SANDSTONE)));
 	public static final Block CUT_RED_SANDSTONE_WALL = register("cut_red_sandstone_wall", new WallBlock(FabricBlockSettings.copy(CUT_SANDSTONE)));
 	public static final Block CUT_RED_SANDSTONE_GATE = register("cut_red_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_RED_SANDSTONE)));
-	
+
 	//Polished
 	public static final Block POLISHED_RED_SANDSTONE = register("polished_red_sandstone", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block POLISHED_RED_SANDSTONE_SLAB = register("polished_red_sandstone_slab", new SlabBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block POLISHED_RED_SANDSTONE_STAIRS = register("polished_red_sandstone_stairs", new BaseConsistencyStairBlock(RED_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block POLISHED_RED_SANDSTONE_WALL = register("polished_red_sandstone_wall", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block POLISHED_RED_SANDSTONE_GATE = register("polished_red_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_RED_SANDSTONE)));
-	
+
 	//Bricks
 	public static final Block RED_SANDSTONE_BRICKS = register("red_sandstone_bricks", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_BRICK_SLAB = register("red_sandstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_BRICK_STAIRS = register("red_sandstone_brick_stairs", new BaseConsistencyStairBlock(RED_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block RED_SANDSTONE_BRICK_WALL = register("red_sandstone_brick_wall", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_BRICK_GATE = register("red_sandstone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_SANDSTONE_BRICKS)));
-	
+
 	public static final Block RED_SANDSTONE_TILES = register("red_sandstone_tiles", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_TILE_SLAB = register("red_sandstone_tile_slab", new SlabBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_TILE_STAIRS = register("red_sandstone_tile_stairs", new BaseConsistencyStairBlock(RED_SANDSTONE_TILES.getDefaultState(), FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_TILE_WALL = register("red_sandstone_tile_wall", new WallBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_TILE_GATE = register("red_sandstone_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
-	
+
 	//Pillars and Chiseled
 	public static final Block CHISELED_RED_SANDSTONE = register("chiseled_red_sandstone", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_PILLAR = register("red_sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
 
 //Quartz
-	
+
 	public static final Block QUARTZ_WALL = register("quartz_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block QUARTZ_GATE = register("quartz_gate", new FenceGateBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_QUARTZ_WALL = register("smooth_quartz_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block SMOOTH_QUARTZ_GATE = register("smooth_quartz_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_QUARTZ)));
-	
+
 	//Cut
 	public static final Block CUT_QUARTZ = register("cut_quartz", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block CUT_QUARTZ_SLAB = register("cut_quartz_slab", new SlabBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block CUT_QUARTZ_STAIRS = register("cut_quartz_stairs", new BaseConsistencyStairBlock(QUARTZ_BLOCK.getDefaultState(), FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block CUT_QUARTZ_WALL = register("cut_quartz_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block CUT_QUARTZ_GATE = register("cut_quartz_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_QUARTZ)));
-	
+
 	//Tiles
 	public static final Block QUARTZ_TILES = register("quartz_tiles", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block QUARTZ_TILE_SLAB = register("quartz_tile_slab", new SlabBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block QUARTZ_TILE_STAIRS = register("quartz_tile_stairs", new BaseConsistencyStairBlock(QUARTZ_TILES.getDefaultState(), FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block QUARTZ_TILE_WALL = register("quartz_tile_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block QUARTZ_TILE_GATE = register("quartz_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
-	
+
 	//Polished
 	public static final Block POLISHED_QUARTZ = register("polished_quartz", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block POLISHED_QUARTZ_SLAB = register("polished_quartz_slab", new SlabBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block POLISHED_QUARTZ_STAIRS = register("polished_quartz_stairs", new BaseConsistencyStairBlock(QUARTZ_BLOCK.getDefaultState(), FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block POLISHED_QUARTZ_WALL = register("polished_quartz_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block POLISHED_QUARTZ_GATE = register("polished_quartz_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_QUARTZ)));
-	
+
 	//Bricks
 	public static final Block QUARTZ_BRICK_SLAB = register("quartz_brick_slab", new SlabBlock(FabricBlockSettings.copy(QUARTZ_BRICKS)));
 	public static final Block QUARTZ_BRICK_STAIRS = register("quartz_brick_stairs", new BaseConsistencyStairBlock(QUARTZ_BRICKS.getDefaultState(), FabricBlockSettings.copy(QUARTZ_BRICKS)));
 	public static final Block QUARTZ_BRICK_WALL = register("quartz_brick_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BRICKS)));
 	public static final Block QUARTZ_BRICK_GATE = register("quartz_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(QUARTZ_BRICKS)));
-	
+
 	public static final Block CARVED_QUARTZ = register("carved_quartz", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
-	
+
 	//Andesite
 	public static final Block ANDESITE_GATE = register("andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE)));
-	
+
 	// Mossy
 	public static final Block MOSSY_ANDESITE = register("mossy_andesite", new Block(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block MOSSY_ANDESITE_SLAB = register("mossy_andesite_slab", new SlabBlock(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block MOSSY_ANDESITE_STAIRS = register("mossy_andesite_stairs", new BaseConsistencyStairBlock(ANDESITE.getDefaultState(), FabricBlockSettings.copy(ANDESITE)));
 	public static final Block MOSSY_ANDESITE_WALL = register("mossy_andesite_wall", new WallBlock(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block MOSSY_ANDESITE_GATE = register("mossy_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE)));
-	
+
 	//Polished
 	public static final Block POLISHED_ANDESITE_WALL = register("polished_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block POLISHED_ANDESITE_GATE = register("polished_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
-	
+
 	//Cracked Polished
 	public static final Block CRACKED_POLISHED_ANDESITE = register("cracked_polished_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_POLISHED_ANDESITE_SLAB = register("cracked_polished_andesite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_POLISHED_ANDESITE_STAIRS = register("cracked_polished_andesite_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_POLISHED_ANDESITE_WALL = register("cracked_polished_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_POLISHED_ANDESITE_GATE = register("cracked_polished_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
-	
+
 	//Mossy Polished
 	public static final Block MOSSY_POLISHED_ANDESITE = register("mossy_polished_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_POLISHED_ANDESITE_SLAB = register("mossy_polished_andesite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_POLISHED_ANDESITE_STAIRS = register("mossy_polished_andesite_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_POLISHED_ANDESITE_WALL = register("mossy_polished_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_POLISHED_ANDESITE_GATE = register("mossy_polished_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_ANDESITE = register("smooth_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block SMOOTH_ANDESITE_SLAB = register("smooth_andesite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block SMOOTH_ANDESITE_STAIRS = register("smooth_andesite_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block SMOOTH_ANDESITE_WALL = register("smooth_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block SMOOTH_ANDESITE_GATE = register("smooth_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_ANDESITE)));
-	
+
 	//Cracked Smooth
 	public static final Block CRACKED_SMOOTH_ANDESITE = register("cracked_smooth_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_SMOOTH_ANDESITE_SLAB = register("cracked_smooth_andesite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_SMOOTH_ANDESITE_STAIRS = register("cracked_smooth_andesite_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_SMOOTH_ANDESITE_WALL = register("cracked_smooth_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_SMOOTH_ANDESITE_GATE = register("cracked_smooth_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
-	
+
 	//Mossy Smooth
 	public static final Block MOSSY_SMOOTH_ANDESITE = register("mossy_smooth_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_SMOOTH_ANDESITE_SLAB = register("mossy_smooth_andesite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_SMOOTH_ANDESITE_STAIRS = register("mossy_smooth_andesite_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_SMOOTH_ANDESITE_WALL = register("mossy_smooth_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_SMOOTH_ANDESITE_GATE = register("mossy_smooth_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
-	
+
 	//Cut
 	public static final Block CUT_ANDESITE = register("cut_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CUT_ANDESITE_SLAB = register("cut_andesite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CUT_ANDESITE_STAIRS = register("cut_andesite_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block CUT_ANDESITE_WALL = register("cut_andesite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CUT_ANDESITE_GATE = register("cut_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_ANDESITE)));
-	
+
 	//Cracked Cut
 	public static final Block CRACKED_CUT_ANDESITE = register("cracked_cut_andesite", new Block(FabricBlockSettings.copy(CUT_ANDESITE)));
 	public static final Block CRACKED_CUT_ANDESITE_SLAB = register("cracked_cut_andesite_slab", new SlabBlock(FabricBlockSettings.copy(CUT_ANDESITE)));
 	public static final Block CRACKED_CUT_ANDESITE_STAIRS = register("cracked_cut_andesite_stairs", new BaseConsistencyStairBlock(CUT_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_CUT_ANDESITE_WALL = register("cracked_cut_andesite_wall", new WallBlock(FabricBlockSettings.copy(CUT_ANDESITE)));
 	public static final Block CRACKED_CUT_ANDESITE_GATE = register("cracked_cut_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_ANDESITE)));
-	
+
 	//Mossy Cut
 	public static final Block MOSSY_CUT_ANDESITE = register("mossy_cut_andesite", new Block(FabricBlockSettings.copy(CUT_ANDESITE)));
 	public static final Block MOSSY_CUT_ANDESITE_SLAB = register("mossy_cut_andesite_slab", new SlabBlock(FabricBlockSettings.copy(CUT_ANDESITE)));
 	public static final Block MOSSY_CUT_ANDESITE_STAIRS = register("mossy_cut_andesite_stairs", new BaseConsistencyStairBlock(CUT_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_CUT_ANDESITE_WALL = register("mossy_cut_andesite_wall", new WallBlock(FabricBlockSettings.copy(CUT_ANDESITE)));
 	public static final Block MOSSY_CUT_ANDESITE_GATE = register("mossy_cut_andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_ANDESITE)));
-	
+
 	public static final Block ANDESITE_TILES = register("andesite_tiles", new Block(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block ANDESITE_TILE_SLAB = register("andesite_tile_slab", new SlabBlock(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block ANDESITE_TILE_STAIRS = register("andesite_tile_stairs", new BaseConsistencyStairBlock(ANDESITE.getDefaultState(), FabricBlockSettings.copy(ANDESITE)));
 	public static final Block ANDESITE_TILE_WALL = register("andesite_tile_wall", new WallBlock(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block ANDESITE_TILE_GATE = register("andesite_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE_TILES)));
-	
+
 	//Cracked Bricks
 	public static final Block CRACKED_ANDESITE_TILES = register("cracked_andesite_tiles", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_TILE_SLAB = register("cracked_andesite_tile_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_TILE_STAIRS = register("cracked_andesite_tile_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_TILE_WALL = register("cracked_andesite_tile_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_TILE_GATE = register("cracked_andesite_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE_TILES)));
-	
+
 	//Mossy Bricks
 	public static final Block MOSSY_ANDESITE_TILES = register("mossy_andesite_tiles", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_TILE_SLAB = register("mossy_andesite_tile_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_TILE_STAIRS = register("mossy_andesite_tile_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_TILE_WALL = register("mossy_andesite_tile_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_TILE_GATE = register("mossy_andesite_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE_TILES)));
-	
-	
+
+
 	public static final Block ANDESITE_BRICKS = register("andesite_bricks", new Block(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block ANDESITE_BRICK_SLAB = register("andesite_brick_slab", new SlabBlock(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block ANDESITE_BRICK_STAIRS = register("andesite_brick_stairs", new BaseConsistencyStairBlock(ANDESITE.getDefaultState(), FabricBlockSettings.copy(ANDESITE)));
 	public static final Block ANDESITE_BRICK_WALL = register("andesite_brick_wall", new WallBlock(FabricBlockSettings.copy(ANDESITE)));
 	public static final Block ANDESITE_BRICK_GATE = register("andesite_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE_BRICKS)));
-	
+
 	//Cracked Bricks
 	public static final Block CRACKED_ANDESITE_BRICKS = register("cracked_andesite_bricks", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_BRICK_SLAB = register("cracked_andesite_brick_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_BRICK_STAIRS = register("cracked_andesite_brick_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_BRICK_WALL = register("cracked_andesite_brick_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_BRICK_GATE = register("cracked_andesite_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE_BRICKS)));
-	
+
 	//Mossy Bricks
 	public static final Block MOSSY_ANDESITE_BRICKS = register("mossy_andesite_bricks", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_BRICK_SLAB = register("mossy_andesite_brick_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_BRICK_STAIRS = register("mossy_andesite_brick_stairs", new BaseConsistencyStairBlock(POLISHED_ANDESITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_BRICK_WALL = register("mossy_andesite_brick_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_BRICK_GATE = register("mossy_andesite_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block ANDESITE_PILLAR = register("andesite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_PILLAR = register("cracked_andesite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
@@ -360,96 +363,96 @@ public class CPlusBlocks {
 	public static final Block CARVED_ANDESITE = register("carved_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_CARVED_ANDESITE = register("cracked_carved_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_CARVED_ANDESITE = register("mossy_carved_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
-	
+
 	//Diorite
 	public static final Block DIORITE_GATE = register("diorite_gate", new FenceGateBlock(FabricBlockSettings.copy(DIORITE)));
-	
+
 	//Polished
 	public static final Block POLISHED_DIORITE_WALL = register("polished_diorite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_DIORITE)));
 	public static final Block POLISHED_DIORITE_GATE = register("polished_diorite_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_DIORITE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_DIORITE = register("smooth_diorite", new Block(FabricBlockSettings.copy(DIORITE)));
 	public static final Block SMOOTH_DIORITE_SLAB = register("smooth_diorite_slab", new SlabBlock(FabricBlockSettings.copy(DIORITE)));
 	public static final Block SMOOTH_DIORITE_STAIRS = register("smooth_diorite_stairs", new BaseConsistencyStairBlock(DIORITE.getDefaultState(), FabricBlockSettings.copy(DIORITE)));
 	public static final Block SMOOTH_DIORITE_WALL = register("smooth_diorite_wall", new WallBlock(FabricBlockSettings.copy(DIORITE)));
 	public static final Block SMOOTH_DIORITE_GATE = register("smooth_diorite_gate", new FenceGateBlock(FabricBlockSettings.copy(DIORITE)));
-	
+
 	//Cut
 	public static final Block CUT_DIORITE = register("cut_diorite", new Block(FabricBlockSettings.copy(DIORITE)));
 	public static final Block CUT_DIORITE_SLAB = register("cut_diorite_slab", new SlabBlock(FabricBlockSettings.copy(DIORITE)));
 	public static final Block CUT_DIORITE_STAIRS = register("cut_diorite_stairs", new BaseConsistencyStairBlock(DIORITE.getDefaultState(), FabricBlockSettings.copy(DIORITE)));
 	public static final Block CUT_DIORITE_WALL = register("cut_diorite_wall", new WallBlock(FabricBlockSettings.copy(DIORITE)));
 	public static final Block CUT_DIORITE_GATE = register("cut_diorite_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_DIORITE)));
-	
+
 	public static final Block DIORITE_TILES = register("diorite_tiles", new Block(FabricBlockSettings.copy(DIORITE)));
 	public static final Block DIORITE_TILE_SLAB = register("diorite_tile_slab", new SlabBlock(FabricBlockSettings.copy(DIORITE)));
 	public static final Block DIORITE_TILE_STAIRS = register("diorite_tile_stairs", new BaseConsistencyStairBlock(DIORITE_TILES.getDefaultState(), FabricBlockSettings.copy(DIORITE)));
 	public static final Block DIORITE_TILE_WALL = register("diorite_tile_wall", new WallBlock(FabricBlockSettings.copy(DIORITE)));
 	public static final Block DIORITE_TILE_GATE = register("diorite_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(DIORITE)));
-	
+
 	//Bricks
 	public static final Block DIORITE_BRICKS = register("diorite_bricks", new Block(FabricBlockSettings.copy(DIORITE)));
 	public static final Block DIORITE_BRICK_SLAB = register("diorite_brick_slab", new SlabBlock(FabricBlockSettings.copy(DIORITE)));
 	public static final Block DIORITE_BRICK_STAIRS = register("diorite_brick_stairs", new BaseConsistencyStairBlock(DIORITE.getDefaultState(), FabricBlockSettings.copy(DIORITE)));
 	public static final Block DIORITE_BRICK_WALL = register("diorite_brick_wall", new WallBlock(FabricBlockSettings.copy(DIORITE)));
 	public static final Block DIORITE_BRICK_GATE = register("diorite_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(DIORITE_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block DIORITE_PILLAR = register("diorite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_DIORITE)));
 	public static final Block CHISELED_DIORITE = register("chiseled_diorite", new Block(FabricBlockSettings.copy(POLISHED_DIORITE)));
 	public static final Block CARVED_DIORITE = register("carved_diorite", new Block(FabricBlockSettings.copy(POLISHED_DIORITE)));
-	
+
 	//Granite
 	public static final Block GRANITE_GATE = register("granite_gate", new FenceGateBlock(FabricBlockSettings.copy(GRANITE)));
-	
+
 	//Polished
 	public static final Block POLISHED_GRANITE_WALL = register("polished_granite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block POLISHED_GRANITE_GATE = register("polished_granite_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_GRANITE = register("smooth_granite", new Block(FabricBlockSettings.copy(GRANITE)));
 	public static final Block SMOOTH_GRANITE_SLAB = register("smooth_granite_slab", new SlabBlock(FabricBlockSettings.copy(GRANITE)));
 	public static final Block SMOOTH_GRANITE_STAIRS = register("smooth_granite_stairs", new BaseConsistencyStairBlock(GRANITE.getDefaultState(), FabricBlockSettings.copy(GRANITE)));
 	public static final Block SMOOTH_GRANITE_WALL = register("smooth_granite_wall", new WallBlock(FabricBlockSettings.copy(GRANITE)));
 	public static final Block SMOOTH_GRANITE_GATE = register("smooth_granite_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_GRANITE)));
-	
+
 	//Cut
 	public static final Block CUT_GRANITE = register("cut_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block CUT_GRANITE_SLAB = register("cut_granite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block CUT_GRANITE_STAIRS = register("cut_granite_stairs", new BaseConsistencyStairBlock(POLISHED_GRANITE.getDefaultState(), FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block CUT_GRANITE_WALL = register("cut_granite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block CUT_GRANITE_GATE = register("cut_granite_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_GRANITE)));
-	
+
 	//Tiles
 	public static final Block GRANITE_TILES = register("granite_tiles", new Block(FabricBlockSettings.copy(GRANITE)));
 	public static final Block GRANITE_TILE_SLAB = register("granite_tile_slab", new SlabBlock(FabricBlockSettings.copy(GRANITE)));
 	public static final Block GRANITE_TILE_STAIRS = register("granite_tile_stairs", new BaseConsistencyStairBlock(GRANITE_TILES.getDefaultState(), FabricBlockSettings.copy(GRANITE)));
 	public static final Block GRANITE_TILE_WALL = register("granite_tile_wall", new WallBlock(FabricBlockSettings.copy(GRANITE)));
 	public static final Block GRANITE_TILE_GATE = register("granite_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(GRANITE)));
-	
+
 	//Bricks
 	public static final Block GRANITE_BRICKS = register("granite_bricks", new Block(FabricBlockSettings.copy(GRANITE)));
 	public static final Block GRANITE_BRICK_SLAB = register("granite_brick_slab", new SlabBlock(FabricBlockSettings.copy(GRANITE)));
 	public static final Block GRANITE_BRICK_STAIRS = register("granite_brick_stairs", new BaseConsistencyStairBlock(GRANITE.getDefaultState(), FabricBlockSettings.copy(GRANITE)));
 	public static final Block GRANITE_BRICK_WALL = register("granite_brick_wall", new WallBlock(FabricBlockSettings.copy(GRANITE)));
 	public static final Block GRANITE_BRICK_GATE = register("granite_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(GRANITE_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block GRANITE_PILLAR = register("granite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block CHISELED_GRANITE = register("chiseled_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block CARVED_GRANITE = register("carved_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
-	
+
 	//Clay
 //Clay will have a rework eventually, none of this is final
 	public static final Block CLAY_SLAB = register("clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
 	public static final Block CLAY_STAIRS = register("clay_stairs", new BaseConsistencyStairBlock(CLAY.getDefaultState(), FabricBlockSettings.copy(CLAY)));
 	public static final Block CLAY_WALL = register("clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
-	
+
 	//Bricks
 	public static final Block BRICK_GATE = register("brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BRICKS)));
-	
-	
+
+
 	//Nether Bricks
 //Nether Bricks will have a rework eventually, none of this is final
 	//Cracked Bricks
@@ -457,20 +460,20 @@ public class CPlusBlocks {
 	public static final Block CRACKED_NETHER_BRICK_STAIRS = register("cracked_nether_brick_stairs", new BaseConsistencyStairBlock(NETHER_BRICKS.getDefaultState(), FabricBlockSettings.copy(NETHER_BRICKS)));
 	public static final Block CRACKED_NETHER_BRICK_WALL = register("cracked_nether_brick_wall", new WallBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
 	public static final Block CRACKED_NETHER_BRICK_FENCE_GATE = register("cracked_nether_brick_fence_gate", new FenceGateBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new Block(FabricBlockSettings.copy(NETHER_BRICKS)));
 	public static final Block NETHER_BRICK_PILLAR = register("nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
-	
+
 	//Red Nether Bricks
 	public static final Block RED_NETHER_BRICK_FENCE_GATE = register("red_nether_brick_fence_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_NETHER_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new Block(FabricBlockSettings.copy(RED_NETHER_BRICKS)));
 	public static final Block RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(RED_NETHER_BRICKS)));
 	public static final Block CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new Block(FabricBlockSettings.copy(RED_NETHER_BRICKS)));
-	
-	
+
+
 	//Blue Nether Bricks
 //Blue Nether Bricks will have a rework eventually, none of this is final
 	//Bricks
@@ -479,99 +482,99 @@ public class CPlusBlocks {
 	public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new BaseConsistencyStairBlock(NETHER_BRICKS.getDefaultState(), FabricBlockSettings.copy(NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new WallBlock(FabricBlockSettings.copy(NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new FenceGateBlock(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
-	
+
 	//Cracked Bricks
 	public static final Block CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new Block(FabricBlockSettings.copy(CRACKED_NETHER_BRICKS)));
 	public static final Block CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new SlabBlock(FabricBlockSettings.copy(CRACKED_NETHER_BRICKS)));
 	public static final Block CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new BaseConsistencyStairBlock(CRACKED_NETHER_BRICKS.getDefaultState(), FabricBlockSettings.copy(NETHER_BRICKS)));
 	public static final Block CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new WallBlock(FabricBlockSettings.copy(CRACKED_NETHER_BRICKS)));
 	public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new FenceGateBlock(FabricBlockSettings.copy(CRACKED_BLUE_NETHER_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new Block(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new PillarBlock(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
 	public static final Block CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new Block(FabricBlockSettings.copy(BLUE_NETHER_BRICKS)));
-	
+
 	//Prismarine
 	public static final Block PRISMARINE_GATE = register("prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(PRISMARINE)));
-	
+
 	//Polished
 	public static final Block POLISHED_PRISMARINE = register("polished_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block POLISHED_PRISMARINE_SLAB = register("polished_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block POLISHED_PRISMARINE_STAIRS = register("polished_prismarine_stairs", new BaseConsistencyStairBlock(POLISHED_PRISMARINE.getDefaultState(), FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block POLISHED_PRISMARINE_WALL = register("polished_prismarine_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block POLISHED_PRISMARINE_GATE = register("polished_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_PRISMARINE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_PRISMARINE = register("smooth_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block SMOOTH_PRISMARINE_SLAB = register("smooth_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block SMOOTH_PRISMARINE_STAIRS = register("smooth_prismarine_stairs", new BaseConsistencyStairBlock(SMOOTH_PRISMARINE.getDefaultState(), FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block SMOOTH_PRISMARINE_WALL = register("smooth_prismarine_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block SMOOTH_PRISMARINE_GATE = register("smooth_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_PRISMARINE)));
-	
+
 	//Cut
 	public static final Block CUT_PRISMARINE = register("cut_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block CUT_PRISMARINE_SLAB = register("cut_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block CUT_PRISMARINE_STAIRS = register("cut_prismarine_stairs", new BaseConsistencyStairBlock(CUT_PRISMARINE.getDefaultState(), FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block CUT_PRISMARINE_WALL = register("cut_prismarine_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block CUT_PRISMARINE_GATE = register("cut_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_PRISMARINE)));
-	
+
 	//Tiles
 	public static final Block PRISMARINE_TILES = register("prismarine_tiles", new Block(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block PRISMARINE_TILE_SLAB = register("prismarine_tile_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block PRISMARINE_TILE_STAIRS = register("prismarine_tile_stairs", new BaseConsistencyStairBlock(PRISMARINE_TILES.getDefaultState(), FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block PRISMARINE_TILE_WALL = register("prismarine_tile_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block PRISMARINE_TILE_GATE = register("prismarine_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(PRISMARINE)));
-	
+
 	//Bricks
 	public static final Block PRISMARINE_BRICK_WALL = register("prismarine_brick_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
 	public static final Block PRISMARINE_BRICK_GATE = register("prismarine_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
-	
+
 	//Pillar and Chiseled
 	public static final Block CHISELED_PRISMARINE = register("chiseled_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
 	public static final Block PRISMARINE_PILLAR = register("prismarine_pillar", new PillarBlock(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
 	public static final Block CARVED_PRISMARINE = register("carved_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
-	
-	
+
+
 	//Dark Prismarine
 	public static final Block DARK_PRISMARINE_WALL = register("dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_GATE = register("dark_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
-	
+
 	//Polished
 	public static final Block POLISHED_DARK_PRISMARINE = register("polished_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block POLISHED_DARK_PRISMARINE_SLAB = register("polished_dark_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block POLISHED_DARK_PRISMARINE_STAIRS = register("polished_dark_prismarine_stairs", new BaseConsistencyStairBlock(DARK_PRISMARINE.getDefaultState(), FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block POLISHED_DARK_PRISMARINE_WALL = register("polished_dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block POLISHED_DARK_PRISMARINE_GATE = register("polished_dark_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_DARK_PRISMARINE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_DARK_PRISMARINE = register("smooth_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block SMOOTH_DARK_PRISMARINE_SLAB = register("smooth_dark_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block SMOOTH_DARK_PRISMARINE_STAIRS = register("smooth_dark_prismarine_stairs", new BaseConsistencyStairBlock(SMOOTH_DARK_PRISMARINE.getDefaultState(), FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block SMOOTH_DARK_PRISMARINE_WALL = register("smooth_dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block SMOOTH_DARK_PRISMARINE_GATE = register("smooth_dark_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_DARK_PRISMARINE)));
-	
+
 	//Cut
 	public static final Block CUT_DARK_PRISMARINE = register("cut_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block CUT_DARK_PRISMARINE_SLAB = register("cut_dark_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block CUT_DARK_PRISMARINE_STAIRS = register("cut_dark_prismarine_stairs", new BaseConsistencyStairBlock(DARK_PRISMARINE.getDefaultState(), FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block CUT_DARK_PRISMARINE_WALL = register("cut_dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block CUT_DARK_PRISMARINE_GATE = register("cut_dark_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_DARK_PRISMARINE)));
-	
+
 	//Tiles
 	public static final Block DARK_PRISMARINE_TILES = register("dark_prismarine_tiles", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_TILE_SLAB = register("dark_prismarine_tile_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_TILE_STAIRS = register("dark_prismarine_tile_stairs", new BaseConsistencyStairBlock(DARK_PRISMARINE_TILES.getDefaultState(), FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_TILE_WALL = register("dark_prismarine_tile_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_TILE_GATE = register("dark_prismarine_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
-	
+
 	//Bricks
 	public static final Block DARK_PRISMARINE_BRICKS = register("dark_prismarine_bricks", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_BRICK_SLAB = register("dark_prismarine_brick_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_BRICK_STAIRS = register("dark_prismarine_brick_stairs", new BaseConsistencyStairBlock(DARK_PRISMARINE.getDefaultState(), FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_BRICK_WALL = register("dark_prismarine_brick_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_BRICK_GATE = register("dark_prismarine_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(DARK_PRISMARINE_BRICKS)));
-	
+
 	//Pillar and Chiseled
 	public static final Block CHISELED_DARK_PRISMARINE = register("chiseled_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_PILLAR = register("dark_prismarine_pillar", new PillarBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
@@ -579,20 +582,20 @@ public class CPlusBlocks {
 
 
 //Purpur
-	
+
 	public static final Block PURPUR_BLOCK = register("purpur_block", new Block(FabricBlockSettings.copy(PURPUR_PILLAR)));
 	public static final Block PURPUR_SLAB = register("purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_STAIRS = register("purpur_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_WALL = register("purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_GATE = register("purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_PURPUR = register("smooth_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block SMOOTH_PURPUR_SLAB = register("smooth_purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block SMOOTH_PURPUR_STAIRS = register("smooth_purpur_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block SMOOTH_PURPUR_WALL = register("smooth_purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block SMOOTH_PURPUR_GATE = register("smooth_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	
+
 	//Polished
 	public static final Block POLISHED_PURPUR = register("polished_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block POLISHED_PURPUR_GATE = register("polished_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_PURPUR)));
@@ -605,375 +608,375 @@ public class CPlusBlocks {
 	public static final Block CUT_PURPUR_SLAB = register("cut_purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block CUT_PURPUR_WALL = register("cut_purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block CUT_PURPUR_GATE = register("cut_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	
+
 	public static final Block PURPUR_TILE_WALL = register("purpur_tile_wall", new WallBlock(FabricBlockSettings.copy(net.minecraft.block.Blocks.PURPUR_BLOCK)));
 	public static final Block PURPUR_TILE_GATE = register("purpur_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(net.minecraft.block.Blocks.PURPUR_BLOCK)));
-	
+
 	//Bricks
 	public static final Block PURPUR_BRICKS = register("purpur_bricks", new Block(FabricBlockSettings.copy(PURPUR_PILLAR)));
 	public static final Block PURPUR_BRICK_SLAB = register("purpur_brick_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_BRICK_STAIRS = register("purpur_brick_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_BRICK_WALL = register("purpur_brick_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_BRICK_GATE = register("purpur_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BRICKS)));
-	
+
 	//Cracked Bricks
 	public static final Block CRACKED_PURPUR_BRICKS = register("cracked_purpur_bricks", new Block(FabricBlockSettings.copy(PURPUR_PILLAR)));
 	public static final Block CRACKED_PURPUR_BRICK_SLAB = register("cracked_purpur_brick_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block CRACKED_PURPUR_BRICK_STAIRS = register("cracked_purpur_brick_stairs", new BaseConsistencyStairBlock(PURPUR_BLOCK.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block CRACKED_PURPUR_BRICK_WALL = register("cracked_purpur_brick_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block CRACKED_PURPUR_BRICK_GATE = register("cracked_purpur_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	
+
 	//Pillars and Chiseled
 	public static final Block CHISELED_PURPUR = register("chiseled_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block CARVED_PURPUR = register("carved_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	
-	
+
+
 	//End Stone
 	public static final Block END_STONE_BRICK_GATE = register("end_stone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
-	
+
 	//Block
 	public static final Block END_STONE_SLAB = register("end_stone_slab", new SlabBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_STAIRS = register("end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(), FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_WALL = register("end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_GATE = register("end_stone_gate", new FenceGateBlock(FabricBlockSettings.copy(END_STONE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_END_STONE = register("smooth_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
 	public static final Block SMOOTH_END_STONE_SLAB = register("smooth_end_stone_slab", new SlabBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block SMOOTH_END_STONE_STAIRS = register("smooth_end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(), FabricBlockSettings.copy(END_STONE)));
 	public static final Block SMOOTH_END_STONE_WALL = register("smooth_end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block SMOOTH_END_STONE_GATE = register("smooth_end_stone_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_END_STONE)));
-	
+
 	//Polished
 	public static final Block POLISHED_END_STONE = register("polished_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
 	public static final Block POLISHED_END_STONE_SLAB = register("polished_end_stone_slab", new SlabBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block POLISHED_END_STONE_STAIRS = register("polished_end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(), FabricBlockSettings.copy(END_STONE)));
 	public static final Block POLISHED_END_STONE_WALL = register("polished_end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block POLISHED_END_STONE_GATE = register("polished_end_stone_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_END_STONE)));
-	
+
 	//Cut
 	public static final Block CUT_END_STONE = register("cut_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
 	public static final Block CUT_END_STONE_SLAB = register("cut_end_stone_slab", new SlabBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block CUT_END_STONE_STAIRS = register("cut_end_stone_stairs", new BaseConsistencyStairBlock(END_STONE.getDefaultState(), FabricBlockSettings.copy(END_STONE)));
 	public static final Block CUT_END_STONE_WALL = register("cut_end_stone_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block CUT_END_STONE_GATE = register("cut_end_stone_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_END_STONE)));
-	
+
 	//Tiles
 	public static final Block END_STONE_TILES = register("end_stone_tiles", new Block(FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_TILE_SLAB = register("end_stone_tile_slab", new SlabBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_TILE_STAIRS = register("end_stone_tile_stairs", new BaseConsistencyStairBlock(END_STONE_TILES.getDefaultState(), FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_TILE_WALL = register("end_stone_tile_wall", new WallBlock(FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_TILE_GATE = register("end_stone_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(END_STONE)));
-	
+
 	//Pillars and Chiseled
 	public static final Block CHISELED_END_STONE = register("chiseled_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_PILLAR = register("end_stone_pillar", new PillarBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
 	public static final Block CARVED_END_STONE = register("carved_end_stone", new Block(FabricBlockSettings.copy(END_STONE_BRICKS)));
-	
-	
+
+
 	//Soul Sandstone
 	public static final Block SOUL_SANDSTONE = register("soul_sandstone", new Block(FabricBlockSettings.of(Material.STONE).strength(0.8F)));
 	public static final Block SOUL_SANDSTONE_SLAB = register("soul_sandstone_slab", new SlabBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_STAIRS = register("soul_sandstone_stairs", new BaseConsistencyStairBlock(SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_WALL = register("soul_sandstone_wall", new WallBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_GATE = register("soul_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
-	
+
 	// Smooth
 	public static final Block SMOOTH_SOUL_SANDSTONE = register("smooth_soul_sandstone", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SMOOTH_SOUL_SANDSTONE_SLAB = register("smooth_soul_sandstone_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_SOUL_SANDSTONE)));
 	public static final Block SMOOTH_SOUL_SANDSTONE_STAIRS = register("smooth_soul_sandstone_stairs", new BaseConsistencyStairBlock(SMOOTH_SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_SOUL_SANDSTONE)));
 	public static final Block SMOOTH_SOUL_SANDSTONE_WALL = register("smooth_soul_sandstone_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_SOUL_SANDSTONE)));
 	public static final Block SMOOTH_SOUL_SANDSTONE_GATE = register("smooth_soul_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_SOUL_SANDSTONE)));
-	
+
 	// Polished
 	public static final Block POLISHED_SOUL_SANDSTONE = register("polished_soul_sandstone", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block POLISHED_SOUL_SANDSTONE_SLAB = register("polished_soul_sandstone_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_SOUL_SANDSTONE)));
 	public static final Block POLISHED_SOUL_SANDSTONE_STAIRS = register("polished_soul_sandstone_stairs", new BaseConsistencyStairBlock(POLISHED_SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(POLISHED_SOUL_SANDSTONE)));
 	public static final Block POLISHED_SOUL_SANDSTONE_WALL = register("polished_soul_sandstone_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_SOUL_SANDSTONE)));
 	public static final Block POLISHED_SOUL_SANDSTONE_GATE = register("polished_soul_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_SOUL_SANDSTONE)));
-	
+
 	// Bricks
 	public static final Block SOUL_SANDSTONE_BRICKS = register("soul_sandstone_bricks", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_BRICK_SLAB = register("soul_sandstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(SOUL_SANDSTONE_BRICKS)));
 	public static final Block SOUL_SANDSTONE_BRICK_STAIRS = register("soul_sandstone_brick_stairs", new BaseConsistencyStairBlock(SOUL_SANDSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(SOUL_SANDSTONE_BRICKS)));
 	public static final Block SOUL_SANDSTONE_BRICK_WALL = register("soul_sandstone_brick_wall", new WallBlock(FabricBlockSettings.copy(SOUL_SANDSTONE_BRICKS)));
 	public static final Block SOUL_SANDSTONE_BRICK_GATE = register("soul_sandstone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(SOUL_SANDSTONE_BRICKS)));
-	
+
 	// Cut
 	public static final Block CUT_SOUL_SANDSTONE = register("cut_soul_sandstone", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block CUT_SOUL_SANDSTONE_SLAB = register("cut_soul_sandstone_slab", new SlabBlock(FabricBlockSettings.copy(CUT_SOUL_SANDSTONE)));
 	public static final Block CUT_SOUL_SANDSTONE_STAIRS = register("cut_soul_sandstone_stairs", new BaseConsistencyStairBlock(CUT_SOUL_SANDSTONE.getDefaultState(), FabricBlockSettings.copy(CUT_SOUL_SANDSTONE)));
 	public static final Block CUT_SOUL_SANDSTONE_WALL = register("cut_soul_sandstone_wall", new WallBlock(FabricBlockSettings.copy(CUT_SOUL_SANDSTONE)));
 	public static final Block CUT_SOUL_SANDSTONE_GATE = register("cut_soul_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_SOUL_SANDSTONE)));
-	
+
 	//Tiles
 	public static final Block SOUL_SANDSTONE_TILES = register("soul_sandstone_tiles", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_TILE_STAIRS = register("soul_sandstone_tile_stairs", new BaseConsistencyStairBlock(SOUL_SANDSTONE_TILES.getDefaultState(), FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_TILE_SLAB = register("soul_sandstone_tile_slab", new SlabBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_TILE_WALL = register("soul_sandstone_tile_wall", new WallBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_TILE_GATE = register("soul_sandstone_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
-	
+
 	public static final Block CARVED_SOUL_SANDSTONE = register("carved_soul_sandstone", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block CHISELED_SOUL_SANDSTONE = register("chiseled_soul_sandstone", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_PILLAR = register("soul_sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
-	
+
 	//Obsidian
 	public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_STAIRS = register("obsidian_stairs", new BaseConsistencyStairBlock(OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_WALL = register("obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_GATE = register("obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-	
+
 	public static final Block CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new BaseConsistencyStairBlock(CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-	
+
 	public static final Block SMOOTH_OBSIDIAN = register("smooth_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block SMOOTH_OBSIDIAN_SLAB = register("smooth_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block SMOOTH_OBSIDIAN_STAIRS = register("smooth_obsidian_stairs", new BaseConsistencyStairBlock(SMOOTH_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block SMOOTH_OBSIDIAN_WALL = register("smooth_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block SMOOTH_OBSIDIAN_GATE = register("smooth_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-	
+
 	public static final Block SMOOTH_CRYING_OBSIDIAN = register("smooth_crying_obsidian", new CryingObsidianBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block SMOOTH_CRYING_OBSIDIAN_SLAB = register("smooth_crying_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block SMOOTH_CRYING_OBSIDIAN_STAIRS = register("smooth_crying_obsidian_stairs", new BaseConsistencyStairBlock(SMOOTH_CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block SMOOTH_CRYING_OBSIDIAN_WALL = register("smooth_crying_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block SMOOTH_CRYING_OBSIDIAN_GATE = register("smooth_crying_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-	
+
 	public static final Block POLISHED_OBSIDIAN = register("polished_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block POLISHED_OBSIDIAN_SLAB = register("polished_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block POLISHED_OBSIDIAN_STAIRS = register("polished_obsidian_stairs", new BaseConsistencyStairBlock(POLISHED_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block POLISHED_OBSIDIAN_WALL = register("polished_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block POLISHED_OBSIDIAN_GATE = register("polished_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-	
+
 	public static final Block POLISHED_CRYING_OBSIDIAN = register("polished_crying_obsidian", new CryingObsidianBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block POLISHED_CRYING_OBSIDIAN_SLAB = register("polished_crying_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block POLISHED_CRYING_OBSIDIAN_STAIRS = register("polished_crying_obsidian_stairs", new BaseConsistencyStairBlock(POLISHED_CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block POLISHED_CRYING_OBSIDIAN_WALL = register("polished_crying_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block POLISHED_CRYING_OBSIDIAN_GATE = register("polished_crying_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-	
+
 	public static final Block OBSIDIAN_BRICKS = register("obsidian_bricks", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_BRICK_SLAB = register("obsidian_brick_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_BRICK_STAIRS = register("obsidian_brick_stairs", new BaseConsistencyStairBlock(OBSIDIAN_BRICKS.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_BRICK_WALL = register("obsidian_brick_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_BRICK_GATE = register("obsidian_brick_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-	
+
 	public static final Block CRYING_OBSIDIAN_BRICKS = register("crying_obsidian_bricks", new CryingObsidianBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_BRICK_SLAB = register("crying_obsidian_brick_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_BRICK_STAIRS = register("crying_obsidian_brick_stairs", new BaseConsistencyStairBlock(CRYING_OBSIDIAN_BRICKS.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_BRICK_WALL = register("crying_obsidian_brick_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_BRICK_GATE = register("crying_obsidian_brick_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-	
+
 	public static final Block CUT_OBSIDIAN = register("cut_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block CUT_OBSIDIAN_SLAB = register("cut_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block CUT_OBSIDIAN_STAIRS = register("cut_obsidian_stairs", new BaseConsistencyStairBlock(CUT_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block CUT_OBSIDIAN_WALL = register("cut_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block CUT_OBSIDIAN_GATE = register("cut_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-	
+
 	public static final Block CUT_CRYING_OBSIDIAN = register("cut_crying_obsidian", new CryingObsidianBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CUT_CRYING_OBSIDIAN_SLAB = register("cut_crying_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CUT_CRYING_OBSIDIAN_STAIRS = register("cut_crying_obsidian_stairs", new BaseConsistencyStairBlock(CUT_CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CUT_CRYING_OBSIDIAN_WALL = register("cut_crying_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CUT_CRYING_OBSIDIAN_GATE = register("cut_crying_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-	
+
 	public static final Block OBSIDIAN_TILES = register("obsidian_tiles", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_TILE_SLAB = register("obsidian_tile_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_TILE_STAIRS = register("obsidian_tile_stairs", new BaseConsistencyStairBlock(OBSIDIAN_TILES.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_TILE_WALL = register("obsidian_tile_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block OBSIDIAN_TILE_GATE = register("obsidian_tile_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-	
+
 	public static final Block CRYING_OBSIDIAN_TILES = register("crying_obsidian_tiles", new CryingObsidianBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_TILE_SLAB = register("crying_obsidian_tile_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_TILE_STAIRS = register("crying_obsidian_tile_stairs", new BaseConsistencyStairBlock(CRYING_OBSIDIAN_TILES.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_TILE_WALL = register("crying_obsidian_tile_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_TILE_GATE = register("crying_obsidian_tile_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-	
+
 	public static final Block OBSIDIAN_PILLAR = register("obsidian_pillar", new PillarBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block CHISELED_OBSIDIAN = register("chiseled_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block CARVED_OBSIDIAN = register("carved_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
-	
+
 	public static final Block CRYING_OBSIDIAN_PILLAR = register("crying_obsidian_pillar", new PillarBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CHISELED_CRYING_OBSIDIAN = register("chiseled_crying_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CARVED_CRYING_OBSIDIAN = register("carved_crying_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 
 //Calcite
-	
+
 	public static final Block CALCITE_SLAB = register("calcite_slab", new SlabBlock(FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_STAIRS = register("calcite_stairs", new BaseConsistencyStairBlock(CALCITE.getDefaultState(), FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_WALL = register("calcite_wall", new WallBlock(FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_GATE = register("calcite_gate", new FenceGateBlock(FabricBlockSettings.copy(CALCITE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_CALCITE = register("smooth_calcite", new Block(FabricBlockSettings.copy(CALCITE)));
 	public static final Block SMOOTH_CALCITE_SLAB = register("smooth_calcite_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_CALCITE)));
 	public static final Block SMOOTH_CALCITE_STAIRS = register("smooth_calcite_stairs", new BaseConsistencyStairBlock(SMOOTH_CALCITE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_CALCITE)));
 	public static final Block SMOOTH_CALCITE_WALL = register("smooth_calcite_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_CALCITE)));
 	public static final Block SMOOTH_CALCITE_GATE = register("smooth_calcite_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_CALCITE)));
-	
+
 	//Polished
 	public static final Block POLISHED_CALCITE = register("polished_calcite", new Block(FabricBlockSettings.copy(CALCITE)));
 	public static final Block POLISHED_CALCITE_SLAB = register("polished_calcite_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_CALCITE)));
 	public static final Block POLISHED_CALCITE_STAIRS = register("polished_calcite_stairs", new BaseConsistencyStairBlock(POLISHED_CALCITE.getDefaultState(), FabricBlockSettings.copy(POLISHED_CALCITE)));
 	public static final Block POLISHED_CALCITE_WALL = register("polished_calcite_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_CALCITE)));
 	public static final Block POLISHED_CALCITE_GATE = register("polished_calcite_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_CALCITE)));
-	
+
 	//Cut
 	public static final Block CUT_CALCITE = register("cut_calcite", new Block(FabricBlockSettings.copy(POLISHED_CALCITE)));
 	public static final Block CUT_CALCITE_SLAB = register("cut_calcite_slab", new SlabBlock(FabricBlockSettings.copy(CUT_CALCITE)));
 	public static final Block CUT_CALCITE_STAIRS = register("cut_calcite_stairs", new BaseConsistencyStairBlock(CUT_CALCITE.getDefaultState(), FabricBlockSettings.copy(CUT_CALCITE)));
 	public static final Block CUT_CALCITE_WALL = register("cut_calcite_wall", new WallBlock(FabricBlockSettings.copy(CUT_CALCITE)));
 	public static final Block CUT_CALCITE_GATE = register("cut_calcite_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_CALCITE)));
-	
+
 	public static final Block CALCITE_TILES = register("calcite_tiles", new Block(FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_TILE_SLAB = register("calcite_tile_slab", new SlabBlock(FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_TILE_STAIRS = register("calcite_tile_stairs", new BaseConsistencyStairBlock(CALCITE.getDefaultState(), FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_TILE_WALL = register("calcite_tile_wall", new WallBlock(FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_TILE_GATE = register("calcite_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(CALCITE)));
-	
+
 	//Bricks
 	public static final Block CALCITE_BRICKS = register("calcite_bricks", new Block(FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_BRICK_SLAB = register("calcite_brick_slab", new SlabBlock(FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_BRICK_STAIRS = register("calcite_brick_stairs", new BaseConsistencyStairBlock(CALCITE.getDefaultState(), FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_BRICK_WALL = register("calcite_brick_wall", new WallBlock(FabricBlockSettings.copy(CALCITE)));
 	public static final Block CALCITE_BRICK_GATE = register("calcite_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(CALCITE_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block CALCITE_PILLAR = register("calcite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_CALCITE)));
 	public static final Block CHISELED_CALCITE = register("chiseled_calcite", new Block(FabricBlockSettings.copy(POLISHED_CALCITE)));
 	public static final Block CARVED_CALCITE = register("carved_calcite", new Block(FabricBlockSettings.copy(POLISHED_CALCITE)));
 
 //Dripstone
-	
+
 	public static final Block DRIPSTONE_SLAB = register("dripstone_slab", new SlabBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_STAIRS = register("dripstone_stairs", new BaseConsistencyStairBlock(DRIPSTONE_BLOCK.getDefaultState(), FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_WALL = register("dripstone_wall", new WallBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_GATE = register("dripstone_gate", new FenceGateBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_DRIPSTONE = register("smooth_dripstone", new Block(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block SMOOTH_DRIPSTONE_SLAB = register("smooth_dripstone_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_DRIPSTONE)));
 	public static final Block SMOOTH_DRIPSTONE_STAIRS = register("smooth_dripstone_stairs", new BaseConsistencyStairBlock(SMOOTH_DRIPSTONE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_DRIPSTONE)));
 	public static final Block SMOOTH_DRIPSTONE_WALL = register("smooth_dripstone_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_DRIPSTONE)));
 	public static final Block SMOOTH_DRIPSTONE_GATE = register("smooth_dripstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_DRIPSTONE)));
-	
+
 	//Polished
 	public static final Block POLISHED_DRIPSTONE = register("polished_dripstone", new Block(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block POLISHED_DRIPSTONE_SLAB = register("polished_dripstone_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 	public static final Block POLISHED_DRIPSTONE_STAIRS = register("polished_dripstone_stairs", new BaseConsistencyStairBlock(POLISHED_DRIPSTONE.getDefaultState(), FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 	public static final Block POLISHED_DRIPSTONE_WALL = register("polished_dripstone_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 	public static final Block POLISHED_DRIPSTONE_GATE = register("polished_dripstone_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
-	
+
 	//Cut
 	public static final Block CUT_DRIPSTONE = register("cut_dripstone", new Block(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 	public static final Block CUT_DRIPSTONE_SLAB = register("cut_dripstone_slab", new SlabBlock(FabricBlockSettings.copy(CUT_DRIPSTONE)));
 	public static final Block CUT_DRIPSTONE_STAIRS = register("cut_dripstone_stairs", new BaseConsistencyStairBlock(CUT_DRIPSTONE.getDefaultState(), FabricBlockSettings.copy(CUT_DRIPSTONE)));
 	public static final Block CUT_DRIPSTONE_WALL = register("cut_dripstone_wall", new WallBlock(FabricBlockSettings.copy(CUT_DRIPSTONE)));
 	public static final Block CUT_DRIPSTONE_GATE = register("cut_dripstone_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_DRIPSTONE)));
-	
+
 	public static final Block DRIPSTONE_TILES = register("dripstone_tiles", new Block(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_TILE_SLAB = register("dripstone_tile_slab", new SlabBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_TILE_STAIRS = register("dripstone_tile_stairs", new BaseConsistencyStairBlock(DRIPSTONE_BLOCK.getDefaultState(), FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_TILE_WALL = register("dripstone_tile_wall", new WallBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_TILE_GATE = register("dripstone_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
-	
+
 	//Bricks
 	public static final Block DRIPSTONE_BRICKS = register("dripstone_bricks", new Block(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_BRICK_SLAB = register("dripstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_BRICK_STAIRS = register("dripstone_brick_stairs", new BaseConsistencyStairBlock(DRIPSTONE_BLOCK.getDefaultState(), FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_BRICK_WALL = register("dripstone_brick_wall", new WallBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
 	public static final Block DRIPSTONE_BRICK_GATE = register("dripstone_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(DRIPSTONE_BLOCK)));
-	
+
 	//Pillars and Chiseled
 	public static final Block DRIPSTONE_PILLAR = register("dripstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 	public static final Block CHISELED_DRIPSTONE = register("chiseled_dripstone", new Block(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 	public static final Block CARVED_DRIPSTONE = register("carved_dripstone", new Block(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 
 //Tuff
-	
+
 	public static final Block TUFF_SLAB = register("tuff_slab", new SlabBlock(FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_STAIRS = register("tuff_stairs", new BaseConsistencyStairBlock(TUFF.getDefaultState(), FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_WALL = register("tuff_wall", new WallBlock(FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_GATE = register("tuff_gate", new FenceGateBlock(FabricBlockSettings.copy(TUFF)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_TUFF = register("smooth_tuff", new Block(FabricBlockSettings.copy(TUFF)));
 	public static final Block SMOOTH_TUFF_SLAB = register("smooth_tuff_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_TUFF)));
 	public static final Block SMOOTH_TUFF_STAIRS = register("smooth_tuff_stairs", new BaseConsistencyStairBlock(SMOOTH_TUFF.getDefaultState(), FabricBlockSettings.copy(SMOOTH_TUFF)));
 	public static final Block SMOOTH_TUFF_WALL = register("smooth_tuff_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_TUFF)));
 	public static final Block SMOOTH_TUFF_GATE = register("smooth_tuff_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_TUFF)));
-	
+
 	//Polished
 	public static final Block POLISHED_TUFF = register("polished_tuff", new Block(FabricBlockSettings.copy(TUFF)));
 	public static final Block POLISHED_TUFF_SLAB = register("polished_tuff_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_TUFF)));
 	public static final Block POLISHED_TUFF_STAIRS = register("polished_tuff_stairs", new BaseConsistencyStairBlock(POLISHED_TUFF.getDefaultState(), FabricBlockSettings.copy(POLISHED_TUFF)));
 	public static final Block POLISHED_TUFF_WALL = register("polished_tuff_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_TUFF)));
 	public static final Block POLISHED_TUFF_GATE = register("polished_tuff_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_TUFF)));
-	
+
 	//Cut
 	public static final Block CUT_TUFF = register("cut_tuff", new Block(FabricBlockSettings.copy(POLISHED_TUFF)));
 	public static final Block CUT_TUFF_SLAB = register("cut_tuff_slab", new SlabBlock(FabricBlockSettings.copy(CUT_TUFF)));
 	public static final Block CUT_TUFF_STAIRS = register("cut_tuff_stairs", new BaseConsistencyStairBlock(CUT_TUFF.getDefaultState(), FabricBlockSettings.copy(CUT_TUFF)));
 	public static final Block CUT_TUFF_WALL = register("cut_tuff_wall", new WallBlock(FabricBlockSettings.copy(CUT_TUFF)));
 	public static final Block CUT_TUFF_GATE = register("cut_tuff_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_TUFF)));
-	
+
 	public static final Block TUFF_TILES = register("tuff_tiles", new Block(FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_TILE_SLAB = register("tuff_tile_slab", new SlabBlock(FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_TILE_STAIRS = register("tuff_tile_stairs", new BaseConsistencyStairBlock(TUFF.getDefaultState(), FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_TILE_WALL = register("tuff_tile_wall", new WallBlock(FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_TILE_GATE = register("tuff_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(TUFF)));
-	
+
 	//Bricks
 	public static final Block TUFF_BRICKS = register("tuff_bricks", new Block(FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_BRICK_SLAB = register("tuff_brick_slab", new SlabBlock(FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_BRICK_STAIRS = register("tuff_brick_stairs", new BaseConsistencyStairBlock(TUFF.getDefaultState(), FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_BRICK_WALL = register("tuff_brick_wall", new WallBlock(FabricBlockSettings.copy(TUFF)));
 	public static final Block TUFF_BRICK_GATE = register("tuff_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(TUFF_BRICKS)));
-	
+
 	//Pillars and Chiseled
 	public static final Block TUFF_PILLAR = register("tuff_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_TUFF)));
 	public static final Block CHISELED_TUFF = register("chiseled_tuff", new Block(FabricBlockSettings.copy(POLISHED_TUFF)));
 	public static final Block CARVED_TUFF = register("carved_tuff", new Block(FabricBlockSettings.copy(POLISHED_TUFF)));
-	
+
 	//Deepslate
 	public static final Block COBBLED_DEEPSLATE_GATE = register("cobbled_deepslate_gate", new FenceGateBlock(FabricBlockSettings.copy(COBBLED_DEEPSLATE)));
-	
+
 	public static final Block DEEPSLATE_SLAB = register("deepslate_slab", new SlabBlock(FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block DEEPSLATE_STAIRS = register("deepslate_stairs", new BaseConsistencyStairBlock(DEEPSLATE.getDefaultState(), FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block DEEPSLATE_WALL = register("deepslate_wall", new WallBlock(FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block DEEPSLATE_GATE = register("deepslate_gate", new FenceGateBlock(FabricBlockSettings.copy(DEEPSLATE)));
-	
+
 	//Smooth
 	public static final Block SMOOTH_DEEPSLATE = register("smooth_deepslate", new Block(FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block SMOOTH_DEEPSLATE_SLAB = register("smooth_deepslate_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_DEEPSLATE)));
 	public static final Block SMOOTH_DEEPSLATE_STAIRS = register("smooth_deepslate_stairs", new BaseConsistencyStairBlock(SMOOTH_DEEPSLATE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_DEEPSLATE)));
 	public static final Block SMOOTH_DEEPSLATE_WALL = register("smooth_deepslate_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_DEEPSLATE)));
 	public static final Block SMOOTH_DEEPSLATE_GATE = register("smooth_deepslate_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_DEEPSLATE)));
-	
+
 	//Polished
 	public static final Block POLISHED_DEEPSLATE_GATE = register("polished_deepslate_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_DEEPSLATE)));
-	
+
 	//Cut
 	public static final Block CUT_DEEPSLATE = register("cut_deepslate", new Block(FabricBlockSettings.copy(POLISHED_DEEPSLATE)));
 	public static final Block CUT_DEEPSLATE_SLAB = register("cut_deepslate_slab", new SlabBlock(FabricBlockSettings.copy(CUT_DEEPSLATE)));
 	public static final Block CUT_DEEPSLATE_STAIRS = register("cut_deepslate_stairs", new BaseConsistencyStairBlock(CUT_DEEPSLATE.getDefaultState(), FabricBlockSettings.copy(CUT_DEEPSLATE)));
 	public static final Block CUT_DEEPSLATE_WALL = register("cut_deepslate_wall", new WallBlock(FabricBlockSettings.copy(CUT_DEEPSLATE)));
 	public static final Block CUT_DEEPSLATE_GATE = register("cut_deepslate_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_DEEPSLATE)));
-	
+
 	//Bricks
 	public static final Block DEEPSLATE_BRICK_GATE = register("deepslate_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(DEEPSLATE_BRICKS)));
-	
+
 	public static final Block DEEPSLATE_TILE_GATE = register("deepslate_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(DEEPSLATE_TILES)));
-	
+
 	public static final Block CRACKED_DEEPSLATE_BRICK_SLAB = register("cracked_deepslate_brick_slab", new SlabBlock(FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block CRACKED_DEEPSLATE_BRICK_STAIRS = register("cracked_deepslate_brick_stairs", new BaseConsistencyStairBlock(DEEPSLATE.getDefaultState(), FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block CRACKED_DEEPSLATE_BRICK_WALL = register("cracked_deepslate_brick_wall", new WallBlock(FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block CRACKED_DEEPSLATE_BRICK_GATE = register("cracked_deepslate_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(DEEPSLATE)));
-	
+
 	public static final Block CRACKED_DEEPSLATE_TILE_SLAB = register("cracked_deepslate_tile_slab", new SlabBlock(FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block CRACKED_DEEPSLATE_TILE_STAIRS = register("cracked_deepslate_tile_stairs", new BaseConsistencyStairBlock(DEEPSLATE.getDefaultState(), FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block CRACKED_DEEPSLATE_TILE_WALL = register("cracked_deepslate_tile_wall", new WallBlock(FabricBlockSettings.copy(DEEPSLATE)));
 	public static final Block CRACKED_DEEPSLATE_TILE_GATE = register("cracked_deepslate_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(DEEPSLATE)));
-	
+
 	//Pillars and Chiseled
 	public static final Block DEEPSLATE_PILLAR = register("deepslate_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_DEEPSLATE)));
 	public static final Block CARVED_DEEPSLATE = register("carved_deepslate", new Block(FabricBlockSettings.copy(POLISHED_DEEPSLATE)));
@@ -1000,7 +1003,7 @@ This allows for every metal to have a decoration-based variant for building like
 The gold and iron won't be in the code for now since they aren't a priority (since copper won't be either until we can figure out the rust) but once copper is in I'll add in the placeholders for them */
 
 // "What" - Siuol
-	
+
 	// Terracotta
 	// Terracotta Slab
 	public static final Block RED_TERRACOTTA_SLAB = register("red_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(RED_TERRACOTTA)));
@@ -1020,7 +1023,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_SLAB = register("black_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block BROWN_TERRACOTTA_SLAB = register("brown_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block TERRACOTTA_SLAB = register("terracotta_slab", new SlabBlock(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	// Terracotta Stairs
 	public static final Block RED_TERRACOTTA_STAIRS = register("red_terracotta_stairs", new BaseConsistencyStairBlock(RED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block ORANGE_TERRACOTTA_STAIRS = register("orange_terracotta_stairs", new BaseConsistencyStairBlock(ORANGE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
@@ -1039,7 +1042,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_STAIRS = register("black_terracotta_stairs", new BaseConsistencyStairBlock(BLACK_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block BROWN_TERRACOTTA_STAIRS = register("brown_terracotta_stairs", new BaseConsistencyStairBlock(BROWN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block TERRACOTTA_STAIRS = register("terracotta_stairs", new BaseConsistencyStairBlock(TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	// Terracotta Wall
 	public static final Block RED_TERRACOTTA_WALL = register("red_terracotta_wall", new WallBlock(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block ORANGE_TERRACOTTA_WALL = register("orange_terracotta_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
@@ -1058,7 +1061,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_WALL = register("black_terracotta_wall", new WallBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block BROWN_TERRACOTTA_WALL = register("brown_terracotta_wall", new WallBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block TERRACOTTA_WALL = register("terracotta_wall", new WallBlock(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	// Terracotta Gates
 	public static final Block RED_TERRACOTTA_GATE = register("red_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block ORANGE_TERRACOTTA_GATE = register("orange_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
@@ -1077,7 +1080,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_GATE = register("black_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block BROWN_TERRACOTTA_GATE = register("brown_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block TERRACOTTA_GATE = register("terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	public static final Block SMOOTH_RED_TERRACOTTA = register("smooth_red_terracotta", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block SMOOTH_ORANGE_TERRACOTTA = register("smooth_orange_terracotta", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block SMOOTH_YELLOW_TERRACOTTA = register("smooth_yellow_terracotta", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -1095,7 +1098,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_BLACK_TERRACOTTA = register("smooth_black_terracotta", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block SMOOTH_BROWN_TERRACOTTA = register("smooth_brown_terracotta", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block SMOOTH_TERRACOTTA = register("smooth_terracotta", new Block(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	public static final Block SMOOTH_RED_TERRACOTTA_SLAB = register("smooth_red_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_RED_TERRACOTTA)));
 	public static final Block SMOOTH_ORANGE_TERRACOTTA_SLAB = register("smooth_orange_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_ORANGE_TERRACOTTA)));
 	public static final Block SMOOTH_YELLOW_TERRACOTTA_SLAB = register("smooth_yellow_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_YELLOW_TERRACOTTA)));
@@ -1113,7 +1116,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_BLACK_TERRACOTTA_SLAB = register("smooth_black_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_BLACK_TERRACOTTA)));
 	public static final Block SMOOTH_BROWN_TERRACOTTA_SLAB = register("smooth_brown_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_BROWN_TERRACOTTA)));
 	public static final Block SMOOTH_TERRACOTTA_SLAB = register("smooth_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_TERRACOTTA)));
-	
+
 	// Terracotta Stairs
 	public static final Block SMOOTH_RED_TERRACOTTA_STAIRS = register("smooth_red_terracotta_stairs", new BaseConsistencyStairBlock(RED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(SMOOTH_RED_TERRACOTTA)));
 	public static final Block SMOOTH_ORANGE_TERRACOTTA_STAIRS = register("smooth_orange_terracotta_stairs", new BaseConsistencyStairBlock(ORANGE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(SMOOTH_ORANGE_TERRACOTTA)));
@@ -1132,7 +1135,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_BLACK_TERRACOTTA_STAIRS = register("smooth_black_terracotta_stairs", new BaseConsistencyStairBlock(BLACK_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(SMOOTH_BLACK_TERRACOTTA)));
 	public static final Block SMOOTH_BROWN_TERRACOTTA_STAIRS = register("smooth_brown_terracotta_stairs", new BaseConsistencyStairBlock(BROWN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(SMOOTH_BROWN_TERRACOTTA)));
 	public static final Block SMOOTH_TERRACOTTA_STAIRS = register("smooth_terracotta_stairs", new BaseConsistencyStairBlock(TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(SMOOTH_TERRACOTTA)));
-	
+
 	// Terracotta Wall
 	public static final Block SMOOTH_RED_TERRACOTTA_WALL = register("smooth_red_terracotta_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_RED_TERRACOTTA)));
 	public static final Block SMOOTH_ORANGE_TERRACOTTA_WALL = register("smooth_orange_terracotta_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_ORANGE_TERRACOTTA)));
@@ -1151,7 +1154,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_BLACK_TERRACOTTA_WALL = register("smooth_black_terracotta_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_BLACK_TERRACOTTA)));
 	public static final Block SMOOTH_BROWN_TERRACOTTA_WALL = register("smooth_brown_terracotta_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_BROWN_TERRACOTTA)));
 	public static final Block SMOOTH_TERRACOTTA_WALL = register("smooth_terracotta_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_TERRACOTTA)));
-	
+
 	// Terracotta Gates
 	public static final Block SMOOTH_RED_TERRACOTTA_GATE = register("smooth_red_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_RED_TERRACOTTA)));
 	public static final Block SMOOTH_ORANGE_TERRACOTTA_GATE = register("smooth_orange_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_ORANGE_TERRACOTTA)));
@@ -1170,7 +1173,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_BLACK_TERRACOTTA_GATE = register("smooth_black_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_BLACK_TERRACOTTA)));
 	public static final Block SMOOTH_BROWN_TERRACOTTA_GATE = register("smooth_brown_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_BROWN_TERRACOTTA)));
 	public static final Block SMOOTH_TERRACOTTA_GATE = register("smooth_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_TERRACOTTA)));
-	
+
 	public static final Block POLISHED_RED_TERRACOTTA = register("polished_red_terracotta", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block POLISHED_ORANGE_TERRACOTTA = register("polished_orange_terracotta", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block POLISHED_YELLOW_TERRACOTTA = register("polished_yellow_terracotta", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -1188,7 +1191,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_BLACK_TERRACOTTA = register("polished_black_terracotta", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block POLISHED_BROWN_TERRACOTTA = register("polished_brown_terracotta", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block POLISHED_TERRACOTTA = register("polished_terracotta", new Block(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	public static final Block POLISHED_RED_TERRACOTTA_SLAB = register("polished_red_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_RED_TERRACOTTA)));
 	public static final Block POLISHED_ORANGE_TERRACOTTA_SLAB = register("polished_orange_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ORANGE_TERRACOTTA)));
 	public static final Block POLISHED_YELLOW_TERRACOTTA_SLAB = register("polished_yellow_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_YELLOW_TERRACOTTA)));
@@ -1206,7 +1209,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_BLACK_TERRACOTTA_SLAB = register("polished_black_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BLACK_TERRACOTTA)));
 	public static final Block POLISHED_BROWN_TERRACOTTA_SLAB = register("polished_brown_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BROWN_TERRACOTTA)));
 	public static final Block POLISHED_TERRACOTTA_SLAB = register("polished_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_TERRACOTTA)));
-	
+
 	// Terracotta Stairs
 	public static final Block POLISHED_RED_TERRACOTTA_STAIRS = register("polished_red_terracotta_stairs", new BaseConsistencyStairBlock(RED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_RED_TERRACOTTA)));
 	public static final Block POLISHED_ORANGE_TERRACOTTA_STAIRS = register("polished_orange_terracotta_stairs", new BaseConsistencyStairBlock(ORANGE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_ORANGE_TERRACOTTA)));
@@ -1225,7 +1228,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_BLACK_TERRACOTTA_STAIRS = register("polished_black_terracotta_stairs", new BaseConsistencyStairBlock(BLACK_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_BLACK_TERRACOTTA)));
 	public static final Block POLISHED_BROWN_TERRACOTTA_STAIRS = register("polished_brown_terracotta_stairs", new BaseConsistencyStairBlock(BROWN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_BROWN_TERRACOTTA)));
 	public static final Block POLISHED_TERRACOTTA_STAIRS = register("polished_terracotta_stairs", new BaseConsistencyStairBlock(TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_TERRACOTTA)));
-	
+
 	// Terracotta Wall
 	public static final Block POLISHED_RED_TERRACOTTA_WALL = register("polished_red_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_RED_TERRACOTTA)));
 	public static final Block POLISHED_ORANGE_TERRACOTTA_WALL = register("polished_orange_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ORANGE_TERRACOTTA)));
@@ -1244,7 +1247,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_BLACK_TERRACOTTA_WALL = register("polished_black_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BLACK_TERRACOTTA)));
 	public static final Block POLISHED_BROWN_TERRACOTTA_WALL = register("polished_brown_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BROWN_TERRACOTTA)));
 	public static final Block POLISHED_TERRACOTTA_WALL = register("polished_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_TERRACOTTA)));
-	
+
 	// Terracotta Gates
 	public static final Block POLISHED_RED_TERRACOTTA_GATE = register("polished_red_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_RED_TERRACOTTA)));
 	public static final Block POLISHED_ORANGE_TERRACOTTA_GATE = register("polished_orange_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_ORANGE_TERRACOTTA)));
@@ -1263,7 +1266,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_BLACK_TERRACOTTA_GATE = register("polished_black_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BLACK_TERRACOTTA)));
 	public static final Block POLISHED_BROWN_TERRACOTTA_GATE = register("polished_brown_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BROWN_TERRACOTTA)));
 	public static final Block POLISHED_TERRACOTTA_GATE = register("polished_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_TERRACOTTA)));
-	
+
 	public static final Block CUT_RED_TERRACOTTA = register("cut_red_terracotta", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block CUT_ORANGE_TERRACOTTA = register("cut_orange_terracotta", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block CUT_YELLOW_TERRACOTTA = register("cut_yellow_terracotta", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -1281,7 +1284,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_BLACK_TERRACOTTA = register("cut_black_terracotta", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block CUT_BROWN_TERRACOTTA = register("cut_brown_terracotta", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block CUT_TERRACOTTA = register("cut_terracotta", new Block(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	public static final Block CUT_RED_TERRACOTTA_SLAB = register("cut_red_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(CUT_RED_TERRACOTTA)));
 	public static final Block CUT_ORANGE_TERRACOTTA_SLAB = register("cut_orange_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(CUT_ORANGE_TERRACOTTA)));
 	public static final Block CUT_YELLOW_TERRACOTTA_SLAB = register("cut_yellow_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(CUT_YELLOW_TERRACOTTA)));
@@ -1299,7 +1302,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_BLACK_TERRACOTTA_SLAB = register("cut_black_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(CUT_BLACK_TERRACOTTA)));
 	public static final Block CUT_BROWN_TERRACOTTA_SLAB = register("cut_brown_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(CUT_BROWN_TERRACOTTA)));
 	public static final Block CUT_TERRACOTTA_SLAB = register("cut_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(CUT_TERRACOTTA)));
-	
+
 	// Terracotta Stairs
 	public static final Block CUT_RED_TERRACOTTA_STAIRS = register("cut_red_terracotta_stairs", new BaseConsistencyStairBlock(RED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(CUT_RED_TERRACOTTA)));
 	public static final Block CUT_ORANGE_TERRACOTTA_STAIRS = register("cut_orange_terracotta_stairs", new BaseConsistencyStairBlock(ORANGE_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(CUT_ORANGE_TERRACOTTA)));
@@ -1318,7 +1321,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_BLACK_TERRACOTTA_STAIRS = register("cut_black_terracotta_stairs", new BaseConsistencyStairBlock(BLACK_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(CUT_BLACK_TERRACOTTA)));
 	public static final Block CUT_BROWN_TERRACOTTA_STAIRS = register("cut_brown_terracotta_stairs", new BaseConsistencyStairBlock(BROWN_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(CUT_BROWN_TERRACOTTA)));
 	public static final Block CUT_TERRACOTTA_STAIRS = register("cut_terracotta_stairs", new BaseConsistencyStairBlock(TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(CUT_TERRACOTTA)));
-	
+
 	// Terracotta Wall
 	public static final Block CUT_RED_TERRACOTTA_WALL = register("cut_red_terracotta_wall", new WallBlock(FabricBlockSettings.copy(CUT_RED_TERRACOTTA)));
 	public static final Block CUT_ORANGE_TERRACOTTA_WALL = register("cut_orange_terracotta_wall", new WallBlock(FabricBlockSettings.copy(CUT_ORANGE_TERRACOTTA)));
@@ -1337,7 +1340,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_BLACK_TERRACOTTA_WALL = register("cut_black_terracotta_wall", new WallBlock(FabricBlockSettings.copy(CUT_BLACK_TERRACOTTA)));
 	public static final Block CUT_BROWN_TERRACOTTA_WALL = register("cut_brown_terracotta_wall", new WallBlock(FabricBlockSettings.copy(CUT_BROWN_TERRACOTTA)));
 	public static final Block CUT_TERRACOTTA_WALL = register("cut_terracotta_wall", new WallBlock(FabricBlockSettings.copy(CUT_TERRACOTTA)));
-	
+
 	// Terracotta Gates
 	public static final Block CUT_RED_TERRACOTTA_GATE = register("cut_red_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_RED_TERRACOTTA)));
 	public static final Block CUT_ORANGE_TERRACOTTA_GATE = register("cut_orange_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_ORANGE_TERRACOTTA)));
@@ -1356,7 +1359,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_BLACK_TERRACOTTA_GATE = register("cut_black_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_BLACK_TERRACOTTA)));
 	public static final Block CUT_BROWN_TERRACOTTA_GATE = register("cut_brown_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_BROWN_TERRACOTTA)));
 	public static final Block CUT_TERRACOTTA_GATE = register("cut_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_TERRACOTTA)));
-	
+
 	public static final Block RED_TERRACOTTA_BRICKS = register("red_terracotta_bricks", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block ORANGE_TERRACOTTA_BRICKS = register("orange_terracotta_bricks", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block YELLOW_TERRACOTTA_BRICKS = register("yellow_terracotta_bricks", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -1373,7 +1376,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_TERRACOTTA_BRICKS = register("gray_terracotta_bricks", new Block(FabricBlockSettings.copy(GRAY_TERRACOTTA)));
 	public static final Block BLACK_TERRACOTTA_BRICKS = register("black_terracotta_bricks", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block BROWN_TERRACOTTA_BRICKS = register("brown_terracotta_bricks", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
-	
+
 	public static final Block RED_TERRACOTTA_BRICK_SLAB = register("red_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(RED_TERRACOTTA_BRICKS)));
 	public static final Block ORANGE_TERRACOTTA_BRICK_SLAB = register("orange_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA_BRICKS)));
 	public static final Block YELLOW_TERRACOTTA_BRICK_SLAB = register("yellow_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(YELLOW_TERRACOTTA_BRICKS)));
@@ -1390,7 +1393,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_TERRACOTTA_BRICK_SLAB = register("gray_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(GRAY_TERRACOTTA_BRICKS)));
 	public static final Block BLACK_TERRACOTTA_BRICK_SLAB = register("black_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_BRICKS)));
 	public static final Block BROWN_TERRACOTTA_BRICK_SLAB = register("brown_terracotta_brick_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_BRICKS)));
-	
+
 	// Terracotta Stairs
 	public static final Block RED_TERRACOTTA_BRICK_STAIRS = register("red_terracotta_brick_stairs", new BaseConsistencyStairBlock(RED_TERRACOTTA_BRICKS.getDefaultState(), FabricBlockSettings.copy(RED_TERRACOTTA_BRICKS)));
 	public static final Block ORANGE_TERRACOTTA_BRICK_STAIRS = register("orange_terracotta_brick_stairs", new BaseConsistencyStairBlock(ORANGE_TERRACOTTA_BRICKS.getDefaultState(), FabricBlockSettings.copy(ORANGE_TERRACOTTA_BRICKS)));
@@ -1425,7 +1428,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_TERRACOTTA_BRICK_WALL = register("gray_terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(GRAY_TERRACOTTA_BRICKS)));
 	public static final Block BLACK_TERRACOTTA_BRICK_WALL = register("black_terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_BRICKS)));
 	public static final Block BROWN_TERRACOTTA_BRICK_WALL = register("brown_terracotta_brick_wall", new WallBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_BRICKS)));
-	
+
 	// Terracotta Gates
 	public static final Block RED_TERRACOTTA_BRICK_GATE = register("red_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_TERRACOTTA_BRICKS)));
 	public static final Block ORANGE_TERRACOTTA_BRICK_GATE = register("orange_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA_BRICKS)));
@@ -1443,7 +1446,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_TERRACOTTA_BRICK_GATE = register("gray_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(GRAY_TERRACOTTA_BRICKS)));
 	public static final Block BLACK_TERRACOTTA_BRICK_GATE = register("black_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_BRICKS)));
 	public static final Block BROWN_TERRACOTTA_BRICK_GATE = register("brown_terracotta_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_BRICKS)));
-	
+
 	public static final Block RED_TERRACOTTA_TILES = register("red_terracotta_tiles", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block ORANGE_TERRACOTTA_TILES = register("orange_terracotta_tiles", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block YELLOW_TERRACOTTA_TILES = register("yellow_terracotta_tiles", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -1461,7 +1464,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_TILES = register("black_terracotta_tiles", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block BROWN_TERRACOTTA_TILES = register("brown_terracotta_tiles", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block TERRACOTTA_TILES = register("terracotta_tiles", new Block(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	public static final Block RED_TERRACOTTA_TILE_SLAB = register("red_terracotta_tile_slab", new SlabBlock(FabricBlockSettings.copy(RED_TERRACOTTA_TILES)));
 	public static final Block ORANGE_TERRACOTTA_TILE_SLAB = register("orange_terracotta_tile_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA_TILES)));
 	public static final Block YELLOW_TERRACOTTA_TILE_SLAB = register("yellow_terracotta_tile_slab", new SlabBlock(FabricBlockSettings.copy(YELLOW_TERRACOTTA_TILES)));
@@ -1479,7 +1482,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_TILE_SLAB = register("black_terracotta_tile_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_TILES)));
 	public static final Block BROWN_TERRACOTTA_TILE_SLAB = register("brown_terracotta_tile_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_TILES)));
 	public static final Block TERRACOTTA_TILE_SLAB = register("terracotta_tile_slab", new SlabBlock(FabricBlockSettings.copy(TERRACOTTA_TILES)));
-	
+
 	// Terracotta Stairs
 	public static final Block RED_TERRACOTTA_TILE_STAIRS = register("red_terracotta_tile_stairs", new BaseConsistencyStairBlock(RED_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copy(RED_TERRACOTTA_TILES)));
 	public static final Block ORANGE_TERRACOTTA_TILE_STAIRS = register("orange_terracotta_tile_stairs", new BaseConsistencyStairBlock(ORANGE_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copy(ORANGE_TERRACOTTA_TILES)));
@@ -1498,7 +1501,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_TILE_STAIRS = register("black_terracotta_tile_stairs", new BaseConsistencyStairBlock(BLACK_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copy(BLACK_TERRACOTTA_TILES)));
 	public static final Block BROWN_TERRACOTTA_TILE_STAIRS = register("brown_terracotta_tile_stairs", new BaseConsistencyStairBlock(BROWN_TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copy(BROWN_TERRACOTTA_TILES)));
 	public static final Block TERRACOTTA_TILE_STAIRS = register("terracotta_tile_stairs", new BaseConsistencyStairBlock(TERRACOTTA_TILES.getDefaultState(), FabricBlockSettings.copy(TERRACOTTA_TILES)));
-	
+
 	// Terracotta Wall
 	public static final Block RED_TERRACOTTA_TILE_WALL = register("red_terracotta_tile_wall", new WallBlock(FabricBlockSettings.copy(RED_TERRACOTTA_TILES)));
 	public static final Block ORANGE_TERRACOTTA_TILE_WALL = register("orange_terracotta_tile_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA_TILES)));
@@ -1517,7 +1520,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_TILE_WALL = register("black_terracotta_tile_wall", new WallBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_TILES)));
 	public static final Block BROWN_TERRACOTTA_TILE_WALL = register("brown_terracotta_tile_wall", new WallBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_TILES)));
 	public static final Block TERRACOTTA_TILE_WALL = register("terracotta_tile_wall", new WallBlock(FabricBlockSettings.copy(TERRACOTTA_TILES)));
-	
+
 	// Terracotta Gates
 	public static final Block RED_TERRACOTTA_TILE_GATE = register("red_terracotta_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_TERRACOTTA_TILES)));
 	public static final Block ORANGE_TERRACOTTA_TILE_GATE = register("orange_terracotta_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA_TILES)));
@@ -1536,7 +1539,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_TILE_GATE = register("black_terracotta_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA_TILES)));
 	public static final Block BROWN_TERRACOTTA_TILE_GATE = register("brown_terracotta_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA_TILES)));
 	public static final Block TERRACOTTA_TILE_GATE = register("terracotta_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(TERRACOTTA_TILES)));
-	
+
 	public static final Block RED_TERRACOTTA_PILLAR = register("red_terracotta_pillar", new PillarBlock(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block ORANGE_TERRACOTTA_PILLAR = register("orange_terracotta_pillar", new PillarBlock(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block YELLOW_TERRACOTTA_PILLAR = register("yellow_terracotta_pillar", new PillarBlock(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -1554,7 +1557,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_TERRACOTTA_PILLAR = register("black_terracotta_pillar", new PillarBlock(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block BROWN_TERRACOTTA_PILLAR = register("brown_terracotta_pillar", new PillarBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block TERRACOTTA_PILLAR = register("terracotta_pillar", new PillarBlock(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	public static final Block CHISELED_RED_TERRACOTTA = register("chiseled_red_terracotta", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block CHISELED_ORANGE_TERRACOTTA = register("chiseled_orange_terracotta", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block CHISELED_YELLOW_TERRACOTTA = register("chiseled_yellow_terracotta", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -1572,7 +1575,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CHISELED_BLACK_TERRACOTTA = register("chiseled_black_terracotta", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block CHISELED_BROWN_TERRACOTTA = register("chiseled_brown_terracotta", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block CHISELED_TERRACOTTA = register("chiseled_terracotta", new Block(FabricBlockSettings.copy(TERRACOTTA)));
-	
+
 	public static final Block CARVED_RED_TERRACOTTA = register("carved_red_terracotta", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block CARVED_ORANGE_TERRACOTTA = register("carved_orange_terracotta", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block CARVED_YELLOW_TERRACOTTA = register("carved_yellow_terracotta", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -1590,8 +1593,8 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CARVED_BLACK_TERRACOTTA = register("carved_black_terracotta", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
 	public static final Block CARVED_BROWN_TERRACOTTA = register("carved_brown_terracotta", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block CARVED_TERRACOTTA = register("carved_terracotta", new Block(FabricBlockSettings.copy(TERRACOTTA)));
-	
-	
+
+
 	// Concrete
 	public static final Block RED_CONCRETE_SLAB = register("red_concrete_slab", new SlabBlock(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block ORANGE_CONCRETE_SLAB = register("orange_concrete_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_CONCRETE)));
@@ -1609,7 +1612,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_SLAB = register("gray_concrete_slab", new SlabBlock(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block BLACK_CONCRETE_SLAB = register("black_concrete_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_SLAB = register("brown_concrete_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	// Concrete Stairs
 	public static final Block RED_CONCRETE_STAIRS = register("red_concrete_stairs", new BaseConsistencyStairBlock(RED_CONCRETE.getDefaultState(), FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block ORANGE_CONCRETE_STAIRS = register("orange_concrete_stairs", new BaseConsistencyStairBlock(ORANGE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(ORANGE_CONCRETE)));
@@ -1627,7 +1630,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_STAIRS = register("gray_concrete_stairs", new BaseConsistencyStairBlock(GRAY_CONCRETE.getDefaultState(), FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block BLACK_CONCRETE_STAIRS = register("black_concrete_stairs", new BaseConsistencyStairBlock(BLACK_CONCRETE.getDefaultState(), FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_STAIRS = register("brown_concrete_stairs", new BaseConsistencyStairBlock(BROWN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	// Terracotta Wall
 	public static final Block RED_CONCRETE_WALL = register("red_concrete_wall", new WallBlock(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block ORANGE_CONCRETE_WALL = register("orange_concrete_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_CONCRETE)));
@@ -1645,7 +1648,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_WALL = register("gray_concrete_wall", new WallBlock(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block BLACK_CONCRETE_WALL = register("black_concrete_wall", new WallBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_WALL = register("brown_concrete_wall", new WallBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	// Terracotta Gates
 	public static final Block RED_CONCRETE_GATE = register("red_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block ORANGE_CONCRETE_GATE = register("orange_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_CONCRETE)));
@@ -1663,7 +1666,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_GATE = register("gray_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block BLACK_CONCRETE_GATE = register("black_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_GATE = register("brown_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	public static final Block SMOOTH_RED_CONCRETE = register("smooth_red_concrete", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block SMOOTH_ORANGE_CONCRETE = register("smooth_orange_concrete", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block SMOOTH_YELLOW_CONCRETE = register("smooth_yellow_concrete", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -1680,7 +1683,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_GRAY_CONCRETE = register("smooth_gray_concrete", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block SMOOTH_BLACK_CONCRETE = register("smooth_black_concrete", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block SMOOTH_BROWN_CONCRETE = register("smooth_brown_concrete", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	public static final Block SMOOTH_RED_CONCRETE_SLAB = register("smooth_red_concrete_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_RED_CONCRETE)));
 	public static final Block SMOOTH_ORANGE_CONCRETE_SLAB = register("smooth_orange_concrete_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_ORANGE_CONCRETE)));
 	public static final Block SMOOTH_YELLOW_CONCRETE_SLAB = register("smooth_yellow_concrete_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_YELLOW_CONCRETE)));
@@ -1697,7 +1700,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_GRAY_CONCRETE_SLAB = register("smooth_gray_concrete_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_GRAY_CONCRETE)));
 	public static final Block SMOOTH_BLACK_CONCRETE_SLAB = register("smooth_black_concrete_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_BLACK_CONCRETE)));
 	public static final Block SMOOTH_BROWN_CONCRETE_SLAB = register("smooth_brown_concrete_slab", new SlabBlock(FabricBlockSettings.copy(SMOOTH_BROWN_CONCRETE)));
-	
+
 	// Terracotta Stairs
 	public static final Block SMOOTH_RED_CONCRETE_STAIRS = register("smooth_red_concrete_stairs", new BaseConsistencyStairBlock(RED_CONCRETE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_RED_CONCRETE)));
 	public static final Block SMOOTH_ORANGE_CONCRETE_STAIRS = register("smooth_orange_concrete_stairs", new BaseConsistencyStairBlock(ORANGE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_ORANGE_CONCRETE)));
@@ -1715,7 +1718,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_GRAY_CONCRETE_STAIRS = register("smooth_gray_concrete_stairs", new BaseConsistencyStairBlock(GRAY_CONCRETE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_GRAY_CONCRETE)));
 	public static final Block SMOOTH_BLACK_CONCRETE_STAIRS = register("smooth_black_concrete_stairs", new BaseConsistencyStairBlock(BLACK_CONCRETE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_BLACK_CONCRETE)));
 	public static final Block SMOOTH_BROWN_CONCRETE_STAIRS = register("smooth_brown_concrete_stairs", new BaseConsistencyStairBlock(BROWN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(SMOOTH_BROWN_CONCRETE)));
-	
+
 	// Terracotta Wall
 	public static final Block SMOOTH_RED_CONCRETE_WALL = register("smooth_red_concrete_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_RED_CONCRETE)));
 	public static final Block SMOOTH_ORANGE_CONCRETE_WALL = register("smooth_orange_concrete_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_ORANGE_CONCRETE)));
@@ -1733,7 +1736,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_GRAY_CONCRETE_WALL = register("smooth_gray_concrete_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_GRAY_CONCRETE)));
 	public static final Block SMOOTH_BLACK_CONCRETE_WALL = register("smooth_black_concrete_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_BLACK_CONCRETE)));
 	public static final Block SMOOTH_BROWN_CONCRETE_WALL = register("smooth_brown_concrete_wall", new WallBlock(FabricBlockSettings.copy(SMOOTH_BROWN_CONCRETE)));
-	
+
 	// Terracotta Gates
 	public static final Block SMOOTH_RED_CONCRETE_GATE = register("smooth_red_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_RED_CONCRETE)));
 	public static final Block SMOOTH_ORANGE_CONCRETE_GATE = register("smooth_orange_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_ORANGE_CONCRETE)));
@@ -1751,7 +1754,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block SMOOTH_GRAY_CONCRETE_GATE = register("smooth_gray_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_GRAY_CONCRETE)));
 	public static final Block SMOOTH_BLACK_CONCRETE_GATE = register("smooth_black_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_BLACK_CONCRETE)));
 	public static final Block SMOOTH_BROWN_CONCRETE_GATE = register("smooth_brown_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(SMOOTH_BROWN_CONCRETE)));
-	
+
 	public static final Block POLISHED_RED_CONCRETE = register("polished_red_concrete", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block POLISHED_ORANGE_CONCRETE = register("polished_orange_concrete", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block POLISHED_YELLOW_CONCRETE = register("polished_yellow_concrete", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -1768,7 +1771,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_GRAY_CONCRETE = register("polished_gray_concrete", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block POLISHED_BLACK_CONCRETE = register("polished_black_concrete", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block POLISHED_BROWN_CONCRETE = register("polished_brown_concrete", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	public static final Block POLISHED_RED_CONCRETE_SLAB = register("polished_red_concrete_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_RED_CONCRETE)));
 	public static final Block POLISHED_ORANGE_CONCRETE_SLAB = register("polished_orange_concrete_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ORANGE_CONCRETE)));
 	public static final Block POLISHED_YELLOW_CONCRETE_SLAB = register("polished_yellow_concrete_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_YELLOW_CONCRETE)));
@@ -1785,7 +1788,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_GRAY_CONCRETE_SLAB = register("polished_gray_concrete_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_GRAY_CONCRETE)));
 	public static final Block POLISHED_BLACK_CONCRETE_SLAB = register("polished_black_concrete_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BLACK_CONCRETE)));
 	public static final Block POLISHED_BROWN_CONCRETE_SLAB = register("polished_brown_concrete_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BROWN_CONCRETE)));
-	
+
 	// Terracotta Stairs
 	public static final Block POLISHED_RED_CONCRETE_STAIRS = register("polished_red_concrete_stairs", new BaseConsistencyStairBlock(RED_CONCRETE.getDefaultState(), FabricBlockSettings.copy(POLISHED_RED_CONCRETE)));
 	public static final Block POLISHED_ORANGE_CONCRETE_STAIRS = register("polished_orange_concrete_stairs", new BaseConsistencyStairBlock(ORANGE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(POLISHED_ORANGE_CONCRETE)));
@@ -1803,7 +1806,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_GRAY_CONCRETE_STAIRS = register("polished_gray_concrete_stairs", new BaseConsistencyStairBlock(GRAY_CONCRETE.getDefaultState(), FabricBlockSettings.copy(POLISHED_GRAY_CONCRETE)));
 	public static final Block POLISHED_BLACK_CONCRETE_STAIRS = register("polished_black_concrete_stairs", new BaseConsistencyStairBlock(BLACK_CONCRETE.getDefaultState(), FabricBlockSettings.copy(POLISHED_BLACK_CONCRETE)));
 	public static final Block POLISHED_BROWN_CONCRETE_STAIRS = register("polished_brown_concrete_stairs", new BaseConsistencyStairBlock(BROWN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(POLISHED_BROWN_CONCRETE)));
-	
+
 	// Terracotta Wall
 	public static final Block POLISHED_RED_CONCRETE_WALL = register("polished_red_concrete_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_RED_CONCRETE)));
 	public static final Block POLISHED_ORANGE_CONCRETE_WALL = register("polished_orange_concrete_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ORANGE_CONCRETE)));
@@ -1821,7 +1824,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_GRAY_CONCRETE_WALL = register("polished_gray_concrete_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_GRAY_CONCRETE)));
 	public static final Block POLISHED_BLACK_CONCRETE_WALL = register("polished_black_concrete_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BLACK_CONCRETE)));
 	public static final Block POLISHED_BROWN_CONCRETE_WALL = register("polished_brown_concrete_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BROWN_CONCRETE)));
-	
+
 	// Terracotta Gates
 	public static final Block POLISHED_RED_CONCRETE_GATE = register("polished_red_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_RED_CONCRETE)));
 	public static final Block POLISHED_ORANGE_CONCRETE_GATE = register("polished_orange_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_ORANGE_CONCRETE)));
@@ -1839,7 +1842,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block POLISHED_GRAY_CONCRETE_GATE = register("polished_gray_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_GRAY_CONCRETE)));
 	public static final Block POLISHED_BLACK_CONCRETE_GATE = register("polished_black_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BLACK_CONCRETE)));
 	public static final Block POLISHED_BROWN_CONCRETE_GATE = register("polished_brown_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BROWN_CONCRETE)));
-	
+
 	public static final Block CUT_RED_CONCRETE = register("cut_red_concrete", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block CUT_ORANGE_CONCRETE = register("cut_orange_concrete", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block CUT_YELLOW_CONCRETE = register("cut_yellow_concrete", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -1856,7 +1859,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_GRAY_CONCRETE = register("cut_gray_concrete", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block CUT_BLACK_CONCRETE = register("cut_black_concrete", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block CUT_BROWN_CONCRETE = register("cut_brown_concrete", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	public static final Block CUT_RED_CONCRETE_SLAB = register("cut_red_concrete_slab", new SlabBlock(FabricBlockSettings.copy(CUT_RED_CONCRETE)));
 	public static final Block CUT_ORANGE_CONCRETE_SLAB = register("cut_orange_concrete_slab", new SlabBlock(FabricBlockSettings.copy(CUT_ORANGE_CONCRETE)));
 	public static final Block CUT_YELLOW_CONCRETE_SLAB = register("cut_yellow_concrete_slab", new SlabBlock(FabricBlockSettings.copy(CUT_YELLOW_CONCRETE)));
@@ -1873,7 +1876,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_GRAY_CONCRETE_SLAB = register("cut_gray_concrete_slab", new SlabBlock(FabricBlockSettings.copy(CUT_GRAY_CONCRETE)));
 	public static final Block CUT_BLACK_CONCRETE_SLAB = register("cut_black_concrete_slab", new SlabBlock(FabricBlockSettings.copy(CUT_BLACK_CONCRETE)));
 	public static final Block CUT_BROWN_CONCRETE_SLAB = register("cut_brown_concrete_slab", new SlabBlock(FabricBlockSettings.copy(CUT_BROWN_CONCRETE)));
-	
+
 	// Terracotta Stairs
 	public static final Block CUT_RED_CONCRETE_STAIRS = register("cut_red_concrete_stairs", new BaseConsistencyStairBlock(RED_CONCRETE.getDefaultState(), FabricBlockSettings.copy(CUT_RED_CONCRETE)));
 	public static final Block CUT_ORANGE_CONCRETE_STAIRS = register("cut_orange_concrete_stairs", new BaseConsistencyStairBlock(ORANGE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(CUT_ORANGE_CONCRETE)));
@@ -1891,8 +1894,8 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_GRAY_CONCRETE_STAIRS = register("cut_gray_concrete_stairs", new BaseConsistencyStairBlock(GRAY_CONCRETE.getDefaultState(), FabricBlockSettings.copy(CUT_GRAY_CONCRETE)));
 	public static final Block CUT_BLACK_CONCRETE_STAIRS = register("cut_black_concrete_stairs", new BaseConsistencyStairBlock(BLACK_CONCRETE.getDefaultState(), FabricBlockSettings.copy(CUT_BLACK_CONCRETE)));
 	public static final Block CUT_BROWN_CONCRETE_STAIRS = register("cut_brown_concrete_stairs", new BaseConsistencyStairBlock(BROWN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(CUT_BROWN_CONCRETE)));
-	
-	
+
+
 	// Terracotta Wall
 	public static final Block CUT_RED_CONCRETE_WALL = register("cut_red_concrete_wall", new WallBlock(FabricBlockSettings.copy(CUT_RED_CONCRETE)));
 	public static final Block CUT_ORANGE_CONCRETE_WALL = register("cut_orange_concrete_wall", new WallBlock(FabricBlockSettings.copy(CUT_ORANGE_CONCRETE)));
@@ -1910,7 +1913,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_GRAY_CONCRETE_WALL = register("cut_gray_concrete_wall", new WallBlock(FabricBlockSettings.copy(CUT_GRAY_CONCRETE)));
 	public static final Block CUT_BLACK_CONCRETE_WALL = register("cut_black_concrete_wall", new WallBlock(FabricBlockSettings.copy(CUT_BLACK_CONCRETE)));
 	public static final Block CUT_BROWN_CONCRETE_WALL = register("cut_brown_concrete_wall", new WallBlock(FabricBlockSettings.copy(CUT_BROWN_CONCRETE)));
-	
+
 	// Terracotta Gates
 	public static final Block CUT_RED_CONCRETE_GATE = register("cut_red_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_RED_CONCRETE)));
 	public static final Block CUT_ORANGE_CONCRETE_GATE = register("cut_orange_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_ORANGE_CONCRETE)));
@@ -1928,7 +1931,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CUT_GRAY_CONCRETE_GATE = register("cut_gray_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_GRAY_CONCRETE)));
 	public static final Block CUT_BLACK_CONCRETE_GATE = register("cut_black_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_BLACK_CONCRETE)));
 	public static final Block CUT_BROWN_CONCRETE_GATE = register("cut_brown_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(CUT_BROWN_CONCRETE)));
-	
+
 	public static final Block RED_CONCRETE_BRICKS = register("red_concrete_bricks", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block ORANGE_CONCRETE_BRICKS = register("orange_concrete_bricks", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block YELLOW_CONCRETE_BRICKS = register("yellow_concrete_bricks", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -1945,7 +1948,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_BRICKS = register("gray_concrete_bricks", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block BLACK_CONCRETE_BRICKS = register("black_concrete_bricks", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_BRICKS = register("brown_concrete_bricks", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	public static final Block RED_CONCRETE_BRICK_SLAB = register("red_concrete_brick_slab", new SlabBlock(FabricBlockSettings.copy(RED_CONCRETE_BRICKS)));
 	public static final Block ORANGE_CONCRETE_BRICK_SLAB = register("orange_concrete_brick_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_CONCRETE_BRICKS)));
 	public static final Block YELLOW_CONCRETE_BRICK_SLAB = register("yellow_concrete_brick_slab", new SlabBlock(FabricBlockSettings.copy(YELLOW_CONCRETE_BRICKS)));
@@ -1962,8 +1965,8 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_BRICK_SLAB = register("gray_concrete_brick_slab", new SlabBlock(FabricBlockSettings.copy(GRAY_CONCRETE_BRICKS)));
 	public static final Block BLACK_CONCRETE_BRICK_SLAB = register("black_concrete_brick_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_CONCRETE_BRICKS)));
 	public static final Block BROWN_CONCRETE_BRICK_SLAB = register("brown_concrete_brick_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_CONCRETE_BRICKS)));
-	
-	
+
+
 	// Terracotta Stairs
 	public static final Block RED_CONCRETE_BRICK_STAIRS = register("red_concrete_brick_stairs", new BaseConsistencyStairBlock(RED_CONCRETE_BRICKS.getDefaultState(), FabricBlockSettings.copy(RED_CONCRETE_BRICKS)));
 	public static final Block ORANGE_CONCRETE_BRICK_STAIRS = register("orange_concrete_brick_stairs", new BaseConsistencyStairBlock(ORANGE_CONCRETE_BRICKS.getDefaultState(), FabricBlockSettings.copy(ORANGE_CONCRETE_BRICKS)));
@@ -1981,7 +1984,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_BRICK_STAIRS = register("gray_concrete_brick_stairs", new BaseConsistencyStairBlock(GRAY_CONCRETE_BRICKS.getDefaultState(), FabricBlockSettings.copy(GRAY_CONCRETE_BRICKS)));
 	public static final Block BLACK_CONCRETE_BRICK_STAIRS = register("black_concrete_brick_stairs", new BaseConsistencyStairBlock(BLACK_CONCRETE_BRICKS.getDefaultState(), FabricBlockSettings.copy(BLACK_CONCRETE_BRICKS)));
 	public static final Block BROWN_CONCRETE_BRICK_STAIRS = register("brown_concrete_brick_stairs", new BaseConsistencyStairBlock(BROWN_CONCRETE_BRICKS.getDefaultState(), FabricBlockSettings.copy(BROWN_CONCRETE_BRICKS)));
-	
+
 	// Terracotta Wall
 	public static final Block RED_CONCRETE_BRICK_WALL = register("red_concrete_brick_wall", new WallBlock(FabricBlockSettings.copy(RED_CONCRETE_BRICKS)));
 	public static final Block ORANGE_CONCRETE_BRICK_WALL = register("orange_concrete_brick_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_CONCRETE_BRICKS)));
@@ -1999,7 +2002,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_BRICK_WALL = register("gray_concrete_brick_wall", new WallBlock(FabricBlockSettings.copy(GRAY_CONCRETE_BRICKS)));
 	public static final Block BLACK_CONCRETE_BRICK_WALL = register("black_concrete_brick_wall", new WallBlock(FabricBlockSettings.copy(BLACK_CONCRETE_BRICKS)));
 	public static final Block BROWN_CONCRETE_BRICK_WALL = register("brown_concrete_brick_wall", new WallBlock(FabricBlockSettings.copy(BROWN_CONCRETE_BRICKS)));
-	
+
 	// Terracotta Gates
 	public static final Block RED_CONCRETE_BRICK_GATE = register("red_concrete_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_CONCRETE_BRICKS)));
 	public static final Block ORANGE_CONCRETE_BRICK_GATE = register("orange_concrete_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_CONCRETE_BRICKS)));
@@ -2017,7 +2020,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_BRICK_GATE = register("gray_concrete_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(GRAY_CONCRETE_BRICKS)));
 	public static final Block BLACK_CONCRETE_BRICK_GATE = register("black_concrete_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_CONCRETE_BRICKS)));
 	public static final Block BROWN_CONCRETE_BRICK_GATE = register("brown_concrete_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_CONCRETE_BRICKS)));
-	
+
 	public static final Block RED_CONCRETE_TILES = register("red_concrete_tiles", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block ORANGE_CONCRETE_TILES = register("orange_concrete_tiles", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block YELLOW_CONCRETE_TILES = register("yellow_concrete_tiles", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -2034,7 +2037,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_TILES = register("gray_concrete_tiles", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block BLACK_CONCRETE_TILES = register("black_concrete_tiles", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_TILES = register("brown_concrete_tiles", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	public static final Block RED_CONCRETE_TILE_SLAB = register("red_concrete_tile_slab", new SlabBlock(FabricBlockSettings.copy(RED_CONCRETE_TILES)));
 	public static final Block ORANGE_CONCRETE_TILE_SLAB = register("orange_concrete_tile_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_CONCRETE_TILES)));
 	public static final Block YELLOW_CONCRETE_TILE_SLAB = register("yellow_concrete_tile_slab", new SlabBlock(FabricBlockSettings.copy(YELLOW_CONCRETE_TILES)));
@@ -2051,7 +2054,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_TILE_SLAB = register("gray_concrete_tile_slab", new SlabBlock(FabricBlockSettings.copy(GRAY_CONCRETE_TILES)));
 	public static final Block BLACK_CONCRETE_TILE_SLAB = register("black_concrete_tile_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_CONCRETE_TILES)));
 	public static final Block BROWN_CONCRETE_TILE_SLAB = register("brown_concrete_tile_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_CONCRETE_TILES)));
-	
+
 	// Terracotta Stairs
 	public static final Block RED_CONCRETE_TILE_STAIRS = register("red_concrete_tile_stairs", new BaseConsistencyStairBlock(RED_CONCRETE_TILES.getDefaultState(), FabricBlockSettings.copy(RED_CONCRETE_TILES)));
 	public static final Block ORANGE_CONCRETE_TILE_STAIRS = register("orange_concrete_tile_stairs", new BaseConsistencyStairBlock(ORANGE_CONCRETE_TILES.getDefaultState(), FabricBlockSettings.copy(ORANGE_CONCRETE_TILES)));
@@ -2069,7 +2072,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_TILE_STAIRS = register("gray_concrete_tile_stairs", new BaseConsistencyStairBlock(GRAY_CONCRETE_TILES.getDefaultState(), FabricBlockSettings.copy(GRAY_CONCRETE_TILES)));
 	public static final Block BLACK_CONCRETE_TILE_STAIRS = register("black_concrete_tile_stairs", new BaseConsistencyStairBlock(BLACK_CONCRETE_TILES.getDefaultState(), FabricBlockSettings.copy(BLACK_CONCRETE_TILES)));
 	public static final Block BROWN_CONCRETE_TILE_STAIRS = register("brown_concrete_tile_stairs", new BaseConsistencyStairBlock(BROWN_CONCRETE_TILES.getDefaultState(), FabricBlockSettings.copy(BROWN_CONCRETE_TILES)));
-	
+
 	// Terracotta Wall
 	public static final Block RED_CONCRETE_TILE_WALL = register("red_concrete_tile_wall", new WallBlock(FabricBlockSettings.copy(RED_CONCRETE_TILES)));
 	public static final Block ORANGE_CONCRETE_TILE_WALL = register("orange_concrete_tile_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_CONCRETE_TILES)));
@@ -2087,7 +2090,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_TILE_WALL = register("gray_concrete_tile_wall", new WallBlock(FabricBlockSettings.copy(GRAY_CONCRETE_TILES)));
 	public static final Block BLACK_CONCRETE_TILE_WALL = register("black_concrete_tile_wall", new WallBlock(FabricBlockSettings.copy(BLACK_CONCRETE_TILES)));
 	public static final Block BROWN_CONCRETE_TILE_WALL = register("brown_concrete_tile_wall", new WallBlock(FabricBlockSettings.copy(BROWN_CONCRETE_TILES)));
-	
+
 	// Terracotta Gates
 	public static final Block RED_CONCRETE_TILE_GATE = register("red_concrete_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_CONCRETE_TILES)));
 	public static final Block ORANGE_CONCRETE_TILE_GATE = register("orange_concrete_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_CONCRETE_TILES)));
@@ -2105,7 +2108,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_TILE_GATE = register("gray_concrete_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(GRAY_CONCRETE_TILES)));
 	public static final Block BLACK_CONCRETE_TILE_GATE = register("black_concrete_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_CONCRETE_TILES)));
 	public static final Block BROWN_CONCRETE_TILE_GATE = register("brown_concrete_tile_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_CONCRETE_TILES)));
-	
+
 	public static final Block RED_CONCRETE_PILLAR = register("red_concrete_pillar", new PillarBlock(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block ORANGE_CONCRETE_PILLAR = register("orange_concrete_pillar", new PillarBlock(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block YELLOW_CONCRETE_PILLAR = register("yellow_concrete_pillar", new PillarBlock(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -2122,7 +2125,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_PILLAR = register("gray_concrete_pillar", new PillarBlock(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block BLACK_CONCRETE_PILLAR = register("black_concrete_pillar", new PillarBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_PILLAR = register("brown_concrete_pillar", new PillarBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	public static final Block CHISELED_RED_CONCRETE = register("chiseled_red_concrete", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block CHISELED_ORANGE_CONCRETE = register("chiseled_orange_concrete", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block CHISELED_YELLOW_CONCRETE = register("chiseled_yellow_concrete", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -2139,7 +2142,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block CHISELED_GRAY_CONCRETE = register("chiseled_gray_concrete", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block CHISELED_BLACK_CONCRETE = register("chiseled_black_concrete", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block CHISELED_BROWN_CONCRETE = register("chiseled_brown_concrete", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
-	
+
 	public static final Block CARVED_RED_CONCRETE = register("carved_red_concrete", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block CARVED_ORANGE_CONCRETE = register("carved_orange_concrete", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block CARVED_YELLOW_CONCRETE = register("carved_yellow_concrete", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -2159,7 +2162,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 
 // Any sane shit ends here.  Hello to any folks crazy enough to be here, and enjoy your stay in last-minute-addition hell
 // Who wrote this, who wrote this, who? Cause its true, but it certainly wasn't me.
-	
+
 	// Ice
 	public static final Block RED_ICE = register("red_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.RED).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
 	public static final Block ORANGE_ICE = register("orange_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.ORANGE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
@@ -2178,7 +2181,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BROWN_ICE = register("brown_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE).strength(2.0F).slipperiness(0.980f).sounds(BlockSoundGroup.GLASS)));
 	//Haha brr go brrr
 	public static final Block SOUL_ICE = register("soul_ice", new Block(FabricBlockSettings.of(Material.DENSE_ICE, MapColor.LIGHT_BLUE).strength(3.0F).slipperiness(1.1f).sounds(BlockSoundGroup.GLASS)));
-	
+
 	// Ice Slab
 	public static final Block RED_ICE_SLAB = register("red_ice_slab", new SlabBlock(FabricBlockSettings.copy(RED_ICE)));
 	public static final Block ORANGE_ICE_SLAB = register("orange_ice_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_ICE)));
@@ -2197,7 +2200,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_ICE_SLAB = register("black_ice_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_ICE)));
 	public static final Block BROWN_ICE_SLAB = register("brown_ice_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_ICE)));
 	public static final Block SOUL_ICE_SLAB = register("soul_ice_slab", new SlabBlock(FabricBlockSettings.copy(SOUL_ICE)));
-	
+
 	// Ice Stairs
 	public static final Block RED_ICE_STAIRS = register("red_ice_stairs", new BaseConsistencyStairBlock(RED_ICE.getDefaultState(), FabricBlockSettings.copy(RED_ICE)));
 	public static final Block ORANGE_ICE_STAIRS = register("orange_ice_stairs", new BaseConsistencyStairBlock(ORANGE_ICE.getDefaultState(), FabricBlockSettings.copy(ORANGE_ICE)));
@@ -2216,7 +2219,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_ICE_STAIRS = register("black_ice_stairs", new BaseConsistencyStairBlock(BLACK_ICE.getDefaultState(), FabricBlockSettings.copy(BLACK_ICE)));
 	public static final Block BROWN_ICE_STAIRS = register("brown_ice_stairs", new BaseConsistencyStairBlock(BROWN_ICE.getDefaultState(), FabricBlockSettings.copy(BROWN_ICE)));
 	public static final Block SOUL_ICE_STAIRS = register("soul_ice_stairs", new BaseConsistencyStairBlock(SOUL_ICE.getDefaultState(), FabricBlockSettings.copy(SOUL_ICE)));
-	
+
 	// Ice Wall
 	public static final Block RED_ICE_WALL = register("red_ice_wall", new WallBlock(FabricBlockSettings.copy(RED_ICE)));
 	public static final Block ORANGE_ICE_WALL = register("orange_ice_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_ICE)));
@@ -2235,7 +2238,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_ICE_WALL = register("black_ice_wall", new WallBlock(FabricBlockSettings.copy(BLACK_ICE)));
 	public static final Block BROWN_ICE_WALL = register("brown_ice_wall", new WallBlock(FabricBlockSettings.copy(BROWN_ICE)));
 	public static final Block SOUL_ICE_WALL = register("soul_ice_wall", new WallBlock(FabricBlockSettings.copy(SOUL_ICE)));
-	
+
 	// Ice Gate
 	public static final Block RED_ICE_GATE = register("red_ice_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_ICE)));
 	public static final Block ORANGE_ICE_GATE = register("orange_ice_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_ICE)));
@@ -2254,8 +2257,8 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_ICE_GATE = register("black_ice_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_ICE)));
 	public static final Block BROWN_ICE_GATE = register("brown_ice_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_ICE)));
 	public static final Block SOUL_ICE_GATE = register("soul_ice_gate", new FenceGateBlock(FabricBlockSettings.copy(SOUL_ICE)));
-	
-	
+
+
 	//Glowstone
 	public static final Block RED_GLOWSTONE = register("red_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.RED).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
 	public static final Block ORANGE_GLOWSTONE = register("orange_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.YELLOW).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
@@ -2274,7 +2277,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_GLOWSTONE = register("black_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.BLACK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
 	public static final Block BROWN_GLOWSTONE = register("brown_glowstone", new Block(FabricBlockSettings.of(Material.GLASS).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
 	public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(10)));
-	
+
 	// Glowstone Slab
 	public static final Block RED_GLOWSTONE_SLAB = register("red_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(RED_GLOWSTONE)));
 	public static final Block ORANGE_GLOWSTONE_SLAB = register("orange_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_GLOWSTONE)));
@@ -2294,7 +2297,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BROWN_GLOWSTONE_SLAB = register("brown_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_SLAB = register("soul_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(SOUL_GLOWSTONE)));
 	public static final Block GLOWSTONE_SLAB = register("glowstone_slab", new SlabBlock(FabricBlockSettings.copy(GLOWSTONE)));
-	
+
 	// Glowstone Stairs
 	public static final Block RED_GLOWSTONE_STAIRS = register("red_glowstone_stairs", new BaseConsistencyStairBlock(RED_GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(RED_GLOWSTONE)));
 	public static final Block ORANGE_GLOWSTONE_STAIRS = register("orange_glowstone_stairs", new BaseConsistencyStairBlock(ORANGE_GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(ORANGE_GLOWSTONE)));
@@ -2314,7 +2317,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BROWN_GLOWSTONE_STAIRS = register("brown_glowstone_stairs", new BaseConsistencyStairBlock(BROWN_GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(BROWN_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_STAIRS = register("soul_glowstone_stairs", new BaseConsistencyStairBlock(SOUL_GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(SOUL_GLOWSTONE)));
 	public static final Block GLOWSTONE_STAIRS = register("glowstone_stairs", new BaseConsistencyStairBlock(GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(GLOWSTONE)));
-	
+
 	// Glowstone Wall
 	public static final Block RED_GLOWSTONE_WALL = register("red_glowstone_wall", new WallBlock(FabricBlockSettings.copy(RED_GLOWSTONE)));
 	public static final Block ORANGE_GLOWSTONE_WALL = register("orange_glowstone_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_GLOWSTONE)));
@@ -2334,7 +2337,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BROWN_GLOWSTONE_WALL = register("brown_glowstone_wall", new WallBlock(FabricBlockSettings.copy(BROWN_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_WALL = register("soul_glowstone_wall", new WallBlock(FabricBlockSettings.copy(SOUL_GLOWSTONE)));
 	public static final Block GLOWSTONE_WALL = register("glowstone_wall", new WallBlock(FabricBlockSettings.copy(GLOWSTONE)));
-	
+
 	// Glowstone Gate
 	public static final Block RED_GLOWSTONE_GATE = register("red_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_GLOWSTONE)));
 	public static final Block ORANGE_GLOWSTONE_GATE = register("orange_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_GLOWSTONE)));
@@ -2354,70 +2357,72 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BROWN_GLOWSTONE_GATE = register("brown_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_GATE = register("soul_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SOUL_GLOWSTONE)));
 	public static final Block GLOWSTONE_GATE = register("glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(GLOWSTONE)));
-	
+
 	//Glass stairs/slabs/walls/gates will be here eventually.  Until then, here's a random face from the win + . menu
 	// (¬‿¬)
-	
+
 	//Unlike Regular Glass, stained tinted glass actually gets a spot with placeholders.
 	// Lies, come in many forms and some look like truth.
-	
+
 	// Dirt
 	public static final Block DIRT_SLAB = register("dirt_slab", new DirtSlabBlock(FabricBlockSettings.copy(DIRT)));
 	public static final Block DIRT_STAIRS = register("dirt_stairs", new DirtStairsBlock(DIRT.getDefaultState(), FabricBlockSettings.copy(DIRT)));
 	public static final Block DIRT_WALL = register("dirt_wall", new DirtWallBlock(FabricBlockSettings.copy(DIRT)));
-	
+
 	// Grass
 	public static final Block GRASS_SLAB = register("grass_slab", new GrassSlabBlock(FabricBlockSettings.copy(GRASS_BLOCK)));
 	public static final Block GRASS_STAIRS = register("grass_stairs", new GrassStairsBlock(GRASS_BLOCK.getDefaultState(), FabricBlockSettings.copy(GRASS_BLOCK)));
 	public static final Block GRASS_WALL = register("grass_wall", new GrassWallBlock(FabricBlockSettings.copy(GRASS_BLOCK)));
-	
+
 	// Mycelium
 	public static final Block MYCELIUM_SLAB = register("mycelium_slab", new MyceliumSlabBlock(FabricBlockSettings.copy(MYCELIUM)));
 	public static final Block MYCELIUM_STAIRS = register("mycelium_stairs", new MyceliumStairsBlock(MYCELIUM.getDefaultState(), FabricBlockSettings.copy(MYCELIUM)));
 	public static final Block MYCELIUM_WALL = register("mycelium_wall", new MyceliumWallBlock(FabricBlockSettings.copy(MYCELIUM)));
-	
+
 	// Miscellaneous
+	public static final Block JACK_O_RED = register("jack_o_red", new RedstonePumpkinBlock(FabricBlockSettings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(13)));
 	public static final Block JACK_O_SOUL = register("jack_o_soul", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(10)));
 	public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(FabricBlockSettings.of(Material.PLANT, MapColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
 	public static final Block KFP_BLOCK = register("kfp_block", new Block(FabricBlockSettings.copy(CARVED_ORANGE_CONCRETE)));
+	public static final Block CHARCOAL_BLOCK = register("charcoal_block", new Block(FabricBlockSettings.of(Material.STONE, MapColor.BLACK).requiresTool().strength(5.0F, 6.0F)));
 	public static final Block PINEAPPLE = register("pineapple", new BaseConsistencyCarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD)));
 	public static final Block NETHERITE_STAIRS = register("netherite_stairs", new BaseConsistencyStairBlock(NETHERITE_BLOCK.getDefaultState(), FabricBlockSettings.copy(NETHERITE_BLOCK)));
 	public static final Block SUSPICIOUS_SLAB = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
 	public static final Block JET = register("jet", new Block(FabricBlockSettings.copy(BEDROCK)));
 //  public static final Block SIUOLS_SANITY = register("is_a_crab", new Block(FabricBlockSettings.copy(HELP_ME)));
-	//  You are having funny fun because your playing a Siuolplexplex contributed mod
-	
-	// Deprecated Blocks
-	public static final Block STONE_BRICK_PILLAR = register("stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
-	public static final Block CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
-	public static final Block MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
-	public static final Block CARVED_STONE_BRICKS = register("carved_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
-	public static final Block CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
-	public static final Block MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
-	
-	public static final Block MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
-	public static final Block CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
-	public static final Block BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
-	
-	public static final Block CHISELED_BRICKS = register("chiseled_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
-	public static final Block BRICK_PILLAR = register("brick_pillar", new PillarBlock(FabricBlockSettings.copy(BRICKS)));
-	public static final Block CARVED_BRICKS = register("carved_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
-	
-	public static final Block END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
-	
-	public static final Block SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	public static final Block POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	
-	// Calculated Non Joke/Deprecated Block Count: 1880
-	// With Joke/Deprecated Blocks: 1880+20=1900
-	
-	// Siuol's selection regex syntax machine (?=")(.*)(?<=____")
-	
-	private static Block register(String name, Block block) {
-		return Registry.register(Registry.BLOCK, new Identifier("consistency_plus", name), block);
-	}
-	
-	public static void init() {
-	}
+    //  You are having funny fun because your playing a Siuolplexplex contributed mod
+
+        // Deprecated Blocks
+        public static final Block STONE_BRICK_PILLAR = register("stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block CARVED_STONE_BRICKS = register("carved_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+        public static final Block MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+
+        public static final Block MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+        public static final Block BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+
+        public static final Block CHISELED_BRICKS = register("chiseled_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
+        public static final Block BRICK_PILLAR = register("brick_pillar", new PillarBlock(FabricBlockSettings.copy(BRICKS)));
+        public static final Block CARVED_BRICKS = register("carved_bricks", new Block(FabricBlockSettings.copy(BRICKS)));
+
+        public static final Block END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new PillarBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
+
+        public static final Block SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+        public static final Block POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+        public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+
+        // Calculated Non Joke/Deprecated Block Count: 1881
+    // With Joke/Deprecated Blocks: 1881+20=1901
+
+    // Siuol's selection regex syntax machine (?=")(.*)(?<=____")
+    // Per Thing regex selection machine (?=")(.*)(____.*)(?<=")
+
+    private static Block register(String name, Block block) {
+        return Registry.register(Registry.BLOCK, new Identifier("consistency_plus", name), block);
+    }
+
+    public static void init() {}
 }

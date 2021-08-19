@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:chiseled_lime_terracotta"
-    },
-    "result": "consistency_plus:carved_lime_terracotta",
-    "count": 1
-}

@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:white_terracotta"
-    },
-    "result": "consistency_plus:cut_white_terracotta_wall",
-    "count": 1
-}

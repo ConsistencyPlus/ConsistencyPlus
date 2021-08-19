@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:cut_pink_concrete"
-    },
-    "result": "consistency_plus:pink_concrete_tiles",
-    "count": 1
-}

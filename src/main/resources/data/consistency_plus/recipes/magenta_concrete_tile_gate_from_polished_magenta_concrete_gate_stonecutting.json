@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:polished_magenta_concrete_gate"
-    },
-    "result": "consistency_plus:magenta_concrete_tile_gate",
-    "count": 1
-}

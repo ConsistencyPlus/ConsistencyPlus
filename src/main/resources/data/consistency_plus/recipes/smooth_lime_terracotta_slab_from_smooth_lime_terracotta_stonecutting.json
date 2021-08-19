@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:smooth_lime_terracotta"
-    },
-    "result": "consistency_plus:smooth_lime_terracotta_slab",
-    "count": 2
-}

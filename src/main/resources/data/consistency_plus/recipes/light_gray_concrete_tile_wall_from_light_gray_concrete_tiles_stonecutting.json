@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:light_gray_concrete_tiles"
-    },
-    "result": "consistency_plus:light_gray_concrete_tile_wall",
-    "count": 1
-}

@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:cut_lime_concrete"
-    },
-    "result": "consistency_plus:chiseled_lime_concrete",
-    "count": 1
-}

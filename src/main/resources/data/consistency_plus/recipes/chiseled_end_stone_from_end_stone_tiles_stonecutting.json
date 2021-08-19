@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:end_stone_tiles"
-    },
-    "result": "consistency_plus:chiseled_end_stone",
-    "count": 1
-}

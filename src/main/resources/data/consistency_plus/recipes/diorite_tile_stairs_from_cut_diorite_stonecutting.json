@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:cut_diorite"
-    },
-    "result": "consistency_plus:diorite_tile_stairs",
-    "count": 1
-}

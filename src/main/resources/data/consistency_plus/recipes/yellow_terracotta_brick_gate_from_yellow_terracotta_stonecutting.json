@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:yellow_terracotta"
-    },
-    "result": "consistency_plus:yellow_terracotta_brick_gate",
-    "count": 1
-}

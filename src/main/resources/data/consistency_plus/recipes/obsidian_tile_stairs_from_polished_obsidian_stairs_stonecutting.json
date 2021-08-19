@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:polished_obsidian_stairs"
-    },
-    "result": "consistency_plus:obsidian_tile_stairs",
-    "count": 1
-}

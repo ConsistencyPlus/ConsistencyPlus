@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:gray_terracotta"
-    },
-    "result": "consistency_plus:cut_gray_terracotta",
-    "count": 1
-}

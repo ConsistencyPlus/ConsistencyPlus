@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:red_concrete"
-    },
-    "result": "consistency_plus:red_concrete_tile_gate",
-    "count": 1
-}

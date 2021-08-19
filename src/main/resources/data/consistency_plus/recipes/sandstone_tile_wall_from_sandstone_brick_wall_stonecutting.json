@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:sandstone_brick_wall"
-    },
-    "result": "consistency_plus:sandstone_tile_wall",
-    "count": 1
-}

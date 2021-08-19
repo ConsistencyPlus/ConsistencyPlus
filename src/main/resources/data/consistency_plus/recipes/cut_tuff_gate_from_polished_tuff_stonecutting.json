@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:polished_tuff"
-    },
-    "result": "consistency_plus:cut_tuff_gate",
-    "count": 1
-}

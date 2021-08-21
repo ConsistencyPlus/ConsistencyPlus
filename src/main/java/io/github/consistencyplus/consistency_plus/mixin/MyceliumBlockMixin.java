@@ -15,7 +15,6 @@ import java.util.Random;
 
 @Mixin(MyceliumBlock.class)
 public abstract class MyceliumBlockMixin extends SpreadableBlock implements HasUngrownVariant, SpreadableMyceliumBlock {
-	
 	protected MyceliumBlockMixin(Settings settings) {
 		super(settings);
 	}

@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.blocks.grass;
 
 import io.github.consistencyplus.consistency_plus.core.HasUngrownVariant;
-import io.github.consistencyplus.consistency_plus.core.IsSpreadableGrassBlock;
+import io.github.consistencyplus.consistency_plus.core.SpreadableGrassBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SnowBlock;
@@ -18,7 +18,7 @@ import java.util.Random;
 import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DIRT_WALL;
 import static net.minecraft.block.Blocks.AIR;
 
-public class GrassWallBlock extends WallBlock implements HasUngrownVariant, IsSpreadableGrassBlock {
+public class GrassWallBlock extends WallBlock implements HasUngrownVariant, SpreadableGrassBlock {
 	public GrassWallBlock(Settings settings) {
 		super(settings);
 	}

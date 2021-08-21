@@ -1,12 +1,12 @@
 package io.github.consistencyplus.consistency_plus.blocks;
 
-import io.github.consistencyplus.consistency_plus.core.BaseConsistencyCarvedPumpkinBlock;
+import io.github.consistencyplus.consistency_plus.core.CPlusCarvedPumpkinBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 
-public class RedstonePumpkinBlock extends BaseConsistencyCarvedPumpkinBlock {
+public class RedstonePumpkinBlock extends CPlusCarvedPumpkinBlock {
     public RedstonePumpkinBlock(Settings settings) {
         super(settings);
     }

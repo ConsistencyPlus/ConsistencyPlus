@@ -1,11 +1,13 @@
 package io.github.consistencyplus.consistency_plus;
 
+import io.github.consistencyplus.consistency_plus.core.StonecutterTagRecipeHandler;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
-import io.github.consistencyplus.consistency_plus.registry.CPlusStonecutterTags;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.resource.ResourceManager;
+import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,13 +35,15 @@ public class ConsistencyPlus implements ModInitializer {
 
 		CPlusBlocks.init();
 
+		ServerLifecycleEvents.SERVER_STARTED.register(server -> handleDataPackReload(server.getResourceManager()));
+		ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, manager, success) -> handleDataPackReload(manager.getResourceManager()));
+		
 		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			LOGGER.info("Consistency+ Main - CPlusBlocks initialized");
 			LOGGER.info("Consistency+ Main - Beginning item initialization");
 		}
 
 		CPlusItems.init();
-		CPlusStonecutterTags.init();
 
 		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			LOGGER.info("Consistency+ Main - CPlusItems initialized");
@@ -50,5 +54,13 @@ public class ConsistencyPlus implements ModInitializer {
 
 
 		// FuelRegistry.INSTANCE.add(CHARCOAL_BLOCK, 200);
+	}
+	
+	public void handleDataPackReload(ResourceManager resourceManager) {
+		StonecutterTagRecipeHandler.ALL_STONECUTTER_TAGS.clear();
+		for (Identifier id : resourceManager.findResources("tags/items/stonecutter_recipes", path -> path.endsWith(".json"))) {
+			StonecutterTagRecipeHandler.VALID = false;
+			StonecutterTagRecipeHandler.TAGS_TO_ADD.add(id);
+		}
 	}
 }

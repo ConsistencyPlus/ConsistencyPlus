@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.blocks.grass;
 
 import io.github.consistencyplus.consistency_plus.core.HasUngrownVariant;
-import io.github.consistencyplus.consistency_plus.core.IsSpreadableGrassBlock;
+import io.github.consistencyplus.consistency_plus.core.SpreadableGrassBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -19,7 +19,7 @@ import java.util.Random;
 import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DIRT_SLAB;
 
 // I think a lot of this class is unnecessary but please for the love of god do not touch it
-public class GrassSlabBlock extends SlabBlock implements HasUngrownVariant, IsSpreadableGrassBlock {
+public class GrassSlabBlock extends SlabBlock implements HasUngrownVariant, SpreadableGrassBlock {
 	public GrassSlabBlock(Settings settings) {
 		super(settings);
 	}

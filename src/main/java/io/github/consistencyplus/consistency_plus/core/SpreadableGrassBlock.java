@@ -14,7 +14,7 @@ import java.util.Random;
 
 import static net.minecraft.block.SnowyBlock.SNOWY;
 
-public interface IsSpreadableGrassBlock {
+public interface SpreadableGrassBlock {
 	default boolean customCanSurvive(BlockState state, WorldView worldView, BlockPos pos) {
 		BlockState stateAbove = worldView.getBlockState(pos.up());
 		if (stateAbove.isOf(Blocks.SNOW) && stateAbove.get(SnowBlock.LAYERS) == 1) {

@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.mixin;
 
 import io.github.consistencyplus.consistency_plus.core.HasUngrownVariant;
-import io.github.consistencyplus.consistency_plus.core.IsSpreadableMyceliumBlock;
+import io.github.consistencyplus.consistency_plus.core.SpreadableMyceliumBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MyceliumBlock;
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import java.util.Random;
 
 @Mixin(MyceliumBlock.class)
-public abstract class MyceliumBlockMixin extends SpreadableBlock implements HasUngrownVariant, IsSpreadableMyceliumBlock {
+public abstract class MyceliumBlockMixin extends SpreadableBlock implements HasUngrownVariant, SpreadableMyceliumBlock {
 	
 	protected MyceliumBlockMixin(Settings settings) {
 		super(settings);

@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.blocks.mycelium;
 
 import io.github.consistencyplus.consistency_plus.core.HasUngrownVariant;
-import io.github.consistencyplus.consistency_plus.core.IsSpreadableMyceliumBlock;
+import io.github.consistencyplus.consistency_plus.core.SpreadableMyceliumBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -18,7 +18,7 @@ import java.util.Random;
 
 import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DIRT_SLAB;
 
-public class MyceliumSlabBlock extends SlabBlock implements HasUngrownVariant, IsSpreadableMyceliumBlock {
+public class MyceliumSlabBlock extends SlabBlock implements HasUngrownVariant, SpreadableMyceliumBlock {
 	public MyceliumSlabBlock(Settings settings) {
 		super(settings);
 	}

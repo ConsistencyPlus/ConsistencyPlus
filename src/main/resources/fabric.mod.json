@@ -79,7 +79,7 @@
 
   "depends": {
     "fabric": "*",
-    "minecraft": "~1.17.1"
+    "minecraft": ">=1.17.1"
   },
   "custom": {
     "modmenu": {

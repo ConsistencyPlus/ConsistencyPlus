@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.mixin;
 
 import io.github.consistencyplus.consistency_plus.core.HasUngrownVariant;
-import io.github.consistencyplus.consistency_plus.core.IsSpreadableGrassBlock;
+import io.github.consistencyplus.consistency_plus.core.SpreadableGrassBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.GrassBlock;
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import java.util.Random;
 
 @Mixin(GrassBlock.class)
-public abstract class GrassBlockMixin extends SpreadableBlock implements HasUngrownVariant, IsSpreadableGrassBlock {
+public abstract class GrassBlockMixin extends SpreadableBlock implements HasUngrownVariant, SpreadableGrassBlock {
 	protected GrassBlockMixin(Settings settings) {
 		super(settings);
 	}

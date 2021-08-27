@@ -7,6 +7,9 @@ Note: If you are a Japanese speaker, feel free to fix these translations
 
 Polish - Managed by RDK. Up to date to 0.3.0-RC1. 4.22.21
 
+Russian - Managed by MobButcher. Up to date as of 0.4.0. 8.21.21
+Ukrainian - Managed by MobButcher. Up to date as of 0.4.0 8.21.21
+
 
 Translator Comments:
 
@@ -15,3 +18,11 @@ Siuol - Alright, I would like to point out the following.
 2. I'm not dumb enough to use Google Translate. I prefer scuffed lang files.
 3. I'll probably do initial translations, with occasional updates every couple hundred blocks or so.
 If you actually can translate, DM me on Discord at `"Siuol" Appeared#5729` and we can work something out.
+
+MobButcher - To translate language files from English to Russian I've created a script that allows me to automatically parse the strings and apply proper grammar to them.
+Though it's janky, I can fairly easily update my translations. Feel free to contact me for details, contact info available on GitHub profile.
+- 8.18.21
+
+MobButcher - Reworked my translation stript, now it gives more pleasing and logical translation structures.
+Also found a couple of mistakes in Russian translation that I've quickly fixed.
+- 8.21.21

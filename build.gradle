@@ -27,8 +27,8 @@ dependencies {
     // include "com.tterrag:registrarrp:0.+"
     // modImplementation "com.tterrag:registrarrp:0.+"
 
-    modImplementation "maven.modrinth:stonecutter_recipe_tags:1.0.0"
-    include "maven.modrinth:stonecutter_recipe_tags:1.0.0"
+    modImplementation "maven.modrinth:stonecutter_recipe_tags:1.0.1"
+    include "maven.modrinth:stonecutter_recipe_tags:1.0.1"
 }
 
 processResources {

@@ -1,39 +1,49 @@
 plugins {
-    id "fabric-loom" version "0.9-SNAPSHOT"
-    id "org.ajoberstar.grgit" version "4.1.0"
-    id "java-library"
-    id "io.github.juuxel.loom-quiltflower" version "1.3.0"
+    id "fabric-loom" version "0.9.+"
+    id "org.ajoberstar.grgit" version "4.1.+"
+    id "io.github.juuxel.loom-quiltflower" version "1.2.+"
 }
 
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+String mod_version = "0.4.1"
 
-archivesBaseName = "consistency_plus-${project.minecraft_version}"
-version = "${project.mod_version}+Performance-Test-Build"
+String minecraft_version = "1.17.1"
+String mc_major_version = "1.17"
+String yarn_mappings  = "46"     // https://fabricmc.net/versions.html
+String loader_version = "0.11.6" // https://fabricmc.net/versions.html
+String fabric_version = "0.39.2" // https://fabricmc.net/versions.html
+String srt_version    = "1.0.4"  // https://modrinth.com/mod/stonecutter_recipe_tags/versions
+
+archivesBaseName = "consistency_plus"
+version = mod_version + "+" + mc_major_version
 
 repositories {
     maven {url = "https://api.modrinth.com/maven"}
     maven {url = "https://maven.waffle.coffee"}
 }
 
+Set<String> apiModules = [
+        "fabric-api-base",
+        "fabric-blockrenderlayer-v1",
+        "fabric-item-api-v1",
+        "fabric-item-groups-v0",
+        "fabric-lifecycle-events-v1",
+        "fabric-object-builder-api-v1",
+        "fabric-rendering-v1"
+]
+
 dependencies {
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings "net.fabricmc:yarn:${project.minecraft_version}+build.${project.yarn_mappings}:v2"
-    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings "net.fabricmc:yarn:${minecraft_version}+build.${yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+    apiModules.forEach { include(modImplementation(fabricApi.module(it, "${fabric_version}+${mc_major_version}"))) }
 
-    modImplementation "maven.modrinth:lazydfu:0.1.2"
+    modImplementation include("maven.modrinth:stonecutter_recipe_tags:${srt_version}")
 
-    // include "com.tterrag:registrarrp:0.+"
-    // modImplementation "com.tterrag:registrarrp:0.+"
-
-    modImplementation "maven.modrinth:stonecutter_recipe_tags:1.0.4"
-    include "maven.modrinth:stonecutter_recipe_tags:1.0.4"
+    modImplementation "maven.modrinth:lazydfu:0.1.2" // Reduces start time
 }
 
 processResources {
     inputs.property "version", project.version
-
     filesMatching("fabric.mod.json") {
         expand "version": project.version
     }
@@ -42,15 +52,3 @@ processResources {
 tasks.withType(JavaCompile) { it.options.encoding = "UTF-8" }
 
 jar { from("LICENSE") }
-
-def getVersionMetadata() {
-    def build_id = System.getenv("GITHUB_RUN_NUMBER")
-    if (build_id != null) { return "build.${build_id}" }
-    if (grgit != null) {
-        def head = grgit.head()
-        def id = head.abbreviatedId
-        if (!grgit.status().clean) { id += "-dirty" }
-        return "rev.${id}"
-    }
-    return "unknown"
-}

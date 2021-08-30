@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:polished_purple_terracotta"
-    },
-    "result": "consistency_plus:polished_purple_terracotta_stairs",
-    "count": 1
-}

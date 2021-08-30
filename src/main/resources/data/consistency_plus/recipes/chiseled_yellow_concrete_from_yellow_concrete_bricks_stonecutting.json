@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:yellow_concrete_bricks"
-    },
-    "result": "consistency_plus:chiseled_yellow_concrete",
-    "count": 1
-}

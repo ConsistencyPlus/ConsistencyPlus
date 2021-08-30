@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:smooth_light_blue_concrete"
-    },
-    "result": "consistency_plus:smooth_light_blue_concrete_stairs",
-    "count": 1
-}

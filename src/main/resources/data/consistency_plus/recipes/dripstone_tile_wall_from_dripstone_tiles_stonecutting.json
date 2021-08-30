@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:dripstone_tiles"
-    },
-    "result": "consistency_plus:dripstone_tile_wall",
-    "count": 1
-}

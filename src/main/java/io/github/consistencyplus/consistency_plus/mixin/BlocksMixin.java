@@ -2,7 +2,9 @@ package io.github.consistencyplus.consistency_plus.mixin;
 
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.registry.Registry;
 import org.spongepowered.asm.mixin.Mixin;

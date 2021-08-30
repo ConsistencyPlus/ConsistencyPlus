@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:stone_brick_slab"
-    },
-    "result": "consistency_plus:stone_tile_slab",
-    "count": 1
-}

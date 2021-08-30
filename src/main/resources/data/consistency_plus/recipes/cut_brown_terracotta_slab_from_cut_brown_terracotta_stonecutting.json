@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:cut_brown_terracotta"
-    },
-    "result": "consistency_plus:cut_brown_terracotta_slab",
-    "count": 2
-}

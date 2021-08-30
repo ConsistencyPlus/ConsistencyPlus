@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:blue_concrete"
-    },
-    "result": "consistency_plus:blue_concrete_brick_stairs",
-    "count": 1
-}

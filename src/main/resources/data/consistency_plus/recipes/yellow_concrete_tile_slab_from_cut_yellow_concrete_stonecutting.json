@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:cut_yellow_concrete"
-    },
-    "result": "consistency_plus:yellow_concrete_tile_slab",
-    "count": 2
-}

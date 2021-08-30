@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "consistency_plus:pink_concrete_gate"
-    },
-    "result": "consistency_plus:pink_concrete_brick_gate",
-    "count": 1
-}

@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:diorite_slab"
-    },
-    "result": "consistency_plus:diorite_tile_slab",
-    "count": 1
-}

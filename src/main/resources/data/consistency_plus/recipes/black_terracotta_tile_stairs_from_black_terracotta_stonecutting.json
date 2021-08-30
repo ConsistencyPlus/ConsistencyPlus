@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:black_terracotta"
-    },
-    "result": "consistency_plus:black_terracotta_tile_stairs",
-    "count": 1
-}

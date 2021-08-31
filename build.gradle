@@ -20,21 +20,11 @@ repositories {
     maven {url = "https://maven.waffle.coffee"}
 }
 
-Set<String> apiModules = [
-        "fabric-api-base",
-        "fabric-blockrenderlayer-v1",
-        "fabric-item-api-v1",
-        "fabric-item-groups-v0",
-        "fabric-lifecycle-events-v1",
-        "fabric-object-builder-api-v1",
-        "fabric-rendering-v1"
-]
-
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
     mappings "net.fabricmc:yarn:${minecraft_version}+build.${yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${loader_version}"
-    apiModules.forEach { include(modImplementation(fabricApi.module(it, "${fabric_version}+${mc_major_version}"))) }
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}+${mc_major_version}"
 
     modImplementation include("maven.modrinth:stonecutter_recipe_tags:${srt_version}")
 

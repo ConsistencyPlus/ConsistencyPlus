@@ -32,6 +32,7 @@
     "minecraft:stone_brick_wall",
     "consistency_plus:stone_brick_gate",
     "consistency_plus:stone_pillar",
+    "consistency_plus:stone_corner_pillar",
     "minecraft:chiseled_stone_bricks",
     "consistency_plus:carved_stone"
   ]

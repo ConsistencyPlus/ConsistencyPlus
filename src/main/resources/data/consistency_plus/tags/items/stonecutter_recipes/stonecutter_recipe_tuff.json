@@ -33,6 +33,7 @@
     "consistency_plus:tuff_tile_gate",
     "consistency_plus:carved_tuff",
     "consistency_plus:chiseled_tuff",
-    "consistency_plus:tuff_pillar"
+    "consistency_plus:tuff_pillar",
+    "consistency_plus:tuff_corner_pillar"
   ]
 }

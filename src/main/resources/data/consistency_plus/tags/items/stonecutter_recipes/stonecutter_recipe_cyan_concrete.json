@@ -33,6 +33,7 @@
     "consistency_plus:cyan_concrete_tile_gate",
     "consistency_plus:carved_cyan_concrete",
     "consistency_plus:chiseled_cyan_concrete",
-    "consistency_plus:cyan_concrete_pillar"
+    "consistency_plus:cyan_concrete_pillar",
+    "consistency_plus:cyan_concrete_corner_pillar"
   ]
 }

@@ -33,6 +33,7 @@
     "consistency_plus:sandstone_tile_gate",
     "consistency_plus:chiseled_sandstone",
     "minecraft:chiseled_sandstone",
-    "consistency_plus:sandstone_pillar"
+    "consistency_plus:sandstone_pillar",
+    "consistency_plus:sandstone_corner_pillar"
   ]
 }

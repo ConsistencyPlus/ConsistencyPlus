@@ -33,6 +33,7 @@
     "consistency_plus:end_stone_tile_gate",
     "consistency_plus:carved_end_stone",
     "consistency_plus:chiseled_end_stone",
-    "consistency_plus:end_stone_pillar"
+    "consistency_plus:end_stone_pillar",
+    "consistency_plus:end_stone_corner_pillar"
   ]
 }

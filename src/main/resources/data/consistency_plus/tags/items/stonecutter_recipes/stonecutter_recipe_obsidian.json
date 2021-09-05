@@ -33,6 +33,7 @@
     "consistency_plus:obsidian_tile_gate",
     "consistency_plus:carved_obsidian",
     "consistency_plus:chiseled_obsidian",
-    "consistency_plus:obsidian_pillar"
+    "consistency_plus:obsidian_pillar",
+    "consistency_plus:obsidian_corner_pillar"
   ]
 }

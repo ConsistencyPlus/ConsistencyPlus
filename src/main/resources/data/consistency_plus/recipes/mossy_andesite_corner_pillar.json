@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "RR",
+        "RR"
+    ],
+    "key": {
+        "R": {
+            "item": "consistency_plus:mossy_andesite_pillar"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:mossy_andesite_corner_pillar",
+        "count": 3
+    }
+}

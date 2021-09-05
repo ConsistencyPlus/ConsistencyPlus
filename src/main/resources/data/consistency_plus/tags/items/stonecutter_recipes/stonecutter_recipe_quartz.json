@@ -32,6 +32,7 @@
     "consistency_plus:quartz_brick_wall",
     "consistency_plus:quartz_brick_gate",
     "minecraft:quartz_pillar",
+    "consistency_plus:quartz_corner_pillar",
     "minecraft:chiseled_quartz_block",
     "consistency_plus:carved_quartz"
   ]

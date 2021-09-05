@@ -38,6 +38,7 @@
     "consistency_plus:deepslate_tile_gate",
     "consistency_plus:carved_deepslate",
     "minecraft:chiseled_deepslate",
-    "consistency_plus:deepslate_pillar"
+    "consistency_plus:deepslate_pillar",
+    "consistency_plus:deepslate_corner_pillar"
   ]
 }

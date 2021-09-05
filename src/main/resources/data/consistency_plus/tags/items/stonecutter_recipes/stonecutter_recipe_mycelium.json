@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:mycelium",
+    "consistency_plus:mycelium_slab",
+    "consistency_plus:mycelium_stairs",
+    "consistency_plus:mycelium_wall"
+  ]
+}

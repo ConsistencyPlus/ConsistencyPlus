@@ -32,6 +32,7 @@
     "consistency_plus:granite_brick_wall",
     "consistency_plus:granite_brick_gate",
     "consistency_plus:granite_pillar",
+    "consistency_plus:granite_corner_pillar",
     "consistency_plus:chiseled_granite",
     "consistency_plus:carved_granite"
   ]

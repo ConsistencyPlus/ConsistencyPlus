@@ -33,6 +33,7 @@
     "consistency_plus:gray_terracotta_tile_gate",
     "consistency_plus:carved_gray_terracotta",
     "consistency_plus:chiseled_gray_terracotta",
-    "consistency_plus:gray_terracotta_pillar"
+    "consistency_plus:gray_terracotta_pillar",
+    "consistency_plus:gray_terracotta_corner_pillar"
   ]
 }

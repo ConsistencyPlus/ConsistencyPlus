@@ -33,6 +33,7 @@
     "consistency_plus:pink_concrete_tile_gate",
     "consistency_plus:carved_pink_concrete",
     "consistency_plus:chiseled_pink_concrete",
-    "consistency_plus:pink_concrete_pillar"
+    "consistency_plus:pink_concrete_pillar",
+    "consistency_plus:pink_concrete_corner_pillar"
   ]
 }

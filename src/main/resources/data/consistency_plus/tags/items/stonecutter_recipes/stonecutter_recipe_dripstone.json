@@ -33,6 +33,7 @@
     "consistency_plus:dripstone_tile_gate",
     "consistency_plus:carved_dripstone",
     "consistency_plus:chiseled_dripstone",
-    "consistency_plus:dripstone_pillar"
+    "consistency_plus:dripstone_pillar",
+    "consistency_plus:dripstone_corner_pillar"
   ]
 }

@@ -33,6 +33,7 @@
     "consistency_plus:lime_concrete_tile_gate",
     "consistency_plus:carved_lime_concrete",
     "consistency_plus:chiseled_lime_concrete",
-    "consistency_plus:lime_concrete_pillar"
+    "consistency_plus:lime_concrete_pillar",
+    "consistency_plus:lime_concrete_corner_pillar"
   ]
 }

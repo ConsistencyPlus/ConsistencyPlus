@@ -33,6 +33,7 @@
     "consistency_plus:green_concrete_tile_gate",
     "consistency_plus:carved_green_concrete",
     "consistency_plus:chiseled_green_concrete",
-    "consistency_plus:green_concrete_pillar"
+    "consistency_plus:green_concrete_pillar",
+    "consistency_plus:green_concrete_corner_pillar"
   ]
 }

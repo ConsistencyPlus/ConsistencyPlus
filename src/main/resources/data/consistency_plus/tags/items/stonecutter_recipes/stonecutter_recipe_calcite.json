@@ -33,6 +33,7 @@
     "consistency_plus:calcite_tile_gate",
     "consistency_plus:carved_calcite",
     "consistency_plus:chiseled_calcite",
-    "consistency_plus:calcite_pillar"
+    "consistency_plus:calcite_pillar",
+    "consistency_plus:calcite_corner_pillar"
   ]
 }

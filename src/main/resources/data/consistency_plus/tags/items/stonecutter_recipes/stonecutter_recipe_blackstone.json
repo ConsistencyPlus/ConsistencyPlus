@@ -32,6 +32,7 @@
     "consistency_plus:blackstone_tile_wall",
     "consistency_plus:blackstone_tile_gate",
     "consistency_plus:blackstone_pillar",
+    "consistency_plus:blackstone_corner_pillar",
     "minecraft:chiseled_polished_blackstone",
     "consistency_plus:chiseled_blackstone"
   ]

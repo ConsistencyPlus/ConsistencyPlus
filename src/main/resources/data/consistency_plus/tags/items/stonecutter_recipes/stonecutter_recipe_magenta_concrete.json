@@ -33,6 +33,7 @@
     "consistency_plus:magenta_concrete_tile_gate",
     "consistency_plus:carved_magenta_concrete",
     "consistency_plus:chiseled_magenta_concrete",
-    "consistency_plus:magenta_concrete_pillar"
+    "consistency_plus:magenta_concrete_pillar",
+    "consistency_plus:magenta_concrete_corner_pillar"
   ]
 }

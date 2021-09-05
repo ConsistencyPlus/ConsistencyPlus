@@ -33,6 +33,7 @@
     "consistency_plus:white_terracotta_tile_gate",
     "consistency_plus:carved_white_terracotta",
     "consistency_plus:chiseled_white_terracotta",
-    "consistency_plus:white_terracotta_pillar"
+    "consistency_plus:white_terracotta_pillar",
+    "consistency_plus:white_terracotta_corner_pillar"
   ]
 }

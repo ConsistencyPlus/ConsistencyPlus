@@ -73,6 +73,9 @@ public class CPlusBlocks {
 	public static final Block STONE_PILLAR = register("stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block CRACKED_STONE_PILLAR = register("cracked_stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block MOSSY_STONE_PILLAR = register("mossy_stone_pillar", new PillarBlock(FabricBlockSettings.copy(STONE_BRICKS)));
+	public static final Block STONE_CORNER_PILLAR = register("stone_corner_pillar", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+	public static final Block CRACKED_STONE_CORNER_PILLAR = register("cracked_stone_corner_pillar", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
+	public static final Block MOSSY_STONE_CORNER_PILLAR = register("mossy_stone_corner_pillar", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block CRACKED_CHISELED_STONE = register("cracked_chiseled_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block MOSSY_CHISELED_STONE = register("mossy_chiseled_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
 	public static final Block CARVED_STONE = register("carved_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
@@ -120,6 +123,9 @@ public class CPlusBlocks {
 	public static final Block MOSSY_BLACKSTONE_PILLAR = register("mossy_blackstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block CRACKED_BLACKSTONE_PILLAR = register("cracked_blackstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block BLACKSTONE_PILLAR = register("blackstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+	public static final Block MOSSY_BLACKSTONE_CORNER_PILLAR = register("mossy_blackstone_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+	public static final Block CRACKED_BLACKSTONE_CORNER_PILLAR = register("cracked_blackstone_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
+	public static final Block BLACKSTONE_CORNER_PILLAR = register("blackstone_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block CHISELED_BLACKSTONE = register("chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block MOSSY_CHISELED_BLACKSTONE = register("mossy_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block CRACKED_CHISELED_BLACKSTONE = register("cracked_chiseled_blackstone", new Block(FabricBlockSettings.copy(POLISHED_BLACKSTONE_BRICKS)));
@@ -162,6 +168,7 @@ public class CPlusBlocks {
 	//Pillars and Chiseled
 	public static final Block CHISELED_SANDSTONE = register("chiseled_sandstone", new Block(FabricBlockSettings.copy(SANDSTONE)));
 	public static final Block SANDSTONE_PILLAR = register("sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(SANDSTONE)));
+	public static final Block SANDSTONE_CORNER_PILLAR = register("sandstone_corner_pillar", new Block(FabricBlockSettings.copy(SANDSTONE)));
 
 	//Red Sandstone
 	public static final Block RED_SANDSTONE_GATE = register("red_sandstone_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
@@ -198,6 +205,7 @@ public class CPlusBlocks {
 	//Pillars and Chiseled
 	public static final Block CHISELED_RED_SANDSTONE = register("chiseled_red_sandstone", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
 	public static final Block RED_SANDSTONE_PILLAR = register("red_sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(RED_SANDSTONE)));
+	public static final Block RED_SANDSTONE_CORNER_PILLAR = register("red_sandstone_corner_pillar", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
 
 //Quartz
 
@@ -236,6 +244,7 @@ public class CPlusBlocks {
 	public static final Block QUARTZ_BRICK_GATE = register("quartz_brick_gate", new FenceGateBlock(FabricBlockSettings.copy(QUARTZ_BRICKS)));
 
 	public static final Block CARVED_QUARTZ = register("carved_quartz", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
+	public static final Block QUARTZ_CORNER_PILLAR = register("quartz_corner_pillar", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 
 	//Andesite
 	public static final Block ANDESITE_GATE = register("andesite_gate", new FenceGateBlock(FabricBlockSettings.copy(ANDESITE)));
@@ -352,12 +361,12 @@ public class CPlusBlocks {
 	public static final Block ANDESITE_PILLAR = register("andesite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_ANDESITE_PILLAR = register("cracked_andesite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_ANDESITE_PILLAR = register("mossy_andesite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_ANDESITE)));
+	public static final Block ANDESITE_CORNER_PILLAR = register("andesite_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
+	public static final Block CRACKED_ANDESITE_CORNER_PILLAR = register("cracked_andesite_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
+	public static final Block MOSSY_ANDESITE_CORNER_PILLAR = register("mossy_andesite_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CHISELED_ANDESITE = register("chiseled_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_CHISELED_ANDESITE = register("cracked_chiseled_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_CHISELED_ANDESITE = register("mossy_chiseled_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
-	//corner pillar
-	//cracked corner pillar
-	//mossy corner pillar
 	public static final Block CARVED_ANDESITE = register("carved_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block CRACKED_CARVED_ANDESITE = register("cracked_carved_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
 	public static final Block MOSSY_CARVED_ANDESITE = register("mossy_carved_andesite", new Block(FabricBlockSettings.copy(POLISHED_ANDESITE)));
@@ -398,6 +407,7 @@ public class CPlusBlocks {
 
 	//Pillars and Chiseled
 	public static final Block DIORITE_PILLAR = register("diorite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_DIORITE)));
+	public static final Block DIORITE_CORNER_PILLAR = register("diorite_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_DIORITE)));
 	public static final Block CHISELED_DIORITE = register("chiseled_diorite", new Block(FabricBlockSettings.copy(POLISHED_DIORITE)));
 	public static final Block CARVED_DIORITE = register("carved_diorite", new Block(FabricBlockSettings.copy(POLISHED_DIORITE)));
 
@@ -438,6 +448,7 @@ public class CPlusBlocks {
 
 	//Pillars and Chiseled
 	public static final Block GRANITE_PILLAR = register("granite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_GRANITE)));
+	public static final Block GRANITE_CORNER_PILLAR = register("granite_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block CHISELED_GRANITE = register("chiseled_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block CARVED_GRANITE = register("carved_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
 
@@ -531,6 +542,7 @@ public class CPlusBlocks {
 	//Pillar and Chiseled
 	public static final Block CHISELED_PRISMARINE = register("chiseled_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
 	public static final Block PRISMARINE_PILLAR = register("prismarine_pillar", new PillarBlock(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
+	public static final Block PRISMARINE_CORNER_PILLAR = register("prismarine_corner_pillar", new Block(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
 	public static final Block CARVED_PRISMARINE = register("carved_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE_BRICKS)));
 
 
@@ -576,6 +588,7 @@ public class CPlusBlocks {
 	//Pillar and Chiseled
 	public static final Block CHISELED_DARK_PRISMARINE = register("chiseled_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_PILLAR = register("dark_prismarine_pillar", new PillarBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
+	public static final Block DARK_PRISMARINE_CORNER_PILLAR = register("dark_prismarine_corner_pillar", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block CARVED_DARK_PRISMARINE = register("carved_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
 
 
@@ -669,6 +682,7 @@ public class CPlusBlocks {
 	//Pillars and Chiseled
 	public static final Block CHISELED_END_STONE = register("chiseled_end_stone", new Block(FabricBlockSettings.copy(END_STONE)));
 	public static final Block END_STONE_PILLAR = register("end_stone_pillar", new PillarBlock(FabricBlockSettings.copy(END_STONE_BRICKS)));
+	public static final Block END_STONE_CORNER_PILLAR = register("end_stone_corner_pillar", new Block(FabricBlockSettings.copy(END_STONE_BRICKS)));
 	public static final Block CARVED_END_STONE = register("carved_end_stone", new Block(FabricBlockSettings.copy(END_STONE_BRICKS)));
 
 
@@ -717,6 +731,7 @@ public class CPlusBlocks {
 	public static final Block CARVED_SOUL_SANDSTONE = register("carved_soul_sandstone", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block CHISELED_SOUL_SANDSTONE = register("chiseled_soul_sandstone", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_PILLAR = register("soul_sandstone_pillar", new PillarBlock(FabricBlockSettings.copy(SOUL_SANDSTONE)));
+	public static final Block SOUL_SANDSTONE_CORNER_PILLAR = register("soul_sandstone_corner_pillar", new Block(FabricBlockSettings.copy(SOUL_SANDSTONE)));
 
 	//Obsidian
 	public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
@@ -790,10 +805,12 @@ public class CPlusBlocks {
 	public static final Block CRYING_OBSIDIAN_TILE_GATE = register("crying_obsidian_tile_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 
 	public static final Block OBSIDIAN_PILLAR = register("obsidian_pillar", new PillarBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
+	public static final Block OBSIDIAN_CORNER_PILLAR = register("obsidian_corner_pillar", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block CHISELED_OBSIDIAN = register("chiseled_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block CARVED_OBSIDIAN = register("carved_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 
 	public static final Block CRYING_OBSIDIAN_PILLAR = register("crying_obsidian_pillar", new PillarBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
+	public static final Block CRYING_OBSIDIAN_CORNER_PILLAR = register("crying_obsidian_corner_pillar", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CHISELED_CRYING_OBSIDIAN = register("chiseled_crying_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CARVED_CRYING_OBSIDIAN = register("carved_crying_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 
@@ -840,6 +857,7 @@ public class CPlusBlocks {
 
 	//Pillars and Chiseled
 	public static final Block CALCITE_PILLAR = register("calcite_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_CALCITE)));
+	public static final Block CALCITE_CORNER_PILLAR = register("calcite_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_CALCITE)));
 	public static final Block CHISELED_CALCITE = register("chiseled_calcite", new Block(FabricBlockSettings.copy(POLISHED_CALCITE)));
 	public static final Block CARVED_CALCITE = register("carved_calcite", new Block(FabricBlockSettings.copy(POLISHED_CALCITE)));
 
@@ -886,6 +904,7 @@ public class CPlusBlocks {
 
 	//Pillars and Chiseled
 	public static final Block DRIPSTONE_PILLAR = register("dripstone_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
+	public static final Block DRIPSTONE_CORNER_PILLAR = register("dripstone_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 	public static final Block CHISELED_DRIPSTONE = register("chiseled_dripstone", new Block(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 	public static final Block CARVED_DRIPSTONE = register("carved_dripstone", new Block(FabricBlockSettings.copy(POLISHED_DRIPSTONE)));
 
@@ -932,6 +951,7 @@ public class CPlusBlocks {
 
 	//Pillars and Chiseled
 	public static final Block TUFF_PILLAR = register("tuff_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_TUFF)));
+	public static final Block TUFF_CORNER_PILLAR = register("tuff_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_TUFF)));
 	public static final Block CHISELED_TUFF = register("chiseled_tuff", new Block(FabricBlockSettings.copy(POLISHED_TUFF)));
 	public static final Block CARVED_TUFF = register("carved_tuff", new Block(FabricBlockSettings.copy(POLISHED_TUFF)));
 
@@ -977,6 +997,7 @@ public class CPlusBlocks {
 
 	//Pillars and Chiseled
 	public static final Block DEEPSLATE_PILLAR = register("deepslate_pillar", new PillarBlock(FabricBlockSettings.copy(POLISHED_DEEPSLATE)));
+	public static final Block DEEPSLATE_CORNER_PILLAR = register("deepslate_corner_pillar", new Block(FabricBlockSettings.copy(POLISHED_DEEPSLATE)));
 	public static final Block CARVED_DEEPSLATE = register("carved_deepslate", new Block(FabricBlockSettings.copy(POLISHED_DEEPSLATE)));
 
 
@@ -1556,6 +1577,25 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BROWN_TERRACOTTA_PILLAR = register("brown_terracotta_pillar", new PillarBlock(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block TERRACOTTA_PILLAR = register("terracotta_pillar", new PillarBlock(FabricBlockSettings.copy(TERRACOTTA)));
 
+	public static final Block RED_TERRACOTTA_CORNER_PILLAR = register("red_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
+	public static final Block ORANGE_TERRACOTTA_CORNER_PILLAR = register("orange_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
+	public static final Block YELLOW_TERRACOTTA_CORNER_PILLAR = register("yellow_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
+	public static final Block LIME_TERRACOTTA_CORNER_PILLAR = register("lime_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(LIME_TERRACOTTA)));
+	public static final Block GREEN_TERRACOTTA_CORNER_PILLAR = register("green_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(GREEN_TERRACOTTA)));
+	public static final Block BLUE_TERRACOTTA_CORNER_PILLAR = register("blue_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(BLUE_TERRACOTTA)));
+	public static final Block CYAN_TERRACOTTA_CORNER_PILLAR = register("cyan_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(CYAN_TERRACOTTA)));
+	public static final Block LIGHT_BLUE_TERRACOTTA_CORNER_PILLAR = register("light_blue_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(LIGHT_BLUE_TERRACOTTA)));
+	public static final Block PURPLE_TERRACOTTA_CORNER_PILLAR = register("purple_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(PURPLE_TERRACOTTA)));
+	public static final Block MAGENTA_TERRACOTTA_CORNER_PILLAR = register("magenta_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(MAGENTA_TERRACOTTA)));
+	public static final Block PINK_TERRACOTTA_CORNER_PILLAR = register("pink_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(PINK_TERRACOTTA)));
+	public static final Block WHITE_TERRACOTTA_CORNER_PILLAR = register("white_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(WHITE_TERRACOTTA)));
+	public static final Block LIGHT_GRAY_TERRACOTTA_CORNER_PILLAR = register("light_gray_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(LIGHT_GRAY_TERRACOTTA)));
+	public static final Block GRAY_TERRACOTTA_CORNER_PILLAR = register("gray_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(GRAY_TERRACOTTA)));
+	public static final Block BLACK_TERRACOTTA_CORNER_PILLAR = register("black_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(BLACK_TERRACOTTA)));
+	public static final Block BROWN_TERRACOTTA_CORNER_PILLAR = register("brown_terracotta_corner_pillar", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
+	public static final Block TERRACOTTA_CORNER_PILLAR = register("terracotta_corner_pillar", new Block(FabricBlockSettings.copy(TERRACOTTA)));
+
+
 	public static final Block CHISELED_RED_TERRACOTTA = register("chiseled_red_terracotta", new Block(FabricBlockSettings.copy(RED_TERRACOTTA)));
 	public static final Block CHISELED_ORANGE_TERRACOTTA = register("chiseled_orange_terracotta", new Block(FabricBlockSettings.copy(ORANGE_TERRACOTTA)));
 	public static final Block CHISELED_YELLOW_TERRACOTTA = register("chiseled_yellow_terracotta", new Block(FabricBlockSettings.copy(YELLOW_TERRACOTTA)));
@@ -2124,6 +2164,23 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_CONCRETE_PILLAR = register("black_concrete_pillar", new PillarBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_PILLAR = register("brown_concrete_pillar", new PillarBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
 
+	public static final Block RED_CONCRETE_CORNER_PILLAR = register("red_concrete_corner_pillar", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
+	public static final Block ORANGE_CONCRETE_CORNER_PILLAR = register("orange_concrete_corner_pillar", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
+	public static final Block YELLOW_CONCRETE_CORNER_PILLAR = register("yellow_concrete_corner_pillar", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
+	public static final Block LIME_CONCRETE_CORNER_PILLAR = register("lime_concrete_corner_pillar", new Block(FabricBlockSettings.copy(LIME_CONCRETE)));
+	public static final Block GREEN_CONCRETE_CORNER_PILLAR = register("green_concrete_corner_pillar", new Block(FabricBlockSettings.copy(GREEN_CONCRETE)));
+	public static final Block BLUE_CONCRETE_CORNER_PILLAR = register("blue_concrete_corner_pillar", new Block(FabricBlockSettings.copy(BLUE_CONCRETE)));
+	public static final Block CYAN_CONCRETE_CORNER_PILLAR = register("cyan_concrete_corner_pillar", new Block(FabricBlockSettings.copy(CYAN_CONCRETE)));
+	public static final Block LIGHT_BLUE_CONCRETE_CORNER_PILLAR = register("light_blue_concrete_corner_pillar", new Block(FabricBlockSettings.copy(LIGHT_BLUE_CONCRETE)));
+	public static final Block PURPLE_CONCRETE_CORNER_PILLAR = register("purple_concrete_corner_pillar", new Block(FabricBlockSettings.copy(PURPLE_CONCRETE)));
+	public static final Block MAGENTA_CONCRETE_CORNER_PILLAR = register("magenta_concrete_corner_pillar", new Block(FabricBlockSettings.copy(MAGENTA_CONCRETE)));
+	public static final Block PINK_CONCRETE_CORNER_PILLAR = register("pink_concrete_corner_pillar", new Block(FabricBlockSettings.copy(PINK_CONCRETE)));
+	public static final Block WHITE_CONCRETE_CORNER_PILLAR = register("white_concrete_corner_pillar", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
+	public static final Block LIGHT_GRAY_CONCRETE_CORNER_PILLAR = register("light_gray_concrete_corner_pillar", new Block(FabricBlockSettings.copy(LIGHT_GRAY_CONCRETE)));
+	public static final Block GRAY_CONCRETE_CORNER_PILLAR = register("gray_concrete_corner_pillar", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
+	public static final Block BLACK_CONCRETE_CORNER_PILLAR = register("black_concrete_corner_pillar", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
+	public static final Block BROWN_CONCRETE_CORNER_PILLAR = register("brown_concrete_corner_pillar", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
+
 	public static final Block CHISELED_RED_CONCRETE = register("chiseled_red_concrete", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block CHISELED_ORANGE_CONCRETE = register("chiseled_orange_concrete", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
 	public static final Block CHISELED_YELLOW_CONCRETE = register("chiseled_yellow_concrete", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
@@ -2411,6 +2468,8 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
         public static final Block SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
         public static final Block POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
         public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+		public static final Block PURPUR_CORNER_PILLAR = register("purpur_corner_pillar", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
+
 
         // Calculated Non Joke/Deprecated Block Count: 1881
     // With Joke/Deprecated Blocks: 1881+20=1901

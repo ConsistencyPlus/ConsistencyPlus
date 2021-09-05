@@ -50,6 +50,9 @@ public class CPlusItems {
 	public static final Item STONE_PILLAR = register("stone_pillar", new BlockItem(CPlusBlocks.STONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item MOSSY_STONE_PILLAR = register("mossy_stone_pillar", new BlockItem(CPlusBlocks.MOSSY_STONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CRACKED_STONE_PILLAR = register("cracked_stone_pillar", new BlockItem(CPlusBlocks.CRACKED_STONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item STONE_CORNER_PILLAR = register("stone_corner_pillar", new BlockItem(CPlusBlocks.STONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item MOSSY_STONE_CORNER_PILLAR = register("mossy_stone_corner_pillar", new BlockItem(CPlusBlocks.MOSSY_STONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CRACKED_STONE_CORNER_PILLAR = register("cracked_stone_corner_pillar", new BlockItem(CPlusBlocks.CRACKED_STONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CRACKED_CHISELED_STONE = register("cracked_chiseled_stone", new BlockItem(CPlusBlocks.CRACKED_CHISELED_STONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item MOSSY_CHISELED_STONE = register("mossy_chiseled_stone", new BlockItem(CPlusBlocks.MOSSY_CHISELED_STONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item STONE_WALL = register("stone_wall", new BlockItem(CPlusBlocks.STONE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -102,6 +105,9 @@ public class CPlusItems {
 	public static final Item BLACKSTONE_PILLAR = register("blackstone_pillar", new BlockItem(CPlusBlocks.BLACKSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CRACKED_BLACKSTONE_PILLAR = register("cracked_blackstone_pillar", new BlockItem(CPlusBlocks.CRACKED_BLACKSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item MOSSY_BLACKSTONE_PILLAR = register("mossy_blackstone_pillar", new BlockItem(CPlusBlocks.MOSSY_BLACKSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BLACKSTONE_CORNER_PILLAR = register("blackstone_corner_pillar", new BlockItem(CPlusBlocks.BLACKSTONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CRACKED_BLACKSTONE_CORNER_PILLAR = register("cracked_blackstone_corner_pillar", new BlockItem(CPlusBlocks.CRACKED_BLACKSTONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item MOSSY_BLACKSTONE_CORNER_PILLAR = register("mossy_blackstone_corner_pillar", new BlockItem(CPlusBlocks.MOSSY_BLACKSTONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CRACKED_CARVED_BLACKSTONE = register("cracked_carved_blackstone", new BlockItem(CPlusBlocks.CRACKED_CARVED_BLACKSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item MOSSY_CARVED_BLACKSTONE = register("mossy_carved_blackstone", new BlockItem(CPlusBlocks.MOSSY_CARVED_BLACKSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
@@ -141,6 +147,7 @@ public class CPlusItems {
 
 	//Pillars and Chiseled
 	public static final Item SANDSTONE_PILLAR = register("sandstone_pillar", new BlockItem(CPlusBlocks.SANDSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SANDSTONE_CORNER_PILLAR = register("sandstone_corner_pillar", new BlockItem(CPlusBlocks.SANDSTONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CHISELED_SANDSTONE = register("chiseled_sandstone", new BlockItem(CPlusBlocks.CHISELED_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	//Red Sandstone
@@ -177,6 +184,7 @@ public class CPlusItems {
 
 	//Pillars and Chiseled
 	public static final Item RED_SANDSTONE_PILLAR = register("red_sandstone_pillar", new BlockItem(CPlusBlocks.RED_SANDSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item RED_SANDSTONE_CORNER_PILLAR = register("red_sandstone_corner_pillar", new BlockItem(CPlusBlocks.RED_SANDSTONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CHISELED_RED_SANDSTONE = register("chiseled_red_sandstone", new BlockItem(CPlusBlocks.CHISELED_RED_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 //Quartz
@@ -217,6 +225,7 @@ public class CPlusItems {
 
 	//Pillar and Chiseled
 	public static final Item CARVED_QUARTZ = register("carved_quartz", new BlockItem(CPlusBlocks.CARVED_QUARTZ, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item QUARTZ_CORNER_PILLAR = register("quartz_corner_pillar", new BlockItem(CPlusBlocks.QUARTZ_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	//Andesite
 	public static final Item ANDESITE_GATE = register("andesite_gate", new BlockItem(CPlusBlocks.ANDESITE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -336,9 +345,10 @@ public class CPlusItems {
 	public static final Item ANDESITE_PILLAR = register("andesite_pillar", new BlockItem(CPlusBlocks.ANDESITE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CRACKED_ANDESITE_PILLAR = register("cracked_andesite_pillar", new BlockItem(CPlusBlocks.CRACKED_ANDESITE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item MOSSY_ANDESITE_PILLAR = register("mossy_andesite_pillar", new BlockItem(CPlusBlocks.MOSSY_ANDESITE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	//corner pillar
-	//cracked corner pillar
-	//mossy corner pillar
+	public static final Item ANDESITE_CORNER_PILLAR = register("andesite_corner_pillar", new BlockItem(CPlusBlocks.ANDESITE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CRACKED_ANDESITE_CORNER_PILLAR = register("cracked_andesite_corner_pillar", new BlockItem(CPlusBlocks.CRACKED_ANDESITE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item MOSSY_ANDESITE_CORNER_PILLAR = register("mossy_andesite_corner_pillar", new BlockItem(CPlusBlocks.MOSSY_ANDESITE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
 	public static final Item CARVED_ANDESITE = register("carved_andesite", new BlockItem(CPlusBlocks.CARVED_ANDESITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CRACKED_CARVED_ANDESITE = register("cracked_carved_andesite", new BlockItem(CPlusBlocks.CRACKED_CARVED_ANDESITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item MOSSY_CARVED_ANDESITE = register("mossy_carved_andesite", new BlockItem(CPlusBlocks.MOSSY_CARVED_ANDESITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
@@ -381,6 +391,7 @@ public class CPlusItems {
 	//Pillars and Chiseled
 	public static final Item CHISELED_DIORITE = register("chiseled_diorite", new BlockItem(CPlusBlocks.CHISELED_DIORITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item DIORITE_PILLAR = register("diorite_pillar", new BlockItem(CPlusBlocks.DIORITE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item DIORITE_CORNER_PILLAR = register("diorite_corner_pillar", new BlockItem(CPlusBlocks.DIORITE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CARVED_DIORITE = register("carved_diorite", new BlockItem(CPlusBlocks.CARVED_DIORITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	//Granite
@@ -420,6 +431,7 @@ public class CPlusItems {
 	//Pillars and Chiseled
 	public static final Item CHISELED_GRANITE = register("chiseled_granite", new BlockItem(CPlusBlocks.CHISELED_GRANITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item GRANITE_PILLAR = register("granite_pillar", new BlockItem(CPlusBlocks.GRANITE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item GRANITE_CORNER_PILLAR = register("granite_corner_pillar", new BlockItem(CPlusBlocks.GRANITE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CARVED_GRANITE = register("carved_granite", new BlockItem(CPlusBlocks.CARVED_GRANITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	//clay
@@ -508,6 +520,7 @@ public class CPlusItems {
 	//Pillar and Chiseled
 	public static final Item CHISELED_PRISMARINE = register("chiseled_prismarine", new BlockItem(CPlusBlocks.CHISELED_PRISMARINE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item PRISMARINE_PILLAR = register("prismarine_pillar", new BlockItem(CPlusBlocks.PRISMARINE_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item PRISMARINE_CORNER_PILLAR = register("prismarine_corner_pillar", new BlockItem(CPlusBlocks.PRISMARINE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CARVED_PRISMARINE = register("carved_prismarine", new BlockItem(CPlusBlocks.CARVED_PRISMARINE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 //Dark Prismarine
@@ -553,6 +566,7 @@ public class CPlusItems {
 	//Pillar and Chiseled
 	public static final Item CHISELED_DARK_PRISMARINE = register("chiseled_dark_prismarine", new BlockItem(CPlusBlocks.CHISELED_DARK_PRISMARINE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item DARK_PRISMARINE_PILLAR = register("dark_prismarine_pillar", new BlockItem(CPlusBlocks.DARK_PRISMARINE_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item DARK_PRISMARINE_CORNER_PILLAR = register("dark_prismarine_corner_pillar", new BlockItem(CPlusBlocks.DARK_PRISMARINE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CARVED_DARK_PRISMARINE = register("carved_dark_prismarine", new BlockItem(CPlusBlocks.CARVED_DARK_PRISMARINE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 //Purpur
@@ -605,6 +619,7 @@ public class CPlusItems {
 	//Pillars and Chiseled
 	public static final Item CHISELED_PURPUR = register("chiseled_purpur", new BlockItem(CPlusBlocks.CHISELED_PURPUR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CARVED_PURPUR = register("carved_purpur", new BlockItem(CPlusBlocks.CARVED_PURPUR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item PURPUR_CORNER_PILLAR = register("purpur_corner_pillar", new BlockItem(CPlusBlocks.PURPUR_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 //End Stone
 
@@ -647,6 +662,7 @@ public class CPlusItems {
 	// Pillars and Chiseled
 	public static final Item CHISELED_END_STONE = register("chiseled_end_stone", new BlockItem(CPlusBlocks.CHISELED_END_STONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item END_STONE_PILLAR = register("end_stone_pillar", new BlockItem(CPlusBlocks.END_STONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item END_STONE_CORNER_PILLAR = register("end_stone_corner_pillar", new BlockItem(CPlusBlocks.END_STONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CARVED_END_STONE = register("carved_end_stone", new BlockItem(CPlusBlocks.CARVED_END_STONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 
@@ -695,6 +711,7 @@ public class CPlusItems {
 
 	public static final Item CHISELED_SOUL_SANDSTONE = register("chiseled_soul_sandstone", new BlockItem(CPlusBlocks.CHISELED_SOUL_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item SOUL_SANDSTONE_PILLAR = register("soul_sandstone_pillar", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SOUL_SANDSTONE_CORNER_PILLAR = register("soul_sandstone_corner_pillar", new BlockItem(CPlusBlocks.SOUL_SANDSTONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CARVED_SOUL_SANDSTONE = register("carved_soul_sandstone", new BlockItem(CPlusBlocks.CARVED_SOUL_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	// Obsidian
@@ -769,10 +786,12 @@ public class CPlusItems {
 	public static final Item CRYING_OBSIDIAN_TILE_GATE = register("crying_obsidian_tile_gate", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	public static final Item OBSIDIAN_PILLAR = register("obsidian_pillar", new BlockItem(CPlusBlocks.OBSIDIAN_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item OBSIDIAN_CORNER_PILLAR = register("obsidian_corner_pillar", new BlockItem(CPlusBlocks.OBSIDIAN_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CHISELED_OBSIDIAN = register("chiseled_obsidian", new BlockItem(CPlusBlocks.CHISELED_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CARVED_OBSIDIAN = register("carved_obsidian", new BlockItem(CPlusBlocks.CARVED_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	public static final Item CRYING_OBSIDIAN_PILLAR = register("crying_obsidian_pillar", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRYING_OBSIDIAN_CORNER_PILLAR = register("crying_obsidian_corner_pillar", new BlockItem(CPlusBlocks.CRYING_OBSIDIAN_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CHISELED_CRYING_OBSIDIAN = register("chiseled_crying_obsidian", new BlockItem(CPlusBlocks.CHISELED_CRYING_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CARVED_CRYING_OBSIDIAN = register("carved_crying_obsidian", new BlockItem(CPlusBlocks.CARVED_CRYING_OBSIDIAN, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
@@ -819,6 +838,8 @@ public class CPlusItems {
 
 	public static final Item CHISELED_CALCITE = register("chiseled_calcite", new BlockItem(CPlusBlocks.CHISELED_CALCITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item CALCITE_PILLAR = register("calcite_pillar", new BlockItem(CPlusBlocks.CALCITE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CALCITE_CORNER_PILLAR = register("calcite_corner_pillar", new BlockItem(CPlusBlocks.CALCITE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
 	public static final Item CARVED_CALCITE = register("carved_calcite", new BlockItem(CPlusBlocks.CARVED_CALCITE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	//Dripstone
@@ -863,6 +884,9 @@ public class CPlusItems {
 
 	public static final Item CHISELED_DRIPSTONE = register("chiseled_dripstone", new BlockItem(CPlusBlocks.CHISELED_DRIPSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item DRIPSTONE_PILLAR = register("dripstone_pillar", new BlockItem(CPlusBlocks.DRIPSTONE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item DRIPSTONE_CORNER_PILLAR = register("dripstone_corner_pillar", new BlockItem(CPlusBlocks.DRIPSTONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+
 	public static final Item CARVED_DRIPSTONE = register("carved_dripstone", new BlockItem(CPlusBlocks.CARVED_DRIPSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	//Tuff
@@ -907,6 +931,9 @@ public class CPlusItems {
 
 	public static final Item CHISELED_TUFF = register("chiseled_tuff", new BlockItem(CPlusBlocks.CHISELED_TUFF, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 	public static final Item TUFF_PILLAR = register("tuff_pillar", new BlockItem(CPlusBlocks.TUFF_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TUFF_CORNER_PILLAR = register("tuff_corner_pillar", new BlockItem(CPlusBlocks.TUFF_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+
 	public static final Item CARVED_TUFF = register("carved_tuff", new BlockItem(CPlusBlocks.CARVED_TUFF, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	// Deepslate
@@ -950,6 +977,8 @@ public class CPlusItems {
 	public static final Item CUT_DEEPSLATE_GATE = register("cut_deepslate_gate", new BlockItem(CPlusBlocks.CUT_DEEPSLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	public static final Item DEEPSLATE_PILLAR = register("deepslate_pillar", new BlockItem(CPlusBlocks.DEEPSLATE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item DEEPSLATE_CORNER_PILLAR = register("deepslate_corner_pillar", new BlockItem(CPlusBlocks.DEEPSLATE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
 	public static final Item CARVED_DEEPSLATE = register("carved_deepslate", new BlockItem(CPlusBlocks.CARVED_DEEPSLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
     /*
@@ -1528,6 +1557,26 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Item BLACK_TERRACOTTA_PILLAR = register("black_terracotta_pillar", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item BROWN_TERRACOTTA_PILLAR = register("brown_terracotta_pillar", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item TERRACOTTA_PILLAR = register("terracotta_pillar", new BlockItem(CPlusBlocks.TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+	public static final Item RED_TERRACOTTA_CORNER_PILLAR = register("red_terracotta_corner_pillar", new BlockItem(CPlusBlocks.RED_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item ORANGE_TERRACOTTA_CORNER_PILLAR = register("orange_terracotta_corner_pillar", new BlockItem(CPlusBlocks.ORANGE_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item YELLOW_TERRACOTTA_CORNER_PILLAR = register("yellow_terracotta_corner_pillar", new BlockItem(CPlusBlocks.YELLOW_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIME_TERRACOTTA_CORNER_PILLAR = register("lime_terracotta_corner_pillar", new BlockItem(CPlusBlocks.LIME_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GREEN_TERRACOTTA_CORNER_PILLAR = register("green_terracotta_corner_pillar", new BlockItem(CPlusBlocks.GREEN_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLUE_TERRACOTTA_CORNER_PILLAR = register("blue_terracotta_corner_pillar", new BlockItem(CPlusBlocks.BLUE_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item CYAN_TERRACOTTA_CORNER_PILLAR = register("cyan_terracotta_corner_pillar", new BlockItem(CPlusBlocks.CYAN_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_BLUE_TERRACOTTA_CORNER_PILLAR = register("light_blue_terracotta_corner_pillar", new BlockItem(CPlusBlocks.LIGHT_BLUE_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PURPLE_TERRACOTTA_CORNER_PILLAR = register("purple_terracotta_corner_pillar", new BlockItem(CPlusBlocks.PURPLE_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item MAGENTA_TERRACOTTA_CORNER_PILLAR = register("magenta_terracotta_corner_pillar", new BlockItem(CPlusBlocks.MAGENTA_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PINK_TERRACOTTA_CORNER_PILLAR = register("pink_terracotta_corner_pillar", new BlockItem(CPlusBlocks.PINK_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item WHITE_TERRACOTTA_CORNER_PILLAR = register("white_terracotta_corner_pillar", new BlockItem(CPlusBlocks.WHITE_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_GRAY_TERRACOTTA_CORNER_PILLAR = register("light_gray_terracotta_corner_pillar", new BlockItem(CPlusBlocks.LIGHT_GRAY_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GRAY_TERRACOTTA_CORNER_PILLAR = register("gray_terracotta_corner_pillar", new BlockItem(CPlusBlocks.GRAY_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLACK_TERRACOTTA_CORNER_PILLAR = register("black_terracotta_corner_pillar", new BlockItem(CPlusBlocks.BLACK_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BROWN_TERRACOTTA_CORNER_PILLAR = register("brown_terracotta_corner_pillar", new BlockItem(CPlusBlocks.BROWN_TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item TERRACOTTA_CORNER_PILLAR = register("terracotta_corner_pillar", new BlockItem(CPlusBlocks.TERRACOTTA_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+
 	public static final Item CHISELED_RED_TERRACOTTA = register("chiseled_red_terracotta", new BlockItem(CPlusBlocks.CHISELED_RED_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item CHISELED_ORANGE_TERRACOTTA = register("chiseled_orange_terracotta", new BlockItem(CPlusBlocks.CHISELED_ORANGE_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item CHISELED_YELLOW_TERRACOTTA = register("chiseled_yellow_terracotta", new BlockItem(CPlusBlocks.CHISELED_YELLOW_TERRACOTTA, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
@@ -2093,6 +2142,24 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Item GRAY_CONCRETE_PILLAR = register("gray_concrete_pillar", new BlockItem(CPlusBlocks.GRAY_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item BLACK_CONCRETE_PILLAR = register("black_concrete_pillar", new BlockItem(CPlusBlocks.BLACK_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item BROWN_CONCRETE_PILLAR = register("brown_concrete_pillar", new BlockItem(CPlusBlocks.BROWN_CONCRETE_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
+	public static final Item RED_CONCRETE_CORNER_PILLAR = register("red_concrete_corner_pillar", new BlockItem(CPlusBlocks.RED_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item ORANGE_CONCRETE_CORNER_PILLAR = register("orange_concrete_corner_pillar", new BlockItem(CPlusBlocks.ORANGE_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item YELLOW_CONCRETE_CORNER_PILLAR = register("yellow_concrete_corner_pillar", new BlockItem(CPlusBlocks.YELLOW_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIME_CONCRETE_CORNER_PILLAR = register("lime_concrete_corner_pillar", new BlockItem(CPlusBlocks.LIME_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GREEN_CONCRETE_CORNER_PILLAR = register("green_concrete_corner_pillar", new BlockItem(CPlusBlocks.GREEN_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLUE_CONCRETE_CORNER_PILLAR = register("blue_concrete_corner_pillar", new BlockItem(CPlusBlocks.BLUE_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item CYAN_CONCRETE_CORNER_PILLAR = register("cyan_concrete_corner_pillar", new BlockItem(CPlusBlocks.CYAN_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_BLUE_CONCRETE_CORNER_PILLAR = register("light_blue_concrete_corner_pillar", new BlockItem(CPlusBlocks.LIGHT_BLUE_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PURPLE_CONCRETE_CORNER_PILLAR = register("purple_concrete_corner_pillar", new BlockItem(CPlusBlocks.PURPLE_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item MAGENTA_CONCRETE_CORNER_PILLAR = register("magenta_concrete_corner_pillar", new BlockItem(CPlusBlocks.MAGENTA_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PINK_CONCRETE_CORNER_PILLAR = register("pink_concrete_corner_pillar", new BlockItem(CPlusBlocks.PINK_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item WHITE_CONCRETE_CORNER_PILLAR = register("white_concrete_corner_pillar", new BlockItem(CPlusBlocks.WHITE_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_GRAY_CONCRETE_CORNER_PILLAR = register("light_gray_concrete_corner_pillar", new BlockItem(CPlusBlocks.LIGHT_GRAY_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GRAY_CONCRETE_CORNER_PILLAR = register("gray_concrete_corner_pillar", new BlockItem(CPlusBlocks.GRAY_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLACK_CONCRETE_CORNER_PILLAR = register("black_concrete_corner_pillar", new BlockItem(CPlusBlocks.BLACK_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BROWN_CONCRETE_CORNER_PILLAR = register("brown_concrete_corner_pillar", new BlockItem(CPlusBlocks.BROWN_CONCRETE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+
 	public static final Item CHISELED_RED_CONCRETE = register("chiseled_red_concrete", new BlockItem(CPlusBlocks.CHISELED_RED_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item CHISELED_ORANGE_CONCRETE = register("chiseled_orange_concrete", new BlockItem(CPlusBlocks.CHISELED_ORANGE_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item CHISELED_YELLOW_CONCRETE = register("chiseled_yellow_concrete", new BlockItem(CPlusBlocks.CHISELED_YELLOW_CONCRETE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
@@ -2344,7 +2411,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Item JACK_O_SOUL = register("jack_o_soul", new BlockItem(CPlusBlocks.JACK_O_SOUL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     // public static final Item CHARCOAL_BLOCK = register("charcoal_block", new BlockItem(CPlusBlocks.CHARCOAL_BLOCK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(CPlusBlocks.WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-    // public static final Item COPPER_NUGGET = register("copper_nugget", new Item(CPlusItemGroups.consistencyPlusMiscItemSettings()));
+     public static final Item COPPER_NUGGET = register("copper_nugget", new Item(CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     public static final Item PINEAPPLE = register("pineapple", new BlockItem(CPlusBlocks.PINEAPPLE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
     public static final Item KFP_BLOCK = register("kfp_block", new BlockItem(CPlusBlocks.KFP_BLOCK, new Item.Settings()));

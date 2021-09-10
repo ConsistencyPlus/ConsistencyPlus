@@ -45,6 +45,15 @@
   "block.minecraft.brick_stairs": "Terracotta Brick Stairs",
   "block.minecraft.brick_wall": "Terracotta Brick Wall",
 
+  "block.minecraft.cut_copper": "Copper Tiles",
+  "block.minecraft.exposed_cut_copper": "Exposed Copper Tiles",
+  "block.minecraft.weathered_cut_copper": "Weathered Copper Tiles",
+  "block.minecraft.oxidized_cut_copper": "Oxidized Copper Tiles",
+  "block.minecraft.waxed_cut_copper": "Waxed Copper Tiles",
+  "block.minecraft.waxed_exposed_cut_copper": "Waxed Exposed Copper Tiles",
+  "block.minecraft.waxed_weathered_cut_copper": "Waxed Weathered Copper Tiles",
+  "block.minecraft.waxed_oxidized_cut_copper": "Waxed Oxidized Copper Tiles",
+
   "block.minecraft.oak_fence_gate": "Oak Gate",
   "block.minecraft.birch_fence_gate": "Birch Gate",
   "block.minecraft.spruce_fence_gate": "Spruce Gate",
@@ -2077,11 +2086,9 @@
   "block.consistency_plus.dirt_slab": "Dirt Slab",
   "block.consistency_plus.dirt_stairs": "Dirt Stairs",
   "block.consistency_plus.dirt_wall": "Dirt Wall",
-
   "block.consistency_plus.grass_slab": "Grass Slab",
   "block.consistency_plus.grass_stairs": "Grass Stairs",
   "block.consistency_plus.grass_wall": "Grass Wall",
-
   "block.consistency_plus.mycelium_slab": "Mycelium Slab",
   "block.consistency_plus.mycelium_stairs": "Mycelium Stairs",
   "block.consistency_plus.mycelium_wall": "Mycelium Wall",

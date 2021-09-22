@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/cobbled_diorite_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/cobbled_diorite"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/cobbled_diorite_slab_top"
+        }
+    }
+}

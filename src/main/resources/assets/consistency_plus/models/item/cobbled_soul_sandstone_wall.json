@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/wall_inventory",
     "textures": {
-        "wall": "consistency_plus:block/cobbled_soul_sandstone"
+        "wall": "minecraft:block/soul_sandstone_bottom"
     }
 }

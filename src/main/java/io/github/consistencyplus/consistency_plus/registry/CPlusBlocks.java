@@ -224,12 +224,6 @@ public class CPlusBlocks {
 	public static final Block RED_SANDSTONE_CORNER_PILLAR = register("red_sandstone_corner_pillar", new Block(FabricBlockSettings.copy(RED_SANDSTONE)));
 
 //Quartz
-	public static final Block COBBLED_QUARTZ = register("cobbled_quartz", new Block(FabricBlockSettings.copy(QUARTZ_BLOCK)));
-	public static final Block COBBLED_QUARTZ_SLAB = register("cobbled_quartz_slab", new SlabBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
-	public static final Block COBBLED_QUARTZ_STAIRS = register("cobbled_quartz_stairs", new CPlusStairBlock(QUARTZ_BLOCK.getDefaultState(), FabricBlockSettings.copy(QUARTZ_BLOCK)));
-	public static final Block COBBLED_QUARTZ_WALL = register("cobbled_quartz_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
-	public static final Block COBBLED_QUARTZ_GATE = register("cobbled_quartz_gate", new FenceGateBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
-
 	public static final Block QUARTZ_WALL = register("quartz_wall", new WallBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 	public static final Block QUARTZ_GATE = register("quartz_gate", new FenceGateBlock(FabricBlockSettings.copy(QUARTZ_BLOCK)));
 
@@ -546,12 +540,6 @@ public class CPlusBlocks {
 	//Prismarine
 	public static final Block PRISMARINE_GATE = register("prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(PRISMARINE)));
 
-	public static final Block COBBLED_PRISMARINE = register("cobbled_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE)));
-	public static final Block COBBLED_PRISMARINE_SLAB = register("cobbled_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
-	public static final Block COBBLED_PRISMARINE_STAIRS = register("cobbled_prismarine_stairs", new CPlusStairBlock(PRISMARINE.getDefaultState(), FabricBlockSettings.copy(PRISMARINE)));
-	public static final Block COBBLED_PRISMARINE_WALL = register("cobbled_prismarine_wall", new WallBlock(FabricBlockSettings.copy(PRISMARINE)));
-	public static final Block COBBLED_PRISMARINE_GATE = register("cobbled_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(PRISMARINE)));
-
 	//Polished
 	public static final Block POLISHED_PRISMARINE = register("polished_prismarine", new Block(FabricBlockSettings.copy(PRISMARINE)));
 	public static final Block POLISHED_PRISMARINE_SLAB = register("polished_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(PRISMARINE)));
@@ -594,12 +582,6 @@ public class CPlusBlocks {
 	//Dark Prismarine
 	public static final Block DARK_PRISMARINE_WALL = register("dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 	public static final Block DARK_PRISMARINE_GATE = register("dark_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
-
-	public static final Block COBBLED_DARK_PRISMARINE = register("cobbled_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
-	public static final Block COBBLED_DARK_PRISMARINE_SLAB = register("cobbled_dark_prismarine_slab", new SlabBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
-	public static final Block COBBLED_DARK_PRISMARINE_STAIRS = register("cobbled_dark_prismarine_stairs", new CPlusStairBlock(DARK_PRISMARINE.getDefaultState(), FabricBlockSettings.copy(DARK_PRISMARINE)));
-	public static final Block COBBLED_DARK_PRISMARINE_WALL = register("cobbled_dark_prismarine_wall", new WallBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
-	public static final Block COBBLED_DARK_PRISMARINE_GATE = register("cobbled_dark_prismarine_gate", new FenceGateBlock(FabricBlockSettings.copy(DARK_PRISMARINE)));
 
 	//Polished
 	public static final Block POLISHED_DARK_PRISMARINE = register("polished_dark_prismarine", new Block(FabricBlockSettings.copy(DARK_PRISMARINE)));
@@ -650,12 +632,6 @@ public class CPlusBlocks {
 	public static final Block PURPUR_STAIRS = register("purpur_stairs", new CPlusStairBlock(PURPUR_BLOCK.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_WALL = register("purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_GATE = register("purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-
-	public static final Block COBBLED_PURPUR = register("cobbled_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	public static final Block COBBLED_PURPUR_SLAB = register("cobbled_purpur_slab", new SlabBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	public static final Block COBBLED_PURPUR_STAIRS = register("cobbled_purpur_stairs", new CPlusStairBlock(PURPUR_BLOCK.getDefaultState(), FabricBlockSettings.copy(PURPUR_BLOCK)));
-	public static final Block COBBLED_PURPUR_WALL = register("cobbled_purpur_wall", new WallBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
-	public static final Block COBBLED_PURPUR_GATE = register("cobbled_purpur_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
 	//Smooth
 	public static final Block SMOOTH_PURPUR = register("smooth_purpur", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
@@ -812,18 +788,6 @@ public class CPlusBlocks {
 	public static final Block CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new CPlusStairBlock(CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new WallBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
 	public static final Block CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new FenceGateBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F).luminance(10)));
-
-	public static final Block COBBLED_OBSIDIAN = register("cobbled_obsidian", new Block(FabricBlockSettings.copy(OBSIDIAN)));
-	public static final Block COBBLED_OBSIDIAN_SLAB = register("cobbled_obsidian_slab", new SlabBlock(FabricBlockSettings.copy(OBSIDIAN)));
-	public static final Block COBBLED_OBSIDIAN_STAIRS = register("cobbled_obsidian_stairs", new CPlusStairBlock(OBSIDIAN.getDefaultState(), FabricBlockSettings.copy(OBSIDIAN)));
-	public static final Block COBBLED_OBSIDIAN_WALL = register("cobbled_obsidian_wall", new WallBlock(FabricBlockSettings.copy(OBSIDIAN)));
-	public static final Block COBBLED_OBSIDIAN_GATE = register("cobbled_obsidian_gate", new FenceGateBlock(FabricBlockSettings.copy(OBSIDIAN)));
-
-	public static final Block COBBLED_CRYING_OBSIDIAN = register("cobbled_crying_obsidian", new Block(FabricBlockSettings.copy(CRYING_OBSIDIAN)));
-	public static final Block COBBLED_CRYING_OBSIDIAN_SLAB = register("cobbled_crying_obsidian_slab", new SlabBlock(FabricBlockSettings.copy(CRYING_OBSIDIAN)));
-	public static final Block COBBLED_CRYING_OBSIDIAN_STAIRS = register("cobbled_crying_obsidian_stairs", new CPlusStairBlock(CRYING_OBSIDIAN.getDefaultState(), FabricBlockSettings.copy(CRYING_OBSIDIAN)));
-	public static final Block COBBLED_CRYING_OBSIDIAN_WALL = register("cobbled_crying_obsidian_wall", new WallBlock(FabricBlockSettings.copy(CRYING_OBSIDIAN)));
-	public static final Block COBBLED_CRYING_OBSIDIAN_GATE = register("cobbled_crying_obsidian_gate", new FenceGateBlock(FabricBlockSettings.copy(CRYING_OBSIDIAN)));
 
 	public static final Block SMOOTH_OBSIDIAN = register("smooth_obsidian", new Block(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
 	public static final Block SMOOTH_OBSIDIAN_SLAB = register("smooth_obsidian_slab", new SlabBlock(FabricBlockSettings.of((new FabricMaterialBuilder(MapColor.BLACK)).pistonBehavior(BLOCK).build()).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).strength(50.0F, 1200.0F)));
@@ -1897,95 +1861,6 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block GRAY_CONCRETE_GATE = register("gray_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(GRAY_CONCRETE)));
 	public static final Block BLACK_CONCRETE_GATE = register("black_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
 	public static final Block BROWN_CONCRETE_GATE = register("brown_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
-
-	public static final Block COBBLED_RED_CONCRETE = register("cobbled_red_concrete", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
-	public static final Block COBBLED_ORANGE_CONCRETE = register("cobbled_orange_concrete", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));
-	public static final Block COBBLED_YELLOW_CONCRETE = register("cobbled_yellow_concrete", new Block(FabricBlockSettings.copy(YELLOW_CONCRETE)));
-	public static final Block COBBLED_LIME_CONCRETE = register("cobbled_lime_concrete", new Block(FabricBlockSettings.copy(LIME_CONCRETE)));
-	public static final Block COBBLED_GREEN_CONCRETE = register("cobbled_green_concrete", new Block(FabricBlockSettings.copy(GREEN_CONCRETE)));
-	public static final Block COBBLED_BLUE_CONCRETE = register("cobbled_blue_concrete", new Block(FabricBlockSettings.copy(BLUE_CONCRETE)));
-	public static final Block COBBLED_CYAN_CONCRETE = register("cobbled_cyan_concrete", new Block(FabricBlockSettings.copy(CYAN_CONCRETE)));
-	public static final Block COBBLED_LIGHT_BLUE_CONCRETE = register("cobbled_light_blue_concrete", new Block(FabricBlockSettings.copy(LIGHT_BLUE_CONCRETE)));
-	public static final Block COBBLED_PURPLE_CONCRETE = register("cobbled_purple_concrete", new Block(FabricBlockSettings.copy(PURPLE_CONCRETE)));
-	public static final Block COBBLED_MAGENTA_CONCRETE = register("cobbled_magenta_concrete", new Block(FabricBlockSettings.copy(MAGENTA_CONCRETE)));
-	public static final Block COBBLED_PINK_CONCRETE = register("cobbled_pink_concrete", new Block(FabricBlockSettings.copy(PINK_CONCRETE)));
-	public static final Block COBBLED_WHITE_CONCRETE = register("cobbled_white_concrete", new Block(FabricBlockSettings.copy(WHITE_CONCRETE)));
-	public static final Block COBBLED_LIGHT_GRAY_CONCRETE = register("cobbled_light_gray_concrete", new Block(FabricBlockSettings.copy(LIGHT_GRAY_CONCRETE)));
-	public static final Block COBBLED_GRAY_CONCRETE = register("cobbled_gray_concrete", new Block(FabricBlockSettings.copy(GRAY_CONCRETE)));
-	public static final Block COBBLED_BLACK_CONCRETE = register("cobbled_black_concrete", new Block(FabricBlockSettings.copy(BLACK_CONCRETE)));
-	public static final Block COBBLED_BROWN_CONCRETE = register("cobbled_brown_concrete", new Block(FabricBlockSettings.copy(BROWN_CONCRETE)));
-
-	// Terracotta Slab
-	public static final Block COBBLED_RED_CONCRETE_SLAB = register("cobbled_red_concrete_slab", new SlabBlock(FabricBlockSettings.copy(RED_CONCRETE)));
-	public static final Block COBBLED_ORANGE_CONCRETE_SLAB = register("cobbled_orange_concrete_slab", new SlabBlock(FabricBlockSettings.copy(ORANGE_CONCRETE)));
-	public static final Block COBBLED_YELLOW_CONCRETE_SLAB = register("cobbled_yellow_concrete_slab", new SlabBlock(FabricBlockSettings.copy(YELLOW_CONCRETE)));
-	public static final Block COBBLED_LIME_CONCRETE_SLAB = register("cobbled_lime_concrete_slab", new SlabBlock(FabricBlockSettings.copy(LIME_CONCRETE)));
-	public static final Block COBBLED_GREEN_CONCRETE_SLAB = register("cobbled_green_concrete_slab", new SlabBlock(FabricBlockSettings.copy(GREEN_CONCRETE)));
-	public static final Block COBBLED_BLUE_CONCRETE_SLAB = register("cobbled_blue_concrete_slab", new SlabBlock(FabricBlockSettings.copy(BLUE_CONCRETE)));
-	public static final Block COBBLED_CYAN_CONCRETE_SLAB = register("cobbled_cyan_concrete_slab", new SlabBlock(FabricBlockSettings.copy(CYAN_CONCRETE)));
-	public static final Block COBBLED_LIGHT_BLUE_CONCRETE_SLAB = register("cobbled_light_blue_concrete_slab", new SlabBlock(FabricBlockSettings.copy(LIGHT_BLUE_CONCRETE)));
-	public static final Block COBBLED_PURPLE_CONCRETE_SLAB = register("cobbled_purple_concrete_slab", new SlabBlock(FabricBlockSettings.copy(PURPLE_CONCRETE)));
-	public static final Block COBBLED_MAGENTA_CONCRETE_SLAB = register("cobbled_magenta_concrete_slab", new SlabBlock(FabricBlockSettings.copy(MAGENTA_CONCRETE)));
-	public static final Block COBBLED_PINK_CONCRETE_SLAB = register("cobbled_pink_concrete_slab", new SlabBlock(FabricBlockSettings.copy(PINK_CONCRETE)));
-	public static final Block COBBLED_WHITE_CONCRETE_SLAB = register("cobbled_white_concrete_slab", new SlabBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-	public static final Block COBBLED_LIGHT_GRAY_CONCRETE_SLAB = register("cobbled_light_gray_concrete_slab", new SlabBlock(FabricBlockSettings.copy(LIGHT_GRAY_CONCRETE)));
-	public static final Block COBBLED_GRAY_CONCRETE_SLAB = register("cobbled_gray_concrete_slab", new SlabBlock(FabricBlockSettings.copy(GRAY_CONCRETE)));
-	public static final Block COBBLED_BLACK_CONCRETE_SLAB = register("cobbled_black_concrete_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
-	public static final Block COBBLED_BROWN_CONCRETE_SLAB = register("cobbled_brown_concrete_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
-
-	// Terracotta Stairs
-	public static final Block COBBLED_RED_CONCRETE_STAIRS = register("cobbled_red_concrete_stairs", new CPlusStairBlock(RED_CONCRETE.getDefaultState(), FabricBlockSettings.copy(RED_CONCRETE)));
-	public static final Block COBBLED_ORANGE_CONCRETE_STAIRS = register("cobbled_orange_concrete_stairs", new CPlusStairBlock(ORANGE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(ORANGE_CONCRETE)));
-	public static final Block COBBLED_YELLOW_CONCRETE_STAIRS = register("cobbled_yellow_concrete_stairs", new CPlusStairBlock(YELLOW_CONCRETE.getDefaultState(), FabricBlockSettings.copy(YELLOW_CONCRETE)));
-	public static final Block COBBLED_LIME_CONCRETE_STAIRS = register("cobbled_lime_concrete_stairs", new CPlusStairBlock(LIME_CONCRETE.getDefaultState(), FabricBlockSettings.copy(LIME_CONCRETE)));
-	public static final Block COBBLED_GREEN_CONCRETE_STAIRS = register("cobbled_green_concrete_stairs", new CPlusStairBlock(GREEN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(GREEN_CONCRETE)));
-	public static final Block COBBLED_BLUE_CONCRETE_STAIRS = register("cobbled_blue_concrete_stairs", new CPlusStairBlock(BLUE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(BLUE_CONCRETE)));
-	public static final Block COBBLED_CYAN_CONCRETE_STAIRS = register("cobbled_cyan_concrete_stairs", new CPlusStairBlock(CYAN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(CYAN_CONCRETE)));
-	public static final Block COBBLED_LIGHT_BLUE_CONCRETE_STAIRS = register("cobbled_light_blue_concrete_stairs", new CPlusStairBlock(LIGHT_BLUE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(LIGHT_BLUE_CONCRETE)));
-	public static final Block COBBLED_PURPLE_CONCRETE_STAIRS = register("cobbled_purple_concrete_stairs", new CPlusStairBlock(PURPLE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(PURPLE_CONCRETE)));
-	public static final Block COBBLED_MAGENTA_CONCRETE_STAIRS = register("cobbled_magenta_concrete_stairs", new CPlusStairBlock(MAGENTA_CONCRETE.getDefaultState(), FabricBlockSettings.copy(MAGENTA_CONCRETE)));
-	public static final Block COBBLED_PINK_CONCRETE_STAIRS = register("cobbled_pink_concrete_stairs", new CPlusStairBlock(PINK_CONCRETE.getDefaultState(), FabricBlockSettings.copy(PINK_CONCRETE)));
-	public static final Block COBBLED_WHITE_CONCRETE_STAIRS = register("cobbled_white_concrete_stairs", new CPlusStairBlock(WHITE_CONCRETE.getDefaultState(), FabricBlockSettings.copy(WHITE_CONCRETE)));
-	public static final Block COBBLED_LIGHT_GRAY_CONCRETE_STAIRS = register("cobbled_light_gray_concrete_stairs", new CPlusStairBlock(LIGHT_GRAY_CONCRETE.getDefaultState(), FabricBlockSettings.copy(LIGHT_GRAY_CONCRETE)));
-	public static final Block COBBLED_GRAY_CONCRETE_STAIRS = register("cobbled_gray_concrete_stairs", new CPlusStairBlock(GRAY_CONCRETE.getDefaultState(), FabricBlockSettings.copy(GRAY_CONCRETE)));
-	public static final Block COBBLED_BLACK_CONCRETE_STAIRS = register("cobbled_black_concrete_stairs", new CPlusStairBlock(BLACK_CONCRETE.getDefaultState(), FabricBlockSettings.copy(BLACK_CONCRETE)));
-	public static final Block COBBLED_BROWN_CONCRETE_STAIRS = register("cobbled_brown_concrete_stairs", new CPlusStairBlock(BROWN_CONCRETE.getDefaultState(), FabricBlockSettings.copy(BROWN_CONCRETE)));
-
-	// Terracotta Wall
-	public static final Block COBBLED_RED_CONCRETE_WALL = register("cobbled_red_concrete_wall", new WallBlock(FabricBlockSettings.copy(RED_CONCRETE)));
-	public static final Block COBBLED_ORANGE_CONCRETE_WALL = register("cobbled_orange_concrete_wall", new WallBlock(FabricBlockSettings.copy(ORANGE_CONCRETE)));
-	public static final Block COBBLED_YELLOW_CONCRETE_WALL = register("cobbled_yellow_concrete_wall", new WallBlock(FabricBlockSettings.copy(YELLOW_CONCRETE)));
-	public static final Block COBBLED_LIME_CONCRETE_WALL = register("cobbled_lime_concrete_wall", new WallBlock(FabricBlockSettings.copy(LIME_CONCRETE)));
-	public static final Block COBBLED_GREEN_CONCRETE_WALL = register("cobbled_green_concrete_wall", new WallBlock(FabricBlockSettings.copy(GREEN_CONCRETE)));
-	public static final Block COBBLED_BLUE_CONCRETE_WALL = register("cobbled_blue_concrete_wall", new WallBlock(FabricBlockSettings.copy(BLUE_CONCRETE)));
-	public static final Block COBBLED_CYAN_CONCRETE_WALL = register("cobbled_cyan_concrete_wall", new WallBlock(FabricBlockSettings.copy(CYAN_CONCRETE)));
-	public static final Block COBBLED_LIGHT_BLUE_CONCRETE_WALL = register("cobbled_light_blue_concrete_wall", new WallBlock(FabricBlockSettings.copy(LIGHT_BLUE_CONCRETE)));
-	public static final Block COBBLED_PURPLE_CONCRETE_WALL = register("cobbled_purple_concrete_wall", new WallBlock(FabricBlockSettings.copy(PURPLE_CONCRETE)));
-	public static final Block COBBLED_MAGENTA_CONCRETE_WALL = register("cobbled_magenta_concrete_wall", new WallBlock(FabricBlockSettings.copy(MAGENTA_CONCRETE)));
-	public static final Block COBBLED_PINK_CONCRETE_WALL = register("cobbled_pink_concrete_wall", new WallBlock(FabricBlockSettings.copy(PINK_CONCRETE)));
-	public static final Block COBBLED_WHITE_CONCRETE_WALL = register("cobbled_white_concrete_wall", new WallBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-	public static final Block COBBLED_LIGHT_GRAY_CONCRETE_WALL = register("cobbled_light_gray_concrete_wall", new WallBlock(FabricBlockSettings.copy(LIGHT_GRAY_CONCRETE)));
-	public static final Block COBBLED_GRAY_CONCRETE_WALL = register("cobbled_gray_concrete_wall", new WallBlock(FabricBlockSettings.copy(GRAY_CONCRETE)));
-	public static final Block COBBLED_BLACK_CONCRETE_WALL = register("cobbled_black_concrete_wall", new WallBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
-	public static final Block COBBLED_BROWN_CONCRETE_WALL = register("cobbled_brown_concrete_wall", new WallBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
-
-	// Terracotta Gates
-	public static final Block COBBLED_RED_CONCRETE_GATE = register("cobbled_red_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_CONCRETE)));
-	public static final Block COBBLED_ORANGE_CONCRETE_GATE = register("cobbled_orange_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(ORANGE_CONCRETE)));
-	public static final Block COBBLED_YELLOW_CONCRETE_GATE = register("cobbled_yellow_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(YELLOW_CONCRETE)));
-	public static final Block COBBLED_LIME_CONCRETE_GATE = register("cobbled_lime_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(LIME_CONCRETE)));
-	public static final Block COBBLED_GREEN_CONCRETE_GATE = register("cobbled_green_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(GREEN_CONCRETE)));
-	public static final Block COBBLED_BLUE_CONCRETE_GATE = register("cobbled_blue_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(BLUE_CONCRETE)));
-	public static final Block COBBLED_CYAN_CONCRETE_GATE = register("cobbled_cyan_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(CYAN_CONCRETE)));
-	public static final Block COBBLED_LIGHT_BLUE_CONCRETE_GATE = register("cobbled_light_blue_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(LIGHT_BLUE_CONCRETE)));
-	public static final Block COBBLED_PURPLE_CONCRETE_GATE = register("cobbled_purple_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(PURPLE_CONCRETE)));
-	public static final Block COBBLED_MAGENTA_CONCRETE_GATE = register("cobbled_magenta_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(MAGENTA_CONCRETE)));
-	public static final Block COBBLED_PINK_CONCRETE_GATE = register("cobbled_pink_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(PINK_CONCRETE)));
-	public static final Block COBBLED_WHITE_CONCRETE_GATE = register("cobbled_white_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(WHITE_CONCRETE)));
-	public static final Block COBBLED_LIGHT_GRAY_CONCRETE_GATE = register("cobbled_light_gray_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(LIGHT_GRAY_CONCRETE)));
-	public static final Block COBBLED_GRAY_CONCRETE_GATE = register("cobbled_gray_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(GRAY_CONCRETE)));
-	public static final Block COBBLED_BLACK_CONCRETE_GATE = register("cobbled_black_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_CONCRETE)));
-	public static final Block COBBLED_BROWN_CONCRETE_GATE = register("cobbled_brown_concrete_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_CONCRETE)));
 
 	public static final Block SMOOTH_RED_CONCRETE = register("smooth_red_concrete", new Block(FabricBlockSettings.copy(RED_CONCRETE)));
 	public static final Block SMOOTH_ORANGE_CONCRETE = register("smooth_orange_concrete", new Block(FabricBlockSettings.copy(ORANGE_CONCRETE)));

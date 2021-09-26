@@ -12,8 +12,11 @@ jobs:
           distribution: adopt
           java-version: 16
       - run: |
+          sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+          sudo apt-get -q update
+          sudo apt-get install dpkg
+          sudo apt-get install oxipng
           sudo snap install deno
-          sudo snap install oxipng
           ./gradlew build
           deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder build/libs/
       - uses: actions/upload-artifact@v2

@@ -1,30 +1,26 @@
-## Let's get this out of the way
+## What ways can I contribute? 
 
-Contributing, for the purposes of this, can include a lot of things. So that's what this page is here for. If you want
-to directly help, we highly recommend getting into contact with Carter ( `Cart3r#7285` ) or Siuol ( `"Siuol"
-Appeared#5729` ) on Discord. Alternatively, you can join our Discord server at https://discord.gg/VeNX7h8bAK.
+Contributing, for the purposes of this, can include a lot of things. So that's what this page is here for. 
 
-### Code Contributors
+Our team has many different roles, such as developers, translators, artists, and other general contributors.
+The best way to get into contact with us is to talk to us on Discord.  You can either message us directly (Carter - `Cart3r#7285` and/or Siuol - `"Siuol" Appeared#5729` ), or you can join our [Discord server](https://discord.gg/VeNX7h8bAK).
 
-You guys know the drill. Currently, we don't have a Maven or the like, if you are interested, you can fork this project
-via Git. From there, you can send in pull requests.
+Of course, any contributions will be credited.  We still have a few names to add before our credits are up to date, but anyone who has made contributions will be included.
 
-### Artist / Datapack devs
+### Code Contributors/Developers
 
-If you are an artist and have a little coding experience, we recommend you register any new blocks that you need to add,
-and then add them from there. If you can't do that, Consistency+ uses an internal resource/datapack found at
-`src/main/resources`. This also applies if you wish to fix a bug with any data thing.
+In our discord server we have two main development roles - Code Contributor and Project Developer.  Code Contributor is for those who have contributed only a feature or set of features, while Project Developer is for those who wish to continue working with us as we continue to update the project.
 
-### Modpack Devs
+We also have a role for notable developers in the modding community who haven't worked on Consistency+ but are in our server. 
 
-If you have a modpack, feel free to add this mod! We would prefer you give credit to us, though. In the future, we may
-release some datapacks, so that way it's easier to support other mods like Blockus that add the same stuff as us.
+### Texture Artists
 
-### Content Creators
+While we already have a decent number of people doing the textures for Consistency+, if you wish to contribute assets then feel free to share them with us.  If you have textures for blocks we have planned but not added yet, or improvements to textures already in the mod, they may be added in our next update if our team likes them and they fit in with our other assets.
 
-If you make content or stream or the alike, we encourage featuring our mod in a stream or showcase! It really helps
-bring attention. (PS: If you want, I (Siuol) would be more than happy to be a guest!)
+### Translators
 
-### Average Player
+We are in need of people willing to help us translate.  We currently support a small number of non-English languages (If I' not mistaken, Polish, Russian, and Ukrainian as of writing this), and are looking to include more as we release updates.  If you speak a language that we have not included a translation for yet, we would love your help!
 
-As for everyone else, just get the word out! Telling more people bout us helps us!
+### You, the User
+
+Even if you yourself have not contributed directly to the development of our mod, we'd like to thank you for using it, or at least reading this document.  Even by just using or telling people about Consistency+ you are helping our project grow, and again, thank you for that!  

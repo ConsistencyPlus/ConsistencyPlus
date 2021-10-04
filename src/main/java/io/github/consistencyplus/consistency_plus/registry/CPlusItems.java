@@ -1,7 +1,10 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import io.github.consistencyplus.consistency_plus.ConsistencyPlus;
+import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
+import net.minecraft.item.HorseArmorItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -2592,6 +2595,27 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(CPlusBlocks.NETHERITE_STAIRS, new Item.Settings()));
     public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(CPlusBlocks.SUSPICIOUS_SLAB, new Item.Settings()));
     public static final Item JET = register("jet", new BlockItem(CPlusBlocks.JET, new Item.Settings()));
+
+	//dyed bundles
+	public static final Item RED_BUNDLE = register("red_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item ORANGE_BUNDLE = register("orange_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item YELLOW_BUNDLE = register("yellow_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item LIME_BUNDLE = register("lime_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item GREEN_BUNDLE = register("green_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item BLUE_BUNDLE = register("blue_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item CYAN_BUNDLE = register("cyan_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item LIGHT_BLUE_BUNDLE = register("light_blue_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item PURPLE_BUNDLE = register("purple_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item MAGENTA_BUNDLE = register("magenta_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item PINK_BUNDLE = register("pink_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item WHITE_BUNDLE = register("white_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item LIGHT_GRAY_BUNDLE = register("light_gray_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item GRAY_BUNDLE = register("gray_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item BROWN_BUNDLE = register("brown_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item BLACK_BUNDLE = register("black_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	
+	//Netherite Horse armor
+	public static final Item NETHERITE_HORSE_ARMOR = register("netherite_horse_armor", new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
 
     // Deprecated
     public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new AliasedBlockItem(CPlusBlocks.CARVED_STONE, new Item.Settings()));

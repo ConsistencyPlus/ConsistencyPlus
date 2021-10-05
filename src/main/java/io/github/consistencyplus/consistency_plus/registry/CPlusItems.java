@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import io.github.consistencyplus.consistency_plus.items.RedirectedBlockItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -2594,26 +2595,26 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Item JET = register("jet", new BlockItem(CPlusBlocks.JET, new Item.Settings()));
 
     // Deprecated
-    public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new AliasedBlockItem(CPlusBlocks.CARVED_STONE, new Item.Settings()));
-    public static final Item STONE_BRICK_PILLAR = register("stone_brick_pillar", new AliasedBlockItem(CPlusBlocks.STONE_PILLAR, new Item.Settings()));
-    public static final Item MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new AliasedBlockItem(CPlusBlocks.MOSSY_STONE_PILLAR, new Item.Settings()));
-    public static final Item CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new AliasedBlockItem(CPlusBlocks.CRACKED_STONE_PILLAR, new Item.Settings()));
-    public static final Item CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new AliasedBlockItem(CPlusBlocks.CRACKED_CHISELED_STONE, new Item.Settings()));
-    public static final Item MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new AliasedBlockItem(CPlusBlocks.MOSSY_CHISELED_STONE, new Item.Settings()));
+    public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_STONE, new Item.Settings(), CPlusBlocks.CARVED_STONE_BRICKS));
+    public static final Item STONE_BRICK_PILLAR = register("stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.STONE_PILLAR, new Item.Settings(), CPlusBlocks.STONE_BRICK_PILLAR));
+    public static final Item MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.MOSSY_STONE_PILLAR, new Item.Settings(), CPlusBlocks.MOSSY_STONE_BRICK_PILLAR));
+    public static final Item CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRACKED_STONE_PILLAR, new Item.Settings(), CPlusBlocks.CRACKED_STONE_BRICK_PILLAR));
+    public static final Item CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CRACKED_CHISELED_STONE, new Item.Settings(), CPlusBlocks.CRACKED_CHISELED_STONE));
+    public static final Item MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.MOSSY_CHISELED_STONE, new Item.Settings(), CPlusBlocks.MOSSY_CHISELED_STONE_BRICKS));
 
-    public static final Item BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new AliasedBlockItem(CPlusBlocks.BLACKSTONE_PILLAR, new Item.Settings()));
-    public static final Item CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new AliasedBlockItem(CPlusBlocks.CRACKED_BLACKSTONE_PILLAR, new Item.Settings()));
-    public static final Item MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new AliasedBlockItem(CPlusBlocks.MOSSY_BLACKSTONE_PILLAR, new Item.Settings()));
+    public static final Item BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.BLACKSTONE_PILLAR, new Item.Settings(), CPlusBlocks.BLACKSTONE_BRICK_PILLAR));
+    public static final Item CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRACKED_BLACKSTONE_PILLAR, new Item.Settings(), CPlusBlocks.CRACKED_BLACKSTONE_BRICK_PILLAR));
+    public static final Item MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.MOSSY_BLACKSTONE_PILLAR, new Item.Settings(), CPlusBlocks.MOSSY_BLACKSTONE_BRICK_PILLAR));
 
-    public static final Item CHISELED_BRICKS = register("chiseled_bricks", new AliasedBlockItem(CPlusBlocks.CHISELED_TERRACOTTA, new Item.Settings()));
-    public static final Item BRICK_PILLAR = register("brick_pillar", new AliasedBlockItem(CPlusBlocks.TERRACOTTA_PILLAR, new Item.Settings()));
-    public static final Item CARVED_BRICKS = register("carved_bricks", new AliasedBlockItem(CPlusBlocks.CARVED_TERRACOTTA, new Item.Settings()));
+    public static final Item CHISELED_BRICKS = register("chiseled_bricks", new RedirectedBlockItem(CPlusBlocks.CHISELED_TERRACOTTA, new Item.Settings(), CPlusBlocks.CHISELED_BRICKS));
+    public static final Item BRICK_PILLAR = register("brick_pillar", new RedirectedBlockItem(CPlusBlocks.TERRACOTTA_PILLAR, new Item.Settings(), CPlusBlocks.BRICK_PILLAR));
+    public static final Item CARVED_BRICKS = register("carved_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_TERRACOTTA, new Item.Settings(), CPlusBlocks.CARVED_BRICKS));
 
-    public static final Item SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new AliasedBlockItem(CPlusBlocks.SMOOTH_PURPUR, new Item.Settings()));
-    public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new AliasedBlockItem(CPlusBlocks.POLISHED_PURPUR, new Item.Settings()));
-    public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new AliasedBlockItem(CPlusBlocks.CHISELED_PURPUR, new Item.Settings()));
+    public static final Item SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new RedirectedBlockItem(CPlusBlocks.SMOOTH_PURPUR, new Item.Settings(), CPlusBlocks.SMOOTH_PURPUR_BLOCK));
+    public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new RedirectedBlockItem(CPlusBlocks.POLISHED_PURPUR, new Item.Settings(), CPlusBlocks.POLISHED_PURPUR_BLOCK));
+    public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new RedirectedBlockItem(CPlusBlocks.CHISELED_PURPUR, new Item.Settings(), CPlusBlocks.CHISELED_PURPUR_BLOCK));
 
-    public static final Item END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new AliasedBlockItem(CPlusBlocks.END_STONE_PILLAR, new Item.Settings()));
+    public static final Item END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.END_STONE_PILLAR, new Item.Settings(), CPlusBlocks.END_STONE_BRICK_PILLAR));
 
     private static Item register(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier("consistency_plus", name), item);

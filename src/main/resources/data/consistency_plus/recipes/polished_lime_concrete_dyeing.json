@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:lime_dye"
-        },
-        {
-            "item": "consistency_plus:polished_white_concrete"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:polished_lime_concrete"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:lime_dye"
+    },
+    "#": {
+      "item": "consistency_plus:polished_white_concrete"
     }
+  },
+  "result": {
+    "item": "consistency_plus:polished_lime_concrete",
+    "count": 8
+  }
 }

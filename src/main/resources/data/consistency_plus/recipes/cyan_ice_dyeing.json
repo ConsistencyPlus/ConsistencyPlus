@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:cyan_dye"
-        },
-        {
-            "item": "minecraft:blue_ice"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:cyan_ice"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:cyan_dye"
+    },
+    "#": {
+      "item": "minecraft:blue_ice"
     }
+  },
+  "result": {
+    "item": "consistency_plus:cyan_ice",
+    "count": 8
+  }
 }

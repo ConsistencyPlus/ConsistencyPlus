@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:cyan_dye"
-        },
-        {
-            "item": "consistency_plus:glowstone_wall"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:cyan_glowstone_wall"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:cyan_dye"
+    },
+    "#": {
+      "item": "consistency_plus:glowstone_wall"
     }
+  },
+  "result": {
+    "item": "consistency_plus:cyan_glowstone_wall",
+    "count": 8
+  }
 }

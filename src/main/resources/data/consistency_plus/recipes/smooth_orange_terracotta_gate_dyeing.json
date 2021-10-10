@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:orange_dye"
-        },
-        {
-            "item": "consistency_plus:smooth_terracotta_gate"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:smooth_orange_terracotta_gate"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:orange_dye"
+    },
+    "#": {
+      "item": "consistency_plus:smooth_terracotta_gate"
     }
+  },
+  "result": {
+    "item": "consistency_plus:smooth_orange_terracotta_gate",
+    "count": 8
+  }
 }

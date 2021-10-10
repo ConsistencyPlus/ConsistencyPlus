@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:light_blue_dye"
-        },
-        {
-            "item": "consistency_plus:glowstone_wall"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:light_blue_glowstone_wall"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "#": {
+      "item": "consistency_plus:glowstone_wall"
     }
+  },
+  "result": {
+    "item": "consistency_plus:light_blue_glowstone_wall",
+    "count": 8
+  }
 }

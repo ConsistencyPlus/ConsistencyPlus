@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:light_blue_dye"
-        },
-        {
-            "item": "consistency_plus:white_concrete_tile_slab"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:light_blue_concrete_tile_slab"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "#": {
+      "item": "consistency_plus:white_concrete_tile_slab"
     }
+  },
+  "result": {
+    "item": "consistency_plus:light_blue_concrete_tile_slab",
+    "count": 8
+  }
 }

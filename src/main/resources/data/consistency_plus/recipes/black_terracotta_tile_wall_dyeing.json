@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:black_dye"
-        },
-        {
-            "item": "consistency_plus:terracotta_tile_wall"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:black_terracotta_tile_wall"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:black_dye"
+    },
+    "#": {
+      "item": "consistency_plus:terracotta_tile_wall"
     }
+  },
+  "result": {
+    "item": "consistency_plus:black_terracotta_tile_wall",
+    "count": 8
+  }
 }

@@ -2582,6 +2582,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Item LIGHT_GRAY_TINTED_GLASS = register("light_gray_tinted_glass", new BlockItem(CPlusBlocks.LIGHT_GRAY_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
 	public static final Item GRAY_TINTED_GLASS = register("gray_tinted_glass", new BlockItem(CPlusBlocks.GRAY_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
 	public static final Item BROWN_TINTED_GLASS = register("brown_tinted_glass", new BlockItem(CPlusBlocks.BROWN_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item BLACK_TINTED_GLASS = register("black_tinted_glass", new BlockItem(CPlusBlocks.BLACK_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
 
     // Miscellaneous
     // public static final Item JACK_O_RED = register("jack_o_red", new BlockItem(CPlusBlocks.JACK_O_RED, CPlusItemGroups.consistencyPlusMiscItemSettings()));

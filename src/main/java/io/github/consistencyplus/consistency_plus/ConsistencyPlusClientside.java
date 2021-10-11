@@ -41,6 +41,8 @@ public class ConsistencyPlusClientside implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.BROWN_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.LIGHT_GRAY_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRAY_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.BLACK_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
+
 
 		// Bundles
 		FabricModelPredicateProviderRegistry.register(CPlusItems.RED_BUNDLE, new Identifier("filled"), (itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));

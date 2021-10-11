@@ -12,7 +12,7 @@ public class NetheriteHorseArmorItem extends HorseArmorItem{
     public NetheriteHorseArmorItem(int bonus, String materialName,Settings settings) {
         super(bonus, null, settings);
         texturePath = String.format("textures/entity/horse/armor/horse_armor_%s.png", materialName);
-        //TODO Auto-generated constructor stub
+       
     }
     @Override
     public Identifier getEntityTexture() {

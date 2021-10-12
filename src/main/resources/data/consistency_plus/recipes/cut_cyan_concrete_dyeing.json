@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:cyan_dye"
-        },
-        {
-            "item": "consistency_plus:cut_white_concrete"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:cut_cyan_concrete"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:cyan_dye"
+    },
+    "#": {
+      "item": "consistency_plus:cut_white_concrete"
     }
+  },
+  "result": {
+    "item": "consistency_plus:cut_cyan_concrete",
+    "count": 8
+  }
 }

@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:gray_dye"
-        },
-        {
-            "item": "consistency_plus:smooth_terracotta_stairs"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:smooth_gray_terracotta_stairs"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:gray_dye"
+    },
+    "#": {
+      "item": "consistency_plus:smooth_terracotta_stairs"
     }
+  },
+  "result": {
+    "item": "consistency_plus:smooth_gray_terracotta_stairs",
+    "count": 8
+  }
 }

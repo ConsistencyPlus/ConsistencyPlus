@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:yellow_dye"
-        },
-        {
-            "item": "consistency_plus:blue_ice_slab"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:yellow_ice_slab"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:yellow_dye"
+    },
+    "#": {
+      "item": "consistency_plus:blue_ice_slab"
     }
+  },
+  "result": {
+    "item": "consistency_plus:blue_ice_slab",
+    "count": 8
+  }
 }

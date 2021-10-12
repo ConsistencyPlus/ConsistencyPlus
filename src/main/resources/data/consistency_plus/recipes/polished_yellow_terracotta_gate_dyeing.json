@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:yellow_dye"
-        },
-        {
-            "item": "consistency_plus:polished_terracotta_gate"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:polished_yellow_terracotta_gate"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:yellow_dye"
+    },
+    "#": {
+      "item": "consistency_plus:polished_terracotta_gate"
     }
+  },
+  "result": {
+    "item": "consistency_plus:polished_yellow_terracotta_gate",
+    "count": 8
+  }
 }

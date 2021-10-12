@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:green_dye"
-        },
-        {
-            "item": "consistency_plus:polished_terracotta_wall"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:polished_green_terracotta_wall"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:green_dye"
+    },
+    "#": {
+      "item": "consistency_plus:polished_terracotta_wall"
     }
+  },
+  "result": {
+    "item": "consistency_plus:polished_green_terracotta_wall",
+    "count": 8
+  }
 }

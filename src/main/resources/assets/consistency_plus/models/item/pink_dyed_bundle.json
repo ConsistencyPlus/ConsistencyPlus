@@ -1,14 +1,14 @@
 {
       "parent": "item/generated",
       "textures": {
-            "layer0": "consistency_plus:items/red_bundle"
+            "layer0": "consistency_plus:items/pink_bundle"
       },
       "overrides": [
             {
                   "predicate": {
                         "filled": 0.001
                   },
-                  "model": "consistency_plus:item/red_dyed_bundle_filled"
+                  "model": "consistency_plus:item/pink_dyed_bundle_filled"
             }
       ]
 }

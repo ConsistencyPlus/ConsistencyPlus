@@ -1,0 +1,6 @@
+{
+      "parent": "item/bundle",
+      "textures": {
+            "layer0": "consistency_plus:items/light_blue_bundle_filled"
+      }
+}

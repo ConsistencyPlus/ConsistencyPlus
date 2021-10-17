@@ -7,7 +7,7 @@ Note: If you are a Japanese speaker, feel free to fix these translations
 
 Polish - Managed by RDK. Up to date to 0.3.0-RC1. 4.22.21
 
-Russian - Managed by MobButcher. Up to date as of 0.4.0. 8.21.21
+Russian - Managed by MobButcher. Up to date as of 0.4.1-rc.2. 10.17.21
 Ukrainian - Managed by MobButcher. Up to date as of 0.4.0 8.21.21
 
 Lolcat - Aded by Carter, pwobably won't be finishd for a while but haz begun

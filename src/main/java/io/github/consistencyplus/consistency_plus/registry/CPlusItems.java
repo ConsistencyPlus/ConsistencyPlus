@@ -1048,27 +1048,6 @@ public class CPlusItems {
 
 	public static final Item CARVED_DEEPSLATE = register("carved_deepslate", new BlockItem(CPlusBlocks.CARVED_DEEPSLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
-    /*
-Note about copper and other metals: Raw metal blocks will be used as the 'base' and will be converted into a new version of the mineral block for C+ purposes.
-The Vanilla metal blocks will continue to work the same (aside from copper, which will have a replacement) and the Raw Metal block will be used as the starting block for the C+ variants.
-This also means raw metal blocks will rust, so the vanilla textures will be slightly modified to reflect this.
-                             |
-  X X X                      |   X X _
-  X X X -> Y                 |   X X _ -> Y x4
-  X X X                      |   _ _ _
-                             |
-  X - Metal Ingot            |   X - Raw Metal Block
-  Y - Metal Block (Vanilla)  |   Y - Decorative Metal Block (Consistency+)
-
-ALL DECORATIVE METAL BLOCKS WILL HAVE A WEATHERING PROCESS
-Decorative Copper -> Exposed Copper -> Weathered Copper -> Oxidized Copper (Teal)
-Decorative Gold -> Exposed Gold -> Weathered Gold -> Corroded Gold (Deep Blue/Green)
-Decorative Iron -> Exposed Iron -> Weathered Iron -> Rusted Iron (Brown/Red)
-
-This allows for every metal to have a decoration-based variant for building like copper does, while not affecting the existing metal blocks.
-~~this also allows us to add the decorative gold blocks from Minecraft Dungeons but that's totally not the reason for this to be like this~~
-The gold and iron won't be in the code for now since they aren't a priority (since copper won't be either until we can figure out the rust) but once copper is in I'll add in the placeholders for them */
-
 // Terracotta
 
 	// Terracotta Slab

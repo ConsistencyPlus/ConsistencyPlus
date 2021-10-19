@@ -11,14 +11,14 @@ jobs:
         with:
           distribution: adopt
           java-version: 16
-      - run: sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-      - run: sudo apt-get -q update
-      - run: sudo apt-get install dpkg
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: canary
       - run: |
           wget https://github.com/shssoichiro/oxipng/releases/download/v5.0.0/oxipng-5.0.0-x86_64-unknown-linux-musl.tar.gz
           tar -xf oxipng-5.0.0-x86_64-unknown-linux-musl.tar.gz
           sudo mv ./oxipng-5.0.0-x86_64-unknown-linux-musl/oxipng /bin/
-      - run: sudo snap install deno
+          chmod +x /bin/oxipng
       - run: ./gradlew build
       - run: sudo deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder build/libs/
       - uses: actions/upload-artifact@v2

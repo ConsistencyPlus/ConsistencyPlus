@@ -25,8 +25,3 @@ jobs:
         with:
           name: Artifacts
           path: detonatedmods/
-      - if: ${{ github.repository_owner == 'ConsistencyPlus' && github.ref == 'refs/heads/master' }}
-        run: ./gradlew publishAllPublicationsToEmmavenSnapshotsRepository
-        env:
-          MAVEN_USER: ${{ secrets.MAVEN_USER }}
-          MAVEN_PASS: ${{ secrets.MAVEN_PASS }}

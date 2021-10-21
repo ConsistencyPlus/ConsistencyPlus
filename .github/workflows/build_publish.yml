@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-      - maven-testing
+      - maven-publish
 
 jobs:
   build:

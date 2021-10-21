@@ -11,7 +11,7 @@ plugins {
 // 3. Use the result of this build for uploading to Modrinth & CurseForge (cos detonater)
 // 4. Make another commit making is_release false again and bumping version
 // If you do not follow these instructions to a tee, you will make Rory cry (https://rory.cat)
-boolean is_release = true
+boolean is_release = false
 
 String mod_version = "0.4.1-rc.3"
 

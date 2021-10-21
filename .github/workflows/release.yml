@@ -1,5 +1,5 @@
-name: Build C+
-on: [ pull_request, push ]
+name: Release C+
+on: [ workflow_dispatch ]
 
 jobs:
   build:
@@ -25,8 +25,7 @@ jobs:
         with:
           name: Artifacts
           path: detonatedmods/
-      - if: ${{ github.repository_owner == ConsistencyPlus && github.ref == refs/heads/master }}
-        run: ./gradlew publishAllPublicationsToEmmavenSnapshotsRepository
+      - run: ./gradlew publishAllPublicationsToEmmavenReleasesRepository
         env:
           MAVEN_USER: ${{ secrets.MAVEN_USER }}
           MAVEN_PASS: ${{ secrets.MAVEN_PASS }}

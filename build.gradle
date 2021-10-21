@@ -23,7 +23,7 @@ String fabric_version = "0.39.2" // https://fabricmc.net/versions.html
 String srt_version    = "1.1.0"  // https://modrinth.com/mod/stonecutter_recipe_tags/versions
 
 archivesBaseName = "consistency_plus"
-version = mod_version + "+" + mc_major_version + (is_release ? "-SNAPSHOT" : "")
+version = mod_version + "+" + mc_major_version + (!is_release ? "-SNAPSHOT" : "")
 
 repositories {
     maven {url = "https://api.modrinth.com/maven"}

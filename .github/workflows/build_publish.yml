@@ -18,3 +18,4 @@ jobs:
         env:
           MAVEN_USER: ${{ secrets.MAVEN_USER }}
           MAVEN_PASS: ${{ secrets.MAVEN_PASS }}
+          SNAPSHOT: "-SNAPSHOT"

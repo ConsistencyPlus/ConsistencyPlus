@@ -19,7 +19,9 @@ jobs:
           tar -xf oxipng-5.0.0-x86_64-unknown-linux-musl.tar.gz
           sudo mv ./oxipng-5.0.0-x86_64-unknown-linux-musl/oxipng /bin/
           chmod +x /bin/oxipng
-      - run: ./gradlew build
+      - run: |
+          ./gradlew build
+          rm build/libs/**-dev.jar
       - run: deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder build/libs/
       - uses: actions/upload-artifact@v2
         with:

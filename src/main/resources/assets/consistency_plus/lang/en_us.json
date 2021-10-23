@@ -2266,6 +2266,24 @@
   "block.consistency_plus.warped_wart": "Warped Wart",
   "item.consistency_plus.copper_nugget": "Copper Nugget",
 
+  "item.consistency_plus.red_dyed_bundle": "Red Bundle",
+  "item.consistency_plus.orange_dyed_bundle": "Orange Bundle",
+  "item.consistency_plus.yellow_dyed_bundle": "Yellow Bundle",
+  "item.consistency_plus.lime_dyed_bundle": "Lime Bundle",
+  "item.consistency_plus.green_dyed_bundle": "Green Bundle",
+  "item.consistency_plus.blue_dyed_bundle": "Blue Bundle",
+  "item.consistency_plus.cyan_dyed_bundle": "Cyan Bundle",
+  "item.consistency_plus.light_blue_dyed_bundle": "Light Blue Bundle",
+  "item.consistency_plus.purple_dyed_bundle": "Purple Bundle",
+  "item.consistency_plus.magenta_dyed_bundle": "Magenta Bundle",
+  "item.consistency_plus.pink_dyed_bundle": "Pink Bundle",
+  "item.consistency_plus.white_dyed_bundle": "White Bundle",
+  "item.consistency_plus.light_gray_dyed_bundle": "Light Gray Bundle",
+  "item.consistency_plus.gray_bundle": "Gray Bundle",
+  "item.consistency_plus.black_dyed_bundle": "Black Bundle",
+  "item.consistency_plus.brown_dyed_bundle": "Brown Bundle",
+
+
   "itemGroup.consistency_plus.stone": "Consistency+ Stones",
   "itemGroup.consistency_plus.dyeable": "Consistency+ Dyeables",
   "itemGroup.consistency_plus.misc": "Consistency+ Misc"

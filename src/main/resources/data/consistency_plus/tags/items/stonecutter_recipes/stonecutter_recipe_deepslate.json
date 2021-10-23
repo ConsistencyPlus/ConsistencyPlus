@@ -1,11 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:cobbled_deepslate",
-    "minecraft:cobbled_deepslate_slab",
-    "minecraft:cobbled_deepslate_stairs",
-    "minecraft:cobbled_deepslate_wall",
-    "consistency_plus:deepslate_gate",
     "minecraft:deepslate",
     "consistency_plus:deepslate_slab",
     "consistency_plus:deepslate_stairs",

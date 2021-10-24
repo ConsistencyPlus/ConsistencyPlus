@@ -17,9 +17,12 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricMaterialBuilder;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.*;
+import net.minecraft.entity.EntityType;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.BlockView;
 
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.piston.PistonBehavior.BLOCK;
@@ -2553,22 +2556,22 @@ public class CPlusBlocks {
 
 	//Unlike Regular Glass, stained tinted glass actually gets a spot with placeholders.
 	// Lies, come in many forms and some look like truth.
-	public static final Block RED_TINTED_GLASS_BLOCK = register("red_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block ORANGE_TINTED_GLASS_BLOCK = register("orange_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block YELLOW_TINTED_GLASS_BLOCK = register("yellow_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block LIME_TINTED_GLASS_BLOCK = register("lime_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block GREEN_TINTED_GLASS_BLOCK = register("green_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block BLUE_TINTED_GLASS_BLOCK = register("blue_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block LIGHT_BLUE_TINTED_GLASS_BLOCK = register("light_blue_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block CYAN_TINTED_GLASS_BLOCK = register("cyan_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block PURPLE_TINTED_GLASS_BLOCK = register("purple_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block PINK_TINTED_GLASS_BLOCK = register("pink_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block BROWN_TINTED_GLASS_BLOCK = register("brown_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block GRAY_TINTED_GLASS_BLOCK = register("gray_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block LIGHT_GRAY_TINTED_GLASS_BLOCK = register("light_gray_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block WHITE_TINTED_GLASS_BLOCK = register("white_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block MAGENTA_TINTED_GLASS_BLOCK = register("magenta_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
-	public static final Block BLACK_TINTED_GLASS_BLOCK = register("black_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).nonOpaque()));
+	public static final Block RED_TINTED_GLASS_BLOCK = register("red_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block ORANGE_TINTED_GLASS_BLOCK = register("orange_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block YELLOW_TINTED_GLASS_BLOCK = register("yellow_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block LIME_TINTED_GLASS_BLOCK = register("lime_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block GREEN_TINTED_GLASS_BLOCK = register("green_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block BLUE_TINTED_GLASS_BLOCK = register("blue_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block LIGHT_BLUE_TINTED_GLASS_BLOCK = register("light_blue_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block CYAN_TINTED_GLASS_BLOCK = register("cyan_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block PURPLE_TINTED_GLASS_BLOCK = register("purple_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block PINK_TINTED_GLASS_BLOCK = register("pink_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block BROWN_TINTED_GLASS_BLOCK = register("brown_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block GRAY_TINTED_GLASS_BLOCK = register("gray_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block LIGHT_GRAY_TINTED_GLASS_BLOCK = register("light_gray_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block WHITE_TINTED_GLASS_BLOCK = register("white_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block MAGENTA_TINTED_GLASS_BLOCK = register("magenta_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
+	public static final Block BLACK_TINTED_GLASS_BLOCK = register("black_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
 
 	// Dirt
 	public static final Block DIRT_SLAB = register("dirt_slab", new DirtSlabBlock(FabricBlockSettings.copy(DIRT)));
@@ -2631,6 +2634,10 @@ public class CPlusBlocks {
     private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier("consistency_plus", name), block);
     }
+
+	private static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) {
+		return false;
+	}
 
     public static void init() {}
 }

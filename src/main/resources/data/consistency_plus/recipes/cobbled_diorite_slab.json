@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "   ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cobbled_diorite"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cobbled_diorite_slab",
+        "count": 6
+    }
+}

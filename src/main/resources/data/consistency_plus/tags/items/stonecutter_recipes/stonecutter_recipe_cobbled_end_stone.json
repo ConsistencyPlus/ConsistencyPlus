@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cobbled_end_stone",
+    "consistency_plus:cobbled_end_stone_slab",
+    "consistency_plus:cobbled_end_stone_stairs",
+    "consistency_plus:cobbled_end_stone_wall",
+    "consistency_plus:cobbled_end_stone_gate"
+  ]
+}

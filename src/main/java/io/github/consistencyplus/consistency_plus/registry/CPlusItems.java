@@ -1,8 +1,11 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
 import io.github.consistencyplus.consistency_plus.items.RedirectedBlockItem;
+import io.github.consistencyplus.consistency_plus.ConsistencyPlus;
+import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
+import net.minecraft.item.HorseArmorItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -1044,27 +1047,6 @@ public class CPlusItems {
 	public static final Item DEEPSLATE_CORNER_PILLAR = register("deepslate_corner_pillar", new BlockItem(CPlusBlocks.DEEPSLATE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 	public static final Item CARVED_DEEPSLATE = register("carved_deepslate", new BlockItem(CPlusBlocks.CARVED_DEEPSLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-
-    /*
-Note about copper and other metals: Raw metal blocks will be used as the 'base' and will be converted into a new version of the mineral block for C+ purposes.
-The Vanilla metal blocks will continue to work the same (aside from copper, which will have a replacement) and the Raw Metal block will be used as the starting block for the C+ variants.
-This also means raw metal blocks will rust, so the vanilla textures will be slightly modified to reflect this.
-                             |
-  X X X                      |   X X _
-  X X X -> Y                 |   X X _ -> Y x4
-  X X X                      |   _ _ _
-                             |
-  X - Metal Ingot            |   X - Raw Metal Block
-  Y - Metal Block (Vanilla)  |   Y - Decorative Metal Block (Consistency+)
-
-ALL DECORATIVE METAL BLOCKS WILL HAVE A WEATHERING PROCESS
-Decorative Copper -> Exposed Copper -> Weathered Copper -> Oxidized Copper (Teal)
-Decorative Gold -> Exposed Gold -> Weathered Gold -> Corroded Gold (Deep Blue/Green)
-Decorative Iron -> Exposed Iron -> Weathered Iron -> Rusted Iron (Brown/Red)
-
-This allows for every metal to have a decoration-based variant for building like copper does, while not affecting the existing metal blocks.
-~~this also allows us to add the decorative gold blocks from Minecraft Dungeons but that's totally not the reason for this to be like this~~
-The gold and iron won't be in the code for now since they aren't a priority (since copper won't be either until we can figure out the rust) but once copper is in I'll add in the placeholders for them */
 
 // Terracotta
 
@@ -2580,6 +2562,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Item LIGHT_GRAY_TINTED_GLASS = register("light_gray_tinted_glass", new BlockItem(CPlusBlocks.LIGHT_GRAY_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
 	public static final Item GRAY_TINTED_GLASS = register("gray_tinted_glass", new BlockItem(CPlusBlocks.GRAY_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
 	public static final Item BROWN_TINTED_GLASS = register("brown_tinted_glass", new BlockItem(CPlusBlocks.BROWN_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item BLACK_TINTED_GLASS = register("black_tinted_glass", new BlockItem(CPlusBlocks.BLACK_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
 
     // Miscellaneous
     // public static final Item JACK_O_RED = register("jack_o_red", new BlockItem(CPlusBlocks.JACK_O_RED, CPlusItemGroups.consistencyPlusMiscItemSettings()));
@@ -2593,6 +2576,27 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(CPlusBlocks.NETHERITE_STAIRS, new Item.Settings()));
     public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(CPlusBlocks.SUSPICIOUS_SLAB, new Item.Settings()));
     public static final Item JET = register("jet", new BlockItem(CPlusBlocks.JET, new Item.Settings()));
+
+	//dyed bundles
+	public static final Item RED_BUNDLE = register("red_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item ORANGE_BUNDLE = register("orange_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item YELLOW_BUNDLE = register("yellow_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item LIME_BUNDLE = register("lime_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item GREEN_BUNDLE = register("green_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item BLUE_BUNDLE = register("blue_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item CYAN_BUNDLE = register("cyan_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item LIGHT_BLUE_BUNDLE = register("light_blue_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item PURPLE_BUNDLE = register("purple_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item MAGENTA_BUNDLE = register("magenta_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item PINK_BUNDLE = register("pink_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item WHITE_BUNDLE = register("white_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item LIGHT_GRAY_BUNDLE = register("light_gray_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item GRAY_BUNDLE = register("gray_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item BROWN_BUNDLE = register("brown_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	public static final Item BLACK_BUNDLE = register("black_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
+	
+	//Netherite Horse armor
+	public static final Item NETHERITE_HORSE_ARMOR = register("netherite_horse_armor", new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
 
     // Deprecated
     public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_STONE, new Item.Settings(), CPlusBlocks.CARVED_STONE_BRICKS));

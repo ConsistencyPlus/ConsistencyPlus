@@ -1,9 +1,11 @@
+//file:noinspection GroovyAssignabilityCheck
 plugins {
     id "fabric-loom" version "0.9.+"
     id "io.github.juuxel.loom-quiltflower" version "1.+"
+    id "maven-publish"
 }
 
-String mod_version = "0.4.1-rc.2"
+String mod_version = "0.4.1-rc.3"
 
 String minecraft_version = "1.17.1"
 String mc_major_version = "1.17"
@@ -13,11 +15,10 @@ String fabric_version = "0.39.2" // https://fabricmc.net/versions.html
 String srt_version    = "1.1.0"  // https://modrinth.com/mod/stonecutter_recipe_tags/versions
 
 archivesBaseName = "consistency_plus"
-version = mod_version + "+" + mc_major_version
+version = mod_version + "+" + mc_major_version + System.getenv().SNAPSHOT
 
 repositories {
     maven {url = "https://api.modrinth.com/maven"}
-    maven {url = "https://maven.waffle.coffee"}
 }
 
 dependencies {
@@ -40,4 +41,42 @@ processResources {
 
 tasks.withType(JavaCompile) { it.options.encoding = "UTF-8" }
 
-jar { from("LICENSE") }
+jar {
+  from("LICENSE")
+  exclude("**/upcoming/**")
+  exclude("**/unused/**")
+}
+
+java { withSourcesJar() }
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'io.github.consistencyplus'
+            artifactId = archivesBaseName
+            version = version
+            artifact(remapJar) { builtBy remapJar }
+            artifact(sourcesJar) { builtBy remapSourcesJar }
+        }
+    }
+    repositories {
+        maven {
+            name = "emmavenReleases"
+            url = "https://maven.waffle.coffee/releases"
+            credentials {
+                username = System.getenv().MAVEN_USER
+                password = System.getenv().MAVEN_PASS
+            }
+            authentication { basic(BasicAuthentication) }
+        }
+        maven {
+            name = "emmavenSnapshots"
+            url = "https://maven.waffle.coffee/snapshots"
+            credentials {
+                username = System.getenv().MAVEN_USER
+                password = System.getenv().MAVEN_PASS
+            }
+            authentication { basic(BasicAuthentication) }
+        }
+    }
+}

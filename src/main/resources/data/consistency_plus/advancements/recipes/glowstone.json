@@ -165,7 +165,12 @@
       "consistency_plus:recipes/glowstone_slab_crafting",
       "consistency_plus:recipes/glowstone_stairs_crafting",
       "consistency_plus:recipes/glowstone_wall_crafting",
-      "consistency_plus:recipes/glowstone_gate_crafting"
+      "consistency_plus:recipes/glowstone_gate_crafting",
+      "consistency_plus:recipes/soul_glowstone",
+      "consistency_plus:recipes/soul_glowstone_slab",
+      "consistency_plus:recipes/soul_glowstone_stairs",
+      "consistency_plus:recipes/soul_glowstone_wall",
+      "consistency_plus:recipes/soul_glowstone_gate"
     ]
   },
   "criteria": {

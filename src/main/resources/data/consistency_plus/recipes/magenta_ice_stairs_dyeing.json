@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:magenta_dye"
-        },
-        {
-            "item": "consistency_plus:blue_ice_stairs"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:magenta_ice_stairs"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:magenta_dye"
+    },
+    "#": {
+      "item": "consistency_plus:blue_ice_stairs"
     }
+  },
+  "result": {
+    "item": "consistency_plus:magenta_ice_stairs",
+    "count": 8
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cobbled_black_terracotta",
+    "consistency_plus:cobbled_black_terracotta_slab",
+    "consistency_plus:cobbled_black_terracotta_stairs",
+    "consistency_plus:cobbled_black_terracotta_wall",
+    "consistency_plus:cobbled_black_terracotta_gate"
+  ]
+}

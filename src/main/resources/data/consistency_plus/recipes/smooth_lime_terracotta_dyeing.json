@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:lime_dye"
-        },
-        {
-            "item": "consistency_plus:smooth_terracotta"
-        }
-    ],
-    "result": {
-        "item": "consistency_plus:smooth_lime_terracotta"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:lime_dye"
+    },
+    "#": {
+      "item": "consistency_plus:smooth_terracotta"
     }
+  },
+  "result": {
+    "item": "consistency_plus:smooth_lime_terracotta",
+    "count": 8
+  }
 }

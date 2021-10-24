@@ -2472,23 +2472,23 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 
 
 	//Glowstone
-	public static final Block RED_GLOWSTONE = register("red_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.RED).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block ORANGE_GLOWSTONE = register("orange_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.YELLOW).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block YELLOW_GLOWSTONE = register("yellow_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.ORANGE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block LIME_GLOWSTONE = register("lime_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIME).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block GREEN_GLOWSTONE = register("green_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.GREEN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block BLUE_GLOWSTONE = register("blue_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block CYAN_GLOWSTONE = register("cyan_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.CYAN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block LIGHT_BLUE_GLOWSTONE = register("light_blue_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block PURPLE_GLOWSTONE = register("purple_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.PURPLE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block MAGENTA_GLOWSTONE = register("magenta_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.MAGENTA).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block PINK_GLOWSTONE = register("pink_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.PINK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block WHITE_GLOWSTONE = register("white_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.WHITE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block LIGHT_GRAY_GLOWSTONE = register("light_gray_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block GRAY_GLOWSTONE = register("gray_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block BLACK_GLOWSTONE = register("black_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.BLACK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block BROWN_GLOWSTONE = register("brown_glowstone", new Block(FabricBlockSettings.of(Material.GLASS).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15)));
-	public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(10)));
+	public static final Block RED_GLOWSTONE = register("red_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.RED).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block ORANGE_GLOWSTONE = register("orange_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.YELLOW).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block YELLOW_GLOWSTONE = register("yellow_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.ORANGE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block LIME_GLOWSTONE = register("lime_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIME).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block GREEN_GLOWSTONE = register("green_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.GREEN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block BLUE_GLOWSTONE = register("blue_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block CYAN_GLOWSTONE = register("cyan_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.CYAN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block LIGHT_BLUE_GLOWSTONE = register("light_blue_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block PURPLE_GLOWSTONE = register("purple_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.PURPLE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block MAGENTA_GLOWSTONE = register("magenta_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.MAGENTA).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block PINK_GLOWSTONE = register("pink_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.PINK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block WHITE_GLOWSTONE = register("white_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.WHITE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block LIGHT_GRAY_GLOWSTONE = register("light_gray_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block GRAY_GLOWSTONE = register("gray_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block BLACK_GLOWSTONE = register("black_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.BLACK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block BROWN_GLOWSTONE = register("brown_glowstone", new Block(FabricBlockSettings.of(Material.GLASS).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque()));
+	public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(FabricBlockSettings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance(10).nonOpaque()));
 
 	// Glowstone Slab
 	public static final Block RED_GLOWSTONE_SLAB = register("red_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(RED_GLOWSTONE)));
@@ -2508,7 +2508,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_GLOWSTONE_SLAB = register("black_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(BLACK_GLOWSTONE)));
 	public static final Block BROWN_GLOWSTONE_SLAB = register("brown_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(BROWN_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_SLAB = register("soul_glowstone_slab", new SlabBlock(FabricBlockSettings.copy(SOUL_GLOWSTONE)));
-	public static final Block GLOWSTONE_SLAB = register("glowstone_slab", new SlabBlock(FabricBlockSettings.copy(GLOWSTONE)));
+	public static final Block GLOWSTONE_SLAB = register("glowstone_slab", new SlabBlock(FabricBlockSettings.copy(GLOWSTONE).nonOpaque()));
 
 	// Glowstone Stairs
 	public static final Block RED_GLOWSTONE_STAIRS = register("red_glowstone_stairs", new CPlusStairBlock(RED_GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(RED_GLOWSTONE)));
@@ -2528,7 +2528,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_GLOWSTONE_STAIRS = register("black_glowstone_stairs", new CPlusStairBlock(BLACK_GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(BLACK_GLOWSTONE)));
 	public static final Block BROWN_GLOWSTONE_STAIRS = register("brown_glowstone_stairs", new CPlusStairBlock(BROWN_GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(BROWN_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_STAIRS = register("soul_glowstone_stairs", new CPlusStairBlock(SOUL_GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(SOUL_GLOWSTONE)));
-	public static final Block GLOWSTONE_STAIRS = register("glowstone_stairs", new CPlusStairBlock(GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(GLOWSTONE)));
+	public static final Block GLOWSTONE_STAIRS = register("glowstone_stairs", new CPlusStairBlock(GLOWSTONE.getDefaultState(), FabricBlockSettings.copy(GLOWSTONE).nonOpaque()));
 
 	// Glowstone Wall
 	public static final Block RED_GLOWSTONE_WALL = register("red_glowstone_wall", new WallBlock(FabricBlockSettings.copy(RED_GLOWSTONE)));
@@ -2548,7 +2548,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_GLOWSTONE_WALL = register("black_glowstone_wall", new WallBlock(FabricBlockSettings.copy(BLACK_GLOWSTONE)));
 	public static final Block BROWN_GLOWSTONE_WALL = register("brown_glowstone_wall", new WallBlock(FabricBlockSettings.copy(BROWN_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_WALL = register("soul_glowstone_wall", new WallBlock(FabricBlockSettings.copy(SOUL_GLOWSTONE)));
-	public static final Block GLOWSTONE_WALL = register("glowstone_wall", new WallBlock(FabricBlockSettings.copy(GLOWSTONE)));
+	public static final Block GLOWSTONE_WALL = register("glowstone_wall", new WallBlock(FabricBlockSettings.copy(GLOWSTONE).nonOpaque()));
 
 	// Glowstone Gate
 	public static final Block RED_GLOWSTONE_GATE = register("red_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(RED_GLOWSTONE)));
@@ -2568,7 +2568,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
 	public static final Block BLACK_GLOWSTONE_GATE = register("black_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(BLACK_GLOWSTONE)));
 	public static final Block BROWN_GLOWSTONE_GATE = register("brown_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(BROWN_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_GATE = register("soul_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SOUL_GLOWSTONE)));
-	public static final Block GLOWSTONE_GATE = register("glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(GLOWSTONE)));
+	public static final Block GLOWSTONE_GATE = register("glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(GLOWSTONE).nonOpaque()));
 
 	//Glass stairs/slabs/walls/gates will be here eventually.  Until then, here's a random face from the win + . menu
 	// (¬‿¬)

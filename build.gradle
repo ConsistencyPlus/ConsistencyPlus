@@ -1,7 +1,7 @@
 //file:noinspection GroovyAssignabilityCheck
 plugins {
     id "fabric-loom" version "0.9.+"
-    id "io.github.juuxel.loom-quiltflower" version "1.+"
+    id "io.github.juuxel.loom-quiltflower-mini" version "1.+"
     id "maven-publish"
 }
 

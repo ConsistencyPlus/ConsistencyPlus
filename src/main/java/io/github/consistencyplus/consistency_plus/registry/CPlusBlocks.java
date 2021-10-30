@@ -2551,11 +2551,10 @@ public class CPlusBlocks {
 	public static final Block SOUL_GLOWSTONE_GATE = register("soul_glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(SOUL_GLOWSTONE)));
 	public static final Block GLOWSTONE_GATE = register("glowstone_gate", new FenceGateBlock(FabricBlockSettings.copy(GLOWSTONE).nonOpaque()));
 
-	//Glass stairs/slabs/walls/gates will be here eventually.  Until then, here's a random face from the win + . menu
+	//Glass stuff will be here eventually.  Until then, here's a random face from the win + . menu
 	// (¬‿¬)
 
-	//Unlike Regular Glass, stained tinted glass actually gets a spot with placeholders.
-	// Lies, come in many forms and some look like truth.
+	// Tinted Glass
 	public static final Block RED_TINTED_GLASS_BLOCK = register("red_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
 	public static final Block ORANGE_TINTED_GLASS_BLOCK = register("orange_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
 	public static final Block YELLOW_TINTED_GLASS_BLOCK = register("yellow_tinted_glass", new TintedGlassBlock(FabricBlockSettings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
@@ -2625,8 +2624,6 @@ public class CPlusBlocks {
 		public static final Block PURPUR_CORNER_PILLAR = register("purpur_corner_pillar", new Block(FabricBlockSettings.copy(PURPUR_BLOCK)));
 
 
-        // Calculated Non Joke/Deprecated Block Count: 1881
-    // With Joke/Deprecated Blocks: 1881+20=1901
 
     // Siuol's selection regex syntax machine (?=")(.*)(?<=____")
     // Per Thing regex selection machine (?=")(.*)(____.*)(?<=")

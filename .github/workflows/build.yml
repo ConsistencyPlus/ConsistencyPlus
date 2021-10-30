@@ -22,6 +22,8 @@ jobs:
       - run: |
           ./gradlew build
           rm build/libs/**-dev.jar
+        env:
+          SNAPSHOT: ""
       - run: deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder build/libs/
       - uses: actions/upload-artifact@v2
         with:

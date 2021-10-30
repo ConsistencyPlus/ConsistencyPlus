@@ -1,11 +1,11 @@
 //file:noinspection GroovyAssignabilityCheck
 plugins {
     id "fabric-loom" version "0.9.+"
-    id "io.github.juuxel.loom-quiltflower" version "1.+"
+    id "io.github.juuxel.loom-quiltflower-mini" version "1.+"
     id "maven-publish"
 }
 
-String mod_version = "0.4.1-rc.3"
+String mod_version = "0.4.1"
 
 String minecraft_version = "1.17.1"
 String mc_major_version = "1.17"

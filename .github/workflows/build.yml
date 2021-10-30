@@ -13,7 +13,7 @@ jobs:
           java-version: 16
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: canary
+          deno-version: 1.15.3
       - run: |
           wget https://github.com/shssoichiro/oxipng/releases/download/v5.0.0/oxipng-5.0.0-x86_64-unknown-linux-musl.tar.gz
           tar -xf oxipng-5.0.0-x86_64-unknown-linux-musl.tar.gz
@@ -22,6 +22,8 @@ jobs:
       - run: |
           ./gradlew build
           rm build/libs/**-dev.jar
+        env:
+          SNAPSHOT: ""
       - run: deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder build/libs/
       - uses: actions/upload-artifact@v2
         with:

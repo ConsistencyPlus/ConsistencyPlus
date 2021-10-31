@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "consistency_plus:wigged_nubert"
+    },
+    "title": "\"Movin' up in the world\"",
+    "description": "Nubert is movin' up in the world.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "consistency_plus:nubert",
+  "criteria": {
+    "A": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:yellow_wool"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "consistency_plus:wigged_nubert"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

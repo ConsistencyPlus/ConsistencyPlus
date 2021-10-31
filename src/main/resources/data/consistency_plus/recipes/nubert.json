@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XYX",
+        "XZX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:red_wool"
+        },
+        "Y": {
+            "item": "minecraft:slime_block"
+        },
+        "Z": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:nubert",
+        "count": 1
+    }
+}

@@ -1,6 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import io.github.consistencyplus.consistency_plus.blocks.RedstonePumpkinBlock;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
@@ -11,6 +11,7 @@ import io.github.consistencyplus.consistency_plus.blocks.grass.GrassWallBlock;
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumStairsBlock;
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumWallBlock;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
 import io.github.consistencyplus.consistency_plus.core.CPlusCarvedPumpkinBlock;
 import io.github.consistencyplus.consistency_plus.core.CPlusStairBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -2597,6 +2598,8 @@ public class CPlusBlocks {
 	public static final Block NETHERITE_STAIRS = register("netherite_stairs", new CPlusStairBlock(NETHERITE_BLOCK.getDefaultState(), FabricBlockSettings.copy(NETHERITE_BLOCK)));
 	public static final Block SUSPICIOUS_SLAB = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
 	public static final Block JET = register("jet", new Block(FabricBlockSettings.copy(BEDROCK)));
+	public static final Block NUBERT = register("nubert", new NubertBlock());
+	public static final Block WIGGED_NUBERT = register("wigged_nubert", new WiggedNubertBlock());
 //  public static final Block SIUOLS_SANITY = register("is_a_crab", new Block(FabricBlockSettings.copy(HELP_ME)));
     //  You are having funny fun because your playing a Siuolplexplex contributed mod
 
@@ -2632,7 +2635,7 @@ public class CPlusBlocks {
         return Registry.register(Registry.BLOCK, new Identifier("consistency_plus", name), block);
     }
 
-	private static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) {
+	public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) {
 		return false;
 	}
 

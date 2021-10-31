@@ -1,0 +1,23 @@
+{
+  "credit": "Made with Blockbench by Cart3r.  ",
+  "textures": {
+    "0": "consistency_plus:block/nubert",
+    "1": "consistency_plus:block/nubert_face",
+    "2": "consistency_plus:block/nubert_top",
+    "particle": "consistency_plus:block/nubert"
+  },
+  "elements": [
+    {
+      "from": [2, 0, 2],
+      "to": [14, 12, 14],
+      "faces": {
+        "north": {"uv": [0, 0, 12, 12], "texture": "#1"},
+        "east": {"uv": [0, 0, 12, 12], "texture": "#0"},
+        "south": {"uv": [0, 0, 12, 12], "texture": "#0"},
+        "west": {"uv": [0, 0, 12, 12], "texture": "#0"},
+        "up": {"uv": [0, 0, 12, 12], "texture": "#2"},
+        "down": {"uv": [1, 1, 11, 11], "texture": "#2"}
+      }
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.item.HorseArmorItem;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public class CPlusItems {
@@ -2576,7 +2577,9 @@ public class CPlusItems {
     public static final Item NETHERITE_STAIRS = register("netherite_stairs", new BlockItem(CPlusBlocks.NETHERITE_STAIRS, new Item.Settings()));
     public static final Item SUSPICIOUS_SLAB = register("suspicious_slab", new BlockItem(CPlusBlocks.SUSPICIOUS_SLAB, new Item.Settings()));
     public static final Item JET = register("jet", new BlockItem(CPlusBlocks.JET, new Item.Settings()));
-
+	public static final Item NUBERT = register("nubert", new BlockItem(CPlusBlocks.NUBERT, new Item.Settings().fireproof().rarity(Rarity.EPIC)));
+	public static final Item WIGGED_NUBERT = register("wigged_nubert", new BlockItem(CPlusBlocks.WIGGED_NUBERT, new Item.Settings().fireproof().rarity(Rarity.EPIC)));
+	
 	//dyed bundles
 	public static final Item RED_BUNDLE = register("red_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));
 	public static final Item ORANGE_BUNDLE = register("orange_dyed_bundle", new BundleItem(new Item.Settings().maxCount(1)));

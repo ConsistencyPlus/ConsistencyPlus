@@ -5,20 +5,22 @@ plugins {
     id "maven-publish"
 }
 
-String mod_version = "0.4.1"
+String mod_version       = "0.4.1"
 
 String minecraft_version = "1.17.1"
-String mc_major_version = "1.17"
-String yarn_mappings  = "46"     // https://fabricmc.net/versions.html
-String loader_version = "0.11.6" // https://fabricmc.net/versions.html
-String fabric_version = "0.39.2" // https://fabricmc.net/versions.html
-String srt_version    = "1.1.0"  // https://modrinth.com/mod/stonecutter_recipe_tags/versions
+String mc_major_version  = "1.17"
+String yarn_mappings     = "46"     // https://fabricmc.net/versions.html
+String loader_version    = "0.11.6" // https://fabricmc.net/versions.html
+String fabric_version    = "0.41.0" // https://fabricmc.net/versions.html
+String srt_version       = "1.1.0"  // https://modrinth.com/mod/stonecutter_recipe_tags/versions
+String wthit_version     = "3.10.0" // https://modrinth.com/mod/wthit/versions
 
 archivesBaseName = "consistency_plus"
 version = mod_version + "+" + mc_major_version + System.getenv().SNAPSHOT
 
 repositories {
     maven {url = "https://api.modrinth.com/maven"}
+    maven {url = "https://maven.bai.lol"}
 }
 
 dependencies {
@@ -28,6 +30,12 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}+${mc_major_version}"
 
     modImplementation include("maven.modrinth:stonecutter_recipe_tags:${srt_version}")
+
+    // compile against the API
+    modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${wthit_version}"
+
+    // run against the full jar
+    modRuntime "mcp.mobius.waila:wthit:fabric-${wthit_version}"
 
     modImplementation "maven.modrinth:lazydfu:0.1.2" // Reduces start time
 }

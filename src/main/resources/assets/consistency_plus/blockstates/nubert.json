@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "consistency_plus:block/nubert",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "consistency_plus:block/nubert"
+    },
+    "facing=south": {
+      "model": "consistency_plus:block/nubert",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "consistency_plus:block/nubert",
+      "y": 270
+    }
+  }
+}

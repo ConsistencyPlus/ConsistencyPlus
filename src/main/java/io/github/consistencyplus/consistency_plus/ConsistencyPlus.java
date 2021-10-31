@@ -3,14 +3,10 @@ package io.github.consistencyplus.consistency_plus;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.resource.ResourceManager;
-import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-// import static io.github.consistencyplus.consistency_plus.registry.CPlusItems.CHARCOAL_BLOCK;
 
 public class ConsistencyPlus implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger("Consistency+");

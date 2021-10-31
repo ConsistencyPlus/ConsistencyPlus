@@ -4,6 +4,7 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
@@ -17,16 +18,18 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
 
 import static net.minecraft.block.Blocks.SLIME_BLOCK;
 import static net.minecraft.state.property.Properties.WATERLOGGED;
 
-public class NubertBlock extends HorizontalFacingBlock {
+public class NubertBlock extends HorizontalFacingBlock implements Waterloggable {
 	public static final VoxelShape NUBERT_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 12, 14);
 	
 	public NubertBlock() {
@@ -40,9 +43,22 @@ public class NubertBlock extends HorizontalFacingBlock {
 	}
 	
 	@Override
+	public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+		if (state.get(WATERLOGGED)) {
+			world.getFluidTickScheduler().schedule(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
+		}
+		
+		return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
+	}
+	
+	@Override
+	public FluidState getFluidState(BlockState state) {
+		return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
+	}
+	
+	@Override
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-		ItemStack heldStack = player.getStackInHand(hand);
-		if (heldStack.isOf(Items.YELLOW_WOOL)) {
+		if (player.getStackInHand(hand).isOf(Items.YELLOW_WOOL)) {
 			if (!world.isClient()) {
 				world.setBlockState(pos,
 						CPlusBlocks.WIGGED_NUBERT.getDefaultState()
@@ -68,7 +84,9 @@ public class NubertBlock extends HorizontalFacingBlock {
 	@Nullable
 	@Override
 	public BlockState getPlacementState(ItemPlacementContext ctx) {
-		return getDefaultState().with(FACING, ctx.getPlayerFacing().getOpposite()).with(WATERLOGGED, ctx.getWorld().getFluidState(ctx.getBlockPos()).getFluid() == Fluids.WATER);
+		return getDefaultState()
+				.with(FACING, ctx.getPlayerFacing().getOpposite())
+				.with(WATERLOGGED, ctx.getWorld().getFluidState(ctx.getBlockPos()).getFluid() == Fluids.WATER);
 	}
 	
 	@Override

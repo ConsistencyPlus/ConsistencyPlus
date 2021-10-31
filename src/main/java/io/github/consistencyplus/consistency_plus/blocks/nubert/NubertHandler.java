@@ -20,7 +20,7 @@ import java.util.List;
 public class NubertHandler {
 	public static boolean TEXT_NEEDS_UPDATE = true;
 	public static boolean TEXT_GOT_THIS_TICK = false;
-	public static final int TOTAL_NUBERT_PHRASES = 5;
+	public static final int TOTAL_NUBERT_PHRASES = 6;
 	public static MutableText CURRENT_TEXT = null;
 	
 	public static void onTooltip(ItemStack stack, TooltipContext context, List<Text> lines) {

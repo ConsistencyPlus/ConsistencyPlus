@@ -489,11 +489,6 @@ public class CPlusBlocks {
 	public static final Block CHISELED_GRANITE = register("chiseled_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
 	public static final Block CARVED_GRANITE = register("carved_granite", new Block(FabricBlockSettings.copy(POLISHED_GRANITE)));
 
-	//Clay
-	//Clay will have a rework eventually, none of this is final
-	public static final Block CLAY_SLAB = register("clay_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
-	public static final Block CLAY_STAIRS = register("clay_stairs", new CPlusStairBlock(CLAY.getDefaultState(), FabricBlockSettings.copy(CLAY)));
-	public static final Block CLAY_WALL = register("clay_wall", new WallBlock(FabricBlockSettings.copy(CLAY)));
 
 	//Bricks
 	public static final Block BRICK_GATE = register("brick_gate", new FenceGateBlock(FabricBlockSettings.copy(BRICKS)));
@@ -1771,6 +1766,93 @@ public class CPlusBlocks {
 	public static final Block CARVED_BROWN_TERRACOTTA = register("carved_brown_terracotta", new Block(FabricBlockSettings.copy(BROWN_TERRACOTTA)));
 	public static final Block CARVED_TERRACOTTA = register("carved_terracotta", new Block(FabricBlockSettings.copy(TERRACOTTA)));
 
+	//Glazed Terracotta
+
+	//Polished
+	public static final Block POLISHED_RED_GLAZED_TERRACOTTA = register("polished_red_glazed_terracotta", new Block(FabricBlockSettings.copy(RED_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_ORANGE_GLAZED_TERRACOTTA = register("polished_orange_glazed_terracotta", new Block(FabricBlockSettings.copy(ORANGE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_YELLOW_GLAZED_TERRACOTTA = register("polished_yellow_glazed_terracotta", new Block(FabricBlockSettings.copy(YELLOW_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIME_GLAZED_TERRACOTTA = register("polished_lime_glazed_terracotta", new Block(FabricBlockSettings.copy(LIME_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GREEN_GLAZED_TERRACOTTA = register("polished_green_glazed_terracotta", new Block(FabricBlockSettings.copy(GREEN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLUE_GLAZED_TERRACOTTA = register("polished_blue_glazed_terracotta", new Block(FabricBlockSettings.copy(BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_CYAN_GLAZED_TERRACOTTA = register("polished_cyan_glazed_terracotta", new Block(FabricBlockSettings.copy(CYAN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA = register("polished_light_blue_glazed_terracotta", new Block(FabricBlockSettings.copy(LIGHT_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PURPLE_GLAZED_TERRACOTTA = register("polished_purple_glazed_terracotta", new Block(FabricBlockSettings.copy(PURPLE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_MAGENTA_GLAZED_TERRACOTTA = register("polished_magenta_glazed_terracotta", new Block(FabricBlockSettings.copy(MAGENTA_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PINK_GLAZED_TERRACOTTA = register("polished_pink_glazed_terracotta", new Block(FabricBlockSettings.copy(PINK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_WHITE_GLAZED_TERRACOTTA = register("polished_white_glazed_terracotta", new Block(FabricBlockSettings.copy(WHITE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA = register("polished_light_gray_glazed_terracotta", new Block(FabricBlockSettings.copy(LIGHT_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GRAY_GLAZED_TERRACOTTA = register("polished_gray_glazed_terracotta", new Block(FabricBlockSettings.copy(GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLACK_GLAZED_TERRACOTTA = register("polished_black_glazed_terracotta", new Block(FabricBlockSettings.copy(BLACK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BROWN_GLAZED_TERRACOTTA = register("polished_brown_glazed_terracotta", new Block(FabricBlockSettings.copy(BROWN_GLAZED_TERRACOTTA)));
+	// Slab
+	public static final Block POLISHED_RED_GLAZED_TERRACOTTA_SLAB = register("polished_red_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_RED_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_ORANGE_GLAZED_TERRACOTTA_SLAB = register("polished_orange_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_ORANGE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_YELLOW_GLAZED_TERRACOTTA_SLAB = register("polished_yellow_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_YELLOW_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIME_GLAZED_TERRACOTTA_SLAB = register("polished_lime_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_LIME_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GREEN_GLAZED_TERRACOTTA_SLAB = register("polished_green_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_GREEN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLUE_GLAZED_TERRACOTTA_SLAB = register("polished_blue_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_CYAN_GLAZED_TERRACOTTA_SLAB = register("polished_cyan_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_CYAN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB = register("polished_light_blue_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PURPLE_GLAZED_TERRACOTTA_SLAB = register("polished_purple_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_PURPLE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_MAGENTA_GLAZED_TERRACOTTA_SLAB = register("polished_magenta_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_MAGENTA_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PINK_GLAZED_TERRACOTTA_SLAB = register("polished_pink_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_PINK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_WHITE_GLAZED_TERRACOTTA_SLAB = register("polished_white_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_WHITE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB = register("polished_light_gray_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GRAY_GLAZED_TERRACOTTA_SLAB = register("polished_gray_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLACK_GLAZED_TERRACOTTA_SLAB = register("polished_black_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BLACK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BROWN_GLAZED_TERRACOTTA_SLAB = register("polished_brown_glazed_terracotta_slab", new SlabBlock(FabricBlockSettings.copy(POLISHED_BROWN_GLAZED_TERRACOTTA)));
+	// Stairs
+	public static final Block POLISHED_RED_GLAZED_TERRACOTTA_STAIRS = register("polished_red_glazed_terracotta_stairs", new CPlusStairBlock(RED_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_RED_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_ORANGE_GLAZED_TERRACOTTA_STAIRS = register("polished_orange_glazed_terracotta_stairs", new CPlusStairBlock(ORANGE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_ORANGE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_YELLOW_GLAZED_TERRACOTTA_STAIRS = register("polished_yellow_glazed_terracotta_stairs", new CPlusStairBlock(YELLOW_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_YELLOW_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIME_GLAZED_TERRACOTTA_STAIRS = register("polished_lime_glazed_terracotta_stairs", new CPlusStairBlock(LIME_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_LIME_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GREEN_GLAZED_TERRACOTTA_STAIRS = register("polished_green_glazed_terracotta_stairs", new CPlusStairBlock(GREEN_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_GREEN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLUE_GLAZED_TERRACOTTA_STAIRS = register("polished_blue_glazed_terracotta_stairs", new CPlusStairBlock(BLUE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_CYAN_GLAZED_TERRACOTTA_STAIRS = register("polished_cyan_glazed_terracotta_stairs", new CPlusStairBlock(CYAN_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_CYAN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS = register("polished_light_blue_glazed_terracotta_stairs", new CPlusStairBlock(LIGHT_BLUE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PURPLE_GLAZED_TERRACOTTA_STAIRS = register("polished_purple_glazed_terracotta_stairs", new CPlusStairBlock(PURPLE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_PURPLE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_MAGENTA_GLAZED_TERRACOTTA_STAIRS = register("polished_magenta_glazed_terracotta_stairs", new CPlusStairBlock(MAGENTA_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_MAGENTA_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PINK_GLAZED_TERRACOTTA_STAIRS = register("polished_pink_glazed_terracotta_stairs", new CPlusStairBlock(PINK_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_PINK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_WHITE_GLAZED_TERRACOTTA_STAIRS = register("polished_white_glazed_terracotta_stairs", new CPlusStairBlock(WHITE_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_WHITE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS = register("polished_light_gray_glazed_terracotta_stairs", new CPlusStairBlock(LIGHT_GRAY_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GRAY_GLAZED_TERRACOTTA_STAIRS = register("polished_gray_glazed_terracotta_stairs", new CPlusStairBlock(GRAY_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLACK_GLAZED_TERRACOTTA_STAIRS = register("polished_black_glazed_terracotta_stairs", new CPlusStairBlock(BLACK_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_BLACK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BROWN_GLAZED_TERRACOTTA_STAIRS = register("polished_brown_glazed_terracotta_stairs", new CPlusStairBlock(BROWN_GLAZED_TERRACOTTA.getDefaultState(), FabricBlockSettings.copy(POLISHED_BROWN_GLAZED_TERRACOTTA)));
+	// Wall
+	public static final Block POLISHED_RED_GLAZED_TERRACOTTA_WALL = register("polished_red_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_RED_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_ORANGE_GLAZED_TERRACOTTA_WALL = register("polished_orange_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_ORANGE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_YELLOW_GLAZED_TERRACOTTA_WALL = register("polished_yellow_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_YELLOW_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIME_GLAZED_TERRACOTTA_WALL = register("polished_lime_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_LIME_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GREEN_GLAZED_TERRACOTTA_WALL = register("polished_green_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_GREEN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLUE_GLAZED_TERRACOTTA_WALL = register("polished_blue_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_CYAN_GLAZED_TERRACOTTA_WALL = register("polished_cyan_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_CYAN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA_WALL = register("polished_light_blue_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PURPLE_GLAZED_TERRACOTTA_WALL = register("polished_purple_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_PURPLE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_MAGENTA_GLAZED_TERRACOTTA_WALL = register("polished_magenta_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_MAGENTA_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PINK_GLAZED_TERRACOTTA_WALL = register("polished_pink_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_PINK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_WHITE_GLAZED_TERRACOTTA_WALL = register("polished_white_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_WHITE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA_WALL = register("polished_light_gray_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GRAY_GLAZED_TERRACOTTA_WALL = register("polished_gray_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLACK_GLAZED_TERRACOTTA_WALL = register("polished_black_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BLACK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BROWN_GLAZED_TERRACOTTA_WALL = register("polished_brown_glazed_terracotta_wall", new WallBlock(FabricBlockSettings.copy(POLISHED_BROWN_GLAZED_TERRACOTTA)));
+	// Gates
+	public static final Block POLISHED_RED_GLAZED_TERRACOTTA_GATE = register("polished_red_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_RED_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_ORANGE_GLAZED_TERRACOTTA_GATE = register("polished_orange_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_ORANGE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_YELLOW_GLAZED_TERRACOTTA_GATE = register("polished_yellow_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_YELLOW_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIME_GLAZED_TERRACOTTA_GATE = register("polished_lime_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_LIME_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GREEN_GLAZED_TERRACOTTA_GATE = register("polished_green_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_GREEN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLUE_GLAZED_TERRACOTTA_GATE = register("polished_blue_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_CYAN_GLAZED_TERRACOTTA_GATE = register("polished_cyan_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_CYAN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA_GATE = register("polished_light_blue_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PURPLE_GLAZED_TERRACOTTA_GATE = register("polished_purple_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_PURPLE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_MAGENTA_GLAZED_TERRACOTTA_GATE = register("polished_magenta_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_MAGENTA_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_PINK_GLAZED_TERRACOTTA_GATE = register("polished_pink_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_PINK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_WHITE_GLAZED_TERRACOTTA_GATE = register("polished_white_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_WHITE_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA_GATE = register("polished_light_gray_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_GRAY_GLAZED_TERRACOTTA_GATE = register("polished_gray_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_GRAY_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BLACK_GLAZED_TERRACOTTA_GATE = register("polished_black_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BLACK_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_BROWN_GLAZED_TERRACOTTA_GATE = register("polished_brown_glazed_terracotta_gate", new FenceGateBlock(FabricBlockSettings.copy(POLISHED_BROWN_GLAZED_TERRACOTTA)));
 
 	// Concrete
 	public static final Block RED_CONCRETE_SLAB = register("red_concrete_slab", new SlabBlock(FabricBlockSettings.copy(RED_CONCRETE)));

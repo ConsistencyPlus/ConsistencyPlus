@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "XX ",
+        "XX "
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:yellow_glazed_terracotta"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_yellow_glazed_terracotta",
+        "count": 4
+    }
+}

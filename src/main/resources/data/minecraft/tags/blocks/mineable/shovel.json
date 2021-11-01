@@ -1,9 +1,6 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:clay_slab",
-    "consistency_plus:clay_stairs",
-    "consistency_plus:clay_wall",
     "consistency_plus:dirt_slab",
     "consistency_plus:dirt_stairs",
     "consistency_plus:dirt_wall",

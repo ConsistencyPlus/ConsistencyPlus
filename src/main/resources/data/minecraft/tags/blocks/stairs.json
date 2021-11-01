@@ -46,7 +46,6 @@
     "consistency_plus:cut_granite_stairs",
     "consistency_plus:granite_tile_stairs",
     "consistency_plus:granite_brick_stairs",
-    "consistency_plus:clay_stairs",
     "consistency_plus:cracked_nether_brick_stairs",
     "consistency_plus:blue_nether_brick_stairs",
     "consistency_plus:cracked_blue_nether_brick_stairs",
@@ -370,6 +369,22 @@
     "consistency_plus:cobbled_light_gray_terracotta_stairs",
     "consistency_plus:cobbled_gray_terracotta_stairs",
     "consistency_plus:cobbled_black_terracotta_stairs",
-    "consistency_plus:cobbled_brown_terracotta_stairs"
+    "consistency_plus:cobbled_brown_terracotta_stairs",
+    "consistency_plus:polished_red_glazed_terracotta_stairs",
+    "consistency_plus:polished_orange_glazed_terracotta_stairs",
+    "consistency_plus:polished_yellow_glazed_terracotta_stairs",
+    "consistency_plus:polished_lime_glazed_terracotta_stairs",
+    "consistency_plus:polished_green_glazed_terracotta_stairs",
+    "consistency_plus:polished_blue_glazed_terracotta_stairs",
+    "consistency_plus:polished_cyan_glazed_terracotta_stairs",
+    "consistency_plus:polished_light_blue_glazed_terracotta_stairs",
+    "consistency_plus:polished_purple_glazed_terracotta_stairs",
+    "consistency_plus:polished_magenta_glazed_terracotta_stairs",
+    "consistency_plus:polished_pink_glazed_terracotta_stairs",
+    "consistency_plus:polished_white_glazed_terracotta_stairs",
+    "consistency_plus:polished_light_gray_glazed_terracotta_stairs",
+    "consistency_plus:polished_gray_glazed_terracotta_stairs",
+    "consistency_plus:polished_black_glazed_terracotta_stairs",
+    "consistency_plus:polished_brown_glazed_terracotta_stairs"
   ]
 }

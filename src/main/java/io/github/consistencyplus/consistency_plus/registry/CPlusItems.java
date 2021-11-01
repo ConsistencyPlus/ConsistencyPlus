@@ -3,6 +3,7 @@ package io.github.consistencyplus.consistency_plus.registry;
 import io.github.consistencyplus.consistency_plus.items.RedirectedBlockItem;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlus;
 import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceGateBlock;
@@ -5165,7 +5166,7 @@ public class CPlusItems {
 
 	// Random
 	public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(CPlusBlocks.WARPED_WART, new Item.Settings().group(ItemGroup.MISC)));
-	public static final Item COPPER_NUGGET = register("copper_nugget", new Item(CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item COPPER_NUGGET = register("copper_nugget", new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 	public static final Item NETHERITE_HORSE_ARMOR = register("netherite_horse_armor", new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
 
 	// 🐢

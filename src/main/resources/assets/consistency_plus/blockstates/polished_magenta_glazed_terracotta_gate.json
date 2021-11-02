@@ -33,7 +33,7 @@
         "facing=north,in_wall=true,open=false": {
             "uvlock": true,
             "y": 180,
-            "model": "consistency_plus:block/polished_magenta_glazed_glazed_terracotta_gate_wall"
+            "model": "consistency_plus:block/polished_magenta_glazed_terracotta_gate_wall"
         },
         "facing=north,in_wall=true,open=true": {
             "uvlock": true,

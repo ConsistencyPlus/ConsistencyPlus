@@ -41,4 +41,6 @@ MobButcher - Speaking of upside-down language, it's also completed. Thanks to Wi
 Carter - Shakespearean is also finished thanks to help from MobButcher
 - 10.17.21
 
+Carter - Removed unused strings and fixed words spelled slightly different from en_us in en_ca, en_gb, and en_nz
+
 

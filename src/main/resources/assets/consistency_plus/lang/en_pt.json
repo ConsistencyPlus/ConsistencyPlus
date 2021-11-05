@@ -308,9 +308,6 @@
   "block.consistency_plus.purpur_gate": "Purpur Gate",
   "block.consistency_plus.smooth_purpur_gate": "Smooth Purpur Gate",
 
-  "block.consistency_plus.clay_slab": "Clay Slab",
-  "block.consistency_plus.clay_stairs": "Clay Stairs",
-  "block.consistency_plus.clay_wall": "Clay Wall",
   "block.consistency_plus.brick_gate": "Terracotta Brick Gate",
 
   "block.consistency_plus.suspicious_slab": "Suspicious Slab",
@@ -463,7 +460,6 @@
   "block.consistency_plus.cut_andesite_gate": "Cut Andesite Gate",
   "block.consistency_plus.polished_andesite_gate": "Polished Andesite Gate",
   "block.consistency_plus.andesite_brick_gate": "Andesite Brick Gate",
-  "block.consistency_plus.cracked_andesite_gate": "Cracked Andesite Gate",
   "block.consistency_plus.cracked_smooth_andesite_gate": "Cracked Smooth Andesite Gate",
   "block.consistency_plus.cracked_cut_andesite_gate": "Cracked Cut Andesite Gate",
   "block.consistency_plus.cracked_polished_andesite_gate": "Cracked Polished Andesite Gate",
@@ -1419,7 +1415,6 @@
   "block.consistency_plus.black_ice_wall": "Black Ice Wall",
   "block.consistency_plus.brown_ice_wall": "Brown Ice Wall",
   "block.consistency_plus.soul_ice_wall": "Soul Ice Wall",
-  "block.consistency_plus.ice_gate": "Ice Gate",
   "block.consistency_plus.red_ice_gate": "Red Ice Gate",
   "block.consistency_plus.orange_ice_gate": "Orange Ice Gate",
   "block.consistency_plus.yellow_ice_gate": "Yellow Ice Gate",

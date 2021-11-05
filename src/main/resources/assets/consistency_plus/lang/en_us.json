@@ -61,11 +61,6 @@
 
 
 
-  "block.minecraft.nether_wart_block": "Crimson Wart Block",
-  "block.minecraft.red_nether_brick_slab": "Crimson Nether Brick Slab",
-  "block.minecraft.red_nether_brick_stairs": "Crimson Nether Brick Stairs",
-  "block.minecraft.red_nether_brick_wall": "Crimson Nether Brick Wall",
-  "block.minecraft.red_nether_bricks": "Crimson Nether Bricks",
   "block.minecraft.purpur_block": "Purpur Tiles",
   "block.minecraft.purpur_slab": "Purpur Tile Slab",
   "block.minecraft.purpur_stairs": "Purpur Tile Stairs",
@@ -73,7 +68,7 @@
   "block.minecraft.chiseled_polished_blackstone": "Carved Blackstone",
   "block.minecraft.chiseled_sandstone": "Carved Sandstone",
   "block.minecraft.chiseled_stone_bricks": "Chiseled Stone",
-  "block.minecraft.chiseled_nether_bricks": "Carved Nether Bricks",
+
   "block.minecraft.chiseled_red_sandstone": "Carved Red Sandstone",
   "block.minecraft.cracked_polished_blackstone_bricks": "Cracked Blackstone Bricks",
   "block.minecraft.polished_blackstone_brick_slab": "Blackstone Brick Slab",
@@ -91,6 +86,19 @@
   "block.minecraft.waxed_exposed_cut_copper": "Waxed Exposed Copper Tiles",
   "block.minecraft.waxed_weathered_cut_copper": "Waxed Weathered Copper Tiles",
   "block.minecraft.waxed_oxidized_cut_copper": "Waxed Oxidized Copper Tiles",
+  "block.minecraft.polished_basalt": "Basalt Pillar",
+  "block.minecraft.nether_wart_block": "Crimson Wart Block",
+  "block.minecraft.red_nether_brick_slab": "Crimson Wart Brick Slab",
+  "block.minecraft.red_nether_brick_stairs": "Crimson Wart Brick Stairs",
+  "block.minecraft.red_nether_brick_wall": "Crimson Wart Brick Wall",
+  "block.minecraft.red_nether_bricks": "Crimson Wart Bricks",
+  "block.minecraft.chiseled_nether_bricks": "Carved Netherrack",
+  "block.minecraft.nether_bricks": "Netherrack Bricks",
+  "block.minecraft.nether_brick_slab": "Netherrack Brick Slab",
+  "block.minecraft.nether_brick_stairs": "Netherrack Brick Stairs",
+  "block.minecraft.nether_brick_wall": "Netherrack Brick Wall",
+  "block.minecraft.nether_brick_fence": "Netherrack Brick Fence",
+  "block.minecraft.cracked_nether_bricks": "Cracked Netherrack Bricks",
 
   "block.minecraft.oak_fence_gate": "Oak Gate",
   "block.minecraft.birch_fence_gate": "Birch Gate",
@@ -100,7 +108,7 @@
   "block.minecraft.dark_oak_fence_gate": "Dark Oak Gate",
   "block.minecraft.warped_fence_gate": "Warped Gate",
   "block.minecraft.crimson_fence_gate": "Crimson Gate",
-  "block.minecraft.nether_brick_fence_gate": "Nether Brick Gate",
+  "block.minecraft.nether_brick_fence_gate": "Netherrack Brick Gate",
 
 
 

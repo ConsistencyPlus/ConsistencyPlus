@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X",
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:polished_purpur"
+        }
+    },
+    "result": {
+        "item": "minecraft:purpur_pillar",
+        "count": 2
+    }
+}

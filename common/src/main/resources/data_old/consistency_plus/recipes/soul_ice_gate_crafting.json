@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "consistency_plus:soul_ice_wall"
+    },
+    "Y": {
+      "item": "consistency_plus:soul_ice"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:soul_ice_gate",
+    "count": 4
+  }
+}

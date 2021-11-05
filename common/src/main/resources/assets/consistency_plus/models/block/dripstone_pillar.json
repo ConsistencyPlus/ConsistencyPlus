@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "consistency_plus:block/dripstone_pillar_top",
+    "side": "consistency_plus:block/dripstone_pillar"
+  }
+}

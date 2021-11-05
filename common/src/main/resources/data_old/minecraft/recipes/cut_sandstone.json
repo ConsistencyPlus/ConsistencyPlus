@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "consistency_plus:sandstone_bricks"
+    }
+  },
+  "result": {
+    "item": "minecraft:cut_sandstone",
+    "count": 4
+  }
+}

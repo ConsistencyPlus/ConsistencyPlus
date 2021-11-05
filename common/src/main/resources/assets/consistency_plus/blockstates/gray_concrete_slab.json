@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/gray_concrete_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/gray_concrete"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/gray_concrete_slab_top"
+    }
+  }
+}

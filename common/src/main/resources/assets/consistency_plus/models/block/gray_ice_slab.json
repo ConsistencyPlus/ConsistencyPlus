@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "top": "consistency_plus:block/gray_ice",
+    "bottom": "consistency_plus:block/gray_ice",
+    "side": "consistency_plus:block/gray_ice"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:mycelium"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:mycelium_wall",
+    "count": 6
+  }
+}

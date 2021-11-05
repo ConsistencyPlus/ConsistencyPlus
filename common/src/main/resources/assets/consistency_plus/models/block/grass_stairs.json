@@ -1,0 +1,9 @@
+{
+  "parent": "consistency_plus:block/template_consistency_overlay_stairs",
+  "textures": {
+    "bottom": "minecraft:block/dirt",
+    "top": "minecraft:block/grass_block_top",
+    "side": "minecraft:block/grass_block_side",
+    "overlay": "minecraft:block/grass_block_side_overlay"
+  }
+}

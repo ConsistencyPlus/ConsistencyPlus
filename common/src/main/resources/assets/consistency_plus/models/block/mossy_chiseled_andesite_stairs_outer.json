@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/mossy_chiseled_andesite",
+    "top": "consistency_plus:block/mossy_chiseled_andesite",
+    "side": "consistency_plus:block/mossy_chiseled_andesite"
+  }
+}

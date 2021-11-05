@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab_top",
+    "textures": {
+        "top": "consistency_plus:block/cobbled_cyan_terracotta",
+        "bottom": "consistency_plus:block/cobbled_cyan_terracotta",
+        "side": "consistency_plus:block/cobbled_cyan_terracotta"
+    }
+}

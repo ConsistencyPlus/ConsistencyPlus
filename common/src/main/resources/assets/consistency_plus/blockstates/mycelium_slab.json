@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/mycelium_slab"
+    },
+    "type=double": {
+      "model": "block/mycelium"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/mycelium_slab_top"
+    }
+  }
+}

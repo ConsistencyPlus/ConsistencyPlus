@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/white_glowstone_slab"
+    },
+    "type=double": {
+      "model": "consistency_plus:block/white_glowstone"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/white_glowstone_slab_top"
+    }
+  }
+}

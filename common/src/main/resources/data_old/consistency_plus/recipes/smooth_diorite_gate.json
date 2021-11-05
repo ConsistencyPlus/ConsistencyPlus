@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "consistency_plus:diorite_gate"
+    },
+    "result": "consistency_plus:smooth_diorite_gate",
+    "count": 1,
+    "experience": 0.1,
+    "cookingtime": 200
+}

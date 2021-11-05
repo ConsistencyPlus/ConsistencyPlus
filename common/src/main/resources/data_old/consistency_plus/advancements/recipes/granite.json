@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "consistency_plus:recipes/granite_gate_crafting",
+      "consistency_plus:recipes/polished_granite_wall_crafting",
+      "consistency_plus:recipes/polished_granite_gate_crafting",
+      "consistency_plus:recipes/granite_bricks_crafting",
+      "consistency_plus:recipes/granite_brick_slab_crafting",
+      "consistency_plus:recipes/granite_brick_stairs_crafting",
+      "consistency_plus:recipes/granite_brick_wall_crafting",
+      "consistency_plus:recipes/granite_brick_gate_crafting",
+      "consistency_plus:recipes/cut_granite_crafting",
+      "consistency_plus:recipes/cut_granite_slab_crafting",
+      "consistency_plus:recipes/cut_granite_stairs_crafting",
+      "consistency_plus:recipes/cut_granite_wall_crafting",
+      "consistency_plus:recipes/cut_granite_gate_crafting",
+      "consistency_plus:recipes/granite_tiles_crafting",
+      "consistency_plus:recipes/granite_tile_slab_crafting",
+      "consistency_plus:recipes/granite_tile_stairs_crafting",
+      "consistency_plus:recipes/granite_tile_wall_crafting",
+      "consistency_plus:recipes/granite_tile_gate_crafting",
+      "consistency_plus:recipes/smooth_granite_slab_crafting",
+      "consistency_plus:recipes/smooth_granite_stairs_crafting",
+      "consistency_plus:recipes/smooth_granite_wall_crafting",
+      "consistency_plus:recipes/smooth_granite_gate_crafting",
+      "consistency_plus:recipes/granite_pillar_crafting",
+      "consistency_plus:recipes/chiseled_granite_crafting",
+      "consistency_plus:recipes/carved_granite_crafting"
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:granite"
+          }
+        ]
+      }
+    }
+  }
+}

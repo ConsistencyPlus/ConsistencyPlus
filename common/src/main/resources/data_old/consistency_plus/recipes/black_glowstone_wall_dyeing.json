@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:black_dye"
+    },
+    "#": {
+      "item": "consistency_plus:glowstone_wall"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:black_glowstone_wall",
+    "count": 8
+  }
+}

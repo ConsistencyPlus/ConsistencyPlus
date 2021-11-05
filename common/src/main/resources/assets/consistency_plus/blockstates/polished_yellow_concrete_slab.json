@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/polished_yellow_concrete_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/polished_yellow_concrete"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/polished_yellow_concrete_slab_top"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "minecraft:block/pumpkin_top",
+    "front": "consistency_plus:block/jack_o_soul",
+    "side": "minecraft:block/pumpkin_side"
+  }
+}

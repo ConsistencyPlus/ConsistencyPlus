@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:grass_wall",
+    "count": 6
+  }
+}

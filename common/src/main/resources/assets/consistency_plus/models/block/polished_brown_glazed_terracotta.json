@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "consistency_plus:block/polished_brown_glazed_terracotta"
+    }
+}

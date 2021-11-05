@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "consistency_plus",
+  "version": "${version}",
+  "name": "Consistency Plus",
+  "description": "Builders rejoice; we've added all the missing block variants (and a whole lot more)!",
+  "contributors": [
+    {
+      "name": "Carter [Project Lead]",
+      "contact": {
+        "Discord": "Cart3r#1234"
+      }
+    },
+    {
+      "name": "Siuol [Assistant Project Lead]",
+      "contact": {
+        "Discord": "\"Siuol\" Appeared#5729"
+      }
+    },
+    {
+      "name": "Tropheus Jay [Assistant Project Lead]",
+      "contact": {
+        "Discord": "Tropheus Jay#7241"
+      }
+    },
+    {
+      "name": "IMS [Former Developer]",
+      "contact": {
+        "Discord": "IMS#7902"
+      }
+    },
+    {
+      "name": "Devious [Generator Developer]",
+      "contact": {
+        "Discord": "Deviouslrd#9151"
+      }
+    },
+
+    {
+      "name": "Emmaffle [Developer]",
+      "contact": {
+        "Discord": "Emmaffle#1787"
+      }
+    },
+    {
+      "name": "Ibex [Developer]",
+      "contact": {
+        "Discord": "Ibex#3641"
+      }
+    },
+    {
+      "name": "Tyler [Contributor]",
+      "contact": {
+        "Discord": "Digital_Tech#0001"
+      }
+    },
+    {
+      "name": "Pepper [Contributor]",
+      "contact": {
+        "Discord": "Pepper#5106"
+      }
+    },
+    {
+      "name": "Devin [Contributor]",
+      "contact": {
+        "Github": "HiItsDevin"
+      }
+    },
+    {
+      "name": "Jingy [Contributor]",
+      "contact": {
+        "Discord": "Jingy#0001"
+      }
+    },
+    {
+      "name": "Seska [Contributor]",
+      "contact": {
+        "Discord": "seska#6343"
+      }
+    },
+    {
+      "name": "RDKRACZ [Translations]",
+      "contact": {
+        "Discord": "K0RR#3476"
+      }
+    },
+    {
+      "name": "MobButcher [Translations]",
+      "contact": {
+        "Discord": "MobButcher#5874"
+      }
+    }
+  ],
+
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/consistency",
+    "issues": "https://github.com/ConsistencyPlus/ConsistencyPlus/issues",
+    "sources": "https://github.com/ConsistencyPlus/ConsistencyPlus",
+    "wiki": "https://github.com/ConsistencyPlus/ConsistencyPlus/wiki"
+  },
+
+  "license": "LGPLv3",
+  "icon": "assets/consistency_plus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.consistencyplus.consistency_plus.ConsistencyPlus"
+    ],
+    "client": [
+      "io.github.consistencyplus.consistency_plus.ConsistencyPlusClientside"
+    ]
+  },
+  "mixins": [
+    "consistency_plus.mixins.json"
+  ],
+
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.17.1"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/VeNX7h8bAK"
+      }
+    }
+  }
+}

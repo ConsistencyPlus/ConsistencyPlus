@@ -1,0 +1,44 @@
+Translation Statuses:
+
+English-US (Base) - Obviously up to date
+
+Japanese - Up to date as of 0.3.0-Alpha, 3.15.21. Translated by Siuol without any actual knowledge on the words.
+Note: If you are a Japanese speaker, feel free to fix these translations
+
+Polish - Managed by RDK. Up to date to 0.3.0-RC1. 4.22.21
+
+Russian - Managed by MobButcher. Up to date as of 0.4.1-rc.2. 10.17.21
+Ukrainian - Managed by MobButcher. Up to date as of 0.4.1-rc.2 10.18.21
+English (Upside-Down) - Managed by MobButcher. Up to date as of 0.4.1-rc.2. 10.17.21
+
+Lolcat - Aded by Carter, pwobably won't be finishd for a while but haz begun
+Shakespearian english - hath been added by Carter, progress has not yet begun
+Pirate Speak - Yarr, added by Carter but no work begun.
+
+
+Translator Comments:
+
+Siuol - Alright, I would like to point out the following.
+1. I do not actually know any other languages besides English, though I would like to learn them.
+2. I'm not dumb enough to use Google Translate. I prefer scuffed lang files.
+3. I'll probably do initial translations, with occasional updates every couple hundred blocks or so.
+If you actually can translate, DM me on Discord at `"Siuol" Appeared#5729` and we can work something out.
+
+MobButcher - To translate language files from English to Russian I've created a script that allows me to automatically parse the strings and apply proper grammar to them.
+Though it's janky, I can fairly easily update my translations. Feel free to contact me for details, contact info available on GitHub profile.
+- 8.18.21
+
+MobButcher - Reworked my translation stript, now it gives more pleasing and logical translation structures.
+Also found a couple of mistakes in Russian translation that I've quickly fixed.
+- 8.21.21
+
+Carter - Started doing the meme languages because I was bored lol.  Will probably finish them all by the time 1.0 releases but feel free to work on any of them.  Will also do upside down english at some point
+- 10.8.21
+
+MobButcher - Speaking of upside-down language, it's also completed. Thanks to Wikipedia for a complete list of upside-down character substitutions.
+- 10.17.21
+
+Carter - Shakespearean is also finished thanks to help from MobButcher
+- 10.17.21
+
+

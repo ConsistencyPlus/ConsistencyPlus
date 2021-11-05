@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[37,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "consistency_plus"
+version = "${version}"
+displayName = "Consistency Plus"
+authors = "ConsistencyPlusTeam (Temp name)"
+description = '''
+Builders rejoice; we've added all the missing block variants (and a whole lot more)!
+'''
+#logoFile = ""
+
+[[dependencies.consistency_plus]]
+modId = "forge"
+mandatory = true
+versionRange = "[37,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.consistency_plus]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.17.1,)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab",
-    "textures": {
-        "top": "consistency_plus:block/cut_deepslate",
-        "bottom": "consistency_plus:block/cut_deepslate",
-        "side": "consistency_plus:block/cut_deepslate"
-    }
-}

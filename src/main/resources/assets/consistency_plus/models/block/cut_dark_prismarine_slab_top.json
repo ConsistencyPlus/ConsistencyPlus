@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "consistency_plus:block/cut_dark_prismarine",
-    "top": "consistency_plus:block/cut_dark_prismarine",
-    "side": "consistency_plus:block/cut_dark_prismarine"
-  }
-}

@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab",
-    "textures": {
-        "top": "consistency_plus:block/crying_obsidian_tiles",
-        "bottom": "consistency_plus:block/crying_obsidian_tiles",
-        "side": "consistency_plus:block/crying_obsidian_tiles"
-    }
-}

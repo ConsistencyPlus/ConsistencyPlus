@@ -1,14 +1,17 @@
 pluginManagement {
     repositories {
         mavenCentral()
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net/'
-        }
-        maven {
-            name = 'Cotton'
-            url = 'https://server.bbkr.space/artifactory/libs-release/'
-        }
+        maven { name = 'Cotton'; url = 'https://server.bbkr.space/artifactory/libs-release/'}
+        maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/'}
+        maven { name = 'Architecturary'; url "https://maven.architectury.dev/" }
+        maven { name = 'Forge'; url "https://maven.minecraftforge.net/" }
         gradlePluginPortal()
     }
 }
+
+include("common")
+include("fabric")
+include("forge")
+
+rootProject.name = "consistency-plus"
+

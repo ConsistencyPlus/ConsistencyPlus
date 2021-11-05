@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:dirt",
-    "consistency_plus:dirt_slab",
-    "consistency_plus:dirt_stairs",
-    "consistency_plus:dirt_wall"
-  ]
-}

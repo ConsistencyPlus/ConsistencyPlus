@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab_top",
-    "textures": {
-        "top": "consistency_plus:block/cobbled_netherrack",
-        "bottom": "consistency_plus:block/cobbled_netherrack",
-        "side": "consistency_plus:block/cobbled_netherrack"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/stairs",
-    "textures": {
-        "bottom": "consistency_plus:block/prismarine_tiles",
-        "top": "consistency_plus:block/prismarine_tiles",
-        "side": "consistency_plus:block/prismarine_tiles"
-    }
-}

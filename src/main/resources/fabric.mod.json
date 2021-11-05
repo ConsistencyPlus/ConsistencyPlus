@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "consistency_plus",
-  "version": "${version}",
+  "version": "0.4.1",
   "name": "Consistency Plus",
   "description": "Builders rejoice; we've added all the missing block variants (and a whole lot more)!",
   "contributors": [

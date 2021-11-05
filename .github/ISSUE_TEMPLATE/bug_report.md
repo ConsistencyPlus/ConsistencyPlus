@@ -1,11 +1,11 @@
 ---
 name: Bug report
 about: Submit bugs with this one!
-labels: 'bug'
+labels: 'Bug/Issue'
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is. Include as much information as you can.
+A clear and concise description of what the bug is. Include as much information as you can.  Images are often helpful, especially screenshots of the F3 debug menu.
 
 **Versions**
 Minecraft version:

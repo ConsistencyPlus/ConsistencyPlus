@@ -7,8 +7,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
 public class CPlusItemGroups {
-	public static final ItemGroup CONSISTENCY_PLUS_STONES = CreativeTabRegistry.create(IdHandler.IdFormat("stones"), () -> new ItemStack(CPlusItems.POLISHED_STONE.get()));
-	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(IdHandler.IdFormat("dyeables"), () -> new ItemStack(CPlusItems.TERRACOTTA_STAIRS.get()));
+	public static final ItemGroup CONSISTENCY_PLUS_STONES = CreativeTabRegistry.create(IdHandler.IdFormat("stone"), () -> new ItemStack(CPlusItems.POLISHED_STONE.get()));
+	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(IdHandler.IdFormat("dyeable"), () -> new ItemStack(CPlusItems.TERRACOTTA_STAIRS.get()));
 	public static final ItemGroup CONSISTENCY_PLUS_MISC = CreativeTabRegistry.create(IdHandler.IdFormat("misc"), () -> new ItemStack(CPlusItems.PURPUR_BLOCK.get()));
 
 

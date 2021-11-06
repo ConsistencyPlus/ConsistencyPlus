@@ -4,14 +4,9 @@
   "package": "io.github.consistencyplus.consistency_plus.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "BlocksMixin",
-    "GrassBlockMixin",
-    "LivingEntityMixin",
-    "MyceliumBlockMixin",
     "PlayerEntityMixin"
   ],
   "client": [
-    "ArmorFeatureRendererMixin",
     "BlockColorsMixin"
   ],
   "injectors": {

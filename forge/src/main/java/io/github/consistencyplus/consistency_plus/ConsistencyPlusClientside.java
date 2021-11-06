@@ -1,18 +1,5 @@
 package io.github.consistencyplus.consistency_plus;
 
-import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertHandler;
-import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
-import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
-import net.minecraft.client.color.block.BlockColorProvider;
-import net.minecraft.client.color.block.BlockColors;
-import net.minecraft.client.color.world.GrassColors;
-import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.RenderLayers;
-import net.minecraft.client.render.block.BlockRenderManager;
-import net.minecraft.item.BundleItem;
-import net.minecraft.util.Identifier;
-import net.minecraftforge.client.ForgeRenderTypes;
-import net.minecraftforge.client.IBlockRenderProperties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

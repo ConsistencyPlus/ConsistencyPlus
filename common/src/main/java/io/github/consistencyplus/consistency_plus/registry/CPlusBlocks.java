@@ -1,5 +1,7 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import com.google.common.base.Suppliers;
+import dev.architectury.injectables.targets.ArchitecturyTarget;
 import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
@@ -14,6 +16,7 @@ import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
 import io.github.consistencyplus.consistency_plus.core.CPlusCarvedPumpkinBlock;
 import io.github.consistencyplus.consistency_plus.core.CPlusStairBlock;
+import io.github.consistencyplus.consistency_plus.utils.IdHandler;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.sound.BlockSoundGroup;
@@ -26,7 +29,7 @@ import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
-//Stone
+	//Stone
 
 	public static final Block STONE_WALL = register("stone_wall", new WallBlock(AbstractBlock.Settings.copy(STONE)));
 	public static final Block STONE_GATE = register("stone_gate", new FenceGateBlock(AbstractBlock.Settings.copy(STONE)));

@@ -1,3 +1,4 @@
+//file:noinspection GroovyAssignabilityCheck
 dependencies {
     // This is only here to get enviroment annotations and mixin dependencies. DO NOT ADD ANYTHING ELSE FROM FABRIC
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
@@ -8,16 +9,30 @@ architectury {
     common()
 }
 
-/*publishing {
+publishing {
     publications {
         mavenCommon(MavenPublication) {
-            artifactId = rootProject.archives_base_name
+            groupId = 'io.github.consistencyplus'
+            artifactId = rootProject.archives_base_name + "-" + project.name
+            version = rootProject.version
             from components.java
         }
     }
 
-    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
-        // Add repositories to publish to here.
+        maven {
+            url = System.getenv().MAVEN_URL
+            credentials {
+                username = System.getenv().MAVEN_USER
+                password = System.getenv().MAVEN_PASS
+            }
+            authentication { basic(BasicAuthentication) }
+        }
     }
-}*/
+}
+
+// EMMA REMOVE ME BEFORE COMMITTING
+idea { module {
+    downloadJavadoc = false
+    downloadSources = false
+} }

@@ -11,8 +11,9 @@ jobs:
         with:
           distribution: adopt
           java-version: 16
-      - run: ./gradlew publishAllPublicationsToEmmavenReleasesRepository
+      - run: ./gradlew publish
         env:
+          MAVEN_URL: "https://maven.waffle.coffee/releases"
           MAVEN_USER: ${{ secrets.MAVEN_USER }}
           MAVEN_PASS: ${{ secrets.MAVEN_PASS }}
           SNAPSHOT: ""

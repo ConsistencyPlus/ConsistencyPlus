@@ -77,8 +77,6 @@ publishing {
             groupId = 'io.github.consistencyplus'
             artifactId = rootProject.archives_base_name + "-" + project.name
             version = rootProject.version
-            artifact(remapJar) { builtBy remapJar }
-            artifact(sourcesJar) { builtBy remapSourcesJar }
             from components.java
         }
     }
@@ -94,9 +92,3 @@ publishing {
         }
     }
 }
-
-// EMMA REMOVE ME BEFORE COMMITTING
-idea { module {
-    downloadJavadoc = false
-    downloadSources = false
-} }

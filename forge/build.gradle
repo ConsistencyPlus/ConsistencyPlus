@@ -89,9 +89,3 @@ publishing {
         }
     }
 }
-
-// EMMA REMOVE ME BEFORE COMMITTING
-idea { module {
-    downloadJavadoc = false
-    downloadSources = false
-} }

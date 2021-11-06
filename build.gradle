@@ -17,12 +17,6 @@ version = rootProject.mod_version + "+" + rootProject.mc_major_version + System.
     modImplementation include("maven.modrinth:stonecutter_recipe_tags:${srt_version}")
 }*/
 
-// EMMA REMOVE ME BEFORE COMMITTING
-idea { module {
-    downloadJavadoc = false
-    downloadSources = false
-} }
-
 architectury {
     minecraft = rootProject.minecraft_version
 }

@@ -7,10 +7,12 @@
     "BlocksMixin",
     "GrassBlockMixin",
     "LivingEntityMixin",
-    "MyceliumBlockMixin"
+    "MyceliumBlockMixin",
+    "PlayerEntityMixin"
   ],
   "client": [
-    "ArmorFeatureRendererMixin"
+    "ArmorFeatureRendererMixin",
+    "BlockColorsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -12,8 +12,8 @@ import dev.architectury.registry.CreativeTabRegistry;
 
 public class CPlusItemGroups {
 	public static final ItemGroup CONSISTENCY_PLUS_STONES = CreativeTabRegistry.create(IdHandler.IdFormat("stones"), () -> new ItemStack(CPlusItems.POLISHED_STONE.get()));
-	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(IdHandler.IdFormat("stones"), () -> new ItemStack(CPlusItems.TERRACOTTA_STAIRS.get()));
-	public static final ItemGroup CONSISTENCY_PLUS_MISC = CreativeTabRegistry.create(IdHandler.IdFormat("stones"), () -> new ItemStack(CPlusItems.PURPUR_BLOCK.get()));
+	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(IdHandler.IdFormat("dyeables"), () -> new ItemStack(CPlusItems.TERRACOTTA_STAIRS.get()));
+	public static final ItemGroup CONSISTENCY_PLUS_MISC = CreativeTabRegistry.create(IdHandler.IdFormat("misc"), () -> new ItemStack(CPlusItems.PURPUR_BLOCK.get()));
 
 
 	public static Item.Settings consistencyPlusStoneItemSettings() {

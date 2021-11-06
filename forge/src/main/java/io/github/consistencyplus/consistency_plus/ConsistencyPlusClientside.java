@@ -1,11 +1,58 @@
 package io.github.consistencyplus.consistency_plus;
 
+import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
+import dev.architectury.registry.client.rendering.RenderTypeRegistry;
+import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
+import io.github.consistencyplus.consistency_plus.utils.IdHandler;
+import net.minecraft.block.BlockState;
+import net.minecraft.client.color.block.BlockColorProvider;
+import net.minecraft.client.color.block.BlockColors;
+import net.minecraft.client.color.item.ItemColorProvider;
+import net.minecraft.client.color.item.ItemColors;
+import net.minecraft.client.color.world.GrassColors;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockRenderView;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.items.IItemHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.Nullable;
 
-
+@Mod.EventBusSubscriber(modid = IdHandler.ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ConsistencyPlusClientside {
 	private static final Logger LOGGER = LogManager.getLogger();
+
+	@SubscribeEvent
+	public static void ConsistencyPlusClientside(final FMLClientSetupEvent event) {
+		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.WARPED_WART.get());
+		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_SLAB.get());
+		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_STAIRS.get());
+		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_WALL.get());
+
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.RED_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.ORANGE_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.YELLOW_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.LIME_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.GREEN_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.BLUE_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.LIGHT_BLUE_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.CYAN_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.PURPLE_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.MAGENTA_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.PINK_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.WHITE_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.BROWN_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.LIGHT_GRAY_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.GRAY_TINTED_GLASS_BLOCK.get());
+		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.BLACK_TINTED_GLASS_BLOCK.get());
+
+		ColorHandlerRegistry.registerItemColors((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D), CPlusItems.GRASS_SLAB, CPlusItems.GRASS_STAIRS, CPlusItems.GRASS_WALL);
+	}
 
 /*
 	public void onInitializeClient() {

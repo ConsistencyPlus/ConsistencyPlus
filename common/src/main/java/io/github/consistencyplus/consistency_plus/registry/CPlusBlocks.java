@@ -1,30 +1,30 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-		import dev.architectury.registry.registries.DeferredRegister;
-		import dev.architectury.registry.registries.RegistrySupplier;
-		import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtWallBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.grass.GrassSlabBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.grass.GrassStairsBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.grass.GrassWallBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumSlabBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumStairsBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumWallBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
-		import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
-		import io.github.consistencyplus.consistency_plus.core.CPlusCarvedPumpkinBlock;
-		import io.github.consistencyplus.consistency_plus.core.CPlusStairBlock;
-		import io.github.consistencyplus.consistency_plus.utils.IdHandler;
-		import net.minecraft.block.*;
-		import net.minecraft.entity.EntityType;
-		import net.minecraft.sound.BlockSoundGroup;
-		import net.minecraft.util.math.BlockPos;
-		import net.minecraft.util.registry.Registry;
-		import net.minecraft.world.BlockView;
+import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.RegistrySupplier;
+import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
+import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
+import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
+import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtWallBlock;
+import io.github.consistencyplus.consistency_plus.blocks.grass.GrassSlabBlock;
+import io.github.consistencyplus.consistency_plus.blocks.grass.GrassStairsBlock;
+import io.github.consistencyplus.consistency_plus.blocks.grass.GrassWallBlock;
+import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumSlabBlock;
+import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumStairsBlock;
+import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumWallBlock;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
+import io.github.consistencyplus.consistency_plus.core.CPlusCarvedPumpkinBlock;
+import io.github.consistencyplus.consistency_plus.core.CPlusStairBlock;
+import io.github.consistencyplus.consistency_plus.utils.IdHandler;
+import net.minecraft.block.*;
+import net.minecraft.entity.EntityType;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.BlockView;
 
-		import static net.minecraft.block.Blocks.*;
+import static net.minecraft.block.Blocks.*;
 
 public class CPlusBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(IdHandler.ID, Registry.BLOCK_KEY);

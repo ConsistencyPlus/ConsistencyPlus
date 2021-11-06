@@ -17,8 +17,18 @@ configurations {
 }
 
 repositories {
-    maven {url = "https://api.modrinth.com/maven"}
-    maven {url = "https://maven.bai.lol"}
+    maven {
+        url = "https://api.modrinth.com/maven"
+        content { includeGroup "maven.modrinth" }
+    }
+    maven {
+        url = "https://maven.bai.lol"
+        content { includeGroup "mcp.mobius.waila" }
+    }
+    maven {
+        url = "https://maven.terraformersmc.com"
+        content { includeGroup "com.terraformersmc" }
+    }
 }
 
 dependencies {
@@ -26,11 +36,17 @@ dependencies {
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}+${rootProject.mc_major_version}"
     modApi include("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}")
     modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
-    // compile against the WTHIT API
-    modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}"
-    // run against the full jar
-    modRuntimeOnly "mcp.mobius.waila:wthit:fabric-${rootProject.wthit_version}"
-    modRuntimeOnly "maven.modrinth:lazydfu:0.1.2" // Reduces start time
+    modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}" // compile against the WTHIT API
+    modRuntimeOnly "mcp.mobius.waila:wthit:fabric-${rootProject.wthit_version}" // run against the full jar
+
+    // Misc mods that help performance or do other useful things. Should not affect anything functionally
+    modRuntimeOnly "maven.modrinth:sodium:mc1.17.1-0.3.2"
+    modRuntimeOnly "maven.modrinth:lithium:mc1.17.1-0.7.5"
+    modRuntimeOnly "maven.modrinth:hydrogen:mc1.17.1-0.3.1"
+    modRuntimeOnly "maven.modrinth:lazydfu:0.1.2"
+    modRuntimeOnly("com.terraformersmc:modmenu:2.0.14") {
+        exclude group: "net.fabricmc"; exclude group: "net.fabricmc.fabric-api"
+    }
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }

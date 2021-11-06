@@ -6,10 +6,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
-import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
-import dev.architectury.registry.CreativeTabRegistry;
-
 public class CPlusItemGroups {
 	public static final ItemGroup CONSISTENCY_PLUS_STONES = CreativeTabRegistry.create(IdHandler.IdFormat("stones"), () -> new ItemStack(CPlusItems.POLISHED_STONE.get()));
 	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(IdHandler.IdFormat("dyeables"), () -> new ItemStack(CPlusItems.TERRACOTTA_STAIRS.get()));

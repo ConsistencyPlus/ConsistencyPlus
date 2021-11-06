@@ -8,15 +8,6 @@ plugins {
 
 version = rootProject.mod_version + "+" + rootProject.mc_major_version + System.getenv().SNAPSHOT
 
-/*dependencies {
-    minecraft "com.mojang:minecraft:${minecraft_version}"
-    mappings "net.fabricmc:yarn:${minecraft_version}+build.${yarn_mappings}:v2"
-    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}+${mc_major_version}"
-
-    modImplementation include("maven.modrinth:stonecutter_recipe_tags:${srt_version}")
-}*/
-
 architectury {
     minecraft = rootProject.minecraft_version
 }
@@ -27,7 +18,6 @@ subprojects {
 
     dependencies {
         minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
-        // We use Yarn as of right now, may move to Mojmap or more likely Quilt Mappings later.
         mappings "net.fabricmc:yarn:${rootProject.minecraft_version}+build.${rootProject.mappings_version}:v2"
     }
 }

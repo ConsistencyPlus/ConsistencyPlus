@@ -1,32 +1,7 @@
-//file:noinspection GroovyAssignabilityCheck
 dependencies {
-    // This is only here to get enviroment annotations and mixin dependencies. DO NOT ADD ANYTHING ELSE FROM FABRIC
+    // This is only here to get environment annotations and mixin dependencies. DO NOT ADD ANYTHING ELSE FROM FABRIC
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
     modApi "dev.architectury:architectury:${rootProject.architectury_version}"
 }
 
-architectury {
-    common()
-}
-
-publishing {
-    publications {
-        mavenCommon(MavenPublication) {
-            groupId = 'io.github.consistencyplus'
-            artifactId = rootProject.archives_base_name + "-" + project.name
-            version = rootProject.version
-            from components.java
-        }
-    }
-
-    repositories {
-        maven {
-            url = System.getenv().MAVEN_URL
-            credentials {
-                username = System.getenv().MAVEN_USER
-                password = System.getenv().MAVEN_PASS
-            }
-            authentication { basic(BasicAuthentication) }
-        }
-    }
-}
+architectury { common() }

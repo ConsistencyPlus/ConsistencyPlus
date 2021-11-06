@@ -19,6 +19,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}+${rootProject.mc_major_version}"
     //modApi include("maven.modrinth:stonecutter_recipe_tags:${scrt_version}")
+    modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
+
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }

@@ -50,6 +50,6 @@ public class GrassSlabBlock extends SlabBlock implements HasUngrownVariant, Spre
 	@Override
 	public BlockState getUngrownVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return DIRT_SLAB.getDefaultState().with(TYPE, oldState.get(TYPE));
+		return DIRT_SLAB.get().getDefaultState().with(TYPE, oldState.get(TYPE));
 	}
 }

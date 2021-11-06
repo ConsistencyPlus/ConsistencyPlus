@@ -18,14 +18,14 @@ public class DirtStairsBlock extends StairsBlock implements HasGrownGrassVariant
 	@Override
 	public BlockState getGrownGrassVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return GRASS_STAIRS.getDefaultState().with(WATERLOGGED, oldState.get(WATERLOGGED)).with(FACING, oldState.get(FACING))
+		return GRASS_STAIRS.get().getDefaultState().with(WATERLOGGED, oldState.get(WATERLOGGED)).with(FACING, oldState.get(FACING))
 				.with(HALF, oldState.get(HALF)).with(SHAPE, oldState.get(SHAPE));
 	}
 	
 	@Override
 	public BlockState getGrownMyceliumVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return MYCELIUM_STAIRS.getDefaultState().with(WATERLOGGED, oldState.get(WATERLOGGED)).with(FACING, oldState.get(FACING))
+		return MYCELIUM_STAIRS.get().getDefaultState().with(WATERLOGGED, oldState.get(WATERLOGGED)).with(FACING, oldState.get(FACING))
 				.with(HALF, oldState.get(HALF)).with(SHAPE, oldState.get(SHAPE));
 	}
 }

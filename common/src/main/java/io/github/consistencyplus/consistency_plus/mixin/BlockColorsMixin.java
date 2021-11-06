@@ -22,7 +22,7 @@ public abstract class BlockColorsMixin {
 						world != null && pos != null
 								? BiomeColors.getGrassColor(world, pos)
 								: GrassColors.getColor(0.5D, 1.0D),
-				GRASS_SLAB, GRASS_STAIRS, GRASS_WALL);
+				GRASS_SLAB.get(), GRASS_STAIRS.get(), GRASS_WALL.get());
 		
 	}
 }

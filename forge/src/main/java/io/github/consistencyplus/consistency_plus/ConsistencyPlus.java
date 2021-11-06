@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus;
 
+import dev.architectury.platform.forge.EventBuses;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import io.github.consistencyplus.consistency_plus.utils.IdHandler;
@@ -7,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,8 +23,11 @@ public class ConsistencyPlus {
 	public ConsistencyPlus() {
 		LOGGER.info("Consistency+ Main - Beginning initialization process");
 
+		EventBuses.registerModEventBus(ID, FMLJavaModLoadingContext.get().getModEventBus());
+
 		CPlusBlocks.init();
 		CPlusItems.init();
+
 
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 

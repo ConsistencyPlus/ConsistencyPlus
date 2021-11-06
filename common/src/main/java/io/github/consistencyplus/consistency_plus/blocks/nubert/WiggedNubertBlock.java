@@ -20,7 +20,7 @@ public class WiggedNubertBlock extends NubertBlock {
         if (player.getStackInHand(hand).isOf(Items.SHEARS)) {
             if (!world.isClient()) {
                 world.setBlockState(pos,
-                        CPlusBlocks.NUBERT.getDefaultState()
+                        CPlusBlocks.NUBERT.get().getDefaultState()
                                 .with(FACING, state.get(FACING))
                                 .with(WATERLOGGED, state.get(WATERLOGGED))
                 );

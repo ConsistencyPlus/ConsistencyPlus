@@ -2,7 +2,7 @@ name: Release C+
 on: [ workflow_dispatch ]
 
 jobs:
-  build:
+  release_publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,7 +13,7 @@ jobs:
           java-version: 16
       - run: ./gradlew publish
         env:
-          MAVEN_URL: "https://maven.waffle.coffee/releases"
+          MAVEN_URL: "https://maven.waffle.coffee/releases/"
           MAVEN_USER: ${{ secrets.MAVEN_USER }}
           MAVEN_PASS: ${{ secrets.MAVEN_PASS }}
           SNAPSHOT: ""

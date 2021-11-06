@@ -310,9 +310,6 @@
   "block.consistency_plus.purpur_gate": "Пурпурная калитка",
   "block.consistency_plus.smooth_purpur_gate": "Гладкая пурпурная калитка",
 
-  "block.consistency_plus.clay_slab": "Глиняная плита",
-  "block.consistency_plus.clay_stairs": "Глиняные ступеньки",
-  "block.consistency_plus.clay_wall": "Глиняная ограда",
   "block.consistency_plus.brick_gate": "Калитка из керамических кирпичей",
 
   "block.consistency_plus.suspicious_slab": "Загадочная плита",
@@ -465,7 +462,6 @@
   "block.consistency_plus.cut_andesite_gate": "Тёсаная андезитовая калитка",
   "block.consistency_plus.polished_andesite_gate": "Полированная андезитовая калитка",
   "block.consistency_plus.andesite_brick_gate": "Калитка из андезитовых кирпичей",
-  "block.consistency_plus.cracked_andesite_gate": "Потрескавшаяся андезитовая калитка",
   "block.consistency_plus.cracked_smooth_andesite_gate": "Гладкая потрескавшаяся андезитовая калитка",
   "block.consistency_plus.cracked_cut_andesite_gate": "Тёсаная потрескавшаяся андезитовая калитка",
   "block.consistency_plus.cracked_polished_andesite_gate": "Полированная потрескавшаяся андезитовая калитка",
@@ -1421,7 +1417,6 @@
   "block.consistency_plus.black_ice_wall": "Черная ледяная ограда",
   "block.consistency_plus.brown_ice_wall": "Коричневая ледяная ограда",
   "block.consistency_plus.soul_ice_wall": "Ледяная ограда душ",
-  "block.consistency_plus.ice_gate": "Ледяная калитка",
   "block.consistency_plus.red_ice_gate": "Красная ледяная калитка",
   "block.consistency_plus.orange_ice_gate": "Оранжевая ледяная калитка",
   "block.consistency_plus.yellow_ice_gate": "Желтая ледяная калитка",

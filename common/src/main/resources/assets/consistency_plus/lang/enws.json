@@ -309,9 +309,6 @@
   "block.consistency_plus.purpur_gate": "Purpur Gate",
   "block.consistency_plus.smooth_purpur_gate": "Smooth Purpur Gate",
 
-  "block.consistency_plus.clay_slab": "Clay Slab",
-  "block.consistency_plus.clay_stairs": "Clay Stairs",
-  "block.consistency_plus.clay_wall": "Clay Hedge",
   "block.consistency_plus.brick_gate": "Earthen Block Brick Gate",
 
   "block.consistency_plus.suspicious_slab": "Suspicious Slab",
@@ -464,7 +461,6 @@
   "block.consistency_plus.cut_andesite_gate": "Cutteth Grained Marble Gate",
   "block.consistency_plus.polished_andesite_gate": "Polish'd Grained Marble Gate",
   "block.consistency_plus.andesite_brick_gate": "Grained Marble Brick Gate",
-  "block.consistency_plus.cracked_andesite_gate": "Crack'd Grained Marble Gate",
   "block.consistency_plus.cracked_smooth_andesite_gate": "Crack'd Smooth Grained Marble Gate",
   "block.consistency_plus.cracked_cut_andesite_gate": "Crack'd Cutteth Grained Marble Gate",
   "block.consistency_plus.cracked_polished_andesite_gate": "Crack'd Polish'd Grained Marble Gate",
@@ -1420,7 +1416,6 @@
   "block.consistency_plus.black_ice_wall": "Black Ice Hedge",
   "block.consistency_plus.brown_ice_wall": "Brown Ice Hedge",
   "block.consistency_plus.soul_ice_wall": "Soule Ice Hedge",
-  "block.consistency_plus.ice_gate": "Ice Gate",
   "block.consistency_plus.red_ice_gate": "Red Ice Gate",
   "block.consistency_plus.orange_ice_gate": "Tawny Ice Gate",
   "block.consistency_plus.yellow_ice_gate": "Yellow Ice Gate",

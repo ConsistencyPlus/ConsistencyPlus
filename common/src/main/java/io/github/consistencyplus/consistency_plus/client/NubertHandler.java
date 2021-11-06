@@ -1,11 +1,9 @@
 package io.github.consistencyplus.consistency_plus.client;
 
+import dev.architectury.event.events.client.ClientTickEvent;
+import dev.architectury.event.events.client.ClientTooltipEvent;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
@@ -17,17 +15,16 @@ import net.minecraft.util.Formatting;
 
 import java.util.List;
 
-@Environment(EnvType.CLIENT)
 public class NubertHandler {
     public static boolean TEXT_NEEDS_UPDATE = true;
     public static boolean TEXT_GOT_THIS_TICK = false;
     public static final int TOTAL_NUBERT_PHRASES = 6;
     public static MutableText CURRENT_TEXT = null;
 
-    public static void onTooltip(ItemStack stack, TooltipContext context, List<Text> lines) {
+    public static void onTooltip(ItemStack stack, List<Text> texts, TooltipContext context) {
         if (stack.getItem() instanceof BlockItem blockItem) {
             if (blockItem.getBlock() instanceof NubertBlock nubert) {
-                lines.add(1, getNubertText(nubert instanceof WiggedNubertBlock));
+                texts.add(1, getNubertText(nubert instanceof WiggedNubertBlock));
                 TEXT_GOT_THIS_TICK = true;
             }
         } else TEXT_NEEDS_UPDATE = true;
@@ -42,8 +39,8 @@ public class NubertHandler {
     }
 
     public static void init() {
-        ItemTooltipCallback.EVENT.register(NubertHandler::onTooltip);
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+        ClientTooltipEvent.ITEM.register(NubertHandler::onTooltip);
+        ClientTickEvent.CLIENT_POST.register(client -> {
             if (!TEXT_GOT_THIS_TICK) {
                 TEXT_NEEDS_UPDATE = true;
             }

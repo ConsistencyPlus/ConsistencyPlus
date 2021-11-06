@@ -133,6 +133,10 @@
       "links": {
         "modmenu.discord": "https://discord.gg/VeNX7h8bAK"
       }
+    },
+    "waila:plugins": {
+      "id": "consistency_plus:plugin",
+      "initializer": "io.github.consistencyplus.consistency_plus.core.ConsistencyPlusWailaPlugin"
     }
   }
 }

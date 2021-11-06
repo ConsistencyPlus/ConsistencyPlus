@@ -2,6 +2,7 @@ package io.github.consistencyplus.consistency_plus;
 
 import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
+import io.github.consistencyplus.consistency_plus.client.NubertHandler;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import io.github.consistencyplus.consistency_plus.utils.IdHandler;
@@ -20,6 +21,8 @@ public class ConsistencyPlusClientside {
 
 	@SubscribeEvent
 	public static void ConsistencyPlusClientside(final FMLClientSetupEvent event) {
+		LOGGER.info("Consistency+ Main - Starting client initialization");
+
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.WARPED_WART.get());
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_SLAB.get());
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_STAIRS.get());
@@ -43,39 +46,13 @@ public class ConsistencyPlusClientside {
 		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.BLACK_TINTED_GLASS_BLOCK.get());
 
 		ColorHandlerRegistry.registerItemColors((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D), CPlusItems.GRASS_SLAB, CPlusItems.GRASS_STAIRS, CPlusItems.GRASS_WALL);
+
+		NubertHandler.init();
+
+		LOGGER.info("Consistency+ Main - Finished client initialization");
 	}
 
 /*
-	public void onInitializeClient() {
-		LOGGER.info("Consistency+ Main - Starting client initialization");
-
-
-		RenderLayers.putBlock(CPlusBlocks.WARPED_WART, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_SLAB, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_STAIRS, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_WALL, RenderLayer.getCutout());
-
-
-
-		// Tinted Glass
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.RED_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.ORANGE_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.YELLOW_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.LIME_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GREEN_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.BLUE_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.LIGHT_BLUE_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.CYAN_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.PURPLE_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.MAGENTA_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.PINK_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.WHITE_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.BROWN_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.LIGHT_GRAY_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRAY_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.BLACK_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
-
-
 		// Bundles
 		FabricModelPredicateProviderRegistry.register(CPlusItems.RED_BUNDLE, new Identifier("filled"), (itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
 		FabricModelPredicateProviderRegistry.register(CPlusItems.ORANGE_BUNDLE, new Identifier("filled"), (itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
@@ -93,14 +70,5 @@ public class ConsistencyPlusClientside {
 		FabricModelPredicateProviderRegistry.register(CPlusItems.GRAY_BUNDLE, new Identifier("filled"), (itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
 		FabricModelPredicateProviderRegistry.register(CPlusItems.BROWN_BUNDLE, new Identifier("filled"), (itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
 		FabricModelPredicateProviderRegistry.register(CPlusItems.BLACK_BUNDLE, new Identifier("filled"), (itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
-
-		
-		BlockColorProvider.register((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D),
-				CPlusItems.GRASS_SLAB, CPlusItems.GRASS_STAIRS, CPlusItems.GRASS_WALL);
-
-
-		NubertHandler.init();
-		
-		LOGGER.info("Consistency+ Main - Finished client initialization");
-	}*/
+*/
 }

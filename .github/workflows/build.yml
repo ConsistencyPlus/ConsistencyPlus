@@ -33,10 +33,9 @@ jobs:
         env:
           SNAPSHOT: ""
       - run: |
-          alias detonate="deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts"
-          detonate folder common/build/libs/
-          detonate folder fabric/build/libs/
-          detonate folder forge/build/libs/
+          deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder common/build/libs/
+          deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder fabric/build/libs/
+          deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder forge/build/libs/
       - uses: actions/upload-artifact@v2
         with:
           name: Common Artifacts

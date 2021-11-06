@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus;
 
+import io.github.consistencyplus.consistency_plus.client.NubertHandler;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ClientModInitializer;
@@ -65,7 +66,7 @@ public class ConsistencyPlusClientside implements ClientModInitializer {
 		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D),
 				CPlusItems.GRASS_SLAB.get(), CPlusItems.GRASS_STAIRS.get(), CPlusItems.GRASS_WALL.get());
 		
-		//NubertHandler.init();
+		NubertHandler.init();
 		
 		LOGGER.info("Consistency+ Main - Finished client initialization");
 	}

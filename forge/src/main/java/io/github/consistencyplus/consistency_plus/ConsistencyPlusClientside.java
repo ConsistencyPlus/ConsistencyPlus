@@ -3,27 +3,34 @@ package io.github.consistencyplus.consistency_plus;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertHandler;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
+import net.minecraft.client.color.block.BlockColorProvider;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.RenderLayers;
 import net.minecraft.client.render.block.BlockRenderManager;
 import net.minecraft.item.BundleItem;
 import net.minecraft.util.Identifier;
+import net.minecraftforge.client.ForgeRenderTypes;
 import net.minecraftforge.client.IBlockRenderProperties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@
+
 public class ConsistencyPlusClientside {
 	private static final Logger LOGGER = LogManager.getLogger();
-	
-	@Override
+
+/*
 	public void onInitializeClient() {
 		LOGGER.info("Consistency+ Main - Starting client initialization");
+
+
 		RenderLayers.putBlock(CPlusBlocks.WARPED_WART, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_SLAB, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_STAIRS, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.GRASS_WALL, RenderLayer.getCutout());
+
+
 
 		// Tinted Glass
 		BlockRenderLayerMap.INSTANCE.putBlock(CPlusBlocks.RED_TINTED_GLASS_BLOCK, RenderLayer.getTranslucent());
@@ -63,11 +70,12 @@ public class ConsistencyPlusClientside {
 		FabricModelPredicateProviderRegistry.register(CPlusItems.BLACK_BUNDLE, new Identifier("filled"), (itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
 
 		
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D),
+		BlockColorProvider.register((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D),
 				CPlusItems.GRASS_SLAB, CPlusItems.GRASS_STAIRS, CPlusItems.GRASS_WALL);
-		
+
+
 		NubertHandler.init();
 		
 		LOGGER.info("Consistency+ Main - Finished client initialization");
-	}
+	}*/
 }

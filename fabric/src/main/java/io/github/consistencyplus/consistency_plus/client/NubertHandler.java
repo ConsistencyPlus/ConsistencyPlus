@@ -1,6 +1,7 @@
-package io.github.consistencyplus.consistency_plus.blocks.nubert;
+package io.github.consistencyplus.consistency_plus.client;
 
-import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;

@@ -31,6 +31,12 @@ processResources {
     }
 }
 
+loom {
+    forge {
+        mixinConfigs = ["consistency_plus.forge.mixins.json", "consistency_plus.mixins.json"]
+    }
+}
+
 shadowJar {
     exclude "fabric.mod.json"
 

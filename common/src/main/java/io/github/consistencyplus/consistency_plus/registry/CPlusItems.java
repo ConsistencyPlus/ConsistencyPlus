@@ -2,7 +2,6 @@ package io.github.consistencyplus.consistency_plus.registry;
 
 import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
 import io.github.consistencyplus.consistency_plus.items.RedirectedBlockItem;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -4524,7 +4523,7 @@ public class CPlusItems {
 // RED TINTED GLASS
 
 	// Base
-	public static final Item RED_TINTED_GLASS = register("red_tinted_glass", new BlockItem(CPlusBlocks.RED_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item RED_TINTED_GLASS = register("red_tinted_glass", new BlockItem(CPlusBlocks.RED_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4546,7 +4545,7 @@ public class CPlusItems {
 // ORANGE TINTED GLASS
 
 	// Base
-	public static final Item ORANGE_TINTED_GLASS = register("orange_tinted_glass", new BlockItem(CPlusBlocks.ORANGE_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item ORANGE_TINTED_GLASS = register("orange_tinted_glass", new BlockItem(CPlusBlocks.ORANGE_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4568,7 +4567,7 @@ public class CPlusItems {
 // YELLOW TINTED GLASS
 
 	// Base
-	public static final Item YELLOW_TINTED_GLASS = register("yellow_tinted_glass", new BlockItem(CPlusBlocks.YELLOW_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item YELLOW_TINTED_GLASS = register("yellow_tinted_glass", new BlockItem(CPlusBlocks.YELLOW_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4590,7 +4589,7 @@ public class CPlusItems {
 // LIME TINTED GLASS
 
 	// Base
-	public static final Item LIME_TINTED_GLASS = register("lime_tinted_glass", new BlockItem(CPlusBlocks.LIME_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item LIME_TINTED_GLASS = register("lime_tinted_glass", new BlockItem(CPlusBlocks.LIME_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4612,7 +4611,7 @@ public class CPlusItems {
 // GREEN TINTED GLASS
 
 	// Base
-	public static final Item GREEN_TINTED_GLASS = register("green_tinted_glass", new BlockItem(CPlusBlocks.GREEN_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item GREEN_TINTED_GLASS = register("green_tinted_glass", new BlockItem(CPlusBlocks.GREEN_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4634,7 +4633,7 @@ public class CPlusItems {
 // BLUE TINTED GLASS
 
 	// Base
-	public static final Item BLUE_TINTED_GLASS = register("blue_tinted_glass", new BlockItem(CPlusBlocks.BLUE_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item BLUE_TINTED_GLASS = register("blue_tinted_glass", new BlockItem(CPlusBlocks.BLUE_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4656,7 +4655,7 @@ public class CPlusItems {
 // CYAN TINTED GLASS
 
 	// Base
-	public static final Item CYAN_TINTED_GLASS = register("cyan_tinted_glass", new BlockItem(CPlusBlocks.CYAN_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item CYAN_TINTED_GLASS = register("cyan_tinted_glass", new BlockItem(CPlusBlocks.CYAN_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4678,7 +4677,7 @@ public class CPlusItems {
 // LIGHT BLUE TINTED GLASS
 
 	// Base
-	public static final Item LIGHT_BLUE_TINTED_GLASS = register("light_blue_tinted_glass", new BlockItem(CPlusBlocks.LIGHT_BLUE_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item LIGHT_BLUE_TINTED_GLASS = register("light_blue_tinted_glass", new BlockItem(CPlusBlocks.LIGHT_BLUE_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4700,7 +4699,7 @@ public class CPlusItems {
 // PURPLE TINTED GLASS
 
 	// Base
-	public static final Item PURPLE_TINTED_GLASS = register("purple_tinted_glass", new BlockItem(CPlusBlocks.PURPLE_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item PURPLE_TINTED_GLASS = register("purple_tinted_glass", new BlockItem(CPlusBlocks.PURPLE_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4722,7 +4721,7 @@ public class CPlusItems {
 // MAGENTA TINTED GLASS
 
 	// Base
-	public static final Item MAGENTA_TINTED_GLASS = register("magenta_tinted_glass", new BlockItem(CPlusBlocks.MAGENTA_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item MAGENTA_TINTED_GLASS = register("magenta_tinted_glass", new BlockItem(CPlusBlocks.MAGENTA_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4744,7 +4743,7 @@ public class CPlusItems {
 // PINK TINTED GLASS
 
 	// Base
-	public static final Item PINK_TINTED_GLASS = register("pink_tinted_glass", new BlockItem(CPlusBlocks.PINK_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item PINK_TINTED_GLASS = register("pink_tinted_glass", new BlockItem(CPlusBlocks.PINK_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4766,7 +4765,7 @@ public class CPlusItems {
 // WHITE TINTED GLASS
 
 	// Base
-	public static final Item WHITE_TINTED_GLASS = register("white_tinted_glass", new BlockItem(CPlusBlocks.WHITE_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item WHITE_TINTED_GLASS = register("white_tinted_glass", new BlockItem(CPlusBlocks.WHITE_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4788,7 +4787,7 @@ public class CPlusItems {
 // LIGHT GRAY TINTED GLASS
 
 	// Base
-	public static final Item LIGHT_GRAY_TINTED_GLASS = register("light_gray_tinted_glass", new BlockItem(CPlusBlocks.LIGHT_GRAY_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item LIGHT_GRAY_TINTED_GLASS = register("light_gray_tinted_glass", new BlockItem(CPlusBlocks.LIGHT_GRAY_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4810,7 +4809,7 @@ public class CPlusItems {
 // GRAY TINTED GLASS
 
 	// Base
-	public static final Item GRAY_TINTED_GLASS = register("gray_tinted_glass", new BlockItem(CPlusBlocks.GRAY_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item GRAY_TINTED_GLASS = register("gray_tinted_glass", new BlockItem(CPlusBlocks.GRAY_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4832,7 +4831,7 @@ public class CPlusItems {
 // BLACK TINTED GLASS
 
 	// Base
-	public static final Item BLACK_TINTED_GLASS = register("black_tinted_glass", new BlockItem(CPlusBlocks.BLACK_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item BLACK_TINTED_GLASS = register("black_tinted_glass", new BlockItem(CPlusBlocks.BLACK_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -4854,7 +4853,7 @@ public class CPlusItems {
 // BROWN TINTED GLASS
 
 	// Base
-	public static final Item BROWN_TINTED_GLASS = register("brown_tinted_glass", new BlockItem(CPlusBlocks.BROWN_TINTED_GLASS_BLOCK, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_DYEABLE)));
+	public static final Item BROWN_TINTED_GLASS = register("brown_tinted_glass", new BlockItem(CPlusBlocks.BROWN_TINTED_GLASS_BLOCK, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
 	// Polished
 
@@ -5125,19 +5124,19 @@ public class CPlusItems {
 // ORGANICS
 
     // Dirt
-    public static final Item DIRT_SLAB = register("dirt_slab", new BlockItem(CPlusBlocks.DIRT_SLAB, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-    public static final Item DIRT_STAIRS = register("dirt_stairs", new BlockItem(CPlusBlocks.DIRT_STAIRS, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-    public static final Item DIRT_WALL = register("dirt_wall", new BlockItem(CPlusBlocks.DIRT_WALL, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
+    public static final Item DIRT_SLAB = register("dirt_slab", new BlockItem(CPlusBlocks.DIRT_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item DIRT_STAIRS = register("dirt_stairs", new BlockItem(CPlusBlocks.DIRT_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item DIRT_WALL = register("dirt_wall", new BlockItem(CPlusBlocks.DIRT_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     // Grass
-    public static final Item GRASS_SLAB = register("grass_slab", new BlockItem(CPlusBlocks.GRASS_SLAB, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-    public static final Item GRASS_STAIRS = register("grass_stairs", new BlockItem(CPlusBlocks.GRASS_STAIRS, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-    public static final Item GRASS_WALL = register("grass_wall", new BlockItem(CPlusBlocks.GRASS_WALL, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
+    public static final Item GRASS_SLAB = register("grass_slab", new BlockItem(CPlusBlocks.GRASS_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item GRASS_STAIRS = register("grass_stairs", new BlockItem(CPlusBlocks.GRASS_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item GRASS_WALL = register("grass_wall", new BlockItem(CPlusBlocks.GRASS_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
     // Mycelium
-    public static final Item MYCELIUM_SLAB = register("mycelium_slab", new BlockItem(CPlusBlocks.MYCELIUM_SLAB, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-    public static final Item MYCELIUM_STAIRS = register("mycelium_stairs", new BlockItem(CPlusBlocks.MYCELIUM_STAIRS, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-    public static final Item MYCELIUM_WALL = register("mycelium_wall", new BlockItem(CPlusBlocks.MYCELIUM_WALL, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
+    public static final Item MYCELIUM_SLAB = register("mycelium_slab", new BlockItem(CPlusBlocks.MYCELIUM_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item MYCELIUM_STAIRS = register("mycelium_stairs", new BlockItem(CPlusBlocks.MYCELIUM_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+    public static final Item MYCELIUM_WALL = register("mycelium_wall", new BlockItem(CPlusBlocks.MYCELIUM_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 
 // MISC
@@ -5156,7 +5155,7 @@ public class CPlusItems {
 
 	// Random
 	public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(CPlusBlocks.WARPED_WART, new Item.Settings().group(ItemGroup.MISC)));
-	public static final Item COPPER_NUGGET = register("copper_nugget", new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+	public static final Item COPPER_NUGGET = register("copper_nugget", new Item(new Item.Settings().group(ItemGroup.MISC)));
 	public static final Item NETHERITE_HORSE_ARMOR = register("netherite_horse_armor", new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
 
 	// 🐢

@@ -1,8 +1,10 @@
 package io.github.consistencyplus.consistency_plus;
 
+import io.github.consistencyplus.consistency_plus.client.NubertHandler;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.fabricmc.loader.api.FabricLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +12,6 @@ import org.apache.logging.log4j.Logger;
 
 public class ConsistencyPlus implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger("Consistency+");
-	public static final String ID = "consistency_plus";
 
 	@Override
 	public void onInitialize() {
@@ -43,7 +44,7 @@ public class ConsistencyPlus implements ModInitializer {
 
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 
-
+		NubertHandler.init();
 
 		// FuelRegistry.INSTANCE.add(CHARCOAL_BLOCK, 200);
 	}

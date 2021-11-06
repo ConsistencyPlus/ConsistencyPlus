@@ -1,26 +1,21 @@
 package io.github.consistencyplus.consistency_plus.blocks.nubert;
 
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
@@ -33,7 +28,7 @@ public class NubertBlock extends HorizontalFacingBlock implements Waterloggable 
     public static final VoxelShape NUBERT_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 12, 14);
 
     public NubertBlock() {
-        super(FabricBlockSettings.copy(SLIME_BLOCK)
+        super(AbstractBlock.Settings.copy(SLIME_BLOCK)
                 .nonOpaque()
                 .allowsSpawning(CPlusBlocks::never)
                 .breakInstantly()

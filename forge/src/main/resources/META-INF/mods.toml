@@ -1,17 +1,33 @@
 modLoader = "javafml"
 loaderVersion = "[37,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/ConsistencyPlus/ConsistencyPlus/issues"
 license = "LGPL-3.0-only"
 
 [[mods]]
 modId = "consistency_plus"
 version = "${version}"
 displayName = "Consistency Plus"
-authors = "ConsistencyPlusTeam (Temp name)"
+displayURL = "https://github.com/ConsistencyPlus/ConsistencyPlus"
+authors = [
+    "Carter",
+    "Siuol",
+    "Tropheus Jay",
+    "IMS",
+    "Devious",
+    "Emmaffle",
+    "Ibex",
+    "Tyler",
+    "Pepper",
+    "Devin",
+    "Jingy",
+    "Seska",
+    "RDKRACZ",
+    "MobButcher"
+]
 description = '''
 Builders rejoice; we've added all the missing block variants (and a whole lot more)!
 '''
-#logoFile = ""
+logoFile = "icon.png"
 
 [[dependencies.consistency_plus]]
 modId = "forge"

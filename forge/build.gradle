@@ -18,6 +18,10 @@ configurations {
 
 repositories {
     maven {
+        url = "https://api.modrinth.com/maven"
+        content { includeGroup "maven.modrinth" }
+    }
+    maven {
         url = "https://maven.bai.lol"
         content { includeGroup "mcp.mobius.waila" }
     }
@@ -28,6 +32,7 @@ dependencies {
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
     modCompileOnly "mcp.mobius.waila:wthit-api:forge-${rootProject.wthit_version}" // compile against the WTHIT API
     modRuntimeOnly "mcp.mobius.waila:wthit:forge-${rootProject.wthit_version}" // run against the full jar
+    modApi shadow("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}-forge")
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }

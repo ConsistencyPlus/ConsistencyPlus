@@ -1,72 +1,42 @@
 //file:noinspection GroovyAssignabilityCheck
 plugins {
-    id "fabric-loom" version "0.10.+"
-    id "io.github.juuxel.loom-quiltflower-mini" version "1.+"
+    id "io.github.juuxel.loom-quiltflower-mini" version "1.+" apply false
+    id "architectury-plugin" version "3.4-SNAPSHOT"
+    id "dev.architectury.loom" version "0.10.0-SNAPSHOT" apply false
     id "maven-publish"
 }
 
-String mod_version = loom.modVersion // Change mod version in fabric.mod.json
-String minecraft_version = "1.17.1"
-String mc_major_version  = "1.17"
-String yarn_mappings     = "63"     // https://fabricmc.net/versions.html
-String loader_version    = "0.12.5" // https://fabricmc.net/versions.html
-String fabric_version    = "0.42.0" // https://fabricmc.net/versions.html
-String srt_version       = "1.1.0"  // https://modrinth.com/mod/stonecutter_recipe_tags/versions
-String wthit_version     = "3.10.1" // https://modrinth.com/mod/wthit/versions
+version = rootProject.mod_version + "+" + rootProject.mc_major_version + System.getenv().SNAPSHOT
 
-archivesBaseName = "consistency_plus"
-version = mod_version + "+" + mc_major_version + System.getenv().SNAPSHOT
-
-repositories {
-    maven {url = "https://api.modrinth.com/maven"}
-    maven {url = "https://maven.bai.lol"}
+architectury {
+    minecraft = rootProject.minecraft_version
 }
 
-dependencies {
-    minecraft "com.mojang:minecraft:${minecraft_version}"
-    mappings "net.fabricmc:yarn:${minecraft_version}+build.${yarn_mappings}:v2"
-    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}+${mc_major_version}"
+subprojects {
+    apply plugin: "dev.architectury.loom"
+    apply plugin: "io.github.juuxel.loom-quiltflower-mini"
 
-    modImplementation include("maven.modrinth:stonecutter_recipe_tags:${srt_version}")
-
-    // compile against the API
-    modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${wthit_version}"
-
-    // run against the full jar
-    modRuntime "mcp.mobius.waila:wthit:fabric-${wthit_version}"
-
-    modImplementation "maven.modrinth:lazydfu:0.1.2" // Reduces start time
-}
-
-tasks.withType(JavaCompile) { it.options.encoding = "UTF-8" }
-
-jar {
-  from("LICENSE")
-  exclude("**/upcoming/**")
-  exclude("**/unused/**")
-}
-
-java { withSourcesJar() }
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            groupId = 'io.github.consistencyplus'
-            artifactId = archivesBaseName
-            version = version
-            artifact(remapJar) { builtBy remapJar }
-            artifact(sourcesJar) { builtBy remapSourcesJar }
-        }
+    dependencies {
+        minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
+        mappings "net.fabricmc:yarn:${rootProject.minecraft_version}+build.${rootProject.mappings_version}:v2"
     }
-    repositories {
-        maven {
-            url = System.getenv().MAVEN_URL
-            credentials {
-                username = System.getenv().MAVEN_USER
-                password = System.getenv().MAVEN_PASS
-            }
-            authentication { basic(BasicAuthentication) }
-        }
+}
+
+allprojects {
+    apply plugin: "java"
+    apply plugin: "architectury-plugin"
+    apply plugin: "maven-publish"
+
+    archivesBaseName = rootProject.archives_base_name
+    version = rootProject.mod_version + "+" + rootProject.mc_major_version + System.getenv().SNAPSHOT
+
+    tasks.withType(JavaCompile) { it.options.encoding = "UTF-8" }
+
+    jar {
+        from("LICENSE")
+        exclude("**/upcoming/**")
+        exclude("**/unused/**")
     }
+
+    java { withSourcesJar() }
 }

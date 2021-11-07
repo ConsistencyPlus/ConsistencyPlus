@@ -1,0 +1,110 @@
+//file:noinspection GroovyAssignabilityCheck
+plugins {
+    id "com.github.johnrengelman.shadow" version "7.0.0"
+}
+
+architectury {
+    platformSetupLoomIde()
+    fabric()
+}
+
+configurations {
+    common
+    shadowCommon // Don't use shadow from the shadow plugin because we don't want IDEA to index this.
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentFabric.extendsFrom common
+}
+
+repositories {
+    maven {
+        url = "https://api.modrinth.com/maven"
+        content { includeGroup "maven.modrinth" }
+    }
+    maven {
+        url = "https://maven.bai.lol"
+        content { includeGroup "mcp.mobius.waila" }
+    }
+    maven {
+        url = "https://maven.terraformersmc.com"
+        content { includeGroup "com.terraformersmc" }
+    }
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
+    modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}+${rootProject.mc_major_version}"
+    modApi include("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}-fabric")
+    modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
+    modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}" // compile against the WTHIT API
+    modRuntimeOnly "mcp.mobius.waila:wthit:fabric-${rootProject.wthit_version}" // run against the full jar
+
+    // Misc mods that help performance or do other useful things. Should not affect anything functionally
+    modRuntimeOnly "maven.modrinth:sodium:mc1.17.1-0.3.2"
+    modRuntimeOnly "maven.modrinth:lithium:mc1.17.1-0.7.5"
+    modRuntimeOnly "maven.modrinth:hydrogen:mc1.17.1-0.3.1"
+    modRuntimeOnly "maven.modrinth:lazydfu:0.1.2"
+    modRuntimeOnly("com.terraformersmc:modmenu:2.0.14") {
+        exclude group: "net.fabricmc"; exclude group: "net.fabricmc.fabric-api"
+    }
+
+    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
+}
+
+processResources {
+    inputs.property "version", rootProject.version
+    filesMatching("fabric.mod.json") {
+        expand "version": rootProject.version
+    }
+}
+
+shadowJar {
+    configurations = [project.configurations.shadowCommon]
+    classifier "dev-shadow"
+}
+
+remapJar {
+    input.set shadowJar.archiveFile
+    dependsOn shadowJar
+    classifier null
+}
+
+jar {
+    classifier "dev"
+}
+
+sourcesJar {
+    def commonSources = project(":common").sourcesJar
+    dependsOn commonSources
+    from commonSources.archiveFile.map { zipTree(it) }
+}
+
+components.java {
+    withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
+        skip()
+    }
+}
+
+
+publishing {
+    publications {
+        mavenFabric(MavenPublication) {
+            groupId = 'io.github.consistencyplus'
+            artifactId = rootProject.archives_base_name + "-" + project.name
+            version = rootProject.version
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            url = System.getenv().MAVEN_URL
+            credentials {
+                username = System.getenv().MAVEN_USER
+                password = System.getenv().MAVEN_PASS
+            }
+            authentication { basic(BasicAuthentication) }
+        }
+    }
+}

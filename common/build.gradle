@@ -1,0 +1,15 @@
+repositories {
+    maven {
+        url = "https://maven.bai.lol"
+        content { includeGroup "mcp.mobius.waila" }
+    }
+}
+
+dependencies {
+    // This is only here to get environment annotations and mixin dependencies. DO NOT ADD ANYTHING ELSE FROM FABRIC
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
+    modApi "dev.architectury:architectury:${rootProject.architectury_version}"
+    modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}" // compile against the WTHIT API
+}
+
+architectury { common() }

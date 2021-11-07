@@ -18,28 +18,17 @@ jobs:
         uses: denoland/setup-deno@v1
         with:
           deno-version: 1.15.3
-      - name: Get Oxipng
-        run: |
-          wget https://github.com/shssoichiro/oxipng/releases/download/v5.0.0/oxipng-5.0.0-x86_64-unknown-linux-musl.tar.gz
-          tar -xf oxipng-5.0.0-x86_64-unknown-linux-musl.tar.gz
-          sudo mv ./oxipng-5.0.0-x86_64-unknown-linux-musl/oxipng /bin/
-          chmod +x /bin/oxipng
       - name: Build projects and remove dev jars
         run: |
           ./gradlew build
-          rm common/build/libs/**-dev.jar
           rm fabric/build/libs/**-dev.jar
           rm forge/build/libs/**-dev.jar
+          rm forge/build/libs/**-dev-shadow.jar
         env:
           SNAPSHOT: ""
       - run: |
-          deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder common/build/libs/
-          deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder fabric/build/libs/
-          deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/EnnuiL/Detonater/main/mod.ts folder forge/build/libs/
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Common Artifacts
-          path: common/build/libs/
+          deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/wafflecoffee/detonater-no-oxipng/no-oxipng/mod.ts folder fabric/build/libs/
+          deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/wafflecoffee/detonater-no-oxipng/no-oxipng/mod.ts folder forge/build/libs/
       - uses: actions/upload-artifact@v2
         with:
           name: Fabric Artifacts

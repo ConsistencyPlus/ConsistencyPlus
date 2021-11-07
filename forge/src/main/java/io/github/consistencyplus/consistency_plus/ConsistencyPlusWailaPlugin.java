@@ -1,6 +1,7 @@
 package io.github.consistencyplus.consistency_plus;
 
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertOverride;
 import mcp.mobius.waila.api.IRegistrar;
 import mcp.mobius.waila.api.IWailaPlugin;
 import mcp.mobius.waila.api.TooltipPosition;

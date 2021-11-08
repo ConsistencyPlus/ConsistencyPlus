@@ -1,4 +1,4 @@
-package io.github.consistencyplus.consistency_plus.core;
+package io.github.consistencyplus.consistency_plus;
 
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertOverride;

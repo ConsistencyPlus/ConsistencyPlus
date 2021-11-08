@@ -11,8 +11,7 @@
     "PlayerEntityMixin"
   ],
   "client": [
-    "ArmorFeatureRendererMixin",
-    "BlockColorsMixin"
+    "ArmorFeatureRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

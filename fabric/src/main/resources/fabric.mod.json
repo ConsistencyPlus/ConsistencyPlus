@@ -107,7 +107,7 @@
       "io.github.consistencyplus.consistency_plus.ConsistencyPlus"
     ],
     "client": [
-      "io.github.consistencyplus.consistency_plus.ConsistencyPlusClientside"
+      "io.github.consistencyplus.consistency_plus.ConsistencyPlusClient"
     ]
   },
   "mixins": [

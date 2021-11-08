@@ -1,32 +1,14 @@
 package io.github.consistencyplus.consistency_plus;
 
 import dev.architectury.platform.forge.EventBuses;
-import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
-import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
+import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-@Mod(ConsistencyPlus.ID)
+@Mod(ConsistencyPlusMain.ID)
 public class ConsistencyPlus {
-	public static final Logger LOGGER = LogManager.getLogger("Consistency+");
-	public static final String ID = "consistency_plus";
-
-
 	public ConsistencyPlus() {
-		LOGGER.info("Consistency+ Main - Beginning initialization process");
-
-		EventBuses.registerModEventBus(ID, FMLJavaModLoadingContext.get().getModEventBus());
-
-		CPlusBlocks.init();
-		CPlusItems.init();
-
-
-		LOGGER.info("Consistency+ Main - Finished initialization process");
-
-
-
-		// FuelRegistry.INSTANCE.add(CHARCOAL_BLOCK, 200);
+		EventBuses.registerModEventBus(ConsistencyPlusMain.ID, FMLJavaModLoadingContext.get().getModEventBus());
+		ConsistencyPlusMain.init();
 	}
 }

@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.blocks.nubert;
 
-import io.github.consistencyplus.consistency_plus.client.NubertHandler;
 import mcp.mobius.waila.api.IBlockAccessor;
 import mcp.mobius.waila.api.IBlockComponentProvider;
 import mcp.mobius.waila.api.IPluginConfig;

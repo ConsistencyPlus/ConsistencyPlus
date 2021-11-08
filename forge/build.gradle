@@ -16,17 +16,6 @@ configurations {
     developmentForge.extendsFrom common
 }
 
-repositories {
-    maven {
-        url = "https://api.modrinth.com/maven"
-        content { includeGroup "maven.modrinth" }
-    }
-    maven {
-        url = "https://maven.bai.lol"
-        content { includeGroup "mcp.mobius.waila" }
-    }
-}
-
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
@@ -34,7 +23,10 @@ dependencies {
     modRuntimeOnly "mcp.mobius.waila:wthit:forge-${rootProject.wthit_version}" // run against the full jar
     modApi shadowCommon("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version_forge}-forge")
 
-    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    modApi ("maven.modrinth:stonecutter_recipe_tags:${scrt_version}-forge")
+    shadowCommon("maven.modrinth:stonecutter_recipe_tags:${scrt_version}-forge") { transitive = false }
+
+    common(project(path: ":common", configuration: "namedElements")) { transitive = false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
 

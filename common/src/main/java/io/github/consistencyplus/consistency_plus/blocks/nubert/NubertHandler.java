@@ -1,9 +1,7 @@
-package io.github.consistencyplus.consistency_plus.client;
+package io.github.consistencyplus.consistency_plus.blocks.nubert;
 
 import dev.architectury.event.events.client.ClientTickEvent;
 import dev.architectury.event.events.client.ClientTooltipEvent;
-import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
-import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;

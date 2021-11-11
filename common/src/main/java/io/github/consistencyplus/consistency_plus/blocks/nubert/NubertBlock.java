@@ -35,6 +35,7 @@ public class NubertBlock extends HorizontalFacingBlock implements Waterloggable 
                 .mapColor(MapColor.BRIGHT_RED)
                 .luminance(state -> 7)
         );
+        setDefaultState(getDefaultState().with(WATERLOGGED, false));
     }
 
     @Override

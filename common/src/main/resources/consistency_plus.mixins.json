@@ -4,9 +4,11 @@
   "package": "io.github.consistencyplus.consistency_plus.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "AbstractMinecartEntityMixin",
     "BlocksMixin",
     "GrassBlockMixin",
     "LivingEntityMixin",
+    "MinecartEntityMixin",
     "MyceliumBlockMixin",
     "PlayerEntityMixin"
   ],

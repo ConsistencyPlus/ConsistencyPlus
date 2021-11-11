@@ -32,6 +32,7 @@ dependencies {
     modRuntimeOnly "mcp.mobius.waila:wthit:fabric-${rootProject.wthit_version}" // run against the full jar
 
     modRuntimeOnly "maven.modrinth:lazydfu:0.1.2"
+    modRuntimeOnly "maven.modrinth:suggestionproviderfabric:1.0.0"
     modRuntimeOnly("com.terraformersmc:modmenu:2.0.14") {
         exclude group: "net.fabricmc"; exclude group: "net.fabricmc.fabric-api"
     }
@@ -39,7 +40,6 @@ dependencies {
     if (project.use_third_party_mods && !System.getProperty("user.name").toLowerCase(Locale.ROOT).equals("carte")) {
         modRuntimeOnly "maven.modrinth:sodium:mc1.17.1-0.3.2"
         modRuntimeOnly "maven.modrinth:lithium:mc1.17.1-0.7.5"
-        modRuntimeOnly "maven.modrinth:hydrogen:mc1.17.1-0.3.1"
     }
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }

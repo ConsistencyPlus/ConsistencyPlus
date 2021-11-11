@@ -4,6 +4,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
+import io.github.consistencyplus.consistency_plus.items.NubertMinecartItem;
 import io.github.consistencyplus.consistency_plus.items.RedirectedBlockItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -7346,7 +7347,11 @@ public class CPlusItems {
             new Item(new Item.Settings().group(ItemGroup.MISC))),
 	NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor", () ->
             new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC))),
-
+	NUBERT_MINECART = ITEMS.register("nubert_minecart", () ->
+            new NubertMinecartItem(new Item.Settings().maxCount(1), false)),
+	WIGGED_NUBERT_MINECART = ITEMS.register("wigged_nubert_minecart", () ->
+			new NubertMinecartItem(new Item.Settings().maxCount(1), true)),
+	
 	// turtle
 	TURTLE_CHESTPLATE = ITEMS.register("turtle_chestplate", () ->
             new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT))),

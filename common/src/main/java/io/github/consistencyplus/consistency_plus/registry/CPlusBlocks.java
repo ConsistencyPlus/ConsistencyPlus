@@ -15,8 +15,8 @@ import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumStairs
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumWallBlock;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
-import io.github.consistencyplus.consistency_plus.core.CPlusCarvedPumpkinBlock;
-import io.github.consistencyplus.consistency_plus.core.CPlusStairBlock;
+import io.github.consistencyplus.consistency_plus.core.extensions.CPlusCarvedPumpkinBlock;
+import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.sound.BlockSoundGroup;

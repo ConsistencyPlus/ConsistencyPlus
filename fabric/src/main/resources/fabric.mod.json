@@ -136,7 +136,7 @@
     },
     "waila:plugins": {
       "id": "consistency_plus:plugin",
-      "initializer": "io.github.consistencyplus.consistency_plus.ConsistencyPlusWailaPlugin"
+      "initializer": "io.github.consistencyplus.consistency_plus.core.wthit.CPlusWthitPlugin"
     }
   }
 }

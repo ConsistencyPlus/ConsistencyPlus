@@ -7333,10 +7333,13 @@ public class CPlusItems {
     JET = ITEMS.register("jet", () ->
             new BlockItem(CPlusBlocks.JET.get(), new Item.Settings())),
 	NUBERT = ITEMS.register("nubert", () ->
-            new BlockItem(CPlusBlocks.NUBERT.get(), new Item.Settings().fireproof().rarity(Rarity.EPIC))),
+            new BlockItem(CPlusBlocks.NUBERT.get(), misc().fireproof().rarity(Rarity.EPIC))),
 	WIGGED_NUBERT = ITEMS.register("wigged_nubert", () ->
-            new BlockItem(CPlusBlocks.WIGGED_NUBERT.get(), new Item.Settings().fireproof().rarity(Rarity.EPIC))),
-
+            new BlockItem(CPlusBlocks.WIGGED_NUBERT.get(), misc().fireproof().rarity(Rarity.EPIC))),
+	NUBERT_MINECART = ITEMS.register("nubert_minecart", () ->
+			new NubertMinecartItem(misc().maxCount(1), false)),
+	WIGGED_NUBERT_MINECART = ITEMS.register("wigged_nubert_minecart", () ->
+			new NubertMinecartItem(misc().maxCount(1), true)),
 
 // ITEMS
 
@@ -7347,10 +7350,6 @@ public class CPlusItems {
             new Item(new Item.Settings().group(ItemGroup.MISC))),
 	NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor", () ->
             new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC))),
-	NUBERT_MINECART = ITEMS.register("nubert_minecart", () ->
-            new NubertMinecartItem(new Item.Settings().maxCount(1), false)),
-	WIGGED_NUBERT_MINECART = ITEMS.register("wigged_nubert_minecart", () ->
-			new NubertMinecartItem(new Item.Settings().maxCount(1), true)),
 	
 	// turtle
 	TURTLE_CHESTPLATE = ITEMS.register("turtle_chestplate", () ->

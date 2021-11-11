@@ -6,18 +6,21 @@ import io.github.consistencyplus.consistency_plus.items.NubertMinecartItem;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.LiteralText;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
+import net.minecraft.world.World;
 
 import java.util.List;
 
 public class NubertHandler {
     public static boolean TEXT_NEEDS_UPDATE = true;
     public static boolean TEXT_GOT_THIS_TICK = false;
-    public static MutableText CURRENT_TEXT = null;
+    public static MutableText CURRENT_TEXT = new LiteralText("Nubert init went wrong! If you see this, report it!");
     public static int[] PLAIN = new int[] {0, 1, 2, 3, 4, 5, 6};
     public static int[] WIG = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     public static int[] CART = new int[] {0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14};
@@ -44,11 +47,14 @@ public class NubertHandler {
                     : !cart
                         ? WIG
                         : WIG_CART;
-            int index = MinecraftClient.getInstance().world.random.nextInt(getFrom.length);
-            int num = getFrom[index];
-            String key = "nubert.phrase." + num;
-            CURRENT_TEXT = new TranslatableText(key).formatted(Formatting.GOLD, Formatting.ITALIC);
-            TEXT_NEEDS_UPDATE = false;
+            World world = MinecraftClient.getInstance().world;
+            if (world != null) {
+                int index = world.random.nextInt(getFrom.length);
+                int num = getFrom[index];
+                String key = "nubert.phrase." + num;
+                CURRENT_TEXT = new TranslatableText(key).formatted(Formatting.GOLD, Formatting.ITALIC);
+                TEXT_NEEDS_UPDATE = false;
+            }
         }
         return CURRENT_TEXT;
     }

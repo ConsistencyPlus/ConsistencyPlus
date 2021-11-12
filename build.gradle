@@ -6,7 +6,7 @@ plugins {
     id "maven-publish"
 }
 
-version = rootProject.mod_version + "+" + rootProject.mc_major_version + System.getenv().SNAPSHOT
+version = rootProject.mod_version + "+" + rootProject.mc_major_version + "-" + project.name + System.getenv().SNAPSHOT
 
 architectury {
     minecraft = rootProject.minecraft_version

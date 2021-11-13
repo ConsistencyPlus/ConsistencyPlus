@@ -6,7 +6,7 @@ plugins {
     id "maven-publish"
 }
 
-version = rootProject.mod_version + "+" + rootProject.mc_major_version + "-" + project.name + System.getenv().SNAPSHOT
+version = rootProject.mod_version + "+" + rootProject.mc_major_version + "-" + project.name
 
 architectury {
     minecraft = rootProject.minecraft_version
@@ -28,7 +28,7 @@ allprojects {
     apply plugin: "maven-publish"
 
     archivesBaseName = rootProject.archives_base_name
-    version = rootProject.mod_version + "+" + rootProject.mc_major_version + System.getenv().SNAPSHOT
+    version = rootProject.mod_version + "+" + rootProject.mc_major_version + "-" + project.name
 
     tasks.withType(JavaCompile) { it.options.encoding = "UTF-8" }
 

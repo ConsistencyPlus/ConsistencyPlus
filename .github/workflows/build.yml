@@ -12,8 +12,6 @@ jobs:
           distribution: adopt
           java-version: 16
       - run: ./gradlew build
-        env:
-          SNAPSHOT: ""
       - uses: actions/upload-artifact@v2
         with:
           name: Common Artifacts

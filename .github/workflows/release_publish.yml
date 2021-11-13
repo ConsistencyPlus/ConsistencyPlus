@@ -16,4 +16,3 @@ jobs:
           MAVEN_URL: "https://maven.waffle.coffee/releases/"
           MAVEN_USER: ${{ secrets.MAVEN_USER }}
           MAVEN_PASS: ${{ secrets.MAVEN_PASS }}
-          SNAPSHOT: ""

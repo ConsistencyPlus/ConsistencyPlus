@@ -9,7 +9,6 @@ architectury {
 }
 
 configurations {
-    shadowSCRT
     common
     shadowCommon // Don't use shadow from the shadow plugin because we don't want IDEA to index this.
     compileClasspath.extendsFrom common
@@ -22,7 +21,7 @@ dependencies {
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
     modCompileOnly "mcp.mobius.waila:wthit-api:forge-${rootProject.wthit_version}" // compile against the WTHIT API
     modRuntimeOnly "mcp.mobius.waila:wthit:forge-${rootProject.wthit_version}" // run against the full jar
-    modApi shadowSCRT("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version_forge}-forge")
+    modApi "maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version_forge}-forge"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive = false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
@@ -45,9 +44,8 @@ loom {
 shadowJar {
     exclude "fabric.mod.json"
 
-    configurations = [project.configurations.shadowCommon, project.configurations.shadowSCRT]
+    configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"
-    relocate 'io.github.tropheusj.stonecutter_recipe_tags', 'io.github.consistencyplus.scrt'
 }
 
 remapJar {

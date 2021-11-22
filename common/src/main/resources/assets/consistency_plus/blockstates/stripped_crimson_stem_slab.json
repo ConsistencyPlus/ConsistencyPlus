@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/stripped_crimson_stem_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_crimson_stem"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/stripped_crimson_stem_slab_top"
+    }
+  }
+}

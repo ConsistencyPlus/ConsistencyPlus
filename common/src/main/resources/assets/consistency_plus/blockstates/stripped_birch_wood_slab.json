@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/stripped_birch_wood_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_birch_wood"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/stripped_birch_wood_slab_top"
+    }
+  }
+}

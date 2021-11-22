@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_wood"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:spruce_wood_stairs",
+    "count": 4
+  }
+}

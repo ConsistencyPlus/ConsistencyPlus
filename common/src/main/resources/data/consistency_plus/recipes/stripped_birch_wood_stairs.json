@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:birch_wood"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:birch_wood_stairs",
+    "count": 4
+  }
+}

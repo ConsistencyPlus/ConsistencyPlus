@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/spruce_log_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/spruce_log"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/spruce_log_slab_top"
+    }
+  }
+}

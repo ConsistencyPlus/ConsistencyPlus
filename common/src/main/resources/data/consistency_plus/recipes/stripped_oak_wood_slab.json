@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:oak_wood"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:oak_wood_slab",
+    "count": 6
+  }
+}

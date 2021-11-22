@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/stripped_oak_log_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_oak_log"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/stripped_oak_log_slab_top"
+    }
+  }
+}

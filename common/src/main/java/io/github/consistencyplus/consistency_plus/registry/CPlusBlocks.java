@@ -4839,6 +4839,140 @@ public class CPlusBlocks {
 	MYCELIUM_WALL = BLOCKS.register("mycelium_wall", () ->
 			new MyceliumWallBlock(Block.Settings.copy(MYCELIUM))),
 
+	// Logs and Wood Stairs/Slabs
+	// Follows Log Stair, Log Slab, Wood Stair, Wood Slab format
+	OAK_LOG_STAIRS = BLOCKS.register("oak_log_stairs", () ->
+			new CPlusStairBlock(OAK_STAIRS.getDefaultState(), Block.Settings.copy(OAK_STAIRS))),
+	OAK_LOG_SLAB = BLOCKS.register("oak_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(OAK_STAIRS))),
+	OAK_WOOD_STAIRS = BLOCKS.register("oak_wood_stairs", () ->
+			new CPlusStairBlock(OAK_STAIRS.getDefaultState(), Block.Settings.copy(OAK_STAIRS))),
+	OAK_WOOD_SLAB = BLOCKS.register("oak_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(OAK_STAIRS))),
+	DARK_OAK_LOG_STAIRS = BLOCKS.register("dark_oak_log_stairs", () ->
+			new CPlusStairBlock(DARK_OAK_STAIRS.getDefaultState(), Block.Settings.copy(DARK_OAK_STAIRS))),
+	DARK_OAK_LOG_SLAB = BLOCKS.register("dark_oak_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(DARK_OAK_STAIRS))),
+	DARK_OAK_WOOD_STAIRS = BLOCKS.register("dark_oak_wood_stairs", () ->
+			new CPlusStairBlock(DARK_OAK_STAIRS.getDefaultState(), Block.Settings.copy(DARK_OAK_STAIRS))),
+	DARK_OAK_WOOD_SLAB = BLOCKS.register("dark_oak_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(DARK_OAK_STAIRS))),
+	ACACIA_LOG_STAIRS = BLOCKS.register("acacia_log_stairs", () ->
+			new CPlusStairBlock(ACACIA_STAIRS.getDefaultState(), Block.Settings.copy(ACACIA_STAIRS))),
+	ACACIA_LOG_SLAB = BLOCKS.register("acacia_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(ACACIA_STAIRS))),
+	ACACIA_WOOD_STAIRS = BLOCKS.register("acacia_wood_stairs", () ->
+			new CPlusStairBlock(ACACIA_STAIRS.getDefaultState(), Block.Settings.copy(ACACIA_STAIRS))),
+	ACACIA_WOOD_SLAB = BLOCKS.register("acacia_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(ACACIA_STAIRS))),
+	BIRCH_LOG_STAIRS = BLOCKS.register("birch_log_stairs", () ->
+			new CPlusStairBlock(BIRCH_STAIRS.getDefaultState(), Block.Settings.copy(BIRCH_STAIRS))),
+	BIRCH_LOG_SLAB = BLOCKS.register("birch_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(BIRCH_STAIRS))),
+	BIRCH_WOOD_STAIRS = BLOCKS.register("birch_wood_stairs", () ->
+			new CPlusStairBlock(BIRCH_STAIRS.getDefaultState(), Block.Settings.copy(BIRCH_STAIRS))),
+	BIRCH_WOOD_SLAB = BLOCKS.register("birch_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(BIRCH_STAIRS))),
+	JUNGLE_LOG_STAIRS = BLOCKS.register("jungle_log_stairs", () ->
+			new CPlusStairBlock(JUNGLE_STAIRS.getDefaultState(), Block.Settings.copy(JUNGLE_STAIRS))),
+	JUNGLE_LOG_SLAB = BLOCKS.register("jungle_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(JUNGLE_STAIRS))),
+	JUNGLE_WOOD_STAIRS = BLOCKS.register("jungle_wood_stairs", () ->
+			new CPlusStairBlock(JUNGLE_STAIRS.getDefaultState(), Block.Settings.copy(JUNGLE_STAIRS))),
+	JUNGLE_WOOD_SLAB = BLOCKS.register("jungle_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(JUNGLE_STAIRS))),
+	SPRUCE_LOG_STAIRS = BLOCKS.register("spruce_log_stairs", () ->
+			new CPlusStairBlock(SPRUCE_STAIRS.getDefaultState(), Block.Settings.copy(SPRUCE_STAIRS))),
+	SPRUCE_LOG_SLAB = BLOCKS.register("spruce_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(SPRUCE_STAIRS))),
+	SPRUCE_WOOD_STAIRS = BLOCKS.register("spruce_wood_stairs", () ->
+			new CPlusStairBlock(SPRUCE_STAIRS.getDefaultState(), Block.Settings.copy(SPRUCE_STAIRS))),
+	SPRUCE_WOOD_SLAB = BLOCKS.register("spruce_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(SPRUCE_STAIRS))),
+	CRIMSON_STEM_STAIRS = BLOCKS.register("crimson_stem_stairs", () ->
+			new CPlusStairBlock(CRIMSON_STAIRS.getDefaultState(), Block.Settings.copy(CRIMSON_STAIRS))),
+	CRIMSON_STEM_SLAB = BLOCKS.register("crimson_stem_slab", () ->
+			new SlabBlock(Block.Settings.copy(CRIMSON_STAIRS))),
+	CRIMSON_HYPHAE_STAIRS = BLOCKS.register("crimson_hyphae_stairs", () ->
+			new CPlusStairBlock(CRIMSON_STAIRS.getDefaultState(), Block.Settings.copy(CRIMSON_STAIRS))),
+	CRIMSON_HYPHAE_SLAB = BLOCKS.register("crimson_hyphae_slab", () ->
+			new SlabBlock(Block.Settings.copy(CRIMSON_STAIRS))),
+	WARPED_STEM_STAIRS = BLOCKS.register("warped_stem_stairs", () ->
+			new CPlusStairBlock(WARPED_STAIRS.getDefaultState(), Block.Settings.copy(WARPED_STAIRS))),
+	WARPED_STEM_SLAB = BLOCKS.register("warped_stem_slab", () ->
+			new SlabBlock(Block.Settings.copy(WARPED_STAIRS))),
+	WARPED_HYPHAE_STAIRS = BLOCKS.register("warped_hyphae_stairs", () ->
+			new CPlusStairBlock(WARPED_STAIRS.getDefaultState(), Block.Settings.copy(WARPED_STAIRS))),
+	WARPED_HYPHAE_SLAB = BLOCKS.register("warped_hyphae_slab", () ->
+			new SlabBlock(Block.Settings.copy(WARPED_STAIRS))),
+
+	// Stripped Logs and Wood Stairs/Slabs
+	// Follows Log Stair, Log Slab, Wood Stair, Wood Slab format
+	STRIPPED_OAK_LOG_STAIRS = BLOCKS.register("stripped_oak_log_stairs", () ->
+			new CPlusStairBlock(OAK_STAIRS.getDefaultState(), Block.Settings.copy(OAK_STAIRS))),
+	STRIPPED_OAK_LOG_SLAB = BLOCKS.register("stripped_oak_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(OAK_STAIRS))),
+	STRIPPED_OAK_WOOD_STAIRS = BLOCKS.register("stripped_oak_wood_stairs", () ->
+			new CPlusStairBlock(OAK_STAIRS.getDefaultState(), Block.Settings.copy(OAK_STAIRS))),
+	STRIPPED_OAK_WOOD_SLAB = BLOCKS.register("stripped_oak_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(OAK_STAIRS))),
+	STRIPPED_DARK_OAK_LOG_STAIRS = BLOCKS.register("stripped_dark_oak_log_stairs", () ->
+			new CPlusStairBlock(DARK_OAK_STAIRS.getDefaultState(), Block.Settings.copy(DARK_OAK_STAIRS))),
+	STRIPPED_DARK_OAK_LOG_SLAB = BLOCKS.register("stripped_dark_oak_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(DARK_OAK_STAIRS))),
+	STRIPPED_DARK_OAK_WOOD_STAIRS = BLOCKS.register("stripped_dark_oak_wood_stairs", () ->
+			new CPlusStairBlock(DARK_OAK_STAIRS.getDefaultState(), Block.Settings.copy(DARK_OAK_STAIRS))),
+	STRIPPED_DARK_OAK_WOOD_SLAB = BLOCKS.register("stripped_dark_oak_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(DARK_OAK_STAIRS))),
+	STRIPPED_ACACIA_LOG_STAIRS = BLOCKS.register("stripped_acacia_log_stairs", () ->
+			new CPlusStairBlock(ACACIA_STAIRS.getDefaultState(), Block.Settings.copy(ACACIA_STAIRS))),
+	STRIPPED_ACACIA_LOG_SLAB = BLOCKS.register("stripped_acacia_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(ACACIA_STAIRS))),
+	STRIPPED_ACACIA_WOOD_STAIRS = BLOCKS.register("stripped_acacia_wood_stairs", () ->
+			new CPlusStairBlock(ACACIA_STAIRS.getDefaultState(), Block.Settings.copy(ACACIA_STAIRS))),
+	STRIPPED_ACACIA_WOOD_SLAB = BLOCKS.register("stripped_acacia_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(ACACIA_STAIRS))),
+	STRIPPED_BIRCH_LOG_STAIRS = BLOCKS.register("stripped_birch_log_stairs", () ->
+			new CPlusStairBlock(BIRCH_STAIRS.getDefaultState(), Block.Settings.copy(BIRCH_STAIRS))),
+	STRIPPED_BIRCH_LOG_SLAB = BLOCKS.register("stripped_birch_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(BIRCH_STAIRS))),
+	STRIPPED_BIRCH_WOOD_STAIRS = BLOCKS.register("stripped_birch_wood_stairs", () ->
+			new CPlusStairBlock(BIRCH_STAIRS.getDefaultState(), Block.Settings.copy(BIRCH_STAIRS))),
+	STRIPPED_BIRCH_WOOD_SLAB = BLOCKS.register("stripped_birch_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(BIRCH_STAIRS))),
+	STRIPPED_JUNGLE_LOG_STAIRS = BLOCKS.register("stripped_jungle_log_stairs", () ->
+			new CPlusStairBlock(JUNGLE_STAIRS.getDefaultState(), Block.Settings.copy(JUNGLE_STAIRS))),
+	STRIPPED_JUNGLE_LOG_SLAB = BLOCKS.register("stripped_jungle_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(JUNGLE_STAIRS))),
+	STRIPPED_JUNGLE_WOOD_STAIRS = BLOCKS.register("stripped_jungle_wood_stairs", () ->
+			new CPlusStairBlock(JUNGLE_STAIRS.getDefaultState(), Block.Settings.copy(JUNGLE_STAIRS))),
+	STRIPPED_JUNGLE_WOOD_SLAB = BLOCKS.register("stripped_jungle_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(JUNGLE_STAIRS))),
+	STRIPPED_SPRUCE_LOG_STAIRS = BLOCKS.register("stripped_spruce_log_stairs", () ->
+			new CPlusStairBlock(SPRUCE_STAIRS.getDefaultState(), Block.Settings.copy(SPRUCE_STAIRS))),
+	STRIPPED_SPRUCE_LOG_SLAB = BLOCKS.register("stripped_spruce_log_slab", () ->
+			new SlabBlock(Block.Settings.copy(SPRUCE_STAIRS))),
+	STRIPPED_SPRUCE_WOOD_STAIRS = BLOCKS.register("stripped_spruce_wood_stairs", () ->
+			new CPlusStairBlock(SPRUCE_STAIRS.getDefaultState(), Block.Settings.copy(SPRUCE_STAIRS))),
+	STRIPPED_SPRUCE_WOOD_SLAB = BLOCKS.register("stripped_spruce_wood_slab", () ->
+			new SlabBlock(Block.Settings.copy(SPRUCE_STAIRS))),
+	STRIPPED_CRIMSON_STEM_STAIRS = BLOCKS.register("stripped_crimson_stem_stairs", () ->
+			new CPlusStairBlock(CRIMSON_STAIRS.getDefaultState(), Block.Settings.copy(CRIMSON_STAIRS))),
+	STRIPPED_CRIMSON_STEM_SLAB = BLOCKS.register("stripped_crimson_stem_slab", () ->
+			new SlabBlock(Block.Settings.copy(CRIMSON_STAIRS))),
+	STRIPPED_CRIMSON_HYPHAE_STAIRS = BLOCKS.register("stripped_crimson_hyphae_stairs", () ->
+			new CPlusStairBlock(CRIMSON_STAIRS.getDefaultState(), Block.Settings.copy(CRIMSON_STAIRS))),
+	STRIPPED_CRIMSON_HYPHAE_SLAB = BLOCKS.register("stripped_crimson_hyphae_slab", () ->
+			new SlabBlock(Block.Settings.copy(CRIMSON_STAIRS))),
+	STRIPPED_WARPED_STEM_STAIRS = BLOCKS.register("stripped_warped_stem_stairs", () ->
+			new CPlusStairBlock(WARPED_STAIRS.getDefaultState(), Block.Settings.copy(WARPED_STAIRS))),
+	STRIPPED_WARPED_STEM_SLAB = BLOCKS.register("stripped_warped_stem_slab", () ->
+			new SlabBlock(Block.Settings.copy(WARPED_STAIRS))),
+	STRIPPED_WARPED_HYPHAE_STAIRS = BLOCKS.register("stripped_warped_hyphae_stairs", () ->
+			new CPlusStairBlock(WARPED_STAIRS.getDefaultState(), Block.Settings.copy(WARPED_STAIRS))),
+	STRIPPED_WARPED_HYPHAE_SLAB = BLOCKS.register("stripped_warped_hyphae_slab", () ->
+			new SlabBlock(Block.Settings.copy(WARPED_STAIRS))),
+
 	// Miscellaneous
 	// JACK_O_RED = BLOCKS.register("jack_o_red", () -> new RedstonePumpkinBlock(Block.Settings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD)13))),
 	JACK_O_SOUL = BLOCKS.register("jack_o_soul", () ->

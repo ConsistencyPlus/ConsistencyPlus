@@ -7317,6 +7317,139 @@ public class CPlusItems {
     MYCELIUM_WALL = ITEMS.register("mycelium_wall", () ->
             new BlockItem(CPlusBlocks.MYCELIUM_WALL.get(), misc())),
 
+	// Logs and Wood Slabs/Stairs
+    // Follows Log Stair, Log Slab, Wood Stair, Wood Slab format
+	OAK_LOG_STAIRS = ITEMS.register("oak_log_stairs", () ->
+			new BlockItem(CPlusBlocks.OAK_LOG_STAIRS.get(), misc())),
+	OAK_LOG_SLAB = ITEMS.register("oak_log_slab", () ->
+			new BlockItem(CPlusBlocks.OAK_LOG_SLAB.get(), misc())),
+	OAK_WOOD_STAIRS = ITEMS.register("oak_wood_stairs", () ->
+			new BlockItem(CPlusBlocks.OAK_WOOD_STAIRS.get(), misc())),
+	OAK_WOOD_SLAB = ITEMS.register("oak_wood_slab", () ->
+			new BlockItem(CPlusBlocks.OAK_WOOD_SLAB.get(), misc())),
+	DARK_OAK_LOG_STAIRS = ITEMS.register("dark_oak_log_stairs", () ->
+			new BlockItem(CPlusBlocks.DARK_OAK_LOG_STAIRS.get(), misc())),
+	DARK_OAK_LOG_SLAB = ITEMS.register("dark_oak_log_slab", () ->
+			new BlockItem(CPlusBlocks.DARK_OAK_LOG_SLAB.get(), misc())),
+	DARK_OAK_WOOD_STAIRS = ITEMS.register("dark_oak_wood_stairs", () ->
+			new BlockItem(CPlusBlocks.DARK_OAK_WOOD_STAIRS.get(), misc())),
+	DARK_OAK_WOOD_SLAB = ITEMS.register("dark_oak_wood_slab", () ->
+			new BlockItem(CPlusBlocks.DARK_OAK_WOOD_SLAB.get(), misc())),
+	ACACIA_LOG_STAIRS = ITEMS.register("acacia_log_stairs", () ->
+			new BlockItem(CPlusBlocks.ACACIA_LOG_STAIRS.get(), misc())),
+	ACACIA_LOG_SLAB = ITEMS.register("acacia_log_slab", () ->
+			new BlockItem(CPlusBlocks.ACACIA_LOG_SLAB.get(), misc())),
+	ACACIA_WOOD_STAIRS = ITEMS.register("acacia_wood_stairs", () ->
+			new BlockItem(CPlusBlocks.ACACIA_WOOD_STAIRS.get(), misc())),
+	ACACIA_WOOD_SLAB = ITEMS.register("acacia_wood_slab", () ->
+			new BlockItem(CPlusBlocks.ACACIA_WOOD_SLAB.get(), misc())),
+	BIRCH_LOG_STAIRS = ITEMS.register("birch_log_stairs", () ->
+			new BlockItem(CPlusBlocks.BIRCH_LOG_STAIRS.get(), misc())),
+	BIRCH_LOG_SLAB = ITEMS.register("birch_log_slab", () ->
+			new BlockItem(CPlusBlocks.BIRCH_LOG_SLAB.get(), misc())),
+	BIRCH_WOOD_STAIRS = ITEMS.register("birch_wood_stairs", () ->
+			new BlockItem(CPlusBlocks.BIRCH_WOOD_STAIRS.get(), misc())),
+	BIRCH_WOOD_SLAB = ITEMS.register("birch_wood_slab", () ->
+			new BlockItem(CPlusBlocks.BIRCH_WOOD_SLAB.get(), misc())),
+	JUNGLE_LOG_STAIRS = ITEMS.register("jungle_log_stairs", () ->
+			new BlockItem(CPlusBlocks.JUNGLE_LOG_STAIRS.get(), misc())),
+	JUNGLE_LOG_SLAB = ITEMS.register("jungle_log_slab", () ->
+			new BlockItem(CPlusBlocks.JUNGLE_LOG_SLAB.get(), misc())),
+	JUNGLE_WOOD_STAIRS = ITEMS.register("jungle_wood_stairs", () ->
+			new BlockItem(CPlusBlocks.JUNGLE_WOOD_STAIRS.get(), misc())),
+	JUNGLE_WOOD_SLAB = ITEMS.register("jungle_wood_slab", () ->
+			new BlockItem(CPlusBlocks.JUNGLE_WOOD_SLAB.get(), misc())),
+	SPRUCE_LOG_STAIRS = ITEMS.register("spruce_log_stairs", () ->
+			new BlockItem(CPlusBlocks.SPRUCE_LOG_STAIRS.get(), misc())),
+	SPRUCE_LOG_SLAB = ITEMS.register("spruce_log_slab", () ->
+			new BlockItem(CPlusBlocks.SPRUCE_LOG_SLAB.get(), misc())),
+	SPRUCE_WOOD_STAIRS = ITEMS.register("spruce_wood_stairs", () ->
+			new BlockItem(CPlusBlocks.SPRUCE_WOOD_STAIRS.get(), misc())),
+	SPRUCE_WOOD_SLAB = ITEMS.register("spruce_wood_slab", () ->
+			new BlockItem(CPlusBlocks.SPRUCE_WOOD_SLAB.get(), misc())),
+	CRIMSON_STEM_STAIRS = ITEMS.register("crimson_stem_stairs", () ->
+			new BlockItem(CPlusBlocks.CRIMSON_STEM_STAIRS.get(), misc())),
+	CRIMSON_STEM_SLAB = ITEMS.register("crimson_stem_slab", () ->
+			new BlockItem(CPlusBlocks.CRIMSON_STEM_SLAB.get(), misc())),
+	CRIMSON_HYPHAE_STAIRS = ITEMS.register("crimson_hyphae_stairs", () ->
+			new BlockItem(CPlusBlocks.CRIMSON_HYPHAE_STAIRS.get(), misc())),
+	CRIMSON_HYPHAE_SLAB = ITEMS.register("crimson_hyphae_slab", () ->
+			new BlockItem(CPlusBlocks.CRIMSON_HYPHAE_SLAB.get(), misc())),
+	WARPED_STEM_STAIRS = ITEMS.register("warped_stem_stairs", () ->
+			new BlockItem(CPlusBlocks.WARPED_STEM_STAIRS.get(), misc())),
+	WARPED_STEM_SLAB = ITEMS.register("warped_stem_slab", () ->
+			new BlockItem(CPlusBlocks.WARPED_HYPHAE_SLAB.get(), misc())),
+	WARPED_HYPHAE_STAIRS = ITEMS.register("warped_hyphae_stairs", () ->
+			new BlockItem(CPlusBlocks.WARPED_HYPHAE_STAIRS.get(), misc())),
+	WARPED_HYPHAE_SLAB = ITEMS.register("warped_hyphae_slab", () ->
+			new BlockItem(CPlusBlocks.WARPED_HYPHAE_SLAB.get(), misc())),
+
+    // Stripped Logs and Wood Slabs/Stairs
+    // Follows Log Stair, Log Slab, Wood Stair, Wood Slab format
+    STRIPPED_OAK_LOG_STAIRS = ITEMS.register("stripped_oak_log_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_OAK_LOG_STAIRS.get(), misc())),
+    STRIPPED_OAK_LOG_SLAB = ITEMS.register("stripped_oak_log_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_OAK_LOG_SLAB.get(), misc())),
+    STRIPPED_OAK_WOOD_STAIRS = ITEMS.register("stripped_oak_wood_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_OAK_WOOD_STAIRS.get(), misc())),
+    STRIPPED_OAK_WOOD_SLAB = ITEMS.register("stripped_oak_wood_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_OAK_WOOD_SLAB.get(), misc())),
+    STRIPPED_DARK_OAK_LOG_STAIRS = ITEMS.register("stripped_dark_oak_log_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_DARK_OAK_LOG_STAIRS.get(), misc())),
+    STRIPPED_DARK_OAK_LOG_SLAB = ITEMS.register("stripped_dark_oak_log_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_DARK_OAK_LOG_SLAB.get(), misc())),
+    STRIPPED_DARK_OAK_WOOD_STAIRS = ITEMS.register("stripped_dark_oak_wood_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_DARK_OAK_WOOD_STAIRS.get(), misc())),
+    STRIPPED_DARK_OAK_WOOD_SLAB = ITEMS.register("stripped_dark_oak_wood_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_DARK_OAK_WOOD_SLAB.get(), misc())),
+    STRIPPED_ACACIA_LOG_STAIRS = ITEMS.register("stripped_acacia_log_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_ACACIA_LOG_STAIRS.get(), misc())),
+    STRIPPED_ACACIA_LOG_SLAB = ITEMS.register("stripped_acacia_log_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_ACACIA_LOG_SLAB.get(), misc())),
+    STRIPPED_ACACIA_WOOD_STAIRS = ITEMS.register("stripped_acacia_wood_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_ACACIA_WOOD_STAIRS.get(), misc())),
+    STRIPPED_ACACIA_WOOD_SLAB = ITEMS.register("stripped_acacia_wood_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_ACACIA_WOOD_SLAB.get(), misc())),
+    STRIPPED_BIRCH_LOG_STAIRS = ITEMS.register("stripped_birch_log_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_BIRCH_LOG_STAIRS.get(), misc())),
+    STRIPPED_BIRCH_LOG_SLAB = ITEMS.register("stripped_birch_log_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_BIRCH_LOG_SLAB.get(), misc())),
+    STRIPPED_BIRCH_WOOD_STAIRS = ITEMS.register("stripped_birch_wood_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_BIRCH_WOOD_STAIRS.get(), misc())),
+    STRIPPED_BIRCH_WOOD_SLAB = ITEMS.register("stripped_birch_wood_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_BIRCH_WOOD_SLAB.get(), misc())),
+    STRIPPED_JUNGLE_LOG_STAIRS = ITEMS.register("stripped_jungle_log_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_JUNGLE_LOG_STAIRS.get(), misc())),
+    STRIPPED_JUNGLE_LOG_SLAB = ITEMS.register("stripped_jungle_log_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_JUNGLE_LOG_SLAB.get(), misc())),
+    STRIPPED_JUNGLE_WOOD_STAIRS = ITEMS.register("stripped_jungle_wood_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_JUNGLE_WOOD_STAIRS.get(), misc())),
+    STRIPPED_JUNGLE_WOOD_SLAB = ITEMS.register("stripped_jungle_wood_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_JUNGLE_WOOD_SLAB.get(), misc())),
+    STRIPPED_SPRUCE_LOG_STAIRS = ITEMS.register("stripped_spruce_log_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_SPRUCE_LOG_STAIRS.get(), misc())),
+    STRIPPED_SPRUCE_LOG_SLAB = ITEMS.register("stripped_spruce_log_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_SPRUCE_LOG_SLAB.get(), misc())),
+    STRIPPED_SPRUCE_WOOD_STAIRS = ITEMS.register("stripped_spruce_wood_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_SPRUCE_WOOD_STAIRS.get(), misc())),
+    STRIPPED_SPRUCE_WOOD_SLAB = ITEMS.register("stripped_spruce_wood_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_SPRUCE_WOOD_SLAB.get(), misc())),
+    STRIPPED_CRIMSON_STEM_STAIRS = ITEMS.register("stripped_crimson_stem_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_CRIMSON_STEM_STAIRS.get(), misc())),
+    STRIPPED_CRIMSON_STEM_SLAB = ITEMS.register("stripped_crimson_stem_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_CRIMSON_STEM_SLAB.get(), misc())),
+    STRIPPED_CRIMSON_HYPHAE_STAIRS = ITEMS.register("stripped_crimson_hyphae_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_CRIMSON_HYPHAE_STAIRS.get(), misc())),
+    STRIPPED_CRIMSON_HYPHAE_SLAB = ITEMS.register("stripped_crimson_hyphae_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB.get(), misc())),
+    STRIPPED_WARPED_STEM_STAIRS = ITEMS.register("stripped_warped_stem_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_WARPED_STEM_STAIRS.get(), misc())),
+    STRIPPED_WARPED_STEM_SLAB = ITEMS.register("stripped_warped_stem_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_WARPED_HYPHAE_SLAB.get(), misc())),
+    STRIPPED_WARPED_HYPHAE_STAIRS = ITEMS.register("stripped_warped_hyphae_stairs", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_WARPED_HYPHAE_STAIRS.get(), misc())),
+    STRIPPED_WARPED_HYPHAE_SLAB = ITEMS.register("stripped_warped_hyphae_slab", () ->
+            new BlockItem(CPlusBlocks.STRIPPED_WARPED_HYPHAE_SLAB.get(), misc())),
 
 // MISC
 

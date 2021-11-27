@@ -49,3 +49,10 @@ mandatory = true
 versionRange = "[2.3.23,)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.consistency_plus]]
+modId = "stonecutter_recipe_tags"
+mandatory = true
+versionRange = "[2.0.0,)"
+ordering = "NONE"
+side = "BOTH"

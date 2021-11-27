@@ -53,9 +53,9 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 			}
 			cir.setReturnValue(ActionResult.PASS);
 		} else if (customBlock.isAir()) {
-			if (held.isOf(CPlusItems.NUBERT.get())) {
+			if (held.isOf(CPlusItems.NUBERT)) {
 				cir.setReturnValue(setNubert(false, held));
-			} else if (held.isOf(CPlusItems.WIGGED_NUBERT.get())) {
+			} else if (held.isOf(CPlusItems.WIGGED_NUBERT)) {
 				cir.setReturnValue(setWiggedNubert(true, held));
 			}
 		}
@@ -65,7 +65,7 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 	@Override
 	public ItemStack getPickBlockStack() {
 		if (getContainedBlock().getBlock() instanceof NubertBlock nubert) {
-			return (nubert instanceof WiggedNubertBlock ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).get().getDefaultStack();
+			return (nubert instanceof WiggedNubertBlock ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).getDefaultStack();
 		}
 		return super.getPickBlockStack();
 	}
@@ -75,7 +75,7 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 		super.dropItems(damageSource);
 		if (this.world.getGameRules().getBoolean(GameRules.DO_ENTITY_DROPS)) {
 			if (getContainedBlock().getBlock() instanceof NubertBlock nubert) {
-				ItemStack toDrop = (nubert instanceof WiggedNubertBlock ? CPlusItems.WIGGED_NUBERT : CPlusItems.NUBERT).get().getDefaultStack();
+				ItemStack toDrop = (nubert instanceof WiggedNubertBlock ? CPlusItems.WIGGED_NUBERT : CPlusItems.NUBERT).getDefaultStack();
 				dropStack(toDrop);
 			}
 		}
@@ -92,12 +92,12 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 	
 	private ActionResult setNubert(boolean sheared, ItemStack held) {
 		BlockState customBlock = getContainedBlock();
-		if (customBlock.isOf(CPlusBlocks.NUBERT.get())) {
+		if (customBlock.isOf(CPlusBlocks.NUBERT)) {
 			return ActionResult.PASS;
 		}
 		BlockState state = customBlock.getBlock() instanceof NubertBlock
-				? CPlusBlocks.NUBERT.get().getDefaultState().with(FACING, customBlock.get(FACING))
-				: CPlusBlocks.NUBERT.get().getDefaultState();
+				? CPlusBlocks.NUBERT.getDefaultState().with(FACING, customBlock.get(FACING))
+				: CPlusBlocks.NUBERT.getDefaultState();
 		setCustomBlock(state);
 		world.playSound(null, getBlockPos(),
 				sheared ? SoundEvents.ENTITY_SHEEP_SHEAR : SoundEvents.BLOCK_SLIME_BLOCK_PLACE, // if not sheared, it was direct
@@ -110,12 +110,12 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 	
 	private ActionResult setWiggedNubert(boolean direct, ItemStack held) {
 		BlockState customBlock = getContainedBlock();
-		if (customBlock.isOf(CPlusBlocks.WIGGED_NUBERT.get())) {
+		if (customBlock.isOf(CPlusBlocks.WIGGED_NUBERT)) {
 			return ActionResult.PASS;
 		}
 		BlockState state = customBlock.getBlock() instanceof NubertBlock
-				? CPlusBlocks.WIGGED_NUBERT.get().getDefaultState().with(FACING, customBlock.get(FACING))
-				: CPlusBlocks.WIGGED_NUBERT.get().getDefaultState();
+				? CPlusBlocks.WIGGED_NUBERT.getDefaultState().with(FACING, customBlock.get(FACING))
+				: CPlusBlocks.WIGGED_NUBERT.getDefaultState();
 		setCustomBlock(state);
 		world.playSound(null, getBlockPos(),
 				direct ? SoundEvents.BLOCK_SLIME_BLOCK_PLACE : SoundEvents.BLOCK_WOOL_PLACE, // if not direct, it was wool

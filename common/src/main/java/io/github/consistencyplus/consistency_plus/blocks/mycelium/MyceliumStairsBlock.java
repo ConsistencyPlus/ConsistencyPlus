@@ -26,7 +26,7 @@ public class MyceliumStairsBlock extends StairsBlock implements HasUngrownVarian
 	@Override
 	public BlockState getUngrownVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return DIRT_STAIRS.get().getDefaultState().with(WATERLOGGED, oldState.get(WATERLOGGED)).with(FACING, oldState.get(FACING))
+		return DIRT_STAIRS.getDefaultState().with(WATERLOGGED, oldState.get(WATERLOGGED)).with(FACING, oldState.get(FACING))
 				.with(HALF, oldState.get(HALF)).with(SHAPE, oldState.get(SHAPE));
 	}
 	

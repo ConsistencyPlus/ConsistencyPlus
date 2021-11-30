@@ -2720,7 +2720,6 @@ public class CPlusBlocks {
 	private static Block register(String name, Block block) {
 		RegistrySupplier<Block> blockSupplied = BLOCKS.register(name, () -> block);
 		return block;
-		//return Registry.register(Registry.BLOCK, IdHandler.IdFormat(name), block);
 	}
 	public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) {
 		return false;

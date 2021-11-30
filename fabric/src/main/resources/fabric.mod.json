@@ -122,7 +122,6 @@
 
   "depends": {
     "fabric-api-base": "*",
-    "fabric-item-api-v1": "*",
     "fabric-lifecycle-events-v1": "*",
     "fabric-blockrenderlayer-v1": "*",
     "fabric-rendering-v1": "*",

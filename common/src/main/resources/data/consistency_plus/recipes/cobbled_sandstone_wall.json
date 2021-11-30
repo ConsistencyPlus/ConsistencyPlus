@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cobbled_sandstone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cobbled_sandstone_wall",
+        "count": 6
+    }
+}

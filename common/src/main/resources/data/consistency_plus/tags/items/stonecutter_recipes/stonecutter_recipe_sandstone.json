@@ -29,6 +29,11 @@
     "consistency_plus:chiseled_sandstone",
     "minecraft:chiseled_sandstone",
     "consistency_plus:sandstone_pillar",
-    "consistency_plus:sandstone_corner_pillar"
+    "consistency_plus:sandstone_corner_pillar",
+    "consistency_plus:cobbled_sandstone",
+    "consistency_plus:cobbled_sandstone_slab",
+    "consistency_plus:cobbled_sandstone_stairs",
+    "consistency_plus:cobbled_sandstone_wall",
+    "consistency_plus:cobbled_sandstone_gate"
   ]
 }

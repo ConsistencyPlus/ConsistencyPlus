@@ -29,6 +29,11 @@
     "consistency_plus:carved_black_terracotta",
     "consistency_plus:chiseled_black_terracotta",
     "consistency_plus:black_terracotta_pillar",
-    "consistency_plus:black_terracotta_corner_pillar"
+    "consistency_plus:black_terracotta_corner_pillar",
+    "consistency_plus:cobbled_black_terracotta",
+    "consistency_plus:cobbled_black_terracotta_slab",
+    "consistency_plus:cobbled_black_terracotta_stairs",
+    "consistency_plus:cobbled_black_terracotta_wall",
+    "consistency_plus:cobbled_black_terracotta_gate"
   ]
 }

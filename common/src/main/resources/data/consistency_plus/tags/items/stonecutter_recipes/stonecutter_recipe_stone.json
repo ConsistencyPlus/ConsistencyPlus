@@ -29,6 +29,11 @@
     "consistency_plus:stone_pillar",
     "consistency_plus:stone_corner_pillar",
     "minecraft:chiseled_stone_bricks",
-    "consistency_plus:carved_stone"
+    "consistency_plus:carved_stone",
+    "minecraft:cobblestone",
+    "minecraft:cobblestone_slab",
+    "minecraft:cobblestone_stairs",
+    "minecraft:cobblestone_wall",
+    "consistency_plus:cobblestone_gate"
   ]
 }

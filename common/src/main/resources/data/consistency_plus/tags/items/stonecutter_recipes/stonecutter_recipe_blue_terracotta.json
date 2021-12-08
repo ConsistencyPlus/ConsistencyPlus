@@ -29,6 +29,11 @@
     "consistency_plus:carved_blue_terracotta",
     "consistency_plus:chiseled_blue_terracotta",
     "consistency_plus:blue_terracotta_pillar",
-    "consistency_plus:blue_terracotta_corner_pillar"
+    "consistency_plus:blue_terracotta_corner_pillar",
+    "consistency_plus:cobbled_blue_terracotta",
+    "consistency_plus:cobbled_blue_terracotta_slab",
+    "consistency_plus:cobbled_blue_terracotta_stairs",
+    "consistency_plus:cobbled_blue_terracotta_wall",
+    "consistency_plus:cobbled_blue_terracotta_gate"
   ]
 }

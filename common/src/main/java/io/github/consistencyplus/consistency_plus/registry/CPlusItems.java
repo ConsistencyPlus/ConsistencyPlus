@@ -952,6 +952,7 @@ public class CPlusItems {
 	// Smooth Warped Wart
 
 	// Warped Wart Bricks
+	/*
 	public static final Item WARPED_NETHER_BRICKS = register("warped_nether_bricks", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item WARPED_NETHER_BRICK_SLAB = register("warped_nether_brick_slab", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item WARPED_NETHER_BRICK_STAIRS = register("warped_nether_brick_stairs", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
@@ -978,6 +979,7 @@ public class CPlusItems {
 	// Carved Warted Wart
 	public static final Item CARVED_WARPED_NETHER_BRICKS = register("carved_warped_nether_bricks", new BlockItem(CPlusBlocks.CARVED_WARPED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
+	 */
 
 // BASALT
 

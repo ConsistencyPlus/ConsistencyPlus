@@ -24,7 +24,13 @@
       "consistency_plus:recipes/smooth_red_sandstone_wall_crafting",
       "consistency_plus:recipes/smooth_red_sandstone_gate_crafting",
       "consistency_plus:recipes/red_sandstone_pillar_crafting",
-      "consistency_plus:recipes/chiseled_red_sandstone_crafting"
+      "consistency_plus:recipes/chiseled_red_sandstone_crafting",
+      "consistency_plus:recipes/cobbled_red_sandstone",
+      "consistency_plus:recipes/cobbled_red_sandstone_slab",
+      "consistency_plus:recipes/cobbled_red_sandstone_stairs",
+      "consistency_plus:recipes/cobbled_red_sandstone_wall",
+      "consistency_plus:recipes/cobbled_red_sandstone_gate",
+      "consistency_plus:recipes/red_sandstone_crafting"
     ]
   },
   "criteria": {
@@ -33,7 +39,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:red_sandstone"
+            "item": "consistency_plus:cobbled_red_sandstone"
           }
         ]
       }

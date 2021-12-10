@@ -42,7 +42,13 @@
       "consistency_plus:recipes/smooth_dripstone_gate",
       "consistency_plus:recipes/chiseled_dripstone_crafting",
       "consistency_plus:recipes/carved_dripstone_stairs_crafting",
-      "consistency_plus:recipes/dripstone_pillar_crafting"
+      "consistency_plus:recipes/dripstone_pillar_crafting",
+      "consistency_plus:recipes/cobbled_dripstone",
+      "consistency_plus:recipes/cobbled_dripstone_slab",
+      "consistency_plus:recipes/cobbled_dripstone_stairs",
+      "consistency_plus:recipes/cobbled_dripstone_wall",
+      "consistency_plus:recipes/cobbled_dripstone_gate",
+      "consistency_plus:recipes/dripstone_crafting"
     ]
   },
   "criteria": {
@@ -51,7 +57,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:dripstone"
+            "item": "consistency_plus:cobbled_dripstone"
           }
         ]
       }

@@ -43,7 +43,13 @@
       "consistency_plus:recipes/smooth_soul_sandstone_gate",
       "consistency_plus:recipes/chiseled_soul_sandstone_crafting",
       "consistency_plus:recipes/carved_soul_sandstone_stairs_crafting",
-      "consistency_plus:recipes/soul_sandstone_pillar_crafting"
+      "consistency_plus:recipes/soul_sandstone_pillar_crafting",
+      "consistency_plus:recipes/cobbled_soul_sandstone",
+      "consistency_plus:recipes/cobbled_soul_sandstone_slab",
+      "consistency_plus:recipes/cobbled_soul_sandstone_stairs",
+      "consistency_plus:recipes/cobbled_soul_sandstone_wall",
+      "consistency_plus:recipes/cobbled_soul_sandstone_gate",
+      "consistency_plus:recipes/soul_sandstone_crafting2"
     ]
   },
   "criteria": {
@@ -52,7 +58,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:soul_sandstone"
+            "item": "consistency_plus:cobbled_soul_sandstone"
           }
         ]
       }

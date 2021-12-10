@@ -45,7 +45,12 @@
       "consistency_plus:recipes/mossify_blackstone_brick_gate",
       "consistency_plus:recipes/mossify_blackstone_pillar",
       "consistency_plus:recipes/mossify_chiseled_blackstone",
-      "consistency_plus:recipes/mossify_chiseled_polished_blackstone"
+      "consistency_plus:recipes/mossify_chiseled_polished_blackstone",
+      "consistency_plus:recipes/cobbled_blackstone",
+      "consistency_plus:recipes/cobbled_blackstone_slab",
+      "consistency_plus:recipes/cobbled_blackstone_stairs",
+      "consistency_plus:recipes/cobbled_blackstone_wall",
+      "consistency_plus:recipes/cobbled_blackstone_gate"
     ]
   },
   "criteria": {
@@ -54,7 +59,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:blackstone"
+            "item": "consistency_plus:cobbled_blackstone"
           }
         ]
       }

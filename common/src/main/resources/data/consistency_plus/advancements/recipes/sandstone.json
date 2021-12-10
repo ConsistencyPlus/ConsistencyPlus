@@ -24,7 +24,13 @@
       "consistency_plus:recipes/smooth_sandstone_wall_crafting",
       "consistency_plus:recipes/smooth_sandstone_gate_crafting",
       "consistency_plus:recipes/sandstone_pillar_crafting",
-      "consistency_plus:recipes/chiseled_sandstone_crafting"
+      "consistency_plus:recipes/chiseled_sandstone_crafting",
+      "consistency_plus:recipes/cobbled_sandstone",
+      "consistency_plus:recipes/cobbled_sandstone_slab",
+      "consistency_plus:recipes/cobbled_sandstone_stairs",
+      "consistency_plus:recipes/cobbled_sandstone_wall",
+      "consistency_plus:recipes/cobbled_sandstone_gate",
+      "consistency_plus:recipes/sandstone_crafting"
     ]
   },
   "criteria": {
@@ -33,7 +39,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:sandstone"
+            "item": "consistency_plus:cobbled_sandstone"
           }
         ]
       }

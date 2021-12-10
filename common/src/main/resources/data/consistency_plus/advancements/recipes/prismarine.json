@@ -45,7 +45,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:prismarine"
+            "item": "minecraft:prismarine"
           }
         ]
       }

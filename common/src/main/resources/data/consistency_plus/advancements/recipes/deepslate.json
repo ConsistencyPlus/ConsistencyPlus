@@ -27,7 +27,9 @@
       "consistency_plus:recipes/cracked_deepslate_tile_slab",
       "consistency_plus:recipes/cracked_deepslate_tile_stairs",
       "consistency_plus:recipes/cracked_deepslate_tile_wall",
-      "consistency_plus:recipes/cracked_deepslate_tile_gate"
+      "consistency_plus:recipes/cracked_deepslate_tile_gate",
+      "consistency_plus:recipes/cobbled_deepslate_gate_crafting",
+      "consistency_plus:recipes/deepslate_crafting"
     ]
   },
   "criteria": {
@@ -36,7 +38,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:deepslate"
+            "item": "minecraft:cobbled_deepslate"
           }
         ]
       }

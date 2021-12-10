@@ -33,7 +33,8 @@
       "consistency_plus:recipes/cracked_chiseled_stone",
       "consistency_plus:recipes/mossify_stone_brick_gate",
       "consistency_plus:recipes/mossify_stone_pillar",
-      "consistency_plus:recipes/mossify_chiseled_stone_bricks"
+      "consistency_plus:recipes/mossify_chiseled_stone_bricks",
+      "consistency_plus:recipes/stone_crafting"
     ]
   },
   "criteria": {
@@ -42,7 +43,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:stone"
+            "item": "minecraft:cobblestone"
           }
         ]
       }

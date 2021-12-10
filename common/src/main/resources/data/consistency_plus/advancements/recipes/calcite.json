@@ -42,7 +42,13 @@
       "consistency_plus:recipes/smooth_calcite_gate",
       "consistency_plus:recipes/chiseled_calcite_crafting",
       "consistency_plus:recipes/carved_calcite_stairs_crafting",
-      "consistency_plus:recipes/calcite_pillar_crafting"
+      "consistency_plus:recipes/calcite_pillar_crafting",
+      "consistency_plus:recipes/cobbled_calcite",
+      "consistency_plus:recipes/cobbled_calcite_slab",
+      "consistency_plus:recipes/cobbled_calcite_stairs",
+      "consistency_plus:recipes/cobbled_calcite_wall",
+      "consistency_plus:recipes/cobbled_calcite_gate",
+      "consistency_plus:recipes/calcite_crafting"
     ]
   },
   "criteria": {
@@ -51,7 +57,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:calcite"
+            "item": "consistency_plus:cobbled_calcite"
           }
         ]
       }

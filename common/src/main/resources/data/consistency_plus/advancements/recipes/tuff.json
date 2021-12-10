@@ -42,7 +42,13 @@
       "consistency_plus:recipes/smooth_tuff_gate",
       "consistency_plus:recipes/chiseled_tuff_crafting",
       "consistency_plus:recipes/carved_tuff_stairs_crafting",
-      "consistency_plus:recipes/tuff_pillar_crafting"
+      "consistency_plus:recipes/tuff_pillar_crafting",
+      "consistency_plus:recipes/cobbled_tuff",
+      "consistency_plus:recipes/cobbled_tuff_slab",
+      "consistency_plus:recipes/cobbled_tuff_stairs",
+      "consistency_plus:recipes/cobbled_tuff_wall",
+      "consistency_plus:recipes/cobbled_tuff_gate",
+      "consistency_plus:recipes/tuff_crafting"
     ]
   },
   "criteria": {
@@ -51,7 +57,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:tuff"
+            "item": "consistency_plus:cobbled_tuff"
           }
         ]
       }

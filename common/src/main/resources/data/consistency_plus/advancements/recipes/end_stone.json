@@ -38,7 +38,13 @@
       "consistency_plus:recipes/smooth_end_stone_gate",
       "consistency_plus:recipes/chiseled_end_stone_crafting",
       "consistency_plus:recipes/carved_end_stone_stairs_crafting",
-      "consistency_plus:recipes/end_stone_pillar_crafting"
+      "consistency_plus:recipes/end_stone_pillar_crafting",
+      "consistency_plus:recipes/cobbled_end_stone",
+      "consistency_plus:recipes/cobbled_end_stone_slab",
+      "consistency_plus:recipes/cobbled_end_stone_stairs",
+      "consistency_plus:recipes/cobbled_end_stone_wall",
+      "consistency_plus:recipes/cobbled_end_stone_gate",
+      "consistency_plus:recipes/end_stone_crafting"
     ]
   },
   "criteria": {
@@ -47,7 +53,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:end_stone"
+            "item": "consistency_plus:cobbled_end_stone"
           }
         ]
       }

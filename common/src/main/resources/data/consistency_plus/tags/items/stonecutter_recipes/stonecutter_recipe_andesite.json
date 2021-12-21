@@ -29,6 +29,11 @@
     "consistency_plus:andesite_pillar",
     "consistency_plus:andesite_corner_pillar",
     "consistency_plus:chiseled_andesite",
-    "consistency_plus:carved_andesite"
+    "consistency_plus:carved_andesite",
+    "consistency_plus:cobbled_andesite",
+    "consistency_plus:cobbled_andesite_slab",
+    "consistency_plus:cobbled_andesite_stairs",
+    "consistency_plus:cobbled_andesite_wall",
+    "consistency_plus:cobbled_andesite_gate"
   ]
 }

@@ -29,6 +29,11 @@
     "consistency_plus:carved_soul_sandstone",
     "consistency_plus:chiseled_soul_sandstone",
     "consistency_plus:soul_sandstone_pillar",
-    "consistency_plus:soul_sandstone_corner_pillar"
+    "consistency_plus:soul_sandstone_corner_pillar",
+    "consistency_plus:cobbled_soul_sandstone",
+    "consistency_plus:cobbled_soul_sandstone_slab",
+    "consistency_plus:cobbled_soul_sandstone_stairs",
+    "consistency_plus:cobbled_soul_sandstone_wall",
+    "consistency_plus:cobbled_soul_sandstone_gate"
   ]
 }

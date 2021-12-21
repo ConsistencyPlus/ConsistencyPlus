@@ -29,6 +29,11 @@
     "consistency_plus:carved_pink_terracotta",
     "consistency_plus:chiseled_pink_terracotta",
     "consistency_plus:pink_terracotta_pillar",
-    "consistency_plus:pink_terracotta_corner_pillar"
+    "consistency_plus:pink_terracotta_corner_pillar",
+    "consistency_plus:cobbled_pink_terracotta",
+    "consistency_plus:cobbled_pink_terracotta_slab",
+    "consistency_plus:cobbled_pink_terracotta_stairs",
+    "consistency_plus:cobbled_pink_terracotta_wall",
+    "consistency_plus:cobbled_pink_terracotta_gate"
   ]
 }

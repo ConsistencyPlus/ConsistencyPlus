@@ -31,7 +31,7 @@ allprojects {
     version = rootProject.mod_version + "+" + rootProject.mc_major_version
 
     tasks.withType(JavaCompile) {
-        it.options.release = 16
+        options.release = 17
         it.options.encoding = "UTF-8"
     }
 

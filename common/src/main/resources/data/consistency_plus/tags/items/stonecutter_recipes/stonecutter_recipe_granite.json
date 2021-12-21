@@ -29,6 +29,11 @@
     "consistency_plus:granite_pillar",
     "consistency_plus:granite_corner_pillar",
     "consistency_plus:chiseled_granite",
-    "consistency_plus:carved_granite"
+    "consistency_plus:carved_granite",
+    "consistency_plus:cobbled_granite",
+    "consistency_plus:cobbled_granite_slab",
+    "consistency_plus:cobbled_granite_stairs",
+    "consistency_plus:cobbled_granite_wall",
+    "consistency_plus:cobbled_granite_gate"
   ]
 }

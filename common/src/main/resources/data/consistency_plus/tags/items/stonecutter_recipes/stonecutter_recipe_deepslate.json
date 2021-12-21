@@ -29,6 +29,11 @@
     "consistency_plus:carved_deepslate",
     "minecraft:chiseled_deepslate",
     "consistency_plus:deepslate_pillar",
-    "consistency_plus:deepslate_corner_pillar"
+    "consistency_plus:deepslate_corner_pillar",
+    "minecraft:cobbled_deepslate",
+    "minecraft:cobbled_deepslate_slab",
+    "minecraft:cobbled_deepslate_stairs",
+    "minecraft:cobbled_deepslate_wall",
+    "consistency_plus:cobbled_deepslate_gate"
   ]
 }

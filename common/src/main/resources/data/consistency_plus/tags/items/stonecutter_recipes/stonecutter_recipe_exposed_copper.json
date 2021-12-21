@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:exposed_copper",
+    "minecraft:exposed_cut_copper",
+    "minecraft:exposed_cut_copper_slab",
+    "minecraft:exposed_cut_copper_stairs"
+  ]
+}

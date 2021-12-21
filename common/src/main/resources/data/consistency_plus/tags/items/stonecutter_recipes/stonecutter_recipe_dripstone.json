@@ -29,6 +29,11 @@
     "consistency_plus:carved_dripstone",
     "consistency_plus:chiseled_dripstone",
     "consistency_plus:dripstone_pillar",
-    "consistency_plus:dripstone_corner_pillar"
+    "consistency_plus:dripstone_corner_pillar",
+    "consistency_plus:cobbled_dripstone",
+    "consistency_plus:cobbled_dripstone_slab",
+    "consistency_plus:cobbled_dripstone_stairs",
+    "consistency_plus:cobbled_dripstone_wall",
+    "consistency_plus:cobbled_dripstone_gate"
   ]
 }

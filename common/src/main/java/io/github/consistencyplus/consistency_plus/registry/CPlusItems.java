@@ -952,32 +952,34 @@ public class CPlusItems {
 	// Smooth Warped Wart
 
 	// Warped Wart Bricks
-	public static final Item BLUE_NETHER_BRICKS = register("blue_nether_bricks", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	/*
+	public static final Item WARPED_NETHER_BRICKS = register("warped_nether_bricks", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_NETHER_BRICK_SLAB = register("warped_nether_brick_slab", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_NETHER_BRICK_STAIRS = register("warped_nether_brick_stairs", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_NETHER_BRICK_WALL = register("warped_nether_brick_wall", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_NETHER_BRICK_FENCE_GATE = register("warped_nether_brick_fence_gate", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	// Cracked Warped Wart Bricks
-	public static final Item CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_WARPED_NETHER_BRICKS = register("cracked_warped_nether_bricks", new BlockItem(CPlusBlocks.CRACKED_WARPED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_WARPED_NETHER_BRICK_SLAB = register("cracked_warped_nether_brick_slab", new BlockItem(CPlusBlocks.CRACKED_WARPED_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_WARPED_NETHER_BRICK_STAIRS = register("cracked_warped_nether_brick_stairs", new BlockItem(CPlusBlocks.CRACKED_WARPED_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_WARPED_NETHER_BRICK_WALL = register("cracked_warped_nether_brick_wall", new BlockItem(CPlusBlocks.CRACKED_WARPED_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_WARPED_NETHER_BRICK_FENCE_GATE = register("cracked_warped_nether_brick_fence_gate", new BlockItem(CPlusBlocks.CRACKED_WARPED_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	// Cut Warped Wart
 
 	// Warped Wart Tiles
 
 	// Warped Wart Pillar
-	public static final Item BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_NETHER_BRICK_PILLAR = register("warped_nether_brick_pillar", new BlockItem(CPlusBlocks.WARPED_NETHER_BRICK_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	// Chiseled Warped Wart
-	public static final Item CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new BlockItem(CPlusBlocks.CHISELED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CHISELED_WARPED_NETHER_BRICKS = register("chiseled_warped_nether_bricks", new BlockItem(CPlusBlocks.CHISELED_WARPED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	// Carved Warted Wart
-	public static final Item CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new BlockItem(CPlusBlocks.CARVED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CARVED_WARPED_NETHER_BRICKS = register("carved_warped_nether_bricks", new BlockItem(CPlusBlocks.CARVED_WARPED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
+	 */
 
 // BASALT
 
@@ -5141,19 +5143,19 @@ public class CPlusItems {
 // ORGANICS
 
 	// Dirt
-	public static final Item DIRT_SLAB = register("dirt_slab", new BlockItem(CPlusBlocks.DIRT_SLAB, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-	public static final Item DIRT_STAIRS = register("dirt_stairs", new BlockItem(CPlusBlocks.DIRT_STAIRS, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-	public static final Item DIRT_WALL = register("dirt_wall", new BlockItem(CPlusBlocks.DIRT_WALL, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
+	public static final Item DIRT_SLAB = register("dirt_slab", new BlockItem(CPlusBlocks.DIRT_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item DIRT_STAIRS = register("dirt_stairs", new BlockItem(CPlusBlocks.DIRT_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item DIRT_WALL = register("dirt_wall", new BlockItem(CPlusBlocks.DIRT_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	// Grass
-	public static final Item GRASS_SLAB = register("grass_slab", new BlockItem(CPlusBlocks.GRASS_SLAB, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-	public static final Item GRASS_STAIRS = register("grass_stairs", new BlockItem(CPlusBlocks.GRASS_STAIRS, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-	public static final Item GRASS_WALL = register("grass_wall", new BlockItem(CPlusBlocks.GRASS_WALL, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
+	public static final Item GRASS_SLAB = register("grass_slab", new BlockItem(CPlusBlocks.GRASS_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item GRASS_STAIRS = register("grass_stairs", new BlockItem(CPlusBlocks.GRASS_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item GRASS_WALL = register("grass_wall", new BlockItem(CPlusBlocks.GRASS_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	// Mycelium
-	public static final Item MYCELIUM_SLAB = register("mycelium_slab", new BlockItem(CPlusBlocks.MYCELIUM_SLAB, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-	public static final Item MYCELIUM_STAIRS = register("mycelium_stairs", new BlockItem(CPlusBlocks.MYCELIUM_STAIRS, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
-	public static final Item MYCELIUM_WALL = register("mycelium_wall", new BlockItem(CPlusBlocks.MYCELIUM_WALL, new Item.Settings().group(CPlusItemGroups.CONSISTENCY_PLUS_MISC)));
+	public static final Item MYCELIUM_SLAB = register("mycelium_slab", new BlockItem(CPlusBlocks.MYCELIUM_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item MYCELIUM_STAIRS = register("mycelium_stairs", new BlockItem(CPlusBlocks.MYCELIUM_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item MYCELIUM_WALL = register("mycelium_wall", new BlockItem(CPlusBlocks.MYCELIUM_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 
 // MISC
@@ -5202,23 +5204,48 @@ public class CPlusItems {
 
 
 // Deprecated Blocks
+	public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_STONE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CARVED_STONE_BRICKS));
+	public static final Item STONE_BRICK_PILLAR = register("stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.STONE_BRICK_PILLAR));
+	public static final Item MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.MOSSY_STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.MOSSY_STONE_BRICK_PILLAR));
+	public static final Item CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRACKED_STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_STONE_BRICK_PILLAR));
+	public static final Item CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CRACKED_CHISELED_STONE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_CHISELED_STONE));
+	public static final Item MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.MOSSY_CHISELED_STONE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.MOSSY_CHISELED_STONE_BRICKS));
+	public static final Item BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.BLACKSTONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BLACKSTONE_BRICK_PILLAR));
+	public static final Item CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRACKED_BLACKSTONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_BLACKSTONE_BRICK_PILLAR));
+	public static final Item MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.MOSSY_BLACKSTONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.MOSSY_BLACKSTONE_BRICK_PILLAR));
+	public static final Item CHISELED_BRICKS = register("chiseled_bricks", new RedirectedBlockItem(CPlusBlocks.CHISELED_TERRACOTTA, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CHISELED_BRICKS));
+	public static final Item BRICK_PILLAR = register("brick_pillar", new RedirectedBlockItem(CPlusBlocks.TERRACOTTA_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BRICK_PILLAR));
+	public static final Item CARVED_BRICKS = register("carved_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_TERRACOTTA, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CARVED_BRICKS));
+	public static final Item SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new RedirectedBlockItem(CPlusBlocks.SMOOTH_PURPUR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SMOOTH_PURPUR_BLOCK));
+	public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new RedirectedBlockItem(CPlusBlocks.POLISHED_PURPUR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.POLISHED_PURPUR_BLOCK));
+	public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new RedirectedBlockItem(CPlusBlocks.CHISELED_PURPUR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CHISELED_PURPUR_BLOCK));
+	public static final Item END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.END_STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.END_STONE_BRICK_PILLAR));
 
-	public static final Item CARVED_STONE_BRICKS = register("carved_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_STONE, new Item.Settings(), CPlusBlocks.CARVED_STONE_BRICKS));
-	public static final Item STONE_BRICK_PILLAR = register("stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.STONE_PILLAR, new Item.Settings(), CPlusBlocks.STONE_BRICK_PILLAR));
-	public static final Item MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.MOSSY_STONE_PILLAR, new Item.Settings(), CPlusBlocks.MOSSY_STONE_BRICK_PILLAR));
-	public static final Item CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRACKED_STONE_PILLAR, new Item.Settings(), CPlusBlocks.CRACKED_STONE_BRICK_PILLAR));
-	public static final Item CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CRACKED_CHISELED_STONE, new Item.Settings(), CPlusBlocks.CRACKED_CHISELED_STONE));
-	public static final Item MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.MOSSY_CHISELED_STONE, new Item.Settings(), CPlusBlocks.MOSSY_CHISELED_STONE_BRICKS));
-	public static final Item BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.BLACKSTONE_PILLAR, new Item.Settings(), CPlusBlocks.BLACKSTONE_BRICK_PILLAR));
-	public static final Item CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRACKED_BLACKSTONE_PILLAR, new Item.Settings(), CPlusBlocks.CRACKED_BLACKSTONE_BRICK_PILLAR));
-	public static final Item MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.MOSSY_BLACKSTONE_PILLAR, new Item.Settings(), CPlusBlocks.MOSSY_BLACKSTONE_BRICK_PILLAR));
-	public static final Item CHISELED_BRICKS = register("chiseled_bricks", new RedirectedBlockItem(CPlusBlocks.CHISELED_TERRACOTTA, new Item.Settings(), CPlusBlocks.CHISELED_BRICKS));
-	public static final Item BRICK_PILLAR = register("brick_pillar", new RedirectedBlockItem(CPlusBlocks.TERRACOTTA_PILLAR, new Item.Settings(), CPlusBlocks.BRICK_PILLAR));
-	public static final Item CARVED_BRICKS = register("carved_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_TERRACOTTA, new Item.Settings(), CPlusBlocks.CARVED_BRICKS));
-	public static final Item SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new RedirectedBlockItem(CPlusBlocks.SMOOTH_PURPUR, new Item.Settings(), CPlusBlocks.SMOOTH_PURPUR_BLOCK));
-	public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new RedirectedBlockItem(CPlusBlocks.POLISHED_PURPUR, new Item.Settings(), CPlusBlocks.POLISHED_PURPUR_BLOCK));
-	public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new RedirectedBlockItem(CPlusBlocks.CHISELED_PURPUR, new Item.Settings(), CPlusBlocks.CHISELED_PURPUR_BLOCK));
-	public static final Item END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.END_STONE_PILLAR, new Item.Settings(), CPlusBlocks.END_STONE_BRICK_PILLAR));
+	public static final Item BLUE_NETHER_BRICKS = register("blue_nether_bricks", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Cracked Warped Wart Bricks
+	public static final Item CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Cut Warped Wart
+
+	// Warped Wart Tiles
+
+	// Warped Wart Pillar
+	public static final Item BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Chiseled Warped Wart
+	public static final Item CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new BlockItem(CPlusBlocks.CHISELED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Carved Warted Wart
+	public static final Item CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new BlockItem(CPlusBlocks.CARVED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	public static final Item BLUE_NETHER_BRICKS = register("blue_nether_bricks", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));

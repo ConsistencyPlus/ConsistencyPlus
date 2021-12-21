@@ -92,7 +92,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:obsidian"
+            "items": ["minecraft:obsidian"]
           }
         ]
       }

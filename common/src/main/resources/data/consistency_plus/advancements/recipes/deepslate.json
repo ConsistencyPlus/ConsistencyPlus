@@ -38,7 +38,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:cobbled_deepslate"
+            "items": ["minecraft:cobbled_deepslate"]
           }
         ]
       }

@@ -164,7 +164,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:blue_ice"
+            "items": ["minecraft:blue_ice"]
           }
         ]
       }

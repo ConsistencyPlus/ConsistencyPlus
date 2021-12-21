@@ -783,85 +783,85 @@ public class CPlusBlocks {
 	public static final Block SOUL_SANDSTONE_CORNER_PILLAR = register("soul_sandstone_corner_pillar", new Block(Block.Settings.copy(SOUL_SANDSTONE)));
 
 	//Obsidian
-	public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new SlabBlock(Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block OBSIDIAN_STAIRS = register("obsidian_stairs", new CPlusStairBlock(OBSIDIAN.getDefaultState(), Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block OBSIDIAN_WALL = register("obsidian_wall", new WallBlock(Block.Settings.copy(OBSIDIAN)));
-	public static final Block OBSIDIAN_GATE = register("obsidian_gate", new FenceGateBlock(Block.Settings.copy(OBSIDIAN)));
+	public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_STAIRS = register("obsidian_stairs", new CPlusStairBlock(OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_WALL = register("obsidian_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_GATE = register("obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
 
-	public static final Block CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new SlabBlock(Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new CPlusStairBlock(CRYING_OBSIDIAN.getDefaultState(), Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new WallBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new FenceGateBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
+	public static final Block CRYING_OBSIDIAN_SLAB = register("crying_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block CRYING_OBSIDIAN_STAIRS = register("crying_obsidian_stairs", new CPlusStairBlock(CRYING_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block SMOOTH_OBSIDIAN = register("smooth_obsidian", new Block(Block.Settings.copy(OBSIDIAN)));
-	public static final Block SMOOTH_OBSIDIAN_SLAB = register("smooth_obsidian_slab", new SlabBlock(Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block SMOOTH_OBSIDIAN_STAIRS = register("smooth_obsidian_stairs", new CPlusStairBlock(SMOOTH_OBSIDIAN.getDefaultState(), Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block SMOOTH_OBSIDIAN_WALL = register("smooth_obsidian_wall", new WallBlock(Block.Settings.copy(OBSIDIAN)));
-	public static final Block SMOOTH_OBSIDIAN_GATE = register("smooth_obsidian_gate", new FenceGateBlock(Block.Settings.copy(OBSIDIAN)));
+	public static final Block SMOOTH_OBSIDIAN = register("smooth_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block SMOOTH_OBSIDIAN_SLAB = register("smooth_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block SMOOTH_OBSIDIAN_STAIRS = register("smooth_obsidian_stairs", new CPlusStairBlock(SMOOTH_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block SMOOTH_OBSIDIAN_WALL = register("smooth_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block SMOOTH_OBSIDIAN_GATE = register("smooth_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
 
-	public static final Block SMOOTH_CRYING_OBSIDIAN = register("smooth_crying_obsidian", new CryingObsidianBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block SMOOTH_CRYING_OBSIDIAN_SLAB = register("smooth_crying_obsidian_slab", new SlabBlock(Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block SMOOTH_CRYING_OBSIDIAN_STAIRS = register("smooth_crying_obsidian_stairs", new CPlusStairBlock(SMOOTH_CRYING_OBSIDIAN.getDefaultState(), Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block SMOOTH_CRYING_OBSIDIAN_WALL = register("smooth_crying_obsidian_wall", new WallBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block SMOOTH_CRYING_OBSIDIAN_GATE = register("smooth_crying_obsidian_gate", new FenceGateBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
+	public static final Block SMOOTH_CRYING_OBSIDIAN = register("smooth_crying_obsidian", new CryingObsidianBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block SMOOTH_CRYING_OBSIDIAN_SLAB = register("smooth_crying_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block SMOOTH_CRYING_OBSIDIAN_STAIRS = register("smooth_crying_obsidian_stairs", new CPlusStairBlock(SMOOTH_CRYING_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block SMOOTH_CRYING_OBSIDIAN_WALL = register("smooth_crying_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block SMOOTH_CRYING_OBSIDIAN_GATE = register("smooth_crying_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block POLISHED_OBSIDIAN = register("polished_obsidian", new Block(Block.Settings.copy(OBSIDIAN)));
-	public static final Block POLISHED_OBSIDIAN_SLAB = register("polished_obsidian_slab", new SlabBlock(Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block POLISHED_OBSIDIAN_STAIRS = register("polished_obsidian_stairs", new CPlusStairBlock(POLISHED_OBSIDIAN.getDefaultState(), Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block POLISHED_OBSIDIAN_WALL = register("polished_obsidian_wall", new WallBlock(Block.Settings.copy(OBSIDIAN)));
-	public static final Block POLISHED_OBSIDIAN_GATE = register("polished_obsidian_gate", new FenceGateBlock(Block.Settings.copy(OBSIDIAN)));
+	public static final Block POLISHED_OBSIDIAN = register("polished_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block POLISHED_OBSIDIAN_SLAB = register("polished_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block POLISHED_OBSIDIAN_STAIRS = register("polished_obsidian_stairs", new CPlusStairBlock(POLISHED_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block POLISHED_OBSIDIAN_WALL = register("polished_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block POLISHED_OBSIDIAN_GATE = register("polished_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
 
-	public static final Block POLISHED_CRYING_OBSIDIAN = register("polished_crying_obsidian", new CryingObsidianBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block POLISHED_CRYING_OBSIDIAN_SLAB = register("polished_crying_obsidian_slab", new SlabBlock(Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block POLISHED_CRYING_OBSIDIAN_STAIRS = register("polished_crying_obsidian_stairs", new CPlusStairBlock(POLISHED_CRYING_OBSIDIAN.getDefaultState(), Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block POLISHED_CRYING_OBSIDIAN_WALL = register("polished_crying_obsidian_wall", new WallBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block POLISHED_CRYING_OBSIDIAN_GATE = register("polished_crying_obsidian_gate", new FenceGateBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
+	public static final Block POLISHED_CRYING_OBSIDIAN = register("polished_crying_obsidian", new CryingObsidianBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block POLISHED_CRYING_OBSIDIAN_SLAB = register("polished_crying_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block POLISHED_CRYING_OBSIDIAN_STAIRS = register("polished_crying_obsidian_stairs", new CPlusStairBlock(POLISHED_CRYING_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block POLISHED_CRYING_OBSIDIAN_WALL = register("polished_crying_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block POLISHED_CRYING_OBSIDIAN_GATE = register("polished_crying_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block OBSIDIAN_BRICKS = register("obsidian_bricks", new Block(Block.Settings.copy(OBSIDIAN)));
-	public static final Block OBSIDIAN_BRICK_SLAB = register("obsidian_brick_slab", new SlabBlock(Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block OBSIDIAN_BRICK_STAIRS = register("obsidian_brick_stairs", new CPlusStairBlock(OBSIDIAN_BRICKS.getDefaultState(), Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block OBSIDIAN_BRICK_WALL = register("obsidian_brick_wall", new WallBlock(Block.Settings.copy(OBSIDIAN)));
-	public static final Block OBSIDIAN_BRICK_GATE = register("obsidian_brick_gate", new FenceGateBlock(Block.Settings.copy(OBSIDIAN)));
+	public static final Block OBSIDIAN_BRICKS = register("obsidian_bricks", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_BRICK_SLAB = register("obsidian_brick_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_BRICK_STAIRS = register("obsidian_brick_stairs", new CPlusStairBlock(OBSIDIAN_BRICKS.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_BRICK_WALL = register("obsidian_brick_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_BRICK_GATE = register("obsidian_brick_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
 
-	public static final Block CRYING_OBSIDIAN_BRICKS = register("crying_obsidian_bricks", new CryingObsidianBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CRYING_OBSIDIAN_BRICK_SLAB = register("crying_obsidian_brick_slab", new SlabBlock(Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block CRYING_OBSIDIAN_BRICK_STAIRS = register("crying_obsidian_brick_stairs", new CPlusStairBlock(CRYING_OBSIDIAN_BRICKS.getDefaultState(), Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block CRYING_OBSIDIAN_BRICK_WALL = register("crying_obsidian_brick_wall", new WallBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CRYING_OBSIDIAN_BRICK_GATE = register("crying_obsidian_brick_gate", new FenceGateBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
+	public static final Block CRYING_OBSIDIAN_BRICKS = register("crying_obsidian_bricks", new CryingObsidianBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CRYING_OBSIDIAN_BRICK_SLAB = register("crying_obsidian_brick_slab", new SlabBlock(CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block CRYING_OBSIDIAN_BRICK_STAIRS = register("crying_obsidian_brick_stairs", new CPlusStairBlock(CRYING_OBSIDIAN_BRICKS.getDefaultState(), CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block CRYING_OBSIDIAN_BRICK_WALL = register("crying_obsidian_brick_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CRYING_OBSIDIAN_BRICK_GATE = register("crying_obsidian_brick_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block CUT_OBSIDIAN = register("cut_obsidian", new Block(Block.Settings.copy(OBSIDIAN)));
-	public static final Block CUT_OBSIDIAN_SLAB = register("cut_obsidian_slab", new SlabBlock(Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block CUT_OBSIDIAN_STAIRS = register("cut_obsidian_stairs", new CPlusStairBlock(CUT_OBSIDIAN.getDefaultState(), Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block CUT_OBSIDIAN_WALL = register("cut_obsidian_wall", new WallBlock(Block.Settings.copy(OBSIDIAN)));
-	public static final Block CUT_OBSIDIAN_GATE = register("cut_obsidian_gate", new FenceGateBlock(Block.Settings.copy(OBSIDIAN)));
+	public static final Block CUT_OBSIDIAN = register("cut_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block CUT_OBSIDIAN_SLAB = register("cut_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block CUT_OBSIDIAN_STAIRS = register("cut_obsidian_stairs", new CPlusStairBlock(CUT_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block CUT_OBSIDIAN_WALL = register("cut_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block CUT_OBSIDIAN_GATE = register("cut_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
 
-	public static final Block CUT_CRYING_OBSIDIAN = register("cut_crying_obsidian", new CryingObsidianBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CUT_CRYING_OBSIDIAN_SLAB = register("cut_crying_obsidian_slab", new SlabBlock(Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block CUT_CRYING_OBSIDIAN_STAIRS = register("cut_crying_obsidian_stairs", new CPlusStairBlock(CUT_CRYING_OBSIDIAN.getDefaultState(), Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block CUT_CRYING_OBSIDIAN_WALL = register("cut_crying_obsidian_wall", new WallBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CUT_CRYING_OBSIDIAN_GATE = register("cut_crying_obsidian_gate", new FenceGateBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
+	public static final Block CUT_CRYING_OBSIDIAN = register("cut_crying_obsidian", new CryingObsidianBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CUT_CRYING_OBSIDIAN_SLAB = register("cut_crying_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block CUT_CRYING_OBSIDIAN_STAIRS = register("cut_crying_obsidian_stairs", new CPlusStairBlock(CUT_CRYING_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block CUT_CRYING_OBSIDIAN_WALL = register("cut_crying_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CUT_CRYING_OBSIDIAN_GATE = register("cut_crying_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block OBSIDIAN_TILES = register("obsidian_tiles", new Block(Block.Settings.copy(OBSIDIAN)));
-	public static final Block OBSIDIAN_TILE_SLAB = register("obsidian_tile_slab", new SlabBlock(Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block OBSIDIAN_TILE_STAIRS = register("obsidian_tile_stairs", new CPlusStairBlock(OBSIDIAN_TILES.getDefaultState(), Block.Settings.copy(OBSIDIAN).nonOpaque()));
-	public static final Block OBSIDIAN_TILE_WALL = register("obsidian_tile_wall", new WallBlock(Block.Settings.copy(OBSIDIAN)));
-	public static final Block OBSIDIAN_TILE_GATE = register("obsidian_tile_gate", new FenceGateBlock(Block.Settings.copy(OBSIDIAN)));
+	public static final Block OBSIDIAN_TILES = register("obsidian_tiles", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_TILE_SLAB = register("obsidian_tile_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_TILE_STAIRS = register("obsidian_tile_stairs", new CPlusStairBlock(OBSIDIAN_TILES.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_TILE_WALL = register("obsidian_tile_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_TILE_GATE = register("obsidian_tile_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
 
-	public static final Block CRYING_OBSIDIAN_TILES = register("crying_obsidian_tiles", new CryingObsidianBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CRYING_OBSIDIAN_TILE_SLAB = register("crying_obsidian_tile_slab", new SlabBlock(Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block CRYING_OBSIDIAN_TILE_STAIRS = register("crying_obsidian_tile_stairs", new CPlusStairBlock(CRYING_OBSIDIAN_TILES.getDefaultState(), Block.Settings.copy(CRYING_OBSIDIAN).nonOpaque()));
-	public static final Block CRYING_OBSIDIAN_TILE_WALL = register("crying_obsidian_tile_wall", new WallBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CRYING_OBSIDIAN_TILE_GATE = register("crying_obsidian_tile_gate", new FenceGateBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
+	public static final Block CRYING_OBSIDIAN_TILES = register("crying_obsidian_tiles", new CryingObsidianBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CRYING_OBSIDIAN_TILE_SLAB = register("crying_obsidian_tile_slab", new SlabBlock(CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block CRYING_OBSIDIAN_TILE_STAIRS = register("crying_obsidian_tile_stairs", new CPlusStairBlock(CRYING_OBSIDIAN_TILES.getDefaultState(), CPlusSharedBlockSettings.cryingObsidian().nonOpaque()));
+	public static final Block CRYING_OBSIDIAN_TILE_WALL = register("crying_obsidian_tile_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CRYING_OBSIDIAN_TILE_GATE = register("crying_obsidian_tile_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block OBSIDIAN_PILLAR = register("obsidian_pillar", new PillarBlock(Block.Settings.copy(OBSIDIAN)));
-	public static final Block OBSIDIAN_CORNER_PILLAR = register("obsidian_corner_pillar", new Block(Block.Settings.copy(OBSIDIAN)));
-	public static final Block CHISELED_OBSIDIAN = register("chiseled_obsidian", new Block(Block.Settings.copy(OBSIDIAN)));
-	public static final Block CARVED_OBSIDIAN = register("carved_obsidian", new Block(Block.Settings.copy(OBSIDIAN)));
+	public static final Block OBSIDIAN_PILLAR = register("obsidian_pillar", new PillarBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_CORNER_PILLAR = register("obsidian_corner_pillar", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block CHISELED_OBSIDIAN = register("chiseled_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block CARVED_OBSIDIAN = register("carved_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
 
-	public static final Block CRYING_OBSIDIAN_PILLAR = register("crying_obsidian_pillar", new PillarBlock(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CRYING_OBSIDIAN_CORNER_PILLAR = register("crying_obsidian_corner_pillar", new Block(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CHISELED_CRYING_OBSIDIAN = register("chiseled_crying_obsidian", new Block(Block.Settings.copy(CRYING_OBSIDIAN)));
-	public static final Block CARVED_CRYING_OBSIDIAN = register("carved_crying_obsidian", new Block(Block.Settings.copy(CRYING_OBSIDIAN)));
+	public static final Block CRYING_OBSIDIAN_PILLAR = register("crying_obsidian_pillar", new PillarBlock(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CRYING_OBSIDIAN_CORNER_PILLAR = register("crying_obsidian_corner_pillar", new Block(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CHISELED_CRYING_OBSIDIAN = register("chiseled_crying_obsidian", new Block(CPlusSharedBlockSettings.cryingObsidian()));
+	public static final Block CARVED_CRYING_OBSIDIAN = register("carved_crying_obsidian", new Block(CPlusSharedBlockSettings.cryingObsidian()));
 
 //Calcite
 
@@ -1774,22 +1774,22 @@ public class CPlusBlocks {
 	//Glazed Terracotta
 
 	//Polished
-	public static final Block POLISHED_RED_GLAZED_TERRACOTTA = register("polished_red_glazed_terracotta", new Block(Block.Settings.copy(RED_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_ORANGE_GLAZED_TERRACOTTA = register("polished_orange_glazed_terracotta", new Block(Block.Settings.copy(ORANGE_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_YELLOW_GLAZED_TERRACOTTA = register("polished_yellow_glazed_terracotta", new Block(Block.Settings.copy(YELLOW_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_LIME_GLAZED_TERRACOTTA = register("polished_lime_glazed_terracotta", new Block(Block.Settings.copy(LIME_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_GREEN_GLAZED_TERRACOTTA = register("polished_green_glazed_terracotta", new Block(Block.Settings.copy(GREEN_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_BLUE_GLAZED_TERRACOTTA = register("polished_blue_glazed_terracotta", new Block(Block.Settings.copy(BLUE_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_CYAN_GLAZED_TERRACOTTA = register("polished_cyan_glazed_terracotta", new Block(Block.Settings.copy(CYAN_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA = register("polished_light_blue_glazed_terracotta", new Block(Block.Settings.copy(LIGHT_BLUE_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_PURPLE_GLAZED_TERRACOTTA = register("polished_purple_glazed_terracotta", new Block(Block.Settings.copy(PURPLE_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_MAGENTA_GLAZED_TERRACOTTA = register("polished_magenta_glazed_terracotta", new Block(Block.Settings.copy(MAGENTA_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_PINK_GLAZED_TERRACOTTA = register("polished_pink_glazed_terracotta", new Block(Block.Settings.copy(PINK_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_WHITE_GLAZED_TERRACOTTA = register("polished_white_glazed_terracotta", new Block(Block.Settings.copy(WHITE_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA = register("polished_light_gray_glazed_terracotta", new Block(Block.Settings.copy(LIGHT_GRAY_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_GRAY_GLAZED_TERRACOTTA = register("polished_gray_glazed_terracotta", new Block(Block.Settings.copy(GRAY_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_BLACK_GLAZED_TERRACOTTA = register("polished_black_glazed_terracotta", new Block(Block.Settings.copy(BLACK_GLAZED_TERRACOTTA)));
-	public static final Block POLISHED_BROWN_GLAZED_TERRACOTTA = register("polished_brown_glazed_terracotta", new Block(Block.Settings.copy(BROWN_GLAZED_TERRACOTTA)));
+	public static final Block POLISHED_RED_GLAZED_TERRACOTTA = register("polished_red_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.RED)));
+	public static final Block POLISHED_ORANGE_GLAZED_TERRACOTTA = register("polished_orange_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.ORANGE)));
+	public static final Block POLISHED_YELLOW_GLAZED_TERRACOTTA = register("polished_yellow_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.YELLOW)));
+	public static final Block POLISHED_LIME_GLAZED_TERRACOTTA = register("polished_lime_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.LIME)));
+	public static final Block POLISHED_GREEN_GLAZED_TERRACOTTA = register("polished_green_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.GREEN)));
+	public static final Block POLISHED_BLUE_GLAZED_TERRACOTTA = register("polished_blue_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.BLUE)));
+	public static final Block POLISHED_CYAN_GLAZED_TERRACOTTA = register("polished_cyan_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.CYAN)));
+	public static final Block POLISHED_LIGHT_BLUE_GLAZED_TERRACOTTA = register("polished_light_blue_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.LIGHT_BLUE)));
+	public static final Block POLISHED_PURPLE_GLAZED_TERRACOTTA = register("polished_purple_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.PURPLE)));
+	public static final Block POLISHED_MAGENTA_GLAZED_TERRACOTTA = register("polished_magenta_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.MAGENTA)));
+	public static final Block POLISHED_PINK_GLAZED_TERRACOTTA = register("polished_pink_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.PINK)));
+	public static final Block POLISHED_WHITE_GLAZED_TERRACOTTA = register("polished_white_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.WHITE)));
+	public static final Block POLISHED_LIGHT_GRAY_GLAZED_TERRACOTTA = register("polished_light_gray_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.LIGHT_GRAY)));
+	public static final Block POLISHED_GRAY_GLAZED_TERRACOTTA = register("polished_gray_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.GRAY)));
+	public static final Block POLISHED_BLACK_GLAZED_TERRACOTTA = register("polished_black_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.BLACK)));
+	public static final Block POLISHED_BROWN_GLAZED_TERRACOTTA = register("polished_brown_glazed_terracotta", new Block(CPlusSharedBlockSettings.glazedTerracotta(MapColor.BROWN)));
 	// Slab
 	public static final Block POLISHED_RED_GLAZED_TERRACOTTA_SLAB = register("polished_red_glazed_terracotta_slab", new SlabBlock(Block.Settings.copy(POLISHED_RED_GLAZED_TERRACOTTA)));
 	public static final Block POLISHED_ORANGE_GLAZED_TERRACOTTA_SLAB = register("polished_orange_glazed_terracotta_slab", new SlabBlock(Block.Settings.copy(POLISHED_ORANGE_GLAZED_TERRACOTTA)));
@@ -2739,6 +2739,7 @@ public class CPlusBlocks {
 		RegistrySupplier<Block> blockSupplied = BLOCKS.register(name, () -> block);
 		return block;
 	}
+
 	public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) {
 		return false;
 	}

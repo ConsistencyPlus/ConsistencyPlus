@@ -179,7 +179,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:glowstone"
+            "items": ["minecraft:glowstone"]
           }
         ]
       }

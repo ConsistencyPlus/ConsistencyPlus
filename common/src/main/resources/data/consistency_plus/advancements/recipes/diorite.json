@@ -48,7 +48,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:cobbled_diorite"
+            "items": ["consistency_plus:cobbled_diorite"]
           }
         ]
       }

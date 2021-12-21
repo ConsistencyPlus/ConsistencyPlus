@@ -45,7 +45,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:prismarine"
+            "items": ["minecraft:prismarine"]
           }
         ]
       }

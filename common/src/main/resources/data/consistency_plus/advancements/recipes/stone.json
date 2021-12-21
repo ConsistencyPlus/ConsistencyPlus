@@ -34,7 +34,9 @@
       "consistency_plus:mossify_stone_brick_gate",
       "consistency_plus:mossify_stone_pillar",
       "consistency_plus:mossify_chiseled_stone_bricks",
-      "consistency_plus:stone_crafting"
+      "consistency_plus:stone_crafting",
+      "consistency_plus:cobblestone_gate_crafting",
+      "consistency_plus:mossify_cobblestone_gate"
     ]
   },
   "criteria": {
@@ -43,7 +45,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:cobblestone"
+            "items": ["minecraft:cobblestone"]
           }
         ]
       }

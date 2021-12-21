@@ -59,7 +59,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:cobbled_blackstone"
+            "items": ["consistency_plus:cobbled_blackstone"]
           }
         ]
       }

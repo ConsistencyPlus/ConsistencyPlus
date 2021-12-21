@@ -53,7 +53,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:cobbled_end_stone"
+            "items": ["consistency_plus:cobbled_end_stone"]
           }
         ]
       }

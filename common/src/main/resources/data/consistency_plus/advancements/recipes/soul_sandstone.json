@@ -58,7 +58,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:cobbled_soul_sandstone"
+            "items": ["consistency_plus:cobbled_soul_sandstone"]
           }
         ]
       }

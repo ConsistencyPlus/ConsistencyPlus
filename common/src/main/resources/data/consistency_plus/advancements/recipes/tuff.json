@@ -57,7 +57,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:cobbled_tuff"
+            "items": ["consistency_plus:cobbled_tuff"]
           }
         ]
       }

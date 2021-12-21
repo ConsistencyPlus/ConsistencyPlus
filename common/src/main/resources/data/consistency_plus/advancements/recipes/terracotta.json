@@ -1360,7 +1360,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:cobbled_terracotta"
+            "items": ["consistency_plus:cobbled_terracotta"]
           }
         ]
       }

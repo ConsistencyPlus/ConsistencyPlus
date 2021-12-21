@@ -57,7 +57,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:cobbled_calcite"
+            "items": ["consistency_plus:cobbled_calcite"]
           }
         ]
       }

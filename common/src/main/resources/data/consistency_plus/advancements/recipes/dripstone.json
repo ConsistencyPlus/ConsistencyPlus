@@ -57,7 +57,7 @@
       "conditions": {
         "items": [
           {
-            "item": "consistency_plus:cobbled_dripstone"
+            "items": ["consistency_plus:cobbled_dripstone"]
           }
         ]
       }

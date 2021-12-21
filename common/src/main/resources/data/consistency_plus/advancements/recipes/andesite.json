@@ -39,7 +39,7 @@
       "consistency_plus:cut_andesite_crafting",
       "consistency_plus:andesite",
       "consistency_plus:andesite_crafting"
-      
+
     ]
   },
   "criteria": {
@@ -48,7 +48,7 @@
       "conditions": {
         "items": [
           {
-            "items": ["consistency_plus:cobbled_andesite"]
+            "item": "minecraft:andesite"
           }
         ]
       }

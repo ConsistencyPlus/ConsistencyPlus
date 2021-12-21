@@ -39,7 +39,7 @@ side = "BOTH"
 [[dependencies.consistency_plus]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18,)"
+versionRange = "[1.17.1,)"
 ordering = "NONE"
 side = "BOTH"
 

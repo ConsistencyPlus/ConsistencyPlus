@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab_top",
-    "textures": {
-        "top": "consistency_plus:block/smooth_calcite",
-        "bottom": "consistency_plus:block/smooth_calcite",
-        "side": "consistency_plus:block/smooth_calcite"
-    }
-}

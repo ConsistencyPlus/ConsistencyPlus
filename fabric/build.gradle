@@ -28,16 +28,13 @@ repositories {
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}+${rootProject.mc_major_version}"
-    modApi include("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}-fabric")
-    modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
+    modApi include("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}-fabric-1.16")
+    modApi "me.shedaniel:architectury-fabric:${rootProject.architectury_version}"
     modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}" // compile against the WTHIT API
     modRuntimeOnly "mcp.mobius.waila:wthit:fabric-${rootProject.wthit_version}" // run against the full jar
 
     modRuntimeOnly "maven.modrinth:lazydfu:0.1.2"
    // modRuntimeOnly "maven.modrinth:suggestionproviderfabric:1.0.0"
-    modRuntimeOnly("com.terraformersmc:modmenu:2.0.14") {
-        exclude group: "net.fabricmc"; exclude group: "net.fabricmc.fabric-api"
-    }
 
     if (project.use_third_party_mods && !System.getProperty("user.name").toLowerCase(Locale.ROOT).equals("carte")) {
         //modRuntimeOnly "maven.modrinth:sodium:mc1.17.1-0.3.2"

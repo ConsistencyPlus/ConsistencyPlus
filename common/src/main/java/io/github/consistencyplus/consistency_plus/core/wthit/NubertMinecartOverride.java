@@ -9,49 +9,64 @@ import net.minecraft.entity.vehicle.MinecartEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 
+import java.util.List;
+
 public class NubertMinecartOverride implements IEntityComponentProvider {
-	private BlockPos lastPos;
-	private MinecartEntity lastCart;
-	
-	@Override
-	public ItemStack getDisplayItem(IEntityAccessor accessor, IPluginConfig config) {
-		NbtCompound data = accessor.getServerData();
-		boolean nubert = data.getBoolean("Nubert");
-		if (nubert) {
-			boolean wig = data.getBoolean("Wigged");
-			return (wig ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).getDefaultStack();
-		}
-		return ItemStack.EMPTY;
-	}
-	
-	@Override
-	public void appendHead(ITooltip tooltip, IEntityAccessor accessor, IPluginConfig config) {
-		if (accessor.getEntity() instanceof MinecartEntity cart && cart.getContainedBlock().getBlock() instanceof NubertBlock nubert) {
-			boolean wig = nubert instanceof WiggedNubertBlock;
-			tooltip.set(WailaConstants.OBJECT_NAME_TAG, new TranslatableText("block.consistency_plus" + (wig ? ".wigged_nubert" : ".nubert")).formatted(Formatting.WHITE));
-		}
-	}
-	
-	@Override
-	public void appendBody(ITooltip tooltip, IEntityAccessor accessor, IPluginConfig config) {
-		if (accessor.getEntity() instanceof MinecartEntity cart && cart.getContainedBlock().getBlock() instanceof NubertBlock nubert) {
-			MinecartEntity minecart = accessor.getEntity();
-			BlockPos pos = minecart.getBlockPos();
-			tooltip.add(NubertHandler.getNubertText(nubert instanceof WiggedNubertBlock, true));
-			NubertHandler.TEXT_GOT_THIS_TICK = pos.equals(lastPos) || minecart.equals(lastCart);
-			lastPos = pos;
-			lastCart = minecart;
-		}
-	}
-	
-	@Override
-	public void appendTail(ITooltip tooltip, IEntityAccessor accessor, IPluginConfig config) {
-		if (accessor.getEntity() instanceof MinecartEntity cart && cart.getContainedBlock().getBlock() instanceof NubertBlock nubert) {
-			tooltip.set(WailaConstants.MOD_NAME_TAG, new LiteralText("Consistency Plus").formatted(Formatting.BLUE, Formatting.ITALIC));
-		}
-	}
+    private BlockPos lastPos;
+    private MinecartEntity lastCart;
+
+    @Override
+    public ItemStack getDisplayItem(IEntityAccessor accessor, IPluginConfig config) {
+        NbtCompound data = accessor.getServerData();
+        boolean nubert = data.getBoolean("Nubert");
+        if (nubert) {
+            boolean wig = data.getBoolean("Wigged");
+            return (wig ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).getDefaultStack();
+        }
+        return ItemStack.EMPTY;
+    }
+
+    @Override
+    public void appendHead(List<Text> tooltip, IEntityAccessor accessor, IPluginConfig config) {
+        if (accessor.getEntity() instanceof MinecartEntity) {
+            MinecartEntity cart = (MinecartEntity)accessor.getEntity();
+            if (cart.getContainedBlock().getBlock() instanceof NubertBlock) {
+                NubertBlock nubert = (NubertBlock) cart.getContainedBlock().getBlock();
+                boolean wig = nubert instanceof WiggedNubertBlock;
+                tooltip.add(new TranslatableText("block.consistency_plus" + (wig ? ".wigged_nubert" : ".nubert")).formatted(Formatting.WHITE));
+            }
+        }
+    }
+
+    @Override
+    public void appendBody(List<Text> tooltip, IEntityAccessor accessor, IPluginConfig config) {
+        if (accessor.getEntity() instanceof MinecartEntity) {
+            MinecartEntity cart = (MinecartEntity)accessor.getEntity();
+            if (cart.getContainedBlock().getBlock() instanceof NubertBlock) {
+                NubertBlock nubert = (NubertBlock) cart.getContainedBlock().getBlock();
+                net.minecraft.util.math.BlockPos pos = cart.getBlockPos();
+                tooltip.add(NubertHandler.getNubertText(nubert instanceof WiggedNubertBlock, true));
+                NubertHandler.TEXT_GOT_THIS_TICK = pos.equals(lastPos) || cart.equals(lastCart);
+                lastPos = pos;
+                lastCart = cart;
+            }
+        }
+    }
+
+    @Override
+    public void appendTail(List<Text> tooltip, IEntityAccessor accessor, IPluginConfig config) {
+        if (accessor.getEntity() instanceof MinecartEntity) {
+            MinecartEntity cart = (MinecartEntity)accessor.getEntity();
+            if (cart.getContainedBlock().getBlock() instanceof NubertBlock) {
+                NubertBlock nubert = (NubertBlock) cart.getContainedBlock().getBlock();
+                tooltip.add(new LiteralText("Consistency Plus").formatted(Formatting.BLUE, Formatting.ITALIC));
+
+            }
+        }
+    }
 }

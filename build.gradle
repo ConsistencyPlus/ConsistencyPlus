@@ -31,7 +31,10 @@ allprojects {
     version = rootProject.mod_version + "+" + rootProject.mc_major_version
 
     tasks.withType(JavaCompile) {
-        options.release = 17
+        def targetVersion = 8
+        if (JavaVersion.current().isJava9Compatible()) {
+            options.release = targetVersion
+        }
         it.options.encoding = "UTF-8"
     }
 

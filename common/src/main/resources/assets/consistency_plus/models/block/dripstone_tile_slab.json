@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab",
-    "textures": {
-        "top": "consistency_plus:block/dripstone_tiles",
-        "bottom": "consistency_plus:block/dripstone_tiles",
-        "side": "consistency_plus:block/dripstone_tiles"
-    }
-}

@@ -5,7 +5,7 @@ import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBloc
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
@@ -31,19 +31,20 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 	public MinecartEntityMixin(EntityType<?> entityType, World world) {
 		super(entityType, world);
 	}
-	
+
 	@Inject(at = @At("HEAD"), method = "interact", cancellable = true)
 	private void cPlus$handleNubertCartsOnInteract(PlayerEntity player, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
 		BlockState customBlock = getContainedBlock();
 		ItemStack held = player.getStackInHand(hand);
-		if (customBlock.getBlock() instanceof NubertBlock nubert) {
-			if (nubert instanceof WiggedNubertBlock wigged) {
-				if (held.isOf(Items.SHEARS)) {
+		if (customBlock.getBlock() instanceof NubertBlock) {
+			NubertBlock nubert = (NubertBlock)customBlock.getBlock();
+			if (nubert instanceof WiggedNubertBlock) {
+				if (held.isItemEqualIgnoreDamage(Items.SHEARS.getDefaultStack())) {
 					cir.setReturnValue(setNubert(true, held));
 					return;
 				}
 			} else {
-				if (held.isOf(Items.YELLOW_WOOL)) {
+				if (held.isItemEqual(Items.YELLOW_WOOL.getDefaultStack())) {
 					cir.setReturnValue(setWiggedNubert(false, held));
 					return;
 				}
@@ -53,34 +54,26 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 			}
 			cir.setReturnValue(ActionResult.PASS);
 		} else if (customBlock.isAir()) {
-			if (held.isOf(CPlusItems.NUBERT)) {
+			if (held.isItemEqual(CPlusItems.NUBERT.getDefaultStack())) {
 				cir.setReturnValue(setNubert(false, held));
-			} else if (held.isOf(CPlusItems.WIGGED_NUBERT)) {
+			} else if (held.isItemEqual(CPlusItems.WIGGED_NUBERT.getDefaultStack())) {
 				cir.setReturnValue(setWiggedNubert(true, held));
 			}
 		}
 	}
-	
-	@Nullable
-	@Override
-	public ItemStack getPickBlockStack() {
-		if (getContainedBlock().getBlock() instanceof NubertBlock nubert) {
-			return (nubert instanceof WiggedNubertBlock ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).getDefaultStack();
-		}
-		return super.getPickBlockStack();
-	}
-	
+
 	@Override
 	public void dropItems(DamageSource damageSource) {
 		super.dropItems(damageSource);
 		if (this.world.getGameRules().getBoolean(GameRules.DO_ENTITY_DROPS)) {
-			if (getContainedBlock().getBlock() instanceof NubertBlock nubert) {
+			if (getContainedBlock().getBlock() instanceof NubertBlock) {
+				NubertBlock nubert = (NubertBlock)getContainedBlock().getBlock();
 				ItemStack toDrop = (nubert instanceof WiggedNubertBlock ? CPlusItems.WIGGED_NUBERT : CPlusItems.NUBERT).getDefaultStack();
 				dropStack(toDrop);
 			}
 		}
 	}
-	
+
 	private ActionResult rotateNubert() {
 		BlockState customBlock = getContainedBlock();
 		if (!world.isClient()) {
@@ -89,7 +82,7 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 		world.playSound(null, getBlockPos(), SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM, SoundCategory.BLOCKS, 1.0F, 1.0F);
 		return ActionResult.SUCCESS;
 	}
-	
+
 	private ActionResult setNubert(boolean sheared, ItemStack held) {
 		BlockState customBlock = getContainedBlock();
 		if (customBlock.isOf(CPlusBlocks.NUBERT)) {
@@ -107,7 +100,7 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 		}
 		return ActionResult.SUCCESS;
 	}
-	
+
 	private ActionResult setWiggedNubert(boolean direct, ItemStack held) {
 		BlockState customBlock = getContainedBlock();
 		if (customBlock.isOf(CPlusBlocks.WIGGED_NUBERT)) {

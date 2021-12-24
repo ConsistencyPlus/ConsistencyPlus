@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "consistency_plus:moss"
+            "item": "minecraft:vine"
         },
         {
             "item": "consistency_plus:andesite_tile_wall"

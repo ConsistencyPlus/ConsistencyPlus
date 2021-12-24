@@ -8,19 +8,18 @@
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "parent": "minecraft:adventure/root",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:item_used_on_block",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": {},
-        "item": {
-          "items": [
-            "consistency_plus:nubert"
-          ]
-        }
+        "items": [
+          {
+            "item": "consistency_plus:nubert"
+          }
+        ]
       }
     }
   }

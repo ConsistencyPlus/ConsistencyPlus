@@ -126,8 +126,8 @@
     "fabric-blockrenderlayer-v1": "*",
     "fabric-rendering-v1": "*",
     "fabric-object-builder-api-v1": "*",
-    "minecraft": ">=1.17.1",
-    "architectury": ">=2.6.35"
+    "minecraft": ">=1.16.5",
+    "architectury": ">=1.26.42"
   },
   "breaks": {
     "consistency_plus_core": "*",
@@ -142,7 +142,7 @@
     },
     "waila:plugins": {
       "id": "consistency_plus:plugin",
-      "initializer": "io.github.consistencyplus.consistency_plus.core.wthit.CPlusWthitPlugin"
+      "initializer": "io.github.consistencyplus.consistency_plus.CPlusWthitPlugin"
     }
   }
 }

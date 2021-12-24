@@ -1,5 +1,5 @@
-targetCompatibility = JavaVersion.VERSION_16
-sourceCompatibility = JavaVersion.VERSION_16
+targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_8
 repositories {
     maven {
         url = "https://maven.bai.lol"
@@ -10,7 +10,7 @@ repositories {
 dependencies {
     // This is only here to get environment annotations and mixin dependencies. DO NOT ADD ANYTHING ELSE FROM FABRIC
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
-    modApi "dev.architectury:architectury:${rootProject.architectury_version}"
+    modApi "me.shedaniel:architectury:${rootProject.architectury_version}"
     modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}" // compile against the WTHIT API
 }
 

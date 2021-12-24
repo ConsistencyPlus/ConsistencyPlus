@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[38,)"
+loaderVersion = "[37,)"
 issueTrackerURL = "https://github.com/ConsistencyPlus/ConsistencyPlus/issues"
 license = "LGPL-3.0-only"
 
@@ -32,7 +32,7 @@ logoFile = "icon.png"
 [[dependencies.consistency_plus]]
 modId = "forge"
 mandatory = true
-versionRange = "[38,)"
+versionRange = "[37,)"
 ordering = "NONE"
 side = "BOTH"
 
@@ -46,7 +46,7 @@ side = "BOTH"
 [[dependencies.consistency_plus]]
 modId = "architectury"
 mandatory = true
-versionRange = "[3.1.45,)"
+versionRange = "[2.6.35,)"
 ordering = "NONE"
 side = "BOTH"
 

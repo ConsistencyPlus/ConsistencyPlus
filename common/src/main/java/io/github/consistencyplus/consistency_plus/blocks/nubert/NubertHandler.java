@@ -1,12 +1,12 @@
 package io.github.consistencyplus.consistency_plus.blocks.nubert;
 
-import dev.architectury.event.events.client.ClientTickEvent;
-import dev.architectury.event.events.client.ClientTooltipEvent;
 import io.github.consistencyplus.consistency_plus.items.NubertMinecartItem;
+import me.shedaniel.architectury.event.events.TooltipEvent;
+import me.shedaniel.architectury.event.events.client.ClientTickEvent;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.MutableText;
@@ -27,12 +27,15 @@ public class NubertHandler {
     public static int[] WIG_CART = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
     
     public static void onTooltip(ItemStack stack, List<Text> texts, TooltipContext context) {
-        if (stack.getItem() instanceof BlockItem blockItem) {
-            if (blockItem.getBlock() instanceof NubertBlock nubert) {
+        if (stack.getItem() instanceof BlockItem) {
+            BlockItem blockItem = (BlockItem)stack.getItem();
+            if (blockItem.getBlock() instanceof NubertBlock) {
+                NubertBlock nubert = (NubertBlock)blockItem.getBlock();
                 texts.add(1, getNubertText(nubert instanceof WiggedNubertBlock, false));
                 TEXT_GOT_THIS_TICK = true;
             }
-        } else if (stack.getItem() instanceof NubertMinecartItem item) {
+        } else if (stack.getItem() instanceof NubertMinecartItem) {
+            NubertMinecartItem item = (NubertMinecartItem)stack.getItem();
             texts.add(1, getNubertText(item.wigged, false));
             TEXT_GOT_THIS_TICK = true;
         } else TEXT_NEEDS_UPDATE = true;
@@ -60,7 +63,7 @@ public class NubertHandler {
     }
     
     public static void init() {
-        ClientTooltipEvent.ITEM.register(NubertHandler::onTooltip);
+        TooltipEvent.ITEM.register(NubertHandler::onTooltip);
         ClientTickEvent.CLIENT_POST.register(client -> {
             if (!TEXT_GOT_THIS_TICK) {
                 TEXT_NEEDS_UPDATE = true;

@@ -22,13 +22,13 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 	
 	@Inject(at = @At("TAIL"), method = "updateTurtleHelmet()V")
 	private void cPlus$updateTurtleArmor(CallbackInfo ci) {
-		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) && !isSubmergedInWater()) {
+		if (getEquippedStack(EquipmentSlot.FEET).isItemEqualIgnoreDamage(CPlusItems.TURTLE_BOOTS.getDefaultStack()) && !isSubmergedInWater()) {
 			addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 200, 0, false, false, true));
 		}
-		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) &&
-				getEquippedStack(EquipmentSlot.LEGS).isOf(CPlusItems.TURTLE_LEGGINGS) &&
-				getEquippedStack(EquipmentSlot.CHEST).isOf(CPlusItems.TURTLE_CHESTPLATE) &&
-				getEquippedStack(EquipmentSlot.HEAD).isOf(Items.TURTLE_HELMET)
+		if (getEquippedStack(EquipmentSlot.FEET).isItemEqualIgnoreDamage(CPlusItems.TURTLE_BOOTS.getDefaultStack()) &&
+				getEquippedStack(EquipmentSlot.LEGS).isItemEqualIgnoreDamage(CPlusItems.TURTLE_LEGGINGS.getDefaultStack()) &&
+				getEquippedStack(EquipmentSlot.CHEST).isItemEqualIgnoreDamage(CPlusItems.TURTLE_CHESTPLATE.getDefaultStack()) &&
+				getEquippedStack(EquipmentSlot.HEAD).isItemEqualIgnoreDamage(Items.TURTLE_HELMET.getDefaultStack())
 				&& !isSubmergedInWater()) {
 			addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, true));
 		}

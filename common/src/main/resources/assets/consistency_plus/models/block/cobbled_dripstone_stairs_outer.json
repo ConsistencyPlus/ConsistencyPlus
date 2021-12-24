@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/outer_stairs",
-    "textures": {
-        "bottom": "consistency_plus:block/cobbled_dripstone",
-        "top": "consistency_plus:block/cobbled_dripstone",
-        "side": "consistency_plus:block/cobbled_dripstone"
-    }
-}

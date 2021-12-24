@@ -1,6 +1,6 @@
 package io.github.consistencyplus.consistency_plus.base;
 
-import dev.architectury.platform.Platform;
+import me.shedaniel.architectury.platform.Platform;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.util.Identifier;

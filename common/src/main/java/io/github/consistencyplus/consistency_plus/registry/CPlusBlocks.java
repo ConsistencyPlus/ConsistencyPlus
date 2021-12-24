@@ -1,9 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
-import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
@@ -14,26 +11,26 @@ import io.github.consistencyplus.consistency_plus.blocks.grass.GrassWallBlock;
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumStairsBlock;
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumWallBlock;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusCarvedPumpkinBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
+import me.shedaniel.architectury.registry.DeferredRegister;
+import me.shedaniel.architectury.registry.RegistrySupplier;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
-import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
 import static net.minecraft.block.Blocks.*;
-import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
 
-	
-	//Stone
+
+//Stone
 
 	public static final Block STONE_WALL = register("stone_wall", new WallBlock(Block.Settings.copy(STONE)));
 	public static final Block STONE_GATE = register("stone_gate", new FenceGateBlock(Block.Settings.copy(STONE)));
@@ -520,27 +517,26 @@ public class CPlusBlocks {
 
 
 	//Blue Nether Bricks
-//Blue Nether Bricks will have a rework eventually, none of this is final/
-/*
+//Blue Nether Bricks will have a rework eventually, none of this is final
 	//Bricks
-	public static final Block WARPED_NETHER_BRICKS = register("warped_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_SLAB = register("warped_nether_brick_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_STAIRS = register("warped_nether_brick_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_WALL = register("warped_nether_brick_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_FENCE_GATE = register("warped_nether_brick_fence_gate", new FenceGateBlock(Block.Settings.copy(WARPED_NETHER_BRICKS)));
+	public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new FenceGateBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
 
 	//Cracked Bricks
-	public static final Block CRACKED_WARPED_NETHER_BRICKS = register("cracked_warped_nether_bricks", new Block(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_WARPED_NETHER_BRICK_SLAB = register("cracked_warped_nether_brick_slab", new SlabBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_WARPED_NETHER_BRICK_STAIRS = register("cracked_warped_nether_brick_stairs", new CPlusStairBlock(CRACKED_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block CRACKED_WARPED_NETHER_BRICK_WALL = register("cracked_warped_nether_brick_wall", new WallBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_WARPED_NETHER_BRICK_FENCE_GATE = register("cracked_warped_nether_brick_fence_gate", new FenceGateBlock(Block.Settings.copy(CRACKED_WARPED_NETHER_BRICKS)));
+	public static final Block CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new Block(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
+	public static final Block CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
+	public static final Block CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new CPlusStairBlock(CRACKED_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new WallBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
+	public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new FenceGateBlock(Block.Settings.copy(CRACKED_BLUE_NETHER_BRICKS)));
 
 	//Pillars and Chiseled
-	public static final Block CHISELED_WARPED_NETHER_BRICKS = register("chiseled_warped_nether_bricks", new Block(Block.Settings.copy(WARPED_NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_PILLAR = register("warped_nether_brick_pillar", new PillarBlock(Block.Settings.copy(WARPED_NETHER_BRICKS)));
-	public static final Block CARVED_WARPED_NETHER_BRICKS = register("carved_warped_nether_bricks", new Block(Block.Settings.copy(WARPED_NETHER_BRICKS)));
-*/
+	public static final Block CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
+	public static final Block BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new PillarBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
+	public static final Block CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
+
 	//Prismarine
 	public static final Block PRISMARINE_GATE = register("prismarine_gate", new FenceGateBlock(Block.Settings.copy(PRISMARINE)));
 
@@ -862,210 +858,6 @@ public class CPlusBlocks {
 	public static final Block CRYING_OBSIDIAN_CORNER_PILLAR = register("crying_obsidian_corner_pillar", new Block(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block CHISELED_CRYING_OBSIDIAN = register("chiseled_crying_obsidian", new Block(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block CARVED_CRYING_OBSIDIAN = register("carved_crying_obsidian", new Block(CPlusSharedBlockSettings.cryingObsidian()));
-
-//Calcite
-
-	public static final Block CALCITE_SLAB = register("calcite_slab", new SlabBlock(Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_STAIRS = register("calcite_stairs", new CPlusStairBlock(CALCITE.getDefaultState(), Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_WALL = register("calcite_wall", new WallBlock(Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_GATE = register("calcite_gate", new FenceGateBlock(Block.Settings.copy(CALCITE)));
-
-	public static final Block COBBLED_CALCITE = register("cobbled_calcite", new Block(Block.Settings.copy(CALCITE)));
-	public static final Block COBBLED_CALCITE_SLAB = register("cobbled_calcite_slab", new SlabBlock(Block.Settings.copy(CALCITE)));
-	public static final Block COBBLED_CALCITE_STAIRS = register("cobbled_calcite_stairs", new CPlusStairBlock(CALCITE.getDefaultState(), Block.Settings.copy(CALCITE)));
-	public static final Block COBBLED_CALCITE_WALL = register("cobbled_calcite_wall", new WallBlock(Block.Settings.copy(CALCITE)));
-	public static final Block COBBLED_CALCITE_GATE = register("cobbled_calcite_gate", new FenceGateBlock(Block.Settings.copy(CALCITE)));
-
-	//Smooth
-	public static final Block SMOOTH_CALCITE = register("smooth_calcite", new Block(Block.Settings.copy(CALCITE)));
-	public static final Block SMOOTH_CALCITE_SLAB = register("smooth_calcite_slab", new SlabBlock(Block.Settings.copy(SMOOTH_CALCITE)));
-	public static final Block SMOOTH_CALCITE_STAIRS = register("smooth_calcite_stairs", new CPlusStairBlock(SMOOTH_CALCITE.getDefaultState(), Block.Settings.copy(SMOOTH_CALCITE)));
-	public static final Block SMOOTH_CALCITE_WALL = register("smooth_calcite_wall", new WallBlock(Block.Settings.copy(SMOOTH_CALCITE)));
-	public static final Block SMOOTH_CALCITE_GATE = register("smooth_calcite_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_CALCITE)));
-
-	//Polished
-	public static final Block POLISHED_CALCITE = register("polished_calcite", new Block(Block.Settings.copy(CALCITE)));
-	public static final Block POLISHED_CALCITE_SLAB = register("polished_calcite_slab", new SlabBlock(Block.Settings.copy(POLISHED_CALCITE)));
-	public static final Block POLISHED_CALCITE_STAIRS = register("polished_calcite_stairs", new CPlusStairBlock(POLISHED_CALCITE.getDefaultState(), Block.Settings.copy(POLISHED_CALCITE)));
-	public static final Block POLISHED_CALCITE_WALL = register("polished_calcite_wall", new WallBlock(Block.Settings.copy(POLISHED_CALCITE)));
-	public static final Block POLISHED_CALCITE_GATE = register("polished_calcite_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_CALCITE)));
-
-	//Cut
-	public static final Block CUT_CALCITE = register("cut_calcite", new Block(Block.Settings.copy(POLISHED_CALCITE)));
-	public static final Block CUT_CALCITE_SLAB = register("cut_calcite_slab", new SlabBlock(Block.Settings.copy(CUT_CALCITE)));
-	public static final Block CUT_CALCITE_STAIRS = register("cut_calcite_stairs", new CPlusStairBlock(CUT_CALCITE.getDefaultState(), Block.Settings.copy(CUT_CALCITE)));
-	public static final Block CUT_CALCITE_WALL = register("cut_calcite_wall", new WallBlock(Block.Settings.copy(CUT_CALCITE)));
-	public static final Block CUT_CALCITE_GATE = register("cut_calcite_gate", new FenceGateBlock(Block.Settings.copy(CUT_CALCITE)));
-
-	public static final Block CALCITE_TILES = register("calcite_tiles", new Block(Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_TILE_SLAB = register("calcite_tile_slab", new SlabBlock(Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_TILE_STAIRS = register("calcite_tile_stairs", new CPlusStairBlock(CALCITE.getDefaultState(), Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_TILE_WALL = register("calcite_tile_wall", new WallBlock(Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_TILE_GATE = register("calcite_tile_gate", new FenceGateBlock(Block.Settings.copy(CALCITE)));
-
-	//Bricks
-	public static final Block CALCITE_BRICKS = register("calcite_bricks", new Block(Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_BRICK_SLAB = register("calcite_brick_slab", new SlabBlock(Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_BRICK_STAIRS = register("calcite_brick_stairs", new CPlusStairBlock(CALCITE.getDefaultState(), Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_BRICK_WALL = register("calcite_brick_wall", new WallBlock(Block.Settings.copy(CALCITE)));
-	public static final Block CALCITE_BRICK_GATE = register("calcite_brick_gate", new FenceGateBlock(Block.Settings.copy(CALCITE_BRICKS)));
-
-	//Pillars and Chiseled
-	public static final Block CALCITE_PILLAR = register("calcite_pillar", new PillarBlock(Block.Settings.copy(POLISHED_CALCITE)));
-	public static final Block CALCITE_CORNER_PILLAR = register("calcite_corner_pillar", new Block(Block.Settings.copy(POLISHED_CALCITE)));
-	public static final Block CHISELED_CALCITE = register("chiseled_calcite", new Block(Block.Settings.copy(POLISHED_CALCITE)));
-	public static final Block CARVED_CALCITE = register("carved_calcite", new Block(Block.Settings.copy(POLISHED_CALCITE)));
-
-//Dripstone
-
-	public static final Block DRIPSTONE_SLAB = register("dripstone_slab", new SlabBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_STAIRS = register("dripstone_stairs", new CPlusStairBlock(DRIPSTONE_BLOCK.getDefaultState(), Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_WALL = register("dripstone_wall", new WallBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_GATE = register("dripstone_gate", new FenceGateBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-
-	public static final Block COBBLED_DRIPSTONE = register("cobbled_dripstone", new Block(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block COBBLED_DRIPSTONE_SLAB = register("cobbled_dripstone_slab", new SlabBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block COBBLED_DRIPSTONE_STAIRS = register("cobbled_dripstone_stairs", new CPlusStairBlock(DRIPSTONE_BLOCK.getDefaultState(), Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block COBBLED_DRIPSTONE_WALL = register("cobbled_dripstone_wall", new WallBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block COBBLED_DRIPSTONE_GATE = register("cobbled_dripstone_gate", new FenceGateBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-
-	//Smooth
-	public static final Block SMOOTH_DRIPSTONE = register("smooth_dripstone", new Block(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block SMOOTH_DRIPSTONE_SLAB = register("smooth_dripstone_slab", new SlabBlock(Block.Settings.copy(SMOOTH_DRIPSTONE)));
-	public static final Block SMOOTH_DRIPSTONE_STAIRS = register("smooth_dripstone_stairs", new CPlusStairBlock(SMOOTH_DRIPSTONE.getDefaultState(), Block.Settings.copy(SMOOTH_DRIPSTONE)));
-	public static final Block SMOOTH_DRIPSTONE_WALL = register("smooth_dripstone_wall", new WallBlock(Block.Settings.copy(SMOOTH_DRIPSTONE)));
-	public static final Block SMOOTH_DRIPSTONE_GATE = register("smooth_dripstone_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_DRIPSTONE)));
-
-	//Polished
-	public static final Block POLISHED_DRIPSTONE = register("polished_dripstone", new Block(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block POLISHED_DRIPSTONE_SLAB = register("polished_dripstone_slab", new SlabBlock(Block.Settings.copy(POLISHED_DRIPSTONE)));
-	public static final Block POLISHED_DRIPSTONE_STAIRS = register("polished_dripstone_stairs", new CPlusStairBlock(POLISHED_DRIPSTONE.getDefaultState(), Block.Settings.copy(POLISHED_DRIPSTONE)));
-	public static final Block POLISHED_DRIPSTONE_WALL = register("polished_dripstone_wall", new WallBlock(Block.Settings.copy(POLISHED_DRIPSTONE)));
-	public static final Block POLISHED_DRIPSTONE_GATE = register("polished_dripstone_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_DRIPSTONE)));
-
-	//Cut
-	public static final Block CUT_DRIPSTONE = register("cut_dripstone", new Block(Block.Settings.copy(POLISHED_DRIPSTONE)));
-	public static final Block CUT_DRIPSTONE_SLAB = register("cut_dripstone_slab", new SlabBlock(Block.Settings.copy(CUT_DRIPSTONE)));
-	public static final Block CUT_DRIPSTONE_STAIRS = register("cut_dripstone_stairs", new CPlusStairBlock(CUT_DRIPSTONE.getDefaultState(), Block.Settings.copy(CUT_DRIPSTONE)));
-	public static final Block CUT_DRIPSTONE_WALL = register("cut_dripstone_wall", new WallBlock(Block.Settings.copy(CUT_DRIPSTONE)));
-	public static final Block CUT_DRIPSTONE_GATE = register("cut_dripstone_gate", new FenceGateBlock(Block.Settings.copy(CUT_DRIPSTONE)));
-
-	public static final Block DRIPSTONE_TILES = register("dripstone_tiles", new Block(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_TILE_SLAB = register("dripstone_tile_slab", new SlabBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_TILE_STAIRS = register("dripstone_tile_stairs", new CPlusStairBlock(DRIPSTONE_BLOCK.getDefaultState(), Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_TILE_WALL = register("dripstone_tile_wall", new WallBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_TILE_GATE = register("dripstone_tile_gate", new FenceGateBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-
-	//Bricks
-	public static final Block DRIPSTONE_BRICKS = register("dripstone_bricks", new Block(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_BRICK_SLAB = register("dripstone_brick_slab", new SlabBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_BRICK_STAIRS = register("dripstone_brick_stairs", new CPlusStairBlock(DRIPSTONE_BLOCK.getDefaultState(), Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_BRICK_WALL = register("dripstone_brick_wall", new WallBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-	public static final Block DRIPSTONE_BRICK_GATE = register("dripstone_brick_gate", new FenceGateBlock(Block.Settings.copy(DRIPSTONE_BLOCK)));
-
-	//Pillars and Chiseled
-	public static final Block DRIPSTONE_PILLAR = register("dripstone_pillar", new PillarBlock(Block.Settings.copy(POLISHED_DRIPSTONE)));
-	public static final Block DRIPSTONE_CORNER_PILLAR = register("dripstone_corner_pillar", new Block(Block.Settings.copy(POLISHED_DRIPSTONE)));
-	public static final Block CHISELED_DRIPSTONE = register("chiseled_dripstone", new Block(Block.Settings.copy(POLISHED_DRIPSTONE)));
-	public static final Block CARVED_DRIPSTONE = register("carved_dripstone", new Block(Block.Settings.copy(POLISHED_DRIPSTONE)));
-
-//Tuff
-
-	public static final Block TUFF_SLAB = register("tuff_slab", new SlabBlock(Block.Settings.copy(TUFF)));
-	public static final Block TUFF_STAIRS = register("tuff_stairs", new CPlusStairBlock(TUFF.getDefaultState(), Block.Settings.copy(TUFF)));
-	public static final Block TUFF_WALL = register("tuff_wall", new WallBlock(Block.Settings.copy(TUFF)));
-	public static final Block TUFF_GATE = register("tuff_gate", new FenceGateBlock(Block.Settings.copy(TUFF)));
-
-	public static final Block COBBLED_TUFF = register("cobbled_tuff", new Block(Block.Settings.copy(TUFF)));
-	public static final Block COBBLED_TUFF_SLAB = register("cobbled_tuff_slab", new SlabBlock(Block.Settings.copy(TUFF)));
-	public static final Block COBBLED_TUFF_STAIRS = register("cobbled_tuff_stairs", new CPlusStairBlock(TUFF.getDefaultState(), Block.Settings.copy(TUFF)));
-	public static final Block COBBLED_TUFF_WALL = register("cobbled_tuff_wall", new WallBlock(Block.Settings.copy(TUFF)));
-	public static final Block COBBLED_TUFF_GATE = register("cobbled_tuff_gate", new FenceGateBlock(Block.Settings.copy(TUFF)));
-
-	//Smooth
-	public static final Block SMOOTH_TUFF = register("smooth_tuff", new Block(Block.Settings.copy(TUFF)));
-	public static final Block SMOOTH_TUFF_SLAB = register("smooth_tuff_slab", new SlabBlock(Block.Settings.copy(SMOOTH_TUFF)));
-	public static final Block SMOOTH_TUFF_STAIRS = register("smooth_tuff_stairs", new CPlusStairBlock(SMOOTH_TUFF.getDefaultState(), Block.Settings.copy(SMOOTH_TUFF)));
-	public static final Block SMOOTH_TUFF_WALL = register("smooth_tuff_wall", new WallBlock(Block.Settings.copy(SMOOTH_TUFF)));
-	public static final Block SMOOTH_TUFF_GATE = register("smooth_tuff_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_TUFF)));
-
-	//Polished
-	public static final Block POLISHED_TUFF = register("polished_tuff", new Block(Block.Settings.copy(TUFF)));
-	public static final Block POLISHED_TUFF_SLAB = register("polished_tuff_slab", new SlabBlock(Block.Settings.copy(POLISHED_TUFF)));
-	public static final Block POLISHED_TUFF_STAIRS = register("polished_tuff_stairs", new CPlusStairBlock(POLISHED_TUFF.getDefaultState(), Block.Settings.copy(POLISHED_TUFF)));
-	public static final Block POLISHED_TUFF_WALL = register("polished_tuff_wall", new WallBlock(Block.Settings.copy(POLISHED_TUFF)));
-	public static final Block POLISHED_TUFF_GATE = register("polished_tuff_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_TUFF)));
-
-	//Cut
-	public static final Block CUT_TUFF = register("cut_tuff", new Block(Block.Settings.copy(POLISHED_TUFF)));
-	public static final Block CUT_TUFF_SLAB = register("cut_tuff_slab", new SlabBlock(Block.Settings.copy(CUT_TUFF)));
-	public static final Block CUT_TUFF_STAIRS = register("cut_tuff_stairs", new CPlusStairBlock(CUT_TUFF.getDefaultState(), Block.Settings.copy(CUT_TUFF)));
-	public static final Block CUT_TUFF_WALL = register("cut_tuff_wall", new WallBlock(Block.Settings.copy(CUT_TUFF)));
-	public static final Block CUT_TUFF_GATE = register("cut_tuff_gate", new FenceGateBlock(Block.Settings.copy(CUT_TUFF)));
-
-	public static final Block TUFF_TILES = register("tuff_tiles", new Block(Block.Settings.copy(TUFF)));
-	public static final Block TUFF_TILE_SLAB = register("tuff_tile_slab", new SlabBlock(Block.Settings.copy(TUFF)));
-	public static final Block TUFF_TILE_STAIRS = register("tuff_tile_stairs", new CPlusStairBlock(TUFF.getDefaultState(), Block.Settings.copy(TUFF)));
-	public static final Block TUFF_TILE_WALL = register("tuff_tile_wall", new WallBlock(Block.Settings.copy(TUFF)));
-	public static final Block TUFF_TILE_GATE = register("tuff_tile_gate", new FenceGateBlock(Block.Settings.copy(TUFF)));
-
-	//Bricks
-	public static final Block TUFF_BRICKS = register("tuff_bricks", new Block(Block.Settings.copy(TUFF)));
-	public static final Block TUFF_BRICK_SLAB = register("tuff_brick_slab", new SlabBlock(Block.Settings.copy(TUFF)));
-	public static final Block TUFF_BRICK_STAIRS = register("tuff_brick_stairs", new CPlusStairBlock(TUFF.getDefaultState(), Block.Settings.copy(TUFF)));
-	public static final Block TUFF_BRICK_WALL = register("tuff_brick_wall", new WallBlock(Block.Settings.copy(TUFF)));
-	public static final Block TUFF_BRICK_GATE = register("tuff_brick_gate", new FenceGateBlock(Block.Settings.copy(TUFF_BRICKS)));
-
-	//Pillars and Chiseled
-	public static final Block TUFF_PILLAR = register("tuff_pillar", new PillarBlock(Block.Settings.copy(POLISHED_TUFF)));
-	public static final Block TUFF_CORNER_PILLAR = register("tuff_corner_pillar", new Block(Block.Settings.copy(POLISHED_TUFF)));
-	public static final Block CHISELED_TUFF = register("chiseled_tuff", new Block(Block.Settings.copy(POLISHED_TUFF)));
-	public static final Block CARVED_TUFF = register("carved_tuff", new Block(Block.Settings.copy(POLISHED_TUFF)));
-
-	//Deepslate
-	public static final Block COBBLED_DEEPSLATE_GATE = register("cobbled_deepslate_gate", new FenceGateBlock(Block.Settings.copy(DEEPSLATE)));
-
-	public static final Block DEEPSLATE_SLAB = register("deepslate_slab", new SlabBlock(Block.Settings.copy(DEEPSLATE)));
-	public static final Block DEEPSLATE_STAIRS = register("deepslate_stairs", new CPlusStairBlock(DEEPSLATE.getDefaultState(), Block.Settings.copy(DEEPSLATE)));
-	public static final Block DEEPSLATE_WALL = register("deepslate_wall", new WallBlock(Block.Settings.copy(DEEPSLATE)));
-	public static final Block DEEPSLATE_GATE = register("deepslate_gate", new FenceGateBlock(Block.Settings.copy(DEEPSLATE)));
-
-	//Smooth
-	public static final Block SMOOTH_DEEPSLATE = register("smooth_deepslate", new Block(Block.Settings.copy(DEEPSLATE)));
-	public static final Block SMOOTH_DEEPSLATE_SLAB = register("smooth_deepslate_slab", new SlabBlock(Block.Settings.copy(SMOOTH_DEEPSLATE)));
-	public static final Block SMOOTH_DEEPSLATE_STAIRS = register("smooth_deepslate_stairs", new CPlusStairBlock(SMOOTH_DEEPSLATE.getDefaultState(), Block.Settings.copy(SMOOTH_DEEPSLATE)));
-	public static final Block SMOOTH_DEEPSLATE_WALL = register("smooth_deepslate_wall", new WallBlock(Block.Settings.copy(SMOOTH_DEEPSLATE)));
-	public static final Block SMOOTH_DEEPSLATE_GATE = register("smooth_deepslate_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_DEEPSLATE)));
-
-	//Polished
-	public static final Block POLISHED_DEEPSLATE_GATE = register("polished_deepslate_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_DEEPSLATE)));
-
-	//Cut
-	public static final Block CUT_DEEPSLATE = register("cut_deepslate", new Block(Block.Settings.copy(POLISHED_DEEPSLATE)));
-	public static final Block CUT_DEEPSLATE_SLAB = register("cut_deepslate_slab", new SlabBlock(Block.Settings.copy(CUT_DEEPSLATE)));
-	public static final Block CUT_DEEPSLATE_STAIRS = register("cut_deepslate_stairs", new CPlusStairBlock(CUT_DEEPSLATE.getDefaultState(), Block.Settings.copy(CUT_DEEPSLATE)));
-	public static final Block CUT_DEEPSLATE_WALL = register("cut_deepslate_wall", new WallBlock(Block.Settings.copy(CUT_DEEPSLATE)));
-	public static final Block CUT_DEEPSLATE_GATE = register("cut_deepslate_gate", new FenceGateBlock(Block.Settings.copy(CUT_DEEPSLATE)));
-
-	//Bricks
-	public static final Block DEEPSLATE_BRICK_GATE = register("deepslate_brick_gate", new FenceGateBlock(Block.Settings.copy(DEEPSLATE_BRICKS)));
-
-	public static final Block DEEPSLATE_TILE_GATE = register("deepslate_tile_gate", new FenceGateBlock(Block.Settings.copy(DEEPSLATE_TILES)));
-
-	public static final Block CRACKED_DEEPSLATE_BRICK_SLAB = register("cracked_deepslate_brick_slab", new SlabBlock(Block.Settings.copy(DEEPSLATE)));
-	public static final Block CRACKED_DEEPSLATE_BRICK_STAIRS = register("cracked_deepslate_brick_stairs", new CPlusStairBlock(DEEPSLATE.getDefaultState(), Block.Settings.copy(DEEPSLATE)));
-	public static final Block CRACKED_DEEPSLATE_BRICK_WALL = register("cracked_deepslate_brick_wall", new WallBlock(Block.Settings.copy(DEEPSLATE)));
-	public static final Block CRACKED_DEEPSLATE_BRICK_GATE = register("cracked_deepslate_brick_gate", new FenceGateBlock(Block.Settings.copy(DEEPSLATE)));
-
-	public static final Block CRACKED_DEEPSLATE_TILE_SLAB = register("cracked_deepslate_tile_slab", new SlabBlock(Block.Settings.copy(DEEPSLATE)));
-	public static final Block CRACKED_DEEPSLATE_TILE_STAIRS = register("cracked_deepslate_tile_stairs", new CPlusStairBlock(DEEPSLATE.getDefaultState(), Block.Settings.copy(DEEPSLATE)));
-	public static final Block CRACKED_DEEPSLATE_TILE_WALL = register("cracked_deepslate_tile_wall", new WallBlock(Block.Settings.copy(DEEPSLATE)));
-	public static final Block CRACKED_DEEPSLATE_TILE_GATE = register("cracked_deepslate_tile_gate", new FenceGateBlock(Block.Settings.copy(DEEPSLATE)));
-
-	//Pillars and Chiseled
-	public static final Block DEEPSLATE_PILLAR = register("deepslate_pillar", new PillarBlock(Block.Settings.copy(POLISHED_DEEPSLATE)));
-	public static final Block DEEPSLATE_CORNER_PILLAR = register("deepslate_corner_pillar", new Block(Block.Settings.copy(POLISHED_DEEPSLATE)));
-	public static final Block CARVED_DEEPSLATE = register("carved_deepslate", new Block(Block.Settings.copy(POLISHED_DEEPSLATE)));
 
 
 	// Terracotta
@@ -2541,17 +2333,17 @@ public class CPlusBlocks {
 
 
 	//Glowstone
-	public static final Block RED_GLOWSTONE = register("red_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.RED).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block ORANGE_GLOWSTONE = register("orange_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.YELLOW).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block YELLOW_GLOWSTONE = register("yellow_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.ORANGE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block LIME_GLOWSTONE = register("lime_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.LIME).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block GREEN_GLOWSTONE = register("green_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.GREEN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block BLUE_GLOWSTONE = register("blue_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block CYAN_GLOWSTONE = register("cyan_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.CYAN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block LIGHT_BLUE_GLOWSTONE = register("light_blue_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block PURPLE_GLOWSTONE = register("purple_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.PURPLE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block MAGENTA_GLOWSTONE = register("magenta_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.MAGENTA).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
-	public static final Block PINK_GLOWSTONE = register("pink_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.PINK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque()));
+	public static final Block RED_GLOWSTONE = register("red_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.RED).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block ORANGE_GLOWSTONE = register("orange_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.YELLOW).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block YELLOW_GLOWSTONE = register("yellow_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.ORANGE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block LIME_GLOWSTONE = register("lime_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.LIME).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block GREEN_GLOWSTONE = register("green_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.GREEN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block BLUE_GLOWSTONE = register("blue_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block CYAN_GLOWSTONE = register("cyan_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.CYAN).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block LIGHT_BLUE_GLOWSTONE = register("light_blue_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.LIGHT_BLUE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block PURPLE_GLOWSTONE = register("purple_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.PURPLE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block MAGENTA_GLOWSTONE = register("magenta_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.MAGENTA).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
+	public static final Block PINK_GLOWSTONE = register("pink_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.PINK).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
 	public static final Block WHITE_GLOWSTONE = register("white_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.WHITE).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
 	public static final Block LIGHT_GRAY_GLOWSTONE = register("light_gray_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.LIGHT_GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
 	public static final Block GRAY_GLOWSTONE = register("gray_glowstone", new Block(Block.Settings.of(Material.GLASS, MapColor.GRAY).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) -> 15).nonOpaque()));
@@ -2642,24 +2434,6 @@ public class CPlusBlocks {
 	//Glass stuff will be here eventually.  Until then, here's a random face from the win + . menu
 	// (¬‿¬)
 
-	// Tinted Glass
-	public static final Block RED_TINTED_GLASS_BLOCK = register("red_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block ORANGE_TINTED_GLASS_BLOCK = register("orange_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block YELLOW_TINTED_GLASS_BLOCK = register("yellow_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block LIME_TINTED_GLASS_BLOCK = register("lime_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block GREEN_TINTED_GLASS_BLOCK = register("green_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block BLUE_TINTED_GLASS_BLOCK = register("blue_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block LIGHT_BLUE_TINTED_GLASS_BLOCK = register("light_blue_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block CYAN_TINTED_GLASS_BLOCK = register("cyan_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block PURPLE_TINTED_GLASS_BLOCK = register("purple_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block PINK_TINTED_GLASS_BLOCK = register("pink_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block BROWN_TINTED_GLASS_BLOCK = register("brown_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block GRAY_TINTED_GLASS_BLOCK = register("gray_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block LIGHT_GRAY_TINTED_GLASS_BLOCK = register("light_gray_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block WHITE_TINTED_GLASS_BLOCK = register("white_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block MAGENTA_TINTED_GLASS_BLOCK = register("magenta_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-	public static final Block BLACK_TINTED_GLASS_BLOCK = register("black_tinted_glass", new TintedGlassBlock(Block.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()));
-
 	// Dirt
 	public static final Block DIRT_SLAB = register("dirt_slab", new DirtSlabBlock(Block.Settings.copy(DIRT)));
 	public static final Block DIRT_STAIRS = register("dirt_stairs", new DirtStairsBlock(DIRT.getDefaultState(), Block.Settings.copy(DIRT)));
@@ -2677,7 +2451,7 @@ public class CPlusBlocks {
 
 	// Miscellaneous
 	// public static final Block JACK_O_RED = register("jack_o_red", new RedstonePumpkinBlock(Block.Settings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(13)));
-	public static final Block JACK_O_SOUL = register("jack_o_soul", new CPlusCarvedPumpkinBlock(Block.Settings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance((state) ->10)));
+	public static final Block JACK_O_SOUL = register("jack_o_soul", new CPlusCarvedPumpkinBlock(Block.Settings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance((state) -> 10)));
 	public static final Block WARPED_WART = register("warped_wart", new WarpedNetherWartPlantBlock(Block.Settings.of(Material.PLANT, MapColor.BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.NETHER_WART).nonOpaque()));
 	public static final Block KFP_BLOCK = register("kfp_block", new Block(Block.Settings.copy(CARVED_ORANGE_CONCRETE)));
 	//	public static final Block CHARCOAL_BLOCK = register("charcoal_block", new Block(Block.Settings.of(Material.STONE, MapColor.BLACK).requiresTool().strength(5.0F, 6.0F)));
@@ -2713,24 +2487,6 @@ public class CPlusBlocks {
 	public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(Block.Settings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_CORNER_PILLAR = register("purpur_corner_pillar", new Block(Block.Settings.copy(PURPUR_BLOCK)));
 
-	//Bricks
-	public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new FenceGateBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
-
-	//Cracked Bricks
-	public static final Block CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new Block(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new CPlusStairBlock(CRACKED_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new WallBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new FenceGateBlock(Block.Settings.copy(CRACKED_BLUE_NETHER_BRICKS)));
-
-	//Pillars and Chiseled
-	public static final Block CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
-	public static final Block BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new PillarBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
-	public static final Block CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
 
 	// Siuol's selection regex syntax machine (?=")(.*)(?<=____")
 	// Per Thing regex selection machine (?=")(.*)(____.*)(?<=")
@@ -2738,6 +2494,7 @@ public class CPlusBlocks {
 	private static Block register(String name, Block block) {
 		RegistrySupplier<Block> blockSupplied = BLOCKS.register(name, () -> block);
 		return block;
+		//return Registry.register(Registry.BLOCK, IdHandler.IdFormat(name), block);
 	}
 
 	public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) {

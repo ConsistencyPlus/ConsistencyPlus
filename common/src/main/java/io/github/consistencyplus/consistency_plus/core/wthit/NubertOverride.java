@@ -5,14 +5,16 @@ import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBloc
 import mcp.mobius.waila.api.IBlockAccessor;
 import mcp.mobius.waila.api.IBlockComponentProvider;
 import mcp.mobius.waila.api.IPluginConfig;
-import mcp.mobius.waila.api.ITooltip;
+import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
+
+import java.util.List;
 
 public class NubertOverride implements IBlockComponentProvider {
   private BlockPos lastPos;
 
   @Override
-  public void appendBody(ITooltip tooltip, IBlockAccessor accessor, IPluginConfig config) {
+  public void appendBody(List<Text> tooltip, IBlockAccessor accessor, IPluginConfig config) {
     BlockPos pos = accessor.getPosition();
     boolean wigged = accessor.getBlock() instanceof WiggedNubertBlock;
     tooltip.add(NubertHandler.getNubertText(wigged, false));

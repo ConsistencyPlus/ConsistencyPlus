@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus;
 
-import dev.architectury.platform.forge.EventBuses;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
+import me.shedaniel.architectury.platform.forge.EventBuses;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 

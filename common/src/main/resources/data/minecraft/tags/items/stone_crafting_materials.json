@@ -5,16 +5,9 @@
     "consistency_plus:cobbled_andesite",
     "consistency_plus:cobbled_diorite",
     "consistency_plus:cobbled_granite",
-    "consistency_plus:cobbled_calcite",
-    "consistency_plus:cobbled_tuff",
-    "consistency_plus:cobbled_dripstone",
     "minecraft:stone",
     "minecraft:andesite",
     "minecraft:diorite",
-    "minecraft:granite",
-    "minecraft:calcite",
-    "minecraft:tuff",
-    "minecraft:dripstone_block",
-    "minecraft:deepslate"
+    "minecraft:granite"
   ]
 }

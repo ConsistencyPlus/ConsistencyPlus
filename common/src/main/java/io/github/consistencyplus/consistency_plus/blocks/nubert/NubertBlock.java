@@ -32,7 +32,6 @@ public class NubertBlock extends HorizontalFacingBlock implements Waterloggable 
                 .nonOpaque()
                 .allowsSpawning(CPlusBlocks::never)
                 .breakInstantly()
-                .mapColor(MapColor.BRIGHT_RED)
                 .luminance(state -> 7)
         );
         setDefaultState(getDefaultState().with(WATERLOGGED, false));
@@ -41,7 +40,7 @@ public class NubertBlock extends HorizontalFacingBlock implements Waterloggable 
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
         if (state.get(WATERLOGGED)) {
-            world.createAndScheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
+            world.getFluidTickScheduler().schedule(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
         }
 
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
@@ -54,7 +53,7 @@ public class NubertBlock extends HorizontalFacingBlock implements Waterloggable 
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (player.getStackInHand(hand).isOf(Items.YELLOW_WOOL)) {
+        if (player.getStackInHand(hand).isItemEqual(Items.YELLOW_WOOL.getDefaultStack())) {
             if (!world.isClient()) {
                 world.setBlockState(pos,
                         CPlusBlocks.WIGGED_NUBERT.getDefaultState()

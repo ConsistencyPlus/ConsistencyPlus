@@ -21,13 +21,13 @@ import java.util.function.Predicate;
 public abstract class AbstractMinecartEntityMixin extends Entity {
 	@Shadow
 	public abstract void setCustomBlock(BlockState state);
-	
+
 	@Shadow
 	public void dropItems(DamageSource damageSource) {
 	}
-	
+
 	@Shadow public abstract BlockState getContainedBlock();
-	
+
 	public AbstractMinecartEntityMixin(EntityType<?> entityType, World world) {
 		super(entityType, world);
 	}

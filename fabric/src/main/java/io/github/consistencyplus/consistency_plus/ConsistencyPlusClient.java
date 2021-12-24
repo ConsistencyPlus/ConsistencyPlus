@@ -7,6 +7,6 @@ import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredica
 public class ConsistencyPlusClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		ConsistencyPlusClientMain.init(FabricModelPredicateProviderRegistry::register);
+		ConsistencyPlusClientMain.init();
 	}
 }

@@ -17,7 +17,7 @@ import static net.minecraft.state.property.Properties.WATERLOGGED;
 public class WiggedNubertBlock extends NubertBlock {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (player.getStackInHand(hand).isOf(Items.SHEARS)) {
+        if (player.getStackInHand(hand).isItemEqualIgnoreDamage(Items.SHEARS.getDefaultStack())) {
             if (!world.isClient()) {
                 world.setBlockState(pos,
                         CPlusBlocks.NUBERT.getDefaultState()

@@ -3,15 +3,13 @@ package io.github.consistencyplus.consistency_plus.registry;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
 import io.github.consistencyplus.consistency_plus.items.NubertMinecartItem;
 import io.github.consistencyplus.consistency_plus.items.RedirectedBlockItem;
 
 import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.WallBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.item.HorseArmorItem;
@@ -843,6 +841,66 @@ public class CPlusItems {
 
 	// Caved Soul Sandstone
 	public static final Item CARVED_SOUL_SANDSTONE = register("carved_soul_sandstone", new BlockItem(CPlusBlocks.CARVED_SOUL_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+//Basalt
+
+	// Base
+	public static final Item BASALT_SLAB = register("basalt_slab", new BlockItem(CPlusBlocks.BASALT_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_STAIRS = register("basalt_stairs", new BlockItem(CPlusBlocks.BASALT_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_WALL = register("basalt_wall", new BlockItem(CPlusBlocks.BASALT_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_GATE = register("basalt_gate", new BlockItem(CPlusBlocks.BASALT_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Cobbled Soul Sandstone
+	public static final Item COBBLED_BASALT = register("cobbled_basalt", new BlockItem(CPlusBlocks.COBBLED_BASALT, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_BASALT_SLAB = register("cobbled_basalt_slab", new BlockItem(CPlusBlocks.COBBLED_BASALT_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_BASALT_STAIRS = register("cobbled_basalt_stairs", new BlockItem(CPlusBlocks.COBBLED_BASALT_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_BASALT_WALL = register("cobbled_basalt_wall", new BlockItem(CPlusBlocks.COBBLED_BASALT_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_BASALT_GATE = register("cobbled_basalt_gate", new BlockItem(CPlusBlocks.COBBLED_BASALT_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Polished Soul Sandstone
+	public static final Item POLISHED_BASALT = register("polished_basalt", new BlockItem(CPlusBlocks.POLISHED_BASALT, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_BASALT_SLAB = register("polished_basalt_slab", new BlockItem(CPlusBlocks.POLISHED_BASALT_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_BASALT_STAIRS = register("polished_basalt_stairs", new BlockItem(CPlusBlocks.POLISHED_BASALT_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_BASALT_WALL = register("polished_basalt_wall", new BlockItem(CPlusBlocks.POLISHED_BASALT_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_BASALT_GATE = register("polished_basalt_gate", new BlockItem(CPlusBlocks.POLISHED_BASALT_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Smooth Soul Sandstone
+	public static final Item SMOOTH_BASALT_SLAB = register("smooth_basalt_slab", new BlockItem(CPlusBlocks.SMOOTH_BASALT_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_BASALT_STAIRS = register("smooth_basalt_stairs", new BlockItem(CPlusBlocks.SMOOTH_BASALT_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_BASALT_WALL = register("smooth_basalt_wall", new BlockItem(CPlusBlocks.SMOOTH_BASALT_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_BASALT_GATE = register("smooth_basalt_gate", new BlockItem(CPlusBlocks.SMOOTH_BASALT_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Soul Sandstone Bricks
+	public static final Item BASALT_BRICKS = register("basalt_bricks", new BlockItem(CPlusBlocks.BASALT_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_BRICK_SLAB = register("basalt_brick_slab", new BlockItem(CPlusBlocks.BASALT_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_BRICK_STAIRS = register("basalt_brick_stairs", new BlockItem(CPlusBlocks.BASALT_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_BRICK_WALL = register("basalt_brick_wall", new BlockItem(CPlusBlocks.BASALT_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_BRICK_GATE = register("basalt_brick_gate", new BlockItem(CPlusBlocks.BASALT_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Cut Soul Sandstone
+	public static final Item CUT_BASALT = register("cut_basalt", new BlockItem(CPlusBlocks.CUT_BASALT, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_BASALT_SLAB = register("cut_basalt_slab", new BlockItem(CPlusBlocks.CUT_BASALT_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_BASALT_STAIRS = register("cut_basalt_stairs", new BlockItem(CPlusBlocks.CUT_BASALT_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_BASALT_WALL = register("cut_basalt_wall", new BlockItem(CPlusBlocks.CUT_BASALT_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_BASALT_GATE = register("cut_basalt_gate", new BlockItem(CPlusBlocks.CUT_BASALT_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Soul Sandstone Tiles
+	public static final Item BASALT_TILES = register("basalt_tiles", new BlockItem(CPlusBlocks.BASALT_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_TILE_SLAB = register("basalt_tile_slab", new BlockItem(CPlusBlocks.BASALT_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_TILE_STAIRS = register("basalt_tile_stairs", new BlockItem(CPlusBlocks.BASALT_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_TILE_WALL = register("basalt_tile_wall", new BlockItem(CPlusBlocks.BASALT_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item BASALT_TILE_GATE = register("basalt_tile_gate", new BlockItem(CPlusBlocks.BASALT_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Soul Sandstone Pillar
+	public static final Item BASALT_CORNER_PILLAR = register("basalt_corner_pillar", new BlockItem(CPlusBlocks.BASALT_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Chiseled Soul Sandstone
+	public static final Item CHISELED_BASALT = register("chiseled_basalt", new BlockItem(CPlusBlocks.CHISELED_BASALT, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Caved Soul Sandstone
+	public static final Item CARVED_BASALT = register("carved_basalt", new BlockItem(CPlusBlocks.CARVED_BASALT, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+
 
 
 // QUARTZ

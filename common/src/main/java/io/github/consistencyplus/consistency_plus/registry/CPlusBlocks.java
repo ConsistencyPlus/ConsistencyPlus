@@ -782,6 +782,58 @@ public class CPlusBlocks {
 	public static final Block SOUL_SANDSTONE_PILLAR = register("soul_sandstone_pillar", new PillarBlock(Block.Settings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_CORNER_PILLAR = register("soul_sandstone_corner_pillar", new Block(Block.Settings.copy(SOUL_SANDSTONE)));
 
+	//Basalt
+	public static final Block BASALT_SLAB = register("basalt_slab", new SlabBlock(Block.Settings.copy(BASALT)));
+	public static final Block BASALT_STAIRS = register("basalt_stairs", new CPlusStairBlock(BASALT.getDefaultState(), Block.Settings.copy(BASALT)));
+	public static final Block BASALT_WALL = register("basalt_wall", new WallBlock(Block.Settings.copy(BASALT)));
+	public static final Block BASALT_GATE = register("basalt_gate", new FenceGateBlock(Block.Settings.copy(BASALT)));
+
+	public static final Block COBBLED_BASALT = register("cobbled_basalt", new Block(Block.Settings.copy(BASALT)));
+	public static final Block COBBLED_BASALT_SLAB = register("cobbled_basalt_slab", new SlabBlock(Block.Settings.copy(BASALT)));
+	public static final Block COBBLED_BASALT_STAIRS = register("cobbled_basalt_stairs", new CPlusStairBlock(BASALT.getDefaultState(), Block.Settings.copy(BASALT)));
+	public static final Block COBBLED_BASALT_WALL = register("cobbled_basalt_wall", new WallBlock(Block.Settings.copy(BASALT)));
+	public static final Block COBBLED_BASALT_GATE = register("cobbled_basalt_gate", new FenceGateBlock(Block.Settings.copy(BASALT)));
+
+	// Smooth
+	public static final Block SMOOTH_BASALT_SLAB = register("smooth_basalt_slab", new SlabBlock(Block.Settings.copy(SMOOTH_BASALT)));
+	public static final Block SMOOTH_BASALT_STAIRS = register("smooth_basalt_stairs", new CPlusStairBlock(SMOOTH_BASALT.getDefaultState(), Block.Settings.copy(SMOOTH_BASALT)));
+	public static final Block SMOOTH_BASALT_WALL = register("smooth_basalt_wall", new WallBlock(Block.Settings.copy(SMOOTH_BASALT)));
+	public static final Block SMOOTH_BASALT_GATE = register("smooth_basalt_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_BASALT)));
+
+	// Polished
+	public static final Block POLISHED_BASALT = register("polished_basalt", new Block(Block.Settings.copy(BASALT)));
+	public static final Block POLISHED_BASALT_SLAB = register("polished_basalt_slab", new SlabBlock(Block.Settings.copy(POLISHED_BASALT)));
+	public static final Block POLISHED_BASALT_STAIRS = register("polished_basalt_stairs", new CPlusStairBlock(POLISHED_BASALT.getDefaultState(), Block.Settings.copy(POLISHED_BASALT)));
+	public static final Block POLISHED_BASALT_WALL = register("polished_basalt_wall", new WallBlock(Block.Settings.copy(POLISHED_BASALT)));
+	public static final Block POLISHED_BASALT_GATE = register("polished_basalt_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_BASALT)));
+
+	// Bricks
+	public static final Block BASALT_BRICKS = register("basalt_bricks", new Block(Block.Settings.copy(BASALT)));
+	public static final Block BASALT_BRICK_SLAB = register("basalt_brick_slab", new SlabBlock(Block.Settings.copy(BASALT_BRICKS)));
+	public static final Block BASALT_BRICK_STAIRS = register("basalt_brick_stairs", new CPlusStairBlock(BASALT_BRICKS.getDefaultState(), Block.Settings.copy(BASALT_BRICKS)));
+	public static final Block BASALT_BRICK_WALL = register("basalt_brick_wall", new WallBlock(Block.Settings.copy(BASALT_BRICKS)));
+	public static final Block BASALT_BRICK_GATE = register("basalt_brick_gate", new FenceGateBlock(Block.Settings.copy(BASALT_BRICKS)));
+
+	// Cut
+	public static final Block CUT_BASALT = register("cut_basalt", new Block(Block.Settings.copy(BASALT)));
+	public static final Block CUT_BASALT_SLAB = register("cut_basalt_slab", new SlabBlock(Block.Settings.copy(CUT_BASALT)));
+	public static final Block CUT_BASALT_STAIRS = register("cut_basalt_stairs", new CPlusStairBlock(CUT_BASALT.getDefaultState(), Block.Settings.copy(CUT_BASALT)));
+	public static final Block CUT_BASALT_WALL = register("cut_basalt_wall", new WallBlock(Block.Settings.copy(CUT_BASALT)));
+	public static final Block CUT_BASALT_GATE = register("cut_basalt_gate", new FenceGateBlock(Block.Settings.copy(CUT_BASALT)));
+
+	//Tiles
+	public static final Block BASALT_TILES = register("basalt_tiles", new Block(Block.Settings.copy(BASALT)));
+	public static final Block BASALT_TILE_STAIRS = register("basalt_tile_stairs", new CPlusStairBlock(BASALT_TILES.getDefaultState(), Block.Settings.copy(BASALT)));
+	public static final Block BASALT_TILE_SLAB = register("basalt_tile_slab", new SlabBlock(Block.Settings.copy(BASALT)));
+	public static final Block BASALT_TILE_WALL = register("basalt_tile_wall", new WallBlock(Block.Settings.copy(BASALT)));
+	public static final Block BASALT_TILE_GATE = register("basalt_tile_gate", new FenceGateBlock(Block.Settings.copy(BASALT)));
+
+	public static final Block CARVED_BASALT = register("carved_basalt", new Block(Block.Settings.copy(BASALT)));
+	public static final Block CHISELED_BASALT = register("chiseled_basalt", new Block(Block.Settings.copy(BASALT)));
+	public static final Block BASALT_CORNER_PILLAR = register("basalt_corner_pillar", new Block(Block.Settings.copy(BASALT)));
+
+
+
 	//Obsidian
 	public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block OBSIDIAN_STAIRS = register("obsidian_stairs", new CPlusStairBlock(OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));

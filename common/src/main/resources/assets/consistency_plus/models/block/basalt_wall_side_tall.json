@@ -3,6 +3,6 @@
   "textures": {
     "wall": "minecraft:block/basalt_side",
     "wall_top": "minecraft:block/basalt_top",
-    "wall_bottom": "minecraft:block/basalt_top",
+    "wall_bottom": "minecraft:block/basalt_top"
   }
 }

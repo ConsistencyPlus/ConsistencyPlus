@@ -1,13 +1,13 @@
 {
     "variants": {
         "type=bottom": {
-            "model": "consistency_plus:block/basalt_tiles_slab"
+            "model": "consistency_plus:block/basalt_tile_slab"
         },
         "type=double": {
             "model": "consistency_plus:block/basalt_tiles"
         },
         "type=top": {
-            "model": "consistency_plus:block/basalt_tiles_slab_top"
+            "model": "consistency_plus:block/basalt_tile_slab_top"
         }
     }
 }

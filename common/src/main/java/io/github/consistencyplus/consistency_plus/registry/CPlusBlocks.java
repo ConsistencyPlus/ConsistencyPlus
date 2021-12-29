@@ -499,7 +499,6 @@ public class CPlusBlocks {
 
 
 	//Nether Bricks
-//Nether Bricks will have a rework eventually, none of this is final
 	//Cracked Bricks
 	public static final Block CRACKED_NETHER_BRICK_SLAB = register("cracked_nether_brick_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block CRACKED_NETHER_BRICK_STAIRS = register("cracked_nether_brick_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
@@ -509,6 +508,7 @@ public class CPlusBlocks {
 	//Pillars and Chiseled
 	public static final Block CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block NETHER_BRICK_PILLAR = register("nether_brick_pillar", new PillarBlock(Block.Settings.copy(NETHER_BRICKS)));
+
 
 	//Red Nether Bricks
 	public static final Block RED_NETHER_BRICK_FENCE_GATE = register("red_nether_brick_fence_gate", new FenceGateBlock(Block.Settings.copy(RED_NETHER_BRICKS)));
@@ -520,7 +520,6 @@ public class CPlusBlocks {
 
 
 	//Blue Nether Bricks
-//Blue Nether Bricks will have a rework eventually, none of this is final/
 /*
 	//Bricks
 	public static final Block WARPED_NETHER_BRICKS = register("warped_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));

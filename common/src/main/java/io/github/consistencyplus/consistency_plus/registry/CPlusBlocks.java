@@ -26,6 +26,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
+import java.util.Locale;
+
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
@@ -2785,7 +2787,7 @@ public class CPlusBlocks {
 
 	// Siuol's selection regex syntax machine (?=")(.*)(?<=____")
 	// Per Thing regex selection machine (?=")(.*)(____.*)(?<=")
-
+	
 	private static Block register(String name, Block block) {
 		RegistrySupplier<Block> blockSupplied = BLOCKS.register(name, () -> block);
 		return block;
@@ -2796,6 +2798,9 @@ public class CPlusBlocks {
 	}
 
 	public static void init() {
+	}
+	
+	public static void register() {
 		BLOCKS.register();
 	}
 }

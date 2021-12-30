@@ -5313,6 +5313,9 @@ public class CPlusItems {
 	}
 
 	public static void init() {
+	}
+	
+	public static void register() {
 		ITEMS.register();
 	}
 }

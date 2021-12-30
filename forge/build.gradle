@@ -40,7 +40,7 @@ processResources {
 
 loom {
     forge {
-        mixinConfigs = ["consistency_plus.mixins.json"]
+        mixinConfigs = [ "consistency_plus.mixins.json" ]
     }
 }
 
@@ -78,7 +78,7 @@ publishing {
         mavenForge(MavenPublication) {
             groupId = 'io.github.consistencyplus'
             artifactId = rootProject.archives_base_name + "-" + project.name
-            version = rootProject.mod_version + "+" + rootProject.mc_major_version
+            version = rootProject.mod_version + "+" + rootProject.minecraft_version
             from components.java
         }
     }

@@ -2,6 +2,7 @@ package io.github.consistencyplus.consistency_plus.base;
 
 import dev.architectury.platform.Platform;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.registry.CPlusCopperBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
@@ -17,6 +18,9 @@ public class ConsistencyPlusMain {
 		
 		CPlusBlocks.init();
 		CPlusItems.init();
+		CPlusCopperBlocks.init(CPlusBlocks.BLOCKS, CPlusItems.ITEMS);
+		CPlusBlocks.register();
+		CPlusItems.register();
 		
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 		

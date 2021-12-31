@@ -74,7 +74,7 @@ public class CPlusCopperBlocks {
 	public enum Variant {
 		CARVED, CHISELED, CUT, POLISHED, SMOOTH, // prefixes
 		
-		BRICK, PILLAR, PILLAR_TOP; // suffixes
+		BRICK, PILLAR, CORNER_PILLAR; // suffixes
 		
 		public String createName(CopperOxidization oxidization) {
 			boolean prefix = ordinal() < 5;
@@ -88,7 +88,7 @@ public class CPlusCopperBlocks {
 	}
 	
 	public enum Shape {
-		BLOCK, SLAB, STAIRS, WALL, GATE, ROD
+		BLOCK, SLAB, STAIRS, WALL, GATE
 	}
 
 	private record Key(CopperOxidization oxidization, Variant variant, Shape shape, boolean waxed) {
@@ -209,23 +209,23 @@ public class CPlusCopperBlocks {
 				
 				// --- rods ---
 				
-				OxidizableLightningRodBlock rod = new OxidizableLightningRodBlock(level, settings.nonOpaque());
-				BlockItem rodItem = new BlockItem(rod, itemSettings);
-				Identifier rodId = ConsistencyPlusMain.id(name + "_lightning_rod");
-				BLOCKS.put(new Key(oxidization, var, Shape.ROD, false), Pair.of(rod, rodItem));
-				blockRegistry.register(rodId, () -> rod);
-				itemRegistry.register(rodId, () -> rodItem);
-
-				tryRegisterOxidizable(rod, oxidization, var, Shape.ROD);
-
-				LightningRodBlock waxedRod = new LightningRodBlock(settings.nonOpaque());
-				BlockItem waxedRodItem = new BlockItem(waxedRod, itemSettings);
-				Identifier waxedRodId = ConsistencyPlusMain.id("waxed_" + name + "_lightning_rod");
-				BLOCKS.put(new Key(oxidization, var, Shape.ROD, true), Pair.of(waxedRod, waxedRodItem));
-				blockRegistry.register(waxedRodId, () -> waxedRod);
-				itemRegistry.register(waxedRodId, () -> waxedRodItem);
-
-				registerWaxable(rod, waxedRod);
+//				OxidizableLightningRodBlock rod = new OxidizableLightningRodBlock(level, settings.nonOpaque());
+//				BlockItem rodItem = new BlockItem(rod, itemSettings);
+//				Identifier rodId = ConsistencyPlusMain.id(name + "_lightning_rod");
+//				BLOCKS.put(new Key(oxidization, var, Shape.ROD, false), Pair.of(rod, rodItem));
+//				blockRegistry.register(rodId, () -> rod);
+//				itemRegistry.register(rodId, () -> rodItem);
+//
+//				tryRegisterOxidizable(rod, oxidization, var, Shape.ROD);
+//
+//				LightningRodBlock waxedRod = new LightningRodBlock(settings.nonOpaque());
+//				BlockItem waxedRodItem = new BlockItem(waxedRod, itemSettings);
+//				Identifier waxedRodId = ConsistencyPlusMain.id("waxed_" + name + "_lightning_rod");
+//				BLOCKS.put(new Key(oxidization, var, Shape.ROD, true), Pair.of(waxedRod, waxedRodItem));
+//				blockRegistry.register(waxedRodId, () -> waxedRod);
+//				itemRegistry.register(waxedRodId, () -> waxedRodItem);
+//
+//				registerWaxable(rod, waxedRod);
 			}
 		}
 		finish();

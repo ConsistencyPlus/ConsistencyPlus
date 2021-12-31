@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/exposed_copper_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/exposed_copper"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/exposed_copper_slab_top"
+        }
+    }
+}

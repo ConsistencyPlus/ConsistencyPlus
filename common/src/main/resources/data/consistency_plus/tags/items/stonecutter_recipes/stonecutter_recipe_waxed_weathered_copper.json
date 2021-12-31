@@ -2,8 +2,32 @@
   "replace": false,
   "values": [
     "minecraft:waxed_weathered_copper",
+    "consistency_plus:waxed_weathered_copper_slab",
+    "consistency_plus:waxed_weathered_copper_stairs",
+    "consistency_plus:waxed_weathered_copper_wall",
+    "consistency_plus:waxed_weathered_copper_gate",
+    "consistency_plus:waxed_weathered_polished_copper",
+    "consistency_plus:waxed_weathered_polished_copper_slab",
+    "consistency_plus:waxed_weathered_polished_copper_stairs",
+    "consistency_plus:waxed_weathered_polished_copper_wall",
+    "consistency_plus:waxed_weathered_polished_copper_gate",
+    "consistency_plus:waxed_weathered_copper_bricks",
+    "consistency_plus:waxed_weathered_copper_brick_slab",
+    "consistency_plus:waxed_weathered_copper_brick_stairs",
+    "consistency_plus:waxed_weathered_copper_brick_wall",
+    "consistency_plus:waxed_weathered_copper_brick_gate",
+    "consistency_plus:waxed_weathered_cut_copper",
+    "consistency_plus:waxed_weathered_cut_copper_slab",
+    "consistency_plus:waxed_weathered_cut_copper_stairs",
+    "consistency_plus:waxed_weathered_cut_copper_wall",
+    "consistency_plus:waxed_weathered_cut_copper_gate",
     "minecraft:waxed_weathered_cut_copper",
     "minecraft:waxed_weathered_cut_copper_slab",
-    "minecraft:waxed_weathered_cut_copper_stairs"
+    "minecraft:waxed_weathered_cut_copper_stairs",
+    "consistency_plus:waxed_weathered_copper_pillar",
+    "consistency_plus:waxed_weathered_copper_corner_pillar",
+    "consistency_plus:waxed_weathered_chiseled_copper",
+    "consistency_plus:waxed_weathered_carved_copper"
+
   ]
 }

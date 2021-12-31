@@ -2,8 +2,31 @@
   "replace": false,
   "values": [
     "minecraft:copper_block",
+    "consistency_plus:copper_slab",
+    "consistency_plus:copper_stairs",
+    "consistency_plus:copper_wall",
+    "consistency_plus:copper_gate",
+    "consistency_plus:polished_copper",
+    "consistency_plus:polished_copper_slab",
+    "consistency_plus:polished_copper_stairs",
+    "consistency_plus:polished_copper_wall",
+    "consistency_plus:polished_copper_gate",
+    "consistency_plus:copper_bricks",
+    "consistency_plus:copper_brick_slab",
+    "consistency_plus:copper_brick_stairs",
+    "consistency_plus:copper_brick_wall",
+    "consistency_plus:copper_brick_gate",
+    "consistency_plus:cut_copper",
+    "consistency_plus:cut_copper_slab",
+    "consistency_plus:cut_copper_stairs",
+    "consistency_plus:cut_copper_wall",
+    "consistency_plus:cut_copper_gate",
     "minecraft:cut_copper",
     "minecraft:cut_copper_slab",
-    "minecraft:cut_copper_stairs"
+    "minecraft:cut_copper_stairs",
+    "consistency_plus:copper_pillar",
+    "consistency_plus:copper_corner_pillar",
+    "consistency_plus:chiseled_copper",
+    "consistency_plus:carved_copper"
   ]
 }

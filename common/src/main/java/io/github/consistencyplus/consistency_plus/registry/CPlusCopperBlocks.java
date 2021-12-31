@@ -11,6 +11,7 @@ import net.minecraft.block.*;
 import net.minecraft.block.Oxidizable.OxidationLevel;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import org.apache.commons.lang3.tuple.Pair;
@@ -74,15 +75,20 @@ public class CPlusCopperBlocks {
 	public enum Variant {
 		CARVED, CHISELED, CUT, POLISHED, SMOOTH, // prefixes
 		
-		BRICK, PILLAR, CORNER_PILLAR; // suffixes
+		BASE, BRICK, PILLAR, CORNER_PILLAR; // suffixes
 		
 		public String createName(CopperOxidization oxidization) {
 			boolean prefix = ordinal() < 5;
-			return prefix ? oxidization.toString() + this + "_copper" : oxidization.toString() + "copper_" + this;
+			return prefix ? oxidization.toString() + this + "_copper" : oxidization.toString() + "copper" + (this.toString().isEmpty() ? "" : "_") + this;
+		}
+		
+		public boolean hasAdditionalShapes() {
+			return this != CARVED && this != CHISELED && this != PILLAR && this != CORNER_PILLAR;
 		}
 		
 		@Override
 		public String toString() {
+			if (this == BASE) return "";
 			return name().toLowerCase(Locale.ROOT);
 		}
 	}
@@ -106,26 +112,31 @@ public class CPlusCopperBlocks {
 				Item.Settings itemSettings = CPlusItemGroups.consistencyPlusMiscItemSettings();
 				
 				OxidationLevel level = oxidization.toVanilla();
+				boolean baseVar = var == Variant.BASE;
 				
 				// --- base ---
 				
-				OxidizableBlock base = new OxidizableBlock(level, settings);
-				BlockItem baseItem = new BlockItem(base, itemSettings);
+				OxidizableBlock base = baseVar ? (OxidizableBlock) Blocks.COPPER_BLOCK : new OxidizableBlock(level, settings);
+				BlockItem baseItem = baseVar ? (BlockItem) Items.COPPER_BLOCK : new BlockItem(base, itemSettings);
 				BLOCKS.put(new Key(oxidization, var, Shape.BLOCK, false), Pair.of(base, baseItem));
-				Identifier baseId = ConsistencyPlusMain.id(name + (var == Variant.BRICK ? 's' : ""));
-				blockRegistry.register(baseId, () -> base);
-				itemRegistry.register(baseId, () -> baseItem);
+				if (!baseVar) {
+					Identifier baseId = ConsistencyPlusMain.id(name + (var == Variant.BRICK ? 's' : ""));
+					blockRegistry.register(baseId, () -> base);
+					itemRegistry.register(baseId, () -> baseItem);
+					tryRegisterOxidizable(base, oxidization, var, Shape.BLOCK);
+				}
 				
-				tryRegisterOxidizable(base, oxidization, var, Shape.BLOCK);
-				
-				Block waxedBase = new Block(settings);
-				BlockItem waxedBaseItem = new BlockItem(waxedBase, itemSettings);
+				Block waxedBase = baseVar ? Blocks.WAXED_COPPER_BLOCK : new Block(settings);
+				BlockItem waxedBaseItem = baseVar ? (BlockItem) Items.WAXED_COPPER : new BlockItem(waxedBase, itemSettings);
 				BLOCKS.put(new Key(oxidization, var, Shape.BLOCK, true), Pair.of(waxedBase, waxedBaseItem));
-				Identifier waxedBaseId = ConsistencyPlusMain.id("waxed_" + name + (var == Variant.BRICK ? 's' : ""));
-				blockRegistry.register(waxedBaseId, () -> waxedBase);
-				itemRegistry.register(waxedBaseId, () -> waxedBaseItem);
+				if (!baseVar) {
+					Identifier waxedBaseId = ConsistencyPlusMain.id("waxed_" + name + (var == Variant.BRICK ? 's' : ""));
+					blockRegistry.register(waxedBaseId, () -> waxedBase);
+					itemRegistry.register(waxedBaseId, () -> waxedBaseItem);
+					registerWaxable(base, waxedBase);
+				}
 				
-				registerWaxable(base, waxedBase);
+				if (!var.hasAdditionalShapes()) continue;
 				
 				// --- slabs ---
 				

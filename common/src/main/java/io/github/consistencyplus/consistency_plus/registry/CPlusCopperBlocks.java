@@ -25,8 +25,6 @@ import java.util.function.Function;
 
 public class CPlusCopperBlocks {
 	public static final Map<Key, Pair<Block, BlockItem>> BLOCKS = new HashMap<>();
-	private static final Map<Block, Block> OXIDIZABLE_TO_REGISTER = new HashMap<>();
-	private static final Map<Block, Block> WAXABLE_TO_REGISTER = new HashMap<>();
 	
 	public static Block getBlock(CopperOxidization oxidization, Variant variant, Shape shape, boolean waxed) {
 		return get(oxidization, variant, shape, waxed).getLeft();

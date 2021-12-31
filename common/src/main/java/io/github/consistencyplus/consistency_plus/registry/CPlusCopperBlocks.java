@@ -5,9 +5,11 @@ import dev.architectury.registry.registries.DeferredRegister;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableGateBlock;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableLightningRodBlock;
+import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizablePillarBlock;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableWallBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
 import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.block.Oxidizable.OxidationLevel;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -20,6 +22,8 @@ import org.apache.commons.lang3.tuple.Triple;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 
 public class CPlusCopperBlocks {
 	public static final Map<Key, Pair<Block, BlockItem>> BLOCKS = new HashMap<>();
@@ -82,6 +86,11 @@ public class CPlusCopperBlocks {
 			return prefix ? oxidization.toString() + this + "_copper" : oxidization.toString() + "copper" + (this.toString().isEmpty() ? "" : "_") + this;
 		}
 		
+		public BiFunction<OxidationLevel, Settings, Block> factory() {
+			if (this == PILLAR) return OxidizablePillarBlock::new;
+			return OxidizableBlock::new;
+		}
+		
 		public boolean hasAdditionalShapes() {
 			return this != CARVED && this != CHISELED && this != PILLAR && this != CORNER_PILLAR;
 		}
@@ -116,7 +125,7 @@ public class CPlusCopperBlocks {
 				
 				// --- base ---
 				
-				OxidizableBlock base = baseVar ? (OxidizableBlock) Blocks.COPPER_BLOCK : new OxidizableBlock(level, settings);
+				Block base = baseVar ? Blocks.COPPER_BLOCK : var.factory().apply(level, settings);
 				BlockItem baseItem = baseVar ? (BlockItem) Items.COPPER_BLOCK : new BlockItem(base, itemSettings);
 				BLOCKS.put(new Key(oxidization, var, Shape.BLOCK, false), Pair.of(base, baseItem));
 				if (!baseVar) {
@@ -219,6 +228,7 @@ public class CPlusCopperBlocks {
 				registerWaxable(gate, waxedGate);
 				
 				// --- rods ---
+				// maybe one day...
 				
 //				OxidizableLightningRodBlock rod = new OxidizableLightningRodBlock(level, settings.nonOpaque());
 //				BlockItem rodItem = new BlockItem(rod, itemSettings);

@@ -8,8 +8,8 @@ public class CPlusCopperBlocksImpl {
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(less, more);
 	}
 	
-	public static void registerWaxable(Block not, Block waxed) {
-		OxidizableBlocksRegistry.registerWaxableBlockPair(not, waxed);
+	public static void registerWaxable(Block no, Block yes) {
+		OxidizableBlocksRegistry.registerWaxableBlockPair(no, yes);
 	}
 	
 	public static void finish() {

@@ -15,7 +15,7 @@ public class OxidizablePillarBlock extends PillarBlock implements Oxidizable {
 		super(settings);
 		this.oxidationLevel = level;
 	}
-	
+
 	@Override
 	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 		this.tickDegradation(state, world, pos, random);

@@ -20,8 +20,8 @@ public class CPlusCopperBlocksImpl {
 		OXIDIZABLE.put(less, more);
 	}
 	
-	public static void registerWaxable(Block not, Block waxed) {
-		WAXABLE.put(not, waxed);
+	public static void registerWaxable(Block no, Block yes) {
+		WAXABLE.put(no, yes);
 	}
 	
 	// this is yoinked from Create, which is licensed under MIT, so this is as well.

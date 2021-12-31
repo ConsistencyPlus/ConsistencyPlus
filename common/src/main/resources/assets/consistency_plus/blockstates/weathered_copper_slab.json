@@ -4,7 +4,7 @@
             "model": "consistency_plus:block/weathered_copper_slab"
         },
         "type=double": {
-            "model": "consistency_plus:block/weathered_copper"
+            "model": "minecraft:block/weathered_copper"
         },
         "type=top": {
             "model": "consistency_plus:block/weathered_copper_slab_top"

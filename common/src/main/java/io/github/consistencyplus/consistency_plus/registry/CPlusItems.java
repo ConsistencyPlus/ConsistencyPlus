@@ -781,6 +781,56 @@ public class CPlusItems {
 	public static final Item CHISELED_RED_SANDSTONE = register("chiseled_red_sandstone", new BlockItem(CPlusBlocks.CHISELED_RED_SANDSTONE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
 
+	// Base
+	public static final Item NETHERRACK_SLAB = register("netherrack_slab", new BlockItem(CPlusBlocks.NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_STAIRS = register("netherrack_stairs", new BlockItem(CPlusBlocks.NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_WALL = register("netherrack_wall", new BlockItem(CPlusBlocks.NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_GATE = register("netherrack_gate", new BlockItem(CPlusBlocks.NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Cobbled Soul Sandstone
+	public static final Item COBBLED_NETHERRACK = register("cobbled_netherrack", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_NETHERRACK_SLAB = register("cobbled_netherrack_slab", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_NETHERRACK_STAIRS = register("cobbled_netherrack_stairs", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_NETHERRACK_WALL = register("cobbled_netherrack_wall", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_NETHERRACK_GATE = register("cobbled_netherrack_gate", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Polished Soul Sandstone
+	public static final Item POLISHED_NETHERRACK = register("polished_netherrack", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_NETHERRACK_SLAB = register("polished_netherrack_slab", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_NETHERRACK_STAIRS = register("polished_netherrack_stairs", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_NETHERRACK_WALL = register("polished_netherrack_wall", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_NETHERRACK_GATE = register("polished_netherrack_gate", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Smooth Soul Sandstone
+	public static final Item SMOOTH_NETHERRACK = register("smooth_netherrack", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_NETHERRACK_SLAB = register("smooth_netherrack_slab", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_NETHERRACK_STAIRS = register("smooth_netherrack_stairs", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_NETHERRACK_WALL = register("smooth_netherrack_wall", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_NETHERRACK_GATE = register("smooth_netherrack_gate", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+
+	// Cut Soul Sandstone
+	public static final Item CUT_NETHERRACK = register("cut_netherrack", new BlockItem(CPlusBlocks.CUT_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_NETHERRACK_SLAB = register("cut_netherrack_slab", new BlockItem(CPlusBlocks.CUT_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_NETHERRACK_STAIRS = register("cut_netherrack_stairs", new BlockItem(CPlusBlocks.CUT_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_NETHERRACK_WALL = register("cut_netherrack_wall", new BlockItem(CPlusBlocks.CUT_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_NETHERRACK_GATE = register("cut_netherrack_gate", new BlockItem(CPlusBlocks.CUT_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Soul Sandstone Tiles
+	public static final Item NETHERRACK_TILES = register("netherrack_tiles", new BlockItem(CPlusBlocks.NETHERRACK_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_TILE_SLAB = register("netherrack_tile_slab", new BlockItem(CPlusBlocks.NETHERRACK_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_TILE_STAIRS = register("netherrack_tile_stairs", new BlockItem(CPlusBlocks.NETHERRACK_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_TILE_WALL = register("netherrack_tile_wall", new BlockItem(CPlusBlocks.NETHERRACK_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_TILE_GATE = register("netherrack_tile_gate", new BlockItem(CPlusBlocks.NETHERRACK_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Soul Sandstone Pillar
+	public static final Item NETHERRACK_PILLAR = register("netherrack_pillar", new BlockItem(CPlusBlocks.NETHERRACK_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_CORNER_PILLAR = register("netherrack_corner_pillar", new BlockItem(CPlusBlocks.NETHERRACK_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Chiseled Soul Sandstone
+	public static final Item CHISELED_NETHERRACK = register("chiseled_netherrack", new BlockItem(CPlusBlocks.CHISELED_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+
 // SOUL SANDSTONE
 
 	// Base

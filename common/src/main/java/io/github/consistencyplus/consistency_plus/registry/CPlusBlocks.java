@@ -783,6 +783,54 @@ public class CPlusBlocks {
 	public static final Block SOUL_SANDSTONE_PILLAR = register("soul_sandstone_pillar", new PillarBlock(Block.Settings.copy(SOUL_SANDSTONE)));
 	public static final Block SOUL_SANDSTONE_CORNER_PILLAR = register("soul_sandstone_corner_pillar", new Block(Block.Settings.copy(SOUL_SANDSTONE)));
 
+
+
+
+	public static final Block NETHERRACK_SLAB = register("netherrack_slab", new SlabBlock(Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_STAIRS = register("netherrack_stairs", new CPlusStairBlock(NETHERRACK.getDefaultState(), Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_WALL = register("netherrack_wall", new WallBlock(Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_GATE = register("netherrack_gate", new FenceGateBlock(Block.Settings.copy(NETHERRACK)));
+
+	public static final Block COBBLED_NETHERRACK = register("cobbled_netherrack", new Block(Block.Settings.copy(NETHERRACK)));
+	public static final Block COBBLED_NETHERRACK_SLAB = register("cobbled_netherrack_slab", new SlabBlock(Block.Settings.copy(NETHERRACK)));
+	public static final Block COBBLED_NETHERRACK_STAIRS = register("cobbled_netherrack_stairs", new CPlusStairBlock(NETHERRACK.getDefaultState(), Block.Settings.copy(NETHERRACK)));
+	public static final Block COBBLED_NETHERRACK_WALL = register("cobbled_netherrack_wall", new WallBlock(Block.Settings.copy(NETHERRACK)));
+	public static final Block COBBLED_NETHERRACK_GATE = register("cobbled_netherrack_gate", new FenceGateBlock(Block.Settings.copy(NETHERRACK)));
+
+	// Smooth
+	public static final Block SMOOTH_NETHERRACK = register("smooth_netherrack", new Block(Block.Settings.copy(NETHERRACK)));
+	public static final Block SMOOTH_NETHERRACK_SLAB = register("smooth_netherrack_slab", new SlabBlock(Block.Settings.copy(SMOOTH_NETHERRACK)));
+	public static final Block SMOOTH_NETHERRACK_STAIRS = register("smooth_netherrack_stairs", new CPlusStairBlock(SMOOTH_NETHERRACK.getDefaultState(), Block.Settings.copy(SMOOTH_NETHERRACK)));
+	public static final Block SMOOTH_NETHERRACK_WALL = register("smooth_netherrack_wall", new WallBlock(Block.Settings.copy(SMOOTH_NETHERRACK)));
+	public static final Block SMOOTH_NETHERRACK_GATE = register("smooth_netherrack_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_NETHERRACK)));
+
+	// Polished
+	public static final Block POLISHED_NETHERRACK = register("polished_netherrack", new Block(Block.Settings.copy(NETHERRACK)));
+	public static final Block POLISHED_NETHERRACK_SLAB = register("polished_netherrack_slab", new SlabBlock(Block.Settings.copy(POLISHED_NETHERRACK)));
+	public static final Block POLISHED_NETHERRACK_STAIRS = register("polished_netherrack_stairs", new CPlusStairBlock(POLISHED_NETHERRACK.getDefaultState(), Block.Settings.copy(POLISHED_NETHERRACK)));
+	public static final Block POLISHED_NETHERRACK_WALL = register("polished_netherrack_wall", new WallBlock(Block.Settings.copy(POLISHED_NETHERRACK)));
+	public static final Block POLISHED_NETHERRACK_GATE = register("polished_netherrack_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_NETHERRACK)));
+
+	// Cut
+	public static final Block CUT_NETHERRACK = register("cut_netherrack", new Block(Block.Settings.copy(NETHERRACK)));
+	public static final Block CUT_NETHERRACK_SLAB = register("cut_netherrack_slab", new SlabBlock(Block.Settings.copy(CUT_NETHERRACK)));
+	public static final Block CUT_NETHERRACK_STAIRS = register("cut_netherrack_stairs", new CPlusStairBlock(CUT_NETHERRACK.getDefaultState(), Block.Settings.copy(CUT_NETHERRACK)));
+	public static final Block CUT_NETHERRACK_WALL = register("cut_netherrack_wall", new WallBlock(Block.Settings.copy(CUT_NETHERRACK)));
+	public static final Block CUT_NETHERRACK_GATE = register("cut_netherrack_gate", new FenceGateBlock(Block.Settings.copy(CUT_NETHERRACK)));
+
+	//Tiles
+	public static final Block NETHERRACK_TILES = register("netherrack_tiles", new Block(Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_TILE_STAIRS = register("netherrack_tile_stairs", new CPlusStairBlock(NETHERRACK_TILES.getDefaultState(), Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_TILE_SLAB = register("netherrack_tile_slab", new SlabBlock(Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_TILE_WALL = register("netherrack_tile_wall", new WallBlock(Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_TILE_GATE = register("netherrack_tile_gate", new FenceGateBlock(Block.Settings.copy(NETHERRACK)));
+
+	public static final Block CHISELED_NETHERRACK = register("chiseled_netherrack", new Block(Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_PILLAR = register("netherrack_pillar", new PillarBlock(Block.Settings.copy(NETHERRACK)));
+	public static final Block NETHERRACK_CORNER_PILLAR = register("netherrack_corner_pillar", new Block(Block.Settings.copy(NETHERRACK)));
+
+
+
 	//Basalt
 	public static final Block BASALT_SLAB = register("basalt_slab", new SlabBlock(Block.Settings.copy(BASALT)));
 	public static final Block BASALT_STAIRS = register("basalt_stairs", new CPlusStairBlock(BASALT.getDefaultState(), Block.Settings.copy(BASALT)));

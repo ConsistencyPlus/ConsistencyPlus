@@ -1,0 +1,8 @@
+{
+  "parent": "consistency_plus:block/template_consistency_wall_side_tri",
+  "textures": {
+    "wall": "consistency_plus:block/cut_netherrack",
+    "wall_top": "consistency_plus:block/cut_netherrack",
+    "wall_bottom": "consistency_plus:block/cut_netherrack"
+  }
+}

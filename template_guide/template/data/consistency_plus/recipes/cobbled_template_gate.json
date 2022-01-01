@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cobbled_template"
+        },
+        "Y": {
+            "item": "consistency_plus:cobbled_template_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cobbled_template_gate",
+        "count": 4
+    }
+}

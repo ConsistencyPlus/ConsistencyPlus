@@ -1,0 +1,58 @@
+	// Base
+	public static final Item TEMPLATE = register("blank", new BlockItem(CPlusBlocks.TEMPLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_SLAB = register("blank_slab", new BlockItem(CPlusBlocks.TEMPLATE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_STAIRS = register("blank_stairs", new BlockItem(CPlusBlocks.TEMPLATE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_WALL = register("blank_wall", new BlockItem(CPlusBlocks.TEMPLATE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_GATE = register("blank_gate", new BlockItem(CPlusBlocks.TEMPLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Cobbled Soul Sandstone
+	public static final Item COBBLED_TEMPLATE = register("cobbled_blank", new BlockItem(CPlusBlocks.COBBLED_TEMPLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_TEMPLATE_SLAB = register("cobbled_blank_slab", new BlockItem(CPlusBlocks.COBBLED_TEMPLATE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_TEMPLATE_STAIRS = register("cobbled_blank_stairs", new BlockItem(CPlusBlocks.COBBLED_TEMPLATE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_TEMPLATE_WALL = register("cobbled_blank_wall", new BlockItem(CPlusBlocks.COBBLED_TEMPLATE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item COBBLED_TEMPLATE_GATE = register("cobbled_blank_gate", new BlockItem(CPlusBlocks.COBBLED_TEMPLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Polished Soul Sandstone
+	public static final Item POLISHED_TEMPLATE = register("polished_blank", new BlockItem(CPlusBlocks.POLISHED_TEMPLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_TEMPLATE_SLAB = register("polished_blank_slab", new BlockItem(CPlusBlocks.POLISHED_TEMPLATE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_TEMPLATE_STAIRS = register("polished_blank_stairs", new BlockItem(CPlusBlocks.POLISHED_TEMPLATE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_TEMPLATE_WALL = register("polished_blank_wall", new BlockItem(CPlusBlocks.POLISHED_TEMPLATE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item POLISHED_TEMPLATE_GATE = register("polished_blank_gate", new BlockItem(CPlusBlocks.POLISHED_TEMPLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Smooth Soul Sandstone
+	public static final Item SMOOTH_TEMPLATE = register("smooth_blank", new BlockItem(CPlusBlocks.SMOOTH_TEMPLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_TEMPLATE_SLAB = register("smooth_blank_slab", new BlockItem(CPlusBlocks.SMOOTH_TEMPLATE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_TEMPLATE_STAIRS = register("smooth_blank_stairs", new BlockItem(CPlusBlocks.SMOOTH_TEMPLATE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_TEMPLATE_WALL = register("smooth_blank_wall", new BlockItem(CPlusBlocks.SMOOTH_TEMPLATE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item SMOOTH_TEMPLATE_GATE = register("smooth_blank_gate", new BlockItem(CPlusBlocks.SMOOTH_TEMPLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Soul Sandstone Bricks
+	public static final Item TEMPLATE_BRICKS = register("blank_bricks", new BlockItem(CPlusBlocks.TEMPLATE_BRICKS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_BRICK_SLAB = register("blank_brick_slab", new BlockItem(CPlusBlocks.TEMPLATE_BRICK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_BRICK_STAIRS = register("blank_brick_stairs", new BlockItem(CPlusBlocks.TEMPLATE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_BRICK_WALL = register("blank_brick_wall", new BlockItem(CPlusBlocks.TEMPLATE_BRICK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_BRICK_GATE = register("blank_brick_gate", new BlockItem(CPlusBlocks.TEMPLATE_BRICK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Cut Soul Sandstone
+	public static final Item CUT_TEMPLATE = register("cut_blank", new BlockItem(CPlusBlocks.CUT_TEMPLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_TEMPLATE_SLAB = register("cut_blank_slab", new BlockItem(CPlusBlocks.CUT_TEMPLATE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_TEMPLATE_STAIRS = register("cut_blank_stairs", new BlockItem(CPlusBlocks.CUT_TEMPLATE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_TEMPLATE_WALL = register("cut_blank_wall", new BlockItem(CPlusBlocks.CUT_TEMPLATE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item CUT_TEMPLATE_GATE = register("cut_blank_gate", new BlockItem(CPlusBlocks.CUT_TEMPLATE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Soul Sandstone Tiles
+	public static final Item TEMPLATE_TILES = register("blank_tiles", new BlockItem(CPlusBlocks.TEMPLATE_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_TILE_SLAB = register("blank_tile_slab", new BlockItem(CPlusBlocks.TEMPLATE_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_TILE_STAIRS = register("blank_tile_stairs", new BlockItem(CPlusBlocks.TEMPLATE_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_TILE_WALL = register("blank_tile_wall", new BlockItem(CPlusBlocks.TEMPLATE_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_TILE_GATE = register("blank_tile_gate", new BlockItem(CPlusBlocks.TEMPLATE_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Soul Sandstone Pillar
+	public static final Item TEMPLATE_PILLAR = register("blank_pillar", new BlockItem(CPlusBlocks.TEMPLATE_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item TEMPLATE_CORNER_PILLAR = register("blank_corner_pillar", new BlockItem(CPlusBlocks.TEMPLATE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Chiseled Soul Sandstone
+	public static final Item CHISELED_TEMPLATE = register("chiseled_blank", new BlockItem(CPlusBlocks.CHISELED_TEMPLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+
+	// Caved Soul Sandstone
+	public static final Item CARVED_TEMPLATE = register("carved_blank", new BlockItem(CPlusBlocks.CARVED_TEMPLATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));

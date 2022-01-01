@@ -1,0 +1,52 @@
+
+	public static final Block TEMPLATE = register("blank", new Block(Block.Settings.of(Material.TEMPLATE).strength(0.8F)));
+	public static final Block TEMPLATE_SLAB = register("blank_slab", new SlabBlock(Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_STAIRS = register("blank_stairs", new CPlusStairBlock(TEMPLATE.getDefaultState(), Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_WALL = register("blank_wall", new WallBlock(Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_GATE = register("blank_gate", new FenceGateBlock(Block.Settings.copy(TEMPLATE)));
+
+	public static final Block COBBLED_TEMPLATE = register("cobbled_blank", new Block(Block.Settings.copy(TEMPLATE)));
+	public static final Block COBBLED_TEMPLATE_SLAB = register("cobbled_blank_slab", new SlabBlock(Block.Settings.copy(TEMPLATE)));
+	public static final Block COBBLED_TEMPLATE_STAIRS = register("cobbled_blank_stairs", new CPlusStairBlock(TEMPLATE.getDefaultState(), Block.Settings.copy(TEMPLATE)));
+	public static final Block COBBLED_TEMPLATE_WALL = register("cobbled_blank_wall", new WallBlock(Block.Settings.copy(TEMPLATE)));
+	public static final Block COBBLED_TEMPLATE_GATE = register("cobbled_blank_gate", new FenceGateBlock(Block.Settings.copy(TEMPLATE)));
+
+	// Smooth
+	public static final Block SMOOTH_TEMPLATE = register("smooth_blank", new Block(Block.Settings.copy(TEMPLATE)));
+	public static final Block SMOOTH_TEMPLATE_SLAB = register("smooth_blank_slab", new SlabBlock(Block.Settings.copy(SMOOTH_TEMPLATE)));
+	public static final Block SMOOTH_TEMPLATE_STAIRS = register("smooth_blank_stairs", new CPlusStairBlock(SMOOTH_TEMPLATE.getDefaultState(), Block.Settings.copy(SMOOTH_TEMPLATE)));
+	public static final Block SMOOTH_TEMPLATE_WALL = register("smooth_blank_wall", new WallBlock(Block.Settings.copy(SMOOTH_TEMPLATE)));
+	public static final Block SMOOTH_TEMPLATE_GATE = register("smooth_blank_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_TEMPLATE)));
+
+	// Polished
+	public static final Block POLISHED_TEMPLATE = register("polished_blank", new Block(Block.Settings.copy(TEMPLATE)));
+	public static final Block POLISHED_TEMPLATE_SLAB = register("polished_blank_slab", new SlabBlock(Block.Settings.copy(POLISHED_TEMPLATE)));
+	public static final Block POLISHED_TEMPLATE_STAIRS = register("polished_blank_stairs", new CPlusStairBlock(POLISHED_TEMPLATE.getDefaultState(), Block.Settings.copy(POLISHED_TEMPLATE)));
+	public static final Block POLISHED_TEMPLATE_WALL = register("polished_blank_wall", new WallBlock(Block.Settings.copy(POLISHED_TEMPLATE)));
+	public static final Block POLISHED_TEMPLATE_GATE = register("polished_blank_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_TEMPLATE)));
+
+	// Bricks
+	public static final Block TEMPLATE_BRICKS = register("blank_bricks", new Block(Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_BRICK_SLAB = register("blank_brick_slab", new SlabBlock(Block.Settings.copy(TEMPLATE_BRICKS)));
+	public static final Block TEMPLATE_BRICK_STAIRS = register("blank_brick_stairs", new CPlusStairBlock(TEMPLATE_BRICKS.getDefaultState(), Block.Settings.copy(TEMPLATE_BRICKS)));
+	public static final Block TEMPLATE_BRICK_WALL = register("blank_brick_wall", new WallBlock(Block.Settings.copy(TEMPLATE_BRICKS)));
+	public static final Block TEMPLATE_BRICK_GATE = register("blank_brick_gate", new FenceGateBlock(Block.Settings.copy(TEMPLATE_BRICKS)));
+
+	// Cut
+	public static final Block CUT_TEMPLATE = register("cut_blank", new Block(Block.Settings.copy(TEMPLATE)));
+	public static final Block CUT_TEMPLATE_SLAB = register("cut_blank_slab", new SlabBlock(Block.Settings.copy(CUT_TEMPLATE)));
+	public static final Block CUT_TEMPLATE_STAIRS = register("cut_blank_stairs", new CPlusStairBlock(CUT_TEMPLATE.getDefaultState(), Block.Settings.copy(CUT_TEMPLATE)));
+	public static final Block CUT_TEMPLATE_WALL = register("cut_blank_wall", new WallBlock(Block.Settings.copy(CUT_TEMPLATE)));
+	public static final Block CUT_TEMPLATE_GATE = register("cut_blank_gate", new FenceGateBlock(Block.Settings.copy(CUT_TEMPLATE)));
+
+	//Tiles
+	public static final Block TEMPLATE_TILES = register("blank_tiles", new Block(Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_TILE_STAIRS = register("blank_tile_stairs", new CPlusStairBlock(TEMPLATE_TILES.getDefaultState(), Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_TILE_SLAB = register("blank_tile_slab", new SlabBlock(Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_TILE_WALL = register("blank_tile_wall", new WallBlock(Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_TILE_GATE = register("blank_tile_gate", new FenceGateBlock(Block.Settings.copy(TEMPLATE)));
+
+	public static final Block CARVED_TEMPLATE = register("carved_blank", new Block(Block.Settings.copy(TEMPLATE)));
+	public static final Block CHISELED_TEMPLATE = register("chiseled_blank", new Block(Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_PILLAR = register("blank_pillar", new PillarBlock(Block.Settings.copy(TEMPLATE)));
+	public static final Block TEMPLATE_CORNER_PILLAR = register("blank_corner_pillar", new Block(Block.Settings.copy(TEMPLATE)));

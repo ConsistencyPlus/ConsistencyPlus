@@ -9,7 +9,7 @@ IT CONTAINS:
 - RECIPES
 - TAGS (PASTE INTO FULL TAG)
 
-To you this, you'll need a plugin that lets you change mass filenames.  
+To use this, you'll need a plugin that lets you change mass filenames.  
 https://plugins.jetbrains.com/plugin/17063-regex-rename-files/versions
 
 

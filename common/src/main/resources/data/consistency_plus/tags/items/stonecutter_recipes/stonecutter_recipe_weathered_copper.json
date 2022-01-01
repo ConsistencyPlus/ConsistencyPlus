@@ -24,6 +24,8 @@
     "minecraft:weathered_cut_copper",
     "minecraft:weathered_cut_copper_slab",
     "minecraft:weathered_cut_copper_stairs",
+    "consistency_plus:weathered_copper_tile_wall",
+    "consistency_plus:weathered_copper_tile_gate",
     "consistency_plus:weathered_copper_pillar",
     "consistency_plus:weathered_copper_corner_pillar",
     "consistency_plus:weathered_chiseled_copper",

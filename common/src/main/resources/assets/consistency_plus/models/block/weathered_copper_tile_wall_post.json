@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/template_wall_post",
+    "textures": {
+        "wall": "minecraft:block/weathered_cut_copper"
+    }
+}

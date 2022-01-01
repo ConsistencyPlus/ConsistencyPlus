@@ -24,7 +24,9 @@
     "minecraft:waxed_exposed_cut_copper",
     "minecraft:waxed_exposed_cut_copper_slab",
     "minecraft:waxed_exposed_cut_copper_stairs",
-    "consistency_plus:waxed_exposed_copper_pillar",
+    "consistency_plus:waxed_exposed_copper_tile_wall",
+    "consistency_plus:waxed_exposed_copper_tile_gate",
+    "consistency_plus:waxed_cexposed_copper_pillar",
     "consistency_plus:waxed_exposed_copper_corner_pillar",
     "consistency_plus:waxed_exposed_chiseled_copper",
     "consistency_plus:waxed_exposed_carved_copper"

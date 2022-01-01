@@ -24,6 +24,8 @@
     "minecraft:cut_copper",
     "minecraft:cut_copper_slab",
     "minecraft:cut_copper_stairs",
+    "consistency_plus:copper_tile_wall",
+    "consistency_plus:copper_tile_gate",
     "consistency_plus:copper_pillar",
     "consistency_plus:copper_corner_pillar",
     "consistency_plus:chiseled_copper",

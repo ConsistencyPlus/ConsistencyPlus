@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:cut_copper"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:exposed_copper_tile_wall",
+        "count": 6
+    }
+}

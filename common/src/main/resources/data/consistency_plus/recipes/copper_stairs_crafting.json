@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:copper_block"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:copper_stairs",
+        "count": 4
+    }
+}

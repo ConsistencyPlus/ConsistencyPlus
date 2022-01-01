@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/polished_template_slab"
+    },
+    "type=double": {
+      "model": "consistency_plus:block/polished_template"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/polished_template_slab_top"
+    }
+  }
+}

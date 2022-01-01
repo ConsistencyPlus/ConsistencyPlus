@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/template_bricks",
+    "top": "consistency_plus:block/template_bricks",
+    "side": "consistency_plus:block/template_bricks"
+  }
+}

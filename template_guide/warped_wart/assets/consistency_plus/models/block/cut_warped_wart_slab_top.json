@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "top": "consistency_plus:block/cut_warped_wart",
+    "bottom": "consistency_plus:block/cut_warped_wart",
+    "side": "consistency_plus:block/cut_warped_wart"
+  }
+}

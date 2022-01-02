@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/polished_warped_wart",
+    "top": "consistency_plus:block/polished_warped_wart",
+    "side": "consistency_plus:block/polished_warped_wart"
+  }
+}

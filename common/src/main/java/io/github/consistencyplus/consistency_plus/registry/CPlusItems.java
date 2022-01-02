@@ -782,53 +782,54 @@ public class CPlusItems {
 
 
 	// Base
-	public static final Item NETHERRACK_SLAB = register("netherrack_slab", new BlockItem(CPlusBlocks.NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item NETHERRACK_STAIRS = register("netherrack_stairs", new BlockItem(CPlusBlocks.NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item NETHERRACK_WALL = register("netherrack_wall", new BlockItem(CPlusBlocks.NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item NETHERRACK_GATE = register("netherrack_gate", new BlockItem(CPlusBlocks.NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	public static final Item NETHERRACK_SLAB = register("netherrack_slab", new BlockItem(CPlusBlocks.NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERRACK_STAIRS = register("netherrack_stairs", new BlockItem(CPlusBlocks.NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERRACK_WALL = register("netherrack_wall", new BlockItem(CPlusBlocks.NETHERRACK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERRACK_GATE = register("netherrack_gate", new BlockItem(CPlusBlocks.NETHERRACK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-	// Cobbled Soul Sandstone
-	public static final Item COBBLED_NETHERRACK = register("cobbled_netherrack", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item COBBLED_NETHERRACK_SLAB = register("cobbled_netherrack_slab", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item COBBLED_NETHERRACK_STAIRS = register("cobbled_netherrack_stairs", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item COBBLED_NETHERRACK_WALL = register("cobbled_netherrack_wall", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item COBBLED_NETHERRACK_GATE = register("cobbled_netherrack_gate", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	// Cobbled
+	public static final Item COBBLED_NETHERRACK = register("cobbled_netherrack", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item COBBLED_NETHERRACK_SLAB = register("cobbled_netherrack_slab", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item COBBLED_NETHERRACK_STAIRS = register("cobbled_netherrack_stairs", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item COBBLED_NETHERRACK_WALL = register("cobbled_netherrack_wall", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item COBBLED_NETHERRACK_GATE = register("cobbled_netherrack_gate", new BlockItem(CPlusBlocks.COBBLED_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-	// Polished Soul Sandstone
-	public static final Item POLISHED_NETHERRACK = register("polished_netherrack", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item POLISHED_NETHERRACK_SLAB = register("polished_netherrack_slab", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item POLISHED_NETHERRACK_STAIRS = register("polished_netherrack_stairs", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item POLISHED_NETHERRACK_WALL = register("polished_netherrack_wall", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item POLISHED_NETHERRACK_GATE = register("polished_netherrack_gate", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	// Polished
+	public static final Item POLISHED_NETHERRACK = register("polished_netherrack", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_NETHERRACK_SLAB = register("polished_netherrack_slab", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_NETHERRACK_STAIRS = register("polished_netherrack_stairs", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_NETHERRACK_WALL = register("polished_netherrack_wall", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_NETHERRACK_GATE = register("polished_netherrack_gate", new BlockItem(CPlusBlocks.POLISHED_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-	// Smooth Soul Sandstone
-	public static final Item SMOOTH_NETHERRACK = register("smooth_netherrack", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item SMOOTH_NETHERRACK_SLAB = register("smooth_netherrack_slab", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item SMOOTH_NETHERRACK_STAIRS = register("smooth_netherrack_stairs", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item SMOOTH_NETHERRACK_WALL = register("smooth_netherrack_wall", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item SMOOTH_NETHERRACK_GATE = register("smooth_netherrack_gate", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	// Smooth
+	public static final Item SMOOTH_NETHERRACK = register("smooth_netherrack", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_NETHERRACK_SLAB = register("smooth_netherrack_slab", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_NETHERRACK_STAIRS = register("smooth_netherrack_stairs", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_NETHERRACK_WALL = register("smooth_netherrack_wall", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_NETHERRACK_GATE = register("smooth_netherrack_gate", new BlockItem(CPlusBlocks.SMOOTH_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 
-	// Cut Soul Sandstone
-	public static final Item CUT_NETHERRACK = register("cut_netherrack", new BlockItem(CPlusBlocks.CUT_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item CUT_NETHERRACK_SLAB = register("cut_netherrack_slab", new BlockItem(CPlusBlocks.CUT_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item CUT_NETHERRACK_STAIRS = register("cut_netherrack_stairs", new BlockItem(CPlusBlocks.CUT_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item CUT_NETHERRACK_WALL = register("cut_netherrack_wall", new BlockItem(CPlusBlocks.CUT_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item CUT_NETHERRACK_GATE = register("cut_netherrack_gate", new BlockItem(CPlusBlocks.CUT_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	// Cut
+	public static final Item CUT_NETHERRACK = register("cut_netherrack", new BlockItem(CPlusBlocks.CUT_NETHERRACK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_NETHERRACK_SLAB = register("cut_netherrack_slab", new BlockItem(CPlusBlocks.CUT_NETHERRACK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_NETHERRACK_STAIRS = register("cut_netherrack_stairs", new BlockItem(CPlusBlocks.CUT_NETHERRACK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_NETHERRACK_WALL = register("cut_netherrack_wall", new BlockItem(CPlusBlocks.CUT_NETHERRACK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_NETHERRACK_GATE = register("cut_netherrack_gate", new BlockItem(CPlusBlocks.CUT_NETHERRACK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-	// Soul Sandstone Tiles
-	public static final Item NETHERRACK_TILES = register("netherrack_tiles", new BlockItem(CPlusBlocks.NETHERRACK_TILES, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item NETHERRACK_TILE_SLAB = register("netherrack_tile_slab", new BlockItem(CPlusBlocks.NETHERRACK_TILE_SLAB, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item NETHERRACK_TILE_STAIRS = register("netherrack_tile_stairs", new BlockItem(CPlusBlocks.NETHERRACK_TILE_STAIRS, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item NETHERRACK_TILE_WALL = register("netherrack_tile_wall", new BlockItem(CPlusBlocks.NETHERRACK_TILE_WALL, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item NETHERRACK_TILE_GATE = register("netherrack_tile_gate", new BlockItem(CPlusBlocks.NETHERRACK_TILE_GATE, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	// Tiles
+	public static final Item NETHERRACK_TILES = register("netherrack_tiles", new BlockItem(CPlusBlocks.NETHERRACK_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERRACK_TILE_SLAB = register("netherrack_tile_slab", new BlockItem(CPlusBlocks.NETHERRACK_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERRACK_TILE_STAIRS = register("netherrack_tile_stairs", new BlockItem(CPlusBlocks.NETHERRACK_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERRACK_TILE_WALL = register("netherrack_tile_wall", new BlockItem(CPlusBlocks.NETHERRACK_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERRACK_TILE_GATE = register("netherrack_tile_gate", new BlockItem(CPlusBlocks.NETHERRACK_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-	// Soul Sandstone Pillar
-	public static final Item NETHERRACK_PILLAR = register("netherrack_pillar", new BlockItem(CPlusBlocks.NETHERRACK_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
-	public static final Item NETHERRACK_CORNER_PILLAR = register("netherrack_corner_pillar", new BlockItem(CPlusBlocks.NETHERRACK_CORNER_PILLAR, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	// Pillar
+	public static final Item NETHERRACK_PILLAR = register("netherrack_pillar", new BlockItem(CPlusBlocks.NETHERRACK_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item NETHERRACK_CORNER_PILLAR = register("netherrack_corner_pillar", new BlockItem(CPlusBlocks.NETHERRACK_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-	// Chiseled Soul Sandstone
-	public static final Item CHISELED_NETHERRACK = register("chiseled_netherrack", new BlockItem(CPlusBlocks.CHISELED_NETHERRACK, CPlusItemGroups.consistencyPlusStoneItemSettings()));
+	// Chiseled
+	public static final Item CHISELED_NETHERRACK = register("chiseled_netherrack", new BlockItem(CPlusBlocks.CHISELED_NETHERRACK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
 
 
 // SOUL SANDSTONE
@@ -950,7 +951,57 @@ public class CPlusItems {
 	// Caved Soul Sandstone
 	public static final Item CARVED_BASALT = register("carved_basalt", new BlockItem(CPlusBlocks.CARVED_BASALT, CPlusItemGroups.consistencyPlusStoneItemSettings()));
 
+// warped wart
+	// Base
+	public static final Item WARPED_WART_SLAB = register("warped_wart_slab", new BlockItem(CPlusBlocks.WARPED_WART_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_STAIRS = register("warped_wart_stairs", new BlockItem(CPlusBlocks.WARPED_WART_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_WALL = register("warped_wart_wall", new BlockItem(CPlusBlocks.WARPED_WART_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_GATE = register("warped_wart_gate", new BlockItem(CPlusBlocks.WARPED_WART_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
+	// Polished
+	public static final Item POLISHED_WARPED_WART = register("polished_warped_wart", new BlockItem(CPlusBlocks.POLISHED_WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_WARPED_WART_SLAB = register("polished_warped_wart_slab", new BlockItem(CPlusBlocks.POLISHED_WARPED_WART_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_WARPED_WART_STAIRS = register("polished_warped_wart_stairs", new BlockItem(CPlusBlocks.POLISHED_WARPED_WART_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_WARPED_WART_WALL = register("polished_warped_wart_wall", new BlockItem(CPlusBlocks.POLISHED_WARPED_WART_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_WARPED_WART_GATE = register("polished_warped_wart_gate", new BlockItem(CPlusBlocks.POLISHED_WARPED_WART_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Smooth
+	public static final Item SMOOTH_WARPED_WART = register("smooth_warped_wart", new BlockItem(CPlusBlocks.SMOOTH_WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_WARPED_WART_SLAB = register("smooth_warped_wart_slab", new BlockItem(CPlusBlocks.SMOOTH_WARPED_WART_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_WARPED_WART_STAIRS = register("smooth_warped_wart_stairs", new BlockItem(CPlusBlocks.SMOOTH_WARPED_WART_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_WARPED_WART_WALL = register("smooth_warped_wart_wall", new BlockItem(CPlusBlocks.SMOOTH_WARPED_WART_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_WARPED_WART_GATE = register("smooth_warped_wart_gate", new BlockItem(CPlusBlocks.SMOOTH_WARPED_WART_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Bricks
+	public static final Item WARPED_WART_BRICKS = register("warped_wart_bricks", new BlockItem(CPlusBlocks.WARPED_WART_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_BRICK_SLAB = register("warped_wart_brick_slab", new BlockItem(CPlusBlocks.WARPED_WART_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_BRICK_STAIRS = register("warped_wart_brick_stairs", new BlockItem(CPlusBlocks.WARPED_WART_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_BRICK_WALL = register("warped_wart_brick_wall", new BlockItem(CPlusBlocks.WARPED_WART_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_BRICK_GATE = register("warped_wart_brick_gate", new BlockItem(CPlusBlocks.WARPED_WART_BRICK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Cut
+	public static final Item CUT_WARPED_WART = register("cut_warped_wart", new BlockItem(CPlusBlocks.CUT_WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_WARPED_WART_SLAB = register("cut_warped_wart_slab", new BlockItem(CPlusBlocks.CUT_WARPED_WART_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_WARPED_WART_STAIRS = register("cut_warped_wart_stairs", new BlockItem(CPlusBlocks.CUT_WARPED_WART_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_WARPED_WART_WALL = register("cut_warped_wart_wall", new BlockItem(CPlusBlocks.CUT_WARPED_WART_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_WARPED_WART_GATE = register("cut_warped_wart_gate", new BlockItem(CPlusBlocks.CUT_WARPED_WART_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Tiles
+	public static final Item WARPED_WART_TILES = register("warped_wart_tiles", new BlockItem(CPlusBlocks.WARPED_WART_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_TILE_SLAB = register("warped_wart_tile_slab", new BlockItem(CPlusBlocks.WARPED_WART_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_TILE_STAIRS = register("warped_wart_tile_stairs", new BlockItem(CPlusBlocks.WARPED_WART_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_TILE_WALL = register("warped_wart_tile_wall", new BlockItem(CPlusBlocks.WARPED_WART_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_TILE_GATE = register("warped_wart_tile_gate", new BlockItem(CPlusBlocks.WARPED_WART_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	//  Pillar
+	public static final Item WARPED_WART_PILLAR = register("warped_wart_pillar", new BlockItem(CPlusBlocks.WARPED_WART_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WARPED_WART_CORNER_PILLAR = register("warped_wart_corner_pillar", new BlockItem(CPlusBlocks.WARPED_WART_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Chiseled
+	public static final Item CHISELED_WARPED_WART = register("chiseled_warped_wart", new BlockItem(CPlusBlocks.CHISELED_WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Caved
+	public static final Item CARVED_WARPED_WART = register("carved_warped_wart", new BlockItem(CPlusBlocks.CARVED_WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 
 // QUARTZ
@@ -4830,25 +4881,19 @@ public class CPlusItems {
 	public static final Item BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
 	// Cracked Warped Wart Bricks
 	public static final Item CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-	// Cut Warped Wart
-
-	// Warped Wart Tiles
-
 	// Warped Wart Pillar
 	public static final Item BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 	// Chiseled Warped Wart
 	public static final Item CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new BlockItem(CPlusBlocks.CHISELED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
-	// Carved Warted Wart
+	// Carved Warped Wart
 	public static final Item CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new BlockItem(CPlusBlocks.CARVED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 

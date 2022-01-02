@@ -1,6 +1,0 @@
-{
-  "parent": "consistency_plus:block/template_consistency_gate_wall",
-  "textures": {
-    "texture": "consistency_plus:block/smooth_warped_wart"
-  }
-}

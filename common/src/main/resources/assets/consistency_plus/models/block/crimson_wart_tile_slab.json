@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "top": "consistency_plus:block/crimson_wart_tiles",
+        "bottom": "consistency_plus:block/crimson_wart_tiles",
+        "side": "consistency_plus:block/crimson_wart_tiles"
+    }
+}

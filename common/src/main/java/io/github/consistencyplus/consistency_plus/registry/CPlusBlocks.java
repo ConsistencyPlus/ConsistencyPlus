@@ -589,6 +589,49 @@ public class CPlusBlocks {
 	public static final Block WARPED_WART_CORNER_PILLAR = register("warped_wart_corner_pillar", new Block(Block.Settings.copy(NETHER_BRICKS)));
 
 
+	// Crimson Wart
+	public static final Block CRIMSON_WART_SLAB = register("crimson_wart_slab", new SlabBlock(Block.Settings.copy(NETHER_WART_BLOCK)));
+	public static final Block CRIMSON_WART_STAIRS = register("crimson_wart_stairs", new CPlusStairBlock(NETHER_WART_BLOCK.getDefaultState(), Block.Settings.copy(NETHER_WART_BLOCK)));
+	public static final Block CRIMSON_WART_WALL = register("crimson_wart_wall", new WallBlock(Block.Settings.copy(NETHER_WART_BLOCK)));
+	public static final Block CRIMSON_WART_GATE = register("crimson_wart_gate", new FenceGateBlock(Block.Settings.copy(NETHER_WART_BLOCK)));
+
+	// Smooth
+	public static final Block SMOOTH_CRIMSON_WART = register("smooth_crimson_wart", new Block(Block.Settings.copy(NETHER_WART_BLOCK)));
+	public static final Block SMOOTH_CRIMSON_WART_SLAB = register("smooth_crimson_wart_slab", new SlabBlock(Block.Settings.copy(SMOOTH_CRIMSON_WART)));
+	public static final Block SMOOTH_CRIMSON_WART_STAIRS = register("smooth_crimson_wart_stairs", new CPlusStairBlock(SMOOTH_CRIMSON_WART.getDefaultState(), Block.Settings.copy(SMOOTH_CRIMSON_WART)));
+	public static final Block SMOOTH_CRIMSON_WART_WALL = register("smooth_crimson_wart_wall", new WallBlock(Block.Settings.copy(SMOOTH_CRIMSON_WART)));
+	public static final Block SMOOTH_CRIMSON_WART_GATE = register("smooth_crimson_wart_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_CRIMSON_WART)));
+
+	// Polished
+	public static final Block POLISHED_CRIMSON_WART = register("polished_crimson_wart", new Block(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block POLISHED_CRIMSON_WART_SLAB = register("polished_crimson_wart_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block POLISHED_CRIMSON_WART_STAIRS = register("polished_crimson_wart_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(POLISHED_CRIMSON_WART)));
+	public static final Block POLISHED_CRIMSON_WART_WALL = register("polished_crimson_wart_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block POLISHED_CRIMSON_WART_GATE = register("polished_crimson_wart_gate", new FenceGateBlock(Block.Settings.copy(NETHER_BRICKS)));
+
+	// Bricks
+	public static final Block CRIMSON_WART_BRICK_GATE = register("crimson_wart_brick_gate", new FenceGateBlock(Block.Settings.copy(NETHER_BRICKS)));
+
+	// Cut
+	public static final Block CUT_CRIMSON_WART = register("cut_crimson_wart", new Block(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CUT_CRIMSON_WART_SLAB = register("cut_crimson_wart_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CUT_CRIMSON_WART_STAIRS = register("cut_crimson_wart_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(CUT_CRIMSON_WART)));
+	public static final Block CUT_CRIMSON_WART_WALL = register("cut_crimson_wart_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CUT_CRIMSON_WART_GATE = register("cut_crimson_wart_gate", new FenceGateBlock(Block.Settings.copy(NETHER_BRICKS)));
+
+	//Tiles
+	public static final Block CRIMSON_WART_TILES = register("crimson_wart_tiles", new Block(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CRIMSON_WART_TILE_STAIRS = register("crimson_wart_tile_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_WART_BLOCK)));
+	public static final Block CRIMSON_WART_TILE_SLAB = register("crimson_wart_tile_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CRIMSON_WART_TILE_WALL = register("crimson_wart_tile_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CRIMSON_WART_TILE_GATE = register("crimson_wart_tile_gate", new FenceGateBlock(Block.Settings.copy(NETHER_BRICKS)));
+
+	public static final Block CARVED_CRIMSON_WART = register("carved_crimson_wart", new Block(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CHISELED_CRIMSON_WART = register("chiseled_crimson_wart", new Block(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CRIMSON_WART_PILLAR = register("crimson_wart_pillar", new PillarBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block CRIMSON_WART_CORNER_PILLAR = register("crimson_wart_corner_pillar", new Block(Block.Settings.copy(NETHER_BRICKS)));
+
+
 
 	//Prismarine
 	public static final Block PRISMARINE_GATE = register("prismarine_gate", new FenceGateBlock(Block.Settings.copy(PRISMARINE)));

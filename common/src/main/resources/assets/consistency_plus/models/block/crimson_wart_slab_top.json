@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "top": "minecraft:block/nether_wart_block",
+    "bottom": "minecraft:block/nether_wart_block",
+    "side": "minecraft:block/nether_wart_block"
+  }
+}

@@ -1004,6 +1004,57 @@ public class CPlusItems {
 	public static final Item CARVED_WARPED_WART = register("carved_warped_wart", new BlockItem(CPlusBlocks.CARVED_WARPED_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 
+	// crimson wart
+	// Base
+	public static final Item CRIMSON_WART_SLAB = register("crimson_wart_slab", new BlockItem(CPlusBlocks.CRIMSON_WART_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRIMSON_WART_STAIRS = register("crimson_wart_stairs", new BlockItem(CPlusBlocks.CRIMSON_WART_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRIMSON_WART_WALL = register("crimson_wart_wall", new BlockItem(CPlusBlocks.CRIMSON_WART_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRIMSON_WART_GATE = register("crimson_wart_gate", new BlockItem(CPlusBlocks.CRIMSON_WART_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Polished
+	public static final Item POLISHED_CRIMSON_WART = register("polished_crimson_wart", new BlockItem(CPlusBlocks.POLISHED_CRIMSON_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_CRIMSON_WART_SLAB = register("polished_crimson_wart_slab", new BlockItem(CPlusBlocks.POLISHED_CRIMSON_WART_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_CRIMSON_WART_STAIRS = register("polished_crimson_wart_stairs", new BlockItem(CPlusBlocks.POLISHED_CRIMSON_WART_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_CRIMSON_WART_WALL = register("polished_crimson_wart_wall", new BlockItem(CPlusBlocks.POLISHED_CRIMSON_WART_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_CRIMSON_WART_GATE = register("polished_crimson_wart_gate", new BlockItem(CPlusBlocks.POLISHED_CRIMSON_WART_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Smooth
+	public static final Item SMOOTH_CRIMSON_WART = register("smooth_crimson_wart", new BlockItem(CPlusBlocks.SMOOTH_CRIMSON_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_CRIMSON_WART_SLAB = register("smooth_crimson_wart_slab", new BlockItem(CPlusBlocks.SMOOTH_CRIMSON_WART_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_CRIMSON_WART_STAIRS = register("smooth_crimson_wart_stairs", new BlockItem(CPlusBlocks.SMOOTH_CRIMSON_WART_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_CRIMSON_WART_WALL = register("smooth_crimson_wart_wall", new BlockItem(CPlusBlocks.SMOOTH_CRIMSON_WART_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_CRIMSON_WART_GATE = register("smooth_crimson_wart_gate", new BlockItem(CPlusBlocks.SMOOTH_CRIMSON_WART_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Bricks
+	public static final Item CRIMSON_WART_BRICK_GATE = register("crimson_wart_brick_gate", new BlockItem(CPlusBlocks.CRIMSON_WART_BRICK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Cut
+	public static final Item CUT_CRIMSON_WART = register("cut_crimson_wart", new BlockItem(CPlusBlocks.CUT_CRIMSON_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_CRIMSON_WART_SLAB = register("cut_crimson_wart_slab", new BlockItem(CPlusBlocks.CUT_CRIMSON_WART_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_CRIMSON_WART_STAIRS = register("cut_crimson_wart_stairs", new BlockItem(CPlusBlocks.CUT_CRIMSON_WART_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_CRIMSON_WART_WALL = register("cut_crimson_wart_wall", new BlockItem(CPlusBlocks.CUT_CRIMSON_WART_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_CRIMSON_WART_GATE = register("cut_crimson_wart_gate", new BlockItem(CPlusBlocks.CUT_CRIMSON_WART_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Tiles
+	public static final Item CRIMSON_WART_TILES = register("crimson_wart_tiles", new BlockItem(CPlusBlocks.CRIMSON_WART_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRIMSON_WART_TILE_SLAB = register("crimson_wart_tile_slab", new BlockItem(CPlusBlocks.CRIMSON_WART_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRIMSON_WART_TILE_STAIRS = register("crimson_wart_tile_stairs", new BlockItem(CPlusBlocks.CRIMSON_WART_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRIMSON_WART_TILE_WALL = register("crimson_wart_tile_wall", new BlockItem(CPlusBlocks.CRIMSON_WART_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRIMSON_WART_TILE_GATE = register("crimson_wart_tile_gate", new BlockItem(CPlusBlocks.CRIMSON_WART_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	//  Pillar
+	public static final Item CRIMSON_WART_PILLAR = register("crimson_wart_pillar", new BlockItem(CPlusBlocks.CRIMSON_WART_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CRIMSON_WART_CORNER_PILLAR = register("crimson_wart_corner_pillar", new BlockItem(CPlusBlocks.CRIMSON_WART_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Chiseled
+	public static final Item CHISELED_CRIMSON_WART = register("chiseled_crimson_wart", new BlockItem(CPlusBlocks.CHISELED_CRIMSON_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Caved
+	public static final Item CARVED_CRIMSON_WART = register("carved_crimson_wart", new BlockItem(CPlusBlocks.CARVED_CRIMSON_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+
+
+
 // QUARTZ
 
 	// Base

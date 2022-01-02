@@ -268,4 +268,5 @@ public class CPlusCopperBlocks {
 	private static void finish() {
 		throw new RuntimeException("Architectury failed!");
 	}
+	//Jay what the fuck is this.
 }

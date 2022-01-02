@@ -508,8 +508,6 @@ public class CPlusBlocks {
 	public static final Block CRACKED_NETHER_BRICK_FENCE_GATE = register("cracked_nether_brick_fence_gate", new FenceGateBlock(Block.Settings.copy(NETHER_BRICKS)));
 
 	//Pillars and Chiseled
-	public static final Block CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block NETHER_BRICK_PILLAR = register("nether_brick_pillar", new PillarBlock(Block.Settings.copy(NETHER_BRICKS)));
 
 
 	//Red Nether Bricks
@@ -2832,6 +2830,9 @@ public class CPlusBlocks {
 	public static final Block CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new PillarBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
 	public static final Block CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
+
+	public static final Block CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block NETHER_BRICK_PILLAR = register("nether_brick_pillar", new PillarBlock(Block.Settings.copy(NETHER_BRICKS)));
 
 	// Siuol's selection regex syntax machine (?=")(.*)(?<=____")
 	// Per Thing regex selection machine (?=")(.*)(____.*)(?<=")

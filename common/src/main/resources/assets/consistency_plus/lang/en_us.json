@@ -58,8 +58,8 @@
   "block.consistency_plus.blackstone_brick_pillar": "Deprecated - Blackstone Brick Pillar [Place to fix]",
   "block.consistency_plus.mossy_blackstone_brick_pillar": "Deprecated - Mossy Blackstone Brick Pillar [Place to fix]",
   "block.consistency_plus.cracked_blackstone_brick_pillar": "Deprecated - Cracked Blackstone Brick Pillar [Place to fix]",
-
-
+  "block.consistency_plus.nether_brick_pillar": "Deprecated - Nether Brick Pillar [Place to Fix]",
+  "block.consistency_plus.chiseled_nether_bricks": "Deprecated - Chiseled Nether Bricks [Place to Fix]",
 
   "block.minecraft.purpur_block": "Purpur Tiles",
   "block.minecraft.purpur_slab": "Purpur Tile Slab",
@@ -2811,9 +2811,5 @@
   "block.consistency_plus.cracked_nether_brick_slab": "Cracked Netherrack Brick Slab",
   "block.consistency_plus.cracked_nether_brick_stairs": "Cracked Netherrack Brick Stairs",
   "block.consistency_plus.cracked_nether_brick_wall": "Cracked Netherrack Brick Wall",
-  "block.consistency_plus.cracked_nether_brick_fence_gate": "Cracked Netherrack Brick Gate",
-  "block.consistency_plus.nether_brick_pillar": "Nether Brick Pillar",
-  "block.consistency_plus.chiseled_nether_bricks": "Chiseled Nether Bricks"
-
-
+  "block.consistency_plus.cracked_nether_brick_fence_gate": "Cracked Netherrack Brick Gate"
 }

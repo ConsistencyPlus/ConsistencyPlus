@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import dev.architectury.registry.block.BlockProperties;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;

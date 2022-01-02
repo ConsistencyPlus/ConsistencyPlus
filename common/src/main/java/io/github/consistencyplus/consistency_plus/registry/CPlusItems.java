@@ -1019,13 +1019,6 @@ public class CPlusItems {
 
 	// Netherrack Tiles
 
-	// Netherrack Pillar
-	public static final Item NETHER_BRICK_PILLAR = register("nether_brick_pillar", new BlockItem(CPlusBlocks.NETHER_BRICK_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-	// Chiseled Netherrack
-	public static final Item CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new BlockItem(CPlusBlocks.CHISELED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-
 // CRIMSON WART
 
 	// Base
@@ -4824,8 +4817,15 @@ public class CPlusItems {
 	public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new RedirectedBlockItem(CPlusBlocks.POLISHED_PURPUR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.POLISHED_PURPUR_BLOCK));
 	public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new RedirectedBlockItem(CPlusBlocks.CHISELED_PURPUR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CHISELED_PURPUR_BLOCK));
 	public static final Item END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.END_STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.END_STONE_BRICK_PILLAR));
+	// Netherrack Pillar
+	public static final Item NETHER_BRICK_PILLAR = register("nether_brick_pillar", new RedirectedBlockItem(CPlusBlocks.NETHERRACK_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.NETHER_BRICK_PILLAR));
 
-	public static final Item BLUE_NETHER_BRICKS = register("blue_nether_bricks", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	// Chiseled Netherrack
+	public static final Item CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new RedirectedBlockItem(CPlusBlocks.CHISELED_NETHERRACK, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CHISELED_NETHER_BRICKS));
+
+
+
+	public static final Item DEPRECATED_BLUE_NETHER_BRICKS = register("blue_nether_bricks", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));

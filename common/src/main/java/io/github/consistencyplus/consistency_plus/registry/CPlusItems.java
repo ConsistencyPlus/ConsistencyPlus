@@ -4983,7 +4983,30 @@ public class CPlusItems {
 	// Random
 	public static final Item WARPED_WART = register("warped_wart", new AliasedBlockItem(CPlusBlocks.WARPED_WART, new Item.Settings().group(ItemGroup.MISC)));
 	public static final Item COPPER_NUGGET = register("copper_nugget", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item NETHERITE_NUGGET = register("netherite_nugget", new Item(new Item.Settings().group(ItemGroup.MISC)));
 	public static final Item NETHERITE_HORSE_ARMOR = register("netherite_horse_armor", new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
+
+//brickbrickbrickbrick
+	public static final Item RED_TERRACOTTA_BRICK = register("red_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item ORANGE_TERRACOTTA_BRICK = register("orange_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item YELLOW_TERRACOTTA_BRICK = register("yellow_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item LIME_TERRACOTTA_BRICK = register("lime_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item GREEN_TERRACOTTA_BRICK = register("green_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item BLUE_TERRACOTTA_BRICK = register("blue_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item CYAN_TERRACOTTA_BRICK = register("cyan_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item LIGHT_BLUE_TERRACOTTA_BRICK = register("light_blue_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item PURPLE_TERRACOTTA_BRICK = register("purple_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item MAGENTA_TERRACOTTA_BRICK = register("magenta_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item PINK_TERRACOTTA_BRICK = register("pink_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item WHITE_TERRACOTTA_BRICK = register("white_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item LIGHT_TERRACOTTA_GRAY_BRICK = register("light_gray_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item GRAY_TERRACOTTA_BRICK = register("gray_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item BLACK_TERRACOTTA_BRICK = register("black_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item BROWN_TERRACOTTA_BRICK = register("brown_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item CRIMSON_WART_BRICK = register("crimson_wart_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final Item WARPED_WART_BRICK = register("warped_wart_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));
+
+
 
 	// 🐢
 	public static final Item TURTLE_CHESTPLATE = register("turtle_chestplate", new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT)));

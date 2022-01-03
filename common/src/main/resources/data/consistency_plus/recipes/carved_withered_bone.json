@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " XX",
+        " XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:chiseled_withered_bone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:carved_withered_bone",
+        "count": 4
+    }
+}

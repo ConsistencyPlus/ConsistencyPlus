@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_bone",
+    "consistency_plus:smooth_bone_slab",
+    "consistency_plus:smooth_bone_stairs",
+    "consistency_plus:smooth_bone_wall",
+    "consistency_plus:smooth_bone_gate"
+  ]
+}

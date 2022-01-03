@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "XX ",
+        "XX "
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:withered_bone_block"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_withered_bone",
+        "count": 4
+    }
+}

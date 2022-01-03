@@ -1053,6 +1053,113 @@ public class CPlusItems {
 	public static final Item CARVED_CRIMSON_WART = register("carved_crimson_wart", new BlockItem(CPlusBlocks.CARVED_CRIMSON_WART, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 
 
+	// Base
+	public static final Item BONE_SLAB = register("bone_slab", new BlockItem(CPlusBlocks.BONE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_STAIRS = register("bone_stairs", new BlockItem(CPlusBlocks.BONE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_WALL = register("bone_wall", new BlockItem(CPlusBlocks.BONE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_GATE = register("bone_gate", new BlockItem(CPlusBlocks.BONE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Polished
+	public static final Item POLISHED_BONE = register("polished_bone", new BlockItem(CPlusBlocks.POLISHED_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_BONE_SLAB = register("polished_bone_slab", new BlockItem(CPlusBlocks.POLISHED_BONE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_BONE_STAIRS = register("polished_bone_stairs", new BlockItem(CPlusBlocks.POLISHED_BONE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_BONE_WALL = register("polished_bone_wall", new BlockItem(CPlusBlocks.POLISHED_BONE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_BONE_GATE = register("polished_bone_gate", new BlockItem(CPlusBlocks.POLISHED_BONE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Smooth
+	public static final Item SMOOTH_BONE = register("smooth_bone", new BlockItem(CPlusBlocks.SMOOTH_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_BONE_SLAB = register("smooth_bone_slab", new BlockItem(CPlusBlocks.SMOOTH_BONE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_BONE_STAIRS = register("smooth_bone_stairs", new BlockItem(CPlusBlocks.SMOOTH_BONE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_BONE_WALL = register("smooth_bone_wall", new BlockItem(CPlusBlocks.SMOOTH_BONE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_BONE_GATE = register("smooth_bone_gate", new BlockItem(CPlusBlocks.SMOOTH_BONE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Bricks
+	public static final Item BONE_BRICKS = register("bone_bricks", new BlockItem(CPlusBlocks.BONE_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_BRICK_SLAB = register("bone_brick_slab", new BlockItem(CPlusBlocks.BONE_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_BRICK_STAIRS = register("bone_brick_stairs", new BlockItem(CPlusBlocks.BONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_BRICK_WALL = register("bone_brick_wall", new BlockItem(CPlusBlocks.BONE_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_BRICK_GATE = register("bone_brick_gate", new BlockItem(CPlusBlocks.BONE_BRICK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Cut
+	public static final Item CUT_BONE = register("cut_bone", new BlockItem(CPlusBlocks.CUT_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_BONE_SLAB = register("cut_bone_slab", new BlockItem(CPlusBlocks.CUT_BONE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_BONE_STAIRS = register("cut_bone_stairs", new BlockItem(CPlusBlocks.CUT_BONE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_BONE_WALL = register("cut_bone_wall", new BlockItem(CPlusBlocks.CUT_BONE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_BONE_GATE = register("cut_bone_gate", new BlockItem(CPlusBlocks.CUT_BONE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	//Tiles
+	public static final Item BONE_TILES = register("bone_tiles", new BlockItem(CPlusBlocks.BONE_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_TILE_SLAB = register("bone_tile_slab", new BlockItem(CPlusBlocks.BONE_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_TILE_STAIRS = register("bone_tile_stairs", new BlockItem(CPlusBlocks.BONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_TILE_WALL = register("bone_tile_wall", new BlockItem(CPlusBlocks.BONE_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_TILE_GATE = register("bone_tile_gate", new BlockItem(CPlusBlocks.BONE_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	//  Pillar
+	public static final Item BONE_PILLAR = register("bone_pillar", new BlockItem(CPlusBlocks.BONE_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item BONE_CORNER_PILLAR = register("bone_corner_pillar", new BlockItem(CPlusBlocks.BONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Chiseled
+	public static final Item CHISELED_BONE = register("chiseled_bone", new BlockItem(CPlusBlocks.CHISELED_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Caved
+	public static final Item CARVED_BONE = register("carved_bone", new BlockItem(CPlusBlocks.CARVED_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+
+
+
+	// Base
+	public static final Item WITHERED_BONE_BLOCK = register("withered_bone_block", new BlockItem(CPlusBlocks.WITHERED_BONE_BLOCK, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_SLAB = register("withered_bone_slab", new BlockItem(CPlusBlocks.WITHERED_BONE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_STAIRS = register("withered_bone_stairs", new BlockItem(CPlusBlocks.WITHERED_BONE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_WALL = register("withered_bone_wall", new BlockItem(CPlusBlocks.WITHERED_BONE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_GATE = register("withered_bone_gate", new BlockItem(CPlusBlocks.WITHERED_BONE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Polished
+	public static final Item POLISHED_WITHERED_BONE = register("polished_withered_bone", new BlockItem(CPlusBlocks.POLISHED_WITHERED_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_WITHERED_BONE_SLAB = register("polished_withered_bone_slab", new BlockItem(CPlusBlocks.POLISHED_WITHERED_BONE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_WITHERED_BONE_STAIRS = register("polished_withered_bone_stairs", new BlockItem(CPlusBlocks.POLISHED_WITHERED_BONE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_WITHERED_BONE_WALL = register("polished_withered_bone_wall", new BlockItem(CPlusBlocks.POLISHED_WITHERED_BONE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item POLISHED_WITHERED_BONE_GATE = register("polished_withered_bone_gate", new BlockItem(CPlusBlocks.POLISHED_WITHERED_BONE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Smooth
+	public static final Item SMOOTH_WITHERED_BONE = register("smooth_withered_bone", new BlockItem(CPlusBlocks.SMOOTH_WITHERED_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_WITHERED_BONE_SLAB = register("smooth_withered_bone_slab", new BlockItem(CPlusBlocks.SMOOTH_WITHERED_BONE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_WITHERED_BONE_STAIRS = register("smooth_withered_bone_stairs", new BlockItem(CPlusBlocks.SMOOTH_WITHERED_BONE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_WITHERED_BONE_WALL = register("smooth_withered_bone_wall", new BlockItem(CPlusBlocks.SMOOTH_WITHERED_BONE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item SMOOTH_WITHERED_BONE_GATE = register("smooth_withered_bone_gate", new BlockItem(CPlusBlocks.SMOOTH_WITHERED_BONE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Bricks
+	public static final Item WITHERED_BONE_BRICKS = register("withered_bone_bricks", new BlockItem(CPlusBlocks.WITHERED_BONE_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_BRICK_SLAB = register("withered_bone_brick_slab", new BlockItem(CPlusBlocks.WITHERED_BONE_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_BRICK_STAIRS = register("withered_bone_brick_stairs", new BlockItem(CPlusBlocks.WITHERED_BONE_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_BRICK_WALL = register("withered_bone_brick_wall", new BlockItem(CPlusBlocks.WITHERED_BONE_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_BRICK_GATE = register("withered_bone_brick_gate", new BlockItem(CPlusBlocks.WITHERED_BONE_BRICK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Cut
+	public static final Item CUT_WITHERED_BONE = register("cut_withered_bone", new BlockItem(CPlusBlocks.CUT_WITHERED_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_WITHERED_BONE_SLAB = register("cut_withered_bone_slab", new BlockItem(CPlusBlocks.CUT_WITHERED_BONE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_WITHERED_BONE_STAIRS = register("cut_withered_bone_stairs", new BlockItem(CPlusBlocks.CUT_WITHERED_BONE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_WITHERED_BONE_WALL = register("cut_withered_bone_wall", new BlockItem(CPlusBlocks.CUT_WITHERED_BONE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item CUT_WITHERED_BONE_GATE = register("cut_withered_bone_gate", new BlockItem(CPlusBlocks.CUT_WITHERED_BONE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	//Tiles
+	public static final Item WITHERED_BONE_TILES = register("withered_bone_tiles", new BlockItem(CPlusBlocks.WITHERED_BONE_TILES, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_TILE_SLAB = register("withered_bone_tile_slab", new BlockItem(CPlusBlocks.WITHERED_BONE_TILE_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_TILE_STAIRS = register("withered_bone_tile_stairs", new BlockItem(CPlusBlocks.WITHERED_BONE_TILE_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_TILE_WALL = register("withered_bone_tile_wall", new BlockItem(CPlusBlocks.WITHERED_BONE_TILE_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_TILE_GATE = register("withered_bone_tile_gate", new BlockItem(CPlusBlocks.WITHERED_BONE_TILE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	//  Pillar
+	public static final Item WITHERED_BONE_PILLAR = register("withered_bone_pillar", new BlockItem(CPlusBlocks.WITHERED_BONE_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	public static final Item WITHERED_BONE_CORNER_PILLAR = register("withered_bone_corner_pillar", new BlockItem(CPlusBlocks.WITHERED_BONE_CORNER_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Chiseled
+	public static final Item CHISELED_WITHERED_BONE = register("chiseled_withered_bone", new BlockItem(CPlusBlocks.CHISELED_WITHERED_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+	// Caved
+	public static final Item CARVED_WITHERED_BONE = register("carved_withered_bone", new BlockItem(CPlusBlocks.CARVED_WITHERED_BONE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+
+
 
 
 // QUARTZ

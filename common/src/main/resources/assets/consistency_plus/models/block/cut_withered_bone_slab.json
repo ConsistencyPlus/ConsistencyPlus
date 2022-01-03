@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "top": "consistency_plus:block/cut_withered_bone",
+        "bottom": "consistency_plus:block/cut_withered_bone",
+        "side": "consistency_plus:block/cut_withered_bone"
+    }
+}

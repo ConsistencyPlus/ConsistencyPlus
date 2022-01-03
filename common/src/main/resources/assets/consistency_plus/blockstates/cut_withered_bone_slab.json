@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/cut_withered_bone_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/cut_withered_bone"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/cut_withered_bone_slab_top"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:bone_block"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:bone_wall",
+        "count": 6
+    }
+}

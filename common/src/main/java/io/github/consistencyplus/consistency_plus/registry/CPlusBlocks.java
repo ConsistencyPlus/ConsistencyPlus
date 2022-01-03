@@ -633,6 +633,106 @@ public class CPlusBlocks {
 
 
 
+	// Bone
+	public static final Block BONE_SLAB = register("bone_slab", new SlabBlock(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block BONE_STAIRS = register("bone_stairs", new CPlusStairBlock(BONE_BLOCK.getDefaultState(), Block.Settings.copy(BONE_BLOCK)));
+	public static final Block BONE_WALL = register("bone_wall", new WallBlock(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block BONE_GATE = register("bone_gate", new FenceGateBlock(Block.Settings.copy(BONE_BLOCK)));
+
+	// Smooth
+	public static final Block SMOOTH_BONE = register("smooth_bone", new Block(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block SMOOTH_BONE_SLAB = register("smooth_bone_slab", new SlabBlock(Block.Settings.copy(SMOOTH_BONE)));
+	public static final Block SMOOTH_BONE_STAIRS = register("smooth_bone_stairs", new CPlusStairBlock(SMOOTH_BONE.getDefaultState(), Block.Settings.copy(SMOOTH_BONE)));
+	public static final Block SMOOTH_BONE_WALL = register("smooth_bone_wall", new WallBlock(Block.Settings.copy(SMOOTH_BONE)));
+	public static final Block SMOOTH_BONE_GATE = register("smooth_bone_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_BONE)));
+
+	// Polished
+	public static final Block POLISHED_BONE = register("polished_bone", new Block(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block POLISHED_BONE_SLAB = register("polished_bone_slab", new SlabBlock(Block.Settings.copy(POLISHED_BONE)));
+	public static final Block POLISHED_BONE_STAIRS = register("polished_bone_stairs", new CPlusStairBlock(POLISHED_BONE.getDefaultState(), Block.Settings.copy(POLISHED_BONE)));
+	public static final Block POLISHED_BONE_WALL = register("polished_bone_wall", new WallBlock(Block.Settings.copy(POLISHED_BONE)));
+	public static final Block POLISHED_BONE_GATE = register("polished_bone_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_BONE)));
+
+	// Bricks
+	public static final Block BONE_BRICKS = register("bone_bricks", new Block(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block BONE_BRICK_SLAB = register("bone_brick_slab", new SlabBlock(Block.Settings.copy(BONE_BRICKS)));
+	public static final Block BONE_BRICK_STAIRS = register("bone_brick_stairs", new CPlusStairBlock(BONE_BRICKS.getDefaultState(), Block.Settings.copy(BONE_BRICKS)));
+	public static final Block BONE_BRICK_WALL = register("bone_brick_wall", new WallBlock(Block.Settings.copy(BONE_BRICKS)));
+	public static final Block BONE_BRICK_GATE = register("bone_brick_gate", new FenceGateBlock(Block.Settings.copy(BONE_BRICKS)));
+
+	// Cut
+	public static final Block CUT_BONE = register("cut_bone", new Block(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block CUT_BONE_SLAB = register("cut_bone_slab", new SlabBlock(Block.Settings.copy(CUT_BONE)));
+	public static final Block CUT_BONE_STAIRS = register("cut_bone_stairs", new CPlusStairBlock(CUT_BONE.getDefaultState(), Block.Settings.copy(CUT_BONE)));
+	public static final Block CUT_BONE_WALL = register("cut_bone_wall", new WallBlock(Block.Settings.copy(CUT_BONE)));
+	public static final Block CUT_BONE_GATE = register("cut_bone_gate", new FenceGateBlock(Block.Settings.copy(CUT_BONE)));
+
+	//Tiles
+	public static final Block BONE_TILES = register("bone_tiles", new Block(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block BONE_TILE_STAIRS = register("bone_tile_stairs", new CPlusStairBlock(BONE_TILES.getDefaultState(), Block.Settings.copy(BONE_TILES)));
+	public static final Block BONE_TILE_SLAB = register("bone_tile_slab", new SlabBlock(Block.Settings.copy(BONE_TILES)));
+	public static final Block BONE_TILE_WALL = register("bone_tile_wall", new WallBlock(Block.Settings.copy(BONE_TILES)));
+	public static final Block BONE_TILE_GATE = register("bone_tile_gate", new FenceGateBlock(Block.Settings.copy(BONE_TILES)));
+
+	public static final Block CARVED_BONE = register("carved_bone", new Block(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block CHISELED_BONE = register("chiseled_bone", new Block(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block BONE_PILLAR = register("bone_pillar", new PillarBlock(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block BONE_CORNER_PILLAR = register("bone_corner_pillar", new Block(Block.Settings.copy(BONE_BLOCK)));
+
+
+
+	// Withered Bone
+	public static final Block WITHERED_BONE_BLOCK = register("withered_bone_block", new PillarBlock(Block.Settings.copy(BONE_BLOCK)));
+	public static final Block WITHERED_BONE_SLAB = register("withered_bone_slab", new SlabBlock(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block WITHERED_BONE_STAIRS = register("withered_bone_stairs", new CPlusStairBlock(WITHERED_BONE_BLOCK.getDefaultState(), Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block WITHERED_BONE_WALL = register("withered_bone_wall", new WallBlock(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block WITHERED_BONE_GATE = register("withered_bone_gate", new FenceGateBlock(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+
+	// Smooth
+	public static final Block SMOOTH_WITHERED_BONE = register("smooth_withered_bone", new Block(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block SMOOTH_WITHERED_BONE_SLAB = register("smooth_withered_bone_slab", new SlabBlock(Block.Settings.copy(SMOOTH_WITHERED_BONE)));
+	public static final Block SMOOTH_WITHERED_BONE_STAIRS = register("smooth_withered_bone_stairs", new CPlusStairBlock(SMOOTH_WITHERED_BONE.getDefaultState(), Block.Settings.copy(SMOOTH_WITHERED_BONE)));
+	public static final Block SMOOTH_WITHERED_BONE_WALL = register("smooth_withered_bone_wall", new WallBlock(Block.Settings.copy(SMOOTH_WITHERED_BONE)));
+	public static final Block SMOOTH_WITHERED_BONE_GATE = register("smooth_withered_bone_gate", new FenceGateBlock(Block.Settings.copy(SMOOTH_WITHERED_BONE)));
+
+	// Polished
+	public static final Block POLISHED_WITHERED_BONE = register("polished_withered_bone", new Block(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block POLISHED_WITHERED_BONE_SLAB = register("polished_withered_bone_slab", new SlabBlock(Block.Settings.copy(POLISHED_WITHERED_BONE)));
+	public static final Block POLISHED_WITHERED_BONE_STAIRS = register("polished_withered_bone_stairs", new CPlusStairBlock(POLISHED_WITHERED_BONE.getDefaultState(), Block.Settings.copy(POLISHED_WITHERED_BONE)));
+	public static final Block POLISHED_WITHERED_BONE_WALL = register("polished_withered_bone_wall", new WallBlock(Block.Settings.copy(POLISHED_WITHERED_BONE)));
+	public static final Block POLISHED_WITHERED_BONE_GATE = register("polished_withered_bone_gate", new FenceGateBlock(Block.Settings.copy(POLISHED_WITHERED_BONE)));
+
+	// Bricks
+	public static final Block WITHERED_BONE_BRICKS = register("withered_bone_bricks", new Block(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block WITHERED_BONE_BRICK_SLAB = register("withered_bone_brick_slab", new SlabBlock(Block.Settings.copy(WITHERED_BONE_BRICKS)));
+	public static final Block WITHERED_BONE_BRICK_STAIRS = register("withered_bone_brick_stairs", new CPlusStairBlock(WITHERED_BONE_BRICKS.getDefaultState(), Block.Settings.copy(WITHERED_BONE_BRICKS)));
+	public static final Block WITHERED_BONE_BRICK_WALL = register("withered_bone_brick_wall", new WallBlock(Block.Settings.copy(WITHERED_BONE_BRICKS)));
+	public static final Block WITHERED_BONE_BRICK_GATE = register("withered_bone_brick_gate", new FenceGateBlock(Block.Settings.copy(WITHERED_BONE_BRICKS)));
+
+	// Cut
+	public static final Block CUT_WITHERED_BONE = register("cut_withered_bone", new Block(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block CUT_WITHERED_BONE_SLAB = register("cut_withered_bone_slab", new SlabBlock(Block.Settings.copy(CUT_WITHERED_BONE)));
+	public static final Block CUT_WITHERED_BONE_STAIRS = register("cut_withered_bone_stairs", new CPlusStairBlock(CUT_WITHERED_BONE.getDefaultState(), Block.Settings.copy(CUT_WITHERED_BONE)));
+	public static final Block CUT_WITHERED_BONE_WALL = register("cut_withered_bone_wall", new WallBlock(Block.Settings.copy(CUT_WITHERED_BONE)));
+	public static final Block CUT_WITHERED_BONE_GATE = register("cut_withered_bone_gate", new FenceGateBlock(Block.Settings.copy(CUT_WITHERED_BONE)));
+
+	//Tiles
+	public static final Block WITHERED_BONE_TILES = register("withered_bone_tiles", new Block(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block WITHERED_BONE_TILE_STAIRS = register("withered_bone_tile_stairs", new CPlusStairBlock(WITHERED_BONE_TILES.getDefaultState(), Block.Settings.copy(WITHERED_BONE_TILES)));
+	public static final Block WITHERED_BONE_TILE_SLAB = register("withered_bone_tile_slab", new SlabBlock(Block.Settings.copy(WITHERED_BONE_TILES)));
+	public static final Block WITHERED_BONE_TILE_WALL = register("withered_bone_tile_wall", new WallBlock(Block.Settings.copy(WITHERED_BONE_TILES)));
+	public static final Block WITHERED_BONE_TILE_GATE = register("withered_bone_tile_gate", new FenceGateBlock(Block.Settings.copy(WITHERED_BONE_TILES)));
+
+	public static final Block CARVED_WITHERED_BONE = register("carved_withered_bone", new Block(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block CHISELED_WITHERED_BONE = register("chiseled_withered_bone", new Block(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block WITHERED_BONE_PILLAR = register("withered_bone_pillar", new PillarBlock(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+	public static final Block WITHERED_BONE_CORNER_PILLAR = register("withered_bone_corner_pillar", new Block(Block.Settings.copy(WITHERED_BONE_BLOCK)));
+
+
+
+
+
+
 	//Prismarine
 	public static final Block PRISMARINE_GATE = register("prismarine_gate", new FenceGateBlock(Block.Settings.copy(PRISMARINE)));
 

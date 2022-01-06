@@ -4985,6 +4985,8 @@ public class CPlusItems {
 	public static final Item COPPER_NUGGET = register("copper_nugget", new Item(new Item.Settings().group(ItemGroup.MISC)));
 	public static final Item NETHERITE_NUGGET = register("netherite_nugget", new Item(new Item.Settings().group(ItemGroup.MISC)));
 	public static final Item NETHERITE_HORSE_ARMOR = register("netherite_horse_armor", new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
+	public static final Item WITHERED_BONE = register("withered_bone", new Item(new Item.Settings().group(ItemGroup.MISC)));
+
 
 //brickbrickbrickbrick
 	public static final Item RED_TERRACOTTA_BRICK = register("red_terracotta_brick", new Item(new Item.Settings().group(ItemGroup.MISC)));

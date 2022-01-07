@@ -31,7 +31,11 @@
   "item.minecraft.nether_brick": "Netherrack Brick",
   "item.consistency_plus.crimson_wart_brick": "Crimson Wart Brick",
   "item.consistency_plus.warped_wart_brick": "Warped Wart Brick",
+
   "item.consistency_plus.withered_bone": "Withered Bone",
+  "item.consistency_plus.withered_bone_meal": "Withered Bone Meal",
+  "item.consistency_plus.glow_ink_sac": "Glow Ink Sac",
+  "item.minecraft.glow_ink_sac": "Glow Dye",
 
 
   "item.minecraft.turtle_helmet": "Turtle Helmet",

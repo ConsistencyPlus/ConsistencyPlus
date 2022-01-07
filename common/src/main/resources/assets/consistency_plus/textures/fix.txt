@@ -1,4 +1,0 @@
-List of things to fix
-- Terracotta Palettes
-- Concrete Pillar shading
-- Tinted Glass colors

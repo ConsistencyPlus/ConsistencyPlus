@@ -2,55 +2,39 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "consistency_plus:blackstone_gate_crafting",
-      "consistency_plus:polished_blackstone_gate_crafting",
+
+      "consistency_plus:blackstone",
       "consistency_plus:blackstone_brick_gate_crafting",
-      "consistency_plus:cut_blackstone_crafting",
-      "consistency_plus:cut_blackstone_slab_crafting",
-      "consistency_plus:cut_blackstone_stairs_crafting",
-      "consistency_plus:cut_blackstone_wall_crafting",
-      "consistency_plus:cut_blackstone_gate_crafting",
+      "consistency_plus:blackstone_corner_pillar",
+      "consistency_plus:blackstone_crafting",
+      "consistency_plus:blackstone_gate_crafting",
+      "consistency_plus:blackstone_pillar_crafting",
       "consistency_plus:blackstone_tiles_crafting",
+      "consistency_plus:blackstone_tile_gate_crafting",
       "consistency_plus:blackstone_tile_slab_crafting",
       "consistency_plus:blackstone_tile_stairs_crafting",
       "consistency_plus:blackstone_tile_wall_crafting",
-      "consistency_plus:blackstone_tile_gate_crafting",
-      "consistency_plus:cut_blackstone_crafting",
-      "consistency_plus:cut_blackstone_slab_crafting",
-      "consistency_plus:cut_blackstone_stairs_crafting",
-      "consistency_plus:cut_blackstone_wall_crafting",
-      "consistency_plus:cut_blackstone_gate_crafting",
-      "consistency_plus:smooth_blackstone_slab_crafting",
-      "consistency_plus:smooth_blackstone_stairs_crafting",
-      "consistency_plus:smooth_blackstone_wall_crafting",
-      "consistency_plus:smooth_blackstone_gate_crafting",
-      "consistency_plus:smooth_blackstone",
-      "consistency_plus:smooth_blackstone_slab",
-      "consistency_plus:smooth_blackstone_stairs",
-      "consistency_plus:smooth_blackstone_wall",
-      "consistency_plus:smooth_blackstone_gate",
       "consistency_plus:chiseled_blackstone_crafting",
-      "consistency_plus:blackstone_pillar_crafting",
-      "consistency_plus:cracked_blackstone_brick_slab",
-      "consistency_plus:cracked_blackstone_brick_stairs",
-      "consistency_plus:cracked_blackstone_brick_wall",
-      "consistency_plus:cracked_blackstone_brick_gate",
-      "consistency_plus:cracked_blackstone_pillar",
-      "consistency_plus:cracked_chiseled_blackstone",
-      "consistency_plus:cracked_carved_blackstone",
-      "consistency_plus:mossify_polished_blackstone_bricks",
-      "consistency_plus:mossify_polished_blackstone_brick_slab",
-      "consistency_plus:mossify_polished_blackstone_brick_stairs",
-      "consistency_plus:mossify_polished_blackstone_brick_wall",
-      "consistency_plus:mossify_blackstone_brick_gate",
-      "consistency_plus:mossify_blackstone_pillar",
-      "consistency_plus:mossify_chiseled_blackstone",
-      "consistency_plus:mossify_chiseled_polished_blackstone",
-      "consistency_plus:cobbled_blackstone",
+      "consistency_plus:cobbled_blackstone_gate",
       "consistency_plus:cobbled_blackstone_slab",
       "consistency_plus:cobbled_blackstone_stairs",
       "consistency_plus:cobbled_blackstone_wall",
-      "consistency_plus:cobbled_blackstone_gate"
+      "consistency_plus:cut_blackstone_crafting",
+      "consistency_plus:cut_blackstone_gate_crafting",
+      "consistency_plus:cut_blackstone_slab_crafting",
+      "consistency_plus:cut_blackstone_stairs_crafting",
+      "consistency_plus:cut_blackstone_wall_crafting",
+      "consistency_plus:polished_blackstone_gate_crafting",
+      "consistency_plus:smooth_blackstone",
+      "consistency_plus:smooth_blackstone_gate",
+      "consistency_plus:smooth_blackstone_gate_crafting",
+      "consistency_plus:smooth_blackstone_slab",
+      "consistency_plus:smooth_blackstone_slab_crafting",
+      "consistency_plus:smooth_blackstone_stairs",
+      "consistency_plus:smooth_blackstone_stairs_crafting",
+      "consistency_plus:smooth_blackstone_wall",
+      "consistency_plus:smooth_blackstone_wall_crafting"
+
     ]
   },
   "criteria": {
@@ -59,7 +43,10 @@
       "conditions": {
         "items": [
           {
-            "items": ["consistency_plus:cobbled_blackstone"]
+            "items": [
+"consistency_plus:cobbled_blackstone",
+"minecraft:blackstone"
+]
           }
         ]
       }

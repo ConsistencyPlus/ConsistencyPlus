@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+
+      "consistency_plus:netherite_horse_armor_smithing",
+      "consistency_plus:netherite_ingot",
+      "consistency_plus:netherite_nugget",
+      "consistency_plus:netherite_nugget_blast_axe",
+      "consistency_plus:netherite_nugget_blast_boots",
+      "consistency_plus:netherite_nugget_blast_chestplate",
+      "consistency_plus:netherite_nugget_blast_helmet",
+      "consistency_plus:netherite_nugget_blast_hoe",
+      "consistency_plus:netherite_nugget_blast_horse_armor",
+      "consistency_plus:netherite_nugget_blast_leggings",
+      "consistency_plus:netherite_nugget_blast_pickaxe",
+      "consistency_plus:netherite_nugget_blast_shovel",
+      "consistency_plus:netherite_nugget_blast_sword",
+      "consistency_plus:netherite_nugget_smelt_axe",
+      "consistency_plus:netherite_nugget_smelt_boots",
+      "consistency_plus:netherite_nugget_smelt_chestplate",
+      "consistency_plus:netherite_nugget_smelt_helmet",
+      "consistency_plus:netherite_nugget_smelt_hoe",
+      "consistency_plus:netherite_nugget_smelt_horse_armor",
+      "consistency_plus:netherite_nugget_smelt_leggings",
+      "consistency_plus:netherite_nugget_smelt_pickaxe",
+      "consistency_plus:netherite_nugget_smelt_shovel",
+      "consistency_plus:netherite_nugget_smelt_sword"
+
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:netherite_ingot"]
+          }
+        ]
+      }
+    }
+  }
+}

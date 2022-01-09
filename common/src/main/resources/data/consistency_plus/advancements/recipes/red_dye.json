@@ -2,8 +2,12 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "consistency_plus:cobblestone_gate_crafting",
-      "consistency_plus:mossify_cobblestone_gate"
+ 
+ 
+     "consistency_plus:red_dye1",
+     "consistency_plus:red_dye2"
+
+
     ]
   },
   "criteria": {
@@ -12,7 +16,10 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:cobblestone"]
+            "items": [
+"consistency_plus:warped_wart",
+"minecraft:redstone"
+]
           }
         ]
       }

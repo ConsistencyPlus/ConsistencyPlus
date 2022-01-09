@@ -2,35 +2,40 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "consistency_plus:sandstone_gate_crafting",
-      "consistency_plus:polished_sandstone_crafting",
-      "consistency_plus:polished_sandstone_slab_crafting",
-      "consistency_plus:polished_sandstone_stairs_crafting",
-      "consistency_plus:polished_sandstone_wall_crafting",
-      "consistency_plus:polished_sandstone_gate_crafting",
-      "consistency_plus:sandstone_bricks_crafting",
-      "consistency_plus:sandstone_brick_slab_crafting",
-      "consistency_plus:sandstone_brick_stairs_crafting",
-      "consistency_plus:sandstone_brick_wall_crafting",
-      "consistency_plus:sandstone_brick_gate_crafting",
-      "consistency_plus:cut_sandstone_stairs_crafting",
-      "consistency_plus:cut_sandstone_wall_crafting",
-      "consistency_plus:cut_sandstone_gate_crafting",
-      "consistency_plus:sandstone_tiles_crafting",
-      "consistency_plus:sandstone_tile_slab_crafting",
-      "consistency_plus:sandstone_tile_stairs_crafting",
-      "consistency_plus:sandstone_tile_wall_crafting",
-      "consistency_plus:sandstone_tile_gate_crafting",
-      "consistency_plus:smooth_sandstone_wall_crafting",
-      "consistency_plus:smooth_sandstone_gate_crafting",
-      "consistency_plus:sandstone_pillar_crafting",
+
       "consistency_plus:chiseled_sandstone_crafting",
-      "consistency_plus:cobbled_sandstone",
+      "consistency_plus:cobbled_sandstone_gate",
       "consistency_plus:cobbled_sandstone_slab",
       "consistency_plus:cobbled_sandstone_stairs",
       "consistency_plus:cobbled_sandstone_wall",
-      "consistency_plus:cobbled_sandstone_gate",
-      "consistency_plus:sandstone_crafting"
+      "consistency_plus:cut_sandstone_gate_crafting",
+      "consistency_plus:cut_sandstone_stairs_crafting",
+      "consistency_plus:cut_sandstone_wall_crafting",
+      "consistency_plus:polished_sandstone_crafting",
+      "consistency_plus:polished_sandstone_gate_crafting",
+      "consistency_plus:polished_sandstone_slab_crafting",
+      "consistency_plus:polished_sandstone_stairs_crafting",
+      "consistency_plus:polished_sandstone_wall_crafting",
+      "consistency_plus:sandstone",
+      "consistency_plus:sandstone_bricks_crafting",
+      "consistency_plus:sandstone_brick_gate_crafting",
+      "consistency_plus:sandstone_brick_slab_crafting",
+      "consistency_plus:sandstone_brick_stairs_crafting",
+      "consistency_plus:sandstone_brick_wall_crafting",
+      "consistency_plus:sandstone_corner_pillar",
+      "consistency_plus:sandstone_crafting",
+      "consistency_plus:sandstone_gate_crafting",
+      "consistency_plus:sandstone_pillar_crafting",
+      "consistency_plus:sandstone_tiles_crafting",
+      "consistency_plus:sandstone_tile_gate_crafting",
+      "consistency_plus:sandstone_tile_slab_crafting",
+      "consistency_plus:sandstone_tile_stairs_crafting",
+      "consistency_plus:sandstone_tile_wall_crafting",
+      "consistency_plus:smooth_sandstone_gate",
+      "consistency_plus:smooth_sandstone_gate_crafting",
+      "consistency_plus:smooth_sandstone_wall",
+      "consistency_plus:smooth_sandstone_wall_crafting"
+
     ]
   },
   "criteria": {
@@ -39,7 +44,10 @@
       "conditions": {
         "items": [
           {
-            "items": ["consistency_plus:cobbled_sandstone"]
+            "items": [
+"consistency_plus:cobbled_sandstone",
+"minecraft:sandstone"
+]
           }
         ]
       }

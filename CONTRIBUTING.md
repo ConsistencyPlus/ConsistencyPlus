@@ -2,10 +2,10 @@
 
 Contributing, for the purposes of this, can include a lot of things. So that's what this page is here for. 
 
-Our team has many different roles, such as developers, translators, artists, and other general contributors.
-The best way to get into contact with us is to talk to us on Discord.  You can either message us directly (Carter - `Cart3r#7285` and/or Siuol - `"Siuol" Appeared#5729` ), or you can join our [Discord server](https://discord.gg/VeNX7h8bAK).
+Our team has many roles, such as developers, translators, and artists.
+The best way to get into contact with us is to talk to us on Discord.  You can either message one of the project leads directly (Carter - `Cart3r#7285`, Siuol - `"Siuol" Appeared#5729`, and TropheusJay - `Tropheus Jay#7241` ), or you can join our [Discord server](https://discord.gg/VeNX7h8bAK).
 
-Of course, any contributions will be credited.  We still have a few names to add before our credits are up to date, but anyone who has made contributions will be included.
+Of course, any contributions will be credited.  We try and keep our credits up to date to include all who have contributed, but if we missed anyone please let us know!
 
 ### Code Contributors/Developers
 
@@ -15,7 +15,7 @@ We also have a role for notable developers in the modding community who haven't 
 
 ### Texture Artists
 
-While we already have a decent number of people doing the textures for Consistency+, if you wish to contribute assets then feel free to share them with us.  If you have textures for blocks we have planned but not added yet, or improvements to textures already in the mod, they may be added in our next update if our team likes them and they fit in with our other assets.
+Similar to the development roles, there are two artist roles - Texture Artist, and Asset Contributor.  Asset Contributors are people who have contributed a small amount of textures, usually as a one-time thing, whereas Texture Artists are people who wish to continue working with us and helping with texture creation.
 
 ### Translators
 

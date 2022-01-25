@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import dev.architectury.hooks.tags.TagHooks;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
@@ -15,15 +16,14 @@ import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumSlabBl
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumStairsBlock;
 import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumWallBlock;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
-import io.github.consistencyplus.consistency_plus.blocks.obsidian.ObsidianBlock;
-import io.github.consistencyplus.consistency_plus.blocks.obsidian.ObsidianPillarBlock;
-import io.github.consistencyplus.consistency_plus.blocks.obsidian.ObsidianSlabBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusCarvedPumpkinBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
@@ -35,6 +35,8 @@ import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
+	public static final Tag.Identified<Block> VALID_PORTAL_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_portal_blocks"));
+	
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
 
 	
@@ -1078,7 +1080,7 @@ public class CPlusBlocks {
 
 
 	//Obsidian
-	public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new ObsidianSlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_SLAB = register("obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block OBSIDIAN_STAIRS = register("obsidian_stairs", new CPlusStairBlock(OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block OBSIDIAN_WALL = register("obsidian_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
 	public static final Block OBSIDIAN_GATE = register("obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
@@ -1088,8 +1090,8 @@ public class CPlusBlocks {
 	public static final Block CRYING_OBSIDIAN_WALL = register("crying_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block CRYING_OBSIDIAN_GATE = register("crying_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block SMOOTH_OBSIDIAN = register("smooth_obsidian", new ObsidianBlock(CPlusSharedBlockSettings.obsidian()));
-	public static final Block SMOOTH_OBSIDIAN_SLAB = register("smooth_obsidian_slab", new ObsidianSlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block SMOOTH_OBSIDIAN = register("smooth_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block SMOOTH_OBSIDIAN_SLAB = register("smooth_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block SMOOTH_OBSIDIAN_STAIRS = register("smooth_obsidian_stairs", new CPlusStairBlock(SMOOTH_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block SMOOTH_OBSIDIAN_WALL = register("smooth_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
 	public static final Block SMOOTH_OBSIDIAN_GATE = register("smooth_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
@@ -1100,8 +1102,8 @@ public class CPlusBlocks {
 	public static final Block SMOOTH_CRYING_OBSIDIAN_WALL = register("smooth_crying_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block SMOOTH_CRYING_OBSIDIAN_GATE = register("smooth_crying_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block POLISHED_OBSIDIAN = register("polished_obsidian", new ObsidianBlock(CPlusSharedBlockSettings.obsidian()));
-	public static final Block POLISHED_OBSIDIAN_SLAB = register("polished_obsidian_slab", new ObsidianSlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block POLISHED_OBSIDIAN = register("polished_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block POLISHED_OBSIDIAN_SLAB = register("polished_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block POLISHED_OBSIDIAN_STAIRS = register("polished_obsidian_stairs", new CPlusStairBlock(POLISHED_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block POLISHED_OBSIDIAN_WALL = register("polished_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
 	public static final Block POLISHED_OBSIDIAN_GATE = register("polished_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
@@ -1112,8 +1114,8 @@ public class CPlusBlocks {
 	public static final Block POLISHED_CRYING_OBSIDIAN_WALL = register("polished_crying_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block POLISHED_CRYING_OBSIDIAN_GATE = register("polished_crying_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block OBSIDIAN_BRICKS = register("obsidian_bricks", new ObsidianBlock(CPlusSharedBlockSettings.obsidian()));
-	public static final Block OBSIDIAN_BRICK_SLAB = register("obsidian_brick_slab", new ObsidianSlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_BRICKS = register("obsidian_bricks", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_BRICK_SLAB = register("obsidian_brick_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block OBSIDIAN_BRICK_STAIRS = register("obsidian_brick_stairs", new CPlusStairBlock(OBSIDIAN_BRICKS.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block OBSIDIAN_BRICK_WALL = register("obsidian_brick_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
 	public static final Block OBSIDIAN_BRICK_GATE = register("obsidian_brick_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
@@ -1124,8 +1126,8 @@ public class CPlusBlocks {
 	public static final Block CRYING_OBSIDIAN_BRICK_WALL = register("crying_obsidian_brick_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block CRYING_OBSIDIAN_BRICK_GATE = register("crying_obsidian_brick_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block CUT_OBSIDIAN = register("cut_obsidian", new ObsidianBlock(CPlusSharedBlockSettings.obsidian()));
-	public static final Block CUT_OBSIDIAN_SLAB = register("cut_obsidian_slab", new ObsidianSlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block CUT_OBSIDIAN = register("cut_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block CUT_OBSIDIAN_SLAB = register("cut_obsidian_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block CUT_OBSIDIAN_STAIRS = register("cut_obsidian_stairs", new CPlusStairBlock(CUT_OBSIDIAN.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block CUT_OBSIDIAN_WALL = register("cut_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
 	public static final Block CUT_OBSIDIAN_GATE = register("cut_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
@@ -1136,8 +1138,8 @@ public class CPlusBlocks {
 	public static final Block CUT_CRYING_OBSIDIAN_WALL = register("cut_crying_obsidian_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block CUT_CRYING_OBSIDIAN_GATE = register("cut_crying_obsidian_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block OBSIDIAN_TILES = register("obsidian_tiles", new ObsidianBlock(CPlusSharedBlockSettings.obsidian()));
-	public static final Block OBSIDIAN_TILE_SLAB = register("obsidian_tile_slab", new ObsidianSlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
+	public static final Block OBSIDIAN_TILES = register("obsidian_tiles", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_TILE_SLAB = register("obsidian_tile_slab", new SlabBlock(CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block OBSIDIAN_TILE_STAIRS = register("obsidian_tile_stairs", new CPlusStairBlock(OBSIDIAN_TILES.getDefaultState(), CPlusSharedBlockSettings.obsidian().nonOpaque()));
 	public static final Block OBSIDIAN_TILE_WALL = register("obsidian_tile_wall", new WallBlock(CPlusSharedBlockSettings.obsidian()));
 	public static final Block OBSIDIAN_TILE_GATE = register("obsidian_tile_gate", new FenceGateBlock(CPlusSharedBlockSettings.obsidian()));
@@ -1148,10 +1150,10 @@ public class CPlusBlocks {
 	public static final Block CRYING_OBSIDIAN_TILE_WALL = register("crying_obsidian_tile_wall", new WallBlock(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block CRYING_OBSIDIAN_TILE_GATE = register("crying_obsidian_tile_gate", new FenceGateBlock(CPlusSharedBlockSettings.cryingObsidian()));
 
-	public static final Block OBSIDIAN_PILLAR = register("obsidian_pillar", new ObsidianPillarBlock(CPlusSharedBlockSettings.obsidian()));
-	public static final Block OBSIDIAN_CORNER_PILLAR = register("obsidian_corner_pillar", new ObsidianBlock(CPlusSharedBlockSettings.obsidian()));
-	public static final Block CHISELED_OBSIDIAN = register("chiseled_obsidian", new ObsidianBlock(CPlusSharedBlockSettings.obsidian()));
-	public static final Block CARVED_OBSIDIAN = register("carved_obsidian", new ObsidianBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_PILLAR = register("obsidian_pillar", new PillarBlock(CPlusSharedBlockSettings.obsidian()));
+	public static final Block OBSIDIAN_CORNER_PILLAR = register("obsidian_corner_pillar", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block CHISELED_OBSIDIAN = register("chiseled_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
+	public static final Block CARVED_OBSIDIAN = register("carved_obsidian", new Block(CPlusSharedBlockSettings.obsidian()));
 
 	public static final Block CRYING_OBSIDIAN_PILLAR = register("crying_obsidian_pillar", new PillarBlock(CPlusSharedBlockSettings.cryingObsidian()));
 	public static final Block CRYING_OBSIDIAN_CORNER_PILLAR = register("crying_obsidian_corner_pillar", new Block(CPlusSharedBlockSettings.cryingObsidian()));
@@ -3047,5 +3049,15 @@ public class CPlusBlocks {
 	
 	public static void register() {
 		BLOCKS.register();
+	}
+	
+	public static boolean isValidPortalBlock(BlockState state) {
+		if (VALID_PORTAL_BLOCKS.contains(state.getBlock())) {
+			if (state.contains(SlabBlock.TYPE)) {
+				return state.get(SlabBlock.TYPE) == SlabType.DOUBLE;
+			}
+			return true;
+		}
+		return false;
 	}
 }

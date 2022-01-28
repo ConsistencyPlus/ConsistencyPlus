@@ -14,9 +14,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class ArmorFeatureRendererMixin {
 	@Inject(at = @At("HEAD"), method = "getArmorTexture(Lnet/minecraft/item/ArmorItem;ZLjava/lang/String;)Lnet/minecraft/util/Identifier;", cancellable = true)
 	private void cPlus$getTurtleArmorTexture(ArmorItem item, boolean legs, @Nullable String overlay, CallbackInfoReturnable<Identifier> cir) {
-		if (item.equals(CPlusItems.TURTLE_BOOTS.get()) ||
-				item.equals(CPlusItems.TURTLE_LEGGINGS.get()) ||
-				item.equals(CPlusItems.TURTLE_CHESTPLATE.get())) {
+		if (item.equals(CPlusItems.TURTLE_BOOTS) ||
+				item.equals(CPlusItems.TURTLE_LEGGINGS) ||
+				item.equals(CPlusItems.TURTLE_CHESTPLATE)) {
 			String texturePath = "textures/models/armor/" +
 					item.getMaterial().getName() +
 					"_layer_" +

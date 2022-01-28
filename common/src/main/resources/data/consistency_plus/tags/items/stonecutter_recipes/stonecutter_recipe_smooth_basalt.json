@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:smooth_basalt",
+    "consistency_plus:smooth_basalt_slab",
+    "consistency_plus:smooth_basalt_stairs",
+    "consistency_plus:smooth_basalt_wall",
+    "consistency_plus:smooth_basalt_gate"
+  ]
+}

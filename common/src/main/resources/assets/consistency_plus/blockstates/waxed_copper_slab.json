@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/copper_slab"
+        },
+        "type=double": {
+            "model": "minecraft:block/copper_block"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/copper_slab_top"
+        }
+    }
+}

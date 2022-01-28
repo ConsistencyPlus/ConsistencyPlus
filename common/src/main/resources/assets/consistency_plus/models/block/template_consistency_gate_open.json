@@ -1,287 +1,59 @@
 {
-  "textures": {
-    "particle": "#texture"
-  },
-  "elements": [
-    {
-      "__comment": "Left-hand post",
-      "from": [
-        0,
-        0,
-        6
-      ],
-      "to": [
-        4,
-        14,
-        10
-      ],
-      "faces": {
-        "down": {
-          "uv": [
-            0,
-            6,
-            4,
-            10
-          ],
-          "texture": "#texture"
-        },
-        "up": {
-          "uv": [
-            0,
-            6,
-            4,
-            10
-          ],
-          "texture": "#texture"
-        },
-        "north": {
-          "uv": [
-            12,
-            2,
-            16,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "south": {
-          "uv": [
-            0,
-            2,
-            4,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "west": {
-          "uv": [
-            6,
-            2,
-            10,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "east": {
-          "uv": [
-            6,
-            2,
-            10,
-            16
-          ],
-          "texture": "#texture"
-        }
-      }
-    },
-    {
-      "__comment": "Right-hand post",
-      "from": [
-        12,
-        0,
-        6
-      ],
-      "to": [
-        16,
-        14,
-        10
-      ],
-      "faces": {
-        "down": {
-          "uv": [
-            12,
-            6,
-            16,
-            10
-          ],
-          "texture": "#texture"
-        },
-        "up": {
-          "uv": [
-            12,
-            6,
-            16,
-            10
-          ],
-          "texture": "#texture"
-        },
-        "north": {
-          "uv": [
-            0,
-            2,
-            4,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "south": {
-          "uv": [
-            12,
-            2,
-            16,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "west": {
-          "uv": [
-            6,
-            2,
-            10,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "east": {
-          "uv": [
-            6,
-            2,
-            10,
-            16
-          ],
-          "texture": "#texture"
-        }
-      }
-    },
-    {
-      "__comment": "Left Half",
-      "from": [
-        1,
-        0,
-        10
-      ],
-      "to": [
-        3,
-        12,
-        14
-      ],
-      "faces": {
-        "down": {
-          "uv": [
-            4,
-            7,
-            8,
-            9
-          ],
-          "texture": "#texture",
-          "rotation": 90
-        },
-        "up": {
-          "uv": [
-            4,
-            7,
-            8,
-            9
-          ],
-          "texture": "#texture",
-          "rotation": 270
-        },
-        "west": {
-          "uv": [
-            4,
-            4,
-            8,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "east": {
-          "uv": [
-            8,
-            4,
-            12,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "north": {
-          "uv": [
-            0,
-            4,
-            2,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "south": {
-          "uv": [
-            0,
-            4,
-            2,
-            16
-          ],
-          "texture": "#texture"
-        }
-      }
-    },
-    {
-      "__comment": "Right half",
-      "from": [
-        13,
-        0,
-        10
-      ],
-      "to": [
-        15,
-        12,
-        14
-      ],
-      "faces": {
-        "down": {
-          "uv": [
-            8,
-            7,
-            12,
-            9
-          ],
-          "texture": "#texture",
-          "rotation": 90
-        },
-        "up": {
-          "uv": [
-            8,
-            7,
-            12,
-            9
-          ],
-          "texture": "#texture",
-          "rotation": 270
-        },
-        "west": {
-          "uv": [
-            8,
-            4,
-            12,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "east": {
-          "uv": [
-            4,
-            4,
-            8,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "north": {
-          "uv": [
-            14,
-            4,
-            16,
-            16
-          ],
-          "texture": "#texture"
-        },
-        "south": {
-          "uv": [
-            14,
-            4,
-            16,
-            16
-          ],
-          "texture": "#texture"
-        }
-      }
-    }
-  ]
+	"textures": {
+		"particle": "#texture"
+	},
+	"elements": [
+		{
+			"name": "Left-hand post",
+			"from": [0, 0, 6],
+			"to": [4, 14, 10],
+			"faces": {
+				"north": {"uv": [12, 2, 16, 16], "texture": "#texture"},
+				"east": {"uv": [6, 2, 10, 16], "texture": "#texture"},
+				"south": {"uv": [0, 2, 4, 16], "texture": "#texture"},
+				"west": {"uv": [6, 2, 10, 16], "texture": "#texture"},
+				"up": {"uv": [0, 6, 4, 10], "texture": "#texture"},
+				"down": {"uv": [0, 6, 4, 10], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Right-hand post",
+			"from": [12, 0, 6],
+			"to": [16, 14, 10],
+			"faces": {
+				"north": {"uv": [0, 2, 4, 16], "texture": "#texture"},
+				"east": {"uv": [6, 2, 10, 16], "texture": "#texture"},
+				"south": {"uv": [12, 2, 16, 16], "texture": "#texture"},
+				"west": {"uv": [6, 2, 10, 16], "texture": "#texture"},
+				"up": {"uv": [12, 6, 16, 10], "texture": "#texture"},
+				"down": {"uv": [12, 6, 16, 10], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Left Half",
+			"from": [1, 0, 10],
+			"to": [3, 12, 14],
+			"faces": {
+				"north": {"uv": [16, 16, 16, 16], "texture": "#texture"},
+				"east": {"uv": [8, 4, 12, 16], "texture": "#texture"},
+				"south": {"uv": [1, 4, 3, 16], "texture": "#texture"},
+				"west": {"uv": [4, 4, 8, 16], "texture": "#texture"},
+				"up": {"uv": [4, 7, 8, 9], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [4, 7, 8, 9], "rotation": 90, "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Right half",
+			"from": [13, 0, 10],
+			"to": [15, 12, 14],
+			"faces": {
+				"north": {"uv": [5, 16, 5, 16], "texture": "#texture"},
+				"east": {"uv": [8, 4, 12, 16], "texture": "#texture"},
+				"south": {"uv": [13, 4, 15, 16], "texture": "#texture"},
+				"west": {"uv": [4, 4, 8, 16], "texture": "#texture"},
+				"up": {"uv": [8, 7, 12, 9], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [8, 7, 12, 9], "rotation": 90, "texture": "#texture"}
+			}
+		}
+	]
 }

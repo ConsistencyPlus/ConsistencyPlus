@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/smooth_crimson_wart_slab"
+    },
+    "type=double": {
+      "model": "consistency_plus:block/smooth_crimson_wart"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/smooth_crimson_wart_slab_top"
+    }
+  }
+}

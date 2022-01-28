@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.core.growables;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SnowBlock;
@@ -31,35 +32,38 @@ public interface SpreadableGrassBlock {
 		BlockPos blockPos = pos.up();
 		return customCanSurvive(state, worldView, pos) && !worldView.getFluidState(blockPos).isIn(FluidTags.WATER);
 	}
-	
+
 	default void grow(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 		if (!customCanSurvive(state, world, pos)) {
-			world.setBlockState(pos, ((HasUngrownVariant) this).getUngrownVariant(world, pos));
-		} else {
-			if (world.getLightLevel(pos.up()) >= 9) {
-				for (int i = 0; i < 4; ++i) {
-					
-					BlockPos targetPos = pos.add(random.nextInt(3) - 1, random.nextInt(5) - 3, random.nextInt(3) - 1);
-					
+			if (this instanceof HasUngrownVariant) {
+				world.setBlockState(pos, ((HasUngrownVariant) this).getUngrownVariant(world, pos));
+			}
+			return;
+		}
+		BlockPos up = pos.up();
+		if (world.getLightLevel(up) >= 9) {
+			for (int i = 0; i < 4; ++i) {
+				BlockPos targetPos = pos.add(random.nextInt(3) - 1, random.nextInt(5) - 3, random.nextInt(3) - 1);
+				BlockState targetState = world.getBlockState(targetPos);
+				BlockPos targetUp = targetPos.up();
+				if (customCanSpread(state, world, targetPos)) {
 					// vanilla handling
-					if (world.getBlockState(targetPos).isOf(Blocks.DIRT) && customCanSpread(world.getBlockState(pos), world, targetPos)) {
+					if (targetState.isOf(Blocks.DIRT)) {
 						// snow check
-						if (world.getBlockState(targetPos.up()).isOf(Blocks.SNOW_BLOCK) || world.getBlockState(targetPos.up()).isOf(Blocks.SNOW)) {
+						BlockState targetStateAbove = world.getBlockState(targetUp);
+						if (targetStateAbove.isOf(Blocks.SNOW_BLOCK) || targetStateAbove.isOf(Blocks.SNOW)) {
 							world.setBlockState(targetPos, Blocks.GRASS_BLOCK.getDefaultState().with(SNOWY, true));
 						} else {
 							world.setBlockState(targetPos, Blocks.GRASS_BLOCK.getDefaultState());
 						}
-					}
-					
-					// HasGrownGrassVariant handling
-					if (world.getBlockState(targetPos).getBlock() instanceof HasGrownGrassVariant && customCanSpread(world.getBlockState(pos), world, targetPos)) {
-						HasGrownGrassVariant targetBlock = (HasGrownGrassVariant) world.getBlockState(targetPos).getBlock();
-						
+					} else if (targetState.getBlock() instanceof HasGrownGrassVariant) { // HasGrownGrassVariant handling
+						BlockState grassy = ((HasGrownGrassVariant) targetState.getBlock()).getGrownGrassVariant(world, targetPos);
 						// snow check
-						if (world.getBlockState(targetPos.up()).isOf(Blocks.SNOW_BLOCK) || world.getBlockState(targetPos.up()).isOf(Blocks.SNOW)) {
-							world.setBlockState(targetPos, targetBlock.getGrownGrassVariant(world, targetPos).with(SNOWY, true));
+						BlockState above = world.getBlockState(up);
+						if ((above.isOf(Blocks.SNOW_BLOCK) || above.isOf(Blocks.SNOW)) && above.contains(SNOWY)) {
+							world.setBlockState(targetPos, grassy.with(SNOWY, true));
 						} else {
-							world.setBlockState(targetPos, targetBlock.getGrownGrassVariant(world, targetPos));
+							world.setBlockState(targetPos, grassy);
 						}
 					}
 				}

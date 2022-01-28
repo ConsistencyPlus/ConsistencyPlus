@@ -22,12 +22,12 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 	
 	@Inject(at = @At("TAIL"), method = "updateTurtleHelmet()V")
 	private void cPlus$updateTurtleArmor(CallbackInfo ci) {
-		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS.get()) && !isSubmergedInWater()) {
+		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) && !isSubmergedInWater()) {
 			addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 200, 0, false, false, true));
 		}
-		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS.get()) &&
-				getEquippedStack(EquipmentSlot.LEGS).isOf(CPlusItems.TURTLE_LEGGINGS.get()) &&
-				getEquippedStack(EquipmentSlot.CHEST).isOf(CPlusItems.TURTLE_CHESTPLATE.get()) &&
+		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS) &&
+				getEquippedStack(EquipmentSlot.LEGS).isOf(CPlusItems.TURTLE_LEGGINGS) &&
+				getEquippedStack(EquipmentSlot.CHEST).isOf(CPlusItems.TURTLE_CHESTPLATE) &&
 				getEquippedStack(EquipmentSlot.HEAD).isOf(Items.TURTLE_HELMET)
 				&& !isSubmergedInWater()) {
 			addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 0, false, false, true));

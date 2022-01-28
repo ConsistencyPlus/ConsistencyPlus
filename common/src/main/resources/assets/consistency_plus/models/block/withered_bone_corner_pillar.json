@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "consistency_plus:block/withered_bone_pillar_top"
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+
+      "consistency_plus:carved_crying_obsidian_crafting",
+      "consistency_plus:chiseled_crying_obsidian_crafting",
+      "consistency_plus:crying_obsidian_bricks_crafting",
+      "consistency_plus:crying_obsidian_brick_gate_crafting",
+      "consistency_plus:crying_obsidian_brick_slab_crafting",
+      "consistency_plus:crying_obsidian_brick_stairs_crafting",
+      "consistency_plus:crying_obsidian_brick_wall_crafting",
+      "consistency_plus:crying_obsidian_corner_pillar",
+      "consistency_plus:crying_obsidian_gate_crafting",
+      "consistency_plus:crying_obsidian_pillar_crafting",
+      "consistency_plus:crying_obsidian_slab_crafting",
+      "consistency_plus:crying_obsidian_stairs_crafting",
+      "consistency_plus:crying_obsidian_tiles_crafting",
+      "consistency_plus:crying_obsidian_tile_gate_crafting",
+      "consistency_plus:crying_obsidian_tile_slab_crafting",
+      "consistency_plus:crying_obsidian_tile_stairs_crafting",
+      "consistency_plus:crying_obsidian_tile_wall_crafting",
+      "consistency_plus:crying_obsidian_wall_crafting",
+      "consistency_plus:cut_crying_obsidian_crafting",
+      "consistency_plus:cut_crying_obsidian_gate_crafting",
+      "consistency_plus:cut_crying_obsidian_slab_crafting",
+      "consistency_plus:cut_crying_obsidian_stairs_crafting",
+      "consistency_plus:cut_crying_obsidian_wall_crafting",
+      "consistency_plus:polished_crying_obsidian_crafting",
+      "consistency_plus:polished_crying_obsidian_gate_crafting",
+      "consistency_plus:polished_crying_obsidian_slab_crafting",
+      "consistency_plus:polished_crying_obsidian_stairs_crafting",
+      "consistency_plus:polished_crying_obsidian_wall_crafting",
+      "consistency_plus:smooth_crying_obsidian",
+      "consistency_plus:smooth_crying_obsidian_gate",
+      "consistency_plus:smooth_crying_obsidian_gate_crafting",
+      "consistency_plus:smooth_crying_obsidian_slab",
+      "consistency_plus:smooth_crying_obsidian_slab_crafting",
+      "consistency_plus:smooth_crying_obsidian_stairs",
+      "consistency_plus:smooth_crying_obsidian_stairs_crafting",
+      "consistency_plus:smooth_crying_obsidian_wall",
+      "consistency_plus:smooth_crying_obsidian_wall_crafting"
+
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:crying_obsidian"]
+          }
+        ]
+      }
+    }
+  }
+}

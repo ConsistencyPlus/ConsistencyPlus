@@ -1,0 +1,22 @@
+THIS FOLDER IS A TEMPLATE FOR A FULL SET CREATION.
+
+IT CONTAINS:
+- BLOCKSTATES
+- BLOCK MODELS
+- ITEM MODELS
+- LANG
+- LOOT TABLES
+- RECIPES
+- TAGS (PASTE INTO FULL TAG)
+
+To use this, you'll need a plugin that lets you change mass filenames.  
+https://plugins.jetbrains.com/plugin/17063-regex-rename-files/versions
+
+
+STEP 1: Copy "blank" (the folder inside "blank_guide") and rename it to the block of your choosing.
+STEP 2: Install the plugin
+STEP 3: Once you've installed the plugin, go through every folder and replace the word "blank" with the block of your choosing.  This will change the filenames.
+STEP 4: For changing the actual contents of the files, use intellij's built in refactor options to search for uses of "blank" and "Blank"* in the folders.  If you also want to do the registry code, do "BLANK" as well, and paste the results from the two text files into the corresponding registries.
+STEP 5: Copy the contents of the new folders into the actual source.
+
+*"Blank" with a capital B is used in the lang file.

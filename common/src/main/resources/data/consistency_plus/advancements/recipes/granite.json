@@ -2,31 +2,45 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "consistency_plus:recipes/granite_gate_crafting",
-      "consistency_plus:recipes/polished_granite_wall_crafting",
-      "consistency_plus:recipes/polished_granite_gate_crafting",
-      "consistency_plus:recipes/granite_bricks_crafting",
-      "consistency_plus:recipes/granite_brick_slab_crafting",
-      "consistency_plus:recipes/granite_brick_stairs_crafting",
-      "consistency_plus:recipes/granite_brick_wall_crafting",
-      "consistency_plus:recipes/granite_brick_gate_crafting",
-      "consistency_plus:recipes/cut_granite_crafting",
-      "consistency_plus:recipes/cut_granite_slab_crafting",
-      "consistency_plus:recipes/cut_granite_stairs_crafting",
-      "consistency_plus:recipes/cut_granite_wall_crafting",
-      "consistency_plus:recipes/cut_granite_gate_crafting",
-      "consistency_plus:recipes/granite_tiles_crafting",
-      "consistency_plus:recipes/granite_tile_slab_crafting",
-      "consistency_plus:recipes/granite_tile_stairs_crafting",
-      "consistency_plus:recipes/granite_tile_wall_crafting",
-      "consistency_plus:recipes/granite_tile_gate_crafting",
-      "consistency_plus:recipes/smooth_granite_slab_crafting",
-      "consistency_plus:recipes/smooth_granite_stairs_crafting",
-      "consistency_plus:recipes/smooth_granite_wall_crafting",
-      "consistency_plus:recipes/smooth_granite_gate_crafting",
-      "consistency_plus:recipes/granite_pillar_crafting",
-      "consistency_plus:recipes/chiseled_granite_crafting",
-      "consistency_plus:recipes/carved_granite_crafting"
+
+      "consistency_plus:carved_granite_crafting",
+      "consistency_plus:chiseled_granite_crafting",
+      "consistency_plus:cobbled_granite_gate",
+      "consistency_plus:cobbled_granite_slab",
+      "consistency_plus:cobbled_granite_stairs",
+      "consistency_plus:cobbled_granite_wall",
+      "consistency_plus:cut_granite_crafting",
+      "consistency_plus:cut_granite_gate_crafting",
+      "consistency_plus:cut_granite_slab_crafting",
+      "consistency_plus:cut_granite_stairs_crafting",
+      "consistency_plus:cut_granite_wall_crafting",
+      "consistency_plus:granite",
+      "consistency_plus:granite_bricks_crafting",
+      "consistency_plus:granite_brick_gate_crafting",
+      "consistency_plus:granite_brick_slab_crafting",
+      "consistency_plus:granite_brick_stairs_crafting",
+      "consistency_plus:granite_brick_wall_crafting",
+      "consistency_plus:granite_corner_pillar",
+      "consistency_plus:granite_crafting",
+      "consistency_plus:granite_gate_crafting",
+      "consistency_plus:granite_pillar_crafting",
+      "consistency_plus:granite_tiles_crafting",
+      "consistency_plus:granite_tile_gate_crafting",
+      "consistency_plus:granite_tile_slab_crafting",
+      "consistency_plus:granite_tile_stairs_crafting",
+      "consistency_plus:granite_tile_wall_crafting",
+      "consistency_plus:polished_granite_gate_crafting",
+      "consistency_plus:polished_granite_wall_crafting",
+      "consistency_plus:smooth_granite",
+      "consistency_plus:smooth_granite_gate",
+      "consistency_plus:smooth_granite_gate_crafting",
+      "consistency_plus:smooth_granite_slab",
+      "consistency_plus:smooth_granite_slab_crafting",
+      "consistency_plus:smooth_granite_stairs",
+      "consistency_plus:smooth_granite_stairs_crafting",
+      "consistency_plus:smooth_granite_wall",
+      "consistency_plus:smooth_granite_wall_crafting"
+      
     ]
   },
   "criteria": {
@@ -35,7 +49,10 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:granite"
+            "items": [
+"consistency_plus:cobbled_granite",
+"minecraft:granite"
+]
           }
         ]
       }

@@ -49,9 +49,21 @@
       }
     },
     {
+      "name": "Pythagoras_314 [Texture Artist]",
+      "contact": {
+        "Discord": "Pythagoras_314#5176"
+      }
+    },
+    {
+      "name": "CLASSICA! [Texture Artist]",
+      "contact": {
+        "Discord": "CLASSICA!#1993"
+      }
+    },
+    {
       "name": "AndrewIsntCool [Contributor]",
       "contact": {
-        "Discord": "    AndrewIsntCool#5829"
+        "Discord": "AndrewIsntCool#5829"
       }
     },
     {
@@ -122,12 +134,12 @@
 
   "depends": {
     "fabric-api-base": "*",
-    "fabric-item-api-v1": "*",
     "fabric-lifecycle-events-v1": "*",
     "fabric-blockrenderlayer-v1": "*",
     "fabric-rendering-v1": "*",
     "fabric-object-builder-api-v1": "*",
-    "minecraft": ">=1.17.1"
+    "minecraft": ">=1.17.1",
+    "architectury": ">=2.6.35"
   },
   "breaks": {
     "consistency_plus_core": "*",

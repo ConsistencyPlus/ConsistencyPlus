@@ -29,6 +29,11 @@
     "consistency_plus:carved_purple_terracotta",
     "consistency_plus:chiseled_purple_terracotta",
     "consistency_plus:purple_terracotta_pillar",
-    "consistency_plus:purple_terracotta_corner_pillar"
+    "consistency_plus:purple_terracotta_corner_pillar",
+    "consistency_plus:cobbled_purple_terracotta",
+    "consistency_plus:cobbled_purple_terracotta_slab",
+    "consistency_plus:cobbled_purple_terracotta_stairs",
+    "consistency_plus:cobbled_purple_terracotta_wall",
+    "consistency_plus:cobbled_purple_terracotta_gate"
   ]
 }

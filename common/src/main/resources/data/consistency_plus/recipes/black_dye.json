@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:withered_bone_meal"
+        }
+    },
+    "result": {
+        "item": "minecraft:black_dye",
+        "count": 1
+    }
+}

@@ -29,6 +29,11 @@
     "consistency_plus:carved_orange_terracotta",
     "consistency_plus:chiseled_orange_terracotta",
     "consistency_plus:orange_terracotta_pillar",
-    "consistency_plus:orange_terracotta_corner_pillar"
+    "consistency_plus:orange_terracotta_corner_pillar",
+    "consistency_plus:cobbled_orange_terracotta",
+    "consistency_plus:cobbled_orange_terracotta_slab",
+    "consistency_plus:cobbled_orange_terracotta_stairs",
+    "consistency_plus:cobbled_orange_terracotta_wall",
+    "consistency_plus:cobbled_orange_terracotta_gate"
   ]
 }

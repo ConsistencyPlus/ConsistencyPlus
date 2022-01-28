@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "consistency_plus:block/carved_warped_wart",
+    "bottom": "consistency_plus:block/carved_warped_wart",
+    "side": "consistency_plus:block/carved_warped_wart"
+  }
+}

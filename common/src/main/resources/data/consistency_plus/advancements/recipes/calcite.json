@@ -2,47 +2,52 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "consistency_plus:recipes/calcite_slab_crafting",
-      "consistency_plus:recipes/calcite_stairs_crafting",
-      "consistency_plus:recipes/calcite_wall_crafting",
-      "consistency_plus:recipes/calcite_gate_crafting",
-      "consistency_plus:recipes/polished_calcite_crafting",
-      "consistency_plus:recipes/polished_calcite_slab_crafting",
-      "consistency_plus:recipes/polished_calcite_stairs_crafting",
-      "consistency_plus:recipes/polished_calcite_wall_crafting",
-      "consistency_plus:recipes/polished_calcite_gate_crafting",
-      "consistency_plus:recipes/calcite_bricks_crafting",
-      "consistency_plus:recipes/calcite_brick_slab_crafting",
-      "consistency_plus:recipes/calcite_brick_stairs_crafting",
-      "consistency_plus:recipes/calcite_brick_wall_crafting",
-      "consistency_plus:recipes/calcite_brick_gate_crafting",
-      "consistency_plus:recipes/cut_calcite_crafting",
-      "consistency_plus:recipes/cut_calcite_slab_crafting",
-      "consistency_plus:recipes/cut_calcite_stairs_crafting",
-      "consistency_plus:recipes/cut_calcite_wall_crafting",
-      "consistency_plus:recipes/cut_calcite_gate_crafting",
-      "consistency_plus:recipes/calcite_tiles_crafting",
-      "consistency_plus:recipes/calcite_tile_slab_crafting",
-      "consistency_plus:recipes/calcite_tile_stairs_crafting",
-      "consistency_plus:recipes/calcite_tile_wall_crafting",
-      "consistency_plus:recipes/calcite_tile_gate_crafting",
-      "consistency_plus:recipes/cut_calcite_crafting",
-      "consistency_plus:recipes/cut_calcite_slab_crafting",
-      "consistency_plus:recipes/cut_calcite_stairs_crafting",
-      "consistency_plus:recipes/cut_calcite_wall_crafting",
-      "consistency_plus:recipes/cut_calcite_gate_crafting",
-      "consistency_plus:recipes/smooth_calcite_slab_crafting",
-      "consistency_plus:recipes/smooth_calcite_stairs_crafting",
-      "consistency_plus:recipes/smooth_calcite_wall_crafting",
-      "consistency_plus:recipes/smooth_calcite_gate_crafting",
-      "consistency_plus:recipes/smooth_calcite",
-      "consistency_plus:recipes/smooth_calcite_slab",
-      "consistency_plus:recipes/smooth_calcite_stairs",
-      "consistency_plus:recipes/smooth_calcite_wall",
-      "consistency_plus:recipes/smooth_calcite_gate",
-      "consistency_plus:recipes/chiseled_calcite_crafting",
-      "consistency_plus:recipes/carved_calcite_stairs_crafting",
-      "consistency_plus:recipes/calcite_pillar_crafting"
+
+      "consistency_plus:calcite",
+      "consistency_plus:calcite_bricks_crafting",
+      "consistency_plus:calcite_brick_gate_crafting",
+      "consistency_plus:calcite_brick_slab_crafting",
+      "consistency_plus:calcite_brick_stairs_crafting",
+      "consistency_plus:calcite_brick_wall_crafting",
+      "consistency_plus:calcite_corner_pillar",
+      "consistency_plus:calcite_crafting",
+      "consistency_plus:calcite_gate_crafting",
+      "consistency_plus:calcite_pillar_crafting",
+      "consistency_plus:calcite_slab_crafting",
+      "consistency_plus:calcite_stairs_crafting",
+      "consistency_plus:calcite_tiles_crafting",
+      "consistency_plus:calcite_tile_gate_crafting",
+      "consistency_plus:calcite_tile_slab_crafting",
+      "consistency_plus:calcite_tile_stairs_crafting",
+      "consistency_plus:calcite_tile_wall_crafting",
+      "consistency_plus:calcite_wall_crafting",
+      "consistency_plus:carved_calcite_crafting",
+      "consistency_plus:chiseled_calcite_crafting",
+      "consistency_plus:cobbled_calcite_gate",
+      "consistency_plus:cobbled_calcite_slab",
+      "consistency_plus:cobbled_calcite_stairs",
+      "consistency_plus:cobbled_calcite_wall",
+      "consistency_plus:cut_calcite_crafting",
+      "consistency_plus:cut_calcite_gate_crafting",
+      "consistency_plus:cut_calcite_slab_crafting",
+      "consistency_plus:cut_calcite_stairs_crafting",
+      "consistency_plus:cut_calcite_wall_crafting",
+      "consistency_plus:polished_calcite_crafting",
+      "consistency_plus:polished_calcite_gate_crafting",
+      "consistency_plus:polished_calcite_slab_crafting",
+      "consistency_plus:polished_calcite_stairs_crafting",
+      "consistency_plus:polished_calcite_wall_crafting",
+      "consistency_plus:smooth_calcite",
+      "consistency_plus:smooth_calcite_gate",
+      "consistency_plus:smooth_calcite_gate_crafting",
+      "consistency_plus:smooth_calcite_slab",
+      "consistency_plus:smooth_calcite_slab_crafting",
+      "consistency_plus:smooth_calcite_stairs",
+      "consistency_plus:smooth_calcite_stairs_crafting",
+      "consistency_plus:smooth_calcite_wall",
+      "consistency_plus:smooth_calcite_wall_crafting"
+
+
     ]
   },
   "criteria": {
@@ -51,7 +56,10 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:calcite"
+            "items": [
+"consistency_plus:cobbled_calcite",
+"minecraft:calcite"
+]
           }
         ]
       }

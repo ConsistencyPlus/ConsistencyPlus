@@ -1,12 +1,12 @@
 //file:noinspection GroovyAssignabilityCheck
 plugins {
-//    id "io.github.juuxel.loom-quiltflower-mini" version "1.+" apply false
     id "architectury-plugin" version "3.4-SNAPSHOT"
     id "dev.architectury.loom" version "0.10.0-SNAPSHOT" apply false
+    id 'io.github.juuxel.loom-quiltflower-mini' version '1.+' apply false
     id "maven-publish"
 }
 
-version = rootProject.mod_version + "+" + rootProject.mc_major_version
+version = rootProject.mod_version + "+" + rootProject.minecraft_version
 
 architectury {
     minecraft = rootProject.minecraft_version
@@ -14,7 +14,7 @@ architectury {
 
 subprojects {
     apply plugin: "dev.architectury.loom"
-//    apply plugin: "io.github.juuxel.loom-quiltflower-mini"
+    apply plugin: "io.github.juuxel.loom-quiltflower-mini"
 
     dependencies {
         minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
@@ -28,9 +28,12 @@ allprojects {
     apply plugin: "maven-publish"
 
     archivesBaseName = rootProject.archives_base_name
-    version = rootProject.mod_version + "+" + rootProject.mc_major_version + "-" + project.name
+    version = rootProject.mod_version + "+" + rootProject.minecraft_version
 
-    tasks.withType(JavaCompile) { it.options.encoding = "UTF-8" }
+    tasks.withType(JavaCompile) {
+        options.release = 17
+        it.options.encoding = "UTF-8"
+    }
 
     repositories {
         maven {

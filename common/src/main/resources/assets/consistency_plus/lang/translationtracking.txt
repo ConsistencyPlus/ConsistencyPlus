@@ -7,8 +7,8 @@ Note: If you are a Japanese speaker, feel free to fix these translations
 
 Polish - Managed by RDK. Up to date to 0.3.0-RC1. 4.22.21
 
-Russian - Managed by MobButcher. Up to date as of 0.4.1-rc.2. 10.17.21
-Ukrainian - Managed by MobButcher. Up to date as of 0.4.1-rc.2 10.18.21
+Russian - Managed by MobButcher. Up to date as of 0.5.0. 01.18.22
+Ukrainian - Managed by MobButcher. Up to date as of 0.5.0. 01.18.22
 English (Upside-Down) - Managed by MobButcher. Up to date as of 0.4.1-rc.2. 10.17.21
 
 Lolcat - Aded by Carter, pwobably won't be finishd for a while but haz begun
@@ -42,5 +42,8 @@ Carter - Shakespearean is also finished thanks to help from MobButcher
 - 10.17.21
 
 Carter - Removed unused strings and fixed words spelled slightly different from en_us in en_ca, en_gb, and en_nz
+- 11.05.21
 
-
+MobButcher - Updated Russian, Ukrainian, and English (Upside-Down) to 0.5.0 (or its release candidate, I don't really know and care even less). There are some references to Deltarune Chapter 2 I have to revisit once I complete it.
+P.S.: The fact that dates in this document follow mm.dd.yy format annoys the hell out of me. Petition to either change them to mm/dd/yy or dd.mm.yy. Periods indicate sane (European) date formatting, while slashes indicate insane (American) date formatting. Please don't make it into an even worse of an abomination than it already is.
+- 01.18.22

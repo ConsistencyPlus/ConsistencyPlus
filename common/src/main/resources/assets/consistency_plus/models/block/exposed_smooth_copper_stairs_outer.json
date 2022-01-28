@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/outer_stairs",
+    "textures": {
+        "bottom": "consistency_plus:block/exposed_smooth_copper",
+        "top": "consistency_plus:block/exposed_smooth_copper",
+        "side": "consistency_plus:block/exposed_smooth_copper"
+    }
+}

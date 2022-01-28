@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:honeycomb"
+        },
+        {
+            "item": "consistency_plus:weathered_copper_brick_gate"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:waxed_weathered_copper_brick_gate",
+        "count": 1
+    }
+}

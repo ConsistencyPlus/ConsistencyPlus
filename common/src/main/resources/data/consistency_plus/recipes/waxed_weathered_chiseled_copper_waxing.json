@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:honeycomb"
+        },
+        {
+            "item": "consistency_plus:weathered_chiseled_copper"
+        }
+    ],
+    "result": {
+        "item": "consistency_plus:waxed_weathered_chiseled_copper",
+        "count": 1
+    }
+}

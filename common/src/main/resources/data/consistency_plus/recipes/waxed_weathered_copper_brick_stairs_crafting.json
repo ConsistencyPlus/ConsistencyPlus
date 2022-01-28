@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:waxed_weathered_copper_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:waxed_weathered_copper_brick_stairs",
+        "count": 4
+    }
+}

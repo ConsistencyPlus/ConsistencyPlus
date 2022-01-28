@@ -44,7 +44,7 @@ public class MyceliumWallBlock extends WallBlock implements HasUngrownVariant, S
 	@Override
 	public BlockState getUngrownVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return DIRT_WALL.get().getDefaultState().with(UP, oldState.get(UP)).with(WATERLOGGED, oldState.get(WATERLOGGED))
+		return DIRT_WALL.getDefaultState().with(UP, oldState.get(UP)).with(WATERLOGGED, oldState.get(WATERLOGGED))
 				.with(NORTH_SHAPE, oldState.get(NORTH_SHAPE)).with(SOUTH_SHAPE, oldState.get(SOUTH_SHAPE))
 				.with(EAST_SHAPE, oldState.get(EAST_SHAPE)).with(WEST_SHAPE, oldState.get(WEST_SHAPE));
 	}

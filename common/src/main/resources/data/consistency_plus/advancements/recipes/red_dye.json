@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+ 
+ 
+     "consistency_plus:red_dye1",
+     "consistency_plus:red_dye2"
+
+
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+"consistency_plus:warped_wart",
+"minecraft:redstone"
+]
+          }
+        ]
+      }
+    }
+  }
+}

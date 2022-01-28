@@ -2,6 +2,7 @@ package io.github.consistencyplus.consistency_plus.items;
 
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.minecraft.block.AbstractRailBlock;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.enums.RailShape;
 import net.minecraft.entity.vehicle.AbstractMinecartEntity;
@@ -43,7 +44,7 @@ public class NubertMinecartItem extends MinecartItem {
 					blockPos.getZ() + 0.5D,
 					AbstractMinecartEntity.Type.RIDEABLE);
 			
-			cart.setCustomBlock((wigged ? CPlusBlocks.WIGGED_NUBERT : CPlusBlocks.NUBERT).get().getDefaultState());
+			cart.setCustomBlock((wigged ? CPlusBlocks.WIGGED_NUBERT : CPlusBlocks.NUBERT).getDefaultState());
 			
 			if (itemStack.hasCustomName()) {
 				cart.setCustomName(itemStack.getName());

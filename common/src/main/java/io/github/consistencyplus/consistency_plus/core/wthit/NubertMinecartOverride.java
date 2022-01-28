@@ -23,7 +23,7 @@ public class NubertMinecartOverride implements IEntityComponentProvider {
 		boolean nubert = data.getBoolean("Nubert");
 		if (nubert) {
 			boolean wig = data.getBoolean("Wigged");
-			return (wig ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).get().getDefaultStack();
+			return (wig ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).getDefaultStack();
 		}
 		return ItemStack.EMPTY;
 	}

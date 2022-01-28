@@ -1,0 +1,6 @@
+{
+  "parent": "consistency_plus:block/template_consistency_gate_wall_open",
+  "textures": {
+    "texture": "consistency_plus:block/exposed_cut_copper"
+  }
+}

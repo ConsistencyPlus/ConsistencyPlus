@@ -82,7 +82,7 @@ public class NubertBlock extends HorizontalFacingBlock implements Waterloggable 
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return getDefaultState()
                 .with(FACING, ctx.getPlayerFacing().getOpposite())
-                .with(WATERLOGGED, ctx.getWorld().getFluidState(ctx.getBlockPos()).getFluid() == Fluids.WATER);
+                .with(WATERLOGGED, ctx.getWorld().isWater(ctx.getBlockPos()));
     }
 
     @Override

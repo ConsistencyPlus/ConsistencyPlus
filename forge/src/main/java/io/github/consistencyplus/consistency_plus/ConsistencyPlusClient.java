@@ -12,6 +12,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ConsistencyPlusClient {
 	@SubscribeEvent
 	public static void onInitializeClient(final FMLClientSetupEvent event) {
-		ConsistencyPlusClientMain.init(ModelPredicateProviderRegistry::register);
+		event.enqueueWork(() -> ConsistencyPlusClientMain.init(ModelPredicateProviderRegistry::register));
 	}
 }

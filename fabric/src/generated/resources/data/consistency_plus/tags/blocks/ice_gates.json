@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_ice_gate",
+    "consistency_plus:orange_ice_gate",
+    "consistency_plus:magenta_ice_gate",
+    "consistency_plus:light_blue_ice_gate",
+    "consistency_plus:yellow_ice_gate",
+    "consistency_plus:lime_ice_gate",
+    "consistency_plus:pink_ice_gate",
+    "consistency_plus:gray_ice_gate",
+    "consistency_plus:light_gray_ice_gate",
+    "consistency_plus:cyan_ice_gate",
+    "consistency_plus:purple_ice_gate",
+    "consistency_plus:blue_ice_gate",
+    "consistency_plus:brown_ice_gate",
+    "consistency_plus:green_ice_gate",
+    "consistency_plus:red_ice_gate",
+    "consistency_plus:black_ice_gate"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_concrete_corner_pillar",
+    "consistency_plus:orange_concrete_corner_pillar",
+    "consistency_plus:magenta_concrete_corner_pillar",
+    "consistency_plus:light_blue_concrete_corner_pillar",
+    "consistency_plus:yellow_concrete_corner_pillar",
+    "consistency_plus:lime_concrete_corner_pillar",
+    "consistency_plus:pink_concrete_corner_pillar",
+    "consistency_plus:gray_concrete_corner_pillar",
+    "consistency_plus:light_gray_concrete_corner_pillar",
+    "consistency_plus:cyan_concrete_corner_pillar",
+    "consistency_plus:purple_concrete_corner_pillar",
+    "consistency_plus:blue_concrete_corner_pillar",
+    "consistency_plus:brown_concrete_corner_pillar",
+    "consistency_plus:green_concrete_corner_pillar",
+    "consistency_plus:red_concrete_corner_pillar",
+    "consistency_plus:black_concrete_corner_pillar"
+  ]
+}

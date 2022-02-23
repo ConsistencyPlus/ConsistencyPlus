@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_tinted_glass",
+    "consistency_plus:orange_tinted_glass",
+    "consistency_plus:magenta_tinted_glass",
+    "consistency_plus:light_blue_tinted_glass",
+    "consistency_plus:yellow_tinted_glass",
+    "consistency_plus:lime_tinted_glass",
+    "consistency_plus:pink_tinted_glass",
+    "consistency_plus:gray_tinted_glass",
+    "consistency_plus:light_gray_tinted_glass",
+    "consistency_plus:cyan_tinted_glass",
+    "consistency_plus:purple_tinted_glass",
+    "consistency_plus:blue_tinted_glass",
+    "consistency_plus:brown_tinted_glass",
+    "consistency_plus:green_tinted_glass",
+    "consistency_plus:red_tinted_glass",
+    "consistency_plus:black_tinted_glass",
+    "minecraft:tinted_glass"
+  ]
+}

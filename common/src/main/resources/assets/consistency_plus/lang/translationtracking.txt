@@ -1,10 +1,6 @@
 Translation Statuses:
 
 English-US (Base) - Obviously up to date
-
-Japanese - Up to date as of 0.3.0-Alpha, 3.15.21. Translated by Siuol without any actual knowledge on the words.
-Note: If you are a Japanese speaker, feel free to fix these translations
-
 Polish - Managed by RDK. Up to date to 0.3.0-RC1. 4.22.21
 
 Russian - Managed by MobButcher. Up to date as of 0.5.0. 01.18.22
@@ -17,12 +13,6 @@ Pirate Speak - Yarr, added by Carter but no work begun.
 
 
 Translator Comments:
-
-Siuol - Alright, I would like to point out the following.
-1. I do not actually know any other languages besides English, though I would like to learn them.
-2. I'm not dumb enough to use Google Translate. I prefer scuffed lang files.
-3. I'll probably do initial translations, with occasional updates every couple hundred blocks or so.
-If you actually can translate, DM me on Discord at `"Siuol" Appeared#5729` and we can work something out.
 
 MobButcher - To translate language files from English to Russian I've created a script that allows me to automatically parse the strings and apply proper grammar to them.
 Though it's janky, I can fairly easily update my translations. Feel free to contact me for details, contact info available on GitHub profile.
@@ -47,3 +37,7 @@ Carter - Removed unused strings and fixed words spelled slightly different from 
 MobButcher - Updated Russian, Ukrainian, and English (Upside-Down) to 0.5.0 (or its release candidate, I don't really know and care even less). There are some references to Deltarune Chapter 2 I have to revisit once I complete it.
 P.S.: The fact that dates in this document follow mm.dd.yy format annoys the hell out of me. Petition to either change them to mm/dd/yy or dd.mm.yy. Periods indicate sane (European) date formatting, while slashes indicate insane (American) date formatting. Please don't make it into an even worse of an abomination than it already is.
 - 01.18.22
+
+(Random Siuol Note - JP Translations, as they were more remnant of a rough translation attempt from when I wanted to supply translations to many languages personally, has been removed because they are probably wrong)
+(PS: Honestly, if you wanna add an "(EU)" suffix to the end of your dates you can do that.)
+- 2.22.22 (US)

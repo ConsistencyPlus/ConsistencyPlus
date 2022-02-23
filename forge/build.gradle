@@ -26,6 +26,8 @@ dependencies {
     modRuntimeOnly "mcp.mobius.waila:wthit:forge-${rootProject.wthit_version}" // run against the full jar
     modApi "maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version_forge}-forge"
 
+    modImplementation "com.withertech:mine_tags-forge:1.1.1"
+
     common(project(path: ":common", configuration: "namedElements")) { transitive = false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
@@ -35,6 +37,14 @@ processResources {
 
     filesMatching("META-INF/mods.toml") {
         expand "version": project.version
+    }
+}
+
+sourceSets.main {
+    resources {
+        srcDirs += [
+                'src/generated/resources'
+        ]
     }
 }
 

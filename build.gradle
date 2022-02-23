@@ -44,6 +44,9 @@ allprojects {
             url = "https://maven.bai.lol"
             content { includeGroup "mcp.mobius.waila" }
         }
+        maven {
+            url = "https://maven.withertech.com/repository/withertech"
+        }
     }
 
     jar {

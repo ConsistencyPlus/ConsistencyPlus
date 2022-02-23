@@ -32,17 +32,15 @@ import net.minecraft.world.BlockView;
 
 import java.util.Locale;
 
+import static io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags.CommonBlocks.VALID_CONDUIT_BLOCKS;
+import static io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags.CommonBlocks.VALID_PORTAL_BLOCKS;
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
-	public static final Tag.Identified<Block> VALID_PORTAL_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_portal_blocks"));
-	public static final Tag.Identified<Block> VALID_CONDUIT_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_conduit_blocks"));
-	
 	
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
 
-	
 	//Stone
 
 	public static final Block STONE_WALL = register("stone_wall", new WallBlock(Block.Settings.copy(STONE)));
@@ -3041,6 +3039,22 @@ public class CPlusBlocks {
 	private static Block register(String name, Block block) {
 		RegistrySupplier<Block> blockSupplied = BLOCKS.register(name, () -> block);
 		return block;
+	}
+
+	private static Block registerAndAddStairsToList(String name, Block block) {
+		return register(name, block);
+	}
+
+	private static Block registerAndAddregisterSlabToList(String name, Block block) {
+		return register(name, block);
+	}
+
+	private static Block registerAndAddregisterWallToList(String name, Block block) {
+		return register(name, block);
+	}
+
+	private static Block registerAndAddregisterFenceGateToList(String name, Block block) {
+		return register(name, block);
 	}
 
 	public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) {

@@ -10,5 +10,13 @@ public class ConsistencyPlusDatagen implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         ConsistencyPlusTags.init();
         fabricDataGenerator.addProvider(new ConsistencyPlusTagProvider.DyeableBlockTagProvider(fabricDataGenerator));
+
+        long startTime = System.currentTimeMillis();
+
+        fabricDataGenerator.addProvider(new ConsistencyPlusTagProvider.CommonBlockTagProvider(fabricDataGenerator));
+
+        long finishTime = System.currentTimeMillis();
+
+        System.out.printf("It took %f seconds for ConsistencyPlus CommonBlockTagProvider generating tags\n", (finishTime - startTime) / 1000.0F);
     }
 }

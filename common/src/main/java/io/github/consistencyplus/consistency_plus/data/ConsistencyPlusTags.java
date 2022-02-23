@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.data;
 
+import dev.architectury.hooks.tags.TagHooks;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
-import net.fabricmc.fabric.api.tag.TagFactory;
 import net.minecraft.block.Block;
 import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
@@ -10,6 +10,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConsistencyPlusTags {
+    public static class CommonBlocks {
+        public static final List<Tag.Identified<Block>> ALL_COMMON_BLOCK_TAGS = new ArrayList<>();
+
+        public static final Tag.Identified<Block> VALID_PORTAL_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_portal_blocks"));
+        public static final Tag.Identified<Block> VALID_CONDUIT_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_conduit_blocks"));
+
+        public static final Tag.Identified<Block> STAIRS = register(new Identifier(ConsistencyPlusMain.ID,"stairs"));
+        public static final Tag.Identified<Block> SLABS = register(new Identifier(ConsistencyPlusMain.ID,"slabs"));
+        public static final Tag.Identified<Block> WALLS = register(new Identifier(ConsistencyPlusMain.ID,"walls"));
+        public static final Tag.Identified<Block> FENCE_GATES = register(new Identifier(ConsistencyPlusMain.ID,"fence_gates"));
+
+        public static final Tag.Identified<Block> STONE_BRICKS = register(new Identifier(ConsistencyPlusMain.ID,"stone_bricks"));
+
+        public static final Tag.Identified<Block> IMPERMEABLE = register(new Identifier(ConsistencyPlusMain.ID,"impermeable"));
+
+        public static final Tag.Identified<Block> DRAGON_IMMUNE = register(new Identifier(ConsistencyPlusMain.ID,"dragon_immune"));
+
+        public static final Tag.Identified<Block> NEEDS_DIAMOND_TOOL = register(new Identifier(ConsistencyPlusMain.ID,"needs_diamond_tool"));
+
+        public static final Tag.Identified<Block> SOUL_SPEED_BLOCKS = register(new Identifier(ConsistencyPlusMain.ID,"soul_speed_blocks"));
+        public static final Tag.Identified<Block> SOUL_FIRE_BASE_BLOCKS = register(new Identifier(ConsistencyPlusMain.ID,"soul_fire_base_blocks"));
+
+        public static final Tag.Identified<Block> INFINIBURN_OVERWORLD = register(new Identifier(ConsistencyPlusMain.ID,"infiniburn_overworld"));
+        public static final Tag.Identified<Block> INFINIBURN_NETHER = register(new Identifier(ConsistencyPlusMain.ID,"infiniburn_nether"));
+
+        private static Tag.Identified<Block> register(Identifier id){
+            Tag.Identified<Block> temp = TagHooks.optionalBlock(id);
+            ALL_COMMON_BLOCK_TAGS.add(temp);
+            return temp;
+        }
+
+        private static void init(){}
+    }
+
     public static class DyeableBlocks {
         public static final List<Tag.Identified<Block>> ALL_DYEABLE_BLOCK_TAGS = new ArrayList<>();
 
@@ -114,7 +148,7 @@ public class ConsistencyPlusTags {
         public static final Tag.Identified<Block> TINTED_GLASS_BLOCK = register(new Identifier(ConsistencyPlusMain.ID, "tinted_glass"));
 
         private static Tag.Identified<Block> register(Identifier id){
-            Tag.Identified<Block> temp = TagFactory.BLOCK.create(id);
+            Tag.Identified<Block> temp = TagHooks.optionalBlock(id);
             ALL_DYEABLE_BLOCK_TAGS.add(temp);
             return temp;
         }
@@ -125,5 +159,6 @@ public class ConsistencyPlusTags {
 
     public static void init(){
         DyeableBlocks.init();
+        CommonBlocks.init();
     }
 }

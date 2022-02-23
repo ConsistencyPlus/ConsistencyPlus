@@ -1,11 +1,14 @@
 package io.github.consistencyplus.consistency_plus.data.providers;
 
+import com.withertech.mine_tags.tags.PlatformTags;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags;
+import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.tag.Tag;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
@@ -13,11 +16,123 @@ import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.stream.Stream;
 
 public class ConsistencyPlusTagProvider {
+
+    public static class CommonBlockTagProvider extends FabricTagProvider.BlockTagProvider {
+
+        private static final Logger LOGGER = LogManager.getLogger(CommonBlockTagProvider.class);
+
+        public CommonBlockTagProvider(FabricDataGenerator dataGenerator) {
+            super(dataGenerator);
+        }
+
+        @Override
+        protected void generateTags() {
+            Registry.BLOCK.getEntries().stream().filter((entry) -> Objects.equals(entry.getKey().getValue().getNamespace(), ConsistencyPlusMain.ID))
+                    .forEach((entry) -> {
+                        Identifier identifier = entry.getKey().getValue();
+                        Block block = entry.getValue();
+
+                        boolean isNormalBlock = true;
+
+                        LOGGER.info("[CommonBlockTagProvider]: " + identifier + " / " + block);
+
+                        if(block instanceof StairsBlock){
+                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.STAIRS).add(block);
+                            isNormalBlock = false;
+                        }else if(block instanceof SlabBlock){
+                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.SLABS).add(block);
+                            isNormalBlock = false;
+                        }else if(block instanceof WallBlock){
+                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.WALLS).add(block);
+                            isNormalBlock = false;
+                        }else if(block instanceof CPlusFenceGateBlock){
+                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.FENCE_GATES).add(block);
+                            isNormalBlock = false;
+                        }
+
+
+                        String[] splitIdentifier = identifier.getPath().split("_");
+
+
+
+                        if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "obsidian"))){
+                            boolean isCryingObs = getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "crying"));
+
+                            if(!isCryingObs) {
+                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.VALID_PORTAL_BLOCKS).add(block);
+                            }
+
+                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.DRAGON_IMMUNE).add(block);
+                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.NEEDS_DIAMOND_TOOL).add(block);
+                        }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "prismarine"))){
+                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.VALID_CONDUIT_BLOCKS).add(block);
+                        }
+
+                        if(isNormalBlock){
+
+                            if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "bricks"))){
+                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.STONE_BRICKS).add(block);
+                            }
+
+                            if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "glass"))){
+                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.IMPERMEABLE).add(block);
+                            }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "end"))){
+                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.DRAGON_IMMUNE).add(block);
+                            }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "soul"))){
+                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.SOUL_FIRE_BASE_BLOCKS).add(block);
+                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.SOUL_SPEED_BLOCKS).add(block);
+                            }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "nether") || Objects.equals(string, "netherrack"))){
+                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.INFINIBURN_OVERWORLD).add(block);
+                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.INFINIBURN_NETHER).add(block);
+                            }
+                        }
+            });
+
+            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.NEEDS_DIAMOND_TOOL).add(CPlusBlocks.NETHERITE_STAIRS);
+
+            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.VALID_CONDUIT_BLOCKS).add(
+                    Blocks.PRISMARINE,
+                    Blocks.PRISMARINE_BRICK_SLAB,
+                    Blocks.PRISMARINE_BRICK_STAIRS,
+                    Blocks.PRISMARINE_BRICKS,
+                    Blocks.PRISMARINE_SLAB,
+                    Blocks.PRISMARINE_STAIRS,
+                    Blocks.PRISMARINE_WALL,
+                    Blocks.DARK_PRISMARINE,
+                    Blocks.DARK_PRISMARINE_SLAB,
+                    Blocks.DARK_PRISMARINE_STAIRS);
+
+            this.getOrCreateTagBuilder(BlockTags.STAIRS).addTag(ConsistencyPlusTags.CommonBlocks.STAIRS);
+            this.getOrCreateTagBuilder(BlockTags.SLABS).addTag(ConsistencyPlusTags.CommonBlocks.SLABS);
+            this.getOrCreateTagBuilder(BlockTags.WALLS).addTag(ConsistencyPlusTags.CommonBlocks.WALLS);
+            this.getOrCreateTagBuilder(BlockTags.FENCE_GATES).addTag(ConsistencyPlusTags.CommonBlocks.FENCE_GATES);
+
+            this.getOrCreateTagBuilder(BlockTags.STONE_BRICKS).addTag(ConsistencyPlusTags.CommonBlocks.STONE_BRICKS);
+
+            this.getOrCreateTagBuilder(BlockTags.IMPERMEABLE).addTag(ConsistencyPlusTags.CommonBlocks.IMPERMEABLE);
+
+            this.getOrCreateTagBuilder(BlockTags.DRAGON_IMMUNE).addTag(ConsistencyPlusTags.CommonBlocks.DRAGON_IMMUNE);
+
+            this.getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).addTag(ConsistencyPlusTags.CommonBlocks.NEEDS_DIAMOND_TOOL);
+
+            this.getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS).addTag(ConsistencyPlusTags.CommonBlocks.SOUL_SPEED_BLOCKS);
+            this.getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS).addTag(ConsistencyPlusTags.CommonBlocks.SOUL_FIRE_BASE_BLOCKS);
+
+            this.getOrCreateTagBuilder(BlockTags.INFINIBURN_OVERWORLD).addTag(ConsistencyPlusTags.CommonBlocks.INFINIBURN_OVERWORLD);
+            this.getOrCreateTagBuilder(BlockTags.INFINIBURN_NETHER).addTag(ConsistencyPlusTags.CommonBlocks.INFINIBURN_NETHER);
+        }
+
+        private static Stream<String> getStream(String[] strings){
+            return Arrays.stream(strings);
+        }
+    }
 
     public static class DyeableBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 

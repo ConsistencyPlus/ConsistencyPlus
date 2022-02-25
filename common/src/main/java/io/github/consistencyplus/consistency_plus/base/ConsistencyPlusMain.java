@@ -12,6 +12,8 @@ public class ConsistencyPlusMain {
 	public static final Logger LOGGER = LogManager.getLogger("Consistency+");
 	public static final String ID = "consistency_plus";
 	public static final boolean DEVENV = Platform.isDevelopmentEnvironment();
+	public static final Boolean isSoulIceLoaded = Platform.isModLoaded("soul_ice");
+
 
 	public static void init() {
 		LOGGER.info("Consistency+ Main - Beginning initialization process");
@@ -23,8 +25,6 @@ public class ConsistencyPlusMain {
 		CPlusItems.register();
 		
 		LOGGER.info("Consistency+ Main - Finished initialization process");
-		
-		// FuelRegistry.INSTANCE.add(CHARCOAL_BLOCK, 200);
 	}
 	
 	public static Identifier id(String name) {

@@ -38,10 +38,8 @@ import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 public class CPlusBlocks {
 	public static final Tag.Identified<Block> VALID_PORTAL_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_portal_blocks"));
 	public static final Tag.Identified<Block> VALID_CONDUIT_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_conduit_blocks"));
-	
-	
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
 
+	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
 	
 	//Stone
 
@@ -515,39 +513,7 @@ public class CPlusBlocks {
 	public static final Block CRACKED_NETHER_BRICK_WALL = register("cracked_nether_brick_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block CRACKED_NETHER_BRICK_FENCE_GATE = register("cracked_nether_brick_fence_gate", new CPlusFenceGateBlock(Block.Settings.copy(NETHER_BRICKS)));
 
-	//Pillars and Chiseled
-
-
-	//Red Nether Bricks
-	public static final Block RED_NETHER_BRICK_FENCE_GATE = register("red_nether_brick_fence_gate", new CPlusFenceGateBlock(Block.Settings.copy(RED_NETHER_BRICKS)));
-
-	//Pillars and Chiseled
-	public static final Block CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new Block(Block.Settings.copy(RED_NETHER_BRICKS)));
-	public static final Block RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new PillarBlock(Block.Settings.copy(RED_NETHER_BRICKS)));
-	public static final Block CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new Block(Block.Settings.copy(RED_NETHER_BRICKS)));
-
-
 	//Blue Nether Bricks
-/*
-	//Bricks
-	public static final Block WARPED_NETHER_BRICKS = register("warped_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_SLAB = register("warped_nether_brick_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_STAIRS = register("warped_nether_brick_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_WALL = register("warped_nether_brick_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_FENCE_GATE = register("warped_nether_brick_fence_gate", new CPlusFenceGateBlock(Block.Settings.copy(WARPED_NETHER_BRICKS)));
-
-	//Cracked Bricks
-	public static final Block CRACKED_WARPED_NETHER_BRICKS = register("cracked_warped_nether_bricks", new Block(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_WARPED_NETHER_BRICK_SLAB = register("cracked_warped_nether_brick_slab", new SlabBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_WARPED_NETHER_BRICK_STAIRS = register("cracked_warped_nether_brick_stairs", new CPlusStairBlock(CRACKED_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
-	public static final Block CRACKED_WARPED_NETHER_BRICK_WALL = register("cracked_warped_nether_brick_wall", new WallBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final Block CRACKED_WARPED_NETHER_BRICK_FENCE_GATE = register("cracked_warped_nether_brick_fence_gate", new CPlusFenceGateBlock(Block.Settings.copy(CRACKED_WARPED_NETHER_BRICKS)));
-
-	//Pillars and Chiseled
-	public static final Block CHISELED_WARPED_NETHER_BRICKS = register("chiseled_warped_nether_bricks", new Block(Block.Settings.copy(WARPED_NETHER_BRICKS)));
-	public static final Block WARPED_NETHER_BRICK_PILLAR = register("warped_nether_brick_pillar", new PillarBlock(Block.Settings.copy(WARPED_NETHER_BRICKS)));
-	public static final Block CARVED_WARPED_NETHER_BRICKS = register("carved_warped_nether_bricks", new Block(Block.Settings.copy(WARPED_NETHER_BRICKS)));
-*/
 
 // Warped Wart
 
@@ -2997,43 +2963,37 @@ public class CPlusBlocks {
 	public static final Block CARVED_STONE_BRICKS = register("carved_stone_bricks", new Block(Block.Settings.copy(STONE_BRICKS)));
 	public static final Block CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new Block(Block.Settings.copy(STONE_BRICKS)));
 	public static final Block MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new Block(Block.Settings.copy(STONE_BRICKS)));
-
 	public static final Block MOSSY_BLACKSTONE_BRICK_PILLAR = register("mossy_blackstone_brick_pillar", new PillarBlock(Block.Settings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new PillarBlock(Block.Settings.copy(POLISHED_BLACKSTONE_BRICKS)));
 	public static final Block BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new PillarBlock(Block.Settings.copy(POLISHED_BLACKSTONE_BRICKS)));
-
 	public static final Block CHISELED_BRICKS = register("chiseled_bricks", new Block(Block.Settings.copy(BRICKS)));
 	public static final Block BRICK_PILLAR = register("brick_pillar", new PillarBlock(Block.Settings.copy(BRICKS)));
 	public static final Block CARVED_BRICKS = register("carved_bricks", new Block(Block.Settings.copy(BRICKS)));
-
 	public static final Block END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new PillarBlock(Block.Settings.copy(END_STONE_BRICKS)));
-
 	public static final Block SMOOTH_PURPUR_BLOCK = register("smooth_purpur_block", new Block(Block.Settings.copy(PURPUR_BLOCK)));
 	public static final Block POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new Block(Block.Settings.copy(PURPUR_BLOCK)));
 	public static final Block CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new Block(Block.Settings.copy(PURPUR_BLOCK)));
 	public static final Block PURPUR_CORNER_PILLAR = register("purpur_corner_pillar", new Block(Block.Settings.copy(PURPUR_BLOCK)));
-
-	//Bricks
 	public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new CPlusFenceGateBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
-
-	//Cracked Bricks
 	public static final Block CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new Block(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
 	public static final Block CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
 	public static final Block CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new CPlusStairBlock(CRACKED_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new WallBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
 	public static final Block CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new CPlusFenceGateBlock(Block.Settings.copy(CRACKED_BLUE_NETHER_BRICKS)));
-
-	//Pillars and Chiseled
 	public static final Block CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
 	public static final Block BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new PillarBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
 	public static final Block CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
-
 	public static final Block CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new Block(Block.Settings.copy(NETHER_BRICKS)));
 	public static final Block NETHER_BRICK_PILLAR = register("nether_brick_pillar", new PillarBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final Block RED_NETHER_BRICK_FENCE_GATE = register("red_nether_brick_fence_gate", new CPlusFenceGateBlock(Block.Settings.copy(RED_NETHER_BRICKS)));
+	public static final Block CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new Block(Block.Settings.copy(RED_NETHER_BRICKS)));
+	public static final Block RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new PillarBlock(Block.Settings.copy(RED_NETHER_BRICKS)));
+	public static final Block CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new Block(Block.Settings.copy(RED_NETHER_BRICKS)));
+
 
 	// Siuol's selection regex syntax machine (?=")(.*)(?<=____")
 	// Per Thing regex selection machine (?=")(.*)(____.*)(?<=")
@@ -3047,8 +3007,7 @@ public class CPlusBlocks {
 		return false;
 	}
 
-	public static void init() {
-	}
+	public static void init() {}
 	
 	public static void register() {
 		BLOCKS.register();

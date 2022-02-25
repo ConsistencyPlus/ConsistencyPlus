@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
@@ -17,6 +18,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
+import static io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain.isSoulIceLoaded;
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.Blocks.TERRACOTTA;
 
@@ -1211,16 +1213,6 @@ public class CPlusItems {
 	public static final Item CRACKED_NETHER_BRICK_STAIRS = register("cracked_nether_brick_stairs", new BlockItem(CPlusBlocks.CRACKED_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CRACKED_NETHER_BRICK_WALL = register("cracked_nether_brick_wall", new BlockItem(CPlusBlocks.CRACKED_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
 	public static final Item CRACKED_NETHER_BRICK_FENCE_GATE = register("cracked_nether_brick_fence_gate", new BlockItem(CPlusBlocks.CRACKED_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-	public static final Item RED_NETHER_BRICK_FENCE_GATE = register("red_nether_brick_fence_gate", new BlockItem(CPlusBlocks.RED_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-	public static final Item RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new BlockItem(CPlusBlocks.RED_NETHER_BRICK_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-	public static final Item CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new BlockItem(CPlusBlocks.CHISELED_RED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-	public static final Item CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new BlockItem(CPlusBlocks.CARVED_RED_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-
 
 // PRISMARINE
 
@@ -4732,128 +4724,6 @@ public class CPlusItems {
 	public static final Item SOUL_GLOWSTONE_WALL = register("soul_glowstone_wall", new BlockItem(CPlusBlocks.SOUL_GLOWSTONE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item SOUL_GLOWSTONE_GATE = register("soul_glowstone_gate", new BlockItem(CPlusBlocks.SOUL_GLOWSTONE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-
-// ICE
-
-	// Red
-	public static final Item RED_ICE = register("red_ice", new BlockItem(CPlusBlocks.RED_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item RED_ICE_SLAB = register("red_ice_slab", new BlockItem(CPlusBlocks.RED_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item RED_ICE_STAIRS = register("red_ice_stairs", new BlockItem(CPlusBlocks.RED_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item RED_ICE_WALL = register("red_ice_wall", new BlockItem(CPlusBlocks.RED_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item RED_ICE_GATE = register("red_ice_gate", new BlockItem(CPlusBlocks.RED_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Orange
-	public static final Item ORANGE_ICE = register("orange_ice", new BlockItem(CPlusBlocks.ORANGE_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item ORANGE_ICE_SLAB = register("orange_ice_slab", new BlockItem(CPlusBlocks.ORANGE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item ORANGE_ICE_STAIRS = register("orange_ice_stairs", new BlockItem(CPlusBlocks.ORANGE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item ORANGE_ICE_WALL = register("orange_ice_wall", new BlockItem(CPlusBlocks.ORANGE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item ORANGE_ICE_GATE = register("orange_ice_gate", new BlockItem(CPlusBlocks.ORANGE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Yellow
-	public static final Item YELLOW_ICE = register("yellow_ice", new BlockItem(CPlusBlocks.YELLOW_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item YELLOW_ICE_SLAB = register("yellow_ice_slab", new BlockItem(CPlusBlocks.YELLOW_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item YELLOW_ICE_STAIRS = register("yellow_ice_stairs", new BlockItem(CPlusBlocks.YELLOW_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item YELLOW_ICE_WALL = register("yellow_ice_wall", new BlockItem(CPlusBlocks.YELLOW_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item YELLOW_ICE_GATE = register("yellow_ice_gate", new BlockItem(CPlusBlocks.YELLOW_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Lime
-	public static final Item LIME_ICE = register("lime_ice", new BlockItem(CPlusBlocks.LIME_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIME_ICE_SLAB = register("lime_ice_slab", new BlockItem(CPlusBlocks.LIME_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIME_ICE_STAIRS = register("lime_ice_stairs", new BlockItem(CPlusBlocks.LIME_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIME_ICE_WALL = register("lime_ice_wall", new BlockItem(CPlusBlocks.LIME_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIME_ICE_GATE = register("lime_ice_gate", new BlockItem(CPlusBlocks.LIME_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Green
-	public static final Item GREEN_ICE = register("green_ice", new BlockItem(CPlusBlocks.GREEN_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item GREEN_ICE_SLAB = register("green_ice_slab", new BlockItem(CPlusBlocks.GREEN_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item GREEN_ICE_STAIRS = register("green_ice_stairs", new BlockItem(CPlusBlocks.GREEN_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item GREEN_ICE_WALL = register("green_ice_wall", new BlockItem(CPlusBlocks.GREEN_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item GREEN_ICE_GATE = register("green_ice_gate", new BlockItem(CPlusBlocks.GREEN_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Blue
-	public static final Item BLUE_ICE_SLAB = register("blue_ice_slab", new BlockItem(CPlusBlocks.BLUE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BLUE_ICE_STAIRS = register("blue_ice_stairs", new BlockItem(CPlusBlocks.BLUE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BLUE_ICE_WALL = register("blue_ice_wall", new BlockItem(CPlusBlocks.BLUE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BLUE_ICE_GATE = register("blue_ice_gate", new BlockItem(CPlusBlocks.BLUE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Cyan
-	public static final Item CYAN_ICE = register("cyan_ice", new BlockItem(CPlusBlocks.CYAN_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item CYAN_ICE_SLAB = register("cyan_ice_slab", new BlockItem(CPlusBlocks.CYAN_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item CYAN_ICE_STAIRS = register("cyan_ice_stairs", new BlockItem(CPlusBlocks.CYAN_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item CYAN_ICE_WALL = register("cyan_ice_wall", new BlockItem(CPlusBlocks.CYAN_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item CYAN_ICE_GATE = register("cyan_ice_gate", new BlockItem(CPlusBlocks.CYAN_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Light Blue
-	public static final Item LIGHT_BLUE_ICE = register("light_blue_ice", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIGHT_BLUE_ICE_SLAB = register("light_blue_ice_slab", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIGHT_BLUE_ICE_STAIRS = register("light_blue_ice_stairs", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIGHT_BLUE_ICE_WALL = register("light_blue_ice_wall", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIGHT_BLUE_ICE_GATE = register("light_blue_ice_gate", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Purple
-	public static final Item PURPLE_ICE = register("purple_ice", new BlockItem(CPlusBlocks.PURPLE_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item PURPLE_ICE_SLAB = register("purple_ice_slab", new BlockItem(CPlusBlocks.PURPLE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item PURPLE_ICE_STAIRS = register("purple_ice_stairs", new BlockItem(CPlusBlocks.PURPLE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item PURPLE_ICE_WALL = register("purple_ice_wall", new BlockItem(CPlusBlocks.PURPLE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item PURPLE_ICE_GATE = register("purple_ice_gate", new BlockItem(CPlusBlocks.PURPLE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Magenta
-	public static final Item MAGENTA_ICE = register("magenta_ice", new BlockItem(CPlusBlocks.MAGENTA_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item MAGENTA_ICE_SLAB = register("magenta_ice_slab", new BlockItem(CPlusBlocks.MAGENTA_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item MAGENTA_ICE_STAIRS = register("magenta_ice_stairs", new BlockItem(CPlusBlocks.MAGENTA_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item MAGENTA_ICE_WALL = register("magenta_ice_wall", new BlockItem(CPlusBlocks.MAGENTA_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item MAGENTA_ICE_GATE = register("magenta_ice_gate", new BlockItem(CPlusBlocks.MAGENTA_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Pink
-	public static final Item PINK_ICE = register("pink_ice", new BlockItem(CPlusBlocks.PINK_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item PINK_ICE_SLAB = register("pink_ice_slab", new BlockItem(CPlusBlocks.PINK_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item PINK_ICE_STAIRS = register("pink_ice_stairs", new BlockItem(CPlusBlocks.PINK_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item PINK_ICE_WALL = register("pink_ice_wall", new BlockItem(CPlusBlocks.PINK_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item PINK_ICE_GATE = register("pink_ice_gate", new BlockItem(CPlusBlocks.PINK_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// White
-	public static final Item WHITE_ICE = register("white_ice", new BlockItem(CPlusBlocks.WHITE_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item WHITE_ICE_SLAB = register("white_ice_slab", new BlockItem(CPlusBlocks.WHITE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item WHITE_ICE_STAIRS = register("white_ice_stairs", new BlockItem(CPlusBlocks.WHITE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item WHITE_ICE_WALL = register("white_ice_wall", new BlockItem(CPlusBlocks.WHITE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item WHITE_ICE_GATE = register("white_ice_gate", new BlockItem(CPlusBlocks.WHITE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Light Gray
-	public static final Item LIGHT_GRAY_ICE = register("light_gray_ice", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIGHT_GRAY_ICE_SLAB = register("light_gray_ice_slab", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIGHT_GRAY_ICE_STAIRS = register("light_gray_ice_stairs", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIGHT_GRAY_ICE_WALL = register("light_gray_ice_wall", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item LIGHT_GRAY_ICE_GATE = register("light_gray_ice_gate", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Gray
-	public static final Item GRAY_ICE = register("gray_ice", new BlockItem(CPlusBlocks.GRAY_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item GRAY_ICE_SLAB = register("gray_ice_slab", new BlockItem(CPlusBlocks.GRAY_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item GRAY_ICE_STAIRS = register("gray_ice_stairs", new BlockItem(CPlusBlocks.GRAY_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item GRAY_ICE_WALL = register("gray_ice_wall", new BlockItem(CPlusBlocks.GRAY_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item GRAY_ICE_GATE = register("gray_ice_gate", new BlockItem(CPlusBlocks.GRAY_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Black
-	public static final Item BLACK_ICE = register("black_ice", new BlockItem(CPlusBlocks.BLACK_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BLACK_ICE_SLAB = register("black_ice_slab", new BlockItem(CPlusBlocks.BLACK_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BLACK_ICE_STAIRS = register("black_ice_stairs", new BlockItem(CPlusBlocks.BLACK_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BLACK_ICE_WALL = register("black_ice_wall", new BlockItem(CPlusBlocks.BLACK_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BLACK_ICE_GATE = register("black_ice_gate", new BlockItem(CPlusBlocks.BLACK_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Brown
-	public static final Item BROWN_ICE = register("brown_ice", new BlockItem(CPlusBlocks.BROWN_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BROWN_ICE_SLAB = register("brown_ice_slab", new BlockItem(CPlusBlocks.BROWN_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BROWN_ICE_STAIRS = register("brown_ice_stairs", new BlockItem(CPlusBlocks.BROWN_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BROWN_ICE_WALL = register("brown_ice_wall", new BlockItem(CPlusBlocks.BROWN_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item BROWN_ICE_GATE = register("brown_ice_gate", new BlockItem(CPlusBlocks.BROWN_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-	// Soul
-	public static final Item SOUL_ICE = register("soul_ice", new BlockItem(CPlusBlocks.SOUL_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item SOUL_ICE_SLAB = register("soul_ice_slab", new BlockItem(CPlusBlocks.SOUL_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item SOUL_ICE_STAIRS = register("soul_ice_stairs", new BlockItem(CPlusBlocks.SOUL_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item SOUL_ICE_WALL = register("soul_ice_wall", new BlockItem(CPlusBlocks.SOUL_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-	public static final Item SOUL_ICE_GATE = register("soul_ice_gate", new BlockItem(CPlusBlocks.SOUL_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
-
-
 // ORGANICS
 
 	// Dirt
@@ -4949,7 +4819,7 @@ public class CPlusItems {
 	public static final Item STONE_BRICK_PILLAR = register("stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.STONE_BRICK_PILLAR));
 	public static final Item MOSSY_STONE_BRICK_PILLAR = register("mossy_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.MOSSY_STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.MOSSY_STONE_BRICK_PILLAR));
 	public static final Item CRACKED_STONE_BRICK_PILLAR = register("cracked_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRACKED_STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_STONE_BRICK_PILLAR));
-	public static final Item CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CRACKED_CHISELED_STONE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_CHISELED_STONE));
+	public static final Item CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.CRACKED_CHISELED_STONE_BRICKS, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_CHISELED_STONE));
 	public static final Item MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new RedirectedBlockItem(CPlusBlocks.MOSSY_CHISELED_STONE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.MOSSY_CHISELED_STONE_BRICKS));
 	public static final Item BLACKSTONE_BRICK_PILLAR = register("blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.BLACKSTONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BLACKSTONE_BRICK_PILLAR));
 	public static final Item CRACKED_BLACKSTONE_BRICK_PILLAR = register("cracked_blackstone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRACKED_BLACKSTONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_BLACKSTONE_BRICK_PILLAR));
@@ -4961,33 +4831,115 @@ public class CPlusItems {
 	public static final Item POLISHED_PURPUR_BLOCK = register("polished_purpur_block", new RedirectedBlockItem(CPlusBlocks.POLISHED_PURPUR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.POLISHED_PURPUR_BLOCK));
 	public static final Item CHISELED_PURPUR_BLOCK = register("chiseled_purpur_block", new RedirectedBlockItem(CPlusBlocks.CHISELED_PURPUR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CHISELED_PURPUR_BLOCK));
 	public static final Item END_STONE_BRICK_PILLAR = register("end_stone_brick_pillar", new RedirectedBlockItem(CPlusBlocks.END_STONE_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.END_STONE_BRICK_PILLAR));
-	// Netherrack Pillar
 	public static final Item NETHER_BRICK_PILLAR = register("nether_brick_pillar", new RedirectedBlockItem(CPlusBlocks.NETHERRACK_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.NETHER_BRICK_PILLAR));
-
-	// Chiseled Netherrack
 	public static final Item CHISELED_NETHER_BRICKS = register("chiseled_nether_bricks", new RedirectedBlockItem(CPlusBlocks.CHISELED_NETHERRACK, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CHISELED_NETHER_BRICKS));
+	public static final Item BLUE_NETHER_BRICKS = register("blue_nether_bricks", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICKS, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BLUE_NETHER_BRICKS));
+	public static final Item BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICK_SLAB, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BLUE_NETHER_BRICK_SLAB));
+	public static final Item BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BLUE_NETHER_BRICK_STAIRS));
+	public static final Item BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICK_WALL, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BLUE_NETHER_BRICK_WALL));
+	public static final Item BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICK_GATE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BLUE_NETHER_BRICK_FENCE_GATE));
+	public static final Item CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICKS, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_BLUE_NETHER_BRICKS));
+	public static final Item CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICK_SLAB, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB));
+	public static final Item CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICK_STAIRS, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS));
+	public static final Item CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICK_WALL, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_WALL));
+	public static final Item CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_BRICK_GATE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE));
+	public static final Item BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new RedirectedBlockItem(CPlusBlocks.WARPED_WART_PILLAR, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.BLUE_NETHER_BRICK_PILLAR));
+	public static final Item CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new RedirectedBlockItem(CPlusBlocks.CHISELED_WARPED_WART, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CHISELED_BLUE_NETHER_BRICKS));
+	public static final Item CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_WARPED_WART, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.CARVED_BLUE_NETHER_BRICKS));
+	public static final Item RED_NETHER_BRICK_FENCE_GATE = register("red_nether_brick_fence_gate", new RedirectedBlockItem(CPlusBlocks.CRIMSON_WART_BRICK_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings(), CPlusBlocks.RED_NETHER_BRICK_FENCE_GATE));
+	public static final Item RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new RedirectedBlockItem(CPlusBlocks.CRIMSON_WART_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings(), CPlusBlocks.RED_NETHER_BRICK_PILLAR));
+	public static final Item CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new RedirectedBlockItem(CPlusBlocks.CHISELED_CRIMSON_WART, CPlusItemGroups.consistencyPlusMiscItemSettings(), CPlusBlocks.CHISELED_RED_NETHER_BRICKS));
+	public static final Item CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new RedirectedBlockItem(CPlusBlocks.CARVED_CRIMSON_WART, CPlusItemGroups.consistencyPlusMiscItemSettings(), CPlusBlocks.CARVED_RED_NETHER_BRICKS));
 
 
 
-	public static final Item DEPRECATED_BLUE_NETHER_BRICKS = register("blue_nether_bricks", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item BLUE_NETHER_BRICK_FENCE_GATE = register("blue_nether_brick_fence_gate", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	// Cracked Warped Wart Bricks
-	public static final Item CRACKED_BLUE_NETHER_BRICKS = register("cracked_blue_nether_bricks", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item CRACKED_BLUE_NETHER_BRICK_SLAB = register("cracked_blue_nether_brick_slab", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_SLAB, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item CRACKED_BLUE_NETHER_BRICK_STAIRS = register("cracked_blue_nether_brick_stairs", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_STAIRS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item CRACKED_BLUE_NETHER_BRICK_WALL = register("cracked_blue_nether_brick_wall", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_WALL, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	public static final Item CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = register("cracked_blue_nether_brick_fence_gate", new BlockItem(CPlusBlocks.CRACKED_BLUE_NETHER_BRICK_FENCE_GATE, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-	// Warped Wart Pillar
-	public static final Item BLUE_NETHER_BRICK_PILLAR = register("blue_nether_brick_pillar", new BlockItem(CPlusBlocks.BLUE_NETHER_BRICK_PILLAR, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	// Red
+	public static final Item RED_ICE = register("red_ice", new BlockItem(CPlusBlocks.RED_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item RED_ICE_SLAB = register("red_ice_slab", new BlockItem(CPlusBlocks.RED_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item RED_ICE_STAIRS = register("red_ice_stairs", new BlockItem(CPlusBlocks.RED_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item RED_ICE_WALL = register("red_ice_wall", new BlockItem(CPlusBlocks.RED_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item RED_ICE_GATE = register("red_ice_gate", new BlockItem(CPlusBlocks.RED_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item ORANGE_ICE = register("orange_ice", new BlockItem(CPlusBlocks.ORANGE_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item ORANGE_ICE_SLAB = register("orange_ice_slab", new BlockItem(CPlusBlocks.ORANGE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item ORANGE_ICE_STAIRS = register("orange_ice_stairs", new BlockItem(CPlusBlocks.ORANGE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item ORANGE_ICE_WALL = register("orange_ice_wall", new BlockItem(CPlusBlocks.ORANGE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item ORANGE_ICE_GATE = register("orange_ice_gate", new BlockItem(CPlusBlocks.ORANGE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item YELLOW_ICE = register("yellow_ice", new BlockItem(CPlusBlocks.YELLOW_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item YELLOW_ICE_SLAB = register("yellow_ice_slab", new BlockItem(CPlusBlocks.YELLOW_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item YELLOW_ICE_STAIRS = register("yellow_ice_stairs", new BlockItem(CPlusBlocks.YELLOW_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item YELLOW_ICE_WALL = register("yellow_ice_wall", new BlockItem(CPlusBlocks.YELLOW_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item YELLOW_ICE_GATE = register("yellow_ice_gate", new BlockItem(CPlusBlocks.YELLOW_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIME_ICE = register("lime_ice", new BlockItem(CPlusBlocks.LIME_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIME_ICE_SLAB = register("lime_ice_slab", new BlockItem(CPlusBlocks.LIME_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIME_ICE_STAIRS = register("lime_ice_stairs", new BlockItem(CPlusBlocks.LIME_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIME_ICE_WALL = register("lime_ice_wall", new BlockItem(CPlusBlocks.LIME_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIME_ICE_GATE = register("lime_ice_gate", new BlockItem(CPlusBlocks.LIME_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GREEN_ICE = register("green_ice", new BlockItem(CPlusBlocks.GREEN_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GREEN_ICE_SLAB = register("green_ice_slab", new BlockItem(CPlusBlocks.GREEN_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GREEN_ICE_STAIRS = register("green_ice_stairs", new BlockItem(CPlusBlocks.GREEN_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GREEN_ICE_WALL = register("green_ice_wall", new BlockItem(CPlusBlocks.GREEN_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GREEN_ICE_GATE = register("green_ice_gate", new BlockItem(CPlusBlocks.GREEN_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLUE_ICE_SLAB = register("blue_ice_slab", new BlockItem(CPlusBlocks.BLUE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLUE_ICE_STAIRS = register("blue_ice_stairs", new BlockItem(CPlusBlocks.BLUE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLUE_ICE_WALL = register("blue_ice_wall", new BlockItem(CPlusBlocks.BLUE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLUE_ICE_GATE = register("blue_ice_gate", new BlockItem(CPlusBlocks.BLUE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item CYAN_ICE = register("cyan_ice", new BlockItem(CPlusBlocks.CYAN_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item CYAN_ICE_SLAB = register("cyan_ice_slab", new BlockItem(CPlusBlocks.CYAN_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item CYAN_ICE_STAIRS = register("cyan_ice_stairs", new BlockItem(CPlusBlocks.CYAN_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item CYAN_ICE_WALL = register("cyan_ice_wall", new BlockItem(CPlusBlocks.CYAN_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item CYAN_ICE_GATE = register("cyan_ice_gate", new BlockItem(CPlusBlocks.CYAN_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_BLUE_ICE = register("light_blue_ice", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_BLUE_ICE_SLAB = register("light_blue_ice_slab", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_BLUE_ICE_STAIRS = register("light_blue_ice_stairs", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_BLUE_ICE_WALL = register("light_blue_ice_wall", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_BLUE_ICE_GATE = register("light_blue_ice_gate", new BlockItem(CPlusBlocks.LIGHT_BLUE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PURPLE_ICE = register("purple_ice", new BlockItem(CPlusBlocks.PURPLE_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PURPLE_ICE_SLAB = register("purple_ice_slab", new BlockItem(CPlusBlocks.PURPLE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PURPLE_ICE_STAIRS = register("purple_ice_stairs", new BlockItem(CPlusBlocks.PURPLE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PURPLE_ICE_WALL = register("purple_ice_wall", new BlockItem(CPlusBlocks.PURPLE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PURPLE_ICE_GATE = register("purple_ice_gate", new BlockItem(CPlusBlocks.PURPLE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item MAGENTA_ICE = register("magenta_ice", new BlockItem(CPlusBlocks.MAGENTA_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item MAGENTA_ICE_SLAB = register("magenta_ice_slab", new BlockItem(CPlusBlocks.MAGENTA_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item MAGENTA_ICE_STAIRS = register("magenta_ice_stairs", new BlockItem(CPlusBlocks.MAGENTA_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item MAGENTA_ICE_WALL = register("magenta_ice_wall", new BlockItem(CPlusBlocks.MAGENTA_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item MAGENTA_ICE_GATE = register("magenta_ice_gate", new BlockItem(CPlusBlocks.MAGENTA_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PINK_ICE = register("pink_ice", new BlockItem(CPlusBlocks.PINK_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PINK_ICE_SLAB = register("pink_ice_slab", new BlockItem(CPlusBlocks.PINK_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PINK_ICE_STAIRS = register("pink_ice_stairs", new BlockItem(CPlusBlocks.PINK_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PINK_ICE_WALL = register("pink_ice_wall", new BlockItem(CPlusBlocks.PINK_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item PINK_ICE_GATE = register("pink_ice_gate", new BlockItem(CPlusBlocks.PINK_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item WHITE_ICE = register("white_ice", new BlockItem(CPlusBlocks.WHITE_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item WHITE_ICE_SLAB = register("white_ice_slab", new BlockItem(CPlusBlocks.WHITE_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item WHITE_ICE_STAIRS = register("white_ice_stairs", new BlockItem(CPlusBlocks.WHITE_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item WHITE_ICE_WALL = register("white_ice_wall", new BlockItem(CPlusBlocks.WHITE_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item WHITE_ICE_GATE = register("white_ice_gate", new BlockItem(CPlusBlocks.WHITE_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_GRAY_ICE = register("light_gray_ice", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_GRAY_ICE_SLAB = register("light_gray_ice_slab", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_GRAY_ICE_STAIRS = register("light_gray_ice_stairs", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_GRAY_ICE_WALL = register("light_gray_ice_wall", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item LIGHT_GRAY_ICE_GATE = register("light_gray_ice_gate", new BlockItem(CPlusBlocks.LIGHT_GRAY_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GRAY_ICE = register("gray_ice", new BlockItem(CPlusBlocks.GRAY_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GRAY_ICE_SLAB = register("gray_ice_slab", new BlockItem(CPlusBlocks.GRAY_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GRAY_ICE_STAIRS = register("gray_ice_stairs", new BlockItem(CPlusBlocks.GRAY_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GRAY_ICE_WALL = register("gray_ice_wall", new BlockItem(CPlusBlocks.GRAY_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item GRAY_ICE_GATE = register("gray_ice_gate", new BlockItem(CPlusBlocks.GRAY_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLACK_ICE = register("black_ice", new BlockItem(CPlusBlocks.BLACK_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLACK_ICE_SLAB = register("black_ice_slab", new BlockItem(CPlusBlocks.BLACK_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLACK_ICE_STAIRS = register("black_ice_stairs", new BlockItem(CPlusBlocks.BLACK_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLACK_ICE_WALL = register("black_ice_wall", new BlockItem(CPlusBlocks.BLACK_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BLACK_ICE_GATE = register("black_ice_gate", new BlockItem(CPlusBlocks.BLACK_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BROWN_ICE = register("brown_ice", new BlockItem(CPlusBlocks.BROWN_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BROWN_ICE_SLAB = register("brown_ice_slab", new BlockItem(CPlusBlocks.BROWN_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BROWN_ICE_STAIRS = register("brown_ice_stairs", new BlockItem(CPlusBlocks.BROWN_ICE_STAIRS, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BROWN_ICE_WALL = register("brown_ice_wall", new BlockItem(CPlusBlocks.BROWN_ICE_WALL, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
+	public static final Item BROWN_ICE_GATE = register("brown_ice_gate", new BlockItem(CPlusBlocks.BROWN_ICE_GATE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 
-	// Chiseled Warped Wart
-	public static final Item CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new BlockItem(CPlusBlocks.CHISELED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
-
-	// Carved Warped Wart
-	public static final Item CARVED_BLUE_NETHER_BRICKS = register("carved_blue_nether_bricks", new BlockItem(CPlusBlocks.CARVED_BLUE_NETHER_BRICKS, CPlusItemGroups.consistencyPlusMiscItemSettings()));
+	// Soul
+	public static final Item SOUL_ICE = soulIceTester("soul_ice", BLUE_ICE, CPlusBlocks.SOUL_ICE);
+	public static final Item SOUL_ICE_SLAB = soulIceTester("soul_ice_slab", CPlusBlocks.BLUE_ICE_SLAB, CPlusBlocks.SOUL_ICE_SLAB);
+	public static final Item SOUL_ICE_STAIRS = soulIceTester("soul_ice_stairs", CPlusBlocks.BLUE_ICE_STAIRS, CPlusBlocks.SOUL_ICE_STAIRS);
+	public static final Item SOUL_ICE_WALL = soulIceTester("soul_ice_wall", CPlusBlocks.BLUE_ICE_WALL, CPlusBlocks.SOUL_ICE_WALL);
+	public static final Item SOUL_ICE_GATE = soulIceTester("soul_ice_gate", CPlusBlocks.BLUE_ICE_GATE, CPlusBlocks.SOUL_ICE_GATE);
 
 
 
@@ -4996,8 +4948,14 @@ public class CPlusItems {
 		return item;
 	}
 
-	public static void init() {
+	private static Item soulIceTester(String id, Block backupBlock, Block fromBlock) {
+		Block toBlock = backupBlock;
+		if (isSoulIceLoaded) toBlock = Registry.BLOCK.getOrEmpty(new Identifier("soul_ice", id)).get();
+
+		return register(id, new RedirectedBlockItem(toBlock, CPlusItemGroups.consistencyPlusDeprecatedSettings(), fromBlock));
 	}
+
+	public static void init() {}
 	
 	public static void register() {
 		ITEMS.register();

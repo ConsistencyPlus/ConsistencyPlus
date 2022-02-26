@@ -2,8 +2,12 @@ package io.github.consistencyplus.consistency_plus.base;
 
 import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
+import io.github.consistencyplus.consistency_plus.blocks.BlockColors;
+import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
+import io.github.consistencyplus.consistency_plus.blocks.BlockVariations;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertHandler;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -25,24 +29,10 @@ public class ConsistencyPlusClientMain {
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_SLAB);
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_STAIRS);
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_WALL);
-		
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.RED_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.ORANGE_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.YELLOW_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.LIME_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.GREEN_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.BLUE_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.LIGHT_BLUE_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.CYAN_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.PURPLE_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.MAGENTA_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.PINK_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.WHITE_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.BROWN_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.LIGHT_GRAY_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.GRAY_TINTED_GLASS_BLOCK);
-		RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusBlocks.BLACK_TINTED_GLASS_BLOCK);
-		
+
+		for (BlockColors color : BlockColors.values()) {
+			RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusEnhancedRegistry.getDyedBlock("tinted_glass", BlockVariations.BLOCK, BlockTypes.BASE, color));
+		}
 		
 		modelPredicateProviderFactory.accept(CPlusItems.RED_BUNDLE, new Identifier("filled"),
 				(itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));

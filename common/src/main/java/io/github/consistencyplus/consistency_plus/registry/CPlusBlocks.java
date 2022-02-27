@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import dev.architectury.hooks.tags.TagHooks;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
@@ -22,20 +21,14 @@ import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBloc
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.EntityType;
-import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.Tag;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
-import java.util.Locale;
-
-import static io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags.CommonBlocks.VALID_CONDUIT_BLOCKS;
-import static io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags.CommonBlocks.VALID_PORTAL_BLOCKS;
+import static io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags.ConsistencySpecificTags.VALID_CONDUIT_BLOCKS;
+import static io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags.ConsistencySpecificTags.VALID_PORTAL_BLOCKS;
 import static net.minecraft.block.Blocks.*;
-import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
 	

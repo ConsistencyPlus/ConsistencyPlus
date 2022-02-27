@@ -10,7 +10,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConsistencyPlusTags {
-    public static class CommonBlocks {
+
+    public static class Common{
+        public static final Tag.Identified<Block> OBSIDIAN = register("obsidian");
+        public static final Tag.Identified<Block> NETHERRACK = register("netherrack");
+        public static final Tag.Identified<Block> SANDSTONE = register("sandstone");
+        public static final Tag.Identified<Block> STONE = register("stone");
+
+        private static Tag.Identified<Block> register(String name){
+            return TagUtil.initBlockTag(name);
+        }
+    }
+
+    public static class ConsistencySpecificTags {
         public static final List<Tag.Identified<Block>> ALL_COMMON_BLOCK_TAGS = new ArrayList<>();
 
         public static final Tag.Identified<Block> VALID_PORTAL_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_portal_blocks"));
@@ -20,8 +32,6 @@ public class ConsistencyPlusTags {
         public static final Tag.Identified<Block> SLABS = register(new Identifier(ConsistencyPlusMain.ID,"slabs"));
         public static final Tag.Identified<Block> WALLS = register(new Identifier(ConsistencyPlusMain.ID,"walls"));
         public static final Tag.Identified<Block> FENCE_GATES = register(new Identifier(ConsistencyPlusMain.ID,"fence_gates"));
-
-        public static final Tag.Identified<Block> STONE_BRICKS = register(new Identifier(ConsistencyPlusMain.ID,"stone_bricks"));
 
         public static final Tag.Identified<Block> IMPERMEABLE = register(new Identifier(ConsistencyPlusMain.ID,"impermeable"));
 
@@ -34,6 +44,8 @@ public class ConsistencyPlusTags {
 
         public static final Tag.Identified<Block> INFINIBURN_OVERWORLD = register(new Identifier(ConsistencyPlusMain.ID,"infiniburn_overworld"));
         public static final Tag.Identified<Block> INFINIBURN_NETHER = register(new Identifier(ConsistencyPlusMain.ID,"infiniburn_nether"));
+
+        public static final Tag.Identified<Block> TERRACOTTA = register(new Identifier(ConsistencyPlusMain.ID,"terracotta"));
 
         private static Tag.Identified<Block> register(Identifier id){
             Tag.Identified<Block> temp = TagHooks.optionalBlock(id);
@@ -159,6 +171,6 @@ public class ConsistencyPlusTags {
 
     public static void init(){
         DyeableBlocks.init();
-        CommonBlocks.init();
+        ConsistencySpecificTags.init();
     }
 }

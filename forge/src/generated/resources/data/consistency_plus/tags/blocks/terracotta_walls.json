@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_terracotta_wall",
+    "consistency_plus:orange_terracotta_wall",
+    "consistency_plus:magenta_terracotta_wall",
+    "consistency_plus:light_blue_terracotta_wall",
+    "consistency_plus:yellow_terracotta_wall",
+    "consistency_plus:lime_terracotta_wall",
+    "consistency_plus:pink_terracotta_wall",
+    "consistency_plus:gray_terracotta_wall",
+    "consistency_plus:light_gray_terracotta_wall",
+    "consistency_plus:cyan_terracotta_wall",
+    "consistency_plus:purple_terracotta_wall",
+    "consistency_plus:blue_terracotta_wall",
+    "consistency_plus:brown_terracotta_wall",
+    "consistency_plus:green_terracotta_wall",
+    "consistency_plus:red_terracotta_wall",
+    "consistency_plus:black_terracotta_wall",
+    "consistency_plus:terracotta_wall"
+  ]
+}

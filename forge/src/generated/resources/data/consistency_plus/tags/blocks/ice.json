@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_ice",
+    "consistency_plus:orange_ice",
+    "consistency_plus:magenta_ice",
+    "consistency_plus:light_blue_ice",
+    "consistency_plus:yellow_ice",
+    "consistency_plus:lime_ice",
+    "consistency_plus:pink_ice",
+    "consistency_plus:gray_ice",
+    "consistency_plus:light_gray_ice",
+    "consistency_plus:cyan_ice",
+    "consistency_plus:purple_ice",
+    "minecraft:blue_ice",
+    "consistency_plus:brown_ice",
+    "consistency_plus:green_ice",
+    "consistency_plus:red_ice",
+    "consistency_plus:black_ice",
+    "minecraft:ice"
+  ]
+}

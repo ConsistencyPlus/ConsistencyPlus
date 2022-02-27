@@ -93,7 +93,6 @@ components.java {
     }
 }
 
-
 publishing {
     publications {
         mavenFabric(MavenPublication) {

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_white_terracotta",
+    "consistency_plus:smooth_orange_terracotta",
+    "consistency_plus:smooth_magenta_terracotta",
+    "consistency_plus:smooth_light_blue_terracotta",
+    "consistency_plus:smooth_yellow_terracotta",
+    "consistency_plus:smooth_lime_terracotta",
+    "consistency_plus:smooth_pink_terracotta",
+    "consistency_plus:smooth_gray_terracotta",
+    "consistency_plus:smooth_light_gray_terracotta",
+    "consistency_plus:smooth_cyan_terracotta",
+    "consistency_plus:smooth_purple_terracotta",
+    "consistency_plus:smooth_blue_terracotta",
+    "consistency_plus:smooth_brown_terracotta",
+    "consistency_plus:smooth_green_terracotta",
+    "consistency_plus:smooth_red_terracotta",
+    "consistency_plus:smooth_black_terracotta",
+    "consistency_plus:smooth_terracotta"
+  ]
+}

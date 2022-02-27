@@ -16,6 +16,9 @@ public class ConsistencyPlusTags {
         public static final Tag.Identified<Block> NETHERRACK = register("netherrack");
         public static final Tag.Identified<Block> SANDSTONE = register("sandstone");
         public static final Tag.Identified<Block> STONE = register("stone");
+        public static final Tag.Identified<Block> TERRACOTTA = register("terracotta");
+        public static final Tag.Identified<Block> CONCRETE = register("concrete");
+        public static final Tag.Identified<Block> GLOWSTONE = register("glowstone");
 
         private static Tag.Identified<Block> register(String name){
             return TagUtil.initBlockTag(name);
@@ -25,30 +28,36 @@ public class ConsistencyPlusTags {
     public static class ConsistencySpecificTags {
         public static final List<Tag.Identified<Block>> ALL_COMMON_BLOCK_TAGS = new ArrayList<>();
 
-        public static final Tag.Identified<Block> VALID_PORTAL_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_portal_blocks"));
-        public static final Tag.Identified<Block> VALID_CONDUIT_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_conduit_blocks"));
+        public static final Tag.Identified<Block> VALID_PORTAL_BLOCKS = register("valid_portal_blocks");
+        public static final Tag.Identified<Block> VALID_CONDUIT_BLOCKS = register("valid_conduit_blocks");
 
-        public static final Tag.Identified<Block> STAIRS = register(new Identifier(ConsistencyPlusMain.ID,"stairs"));
-        public static final Tag.Identified<Block> SLABS = register(new Identifier(ConsistencyPlusMain.ID,"slabs"));
-        public static final Tag.Identified<Block> WALLS = register(new Identifier(ConsistencyPlusMain.ID,"walls"));
-        public static final Tag.Identified<Block> FENCE_GATES = register(new Identifier(ConsistencyPlusMain.ID,"fence_gates"));
+        public static final Tag.Identified<Block> STAIRS = register("stairs");
+        public static final Tag.Identified<Block> SLABS = register("slabs");
+        public static final Tag.Identified<Block> WALLS = register("walls");
+        public static final Tag.Identified<Block> FENCE_GATES = register("fence_gates");
 
-        public static final Tag.Identified<Block> IMPERMEABLE = register(new Identifier(ConsistencyPlusMain.ID,"impermeable"));
+        public static final Tag.Identified<Block> IMPERMEABLE = register("impermeable");
 
-        public static final Tag.Identified<Block> DRAGON_IMMUNE = register(new Identifier(ConsistencyPlusMain.ID,"dragon_immune"));
+        public static final Tag.Identified<Block> DRAGON_IMMUNE = register("dragon_immune");
 
-        public static final Tag.Identified<Block> NEEDS_DIAMOND_TOOL = register(new Identifier(ConsistencyPlusMain.ID,"needs_diamond_tool"));
+        public static final Tag.Identified<Block> NEEDS_DIAMOND_TOOL = register("needs_diamond_tool");
 
-        public static final Tag.Identified<Block> SOUL_SPEED_BLOCKS = register(new Identifier(ConsistencyPlusMain.ID,"soul_speed_blocks"));
-        public static final Tag.Identified<Block> SOUL_FIRE_BASE_BLOCKS = register(new Identifier(ConsistencyPlusMain.ID,"soul_fire_base_blocks"));
+        public static final Tag.Identified<Block> SOUL_SPEED_BLOCKS = register("soul_speed_blocks");
+        public static final Tag.Identified<Block> SOUL_FIRE_BASE_BLOCKS = register("soul_fire_base_blocks");
 
-        public static final Tag.Identified<Block> INFINIBURN_OVERWORLD = register(new Identifier(ConsistencyPlusMain.ID,"infiniburn_overworld"));
-        public static final Tag.Identified<Block> INFINIBURN_NETHER = register(new Identifier(ConsistencyPlusMain.ID,"infiniburn_nether"));
+        public static final Tag.Identified<Block> INFINIBURN_OVERWORLD = register("infiniburn_overworld");
+        public static final Tag.Identified<Block> INFINIBURN_NETHER = register("infiniburn_nether");
 
-        public static final Tag.Identified<Block> TERRACOTTA = register(new Identifier(ConsistencyPlusMain.ID,"terracotta"));
+        public static final Tag.Identified<Block> OBSIDIAN = register("obsidian");
+        public static final Tag.Identified<Block> NETHERRACK = register("netherrack");
+        public static final Tag.Identified<Block> SANDSTONE = register("sandstone");
+        public static final Tag.Identified<Block> STONE = register("stone");
+        public static final Tag.Identified<Block> TERRACOTTA = register("terracotta");
+        public static final Tag.Identified<Block> CONCRETE = register("concrete");
+        public static final Tag.Identified<Block> GLOWSTONE = register("glowstone");
 
-        private static Tag.Identified<Block> register(Identifier id){
-            Tag.Identified<Block> temp = TagHooks.optionalBlock(id);
+        private static Tag.Identified<Block> register(String string){
+            Tag.Identified<Block> temp = TagHooks.optionalBlock(new Identifier(ConsistencyPlusMain.ID, string));
             ALL_COMMON_BLOCK_TAGS.add(temp);
             return temp;
         }

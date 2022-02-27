@@ -1,23 +1,6 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_stone",
-    "consistency_plus:cut_stone",
-    "consistency_plus:stone_tiles",
-    "consistency_plus:stone_pillar",
-    "consistency_plus:cracked_stone_pillar",
-    "consistency_plus:mossy_stone_pillar",
-    "consistency_plus:stone_corner_pillar",
-    "consistency_plus:cracked_stone_corner_pillar",
-    "consistency_plus:mossy_stone_corner_pillar",
-    "consistency_plus:cracked_chiseled_stone",
-    "consistency_plus:mossy_chiseled_stone",
-    "consistency_plus:carved_stone",
-    "consistency_plus:stone_brick_pillar",
-    "consistency_plus:cracked_stone_brick_pillar",
-    "consistency_plus:mossy_stone_brick_pillar",
-    "consistency_plus:carved_stone_bricks",
-    "consistency_plus:cracked_chiseled_stone_bricks",
-    "consistency_plus:mossy_chiseled_stone_bricks"
+    "#consistency_plus:stone"
   ]
 }

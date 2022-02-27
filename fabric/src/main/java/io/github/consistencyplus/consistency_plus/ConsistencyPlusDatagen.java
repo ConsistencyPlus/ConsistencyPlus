@@ -8,11 +8,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 public class ConsistencyPlusDatagen implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-        ConsistencyPlusTags.init();
-        fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.DyeableBlockTagProvider(fabricDataGenerator));
 
         long startTime = System.currentTimeMillis();
 
+        ConsistencyPlusTags.init();
+
+        fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.DyeableBlockTagProvider(fabricDataGenerator));
         fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.CommonBlockTagProvider(fabricDataGenerator));
 
         long finishTime = System.currentTimeMillis();

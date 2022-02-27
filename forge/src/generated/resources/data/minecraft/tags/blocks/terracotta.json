@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:sandstone"
+    "#consistency_plus:terracotta"
   ]
 }

@@ -32,8 +32,7 @@ public class ConsistencyPlusTagProvider {
             super(dataGenerator);
         }
 
-        protected void configure() {
-        }
+        protected void configure() {}
 
         public static void createAndFillTags(Function<Tag.Identified<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc){
             Registry.BLOCK.getEntries().stream().filter((entry) -> Objects.equals(entry.getKey().getValue().getNamespace(), ConsistencyPlusMain.ID))
@@ -87,12 +86,9 @@ public class ConsistencyPlusTagProvider {
                                 if(string.equals("terracotta"))
                                     getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.TERRACOTTA).add(block);
 
-                                if(string.equals("terracotta"))
-                                    getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.TERRACOTTA).add(block);
-
                                 switch(string){
                                     case "obsidian":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.OBSIDIAN).add(block);
+                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.OBSIDIAN).add(block);
 
                                         if(!isCryingObs)
                                             getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.VALID_PORTAL_BLOCKS).add(block);
@@ -112,18 +108,22 @@ public class ConsistencyPlusTagProvider {
                                         shouldBreakForLoop = true;
                                         break;
                                     case "netherrack":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.NETHERRACK).add(block);
+                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.NETHERRACK).add(block);
                                     case "nether":
                                         getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_OVERWORLD).add(block);
                                         getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_NETHER).add(block);
                                         shouldBreakForLoop = true;
                                         break;
                                     case "sandstone":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.SANDSTONE).add(block);
+                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.SANDSTONE).add(block);
                                         shouldBreakForLoop = true;
                                         break;
                                     case "stone":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.STONE).add(block);
+                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.STONE).add(block);
+                                        shouldBreakForLoop = true;
+                                        break;
+                                    case "concrete":
+                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.CONCRETE).add(block);
                                         shouldBreakForLoop = true;
                                         break;
                                 }
@@ -133,50 +133,6 @@ public class ConsistencyPlusTagProvider {
                                 }
                             }
                         }
-
-//                        if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "obsidian"))){
-//                            boolean isCryingObs = getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "crying"));
-//
-//                            if(!isCryingObs) {
-//                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.VALID_PORTAL_BLOCKS).add(block);
-//                            }
-//
-//                            if(isNormalBlock) {
-//                                this.getOrCreateTagBuilder(PlatformTags.Blocks.OBSIDIAN).add(block);
-//                            }
-//
-//                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.DRAGON_IMMUNE).add(block);
-//                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.NEEDS_DIAMOND_TOOL).add(block);
-//                        }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "prismarine"))){
-//                            this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.VALID_CONDUIT_BLOCKS).add(block);
-//                        }
-//
-//                        if(isNormalBlock){
-//
-//                            if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "bricks"))){
-//                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.STONE_BRICKS).add(block);
-//                            }
-//
-//                            if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "glass"))){
-//                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.IMPERMEABLE).add(block);
-//                            }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "end"))){
-//                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.DRAGON_IMMUNE).add(block);
-//                            }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "soul"))){
-//                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.SOUL_FIRE_BASE_BLOCKS).add(block);
-//                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.SOUL_SPEED_BLOCKS).add(block);
-//                            }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "nether") || Objects.equals(string, "netherrack"))){
-//                                if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "netherrack"))){
-//                                    this.getOrCreateTagBuilder(PlatformTags.Blocks.NETHERRACK);
-//                                }
-//
-//                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.INFINIBURN_OVERWORLD).add(block);
-//                                this.getOrCreateTagBuilder(ConsistencyPlusTags.CommonBlocks.INFINIBURN_NETHER).add(block);
-//                            }else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "sandstone"))){
-//                                this.getOrCreateTagBuilder(PlatformTags.Blocks.SANDSTONE);
-//                            } else if(getStream(splitIdentifier).anyMatch((string) -> Objects.equals(string, "stone"))){
-//                                this.getOrCreateTagBuilder(PlatformTags.Blocks.STONE);
-//                            }
-//                        }
                     });
 
             getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.NEEDS_DIAMOND_TOOL).add(CPlusBlocks.NETHERITE_STAIRS);
@@ -191,7 +147,11 @@ public class ConsistencyPlusTagProvider {
                     Blocks.PRISMARINE_WALL,
                     Blocks.DARK_PRISMARINE,
                     Blocks.DARK_PRISMARINE_SLAB,
-                    Blocks.DARK_PRISMARINE_STAIRS);
+                    Blocks.DARK_PRISMARINE_STAIRS,
+                    CPlusBlocks.NUBERT);
+
+            getOrCreateTagBuilderFunc.apply(BlockTags.BEACON_BASE_BLOCKS).add(CPlusBlocks.NUBERT);
+            getOrCreateTagBuilderFunc.apply(BlockTags.PIGLIN_REPELLENTS).add(CPlusBlocks.JACK_O_SOUL);
 
             getOrCreateTagBuilderFunc.apply(BlockTags.STAIRS).addTag(ConsistencyPlusTags.ConsistencySpecificTags.STAIRS);
             getOrCreateTagBuilderFunc.apply(BlockTags.SLABS).addTag(ConsistencyPlusTags.ConsistencySpecificTags.SLABS);
@@ -210,7 +170,17 @@ public class ConsistencyPlusTagProvider {
             getOrCreateTagBuilderFunc.apply(BlockTags.INFINIBURN_OVERWORLD).addTag(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_OVERWORLD);
             getOrCreateTagBuilderFunc.apply(BlockTags.INFINIBURN_NETHER).addTag(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_NETHER);
 
+            getOrCreateTagBuilderFunc.apply(BlockTags.TERRACOTTA).addTag(ConsistencyPlusTags.ConsistencySpecificTags.TERRACOTTA);
+
             //-----------------------------------------------------------------------------------------------------------------------------//
+
+            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.OBSIDIAN).addTag(ConsistencyPlusTags.ConsistencySpecificTags.OBSIDIAN);
+            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.NETHERRACK).addTag(ConsistencyPlusTags.ConsistencySpecificTags.NETHERRACK);
+            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.SANDSTONE).addTag(ConsistencyPlusTags.ConsistencySpecificTags.SANDSTONE);
+            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.STONE).addTag(ConsistencyPlusTags.ConsistencySpecificTags.STONE);
+            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.TERRACOTTA).addTag(ConsistencyPlusTags.ConsistencySpecificTags.TERRACOTTA);
+            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.CONCRETE).addTag(ConsistencyPlusTags.ConsistencySpecificTags.CONCRETE);
+
         }
     }
 
@@ -334,6 +304,10 @@ public class ConsistencyPlusTagProvider {
             }else{
                 LOGGER.info(nameParts[0] + " / " + defaultBlock + " / " + identified.getId());
                 //System.out.println(identified.getId() + " / " +  defaultBlock.toString());
+            }
+
+            if(identified == ConsistencyPlusTags.DyeableBlocks.GLOWSTONE){
+                getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.GLOWSTONE).addTag(ConsistencyPlusTags.DyeableBlocks.GLOWSTONE);
             }
         }
     }

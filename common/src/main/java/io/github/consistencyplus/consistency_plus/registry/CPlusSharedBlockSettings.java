@@ -59,7 +59,10 @@ public class CPlusSharedBlockSettings {
     public static AbstractBlock.Settings tintedGlass() {
         return AbstractBlock.Settings.copy(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque();
     }
-    //(TINTED_GLASS).sounds(BlockSoundGroup.GLASS).allowsSpawning(CPlusBlocks::never).nonOpaque()
+
+    public static AbstractBlock.Settings warpedWartConstructed() {
+        return AbstractBlock.Settings.of(Material.STONE, MapColor.BLUE).requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS);
+    }
 
     public static AbstractBlock.Settings misc() {
         return AbstractBlock.Settings.of(Material.STONE).strength(1);

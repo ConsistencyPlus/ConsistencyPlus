@@ -19,7 +19,7 @@ public enum BlockVariations {
         if (this.withTypes()) {
             return switch (this) {
                 case SLAB, STAIRS, WALL, GATE -> id + "_" + this;
-                default -> (type.isASuffix()) ? id + "s" : id;
+                default -> (type.suffixCheck(type)) ? id + "s" : id;
             };
         } else {
             return switch (this) {

@@ -1,7 +1,5 @@
 package io.github.consistencyplus.consistency_plus.blocks;
 
-import io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry;
-
 import java.util.Locale;
 
 public enum BlockTypes {
@@ -11,10 +9,6 @@ public enum BlockTypes {
     public String toString() {
         if (this == BASE) return "";
         return name().toLowerCase(Locale.ROOT);
-    }
-
-    public boolean isASuffix() {
-        return suffixCheck(this);
     }
 
     public boolean suffixCheck(BlockTypes type) {

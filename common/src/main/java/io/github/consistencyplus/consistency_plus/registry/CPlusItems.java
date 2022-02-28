@@ -570,7 +570,9 @@ public class CPlusItems {
 		return register(id, new RedirectedBlockItem(toBlock, CPlusItemGroups.consistencyPlusDeprecatedSettings(), fromBlock));
 	}
 
-	public static void init() {}
+	public static void init() {
+		if (ConsistencyPlusMain.DEVENV) ConsistencyPlusMain.LOGGER.info("CPlusItems - initialization point");
+	}
 	
 	public static void register() {
 		ITEMS.register();

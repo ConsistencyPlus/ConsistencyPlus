@@ -3,7 +3,6 @@ package io.github.consistencyplus.consistency_plus.registry;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
-import io.github.consistencyplus.consistency_plus.blocks.BlockColors;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockVariations;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
@@ -11,7 +10,9 @@ import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBloc
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Util;
 import net.minecraft.util.registry.Registry;
 
 import java.util.*;
@@ -19,6 +20,13 @@ import java.util.*;
 import static net.minecraft.block.Blocks.END_STONE;
 
 public class CPlusEnhancedRegistry {
+    public static final List<String> blacklistedIDs = createBlacklist();
+    public static final List<String> whitelistedIDs = createWhitelist();
+    public static final List<String> cobblelessMaterials = createCobbleless();
+    public static final List<String> baseOnlyIDs = createBaseOnly();
+    public static final List<String> tintedGlassIDs = createTintedGlass();
+    public static final Map<String, String> overrideMap = createOverrideMap();
+
     public static final String STONE = registerFromStoneMaterial("stone", AbstractBlock.Settings.copy(Blocks.STONE));
     public static final String ANDESITE = registerFromStoneMaterial("andesite", AbstractBlock.Settings.copy(Blocks.ANDESITE));
     public static final String DIORITE = registerFromStoneMaterial("diorite", AbstractBlock.Settings.copy(Blocks.DIORITE));
@@ -39,9 +47,9 @@ public class CPlusEnhancedRegistry {
     public static final String PURPUR = registerFromMiscMaterial("purpur", Block.Settings.copy(Blocks.PURPUR_BLOCK));
     public static final String PRISMARINE = registerFromMiscMaterial("prismarine", Block.Settings.copy(Blocks.PRISMARINE));
     public static final String DARK_PRISMARINE = registerFromMiscMaterial("dark_prismarine", Block.Settings.copy(Blocks.DARK_PRISMARINE));
-    public static final String NETHERRACK = registerFromMiscMaterial("netherrack", Block.Settings.copy(Blocks.NETHERRACK));
-    public static final String CRIMSON_WART = registerFromMiscMaterial("crimson_wart", AbstractBlock.Settings.copy(Blocks.NETHER_WART_BLOCK));
-    public static final String WARPED_WART = registerFromMiscMaterial("warped_wart", Block.Settings.copy(Blocks.WARPED_WART_BLOCK));
+    public static final String NETHERRACK = registerFromMiscMaterial("netherrack", Block.Settings.copy(Blocks.NETHER_BRICKS));
+    public static final String CRIMSON_WART = registerFromMiscMaterial("crimson_wart", AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS));
+    public static final String WARPED_WART = registerFromMiscMaterial("warped_wart", CPlusSharedBlockSettings.warpedWartConstructed());
     public static final String BONE = registerFromMiscMaterial("bone", Block.Settings.copy(Blocks.BONE_BLOCK));
     public static final String WITHERED_BONE = registerFromMiscMaterial("withered_bone", CPlusSharedBlockSettings.witheredBone());
     public static final String TERRACOTTA = registerFromDyedMaterial("terracotta", CPlusSharedBlockSettings.terracotta(MapColor.ORANGE), true, true);
@@ -49,125 +57,29 @@ public class CPlusEnhancedRegistry {
     public static final String GLOWSTONE = registerFromDyedMaterial("glowstone", CPlusSharedBlockSettings.glowstone(MapColor.GOLD), true, false);
     public static final String TINTED_GLASS = registerFromDyedMaterial("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false, false);
 
-
-    public static ArrayList<String> blacklist() {
-        ArrayList<String> blacklistedIDs = new ArrayList<>();
-        blacklistedIDs.add("carved_netherrack");
-        blacklistedIDs.add("dripstone");
-        blacklistedIDs.add("bone");
-        blacklistedIDs.add("terracotta_bricks");
-        blacklistedIDs.add("terracotta_brick_slab");
-        blacklistedIDs.add("terracotta_brick_stairs");
-        blacklistedIDs.add("terracotta_brick_wall");
-        blacklistedIDs.add("warped_wart");
-        blacklistedIDs.add("purpur_tiles");
-        blacklistedIDs.add("purpur_tile_slab");
-        blacklistedIDs.add("purpur_tile_stairs");
-        blacklistedIDs.add("carved_sandstone");
-        blacklistedIDs.add("carved_red_sandstone");
-        blacklistedIDs.add("quartz");
-        blacklistedIDs.add("chiseled_quartz");
-        blacklistedIDs.add("basalt_pillar");
-        blacklistedIDs.add("netherrack_bricks");
-        blacklistedIDs.add("netherrack_brick_slab");
-        blacklistedIDs.add("netherrack_brick_stairs");
-        blacklistedIDs.add("netherrack_brick_wall");
-        blacklistedIDs.add("netherrack_brick_gate");
-        blacklistedIDs.add("crimson_wart");
-        blacklistedIDs.add("crimson_wart_bricks");
-        blacklistedIDs.add("crimson_wart_brick_slab");
-        blacklistedIDs.add("crimson_wart_brick_stairs");
-        blacklistedIDs.add("crimson_wart_brick_wall");
-        blacklistedIDs.add("cobbled_stone");
-        blacklistedIDs.add("cobbled_stone_slab");
-        blacklistedIDs.add("cobbled_stone_stairs");
-        blacklistedIDs.add("cobbled_stone_wall");
-        blacklistedIDs.add("chiseled_stone");
-        blacklistedIDs.add("blackstone_bricks");
-        blacklistedIDs.add("blackstone_brick_slab");
-        blacklistedIDs.add("blackstone_brick_stairs");
-        blacklistedIDs.add("blackstone_brick_wall");
-        blacklistedIDs.add("carved_blackstone");
-
-        return blacklistedIDs;
-    }
-
-    public static ArrayList<String> cobbleless() {
-        ArrayList<String> blacklistedIDs = new ArrayList<>();
-        blacklistedIDs.add("prismarine");
-        blacklistedIDs.add("dark_prismarine");
-        blacklistedIDs.add("bone");
-        blacklistedIDs.add("withered_bone");
-        blacklistedIDs.add("purpur");
-        blacklistedIDs.add("obsidian");
-        blacklistedIDs.add("crying_obsidian");
-        blacklistedIDs.add("crimson_wart");
-        blacklistedIDs.add("warped_wart");
-        blacklistedIDs.add("quartz");
-        for (BlockColors colors : BlockColors.values()) blacklistedIDs.add(colors.toString() + "_concrete");
-        return blacklistedIDs;
-    }
-
-    public static ArrayList<String> baseOnly() {
-        ArrayList<String> whitelistedIDs = new ArrayList<>();
-        for (BlockColors colors : BlockColors.values()) whitelistedIDs.add(colors.toString() + "_glowstone");
-        whitelistedIDs.add("glowstone");
-        for (BlockColors colors : BlockColors.values()) whitelistedIDs.add(colors.toString() + "_tinted_glass");
-        return whitelistedIDs;
-    }
-
-    public static ArrayList<String> tintedGlassSet() {
-        ArrayList<String> whitelistedIDs = new ArrayList<>();
-        for (BlockColors colors : BlockColors.values()) whitelistedIDs.add(colors.toString() + "_tinted_glass");
-        return whitelistedIDs;
-    }
-
-    public static Map<String, String> overrideMap() {
-        Map<String, String> overrideMap = new HashMap<>();
-        overrideMap.put("withered_bone", "withered_bone_block");
-        overrideMap.put("terracotta_brick_gate", "brick_gate");
-        overrideMap.put("purpur", "purpur_block");
-        overrideMap.put("cobbled_stone_gate", "cobblestone_gate");
-        return overrideMap;
-    }
-
     public static boolean checkMinecraft(String id) {
         Identifier MCID = new Identifier("minecraft", id);
         if (Registry.BLOCK.getOrEmpty(MCID).isPresent() || Registry.ITEM.getOrEmpty(MCID).isPresent()) {
-            return !allowAnyways().contains(id);
+            return !whitelistedIDs.contains(id);
         } else return false;
-    }
-
-    public static ArrayList<String> allowAnyways() {
-        ArrayList<String> whitelistedIDs = new ArrayList<>();
-        whitelistedIDs.add("purpur_block");
-        whitelistedIDs.add("purpur_slab");
-        whitelistedIDs.add("purpur_stairs");
-        whitelistedIDs.add("chiseled_sandstone");
-        whitelistedIDs.add("chiseled_red_sandstone");
-        whitelistedIDs.add("polished_basalt");
-        return whitelistedIDs;
     }
 
     public static Block getBlock(String material, BlockVariations variations, BlockTypes type) {
         String typedMaterial = type.addType(material);
         String id = variations.addVariations(typedMaterial, type);
-        overrideMap().getOrDefault(id, id);
+        overrideMap.getOrDefault(id, id);
         return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
     }
 
-    public static Block getDyedBlock(String material, BlockVariations variations, BlockTypes type, BlockColors color) {
+    public static Block getDyedBlock(String material, BlockVariations variations, BlockTypes type, DyeColor color) {
         String coloredMaterial = color.toString() + "_" + material;
-        String typedMaterial = type.addType(coloredMaterial);
-        String id = variations.addVariations(typedMaterial, type);
-        overrideMap().getOrDefault(id, id);
-        return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
+        return getBlock(coloredMaterial, variations, type);
     }
 
     public static Item getItem(String material, BlockVariations variations, BlockTypes type) {
         String typedMaterial = type.addType(material);
         String id = variations.addVariations(typedMaterial, type);
-        overrideMap().getOrDefault(id, id);
+        overrideMap.getOrDefault(id, id);
         return Registry.ITEM.get(ConsistencyPlusMain.id(id));
     }
 
@@ -181,9 +93,9 @@ public class CPlusEnhancedRegistry {
 
     public static String registerFromDyedMaterial(String id, AbstractBlock.Settings blockSettings, boolean withBase, boolean terracotta) {
         if (withBase) registerFromMaterial(id, blockSettings, CPlusItemGroups.consistencyPlusDyeableItemSettings());
-        for (BlockColors colors : BlockColors.values()) {
-            blockSettings = blockSettings.mapColor(BlockColors.toMapColor(colors, terracotta));
-            registerFromMaterial(colors.toString() + "_" + id, blockSettings, CPlusItemGroups.consistencyPlusDyeableItemSettings());
+        for (DyeColor colors : DyeColor.values()) {
+            blockSettings = (terracotta) ? blockSettings.mapColor(toTerracottaMapColor(colors)) : blockSettings.mapColor(colors.getMapColor());
+            registerFromMaterial(colors + "_" + id, blockSettings, CPlusItemGroups.consistencyPlusDyeableItemSettings());
         }
 
         return id;
@@ -191,14 +103,13 @@ public class CPlusEnhancedRegistry {
 
     public static String registerFromMaterial(String material, AbstractBlock.Settings blockSettings, Item.Settings itemSettings) {
         for (BlockTypes type : BlockTypes.values()) {
-            String typedMaterial = type.addType(material);
             for (BlockVariations variation : BlockVariations.values()) {
-                String id = variation.addVariations(typedMaterial, type);
+                String id = variation.addVariations(type.addType(material), type);
+                if (!type.equals(BlockTypes.BASE) && baseOnlyIDs.contains(material)) break;
+                if (type.equals(BlockTypes.COBBLED) && (cobblelessMaterials.contains(material))) break;
                 if (!type.equals(BlockTypes.BASE) && !variation.withTypes()) break;
-                if (!type.equals(BlockTypes.BASE) && baseOnly().contains(material)) break;
-                if (!variation.equals(BlockVariations.BLOCK) && tintedGlassSet().contains(material)) break; // If it is not a full block and it is a tinted glass, go to next entry.
-                if (!variation.withTypes() && baseOnly().contains(material)) break; // If it is a Pillar/Corner Pillar/Chiseled/Carved and it is a glowstone/tinted glass, go to next entry.
-                if (type.equals(BlockTypes.COBBLED) && (cobbleless().contains(material))) break;
+                if (!variation.equals(BlockVariations.BLOCK) && tintedGlassIDs.contains(material)) break;
+                if (!variation.withTypes() && baseOnlyIDs.contains(material)) break;
                 construct(id, variation, material, blockSettings, itemSettings, type);
             }
         }
@@ -206,11 +117,103 @@ public class CPlusEnhancedRegistry {
     }
 
     public static void construct(String id, BlockVariations variation, String material, Block.Settings blockSettings, Item.Settings itemSettings, BlockTypes type) {
-        id = overrideMap().getOrDefault(id, id);
+        id = overrideMap.getOrDefault(id, id);
         if (checkMinecraft(id)) return;
-        if (blacklist().contains(id)) return;
+        if (blacklistedIDs.contains(id)) return;
         itemRegistration(id, new BlockItem(blockRegistration(id, variation, material, blockSettings, type), itemSettings));
     }
+
+    public static List<String> createBlacklist() {
+        List<String> blacklist = new ArrayList<>();
+        blacklist.add("carved_netherrack");
+        blacklist.add("dripstone");
+        blacklist.add("bone");
+        blacklist.add("terracotta_bricks");
+        blacklist.add("terracotta_brick_slab");
+        blacklist.add("terracotta_brick_stairs");
+        blacklist.add("terracotta_brick_wall");
+        blacklist.add("warped_wart");
+        blacklist.add("purpur_tiles");
+        blacklist.add("purpur_tile_slab");
+        blacklist.add("purpur_tile_stairs");
+        blacklist.add("carved_sandstone");
+        blacklist.add("carved_red_sandstone");
+        blacklist.add("quartz");
+        blacklist.add("chiseled_quartz");
+        blacklist.add("basalt_pillar");
+        blacklist.add("netherrack_bricks");
+        blacklist.add("netherrack_brick_slab");
+        blacklist.add("netherrack_brick_stairs");
+        blacklist.add("netherrack_brick_wall");
+        blacklist.add("netherrack_brick_gate");
+        blacklist.add("crimson_wart");
+        blacklist.add("crimson_wart_bricks");
+        blacklist.add("crimson_wart_brick_slab");
+        blacklist.add("crimson_wart_brick_stairs");
+        blacklist.add("crimson_wart_brick_wall");
+        blacklist.add("cobbled_stone");
+        blacklist.add("cobbled_stone_slab");
+        blacklist.add("cobbled_stone_stairs");
+        blacklist.add("cobbled_stone_wall");
+        blacklist.add("chiseled_stone");
+        blacklist.add("blackstone_bricks");
+        blacklist.add("blackstone_brick_slab");
+        blacklist.add("blackstone_brick_stairs");
+        blacklist.add("blackstone_brick_wall");
+        blacklist.add("carved_blackstone");
+        return blacklist;
+    }
+
+    public static List<String> createWhitelist() {
+        List<String> whitelist = new ArrayList<>();
+        whitelist.add("purpur_block");
+        whitelist.add("purpur_slab");
+        whitelist.add("purpur_stairs");
+        whitelist.add("chiseled_sandstone");
+        whitelist.add("chiseled_red_sandstone");
+        whitelist.add("polished_basalt");
+        return whitelist;
+    }
+
+    public static List<String> createCobbleless() {
+        List<String> cobbleless = new ArrayList<>();
+        cobbleless.add("prismarine");
+        cobbleless.add("dark_prismarine");
+        cobbleless.add("bone");
+        cobbleless.add("withered_bone");
+        cobbleless.add("purpur");
+        cobbleless.add("obsidian");
+        cobbleless.add("crying_obsidian");
+        cobbleless.add("crimson_wart");
+        cobbleless.add("warped_wart");
+        cobbleless.add("quartz");
+        for (DyeColor colors : DyeColor.values()) cobbleless.add(colors.toString() + "_concrete");
+        return cobbleless;
+    }
+
+    public static List<String> createBaseOnly() {
+        List<String> baseOnly = new ArrayList<>();
+        for (DyeColor colors : DyeColor.values()) baseOnly.add(colors.toString() + "_glowstone");
+        baseOnly.add("glowstone");
+        for (DyeColor colors : DyeColor.values()) baseOnly.add(colors.toString() + "_tinted_glass");
+        return baseOnly;
+    }
+
+    public static List<String> createTintedGlass() {
+        List<String> tintedGlass = new ArrayList<>();
+        for (DyeColor colors : DyeColor.values()) tintedGlass.add(colors.toString() + "_tinted_glass");
+        return tintedGlass;
+    }
+
+    public static Map<String, String> createOverrideMap() {
+        Map<String, String> overrides = new HashMap<>();
+        overrides.put("withered_bone", "withered_bone_block");
+        overrides.put("terracotta_brick_gate", "brick_gate");
+        overrides.put("purpur", "purpur_block");
+        overrides.put("cobbled_stone_gate", "cobblestone_gate");
+        return overrides;
+    }
+
 
     public static Item itemRegistration(String name, Item item) {
         RegistrySupplier<Item> itemSupplied = CPlusItems.ITEMS.register(name, () -> item);
@@ -233,5 +236,28 @@ public class CPlusEnhancedRegistry {
         return block;
     }
 
-    public static void init() {}
+    public static MapColor toTerracottaMapColor(DyeColor dyeColor) {
+        return switch (dyeColor) {
+            case RED -> MapColor.TERRACOTTA_RED;
+            case ORANGE -> MapColor.TERRACOTTA_ORANGE;
+            case YELLOW -> MapColor.TERRACOTTA_YELLOW;
+            case LIME -> MapColor.TERRACOTTA_LIME;
+            case GREEN -> MapColor.TERRACOTTA_GREEN;
+            case BLUE -> MapColor.TERRACOTTA_BLUE;
+            case CYAN -> MapColor.TERRACOTTA_CYAN;
+            case LIGHT_BLUE -> MapColor.TERRACOTTA_LIGHT_BLUE;
+            case PURPLE -> MapColor.TERRACOTTA_PURPLE;
+            case MAGENTA -> MapColor.TERRACOTTA_MAGENTA;
+            case PINK -> MapColor.TERRACOTTA_PINK;
+            case WHITE -> MapColor.TERRACOTTA_WHITE;
+            case LIGHT_GRAY -> MapColor.TERRACOTTA_LIGHT_GRAY;
+            case GRAY -> MapColor.TERRACOTTA_GRAY;
+            case BLACK -> MapColor.TERRACOTTA_BLACK;
+            case BROWN -> MapColor.TERRACOTTA_BROWN;
+        };
+    }
+
+    public static void init() {
+        if (ConsistencyPlusMain.DEVENV) ConsistencyPlusMain.LOGGER.info("CPlusEnhancedRegistry - initialization point");
+    }
 }

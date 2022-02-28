@@ -396,10 +396,6 @@ public class CPlusBlocks {
 	public static final Block SOUL_GLOWSTONE_WALL = register("soul_glowstone_wall", new WallBlock(Block.Settings.copy(SOUL_GLOWSTONE)));
 	public static final Block SOUL_GLOWSTONE_GATE = register("soul_glowstone_gate", new CPlusFenceGateBlock(Block.Settings.copy(SOUL_GLOWSTONE)));
 
-	//Glass stuff will be here eventually.  Until then, here's a random face from the win + . menu
-	// (¬‿¬)
-
-	// Tinted Glass
 	// Dirt
 	public static final Block DIRT_SLAB = register("dirt_slab", new DirtSlabBlock(Block.Settings.copy(DIRT)));
 	public static final Block DIRT_STAIRS = register("dirt_stairs", new DirtStairsBlock(DIRT.getDefaultState(), Block.Settings.copy(DIRT)));
@@ -480,7 +476,9 @@ public class CPlusBlocks {
 		return false;
 	}
 
-	public static void init() {}
+	public static void init() {
+		if (ConsistencyPlusMain.DEVENV) ConsistencyPlusMain.LOGGER.info("CPlusBlocks - initialization point");
+	}
 	
 	public static void register() {
 		BLOCKS.register();

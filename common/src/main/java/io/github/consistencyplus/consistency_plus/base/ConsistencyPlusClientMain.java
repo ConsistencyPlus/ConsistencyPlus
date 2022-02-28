@@ -2,7 +2,6 @@ package io.github.consistencyplus.consistency_plus.base;
 
 import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
-import io.github.consistencyplus.consistency_plus.blocks.BlockColors;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockVariations;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertHandler;
@@ -17,6 +16,7 @@ import net.minecraft.client.item.UnclampedModelPredicateProvider;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BundleItem;
 import net.minecraft.item.Item;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.util.TriConsumer;
 
@@ -30,7 +30,7 @@ public class ConsistencyPlusClientMain {
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_STAIRS);
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_WALL);
 
-		for (BlockColors color : BlockColors.values()) {
+		for (DyeColor color : DyeColor.values()) {
 			RenderTypeRegistry.register(RenderLayer.getTranslucent(), CPlusEnhancedRegistry.getDyedBlock("tinted_glass", BlockVariations.BLOCK, BlockTypes.BASE, color));
 		}
 		
@@ -67,7 +67,7 @@ public class ConsistencyPlusClientMain {
 		modelPredicateProviderFactory.accept(CPlusItems.BLACK_BUNDLE, new Identifier("filled"),
 				(itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
 		
-		ColorHandlerRegistry.registerBlockColors((state, world, pos, tintIndex) ->
+		ColorHandlerRegistry.registerDyeColors((state, world, pos, tintIndex) ->
 						world != null && pos != null
 								? BiomeColors.getGrassColor(world, pos)
 								: GrassColors.getColor(0.5D, 1.0D),

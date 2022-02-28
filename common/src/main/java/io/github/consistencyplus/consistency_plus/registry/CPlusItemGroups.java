@@ -9,9 +9,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
 public class CPlusItemGroups {
-	public static final ItemGroup CONSISTENCY_PLUS_STONES = CreativeTabRegistry.create(ConsistencyPlusMain.id("stone"), () -> new ItemStack(CPlusEnhancedRegistry.getItem("stone", BlockVariations.BLOCK, BlockTypes.POLISHED)));
-	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(ConsistencyPlusMain.id("dyeable"), () -> new ItemStack(CPlusEnhancedRegistry.getItem("terracotta", BlockVariations.STAIRS, BlockTypes.BASE)));
-	public static final ItemGroup CONSISTENCY_PLUS_MISC = CreativeTabRegistry.create(ConsistencyPlusMain.id("misc"), () -> new ItemStack(CPlusEnhancedRegistry.getItem("purpur", BlockVariations.STAIRS, BlockTypes.BASE)));
+	public static final ItemGroup CONSISTENCY_PLUS_STONES = CreativeTabRegistry.create(ConsistencyPlusMain.id("stone"), () -> new ItemStack(CPlusEnhancedRegistry.getItem(CPlusEnhancedRegistry.STONE, BlockVariations.BLOCK, BlockTypes.POLISHED)));
+	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(ConsistencyPlusMain.id("dyeable"), () -> new ItemStack(CPlusEnhancedRegistry.getItem(CPlusEnhancedRegistry.TERRACOTTA, BlockVariations.STAIRS, BlockTypes.BASE)));
+	public static final ItemGroup CONSISTENCY_PLUS_MISC = CreativeTabRegistry.create(ConsistencyPlusMain.id("misc"), () -> new ItemStack(CPlusEnhancedRegistry.getItem(CPlusEnhancedRegistry.PRISMARINE, BlockVariations.SLAB, BlockTypes.SMOOTH)));
 
 
 

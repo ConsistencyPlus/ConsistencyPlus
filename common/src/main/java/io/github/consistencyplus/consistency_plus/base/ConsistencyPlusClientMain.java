@@ -67,7 +67,7 @@ public class ConsistencyPlusClientMain {
 		modelPredicateProviderFactory.accept(CPlusItems.BLACK_BUNDLE, new Identifier("filled"),
 				(itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
 		
-		ColorHandlerRegistry.registerDyeColors((state, world, pos, tintIndex) ->
+		ColorHandlerRegistry.registerBlockColors((state, world, pos, tintIndex) ->
 						world != null && pos != null
 								? BiomeColors.getGrassColor(world, pos)
 								: GrassColors.getColor(0.5D, 1.0D),

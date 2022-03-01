@@ -130,7 +130,7 @@ public class CPlusCopperBlocks {
 					}
 					
 					Block waxedBase = baseVar ? Blocks.WAXED_COPPER_BLOCK : var == Variant.PILLAR ? new PillarBlock(settings) : new Block(settings);
-					BlockItem waxedBaseItem = baseVar ? (BlockItem) Items.WAXED_COPPER : new BlockItem(waxedBase, itemSettings);
+					BlockItem waxedBaseItem = baseVar ? (BlockItem) Items.WAXED_COPPER_BLOCK : new BlockItem(waxedBase, itemSettings);
 					BLOCKS.put(new Key(oxidization, var, Shape.BLOCK, true), Pair.of(waxedBase, waxedBaseItem));
 					if (!baseVar) {
 						Identifier waxedBaseId = ConsistencyPlusMain.id("waxed_" + name + (var == Variant.BRICK ? 's' : ""));

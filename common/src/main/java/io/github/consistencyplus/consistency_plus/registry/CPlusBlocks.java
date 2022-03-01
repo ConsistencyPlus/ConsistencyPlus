@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import dev.architectury.hooks.tags.TagHooks;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
@@ -25,6 +24,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.tag.Tag;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
@@ -36,8 +36,9 @@ import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
-	public static final Tag.Identified<Block> VALID_PORTAL_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_portal_blocks"));
-	public static final Tag.Identified<Block> VALID_CONDUIT_BLOCKS = TagHooks.optionalBlock(ConsistencyPlusMain.id("valid_conduit_blocks"));
+	public static final TagKey<Block> VALID_PORTAL_BLOCKS = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("valid_portal_blocks"));
+	public static final TagKey<Block> VALID_CONDUIT_BLOCKS = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("valid_conduit_blocks"));
+
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
 
@@ -467,7 +468,7 @@ public class CPlusBlocks {
 	// Siuol's selection regex syntax machine (?=")(.*)(?<=____")
 	// Per Thing regex selection machine (?=")(.*)(____.*)(?<=")
 	
-	private static Block register(String name, Block block) {
+	protected static Block register(String name, Block block) {
 		RegistrySupplier<Block> blockSupplied = BLOCKS.register(name, () -> block);
 		return block;
 	}
@@ -485,7 +486,7 @@ public class CPlusBlocks {
 	}
 	
 	public static boolean isValidPortalBlock(BlockState state) {
-		if (VALID_PORTAL_BLOCKS.contains(state.getBlock())) {
+		if ((state.isIn(VALID_PORTAL_BLOCKS))) {
 			if (state.contains(SlabBlock.TYPE)) {
 				return state.get(SlabBlock.TYPE) == SlabType.DOUBLE;
 			}
@@ -495,6 +496,6 @@ public class CPlusBlocks {
 	}
 	
 	public static boolean isValidConduitBlock(BlockState state) {
-		return VALID_CONDUIT_BLOCKS.contains(state.getBlock());
+		return (state.isIn(VALID_CONDUIT_BLOCKS));
 	}
 }

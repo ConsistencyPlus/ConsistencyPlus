@@ -558,7 +558,7 @@ public class CPlusItems {
 
 
 
-	private static Item register(String name, Item item) {
+	protected static Item register(String name, Item item) {
 		RegistrySupplier<Item> itemSupplied = ITEMS.register(name, () -> item);
 		return item;
 	}

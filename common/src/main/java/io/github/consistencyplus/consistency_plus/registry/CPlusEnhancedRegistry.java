@@ -107,9 +107,9 @@ public class CPlusEnhancedRegistry {
                 String id = variation.addVariations(type.addType(material), type);
                 if (!type.equals(BlockTypes.BASE) && baseOnlyIDs.contains(material)) break;
                 if (type.equals(BlockTypes.COBBLED) && (cobblelessMaterials.contains(material))) break;
-                if (!type.equals(BlockTypes.BASE) && !variation.withTypes()) break;
+                if (!type.equals(BlockTypes.BASE) && !variation.withTypes) break;
                 if (!variation.equals(BlockVariations.BLOCK) && tintedGlassIDs.contains(material)) break;
-                if (!variation.withTypes() && baseOnlyIDs.contains(material)) break;
+                if (!variation.withTypes && baseOnlyIDs.contains(material)) break;
                 construct(id, variation, material, blockSettings, itemSettings, type);
             }
         }
@@ -193,9 +193,11 @@ public class CPlusEnhancedRegistry {
 
     public static List<String> createBaseOnly() {
         List<String> baseOnly = new ArrayList<>();
-        for (DyeColor colors : DyeColor.values()) baseOnly.add(colors.toString() + "_glowstone");
+        for (DyeColor colors : DyeColor.values()) {
+            baseOnly.add(colors.toString() + "_glowstone");
+            baseOnly.add(colors.toString() + "_tinted_glass");
+        }
         baseOnly.add("glowstone");
-        for (DyeColor colors : DyeColor.values()) baseOnly.add(colors.toString() + "_tinted_glass");
         return baseOnly;
     }
 
@@ -216,7 +218,7 @@ public class CPlusEnhancedRegistry {
 
 
     public static Item itemRegistration(String name, Item item) {
-        RegistrySupplier<Item> itemSupplied = CPlusItems.ITEMS.register(name, () -> item);
+        CPlusItems.register(name, item);
         return item;
     }
 
@@ -232,8 +234,7 @@ public class CPlusEnhancedRegistry {
             default -> block = new Block(blockSettings);
         }
 
-        RegistrySupplier<Block> blockSupplied = CPlusBlocks.BLOCKS.register(name, () -> block);
-        return block;
+        return CPlusBlocks.register(name, block);
     }
 
     public static MapColor toTerracottaMapColor(DyeColor dyeColor) {

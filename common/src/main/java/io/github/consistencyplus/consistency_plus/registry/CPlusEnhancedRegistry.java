@@ -16,9 +16,6 @@ import net.minecraft.util.Util;
 import net.minecraft.util.registry.Registry;
 
 import java.util.*;
-
-import static net.minecraft.block.Blocks.END_STONE;
-
 public class CPlusEnhancedRegistry {
     public static final List<String> blacklistedIDs = createBlacklist();
     public static final List<String> whitelistedIDs = createWhitelist();
@@ -67,7 +64,8 @@ public class CPlusEnhancedRegistry {
     public static Block getBlock(String material, BlockVariations variations, BlockTypes type) {
         String typedMaterial = type.addType(material);
         String id = variations.addVariations(typedMaterial, type);
-        overrideMap.getOrDefault(id, id);
+        id = overrideMap.getOrDefault(id, id);
+        ConsistencyPlusMain.LOGGER.info("ID from getBlock() " + id);
         return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
     }
 
@@ -79,7 +77,8 @@ public class CPlusEnhancedRegistry {
     public static Item getItem(String material, BlockVariations variations, BlockTypes type) {
         String typedMaterial = type.addType(material);
         String id = variations.addVariations(typedMaterial, type);
-        overrideMap.getOrDefault(id, id);
+        id = overrideMap.getOrDefault(id, id);
+        ConsistencyPlusMain.LOGGER.info("ID from getItem() " + id);
         return Registry.ITEM.get(ConsistencyPlusMain.id(id));
     }
 
@@ -227,7 +226,8 @@ public class CPlusEnhancedRegistry {
         if (name.equals("withered_bone_block")) block = new PillarBlock(blockSettings);
         else switch (blockVariations) {
             case SLAB -> block = new SlabBlock(blockSettings);
-            case STAIRS -> block = new CPlusStairBlock(getBlock(material, BlockVariations.BLOCK, type).getDefaultState(), blockSettings);
+            case STAIRS -> block = new CPlusStairBlock(Blocks.STONE.getDefaultState(), blockSettings);
+            //case STAIRS -> block = new CPlusStairBlock(getBlock(material, BlockVariations.BLOCK, type).getDefaultState(), blockSettings);
             case WALL -> block = new WallBlock(blockSettings);
             case GATE -> block = new CPlusFenceGateBlock(blockSettings);
             case PILLAR -> block = new PillarBlock(blockSettings);

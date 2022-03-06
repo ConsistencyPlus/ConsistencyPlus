@@ -467,7 +467,6 @@ public class CPlusItems {
 	public static final Item CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new RedirectedBlockItem(CPlusEnhancedRegistry.getBlock("crimson_wart", BlockVariations.CARVED, BlockTypes.BASE), CPlusItemGroups.consistencyPlusMiscItemSettings(), CPlusBlocks.CARVED_RED_NETHER_BRICKS));
 
 
-
 	// Red
 	public static final Item RED_ICE = register("red_ice", new BlockItem(CPlusBlocks.RED_ICE, CPlusItemGroups.consistencyPlusDyeableItemSettings()));
 	public static final Item RED_ICE_SLAB = register("red_ice_slab", new BlockItem(CPlusBlocks.RED_ICE_SLAB, CPlusItemGroups.consistencyPlusDyeableItemSettings()));

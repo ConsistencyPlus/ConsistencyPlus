@@ -464,7 +464,6 @@ public class CPlusBlocks {
 	public static final Block RED_NETHER_BRICK_PILLAR = register("red_nether_brick_pillar", new PillarBlock(Block.Settings.copy(RED_NETHER_BRICKS)));
 	public static final Block CARVED_RED_NETHER_BRICKS = register("carved_red_nether_bricks", new Block(Block.Settings.copy(RED_NETHER_BRICKS)));
 
-
 	// Siuol's selection regex syntax machine (?=")(.*)(?<=____")
 	// Per Thing regex selection machine (?=")(.*)(____.*)(?<=")
 	

@@ -17,9 +17,8 @@ public abstract class BlocksMixin {
 	@Inject(at = @At("HEAD"),
 			method = "register(Ljava/lang/String;Lnet/minecraft/block/Block;)Lnet/minecraft/block/Block;", cancellable = true)
 	private static void cPlus$replaceDirt(String id, Block block, CallbackInfoReturnable<Block> cir) {
-		if (id.equals("dirt")) {
-			cir.setReturnValue(Registry.register(Registry.BLOCK, id,
-					new DirtBlock(AbstractBlock.Settings.of(Material.SOIL).strength(0.5F).sounds(BlockSoundGroup.GRAVEL))));
-		}
+		/*if (id.equals("dirt")) {
+			cir.setReturnValue(Registry.register(Registry.BLOCK, id, new DirtBlock(AbstractBlock.Settings.of(Material.SOIL).strength(0.5F).sounds(BlockSoundGroup.GRAVEL))));
+		}*/
 	}
 }

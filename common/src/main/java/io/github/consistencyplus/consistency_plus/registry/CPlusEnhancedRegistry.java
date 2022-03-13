@@ -1,18 +1,20 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
-import io.github.consistencyplus.consistency_plus.blocks.BlockVariations;
+import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
+import io.github.consistencyplus.consistency_plus.core.entries.block.*;
+import io.github.consistencyplus.consistency_plus.core.entries.block.deprecated.DyedIceRegistryEntry;
+import io.github.consistencyplus.consistency_plus.core.entries.items.AbstractItemRegistryEntry;
+import io.github.consistencyplus.consistency_plus.core.entries.items.DyedItemRegistryEntry;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Util;
 import net.minecraft.util.registry.Registry;
 
 import java.util.*;
@@ -21,105 +23,49 @@ public class CPlusEnhancedRegistry {
     public static final List<String> whitelistedIDs = createWhitelist();
     public static final List<String> cobblelessMaterials = createCobbleless();
     public static final List<String> baseOnlyIDs = createBaseOnly();
-    public static final List<String> tintedGlassIDs = createTintedGlass();
     public static final Map<String, String> overrideMap = createOverrideMap();
 
-    public static final String STONE = registerFromStoneMaterial("stone", AbstractBlock.Settings.copy(Blocks.STONE));
-    public static final String ANDESITE = registerFromStoneMaterial("andesite", AbstractBlock.Settings.copy(Blocks.ANDESITE));
-    public static final String DIORITE = registerFromStoneMaterial("diorite", AbstractBlock.Settings.copy(Blocks.DIORITE));
-    public static final String GRANITE = registerFromStoneMaterial("granite", AbstractBlock.Settings.copy(Blocks.GRANITE));
-    public static final String DEEPSLATE = registerFromStoneMaterial("deepslate", AbstractBlock.Settings.copy(Blocks.DEEPSLATE));
-    public static final String CALCITE = registerFromStoneMaterial("calcite", CPlusSharedBlockSettings.calcite());
-    public static final String DRIPSTONE = registerFromStoneMaterial("dripstone", CPlusSharedBlockSettings.dripstone());
-    public static final String TUFF = registerFromStoneMaterial("tuff", CPlusSharedBlockSettings.tuff());
-    public static final String SANDSTONE = registerFromStoneMaterial("sandstone", AbstractBlock.Settings.copy(Blocks.SANDSTONE));
-    public static final String RED_SANDSTONE = registerFromStoneMaterial("red_sandstone", AbstractBlock.Settings.copy(Blocks.RED_SANDSTONE));
-    public static final String SOUL_SANDSTONE = registerFromStoneMaterial("soul_sandstone", CPlusSharedBlockSettings.soulSandstone());
-    public static final String BLACKSTONE = registerFromStoneMaterial("blackstone", AbstractBlock.Settings.copy(Blocks.BLACKSTONE));
-    public static final String QUARTZ = registerFromStoneMaterial("quartz", AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK));
-    public static final String BASALT = registerFromStoneMaterial("basalt", AbstractBlock.Settings.copy(Blocks.BASALT));
-    public static final String END_STONE = registerFromStoneMaterial("end_stone", AbstractBlock.Settings.copy(Blocks.END_STONE));
-    public static final String OBSIDIAN = registerFromStoneMaterial("obsidian", CPlusSharedBlockSettings.obsidian());
-    public static final String CRYING_OBSIDIAN = registerFromStoneMaterial("crying_obsidian", CPlusSharedBlockSettings.cryingObsidian());
-    public static final String PURPUR = registerFromMiscMaterial("purpur", Block.Settings.copy(Blocks.PURPUR_BLOCK));
-    public static final String PRISMARINE = registerFromMiscMaterial("prismarine", Block.Settings.copy(Blocks.PRISMARINE));
-    public static final String DARK_PRISMARINE = registerFromMiscMaterial("dark_prismarine", Block.Settings.copy(Blocks.DARK_PRISMARINE));
-    public static final String NETHERRACK = registerFromMiscMaterial("netherrack", Block.Settings.copy(Blocks.NETHER_BRICKS));
-    public static final String CRIMSON_WART = registerFromMiscMaterial("crimson_wart", AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS));
-    public static final String WARPED_WART = registerFromMiscMaterial("warped_wart", CPlusSharedBlockSettings.warpedWartConstructed());
-    public static final String BONE = registerFromMiscMaterial("bone", Block.Settings.copy(Blocks.BONE_BLOCK));
-    public static final String WITHERED_BONE = registerFromMiscMaterial("withered_bone", CPlusSharedBlockSettings.witheredBone());
-    public static final String TERRACOTTA = registerFromDyedMaterial("terracotta", CPlusSharedBlockSettings.terracotta(MapColor.ORANGE), true, true);
-    public static final String CONCRETE = registerFromDyedMaterial("concrete", CPlusSharedBlockSettings.concrete(), false, false);
-    public static final String GLOWSTONE = registerFromDyedMaterial("glowstone", CPlusSharedBlockSettings.glowstone(MapColor.GOLD), true, false);
-    public static final String TINTED_GLASS = registerFromDyedMaterial("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false, false);
+    public static final AbstractItemRegistryEntry TERRACOTTA_BRICK = new DyedItemRegistryEntry("terracotta_brick", new Item.Settings().group(ItemGroup.MISC));
+    public static final DyedItemRegistryEntry DYED_BUNDLE = new DyedItemRegistryEntry("dyed_bundle", new Item.Settings().maxCount(1));
+    public static final AbstractRegistryEntry STONE = new StoneRegistryEntry("stone", CPlusSharedBlockSettings.stone());
+    public static final AbstractRegistryEntry ANDESITE = new ModifierStoneRegistryEntry("andesite", CPlusSharedBlockSettings.andesite());
+    public static final AbstractRegistryEntry DIORITE = new StoneRegistryEntry("diorite", CPlusSharedBlockSettings.diorite());
+    public static final AbstractRegistryEntry GRANITE = new StoneRegistryEntry("granite", CPlusSharedBlockSettings.granite());
+    public static final AbstractRegistryEntry DEEPSLATE = new StoneRegistryEntry("deepslate", CPlusSharedBlockSettings.deepslate());
+    public static final AbstractRegistryEntry CALCITE = new StoneRegistryEntry("calcite", CPlusSharedBlockSettings.calcite());
+    public static final AbstractRegistryEntry DRIPSTONE = new StoneRegistryEntry("dripstone", CPlusSharedBlockSettings.dripstone());
+    public static final AbstractRegistryEntry TUFF = new StoneRegistryEntry("tuff", CPlusSharedBlockSettings.tuff());
+    public static final AbstractRegistryEntry SANDSTONE = new StoneRegistryEntry("sandstone", AbstractBlock.Settings.copy(Blocks.SANDSTONE));
+    public static final AbstractRegistryEntry RED_SANDSTONE = new StoneRegistryEntry("red_sandstone", AbstractBlock.Settings.copy(Blocks.RED_SANDSTONE));
+    public static final AbstractRegistryEntry SOUL_SANDSTONE = new StoneRegistryEntry("soul_sandstone", CPlusSharedBlockSettings.soulSandstone());
+    public static final AbstractRegistryEntry BLACKSTONE = new StoneRegistryEntry("blackstone", AbstractBlock.Settings.copy(Blocks.BLACKSTONE));
+    public static final AbstractRegistryEntry QUARTZ = new StoneRegistryEntry("quartz", AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK));
+    public static final AbstractRegistryEntry BASALT = new StoneRegistryEntry("basalt", AbstractBlock.Settings.copy(Blocks.BASALT));
+    public static final AbstractRegistryEntry END_STONE = new StoneRegistryEntry("end_stone", AbstractBlock.Settings.copy(Blocks.END_STONE));
+    public static final AbstractRegistryEntry OBSIDIAN = new StoneRegistryEntry("obsidian", CPlusSharedBlockSettings.obsidian());
+    public static final AbstractRegistryEntry CRYING_OBSIDIAN = new StoneRegistryEntry("crying_obsidian", CPlusSharedBlockSettings.cryingObsidian());
+    public static final AbstractRegistryEntry PURPUR = new MiscRegistryEntry("purpur", Block.Settings.copy(Blocks.PURPUR_BLOCK));
+    public static final AbstractRegistryEntry PRISMARINE = new MiscRegistryEntry("prismarine", Block.Settings.copy(Blocks.PRISMARINE));
+    public static final AbstractRegistryEntry DARK_PRISMARINE = new MiscRegistryEntry("dark_prismarine", Block.Settings.copy(Blocks.DARK_PRISMARINE));
+    public static final AbstractRegistryEntry NETHERRACK = new MiscRegistryEntry("netherrack", Block.Settings.copy(Blocks.NETHER_BRICKS));
+    public static final AbstractRegistryEntry CRIMSON_WART = new MiscRegistryEntry("crimson_wart", AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS));
+    public static final AbstractRegistryEntry WARPED_WART = new MiscRegistryEntry("warped_wart", CPlusSharedBlockSettings.warpedWartConstructed());
+    public static final AbstractRegistryEntry BONE = new MiscRegistryEntry("bone", Block.Settings.copy(Blocks.BONE_BLOCK));
+    public static final AbstractRegistryEntry WITHERED_BONE = new MiscRegistryEntry("withered_bone", CPlusSharedBlockSettings.witheredBone());
+    public static final AbstractRegistryEntry TERRACOTTA = new DyedRegistryEntry("terracotta", CPlusSharedBlockSettings.terracotta(MapColor.ORANGE), true);
+    public static final AbstractRegistryEntry CONCRETE = new DyedRegistryEntry("concrete", CPlusSharedBlockSettings.concrete(), false);
+    public static final AbstractRegistryEntry GLOWSTONE = new DyedRegistryEntry("glowstone", CPlusSharedBlockSettings.glowstone(MapColor.GOLD), true);
+    public static final AbstractRegistryEntry TINTED_GLASS = new DyedRegistryEntry("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false);
+    public static final AbstractRegistryEntry GLAZED_TERRACOTTA = new PolishedGlazedTerracottaRegistryEntry("glazed_terracotta", CPlusSharedBlockSettings.glazedTerracotta(MapColor.WHITE));
+    // Copper stuff would be here
+    public static final AbstractRegistryEntry ICE = new DyedIceRegistryEntry("ice", AbstractBlock.Settings.copy(Blocks.BLUE_ICE));
+
 
     public static boolean checkMinecraft(String id) {
         Identifier MCID = new Identifier("minecraft", id);
         if (Registry.BLOCK.getOrEmpty(MCID).isPresent() || Registry.ITEM.getOrEmpty(MCID).isPresent()) {
             return !whitelistedIDs.contains(id);
         } else return false;
-    }
-
-    public static Block getBlock(String material, BlockVariations variations, BlockTypes type) {
-        String typedMaterial = type.addType(material);
-        String id = variations.addVariations(typedMaterial, type);
-        id = overrideMap.getOrDefault(id, id);
-        ConsistencyPlusMain.LOGGER.info("ID from getBlock() " + id);
-        return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
-    }
-
-    public static Block getDyedBlock(String material, BlockVariations variations, BlockTypes type, DyeColor color) {
-        String coloredMaterial = color.toString() + "_" + material;
-        return getBlock(coloredMaterial, variations, type);
-    }
-
-    public static Item getItem(String material, BlockVariations variations, BlockTypes type) {
-        String typedMaterial = type.addType(material);
-        String id = variations.addVariations(typedMaterial, type);
-        id = overrideMap.getOrDefault(id, id);
-        ConsistencyPlusMain.LOGGER.info("ID from getItem() " + id);
-        return Registry.ITEM.get(ConsistencyPlusMain.id(id));
-    }
-
-    public static String registerFromStoneMaterial(String id, AbstractBlock.Settings blockSettings) {
-        return registerFromMaterial(id, blockSettings, CPlusItemGroups.consistencyPlusStoneItemSettings());
-    }
-
-    public static String registerFromMiscMaterial(String id, AbstractBlock.Settings blockSettings) {
-        return registerFromMaterial(id, blockSettings, CPlusItemGroups.consistencyPlusMiscItemSettings());
-    }
-
-    public static String registerFromDyedMaterial(String id, AbstractBlock.Settings blockSettings, boolean withBase, boolean terracotta) {
-        if (withBase) registerFromMaterial(id, blockSettings, CPlusItemGroups.consistencyPlusDyeableItemSettings());
-        for (DyeColor colors : DyeColor.values()) {
-            blockSettings = (terracotta) ? blockSettings.mapColor(toTerracottaMapColor(colors)) : blockSettings.mapColor(colors.getMapColor());
-            registerFromMaterial(colors + "_" + id, blockSettings, CPlusItemGroups.consistencyPlusDyeableItemSettings());
-        }
-
-        return id;
-    }
-
-    public static String registerFromMaterial(String material, AbstractBlock.Settings blockSettings, Item.Settings itemSettings) {
-        for (BlockTypes type : BlockTypes.values()) {
-            for (BlockVariations variation : BlockVariations.values()) {
-                String id = variation.addVariations(type.addType(material), type);
-                if (!type.equals(BlockTypes.BASE) && baseOnlyIDs.contains(material)) break;
-                if (type.equals(BlockTypes.COBBLED) && (cobblelessMaterials.contains(material))) break;
-                if (!type.equals(BlockTypes.BASE) && !variation.withTypes) break;
-                if (!variation.equals(BlockVariations.BLOCK) && tintedGlassIDs.contains(material)) break;
-                if (!variation.withTypes && baseOnlyIDs.contains(material)) break;
-                construct(id, variation, material, blockSettings, itemSettings, type);
-            }
-        }
-        return material;
-    }
-
-    public static void construct(String id, BlockVariations variation, String material, Block.Settings blockSettings, Item.Settings itemSettings, BlockTypes type) {
-        id = overrideMap.getOrDefault(id, id);
-        if (checkMinecraft(id)) return;
-        if (blacklistedIDs.contains(id)) return;
-        itemRegistration(id, new BlockItem(blockRegistration(id, variation, material, blockSettings, type), itemSettings));
     }
 
     public static List<String> createBlacklist() {
@@ -186,24 +132,15 @@ public class CPlusEnhancedRegistry {
         cobbleless.add("crimson_wart");
         cobbleless.add("warped_wart");
         cobbleless.add("quartz");
-        for (DyeColor colors : DyeColor.values()) cobbleless.add(colors.toString() + "_concrete");
+        cobbleless.add("concrete");
         return cobbleless;
     }
 
     public static List<String> createBaseOnly() {
         List<String> baseOnly = new ArrayList<>();
-        for (DyeColor colors : DyeColor.values()) {
-            baseOnly.add(colors.toString() + "_glowstone");
-            baseOnly.add(colors.toString() + "_tinted_glass");
-        }
+        baseOnly.add("tinted_glass");
         baseOnly.add("glowstone");
         return baseOnly;
-    }
-
-    public static List<String> createTintedGlass() {
-        List<String> tintedGlass = new ArrayList<>();
-        for (DyeColor colors : DyeColor.values()) tintedGlass.add(colors.toString() + "_tinted_glass");
-        return tintedGlass;
     }
 
     public static Map<String, String> createOverrideMap() {
@@ -213,28 +150,6 @@ public class CPlusEnhancedRegistry {
         overrides.put("purpur", "purpur_block");
         overrides.put("cobbled_stone_gate", "cobblestone_gate");
         return overrides;
-    }
-
-
-    public static Item itemRegistration(String name, Item item) {
-        CPlusItems.register(name, item);
-        return item;
-    }
-
-    public static Block blockRegistration(String name, BlockVariations blockVariations, String material, AbstractBlock.Settings blockSettings, BlockTypes type) {
-        Block block;
-        if (name.equals("withered_bone_block")) block = new PillarBlock(blockSettings);
-        else switch (blockVariations) {
-            case SLAB -> block = new SlabBlock(blockSettings);
-            case STAIRS -> block = new CPlusStairBlock(Blocks.STONE.getDefaultState(), blockSettings);
-            //case STAIRS -> block = new CPlusStairBlock(getBlock(material, BlockVariations.BLOCK, type).getDefaultState(), blockSettings);
-            case WALL -> block = new WallBlock(blockSettings);
-            case GATE -> block = new CPlusFenceGateBlock(blockSettings);
-            case PILLAR -> block = new PillarBlock(blockSettings);
-            default -> block = new Block(blockSettings);
-        }
-
-        return CPlusBlocks.register(name, block);
     }
 
     public static MapColor toTerracottaMapColor(DyeColor dyeColor) {

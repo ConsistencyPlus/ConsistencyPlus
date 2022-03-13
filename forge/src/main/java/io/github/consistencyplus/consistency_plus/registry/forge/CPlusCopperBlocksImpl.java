@@ -3,6 +3,7 @@ package io.github.consistencyplus.consistency_plus.registry.forge;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableBiMap;
+import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import net.minecraft.block.Block;
 import net.minecraft.block.Oxidizable;
 import net.minecraft.item.HoneycombItem;
@@ -54,6 +55,4 @@ public class CPlusCopperBlocksImpl {
 		});
 		HoneycombItem.UNWAXED_TO_WAXED_BLOCKS = waxableMapSupplier;
 	}
-	
-	
 }

@@ -24,7 +24,7 @@ public class ConsistencyPlus implements ModInitializer {
 			if (WITHER_SKELE_LOOT.equals(id)) {
 				FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
 						.rolls(ConstantLootNumberProvider.create(1))
-						.with(ItemEntry.builder(CPlusItems.WITHERED_BONE));
+						.with(ItemEntry.builder(CPlusItems.WITHERED_BONE.get()));
 				table.pool(poolBuilder);
 			}
 		});

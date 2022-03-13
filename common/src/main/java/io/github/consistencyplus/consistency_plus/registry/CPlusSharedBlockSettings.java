@@ -1,6 +1,7 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
 import dev.architectury.registry.block.BlockProperties;
+import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
@@ -11,6 +12,31 @@ import static net.minecraft.block.Blocks.TINTED_GLASS;
 public class CPlusSharedBlockSettings {
     // THIS IS NOT A REPLACEMENT FOR `Block.Settings`
     // Rather, this is actually more so like `CPlusItemGroups` but for Block Settings
+
+
+    public static AbstractBlock.Settings stone() {
+        return AbstractBlock.Settings.of(Material.STONE).requiresTool().strength(1.5F, 6.0F);
+    }
+
+    public static AbstractBlock.Settings cobblestone() {
+        return AbstractBlock.Settings.of(Material.STONE).requiresTool().strength(2.0F, 6.0F);
+    }
+
+    public static AbstractBlock.Settings deepslate() {
+        return AbstractBlock.Settings.of(Material.STONE, MapColor.DEEPSLATE_GRAY).requiresTool().strength(3.0F, 6.0F).sounds(BlockSoundGroup.DEEPSLATE);
+    }
+
+    public static AbstractBlock.Settings andesite() {
+        return AbstractBlock.Settings.of(Material.STONE).requiresTool().strength(1.5F, 6.0F);
+    }
+
+    public static AbstractBlock.Settings diorite() {
+        return AbstractBlock.Settings.of(Material.STONE, MapColor.OFF_WHITE).requiresTool().strength(1.5F, 6.0F);
+    }
+
+    public static AbstractBlock.Settings granite() {
+        return AbstractBlock.Settings.of(Material.STONE, MapColor.DIRT_BROWN).requiresTool().strength(1.5F, 6.0F);
+    }
 
     public static AbstractBlock.Settings calcite() {
         return AbstractBlock.Settings.of(Material.STONE, MapColor.TERRACOTTA_WHITE).sounds(BlockSoundGroup.CALCITE).requiresTool().strength(0.75F);
@@ -63,6 +89,11 @@ public class CPlusSharedBlockSettings {
     public static AbstractBlock.Settings warpedWartConstructed() {
         return AbstractBlock.Settings.of(Material.STONE, MapColor.BLUE).requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS);
     }
+
+    public static AbstractBlock.Settings copper(CopperOxidization oxidization) {
+        return AbstractBlock.Settings.of(Material.METAL, oxidization.getColor()).requiresTool().strength(3.0f, 6.0f).ticksRandomly().sounds(BlockSoundGroup.COPPER);
+    }
+//AbstractBlock.Settings.of(Material.METAL, oxidization.getColor()).requiresTool().strength(3.0f, 6.0f).ticksRandomly().sounds(BlockSoundGroup.COPPER);
 
     public static AbstractBlock.Settings misc() {
         return AbstractBlock.Settings.of(Material.STONE).strength(1);

@@ -1,15 +1,13 @@
 package io.github.consistencyplus.consistency_plus.blocks;
 
-import net.minecraft.util.DyeColor;
-
 import java.util.Locale;
 
-public enum BlockVariations {
+public enum BlockShapes {
     BLOCK(true), SLAB(true), STAIRS(true), WALL(true), GATE(true), PILLAR(false), CORNER_PILLAR(false), CARVED(false), CHISELED(false);
 
     public boolean withTypes;
 
-    BlockVariations(boolean hasTypes) {
+    BlockShapes(boolean hasTypes) {
         this.withTypes = hasTypes;
     }
 
@@ -20,7 +18,7 @@ public enum BlockVariations {
     }
 
 
-    public String addVariations(String id, BlockTypes type) {
+    public String addShapes(String id, BlockTypes type) {
         if (this.withTypes) {
             return switch (this) {
                 case SLAB, STAIRS, WALL, GATE -> id + "_" + this;

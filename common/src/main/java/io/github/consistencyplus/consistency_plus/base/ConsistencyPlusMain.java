@@ -1,13 +1,19 @@
 package io.github.consistencyplus.consistency_plus.base;
 
 import dev.architectury.platform.Platform;
+import dev.architectury.registry.registries.DeferredRegister;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusCopperBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.lang.reflect.InvocationTargetException;
 
 public class ConsistencyPlusMain {
 	public static final Logger LOGGER = LogManager.getLogger("Consistency+");
@@ -15,16 +21,18 @@ public class ConsistencyPlusMain {
 	public static final boolean DEVENV = Platform.isDevelopmentEnvironment();
 	public static final Boolean isSoulIceLoaded = Platform.isModLoaded("soul_ice");
 
+	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.ITEM_KEY);
+
 
 	public static void init() {
 		LOGGER.info("Consistency+ Main - Beginning initialization process");
-		
 		CPlusBlocks.init();
 		CPlusItems.init();
 		CPlusEnhancedRegistry.init();
-		CPlusCopperBlocks.init(CPlusBlocks.BLOCKS, CPlusItems.ITEMS);
-		CPlusBlocks.register();
-		CPlusItems.register();
+		CPlusCopperBlocks.init();
+		BLOCKS.register();
+		ITEMS.register();
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 	}
 	

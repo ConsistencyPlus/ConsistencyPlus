@@ -27,7 +27,7 @@ public class GrassStairsBlock extends StairsBlock implements HasUngrownVariant, 
 	@Override
 	public BlockState getUngrownVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return DIRT_STAIRS.getDefaultState().with(WATERLOGGED, oldState.get(WATERLOGGED)).with(FACING, oldState.get(FACING))
+		return DIRT_STAIRS.get().getDefaultState().with(WATERLOGGED, oldState.get(WATERLOGGED)).with(FACING, oldState.get(FACING))
 				.with(HALF, oldState.get(HALF)).with(SHAPE, oldState.get(SHAPE));
 	}
 	

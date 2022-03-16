@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/template_wall_side",
+  "parent": "consistency_plus:block/template_consistency_wall_side_tri",
   "textures": {
+    "wall_top": "minecraft:block/sandstone_top",
+    "wall_bottom": "minecraft:block/sandstone_top",
     "wall": "consistency_plus:block/sandstone_bricks"
   }
 }

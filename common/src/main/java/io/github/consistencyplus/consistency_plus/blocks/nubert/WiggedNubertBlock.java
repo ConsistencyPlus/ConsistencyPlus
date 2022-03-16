@@ -12,6 +12,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import static net.minecraft.block.Blocks.SLIME_BLOCK;
 import static net.minecraft.state.property.Properties.WATERLOGGED;
 
 public class WiggedNubertBlock extends NubertBlock {
@@ -20,7 +21,7 @@ public class WiggedNubertBlock extends NubertBlock {
         if (player.getStackInHand(hand).isOf(Items.SHEARS)) {
             if (!world.isClient()) {
                 world.setBlockState(pos,
-                        CPlusBlocks.NUBERT.getDefaultState()
+                        CPlusBlocks.NUBERT.get().getDefaultState()
                                 .with(FACING, state.get(FACING))
                                 .with(WATERLOGGED, state.get(WATERLOGGED))
                 );

@@ -18,6 +18,7 @@ import java.util.Random;
 
 import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DIRT_SLAB;
 
+
 // I think a lot of this class is unnecessary but please for the love of god do not touch it
 public class GrassSlabBlock extends SlabBlock implements HasUngrownVariant, SpreadableGrassBlock {
 	public GrassSlabBlock(Settings settings) {
@@ -50,6 +51,6 @@ public class GrassSlabBlock extends SlabBlock implements HasUngrownVariant, Spre
 	@Override
 	public BlockState getUngrownVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return DIRT_SLAB.getDefaultState().with(TYPE, oldState.get(TYPE));
+		return DIRT_SLAB.get().getDefaultState().with(TYPE, oldState.get(TYPE));
 	}
 }

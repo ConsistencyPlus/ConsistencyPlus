@@ -3,6 +3,7 @@ package io.github.consistencyplus.consistency_plus.blocks.dirt;
 import io.github.consistencyplus.consistency_plus.core.growables.HasGrownGrassVariant;
 import io.github.consistencyplus.consistency_plus.core.growables.HasGrownMyceliumVariant;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -18,12 +19,12 @@ public class DirtSlabBlock extends SlabBlock implements HasGrownGrassVariant, Ha
 	@Override
 	public BlockState getGrownGrassVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return GRASS_SLAB.getDefaultState().with(TYPE, oldState.get(TYPE)).with(WATERLOGGED, oldState.get(WATERLOGGED));
+		return GRASS_SLAB.get().getDefaultState().with(TYPE, oldState.get(TYPE)).with(WATERLOGGED, oldState.get(WATERLOGGED));
 	}
 	
 	@Override
 	public BlockState getGrownMyceliumVariant(World world, BlockPos pos) {
 		BlockState oldState = world.getBlockState(pos);
-		return MYCELIUM_SLAB.getDefaultState().with(TYPE, oldState.get(TYPE)).with(WATERLOGGED, oldState.get(WATERLOGGED));
+		return MYCELIUM_SLAB.get().getDefaultState().with(TYPE, oldState.get(TYPE)).with(WATERLOGGED, oldState.get(WATERLOGGED));
 	}
 }

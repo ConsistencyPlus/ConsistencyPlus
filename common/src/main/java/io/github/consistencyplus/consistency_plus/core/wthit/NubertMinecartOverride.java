@@ -23,7 +23,7 @@ public class NubertMinecartOverride implements IEntityComponentProvider {
 		boolean nubert = data.getBoolean("Nubert");
 		if (nubert) {
 			boolean wig = data.getBoolean("Wigged");
-			return (wig ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).getDefaultStack();
+			return (wig ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).get().getDefaultStack();
 		}
 		return ItemStack.EMPTY;
 	}
@@ -50,7 +50,7 @@ public class NubertMinecartOverride implements IEntityComponentProvider {
 	
 	@Override
 	public void appendTail(ITooltip tooltip, IEntityAccessor accessor, IPluginConfig config) {
-		if (accessor.getEntity() instanceof MinecartEntity cart && cart.getContainedBlock().getBlock() instanceof NubertBlock nubert) {
+		if (accessor.getEntity() instanceof MinecartEntity cart && cart.getContainedBlock().getBlock() instanceof NubertBlock) {
 			tooltip.set(WailaConstants.MOD_NAME_TAG, new LiteralText("Consistency Plus").formatted(Formatting.BLUE, Formatting.ITALIC));
 		}
 	}

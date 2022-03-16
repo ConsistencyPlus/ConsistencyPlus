@@ -15,6 +15,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
+import static net.minecraft.block.Blocks.SLIME_BLOCK;
+
 public class NubertMinecartItem extends MinecartItem {
 	public final boolean wigged;
 	public NubertMinecartItem(Settings settings, boolean wigged) {
@@ -44,8 +46,7 @@ public class NubertMinecartItem extends MinecartItem {
 					blockPos.getZ() + 0.5D,
 					AbstractMinecartEntity.Type.RIDEABLE);
 			
-			cart.setCustomBlock((wigged ? CPlusBlocks.WIGGED_NUBERT : CPlusBlocks.NUBERT).getDefaultState());
-			
+			cart.setCustomBlock((wigged ? CPlusBlocks.WIGGED_NUBERT : CPlusBlocks.NUBERT).get().getDefaultState());
 			if (itemStack.hasCustomName()) {
 				cart.setCustomName(itemStack.getName());
 			}

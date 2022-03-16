@@ -1,49 +1,46 @@
 Translation Statuses:
 
 English-US (Base) - Obviously up to date
-
-Japanese - Up to date as of 0.3.0-Alpha, 3.15.21. Translated by Siuol without any actual knowledge on the words.
-Note: If you are a Japanese speaker, feel free to fix these translations
-
-Polish - Managed by RDK. Up to date to 0.3.0-RC1. 4.22.21
-
+English (Non-US Variants) - Unmanaged. Up to date with 0.4.x, however this one being behind only causes issues for blocks where vanilla lang that is changed, or where slight spelling alterations occur.
+Polish - Managed by RDK. Up to date to 0.3.0-RC1. 04.22.21
 Russian - Managed by MobButcher. Up to date as of 0.5.0. 01.18.22
 Ukrainian - Managed by MobButcher. Up to date as of 0.5.0. 01.18.22
-English (Upside-Down) - Managed by MobButcher. Up to date as of 0.4.1-rc.2. 10.17.21
 
-Lolcat - Aded by Carter, pwobably won't be finishd for a while but haz begun
-Shakespearian english - hath been added by Carter, progress has not yet begun
-Pirate Speak - Yarr, added by Carter but no work begun.
+English (Upside-Down) - Managed by MobButcher. Up to date as of 0.4.1-rc.2. 10.17.21
+Lolcat - Unmanaged. Pretty much every string would need to manually be created rather than using find/replace programs like we did for some of the other meme languages
+Shakespearian english - Unmanaged. Should be up to date with 0.4.x at least.
+Pirate Speak - Unmanaged - The file exists but no strings are translated.  Might be doable via find and replace, however it probably would need the same treatment as lolcat
 
 
 Translator Comments:
 
-Siuol - Alright, I would like to point out the following.
-1. I do not actually know any other languages besides English, though I would like to learn them.
-2. I'm not dumb enough to use Google Translate. I prefer scuffed lang files.
-3. I'll probably do initial translations, with occasional updates every couple hundred blocks or so.
-If you actually can translate, DM me on Discord at `"Siuol" Appeared#5729` and we can work something out.
-
 MobButcher - To translate language files from English to Russian I've created a script that allows me to automatically parse the strings and apply proper grammar to them.
 Though it's janky, I can fairly easily update my translations. Feel free to contact me for details, contact info available on GitHub profile.
-- 8.18.21
+- 08.18.21
 
 MobButcher - Reworked my translation stript, now it gives more pleasing and logical translation structures.
 Also found a couple of mistakes in Russian translation that I've quickly fixed.
-- 8.21.21
+- 08.21.21
 
 Carter - Started doing the meme languages because I was bored lol.  Will probably finish them all by the time 1.0 releases but feel free to work on any of them.  Will also do upside down english at some point
-- 10.8.21
+- 10/8/21
 
 MobButcher - Speaking of upside-down language, it's also completed. Thanks to Wikipedia for a complete list of upside-down character substitutions.
 - 10.17.21
 
 Carter - Shakespearean is also finished thanks to help from MobButcher
-- 10.17.21
+- 10/17/21
 
 Carter - Removed unused strings and fixed words spelled slightly different from en_us in en_ca, en_gb, and en_nz
-- 11.05.21
+- 11/05/21
 
 MobButcher - Updated Russian, Ukrainian, and English (Upside-Down) to 0.5.0 (or its release candidate, I don't really know and care even less). There are some references to Deltarune Chapter 2 I have to revisit once I complete it.
 P.S.: The fact that dates in this document follow mm.dd.yy format annoys the hell out of me. Petition to either change them to mm/dd/yy or dd.mm.yy. Periods indicate sane (European) date formatting, while slashes indicate insane (American) date formatting. Please don't make it into an even worse of an abomination than it already is.
 - 01.18.22
+
+(Random Siuol Note - JP Translations, as they were more remnant of a rough translation attempt from when I wanted to supply translations to many languages personally, has been removed because they are probably wrong)
+(PS: Honestly, if you wanna add an "(EU)" suffix to the end of your dates you can do that.)
+- 02.22.22 (US)
+
+Carter - Updated the status of a few that weren't correct, and added some more notes. 
+- 02/23/22

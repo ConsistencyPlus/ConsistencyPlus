@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[38,)"
+loaderVersion = "[40,)"
 issueTrackerURL = "https://github.com/ConsistencyPlus/ConsistencyPlus/issues"
 license = "LGPL-3.0-only"
 
@@ -22,7 +22,8 @@ authors = [
     "Jingy",
     "Seska",
     "RDKRACZ",
-    "MobButcher"
+    "MobButcher",
+    "Dodomos"
 ]
 description = '''
 Builders rejoice; we've added all the missing block variants (and a whole lot more)!
@@ -32,27 +33,27 @@ logoFile = "icon.png"
 [[dependencies.consistency_plus]]
 modId = "forge"
 mandatory = true
-versionRange = "[38,)"
+versionRange = "[40,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.consistency_plus]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18,)"
+versionRange = "[1.18.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.consistency_plus]]
 modId = "architectury"
 mandatory = true
-versionRange = "[3.1.45,)"
+versionRange = "[4.0.30,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.consistency_plus]]
 modId = "stonecutter_recipe_tags"
 mandatory = true
-versionRange = "[2.0.1,)"
+versionRange = "[3.0.0,)"
 ordering = "NONE"
 side = "BOTH"

@@ -46,9 +46,6 @@ dependencies {
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
-
-    include "com.withertech:mine_tags-fabric:1.1.1"
-    modImplementation "com.withertech:mine_tags-fabric:1.1.1"
 }
 
 sourceSets.main {

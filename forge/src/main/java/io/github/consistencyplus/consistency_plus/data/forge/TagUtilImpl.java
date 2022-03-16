@@ -1,16 +1,14 @@
 package io.github.consistencyplus.consistency_plus.data.forge;
 
-import dev.architectury.hooks.tags.TagHooks;
-import net.minecraft.tag.Tag;
-import net.minecraft.tag.TagGroup;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
 
-import java.util.function.Supplier;
-
-public class TagUtilImpl
+public class TagUtilImpl<T>
 {
-    public static <T> Tag.Identified<T> initTag(String name, Supplier<TagGroup<T>> collection)
+    public static <T> TagKey<T> initTag(String name, RegistryKey<? extends Registry<T>> registryKey)
     {
-        return TagHooks.optional(new Identifier("forge", name), collection);
+        return TagKey.of(registryKey, new Identifier("forge", name));
     }
 }

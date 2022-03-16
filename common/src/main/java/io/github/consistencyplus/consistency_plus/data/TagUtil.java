@@ -2,20 +2,18 @@ package io.github.consistencyplus.consistency_plus.data;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import net.minecraft.block.Block;
-import net.minecraft.tag.BlockTags;
-import net.minecraft.tag.Tag;
-import net.minecraft.tag.TagGroup;
-
-import java.util.function.Supplier;
+import net.minecraft.tag.TagKey;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
 
 public class TagUtil {
 
     @ExpectPlatform
-    public static <T> Tag.Identified<T> initTag(String name, Supplier<TagGroup<T>> collection) {
+    public static <T> TagKey<T> initTag(String name, RegistryKey<? extends Registry<T>> registryKey) {
         throw new AssertionError();
     }
 
-    public static Tag.Identified<Block> initBlockTag(String name) {
-        return initTag(name, BlockTags::getTagGroup);
+    public static TagKey<Block> initBlockTag(String name, RegistryKey<Registry<Block>> registryKey) {
+        return initTag(name, registryKey);
     }
 }

@@ -1,21 +1,18 @@
 package io.github.consistencyplus.consistency_plus.data;
 
-import dev.architectury.injectables.annotations.ExpectPlatform;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.minecraft.block.*;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.server.AbstractTagProvider;
-import net.minecraft.data.server.BlockTagsProvider;
+import net.minecraft.data.server.BlockTagProvider;
 import net.minecraft.tag.BlockTags;
-import net.minecraft.tag.Tag;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;
@@ -24,7 +21,7 @@ import java.util.function.Function;
 
 public class ConsistencyPlusTagProvider {
 
-    public static class CommonBlockTagProvider extends BlockTagsProvider {
+    public static class CommonBlockTagProvider extends BlockTagProvider {
 
         private static final Logger LOGGER = LogManager.getLogger(CommonBlockTagProvider.class);
 
@@ -34,8 +31,8 @@ public class ConsistencyPlusTagProvider {
 
         protected void configure() {}
 
-        public static void createAndFillTags(Function<Tag.Identified<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc){
-            Registry.BLOCK.getEntries().stream().filter((entry) -> Objects.equals(entry.getKey().getValue().getNamespace(), ConsistencyPlusMain.ID))
+        public static void createAndFillTags(Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc){
+            Registry.BLOCK.getEntrySet().stream().filter((entry) -> Objects.equals(entry.getKey().getValue().getNamespace(), ConsistencyPlusMain.ID))
                     .forEach((entry) -> {
                         Identifier identifier = entry.getKey().getValue();
                         Block block = entry.getValue();
@@ -135,7 +132,7 @@ public class ConsistencyPlusTagProvider {
                         }
                     });
 
-            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.NEEDS_DIAMOND_TOOL).add(CPlusBlocks.NETHERITE_STAIRS);
+            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.NEEDS_DIAMOND_TOOL).add(CPlusBlocks.NETHERITE_STAIRS.get());
 
             getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.VALID_CONDUIT_BLOCKS).add(
                     Blocks.PRISMARINE,
@@ -148,10 +145,10 @@ public class ConsistencyPlusTagProvider {
                     Blocks.DARK_PRISMARINE,
                     Blocks.DARK_PRISMARINE_SLAB,
                     Blocks.DARK_PRISMARINE_STAIRS,
-                    CPlusBlocks.NUBERT);
+                    CPlusBlocks.NUBERT.get());
 
-            getOrCreateTagBuilderFunc.apply(BlockTags.BEACON_BASE_BLOCKS).add(CPlusBlocks.NUBERT);
-            getOrCreateTagBuilderFunc.apply(BlockTags.PIGLIN_REPELLENTS).add(CPlusBlocks.JACK_O_SOUL);
+            getOrCreateTagBuilderFunc.apply(BlockTags.BEACON_BASE_BLOCKS).add(CPlusBlocks.NUBERT.get());
+            getOrCreateTagBuilderFunc.apply(BlockTags.PIGLIN_REPELLENTS).add(CPlusBlocks.JACK_O_SOUL.get());
 
             getOrCreateTagBuilderFunc.apply(BlockTags.STAIRS).addTag(ConsistencyPlusTags.ConsistencySpecificTags.STAIRS);
             getOrCreateTagBuilderFunc.apply(BlockTags.SLABS).addTag(ConsistencyPlusTags.ConsistencySpecificTags.SLABS);
@@ -184,7 +181,7 @@ public class ConsistencyPlusTagProvider {
         }
     }
 
-    public static class DyeableBlockTagProvider extends BlockTagsProvider {
+    public static class DyeableBlockTagProvider extends BlockTagProvider {
 
         public DyeableBlockTagProvider(DataGenerator dataGenerator) {
             super(dataGenerator);
@@ -219,12 +216,12 @@ public class ConsistencyPlusTagProvider {
         protected void configure() {
         }
 
-        public static void createAndFillTag(Function<Tag.Identified<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc) {
+        public static void createAndFillTag(Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc) {
             ConsistencyPlusTags.DyeableBlocks.ALL_DYEABLE_BLOCK_TAGS.forEach(identified -> createAndFillTags(identified, getOrCreateTagBuilderFunc));
         }
 
-        private static void createAndFillTags(Tag.Identified<Block> identified, Function<Tag.Identified<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc){
-            String[] nameParts = identified.getId().getPath().split("_");
+        private static void createAndFillTags(TagKey<Block> identified, Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc){
+            String[] nameParts = identified.id().getPath().split("_");
 
             String blockNamePrefix;
             String blockNameSuffix;
@@ -302,7 +299,7 @@ public class ConsistencyPlusTagProvider {
             if(defaultBlock != Blocks.AIR){
                 getOrCreateTagBuilderFunc.apply(identified).add(defaultBlock);
             }else{
-                LOGGER.info(nameParts[0] + " / " + defaultBlock + " / " + identified.getId());
+                LOGGER.info(nameParts[0] + " / " + defaultBlock + " / " + identified.id());
                 //System.out.println(identified.getId() + " / " +  defaultBlock.toString());
             }
 

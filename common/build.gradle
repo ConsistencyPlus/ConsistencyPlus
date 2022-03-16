@@ -14,4 +14,5 @@ dependencies {
     modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}" // compile against the WTHIT API
 }
 
-architectury { common() }
+architectury {
+    common() }

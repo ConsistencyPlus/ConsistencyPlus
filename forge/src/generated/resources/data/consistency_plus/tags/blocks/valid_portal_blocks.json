@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:smooth_obsidian",
+    "consistency_plus:obsidian_pillar",
+    "consistency_plus:obsidian_corner_pillar",
+    "consistency_plus:carved_obsidian",
+    "consistency_plus:chiseled_obsidian",
     "consistency_plus:polished_obsidian",
     "consistency_plus:obsidian_bricks",
     "consistency_plus:cut_obsidian",
     "consistency_plus:obsidian_tiles",
-    "consistency_plus:obsidian_pillar",
-    "consistency_plus:obsidian_corner_pillar",
-    "consistency_plus:chiseled_obsidian",
-    "consistency_plus:carved_obsidian"
+    "consistency_plus:smooth_obsidian"
   ]
 }

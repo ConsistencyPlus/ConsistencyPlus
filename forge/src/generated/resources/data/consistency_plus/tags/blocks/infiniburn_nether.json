@@ -1,23 +1,23 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:chiseled_red_nether_bricks",
-    "consistency_plus:red_nether_brick_pillar",
-    "consistency_plus:carved_red_nether_bricks",
-    "consistency_plus:cobbled_netherrack",
-    "consistency_plus:smooth_netherrack",
+    "consistency_plus:netherrack_pillar",
+    "consistency_plus:netherrack_corner_pillar",
+    "consistency_plus:chiseled_netherrack",
     "consistency_plus:polished_netherrack",
     "consistency_plus:cut_netherrack",
     "consistency_plus:netherrack_tiles",
-    "consistency_plus:chiseled_netherrack",
-    "consistency_plus:netherrack_pillar",
-    "consistency_plus:netherrack_corner_pillar",
+    "consistency_plus:cobbled_netherrack",
+    "consistency_plus:smooth_netherrack",
     "consistency_plus:blue_nether_bricks",
     "consistency_plus:cracked_blue_nether_bricks",
     "consistency_plus:chiseled_blue_nether_bricks",
     "consistency_plus:blue_nether_brick_pillar",
     "consistency_plus:carved_blue_nether_bricks",
     "consistency_plus:chiseled_nether_bricks",
-    "consistency_plus:nether_brick_pillar"
+    "consistency_plus:nether_brick_pillar",
+    "consistency_plus:chiseled_red_nether_bricks",
+    "consistency_plus:red_nether_brick_pillar",
+    "consistency_plus:carved_red_nether_bricks"
   ]
 }

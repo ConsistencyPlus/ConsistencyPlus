@@ -33,13 +33,6 @@ import static net.minecraft.block.Blocks.*;
 
 public class CPlusBlocks {
 
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
-
-	//Stone
-
-	public static final Block STONE_WALL = register("stone_wall", new WallBlock(Block.Settings.copy(STONE)));
-	public static final Block STONE_GATE = register("stone_gate", new CPlusFenceGateBlock(Block.Settings.copy(STONE)));
-
 	public static final RegistrySupplier<Block> MOSSY_COBBLESTONE_GATE = ConsistencyPlusMain.BLOCKS.register("mossy_cobblestone_gate", () -> new CPlusFenceGateBlock(Block.Settings.copy(MOSSY_COBBLESTONE)));
 
 	// Cracked
@@ -192,22 +185,6 @@ public class CPlusBlocks {
 		RegistrySupplier<Block> blockSupplied = ConsistencyPlusMain.BLOCKS.register(name, () -> block);
 		ConsistencyPlusMain.LOGGER.info("Registered " + name + " as a Block");
 		return blockSupplied;
-	}
-
-	private static Block registerAndAddStairsToList(String name, Block block) {
-		return register(name, block);
-	}
-
-	private static Block registerAndAddregisterSlabToList(String name, Block block) {
-		return register(name, block);
-	}
-
-	private static Block registerAndAddregisterWallToList(String name, Block block) {
-		return register(name, block);
-	}
-
-	private static Block registerAndAddregisterFenceGateToList(String name, Block block) {
-		return register(name, block);
 	}
 
 	public static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityType<?> entityType) {

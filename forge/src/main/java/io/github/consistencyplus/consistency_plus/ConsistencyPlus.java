@@ -13,9 +13,6 @@ public class ConsistencyPlus {
 	public ConsistencyPlus() {
 		EventBuses.registerModEventBus(ConsistencyPlusMain.ID, FMLJavaModLoadingContext.get().getModEventBus());
 
-		Optional<IEventBus> eventBus = EventBuses.getModEventBus(ConsistencyPlusMain.ID);
-		eventBus.ifPresent(iEventBus -> iEventBus.addListener(ConsistencyPlusDatagen::gatherData));
-
 		ConsistencyPlusMain.init();
 	}
 }

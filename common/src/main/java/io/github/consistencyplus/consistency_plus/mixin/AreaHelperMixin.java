@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(AreaHelper.class)
 public abstract class AreaHelperMixin {
 	// IS_VALID_FRAME_BLOCK predicate				// fabric			// forge
-	@Inject(at = @At("RETURN"), require = 0, method = {"method_30487", "lambda$static$0"}, cancellable = true, remap = false)
+	@Inject(at = @At("RETURN"), require = 0, method = "method_30487", cancellable = true, remap = false)
 	private static void cPlus$allowPortalsFromCustomObsidian(BlockState state, BlockView world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
 		if (CPlusBlocks.isValidPortalBlock(state)) {
 			cir.setReturnValue(true);

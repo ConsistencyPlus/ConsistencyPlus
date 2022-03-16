@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "consistency_plus:pink_ice_slab",
+          "name": "consistency_plus:blue_ice_slab",
           "functions": [
             {
               "function": "minecraft:explosion_decay"
@@ -17,7 +17,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "consistency_plus:pink_ice_slab",
+                  "block": "consistency_plus:blue_ice_slab",
                   "properties": {
                     "type": "double"
                   }

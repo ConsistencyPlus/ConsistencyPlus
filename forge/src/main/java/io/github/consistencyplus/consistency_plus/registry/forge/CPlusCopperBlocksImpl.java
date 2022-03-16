@@ -3,6 +3,8 @@ package io.github.consistencyplus.consistency_plus.registry.forge;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableBiMap;
+import dev.architectury.registry.registries.RegistrySupplier;
+import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import net.minecraft.block.Block;
 import net.minecraft.block.Oxidizable;
 import net.minecraft.item.HoneycombItem;
@@ -13,14 +15,14 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public class CPlusCopperBlocksImpl {
-	private static final Map<Block, Block> WAXABLE = new HashMap<>();
-	private static final Map<Block, Block> OXIDIZABLE = new HashMap<>();
+	private static final Map<RegistrySupplier<Block>, RegistrySupplier<Block>> WAXABLE = new HashMap<>();
+	private static final Map<RegistrySupplier<Block>, RegistrySupplier<Block>> OXIDIZABLE = new HashMap<>();
 	
-	public static void registerOxidizable(Block less, Block more) {
+	public static void registerOxidizable(RegistrySupplier<Block> less, RegistrySupplier<Block> more) {
 		OXIDIZABLE.put(less, more);
 	}
 	
-	public static void registerWaxable(Block no, Block yes) {
+	public static void registerWaxable(RegistrySupplier<Block> no, RegistrySupplier<Block> yes) {
 		WAXABLE.put(no, yes);
 	}
 	
@@ -36,7 +38,9 @@ public class CPlusCopperBlocksImpl {
 			com.google.common.base.Supplier<BiMap<Block, Block>> weatheringMapDelegate = () -> {
 				ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.builder();
 				builder.putAll(originalWeatheringMapDelegate.get());
-				OXIDIZABLE.forEach(builder::put);
+				OXIDIZABLE.forEach((less, more) -> {
+					builder.put(less.get(), more.get());
+				});
 				return builder.build();
 			};
 			// Replace the memoized supplier's delegate, since interface fields cannot be reassigned
@@ -49,11 +53,11 @@ public class CPlusCopperBlocksImpl {
 		Supplier<BiMap<Block, Block>> waxableMapSupplier = Suppliers.memoize(() -> {
 			ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.builder();
 			builder.putAll(originalWaxableMapSupplier.get());
-			WAXABLE.forEach(builder::put);
+			WAXABLE.forEach((no, yes) -> {
+				builder.put(no.get(), yes.get());
+			});
 			return builder.build();
 		});
 		HoneycombItem.UNWAXED_TO_WAXED_BLOCKS = waxableMapSupplier;
 	}
-	
-	
 }

@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/template_wall_side_tall",
+  "parent": "consistency_plus:block/template_consistency_wall_side_tall_tri",
   "textures": {
+    "wall_top": "consistency_plus:block/soul_sandstone_top",
+    "wall_bottom": "consistency_plus:block/soul_sandstone_top",
     "wall": "consistency_plus:block/soul_sandstone_bricks"
   }
 }

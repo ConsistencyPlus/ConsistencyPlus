@@ -1,8 +1,8 @@
 {
     "parent": "minecraft:block/inner_stairs",
     "textures": {
-        "bottom": "consistency_plus:block/red_sandstone_tiles",
-        "top": "consistency_plus:block/red_sandstone_tiles",
+        "top": "minecraft:block/red_sandstone_top",
+        "bottom": "minecraft:block/red_sandstone_top",
         "side": "consistency_plus:block/red_sandstone_tiles"
     }
 }

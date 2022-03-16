@@ -56,8 +56,7 @@ public class NubertBlock extends HorizontalFacingBlock implements Waterloggable 
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (player.getStackInHand(hand).isOf(Items.YELLOW_WOOL)) {
             if (!world.isClient()) {
-                world.setBlockState(pos,
-                        CPlusBlocks.WIGGED_NUBERT.getDefaultState()
+                world.setBlockState(pos, CPlusBlocks.WIGGED_NUBERT.get().getDefaultState()
                                 .with(FACING, state.get(FACING))
                                 .with(WATERLOGGED, state.get(WATERLOGGED))
                 );

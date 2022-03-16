@@ -6,8 +6,8 @@ public enum SetModifiers {
     //Todo: Rename these
     BASE, CRACKED, MOSSY;
 
-    public boolean canGenerate(BlockTypes type) {
-        if (this.equals(CRACKED) && type.equals(BlockTypes.BASE)) return false;
+    public boolean canGenerate(BlockTypes type, BlockShapes shape) {
+        if ((this.equals(CRACKED) && type.equals(BlockTypes.BASE)) && shape.withTypes) return false;
         return !((this.equals(CRACKED) || this.equals(MOSSY)) && type.equals(BlockTypes.COBBLED));
     }
 

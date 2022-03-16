@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
@@ -21,19 +20,13 @@ import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBloc
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.EntityType;
-import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.Tag;
 import net.minecraft.tag.TagKey;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
-import java.util.Locale;
-
 import static net.minecraft.block.Blocks.*;
-import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
 	public static final TagKey<Block> VALID_PORTAL_BLOCKS = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("valid_portal_blocks"));
@@ -146,7 +139,7 @@ public class CPlusBlocks {
 	public static final RegistrySupplier<Block> JET = ConsistencyPlusMain.BLOCKS.register("jet", () -> new Block(Block.Settings.copy(BEDROCK)));
 	public static final RegistrySupplier<Block> NUBERT = ConsistencyPlusMain.BLOCKS.register("nubert", () -> new NubertBlock());
 	public static final RegistrySupplier<Block> WIGGED_NUBERT = ConsistencyPlusMain.BLOCKS.register("wigged_nubert", () -> new WiggedNubertBlock());
-/*
+
 	// Deprecated Blocks
 	public static final RegistrySupplier<Block> STONE_BRICK_PILLAR = ConsistencyPlusMain.BLOCKS.register("stone_brick_pillar", () -> new PillarBlock(Block.Settings.copy(STONE_BRICKS)));
 	public static final RegistrySupplier<Block> CRACKED_STONE_BRICK_PILLAR = ConsistencyPlusMain.BLOCKS.register("cracked_stone_brick_pillar", () -> new PillarBlock(Block.Settings.copy(STONE_BRICKS)));
@@ -168,22 +161,22 @@ public class CPlusBlocks {
 	public static final RegistrySupplier<Block> BLUE_NETHER_BRICK_SLAB = ConsistencyPlusMain.BLOCKS.register("blue_nether_brick_slab", () -> new SlabBlock(Block.Settings.copy(NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> BLUE_NETHER_BRICK_STAIRS = ConsistencyPlusMain.BLOCKS.register("blue_nether_brick_stairs", () -> new CPlusStairBlock(NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> BLUE_NETHER_BRICK_WALL = ConsistencyPlusMain.BLOCKS.register("blue_nether_brick_wall", () -> new WallBlock(Block.Settings.copy(NETHER_BRICKS)));
-	public static final RegistrySupplier<Block> BLUE_NETHER_BRICK_FENCE_GATE = ConsistencyPlusMain.BLOCKS.register("blue_nether_brick_fence_gate", () -> new CPlusFenceGateBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
+	public static final RegistrySupplier<Block> BLUE_NETHER_BRICK_FENCE_GATE = ConsistencyPlusMain.BLOCKS.register("blue_nether_brick_fence_gate", () -> new CPlusFenceGateBlock(Block.Settings.copy(NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> CRACKED_BLUE_NETHER_BRICKS = ConsistencyPlusMain.BLOCKS.register("cracked_blue_nether_bricks", () -> new Block(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> CRACKED_BLUE_NETHER_BRICK_SLAB = ConsistencyPlusMain.BLOCKS.register("cracked_blue_nether_brick_slab", () -> new SlabBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> CRACKED_BLUE_NETHER_BRICK_STAIRS = ConsistencyPlusMain.BLOCKS.register("cracked_blue_nether_brick_stairs", () -> new CPlusStairBlock(CRACKED_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> CRACKED_BLUE_NETHER_BRICK_WALL = ConsistencyPlusMain.BLOCKS.register("cracked_blue_nether_brick_wall", () -> new WallBlock(Block.Settings.copy(CRACKED_NETHER_BRICKS)));
-	public static final RegistrySupplier<Block> CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = ConsistencyPlusMain.BLOCKS.register("cracked_blue_nether_brick_fence_gate", () -> new CPlusFenceGateBlock(Block.Settings.copy(CRACKED_BLUE_NETHER_BRICKS)));
-	public static final RegistrySupplier<Block> CHISELED_BLUE_NETHER_BRICKS = ConsistencyPlusMain.BLOCKS.register("chiseled_blue_nether_bricks", () -> new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
-	public static final RegistrySupplier<Block> BLUE_NETHER_BRICK_PILLAR = ConsistencyPlusMain.BLOCKS.register("blue_nether_brick_pillar", () -> new PillarBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)));
-	public static final RegistrySupplier<Block> CARVED_BLUE_NETHER_BRICKS = ConsistencyPlusMain.BLOCKS.register("carved_blue_nether_bricks", () -> new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)));
+	public static final RegistrySupplier<Block> CRACKED_BLUE_NETHER_BRICK_FENCE_GATE = ConsistencyPlusMain.BLOCKS.register("cracked_blue_nether_brick_fence_gate", () -> new CPlusFenceGateBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final RegistrySupplier<Block> CHISELED_BLUE_NETHER_BRICKS = ConsistencyPlusMain.BLOCKS.register("chiseled_blue_nether_bricks", () -> new Block(Block.Settings.copy(NETHER_BRICKS)));
+	public static final RegistrySupplier<Block> BLUE_NETHER_BRICK_PILLAR = ConsistencyPlusMain.BLOCKS.register("blue_nether_brick_pillar", () -> new PillarBlock(Block.Settings.copy(NETHER_BRICKS)));
+	public static final RegistrySupplier<Block> CARVED_BLUE_NETHER_BRICKS = ConsistencyPlusMain.BLOCKS.register("carved_blue_nether_bricks", () -> new Block(Block.Settings.copy(NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> CHISELED_NETHER_BRICKS = ConsistencyPlusMain.BLOCKS.register("chiseled_nether_bricks", () -> new Block(Block.Settings.copy(NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> NETHER_BRICK_PILLAR = ConsistencyPlusMain.BLOCKS.register("nether_brick_pillar", () -> new PillarBlock(Block.Settings.copy(NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> RED_NETHER_BRICK_FENCE_GATE = ConsistencyPlusMain.BLOCKS.register("red_nether_brick_fence_gate", () -> new CPlusFenceGateBlock(Block.Settings.copy(RED_NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> CHISELED_RED_NETHER_BRICKS = ConsistencyPlusMain.BLOCKS.register("chiseled_red_nether_bricks", () -> new Block(Block.Settings.copy(RED_NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> RED_NETHER_BRICK_PILLAR = ConsistencyPlusMain.BLOCKS.register("red_nether_brick_pillar", () -> new PillarBlock(Block.Settings.copy(RED_NETHER_BRICKS)));
 	public static final RegistrySupplier<Block> CARVED_RED_NETHER_BRICKS = ConsistencyPlusMain.BLOCKS.register("carved_red_nether_bricks", () -> new Block(Block.Settings.copy(RED_NETHER_BRICKS)));
-*/
+
 	// Siuol's selection regex syntax machine (?=")(.*)(?<=____")
 	// Per Thing regex selection machine (?=")(.*)(____.*)(?<=")
 

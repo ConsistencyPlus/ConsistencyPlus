@@ -8,8 +8,8 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
-public class MiscRegistryEntry extends AbstractRegistryEntry {
-    public MiscRegistryEntry(String name, AbstractBlock.Settings blockSettings) {
+public class MiscRegistryEntryGroup extends RegistryEntryGroup {
+    public MiscRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings);
     }
 

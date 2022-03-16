@@ -1,5 +1,5 @@
 package io.github.consistencyplus.consistency_plus.core.entries.interfaces;
 
-public interface BasicRegistryInterface {
+public interface BasicRegistryEntryGroupInterface {
     void construct();
 }

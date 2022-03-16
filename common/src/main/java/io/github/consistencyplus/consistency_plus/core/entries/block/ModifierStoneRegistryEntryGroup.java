@@ -5,17 +5,17 @@ import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.SetModifiers;
-import io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry;
+import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
-import static io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry.checkMinecraft;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
-public class ModifierStoneRegistryEntry extends AbstractRegistryEntry {
-    public ModifierStoneRegistryEntry(String name, AbstractBlock.Settings blockSettings) {
+public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
+    public ModifierStoneRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings, false);
         construct();
     }
@@ -24,11 +24,10 @@ public class ModifierStoneRegistryEntry extends AbstractRegistryEntry {
         for (SetModifiers modifier : SetModifiers.values()) {
             for (BlockTypes type : BlockTypes.values()) {
                 for (BlockShapes shape : BlockShapes.values()) {
-                    if (!type.equals(BlockTypes.BASE) && !shape.withTypes) break;
-                    if (!modifier.canGenerate(type)) break;
+                    if (!type.equals(BlockTypes.BASE) && !shape.withTypes) continue;
+                    if (!modifier.canGenerate(type, shape)) continue;
                     String id = getSetModifiedID(modifier, shape, type);
-                    if (checkMinecraft(id)) break;
-                    if (CPlusEnhancedRegistry.blacklistedIDs.contains(id)) break;
+                    if (!checkset2(id)) continue;
                     AbstractBlock.Settings specialCased;
                     if (checkMinecraft(type.addType(name))) specialCased = AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
                     else specialCased = blockSettings;
@@ -40,7 +39,7 @@ public class ModifierStoneRegistryEntry extends AbstractRegistryEntry {
 
     public String getSetModifiedID(SetModifiers modifier, BlockShapes shapes, BlockTypes type) {
         String id = modifier.addModifier(shapes.addShapes(type.addType(name), type));
-        return CPlusEnhancedRegistry.overrideMap.getOrDefault(id, id);
+        return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 
     public void register(String id, BlockShapes shape, AbstractBlock.Settings blockSettings) {

@@ -10,9 +10,9 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry.checkMinecraft;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
-public interface BlockRegistryInterface extends BasicRegistryInterface {
+public interface BlockRegistryEntryGroupInterface extends BasicRegistryEntryGroupInterface {
     void register(String id, BlockShapes shape, AbstractBlock.Settings blockSettings);
     RegistrySupplier<Block> blockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings);
     String getID(BlockShapes shapes, BlockTypes type);

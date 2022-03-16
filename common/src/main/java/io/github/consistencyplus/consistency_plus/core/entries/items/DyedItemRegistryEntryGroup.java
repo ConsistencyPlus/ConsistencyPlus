@@ -8,10 +8,10 @@ import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry.checkMinecraft;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
-public class DyedItemRegistryEntry extends AbstractItemRegistryEntry {
-    public DyedItemRegistryEntry(String name, Item.Settings itemSettings) {
+public class DyedItemRegistryEntryGroup extends AbstractItemRegistryEntryGroup {
+    public DyedItemRegistryEntryGroup(String name, Item.Settings itemSettings) {
         super(name, itemSettings);
     }
 
@@ -20,9 +20,14 @@ public class DyedItemRegistryEntry extends AbstractItemRegistryEntry {
         for (DyeColor color : DyeColor.values()) {
             register(color.toString() + "_" + name, itemSettings);
         }
+        if (name.equals("terracotta_brick")) {
+            register("crimson_wart_brick", itemSettings);
+            register("warped_wart_brick", itemSettings);
+
+        }
     }
 
-    public void register(String id, Item.Settings itemSettings) {
+    public static void register(String id, Item.Settings itemSettings) {
         RegistrySupplier<Item> b;
         if (name.equals("dyed_bundle")) b = ConsistencyPlusMain.ITEMS.register(id, () -> new BundleItem(itemSettings));
         else b = ConsistencyPlusMain.ITEMS.register(id, () -> new Item(itemSettings));

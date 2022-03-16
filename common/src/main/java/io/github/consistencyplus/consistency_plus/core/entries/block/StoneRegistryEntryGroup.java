@@ -9,8 +9,8 @@ import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
-public class StoneRegistryEntry extends AbstractRegistryEntry {
-    public StoneRegistryEntry(String name, AbstractBlock.Settings blockSettings) {
+public class StoneRegistryEntryGroup extends RegistryEntryGroup {
+    public StoneRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings);
     }
 

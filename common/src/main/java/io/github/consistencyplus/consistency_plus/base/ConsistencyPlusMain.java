@@ -5,15 +5,13 @@ import dev.architectury.registry.registries.DeferredRegister;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusCopperBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
-import io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry;
+import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.lang.reflect.InvocationTargetException;
 
 public class ConsistencyPlusMain {
 	public static final Logger LOGGER = LogManager.getLogger("Consistency+");
@@ -27,10 +25,10 @@ public class ConsistencyPlusMain {
 
 	public static void init() {
 		LOGGER.info("Consistency+ Main - Beginning initialization process");
+		CPlusEntries.init();
+		CPlusCopperBlocks.init();
 		CPlusBlocks.init();
 		CPlusItems.init();
-		CPlusEnhancedRegistry.init();
-		CPlusCopperBlocks.init();
 		BLOCKS.register();
 		ITEMS.register();
 		LOGGER.info("Consistency+ Main - Finished initialization process");

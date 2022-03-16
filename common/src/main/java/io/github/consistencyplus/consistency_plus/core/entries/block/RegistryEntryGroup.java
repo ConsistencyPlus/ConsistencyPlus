@@ -5,49 +5,59 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
-import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BlockRegistryInterface;
+import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BlockRegistryEntryGroupInterface;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
-import io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry;
+import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
-import static io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry.checkMinecraft;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
-public abstract class AbstractRegistryEntry implements BlockRegistryInterface {
-    // This note is more towards Jay than anyone else.
-    // For now, this is the solution Im choosing, however, after 0.5, we can change the way these are registered.
+public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInterface {
     public static String name;
     public static AbstractBlock.Settings blockSettings;
 
-    public AbstractRegistryEntry(String name, AbstractBlock.Settings blockSettings) {
-        AbstractRegistryEntry.name = name;
-        AbstractRegistryEntry.blockSettings = blockSettings;
+    public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
+        RegistryEntryGroup.name = name;
+        RegistryEntryGroup.blockSettings = blockSettings;
         construct();
     }
 
-    public AbstractRegistryEntry(String name, AbstractBlock.Settings blockSettings, boolean construct) {
+    public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, boolean construct) {
         //Use this as a way to reference the code without constructing the actual blocks. Useful for DyedRegistryEntry
-        AbstractRegistryEntry.name = name;
-        AbstractRegistryEntry.blockSettings = blockSettings;
+        RegistryEntryGroup.name = name;
+        RegistryEntryGroup.blockSettings = blockSettings;
         if (construct) construct();
     }
 
     public void construct() {
         for (BlockTypes type : BlockTypes.values()) {
             for (BlockShapes shape : BlockShapes.values()) {
-                if ((!shape.withTypes || !type.equals(BlockTypes.BASE)) && CPlusEnhancedRegistry.baseOnlyIDs.contains(name)) break;
-                if (!type.equals(BlockTypes.BASE) && !shape.withTypes) break;
-                if (type.equals(BlockTypes.COBBLED) && CPlusEnhancedRegistry.cobblelessMaterials.contains(name)) break;
+                if (!checkset1(shape, type)) break;
                 String id = getID(shape, type);
-                if (checkMinecraft(id)) break;
-                if (CPlusEnhancedRegistry.blacklistedIDs.contains(id)) break;
+                if (!checkset2(id)) continue;
                 AbstractBlock.Settings specialCased;
                 if (checkMinecraft(type.addType(name))) specialCased = AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
                 else specialCased = blockSettings;
                 register(id, shape, specialCased);
             }
         }
+    }
+
+    public boolean checkset1(BlockShapes shape, BlockTypes type) {
+        if ((!shape.withTypes || !type.equals(BlockTypes.BASE)) && CPlusEntries.baseOnlyIDs.contains(name)) return false;
+        if (!type.equals(BlockTypes.BASE) && !shape.withTypes) return false;
+        if (type.equals(BlockTypes.COBBLED) && CPlusEntries.cobblelessMaterials.contains(name)) return false;
+        return true;
+    }
+
+    public boolean checkset2(String id) {
+        if (checkMinecraft(id)) return false;
+        if (CPlusEntries.blacklistedIDs.contains(id)) return false;
+        return true;
     }
 
     public RegistrySupplier<Block> blockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings) {
@@ -67,8 +77,20 @@ public abstract class AbstractRegistryEntry implements BlockRegistryInterface {
         RegistrySupplier<Item> b; // = ConsistencyPlusMain.ITEMS.register(id, () -> new BlockItem(a.get(), itemSettings));
     }
 
+    public Block getBlock(BlockShapes shapes, BlockTypes type) {
+        String id = getID(shapes, type);
+        if (checkMinecraft(id)) return Registry.BLOCK.get(new Identifier("minecraft", (id)));
+        return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
+    }
+
+    public Item getItem(BlockShapes shapes, BlockTypes type) {
+        String id = getID(shapes, type);
+        if (checkMinecraft(id)) return Registry.ITEM.get(new Identifier("minecraft", (id)));
+        return Registry.ITEM.get(ConsistencyPlusMain.id(id));
+    }
+
     public String getID(BlockShapes shapes, BlockTypes type) {
         String id = shapes.addShapes(type.addType(name), type);
-        return CPlusEnhancedRegistry.overrideMap.getOrDefault(id, id);
+        return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 }

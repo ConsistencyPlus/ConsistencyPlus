@@ -2,11 +2,8 @@ package io.github.consistencyplus.consistency_plus.base;
 
 import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
-import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
-import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertHandler;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
-import io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

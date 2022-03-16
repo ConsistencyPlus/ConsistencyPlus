@@ -4,7 +4,7 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
-import io.github.consistencyplus.consistency_plus.core.entries.block.DyedRegistryEntry;
+import io.github.consistencyplus.consistency_plus.core.entries.block.DyedRegistryEntryGroup;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -12,10 +12,10 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.DyeColor;
 
-import static io.github.consistencyplus.consistency_plus.registry.CPlusEnhancedRegistry.checkMinecraft;
+import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
-public class DyedIceRegistryEntry extends DyedRegistryEntry {
-    public DyedIceRegistryEntry(String name, AbstractBlock.Settings blockSettings) {
+public class DyedIceRegistryEntryGroup extends DyedRegistryEntryGroup {
+    public DyedIceRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings, true);
     }
 
@@ -25,7 +25,7 @@ public class DyedIceRegistryEntry extends DyedRegistryEntry {
             for (BlockShapes shape : BlockShapes.values()) {
                 if (!shape.withTypes) break;
                 String id = getDyedID(color, shape, BlockTypes.BASE);
-                if (checkMinecraft(id)) break;
+                if (checkMinecraft(id)) continue;
                 register(id, shape, blockSettings.mapColor(color.getMapColor()));
             }
         }

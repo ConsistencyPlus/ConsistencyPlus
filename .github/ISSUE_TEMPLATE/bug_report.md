@@ -10,7 +10,7 @@ A clear and concise description of what the bug is. Include as much information 
 **Versions:**
 Minecraft version:
 C+ version:
-Fabric API version:
+Fabric API / QSL / Forge version:
 
 **Other mods:**
 List all mods that you're using; could be in the form of a list of the filenames, a crash report list, a screenshot of

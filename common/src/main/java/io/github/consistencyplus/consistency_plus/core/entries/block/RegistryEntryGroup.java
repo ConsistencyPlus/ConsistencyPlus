@@ -17,19 +17,19 @@ import net.minecraft.util.registry.Registry;
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInterface {
-    public static String name;
-    public static AbstractBlock.Settings blockSettings;
+    public String name;
+    public AbstractBlock.Settings blockSettings;
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
-        RegistryEntryGroup.name = name;
-        RegistryEntryGroup.blockSettings = blockSettings;
+        this.name = name;
+        this.blockSettings = blockSettings;
         construct();
     }
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, boolean construct) {
         //Use this as a way to reference the code without constructing the actual blocks. Useful for DyedRegistryEntry
-        RegistryEntryGroup.name = name;
-        RegistryEntryGroup.blockSettings = blockSettings;
+        this.name = name;
+        this.blockSettings = blockSettings;
         if (construct) construct();
     }
 
@@ -39,10 +39,7 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
                 if (!checkset1(shape, type)) break;
                 String id = getID(shape, type);
                 if (!checkset2(id)) continue;
-                AbstractBlock.Settings specialCased;
-                if (checkMinecraft(type.addType(name))) specialCased = AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
-                else specialCased = blockSettings;
-                register(id, shape, specialCased);
+                register(id, shape, specialCasing(type));
             }
         }
     }
@@ -58,6 +55,11 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
         if (checkMinecraft(id)) return false;
         if (CPlusEntries.blacklistedIDs.contains(id)) return false;
         return true;
+    }
+
+    public AbstractBlock.Settings specialCasing(BlockTypes type) {
+        if (checkMinecraft(type.addType(name))) return AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
+        return blockSettings;
     }
 
     public RegistrySupplier<Block> blockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings) {

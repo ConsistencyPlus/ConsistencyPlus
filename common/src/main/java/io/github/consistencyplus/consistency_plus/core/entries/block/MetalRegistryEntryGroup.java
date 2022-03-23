@@ -25,7 +25,7 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
                     AbstractBlock.Settings specialCased;
                     if (checkMinecraft(type.addType(name))) specialCased = AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
                     else specialCased = blockSettings;
-                    register(id, shape, specialCased);
+                    register(id, shape, specialCasing(type));
                 }
             }
         }

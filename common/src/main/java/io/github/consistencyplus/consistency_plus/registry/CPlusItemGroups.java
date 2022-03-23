@@ -8,12 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.registry.Registry;
 
 public class CPlusItemGroups {
-	public static final ItemGroup CONSISTENCY_PLUS_STONES = CreativeTabRegistry.create(ConsistencyPlusMain.id("stone"), () -> Registry.ITEM.get(ConsistencyPlusMain.id("polished_stone")).getDefaultStack());
-	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(ConsistencyPlusMain.id("dyeable"), () -> Registry.ITEM.get(ConsistencyPlusMain.id("pink_terracotta_tiles")).getDefaultStack());
-	public static final ItemGroup CONSISTENCY_PLUS_MISC = CreativeTabRegistry.create(ConsistencyPlusMain.id("misc"), () -> Registry.ITEM.get(ConsistencyPlusMain.id("smooth_prismarine")).getDefaultStack());
+	public static final ItemGroup CONSISTENCY_PLUS_STONES = CreativeTabRegistry.create(ConsistencyPlusMain.id("stone"), () -> CPlusEntries.STONE.getItem(BlockShapes.BLOCK, BlockTypes.POLISHED).getDefaultStack());
+	public static final ItemGroup CONSISTENCY_PLUS_DYEABLES = CreativeTabRegistry.create(ConsistencyPlusMain.id("dyeable"), () -> CPlusEntries.TERRACOTTA.getDyedItem(DyeColor.PINK, BlockShapes.BLOCK, BlockTypes.POLISHED).getDefaultStack());
+	public static final ItemGroup CONSISTENCY_PLUS_MISC = CreativeTabRegistry.create(ConsistencyPlusMain.id("misc"), () -> CPlusEntries.PRISMARINE.getItem(BlockShapes.BLOCK, BlockTypes.SMOOTH).getDefaultStack());
 
 
 	public static Item.Settings consistencyPlusStoneItemSettings() {

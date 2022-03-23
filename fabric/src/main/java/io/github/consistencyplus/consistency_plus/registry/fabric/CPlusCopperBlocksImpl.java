@@ -6,15 +6,21 @@ import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.util.registry.Registry;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CPlusCopperBlocksImpl {
 	// Welcome to "Siuol does utterly outrageous stuff in order to get a thing to work."
 
+	public static final Map<RegistrySupplier<Block>, RegistrySupplier<Block>> WAXABLE = new HashMap<>();
+	public static final Map<RegistrySupplier<Block>, RegistrySupplier<Block>> OXIDIZABLE = new HashMap<>();
+
 	public static void registerOxidizable(RegistrySupplier<Block> less, RegistrySupplier<Block> more) {
-		OxidizableBlocksRegistry.registerOxidizableBlockPair(Registry.BLOCK.get(less.getId()), (Registry.BLOCK.get(more.getId())));
+		OXIDIZABLE.put(less, more);
 	}
 
 	public static void registerWaxable(RegistrySupplier<Block> no, RegistrySupplier<Block> yes) {
-		OxidizableBlocksRegistry.registerWaxableBlockPair(Registry.BLOCK.get(no.getId()), (Registry.BLOCK.get(yes.getId())));
+		WAXABLE.put(no, yes);
 	}
 	
 	public static void finish() {

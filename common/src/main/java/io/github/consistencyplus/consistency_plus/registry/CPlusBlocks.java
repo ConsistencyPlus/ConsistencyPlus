@@ -137,8 +137,8 @@ public class CPlusBlocks {
 	public static final RegistrySupplier<Block> NETHERITE_STAIRS = ConsistencyPlusMain.BLOCKS.register("netherite_stairs", () -> new CPlusStairBlock(NETHERITE_BLOCK.getDefaultState(), Block.Settings.copy(NETHERITE_BLOCK)));
 	public static final RegistrySupplier<Block> SUSPICIOUS_SLAB = ConsistencyPlusMain.BLOCKS.register("suspicious_slab", () -> new SlabBlock(Block.Settings.copy(CLAY)));
 	public static final RegistrySupplier<Block> JET = ConsistencyPlusMain.BLOCKS.register("jet", () -> new Block(Block.Settings.copy(BEDROCK)));
-	public static final RegistrySupplier<Block> NUBERT = ConsistencyPlusMain.BLOCKS.register("nubert", () -> new NubertBlock());
-	public static final RegistrySupplier<Block> WIGGED_NUBERT = ConsistencyPlusMain.BLOCKS.register("wigged_nubert", () -> new WiggedNubertBlock());
+	public static final RegistrySupplier<Block> NUBERT = ConsistencyPlusMain.BLOCKS.register("nubert", NubertBlock::new);
+	public static final RegistrySupplier<Block> WIGGED_NUBERT = ConsistencyPlusMain.BLOCKS.register("wigged_nubert", WiggedNubertBlock::new);
 
 	// Deprecated Blocks
 	public static final RegistrySupplier<Block> STONE_BRICK_PILLAR = ConsistencyPlusMain.BLOCKS.register("stone_brick_pillar", () -> new PillarBlock(Block.Settings.copy(STONE_BRICKS)));

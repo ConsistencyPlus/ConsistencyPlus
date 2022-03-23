@@ -66,20 +66,20 @@ public class CPlusSharedBlockSettings {
         return AbstractBlock.Settings.of(CPlusBlockMaterials.OBSIDIAN, MapColor.BLACK).requiresTool().strength(50.0F, 1200.0F).luminance(state -> 10);
     }
 
-    public static AbstractBlock.Settings glazedTerracotta(MapColor color) {
-        return AbstractBlock.Settings.of(CPlusBlockMaterials.GLAZED_TERRACOTTA, color).requiresTool().strength(1.4F);
+    public static AbstractBlock.Settings glazedTerracotta() {
+        return AbstractBlock.Settings.of(CPlusBlockMaterials.GLAZED_TERRACOTTA).requiresTool().strength(1.4F);
     }
 
-    public static AbstractBlock.Settings terracotta(MapColor color) {
-        return AbstractBlock.Settings.of(Material.STONE, color).requiresTool().strength(1.25F, 4.2F);
+    public static AbstractBlock.Settings terracotta() {
+        return AbstractBlock.Settings.of(Material.STONE, MapColor.ORANGE).requiresTool().strength(1.25F, 4.2F);
     }
 
     public static AbstractBlock.Settings concrete() {
         return AbstractBlock.Settings.of(Material.STONE, DyeColor.WHITE).requiresTool().strength(1.8F);
     }
 
-    public static AbstractBlock.Settings glowstone(MapColor color) {
-        return AbstractBlock.Settings.of(Material.GLASS, color).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque();
+    public static AbstractBlock.Settings glowstone() {
+        return AbstractBlock.Settings.of(Material.GLASS).strength(0.3f).sounds(BlockSoundGroup.GLASS).luminance((state) ->15).nonOpaque();
     }
 
     public static AbstractBlock.Settings tintedGlass() {

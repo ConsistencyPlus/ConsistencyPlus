@@ -2,9 +2,11 @@ package io.github.consistencyplus.consistency_plus;
 
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
+import io.github.consistencyplus.consistency_plus.registry.fabric.CPlusCopperBlocksImpl;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.minecraft.Bootstrap;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;
@@ -28,5 +30,9 @@ public class ConsistencyPlus implements ModInitializer {
 				table.pool(poolBuilder);
 			}
 		});
+
+
+		CPlusCopperBlocksImpl.OXIDIZABLE.forEach((less, more) -> OxidizableBlocksRegistry.registerWaxableBlockPair(less.get(), more.get()));
+		CPlusCopperBlocksImpl.WAXABLE.forEach((no, yes) -> OxidizableBlocksRegistry.registerWaxableBlockPair(no.get(), yes.get()));
 	}
 }

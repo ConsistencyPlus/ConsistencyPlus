@@ -9,6 +9,7 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.DyeColor;
@@ -18,11 +19,13 @@ import net.minecraft.util.registry.Registry;
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBlockRegistryEntryGroupInterface {
-    static boolean withBase;
+    boolean withBase;
+    AbstractBlock.Settings dyedSettings;
 
     public DyedRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, Boolean withBase) {
         super(name, blockSettings, false);
-        DyedRegistryEntryGroup.withBase = withBase;
+        this.withBase = withBase;
+        this.dyedSettings = blockSettings;
         construct();
     }
 
@@ -37,13 +40,23 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
                     if (!shape.equals(BlockShapes.BLOCK) && name.equals("tinted_glass")) break;
                     String id = getDyedID(color, shape, type);
                     if (!checkset2(id)) continue;
-                    AbstractBlock.Settings dyedBlockSettings = (name.equals("terracotta")) ? blockSettings.mapColor(CPlusEntries.toTerracottaMapColor(color)) : blockSettings.mapColor(color.getMapColor());
-                    register(id, shape, dyedBlockSettings);
+                    final AbstractBlock.Settings settings = specialCasing(type, color, id, shape);
+                    final MapColor colorFinal = color.getMapColor();
+                    register(id, shape, dyedSettings.mapColor(colorFinal));
                 }
             }
         }
 
         if (withBase) super.construct();
+    }
+
+    public AbstractBlock.Settings specialCasing(BlockTypes type, DyeColor color, String id, BlockShapes shape) {
+        AbstractBlock.Settings settings;
+        if (checkMinecraft(type.addType(color.toString().toLowerCase() + "_" + name))) {
+            settings = AbstractBlock.Settings.copy(getDyedBlock(color, BlockShapes.BLOCK, type));
+        } else settings = dyedSettings;
+        final AbstractBlock.Settings finalSettings = settings;
+        return finalSettings.mapColor(color.getMapColor()); //Color.getMapColor for some reason makes the block color black
     }
 
     public void register(String id, BlockShapes shape, AbstractBlock.Settings blockSettings) {
@@ -63,8 +76,8 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
         return Registry.ITEM.get(ConsistencyPlusMain.id(id));
     }
 
-    public String getDyedID(DyeColor dyeColor, BlockShapes shapes, BlockTypes type) {
-        String id = shapes.addShapes(type.addType(dyeColor.toString() + "_" + name), type);
+    public String getDyedID(DyeColor color, BlockShapes shapes, BlockTypes type) {
+        String id = shapes.addShapes(type.addType(color.toString().toLowerCase() + "_" + name), type);
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 

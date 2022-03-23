@@ -48,11 +48,11 @@ public class CPlusEntries {
     public static final RegistryEntryGroup WARPED_WART = new MiscRegistryEntryGroup("warped_wart", CPlusSharedBlockSettings.warpedWartConstructed());
     public static final RegistryEntryGroup BONE = new MiscRegistryEntryGroup("bone", Block.Settings.copy(Blocks.BONE_BLOCK));
     public static final RegistryEntryGroup WITHERED_BONE = new MiscRegistryEntryGroup("withered_bone", CPlusSharedBlockSettings.witheredBone());
-    public static final RegistryEntryGroup TERRACOTTA = new DyedRegistryEntryGroup("terracotta", CPlusSharedBlockSettings.terracotta(MapColor.ORANGE), true);
-    public static final RegistryEntryGroup CONCRETE = new DyedRegistryEntryGroup("concrete", CPlusSharedBlockSettings.concrete(), false);
-    public static final RegistryEntryGroup GLOWSTONE = new DyedRegistryEntryGroup("glowstone", CPlusSharedBlockSettings.glowstone(MapColor.GOLD), true);
-    public static final RegistryEntryGroup TINTED_GLASS = new DyedRegistryEntryGroup("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false);
-    public static final RegistryEntryGroup GLAZED_TERRACOTTA = new PolishedGlazedTerracottaRegistryEntryGroup("glazed_terracotta", CPlusSharedBlockSettings.glazedTerracotta(MapColor.WHITE));
+    public static final DyedRegistryEntryGroup TERRACOTTA = new DyedRegistryEntryGroup("terracotta", CPlusSharedBlockSettings.terracotta(), true);
+    public static final DyedRegistryEntryGroup CONCRETE = new DyedRegistryEntryGroup("concrete", CPlusSharedBlockSettings.concrete(), false);
+    public static final DyedRegistryEntryGroup GLOWSTONE = new DyedRegistryEntryGroup("glowstone", CPlusSharedBlockSettings.glowstone(), true);
+    public static final DyedRegistryEntryGroup TINTED_GLASS = new DyedRegistryEntryGroup("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false);
+    public static final DyedRegistryEntryGroup GLAZED_TERRACOTTA = new PolishedGlazedTerracottaRegistryEntryGroup("glazed_terracotta", CPlusSharedBlockSettings.glazedTerracotta());
     // Copper stuff would be here
     public static final DyedIceRegistryEntryGroup ICE = new DyedIceRegistryEntryGroup("ice", AbstractBlock.Settings.copy(Blocks.BLUE_ICE));
 
@@ -153,6 +153,11 @@ public class CPlusEntries {
         overrides.put("terracotta_brick_gate", "brick_gate");
         overrides.put("purpur", "purpur_block");
         overrides.put("cobbled_stone_gate", "cobblestone_gate");
+        overrides.put("quartz", "quartz_block");
+        overrides.put("bone", "bone_block");
+        overrides.put("warped_wart", "warped_wart_block");
+        overrides.put("crimson_wart", "crimson_wart_block");
+        overrides.put("chiseled_quartz", "chiseled_quartz_block");
         return overrides;
     }
 

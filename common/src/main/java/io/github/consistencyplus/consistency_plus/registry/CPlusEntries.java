@@ -51,7 +51,7 @@ public class CPlusEntries {
     public static final DyedRegistryEntryGroup TERRACOTTA = new DyedRegistryEntryGroup("terracotta", CPlusSharedBlockSettings.terracotta(), true);
     public static final DyedRegistryEntryGroup CONCRETE = new DyedRegistryEntryGroup("concrete", CPlusSharedBlockSettings.concrete(), false);
     public static final DyedRegistryEntryGroup GLOWSTONE = new DyedRegistryEntryGroup("glowstone", CPlusSharedBlockSettings.glowstone(), true);
-    public static final DyedRegistryEntryGroup TINTED_GLASS = new DyedRegistryEntryGroup("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false);
+    public static final DyedRegistryEntryGroup TINTED_GLASS = new TintedGlassRegistryEntryGroup("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false);
     public static final DyedRegistryEntryGroup GLAZED_TERRACOTTA = new PolishedGlazedTerracottaRegistryEntryGroup("glazed_terracotta", CPlusSharedBlockSettings.glazedTerracotta());
     // Copper stuff would be here
     public static final DyedIceRegistryEntryGroup ICE = new DyedIceRegistryEntryGroup("ice", AbstractBlock.Settings.copy(Blocks.BLUE_ICE));
@@ -88,6 +88,7 @@ public class CPlusEntries {
         blacklist.add("netherrack_brick_wall");
         blacklist.add("netherrack_brick_gate");
         blacklist.add("crimson_wart");
+        blacklist.add("crimson_wart_block");
         blacklist.add("crimson_wart_bricks");
         blacklist.add("crimson_wart_brick_slab");
         blacklist.add("crimson_wart_brick_stairs");

@@ -9,6 +9,7 @@ import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BlockR
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
+import io.github.consistencyplus.consistency_plus.registry.CPlusSharedBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -39,9 +40,13 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
                 if (!checkset1(shape, type)) break;
                 String id = getID(shape, type);
                 if (!checkset2(id)) continue;
-                register(id, shape, specialCasing(type));
+                register(id, shape, specialCasing(type,shape));
             }
         }
+    }
+
+    public AbstractBlock.Settings getBlockSettings() {
+        return blockSettings;
     }
 
     public boolean checkset1(BlockShapes shape, BlockTypes type) {
@@ -57,9 +62,13 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
         return true;
     }
 
-    public AbstractBlock.Settings specialCasing(BlockTypes type) {
+    public AbstractBlock.Settings specialCasing(BlockTypes type, BlockShapes shape) {
+        if (name.contains("obsidian") && (shape.equals(BlockShapes.SLAB) || shape.equals(BlockShapes.STAIRS))) {
+           AbstractBlock.Settings pleaseHelpWhyNoWork = getBlockSettings();
+           return pleaseHelpWhyNoWork.nonOpaque();
+        }
         if (checkMinecraft(type.addType(name))) return AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
-        return blockSettings;
+        return getBlockSettings();
     }
 
     public RegistrySupplier<Block> blockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings) {

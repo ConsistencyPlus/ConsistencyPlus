@@ -9,6 +9,7 @@ import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.vehicle.AbstractMinecartEntity;
 import net.minecraft.entity.vehicle.MinecartEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -20,6 +21,7 @@ import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -27,7 +29,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import static net.minecraft.block.HorizontalFacingBlock.FACING;
 
 @Mixin(MinecartEntity.class)
-public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
+public abstract class MinecartEntityMixin extends AbstractMinecartEntity {
 	public MinecartEntityMixin(EntityType<?> entityType, World world) {
 		super(entityType, world);
 	}
@@ -60,16 +62,17 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 			}
 		}
 	}
-	
+
 	@Nullable
 	@Override
 	public ItemStack getPickBlockStack() {
 		if (getContainedBlock().getBlock() instanceof NubertBlock nubert) {
-			return (nubert instanceof WiggedNubertBlock ? CPlusItems.WIGGED_NUBERT_MINECART : CPlusItems.NUBERT_MINECART).get().getDefaultStack();
+			return nubert instanceof WiggedNubertBlock ? CPlusItems.WIGGED_NUBERT_MINECART.get().getDefaultStack() : CPlusItems.NUBERT_MINECART.get().getDefaultStack();
 		}
+
 		return super.getPickBlockStack();
 	}
-	
+
 	@Override
 	public void dropItems(DamageSource damageSource) {
 		super.dropItems(damageSource);
@@ -80,7 +83,7 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 			}
 		}
 	}
-	
+
 	private ActionResult rotateNubert() {
 		BlockState customBlock = getContainedBlock();
 		if (!world.isClient()) {
@@ -89,7 +92,7 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 		world.playSound(null, getBlockPos(), SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM, SoundCategory.BLOCKS, 1.0F, 1.0F);
 		return ActionResult.SUCCESS;
 	}
-	
+
 	private ActionResult setNubert(boolean sheared, ItemStack held) {
 		BlockState customBlock = getContainedBlock();
 		if (customBlock.isOf(CPlusBlocks.NUBERT.get())) {
@@ -107,7 +110,7 @@ public abstract class MinecartEntityMixin extends AbstractMinecartEntityMixin {
 		}
 		return ActionResult.SUCCESS;
 	}
-	
+
 	private ActionResult setWiggedNubert(boolean direct, ItemStack held) {
 		BlockState customBlock = getContainedBlock();
 		if (customBlock.isOf(CPlusBlocks.WIGGED_NUBERT.get())) {

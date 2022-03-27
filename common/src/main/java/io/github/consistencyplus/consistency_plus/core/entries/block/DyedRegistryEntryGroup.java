@@ -20,43 +20,30 @@ import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.c
 
 public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBlockRegistryEntryGroupInterface {
     boolean withBase;
-    AbstractBlock.Settings dyedSettings;
 
     public DyedRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, Boolean withBase) {
         super(name, blockSettings, false);
         this.withBase = withBase;
-        this.dyedSettings = blockSettings;
         construct();
     }
 
     @Override
     public void construct() {
+        if (withBase) super.construct();
         for (DyeColor color : DyeColor.values()) {
             for (BlockTypes type : BlockTypes.values()) {
                 for (BlockShapes shape : BlockShapes.values()) {
-                    if ((!shape.withTypes || !type.equals(BlockTypes.BASE)) && CPlusEntries.baseOnlyIDs.contains(name)) break;
-                    if (!type.equals(BlockTypes.BASE) && !shape.withTypes) break;
-                    if (type.equals(BlockTypes.COBBLED) && CPlusEntries.cobblelessMaterials.contains(name)) break;
+                    if (!checkset1(shape, type)) break;
                     if (!shape.equals(BlockShapes.BLOCK) && name.equals("tinted_glass")) break;
                     String id = getDyedID(color, shape, type);
                     if (!checkset2(id)) continue;
-                    final AbstractBlock.Settings settings = specialCasing(type, color, id, shape);
-                    final MapColor colorFinal = color.getMapColor();
-                    register(id, shape, dyedSettings.mapColor(colorFinal));
+                    // Block Setting Code is here.
+                    AbstractBlock.Settings dyedBlockSettings = getBlockSettings();
+                    dyedBlockSettings = (name.equals("terracotta")) ? dyedBlockSettings.mapColor(CPlusEntries.toTerracottaMapColor(color)) : dyedBlockSettings.mapColor(color.getMapColor());
+                    register(id, shape, dyedBlockSettings);
                 }
             }
         }
-
-        if (withBase) super.construct();
-    }
-
-    public AbstractBlock.Settings specialCasing(BlockTypes type, DyeColor color, String id, BlockShapes shape) {
-        AbstractBlock.Settings settings;
-        if (checkMinecraft(type.addType(color.toString().toLowerCase() + "_" + name))) {
-            settings = AbstractBlock.Settings.copy(getDyedBlock(color, BlockShapes.BLOCK, type));
-        } else settings = dyedSettings;
-        final AbstractBlock.Settings finalSettings = settings;
-        return finalSettings.mapColor(color.getMapColor()); //Color.getMapColor for some reason makes the block color black
     }
 
     public void register(String id, BlockShapes shape, AbstractBlock.Settings blockSettings) {

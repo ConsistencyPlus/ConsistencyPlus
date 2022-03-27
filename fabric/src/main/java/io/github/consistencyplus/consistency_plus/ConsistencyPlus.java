@@ -6,6 +6,7 @@ import io.github.consistencyplus.consistency_plus.registry.fabric.CPlusCopperBlo
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.minecraft.Bootstrap;
 import net.minecraft.block.Blocks;
@@ -32,7 +33,7 @@ public class ConsistencyPlus implements ModInitializer {
 		});
 
 
-		CPlusCopperBlocksImpl.OXIDIZABLE.forEach((less, more) -> OxidizableBlocksRegistry.registerWaxableBlockPair(less.get(), more.get()));
+		CPlusCopperBlocksImpl.OXIDIZABLE.forEach((less, more) -> OxidizableBlocksRegistry.registerOxidizableBlockPair(less.get(), more.get()));
 		CPlusCopperBlocksImpl.WAXABLE.forEach((no, yes) -> OxidizableBlocksRegistry.registerWaxableBlockPair(no.get(), yes.get()));
 	}
 }

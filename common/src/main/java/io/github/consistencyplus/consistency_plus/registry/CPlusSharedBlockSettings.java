@@ -1,6 +1,7 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
 import dev.architectury.registry.block.BlockProperties;
+import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
@@ -12,7 +13,6 @@ import static net.minecraft.block.Blocks.TINTED_GLASS;
 public class CPlusSharedBlockSettings {
     // THIS IS NOT A REPLACEMENT FOR `Block.Settings`
     // Rather, this is actually more so like `CPlusItemGroups` but for Block Settings
-
 
     public static AbstractBlock.Settings stone() {
         return AbstractBlock.Settings.of(Material.STONE).requiresTool().strength(1.5F, 6.0F);

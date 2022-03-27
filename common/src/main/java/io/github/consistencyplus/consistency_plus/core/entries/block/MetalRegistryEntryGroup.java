@@ -22,10 +22,7 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
                     if (type.equals(BlockTypes.TILE)) break; //todo: Replace this with a blacklist thing
                     String id = getID(shape, type);
                     checkset2(id);
-                    AbstractBlock.Settings specialCased;
-                    if (checkMinecraft(type.addType(name))) specialCased = AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
-                    else specialCased = blockSettings;
-                    register(id, shape, specialCasing(type));
+                    register(id, shape, specialCasing(type, shape));
                 }
             }
         }

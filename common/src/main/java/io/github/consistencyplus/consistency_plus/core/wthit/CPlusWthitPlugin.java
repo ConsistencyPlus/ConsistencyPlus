@@ -11,7 +11,7 @@ public class CPlusWthitPlugin implements IWailaPlugin {
 	public void register(IRegistrar registrar) {
 		registrar.addComponent(new NubertOverride(), TooltipPosition.BODY, NubertBlock.class);
 		NubertMinecartOverride cart = new NubertMinecartOverride();
-		registrar.addDisplayItem(cart, MinecartEntity.class);
+		registrar.addIcon(cart, MinecartEntity.class);
 		registrar.addComponent(cart, TooltipPosition.HEAD, MinecartEntity.class);
 		registrar.addComponent(cart, TooltipPosition.BODY, MinecartEntity.class);
 		registrar.addComponent(cart, TooltipPosition.TAIL, MinecartEntity.class);

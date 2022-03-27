@@ -28,10 +28,7 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
                     if (!modifier.canGenerate(type, shape)) continue;
                     String id = getSetModifiedID(modifier, shape, type);
                     if (!checkset2(id)) continue;
-                    AbstractBlock.Settings specialCased;
-                    if (checkMinecraft(type.addType(name))) specialCased = AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
-                    else specialCased = blockSettings;
-                    register(id, shape, specialCasing(type));
+                    register(id, shape, specialCasing(type,shape));
                 }
             }
         }

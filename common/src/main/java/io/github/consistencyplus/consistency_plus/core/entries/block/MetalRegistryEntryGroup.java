@@ -1,67 +1,115 @@
 package io.github.consistencyplus.consistency_plus.core.entries.block;
 
+import dev.architectury.injectables.annotations.ExpectPlatform;
+import dev.architectury.registry.registries.RegistrySupplier;
+import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
-import net.minecraft.block.AbstractBlock;
+import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableGateBlock;
+import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizablePillarBlock;
+import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableWallBlock;
+import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
+import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
+import io.github.consistencyplus.consistency_plus.registry.CPlusSharedBlockSettings;
+import net.minecraft.block.*;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import org.apache.commons.lang3.tuple.Pair;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public class MetalRegistryEntryGroup extends RegistryEntryGroup {
-    //todo: This class replacing old CPlusCopperBlocks
     public MetalRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings);
     }
 
+    //todo: Make this work non-statically (FOR THE OTHER TYPES OF METALS) and decide what happens to this system.
+    public static final Map<Key, Pair<RegistrySupplier<Block>, RegistrySupplier<Item>>> BLOCKS = new HashMap<>();
+
+    public RegistrySupplier<Block> getBlock(CopperOxidization oxidization, BlockTypes type, BlockShapes shape, boolean waxed) {
+        return get(oxidization, type, shape, waxed).getLeft();
+    }
+
+    public RegistrySupplier<Item> getItem(CopperOxidization oxidization, BlockTypes type, BlockShapes shape, boolean waxed) {
+        return get(oxidization, type, shape, waxed).getRight();
+    }
+
+    public Pair<RegistrySupplier<Block>, RegistrySupplier<Item>> get(CopperOxidization oxidization, BlockTypes type, BlockShapes shape, boolean waxed) {
+        return BLOCKS.get(new Key(oxidization, type, shape, waxed));
+    }
+
+    private record Key(CopperOxidization oxidization, BlockTypes type, BlockShapes shape, boolean waxed) {}
+
+    //todo: Dehardcodeify this
     public void construct() {
         for (CopperOxidization oxidization : CopperOxidization.values()) {
             for (BlockTypes type : BlockTypes.values()) {
                 for (BlockShapes shape : BlockShapes.values()) {
-                    if (!type.equals(BlockTypes.BASE) && !shape.withTypes) break;
-                    if (type.equals(BlockTypes.COBBLED)) break;
-                    if (type.equals(BlockTypes.TILE)) break; //todo: Replace this with a blacklist thing
-                    String id = getID(shape, type);
-                    checkset2(id);
-                    register(id, shape, specialCasing(type, shape));
+                    if (!checkset1(shape, type)) break;
+                    if (type.equals(BlockTypes.TILE) && (shape.equals(BlockShapes.BLOCK) || shape.equals(BlockShapes.SLAB) || shape.equals(BlockShapes.STAIRS))) continue;
+                    if (type.equals(BlockTypes.BASE) && shape.equals(BlockShapes.BLOCK)) continue;
+                    String id = getOxiID(oxidization, shape, type);
+                    if (!checkset2(id)) continue;
+                    register(id, shape, CPlusSharedBlockSettings.copper(oxidization), oxidization.toVanilla(), type);
                 }
             }
         }
+        finish();
+    }
 
-        /*
-        for (CopperOxidization oxidization : CopperOxidization.values()) {
-			for (BlockTypes type : BlockTypes.values()) {
-				for (BlockShapes shape : BlockShapes.values()) {
-					if (!type.equals(BlockTypes.BASE) && !shape.withTypes) break;
-					if (type.equals(BlockTypes.TILE) && (shape.equals(BlockShapes.BLOCK) || shape.equals(BlockShapes.SLAB) || shape.equals(BlockShapes.STAIRS))) continue;
-					if (type.equals(BlockTypes.BASE) && shape.equals(BlockShapes.BLOCK)) continue;
-					if (type.equals(BlockTypes.COBBLED)) break;
-					String id = getOxiID(oxidization, shape, type);
-					if (CPlusEntries.checkMinecraft(id)) continue;
-					if (CPlusEntries.blacklistedIDs.contains(id)) continue;
+    public void register(String name, BlockShapes shape, AbstractBlock.Settings blockSettings, Oxidizable.OxidationLevel level, BlockTypes type) {
+        RegistrySupplier<Block> unwaxedBlock = unwaxedBlockRegistration(name, shape, blockSettings, level);
+        RegistrySupplier<Item> unwaxedItem =  ConsistencyPlusMain.ITEMS.register(name, () -> new BlockItem(unwaxedBlock.get(), CPlusItemGroups.consistencyPlusMiscItemSettings()));
+        BLOCKS.put(new Key(CopperOxidization.fromVanilla(level), type, shape, false), Pair.of(unwaxedBlock, unwaxedItem));
+        tryRegisterOxidizable(unwaxedBlock, CopperOxidization.fromVanilla(level), type, shape);
 
-					register(id, shape, CPlusSharedBlockSettings.copper(oxidization), oxidization.toVanilla(), type);
-				}
-			}
-		}
+        String waxedID = "waxed_" + name;
+        RegistrySupplier<Block> waxedBlock = blockRegistration(waxedID, shape, blockSettings);
+        RegistrySupplier<Item> waxedItem = ConsistencyPlusMain.ITEMS.register(waxedID, () -> new BlockItem(waxedBlock.get(), CPlusItemGroups.consistencyPlusMiscItemSettings()));
+        BLOCKS.put(new Key(CopperOxidization.fromVanilla(level), type, shape, true), Pair.of(waxedBlock, waxedItem));
 
-		finish();
+        registerWaxable(unwaxedBlock, waxedBlock);
+    }
 
-			@ExpectPlatform
-	private static void registerOxidizable(RegistrySupplier<Block> less, RegistrySupplier<Block> more) {
-		throw new RuntimeException("Architectury failed!");
-	}
+    public RegistrySupplier<Block> unwaxedBlockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings, Oxidizable.OxidationLevel level) {
+        return switch (blockShapes) {
+            default -> ConsistencyPlusMain.BLOCKS.register(name, () ->  new OxidizableBlock(level, blockSettings));
+            case SLAB -> ConsistencyPlusMain.BLOCKS.register(name, () -> new OxidizableSlabBlock(level, blockSettings));
+            case STAIRS -> ConsistencyPlusMain.BLOCKS.register(name, () ->  new OxidizableStairsBlock(level, Blocks.COPPER_BLOCK.getDefaultState(), blockSettings));
+            case WALL -> ConsistencyPlusMain.BLOCKS.register(name, () ->  new OxidizableWallBlock(level, blockSettings));
+            case GATE -> ConsistencyPlusMain.BLOCKS.register(name, () ->  new OxidizableGateBlock(level, blockSettings));
+            case PILLAR -> ConsistencyPlusMain.BLOCKS.register(name, () ->  new OxidizablePillarBlock(level, blockSettings));
+        };
+    }
 
-	@ExpectPlatform
-	private static void registerWaxable(RegistrySupplier<Block> no, RegistrySupplier<Block> yes) {
-		throw new RuntimeException("Architectury failed!");
-	}
+    private void tryRegisterOxidizable(RegistrySupplier<Block> more, CopperOxidization current, BlockTypes type, BlockShapes shape) {
+        if (current.equals(CopperOxidization.BASE)) return;
+        CopperOxidization last = CopperOxidization.values()[current.ordinal() - 1];
+        RegistrySupplier<Block> less = getBlock(last, type, shape, false);
+        registerOxidizable(less, more);
+    }
 
-	@ExpectPlatform
-	private static void finish() {
-		throw new RuntimeException("Architectury failed!");
-	}
-         */
+    private String getOxiID(CopperOxidization oxidization, BlockShapes shape, BlockTypes type){
+        String id = oxidization.addOxidization(shape.addShapes(type.addType(name), type));
+        return CPlusEntries.overrideMap.getOrDefault(id, id);
+    }
 
+    @ExpectPlatform
+    private static void registerOxidizable(RegistrySupplier<Block> less, RegistrySupplier<Block> more) {
+        throw new RuntimeException("Architectury failed!");
+    }
 
+    @ExpectPlatform
+    private static void registerWaxable(RegistrySupplier<Block> no, RegistrySupplier<Block> yes) {
+        throw new RuntimeException("Architectury failed!");
+    }
+
+    @ExpectPlatform
+    private static void finish() {
+        throw new RuntimeException("Architectury failed!");
     }
 }

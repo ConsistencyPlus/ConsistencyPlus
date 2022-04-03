@@ -20,6 +20,7 @@ import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DI
 
 
 // I think a lot of this class is unnecessary but please for the love of god do not touch it
+// Its really tempting Jay. I really wanna touch it.
 public class GrassSlabBlock extends SlabBlock implements HasUngrownVariant, SpreadableGrassBlock {
 	public GrassSlabBlock(Settings settings) {
 		super(settings);

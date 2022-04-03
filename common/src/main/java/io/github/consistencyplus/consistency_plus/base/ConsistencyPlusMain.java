@@ -3,7 +3,6 @@ package io.github.consistencyplus.consistency_plus.base;
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
-import io.github.consistencyplus.consistency_plus.registry.CPlusCopperBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import net.minecraft.block.Block;
@@ -26,10 +25,10 @@ public class ConsistencyPlusMain {
 	public static void init() {
 		LOGGER.info("Consistency+ Main - Beginning initialization process");
 		CPlusEntries.init();
-		CPlusCopperBlocks.init();
 		CPlusBlocks.init();
 		CPlusItems.init();
 		BLOCKS.register();
+		LOGGER.info("Consistency+ Main - Registration Checkpoint 1");
 		ITEMS.register();
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 	}

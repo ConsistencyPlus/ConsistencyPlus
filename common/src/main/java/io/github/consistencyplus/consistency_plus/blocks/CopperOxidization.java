@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.blocks;
 
-import io.github.consistencyplus.consistency_plus.registry.CPlusCopperBlocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Oxidizable;
 

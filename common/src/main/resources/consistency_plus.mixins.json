@@ -12,6 +12,7 @@
     "LivingEntityMixin",
     "MinecartEntityMixin",
     "MyceliumBlockMixin",
+    "PlantBlockMixin",
     "PlayerEntityMixin"
   ],
   "client": [

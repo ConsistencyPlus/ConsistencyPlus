@@ -10,7 +10,7 @@
       "faces": {
         "north": {"uv": [0, 0, 8, 8], "texture": "#side"},
         "east": {"uv": [8, 0, 16, 8], "texture": "#side"},
-        "up": {"uv": [8, 0, 16, 8], "texture": "#top"},
+        "up": {"uv": [8, 0, 16, 8], "texture": "#top", "tintindex": 0},
         "down": {"uv": [8, 8, 16, 16], "texture": "#bottom"}
       }
     },

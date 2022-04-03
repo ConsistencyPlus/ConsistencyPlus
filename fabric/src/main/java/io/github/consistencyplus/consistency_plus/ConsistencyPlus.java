@@ -1,21 +1,16 @@
 package io.github.consistencyplus.consistency_plus;
 
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.core.entries.block.fabric.MetalRegistryEntryGroupImpl;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
-import io.github.consistencyplus.consistency_plus.registry.fabric.CPlusCopperBlocksImpl;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
-import net.minecraft.Bootstrap;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;
-import net.minecraft.item.Items;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class ConsistencyPlus implements ModInitializer {
 	private static final Identifier WITHER_SKELE_LOOT = EntityType.WITHER_SKELETON.getLootTableId();
@@ -33,7 +28,7 @@ public class ConsistencyPlus implements ModInitializer {
 		});
 
 
-		CPlusCopperBlocksImpl.OXIDIZABLE.forEach((less, more) -> OxidizableBlocksRegistry.registerOxidizableBlockPair(less.get(), more.get()));
-		CPlusCopperBlocksImpl.WAXABLE.forEach((no, yes) -> OxidizableBlocksRegistry.registerWaxableBlockPair(no.get(), yes.get()));
+		MetalRegistryEntryGroupImpl.OXIDIZABLE.forEach((less, more) -> OxidizableBlocksRegistry.registerOxidizableBlockPair(less.get(), more.get()));
+		MetalRegistryEntryGroupImpl.WAXABLE.forEach((no, yes) -> OxidizableBlocksRegistry.registerWaxableBlockPair(no.get(), yes.get()));
 	}
 }

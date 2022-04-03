@@ -31,6 +31,9 @@ import static net.minecraft.block.Blocks.*;
 public class CPlusBlocks {
 	public static final TagKey<Block> VALID_PORTAL_BLOCKS = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("valid_portal_blocks"));
 	public static final TagKey<Block> VALID_CONDUIT_BLOCKS = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("valid_conduit_blocks"));
+	public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("dirt_slabs"));
+	public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("dirt_stairs"));
+
 
 	public static final RegistrySupplier<Block> MOSSY_COBBLESTONE_GATE = ConsistencyPlusMain.BLOCKS.register("mossy_cobblestone_gate", () -> new CPlusFenceGateBlock(Block.Settings.copy(MOSSY_COBBLESTONE)));
 

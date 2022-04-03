@@ -7,7 +7,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.TintedGlassBlock;
 
-public class TintedGlassRegistryEntryGroup extends DyedRegistryEntryGroup{
+public class TintedGlassRegistryEntryGroup extends DyedRegistryEntryGroup {
     public TintedGlassRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, Boolean withBase) {
         super(name, blockSettings, withBase);
     }

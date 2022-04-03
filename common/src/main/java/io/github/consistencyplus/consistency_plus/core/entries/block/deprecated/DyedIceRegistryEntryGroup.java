@@ -26,7 +26,7 @@ public class DyedIceRegistryEntryGroup extends DyedRegistryEntryGroup {
                 if (!shape.withTypes) break;
                 String id = getDyedID(color, shape, BlockTypes.BASE);
                 if (checkMinecraft(id)) continue;
-                register(id, shape, blockSettings.mapColor(color.getMapColor()));
+                register(id, shape, getBlockSettings().mapColor(color.getMapColor()));
             }
         }
     }

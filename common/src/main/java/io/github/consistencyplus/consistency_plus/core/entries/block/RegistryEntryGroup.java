@@ -5,6 +5,7 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
+import io.github.consistencyplus.consistency_plus.blocks.FalseBlock;
 import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BlockRegistryEntryGroupInterface;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
@@ -20,10 +21,13 @@ import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.c
 public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInterface {
     public String name;
     public AbstractBlock.Settings blockSettings;
+    public FalseBlock settingsStorage;
+
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         this.name = name;
         this.blockSettings = blockSettings;
+        settingsStorage = new FalseBlock(blockSettings);
         construct();
     }
 
@@ -31,6 +35,7 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
         //Use this as a way to reference the code without constructing the actual blocks. Useful for DyedRegistryEntry
         this.name = name;
         this.blockSettings = blockSettings;
+        settingsStorage = new FalseBlock(blockSettings);
         if (construct) construct();
     }
 
@@ -46,7 +51,7 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
     }
 
     public AbstractBlock.Settings getBlockSettings() {
-        return blockSettings;
+        return AbstractBlock.Settings.copy(settingsStorage);
     }
 
     public boolean checkset1(BlockShapes shape, BlockTypes type) {
@@ -63,10 +68,8 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
     }
 
     public AbstractBlock.Settings specialCasing(BlockTypes type, BlockShapes shape) {
-        if (name.contains("obsidian") && (shape.equals(BlockShapes.SLAB) || shape.equals(BlockShapes.STAIRS))) {
-           AbstractBlock.Settings pleaseHelpWhyNoWork = getBlockSettings();
-           return pleaseHelpWhyNoWork.nonOpaque();
-        }
+        if (name.equals("crying_obsidian") && (shape.equals(BlockShapes.SLAB) || shape.equals(BlockShapes.STAIRS))) return getBlockSettings().nonOpaque();
+        if (name.equals("netherrack") && (shape.withTypes)) return getBlockSettings();
         if (checkMinecraft(type.addType(name))) return AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
         return getBlockSettings();
     }

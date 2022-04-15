@@ -33,7 +33,9 @@
       "consistency_plus:smooth_blackstone_stairs",
       "consistency_plus:smooth_blackstone_stairs_crafting",
       "consistency_plus:smooth_blackstone_wall",
-      "consistency_plus:smooth_blackstone_wall_crafting"
+      "consistency_plus:smooth_blackstone_wall_crafting",
+      "consistency_plus:blackstone_bricks",
+      "consistency_plus:blackstone_brick"
 
     ]
   },

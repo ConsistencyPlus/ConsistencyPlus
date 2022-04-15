@@ -33,7 +33,9 @@
       "consistency_plus:smooth_prismarine_stairs",
       "consistency_plus:smooth_prismarine_stairs_crafting",
       "consistency_plus:smooth_prismarine_wall",
-      "consistency_plus:smooth_prismarine_wall_crafting"
+      "consistency_plus:smooth_prismarine_wall_crafting",
+      "consistency_plus:prismarine_bricks",
+      "consistency_plus:prismarine_brick"
 
     ]
   },

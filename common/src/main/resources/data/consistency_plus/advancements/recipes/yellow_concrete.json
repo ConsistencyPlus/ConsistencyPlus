@@ -73,7 +73,10 @@
       "consistency_plus:smooth_yellow_concrete_stairs_dyeing",
       "consistency_plus:smooth_yellow_concrete_wall",
       "consistency_plus:smooth_yellow_concrete_wall_crafting",
-      "consistency_plus:smooth_yellow_concrete_wall_dyeing"
+      "consistency_plus:smooth_yellow_concrete_wall_dyeing",
+      "consistency_plus:yellow_concrete_bricks",
+      "consistency_plus:yellow_concrete_brick",
+      "consistency_plus:yellow_concrete_brick_dyeing"
 
     ]
   },

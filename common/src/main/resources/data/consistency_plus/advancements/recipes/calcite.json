@@ -45,7 +45,9 @@
       "consistency_plus:smooth_calcite_stairs",
       "consistency_plus:smooth_calcite_stairs_crafting",
       "consistency_plus:smooth_calcite_wall",
-      "consistency_plus:smooth_calcite_wall_crafting"
+      "consistency_plus:smooth_calcite_wall_crafting",
+      "consistency_plus:calcite_bricks",
+      "consistency_plus:calcite_brick"
 
 
     ]

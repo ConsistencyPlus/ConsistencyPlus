@@ -104,7 +104,11 @@
       "consistency_plus:waxed_smooth_copper_wall",
       "consistency_plus:waxed_smooth_copper_wall_crafting",
       "consistency_plus:waxed_smooth_copper_wall_waxing",
-      "consistency_plus:waxed_smooth_copper_waxing"
+      "consistency_plus:waxed_smooth_copper_waxing",
+      "consistency_plus:copper_bricks",
+      "consistency_plus:copper_brick",
+      "consistency_plus:waxed_copper_bricks",
+      "consistency_plus:waxed_copper_brick"
 
     ]
   },

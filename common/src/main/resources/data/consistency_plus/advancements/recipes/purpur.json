@@ -36,7 +36,9 @@
       "consistency_plus:smooth_purpur_stairs",
       "consistency_plus:smooth_purpur_stairs_crafting",
       "consistency_plus:smooth_purpur_wall",
-      "consistency_plus:smooth_purpur_wall_crafting"
+      "consistency_plus:smooth_purpur_wall_crafting",
+      "consistency_plus:purpur_bricks",
+      "consistency_plus:purpur_brick"
 
 
     ]

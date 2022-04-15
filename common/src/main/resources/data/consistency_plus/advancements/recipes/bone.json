@@ -38,7 +38,9 @@
       "consistency_plus:smooth_bone_stairs",
       "consistency_plus:smooth_bone_stairs_crafting",
       "consistency_plus:smooth_bone_wall",
-      "consistency_plus:smooth_bone_wall_crafting"
+      "consistency_plus:smooth_bone_wall_crafting",
+      "consistency_plus:bone_bricks",
+      "consistency_plus:bone_brick"
 
     ]
   },

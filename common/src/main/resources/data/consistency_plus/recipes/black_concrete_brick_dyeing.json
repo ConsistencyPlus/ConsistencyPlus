@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:black_dye"
+    },
+    "#": {
+      "item": "consistency_plus:white_concrete_brick"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:black_concrete_brick",
+    "count": 8
+  }
+}

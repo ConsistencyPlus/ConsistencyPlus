@@ -34,7 +34,9 @@
       "consistency_plus:smooth_sandstone_gate",
       "consistency_plus:smooth_sandstone_gate_crafting",
       "consistency_plus:smooth_sandstone_wall",
-      "consistency_plus:smooth_sandstone_wall_crafting"
+      "consistency_plus:smooth_sandstone_wall_crafting",
+      "consistency_plus:sandstone_bricks",
+      "consistency_plus:sandstone_brick"
 
     ]
   },

@@ -86,7 +86,9 @@
       "consistency_plus:smooth_blue_terracotta_stairs_dyeing",
       "consistency_plus:smooth_blue_terracotta_wall",
       "consistency_plus:smooth_blue_terracotta_wall_crafting",
-      "consistency_plus:smooth_blue_terracotta_wall_dyeing"
+      "consistency_plus:smooth_blue_terracotta_wall_dyeing",
+      "consistency_plus:blue_terracotta_bricks",
+      "consistency_plus:blue_terracotta_brick"
 
     ]
   },

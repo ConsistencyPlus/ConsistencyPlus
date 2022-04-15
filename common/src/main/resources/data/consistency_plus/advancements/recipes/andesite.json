@@ -38,7 +38,9 @@
       "consistency_plus:smooth_andesite_stairs",
       "consistency_plus:smooth_andesite_stairs_crafting",
       "consistency_plus:smooth_andesite_wall",
-      "consistency_plus:smooth_andesite_wall_crafting"
+      "consistency_plus:smooth_andesite_wall_crafting",
+      "consistency_plus:andesite_bricks",
+      "consistency_plus:andesite_brick"
       
     ]
   },

@@ -36,7 +36,9 @@
       "consistency_plus:smooth_deepslate_stairs",
       "consistency_plus:smooth_deepslate_stairs_crafting",
       "consistency_plus:smooth_deepslate_wall",
-      "consistency_plus:smooth_deepslate_wall_crafting"
+      "consistency_plus:smooth_deepslate_wall_crafting",
+      "consistency_plus:deepslate_bricks",
+      "consistency_plus:deepslate_brick"
 
 
     ]

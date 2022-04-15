@@ -73,7 +73,10 @@
       "consistency_plus:smooth_purple_concrete_stairs_dyeing",
       "consistency_plus:smooth_purple_concrete_wall",
       "consistency_plus:smooth_purple_concrete_wall_crafting",
-      "consistency_plus:smooth_purple_concrete_wall_dyeing"
+      "consistency_plus:smooth_purple_concrete_wall_dyeing",
+      "consistency_plus:purple_concrete_bricks",
+      "consistency_plus:purple_conrete_brick",
+      "consistency_plus:purple_concrete_brick_dyeing"
 
     ]
   },

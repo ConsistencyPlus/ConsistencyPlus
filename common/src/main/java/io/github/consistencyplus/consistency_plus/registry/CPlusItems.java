@@ -152,7 +152,7 @@ public class CPlusItems {
 	// Random
 	public static final RegistrySupplier<Item> WARPED_WART = ConsistencyPlusMain.ITEMS.register("warped_wart", () -> new AliasedBlockItem(CPlusBlocks.WARPED_WART.get(), new Item.Settings().group(ItemGroup.MISC)));
 	public static final RegistrySupplier<Item> COPPER_NUGGET = ConsistencyPlusMain.ITEMS.register("copper_nugget", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
-	public static final RegistrySupplier<Item> NETHERITE_NUGGET = ConsistencyPlusMain.ITEMS.register("netherite_nugget", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final RegistrySupplier<Item> NETHERITE_NUGGET = ConsistencyPlusMain.ITEMS.register("netherite_nugget", () -> new Item(new Item.Settings().group(ItemGroup.MISC).fireproof()));
 	public static final RegistrySupplier<Item> NETHERITE_HORSE_ARMOR = ConsistencyPlusMain.ITEMS.register("netherite_horse_armor", () -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
 	public static final RegistrySupplier<Item> WITHERED_BONE = ConsistencyPlusMain.ITEMS.register("withered_bone", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
 	public static final RegistrySupplier<Item> WITHERED_BONE_MEAL = ConsistencyPlusMain.ITEMS.register("withered_bone_meal", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));

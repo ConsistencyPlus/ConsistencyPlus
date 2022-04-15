@@ -15,6 +15,7 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusSharedBlockSetti
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.HashMap;
@@ -57,6 +58,10 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
                     register(id, shape, CPlusSharedBlockSettings.copper(oxidization), oxidization.toVanilla(), type);
                 }
             }
+
+            if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register(oxidization.toString() + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+            if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register("waxed_" + oxidization.toString() + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+
         }
         finish();
     }

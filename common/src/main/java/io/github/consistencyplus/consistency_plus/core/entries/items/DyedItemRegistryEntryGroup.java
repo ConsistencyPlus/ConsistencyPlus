@@ -17,14 +17,7 @@ public class DyedItemRegistryEntryGroup extends AbstractItemRegistryEntryGroup {
 
     @Override
     public void construct() {
-        for (DyeColor color : DyeColor.values()) {
-            register(color.toString() + "_" + name, itemSettings);
-        }
-        if (name.equals("terracotta_brick")) {
-            register("crimson_wart_brick", itemSettings);
-            register("warped_wart_brick", itemSettings);
-
-        }
+        for (DyeColor color : DyeColor.values()) register(color.toString() + "_" + name, itemSettings);
     }
 
     public static void register(String id, Item.Settings itemSettings) {

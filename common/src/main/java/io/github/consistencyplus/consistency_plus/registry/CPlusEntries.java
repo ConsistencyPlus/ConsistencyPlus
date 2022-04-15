@@ -21,7 +21,6 @@ public class CPlusEntries {
     public static final List<String> baseOnlyIDs = createBaseOnly();
     public static final Map<String, String> overrideMap = createOverrideMap();
 
-    public static final AbstractItemRegistryEntryGroup TERRACOTTA_BRICK = new DyedItemRegistryEntryGroup("terracotta_brick", new Item.Settings().group(ItemGroup.MISC));
     public static final DyedItemRegistryEntryGroup DYED_BUNDLE = new DyedItemRegistryEntryGroup("dyed_bundle", new Item.Settings().maxCount(1));
     public static final RegistryEntryGroup STONE = new StoneRegistryEntryGroup("stone", CPlusSharedBlockSettings.stone());
     public static final RegistryEntryGroup ANDESITE = new ModifierStoneRegistryEntryGroup("andesite", CPlusSharedBlockSettings.andesite());
@@ -54,7 +53,6 @@ public class CPlusEntries {
     public static final DyedRegistryEntryGroup GLOWSTONE = new DyedRegistryEntryGroup("glowstone", CPlusSharedBlockSettings.glowstone(), true);
     public static final DyedRegistryEntryGroup TINTED_GLASS = new TintedGlassRegistryEntryGroup("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false);
     public static final DyedRegistryEntryGroup GLAZED_TERRACOTTA = new PolishedGlazedTerracottaRegistryEntryGroup("glazed_terracotta", CPlusSharedBlockSettings.glazedTerracotta());
-    // Copper stuff would be here
     public static final DyedIceRegistryEntryGroup ICE = new DyedIceRegistryEntryGroup("ice", AbstractBlock.Settings.copy(Blocks.BLUE_ICE));
 
 
@@ -104,6 +102,10 @@ public class CPlusEntries {
         blacklist.add("blackstone_brick_stairs");
         blacklist.add("blackstone_brick_wall");
         blacklist.add("carved_blackstone");
+        blacklist.add("terracotta_brick");
+
+        blacklist.add("netherrack_brick");
+        blacklist.add("prismarine_brick");
         return blacklist;
     }
 

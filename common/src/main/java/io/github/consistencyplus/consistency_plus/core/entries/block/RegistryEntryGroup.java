@@ -10,18 +10,19 @@ import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BlockR
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
+import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import io.github.consistencyplus.consistency_plus.registry.CPlusSharedBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInterface {
     public String name;
     public AbstractBlock.Settings blockSettings;
-    public FalseBlock settingsStorage;
+    public FalseBlock settingsStorage; // My pride and joy
 
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
@@ -48,6 +49,8 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
                 register(id, shape, specialCasing(type,shape));
             }
         }
+
+        if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
     }
 
     public AbstractBlock.Settings getBlockSettings() {

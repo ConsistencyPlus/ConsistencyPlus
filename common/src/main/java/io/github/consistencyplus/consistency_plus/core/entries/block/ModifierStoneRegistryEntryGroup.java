@@ -11,6 +11,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
@@ -32,6 +33,7 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
                 }
             }
         }
+        if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
     }
 
     public String getSetModifiedID(SetModifiers modifier, BlockShapes shapes, BlockTypes type) {

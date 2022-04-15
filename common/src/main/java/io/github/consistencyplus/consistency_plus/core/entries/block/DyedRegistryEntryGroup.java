@@ -12,6 +12,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -43,6 +44,8 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
                     register(id, shape, dyedBlockSettings);
                 }
             }
+
+            if (!(name.equals("glowstone") || name.equals("tinted_glass")) ) ConsistencyPlusMain.ITEMS.register(color.toString() + "_" + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
         }
     }
 

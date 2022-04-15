@@ -103,7 +103,7 @@ public class CPlusEntries {
         blacklist.add("blackstone_brick_wall");
         blacklist.add("carved_blackstone");
         blacklist.add("terracotta_brick");
-
+        blacklist.add("glowstone_brick");
         blacklist.add("netherrack_brick");
         blacklist.add("prismarine_brick");
         return blacklist;

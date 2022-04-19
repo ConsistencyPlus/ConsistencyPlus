@@ -73,7 +73,10 @@
       "consistency_plus:smooth_magenta_concrete_stairs_dyeing",
       "consistency_plus:smooth_magenta_concrete_wall",
       "consistency_plus:smooth_magenta_concrete_wall_crafting",
-      "consistency_plus:smooth_magenta_concrete_wall_dyeing"
+      "consistency_plus:smooth_magenta_concrete_wall_dyeing",
+      "consistency_plus:magenta_terracotta_bricks",
+      "consistency_plus:magenta_terracotta_brick",
+      "consistency_plus:magenta_concrete_brick_dyeing"
 
     ]
   },

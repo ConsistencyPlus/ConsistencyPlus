@@ -86,7 +86,9 @@
       "consistency_plus:smooth_cyan_terracotta_stairs_dyeing",
       "consistency_plus:smooth_cyan_terracotta_wall",
       "consistency_plus:smooth_cyan_terracotta_wall_crafting",
-      "consistency_plus:smooth_cyan_terracotta_wall_dyeing"
+      "consistency_plus:smooth_cyan_terracotta_wall_dyeing",
+      "consistency_plus:cyan_terracotta_bricks",
+      "consistency_plus:cyan_terracotta_brick"
 
 
     ]

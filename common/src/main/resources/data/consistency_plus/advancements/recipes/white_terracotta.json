@@ -86,7 +86,9 @@
       "consistency_plus:white_terracotta_tile_wall_crafting",
       "consistency_plus:white_terracotta_tile_wall_dyeing",
       "consistency_plus:white_terracotta_wall_crafting",
-      "consistency_plus:white_terracotta_wall_dyeing"
+      "consistency_plus:white_terracotta_wall_dyeing",
+      "consistency_plus:white_terracotta_bricks",
+      "consistency_plus:white_terracotta_brick"
 
 
     ]

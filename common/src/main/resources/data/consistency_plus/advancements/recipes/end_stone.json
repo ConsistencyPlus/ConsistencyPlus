@@ -41,7 +41,9 @@
       "consistency_plus:smooth_end_stone_stairs",
       "consistency_plus:smooth_end_stone_stairs_crafting",
       "consistency_plus:smooth_end_stone_wall",
-      "consistency_plus:smooth_end_stone_wall_crafting"
+      "consistency_plus:smooth_end_stone_wall_crafting",
+      "consistency_plus:end_stone_bricks",
+      "consistency_plus:end_stone_brick"
 
 
     ]

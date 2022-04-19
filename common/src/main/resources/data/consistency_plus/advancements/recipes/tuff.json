@@ -45,7 +45,9 @@
       "consistency_plus:tuff_tile_slab_crafting",
       "consistency_plus:tuff_tile_stairs_crafting",
       "consistency_plus:tuff_tile_wall_crafting",
-      "consistency_plus:tuff_wall_crafting"
+      "consistency_plus:tuff_wall_crafting",
+      "consistency_plus:tuff_bricks",
+      "consistency_plus:tuff_brick"
 
     ]
   },

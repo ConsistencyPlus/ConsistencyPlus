@@ -42,7 +42,9 @@
       "consistency_plus:withered_bone_tile_slab",
       "consistency_plus:withered_bone_tile_stairs",
       "consistency_plus:withered_bone_tile_wall",
-      "consistency_plus:withered_bone_wall"
+      "consistency_plus:withered_bone_wall",
+      "consistency_plus:withered_bone_bricks",
+      "consistency_plus:withered_bone_brick"
 
     ]
   },

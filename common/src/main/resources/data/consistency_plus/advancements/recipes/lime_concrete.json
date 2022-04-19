@@ -73,7 +73,10 @@
       "consistency_plus:smooth_lime_concrete_stairs_dyeing",
       "consistency_plus:smooth_lime_concrete_wall",
       "consistency_plus:smooth_lime_concrete_wall_crafting",
-      "consistency_plus:smooth_lime_concrete_wall_dyeing"
+      "consistency_plus:smooth_lime_concrete_wall_dyeing",
+      "consistency_plus:lime_concrete_bricks",
+      "consistency_plus:lime_concrete_brick",
+      "consistency_plus:lime_concrete_brick_dyeing"
 
     ]
   },

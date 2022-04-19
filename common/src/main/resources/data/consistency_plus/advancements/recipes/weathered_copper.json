@@ -100,7 +100,11 @@
       "consistency_plus:weathered_smooth_copper_stairs",
       "consistency_plus:weathered_smooth_copper_stairs_crafting",
       "consistency_plus:weathered_smooth_copper_wall",
-      "consistency_plus:weathered_smooth_copper_wall_crafting"
+      "consistency_plus:weathered_smooth_copper_wall_crafting",
+      "consistency_plus:weathered_copper_bricks",
+      "consistency_plus:weathered_copper_brick",
+      "consistency_plus:waxed_weathered_copper_bricks",
+      "consistency_plus:waxed_weathered_copper_brick"
 
 
     ]

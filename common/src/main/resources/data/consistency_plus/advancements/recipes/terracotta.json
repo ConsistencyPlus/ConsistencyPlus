@@ -43,7 +43,9 @@
       "consistency_plus:terracotta_tile_slab_crafting",
       "consistency_plus:terracotta_tile_stairs_crafting",
       "consistency_plus:terracotta_tile_wall_crafting",
-      "consistency_plus:terracotta_wall_crafting"
+      "consistency_plus:terracotta_wall_crafting",
+      "consistency_plus:terracotta_bricks",
+      "consistency_plus:terracotta_brick"
 
 
 

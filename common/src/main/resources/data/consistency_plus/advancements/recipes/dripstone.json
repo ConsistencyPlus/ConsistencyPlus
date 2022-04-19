@@ -45,7 +45,9 @@
       "consistency_plus:smooth_dripstone_stairs",
       "consistency_plus:smooth_dripstone_stairs_crafting",
       "consistency_plus:smooth_dripstone_wall",
-      "consistency_plus:smooth_dripstone_wall_crafting"
+      "consistency_plus:smooth_dripstone_wall_crafting",
+      "consistency_plus:dripstone_bricks",
+      "consistency_plus:dripstone_brick"
 
 
     ]

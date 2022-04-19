@@ -36,7 +36,9 @@
       "consistency_plus:stone_tile_slab_crafting",
       "consistency_plus:stone_tile_stairs_crafting",
       "consistency_plus:stone_tile_wall_crafting",
-      "consistency_plus:stone_wall_crafting"
+      "consistency_plus:stone_wall_crafting",
+      "consistency_plus:stone_bricks",
+      "consistency_plus:stone_brick"
 
 
 

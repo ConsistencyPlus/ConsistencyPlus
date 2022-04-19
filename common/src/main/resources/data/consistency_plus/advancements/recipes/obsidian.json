@@ -39,7 +39,9 @@
       "consistency_plus:smooth_obsidian_stairs",
       "consistency_plus:smooth_obsidian_stairs_crafting",
       "consistency_plus:smooth_obsidian_wall",
-      "consistency_plus:smooth_obsidian_wall_crafting"
+      "consistency_plus:smooth_obsidian_wall_crafting",
+      "consistency_plus:obsidian_bricks",
+      "consistency_plus:obsidian_brick"
 
     ]
   },

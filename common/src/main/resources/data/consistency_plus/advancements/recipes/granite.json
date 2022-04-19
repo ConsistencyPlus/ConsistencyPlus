@@ -39,7 +39,9 @@
       "consistency_plus:smooth_granite_stairs",
       "consistency_plus:smooth_granite_stairs_crafting",
       "consistency_plus:smooth_granite_wall",
-      "consistency_plus:smooth_granite_wall_crafting"
+      "consistency_plus:smooth_granite_wall_crafting",
+      "consistency_plus:granite_bricks",
+      "consistency_plus:granite_brick"
       
     ]
   },

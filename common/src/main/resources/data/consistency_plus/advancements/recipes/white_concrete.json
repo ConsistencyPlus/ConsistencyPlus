@@ -39,7 +39,24 @@
       "consistency_plus:white_concrete_tile_slab_crafting",
       "consistency_plus:white_concrete_tile_stairs_crafting",
       "consistency_plus:white_concrete_tile_wall_crafting",
-      "consistency_plus:white_concrete_wall_crafting"
+      "consistency_plus:white_concrete_wall_crafting",
+      "consistency_plus:white_concrete_bricks",
+      "consistency_plus:white_concrete_brick",
+      "consistency_plus:red_concrete_brick_dyeing",
+      "consistency_plus:orange_concrete_brick_dyeing",
+      "consistency_plus:yellow_concrete_brick_dyeing",
+      "consistency_plus:lime_concrete_brick_dyeing",
+      "consistency_plus:green_concrete_brick_dyeing",
+      "consistency_plus:blue_concrete_brick_dyeing",
+      "consistency_plus:cyan_concrete_brick_dyeing",
+      "consistency_plus:light_blue_concrete_brick_dyeing",
+      "consistency_plus:purple_concrete_brick_dyeing",
+      "consistency_plus:magenta_concrete_brick_dyeing",
+      "consistency_plus:pink_concrete_brick_dyeing",
+      "consistency_plus:light_gray_concrete_brick_dyeing",
+      "consistency_plus:gray_concrete_brick_dyeing",
+      "consistency_plus:black_concrete_brick_dyeing",
+      "consistency_plus:brown_concrete_brick_dyeing"
 
     ]
   },

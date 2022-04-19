@@ -86,7 +86,9 @@
       "consistency_plus:yellow_terracotta_tile_wall_crafting",
       "consistency_plus:yellow_terracotta_tile_wall_dyeing",
       "consistency_plus:yellow_terracotta_wall_crafting",
-      "consistency_plus:yellow_terracotta_wall_dyeing"
+      "consistency_plus:yellow_terracotta_wall_dyeing",
+      "consistency_plus:yellow_terracotta_bricks",
+      "consistency_plus:yellow_terracotta_brick"
 
 
     ]

@@ -39,7 +39,9 @@
       "consistency_plus:smooth_diorite_stairs",
       "consistency_plus:smooth_diorite_stairs_crafting",
       "consistency_plus:smooth_diorite_wall",
-      "consistency_plus:smooth_diorite_wall_crafting"
+      "consistency_plus:smooth_diorite_wall_crafting",
+      "consistency_plus:diorite_bricks",
+      "consistency_plus:diorite_brick"
 
       
     ]

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:oxidized_copper_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:oxidized_copper_brick",
+        "count": 4
+    }
+}

@@ -9,6 +9,7 @@ import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableGateBlock;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizablePillarBlock;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableWallBlock;
+import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import io.github.consistencyplus.consistency_plus.registry.CPlusSharedBlockSettings;
@@ -100,6 +101,10 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
 
     private String getOxiID(CopperOxidization oxidization, BlockShapes shape, BlockTypes type){
         String id = oxidization.addOxidization(shape.addShapes(type.addType(name), type));
+
+        RegistryEntryGroup.ULTIMATE_KEY_RING.put(id, MasterKey.createOxidKey(shape, type, oxidization, this.name));
+        RegistryEntryGroup.ULTIMATE_KEY_RING.put("waxed_" + id, MasterKey.createOxidKey(shape, type, oxidization, this.name).waxed(true));
+
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 

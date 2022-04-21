@@ -9,6 +9,7 @@ import io.github.consistencyplus.consistency_plus.blocks.FalseBlock;
 import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BlockRegistryEntryGroupInterface;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
+import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import io.github.consistencyplus.consistency_plus.registry.CPlusSharedBlockSettings;
@@ -17,6 +18,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInterface {
@@ -24,6 +29,7 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
     public AbstractBlock.Settings blockSettings;
     public FalseBlock settingsStorage; // My pride and joy
 
+    public static Map<String, MasterKey> ULTIMATE_KEY_RING = new HashMap<>();
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         this.name = name;
@@ -108,6 +114,9 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
 
     public String getID(BlockShapes shapes, BlockTypes type) {
         String id = shapes.addShapes(type.addType(name), type);
+
+        RegistryEntryGroup.ULTIMATE_KEY_RING.put(id, MasterKey.createKey(shapes, type, this.name));
+
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 }

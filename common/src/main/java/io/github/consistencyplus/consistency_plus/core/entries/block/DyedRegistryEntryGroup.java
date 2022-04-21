@@ -5,6 +5,7 @@ import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.core.entries.interfaces.DyedBlockRegistryEntryGroupInterface;
+import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import net.minecraft.block.AbstractBlock;
@@ -68,6 +69,9 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
 
     public String getDyedID(DyeColor color, BlockShapes shapes, BlockTypes type) {
         String id = shapes.addShapes(type.addType(color.toString().toLowerCase() + "_" + name), type);
+
+        RegistryEntryGroup.ULTIMATE_KEY_RING.put(id, MasterKey.createDyedKey(shapes, type, color, this.name));
+
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 

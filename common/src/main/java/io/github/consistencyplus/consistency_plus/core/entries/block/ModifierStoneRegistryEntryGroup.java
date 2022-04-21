@@ -5,6 +5,7 @@ import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.SetModifiers;
+import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import net.minecraft.block.AbstractBlock;
@@ -38,6 +39,9 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
 
     public String getSetModifiedID(SetModifiers modifier, BlockShapes shapes, BlockTypes type) {
         String id = modifier.addModifier(shapes.addShapes(type.addType(name), type));
+
+        RegistryEntryGroup.ULTIMATE_KEY_RING.put(id, MasterKey.createKey(shapes, type, modifier, this.name));
+
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 

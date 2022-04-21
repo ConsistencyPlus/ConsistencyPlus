@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_concrete_tiles",
+    "consistency_plus:orange_concrete_tiles",
+    "consistency_plus:magenta_concrete_tiles",
+    "consistency_plus:light_blue_concrete_tiles",
+    "consistency_plus:yellow_concrete_tiles",
+    "consistency_plus:lime_concrete_tiles",
+    "consistency_plus:pink_concrete_tiles",
+    "consistency_plus:gray_concrete_tiles",
+    "consistency_plus:light_gray_concrete_tiles",
+    "consistency_plus:cyan_concrete_tiles",
+    "consistency_plus:purple_concrete_tiles",
+    "consistency_plus:blue_concrete_tiles",
+    "consistency_plus:brown_concrete_tiles",
+    "consistency_plus:green_concrete_tiles",
+    "consistency_plus:red_concrete_tiles",
+    "consistency_plus:black_concrete_tiles"
+  ]
+}

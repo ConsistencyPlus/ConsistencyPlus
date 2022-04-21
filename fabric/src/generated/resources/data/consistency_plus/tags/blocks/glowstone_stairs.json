@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_glowstone_stairs",
+    "consistency_plus:orange_glowstone_stairs",
+    "consistency_plus:magenta_glowstone_stairs",
+    "consistency_plus:light_blue_glowstone_stairs",
+    "consistency_plus:yellow_glowstone_stairs",
+    "consistency_plus:lime_glowstone_stairs",
+    "consistency_plus:pink_glowstone_stairs",
+    "consistency_plus:gray_glowstone_stairs",
+    "consistency_plus:light_gray_glowstone_stairs",
+    "consistency_plus:cyan_glowstone_stairs",
+    "consistency_plus:purple_glowstone_stairs",
+    "consistency_plus:blue_glowstone_stairs",
+    "consistency_plus:brown_glowstone_stairs",
+    "consistency_plus:green_glowstone_stairs",
+    "consistency_plus:red_glowstone_stairs",
+    "consistency_plus:black_glowstone_stairs",
+    "consistency_plus:glowstone_stairs"
+  ]
+}

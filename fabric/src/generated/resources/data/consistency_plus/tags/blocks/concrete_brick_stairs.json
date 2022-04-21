@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_concrete_brick_stairs",
+    "consistency_plus:orange_concrete_brick_stairs",
+    "consistency_plus:magenta_concrete_brick_stairs",
+    "consistency_plus:light_blue_concrete_brick_stairs",
+    "consistency_plus:yellow_concrete_brick_stairs",
+    "consistency_plus:lime_concrete_brick_stairs",
+    "consistency_plus:pink_concrete_brick_stairs",
+    "consistency_plus:gray_concrete_brick_stairs",
+    "consistency_plus:light_gray_concrete_brick_stairs",
+    "consistency_plus:cyan_concrete_brick_stairs",
+    "consistency_plus:purple_concrete_brick_stairs",
+    "consistency_plus:blue_concrete_brick_stairs",
+    "consistency_plus:brown_concrete_brick_stairs",
+    "consistency_plus:green_concrete_brick_stairs",
+    "consistency_plus:red_concrete_brick_stairs",
+    "consistency_plus:black_concrete_brick_stairs"
+  ]
+}

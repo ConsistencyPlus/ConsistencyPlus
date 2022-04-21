@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_white_concrete_slab",
+    "consistency_plus:polished_orange_concrete_slab",
+    "consistency_plus:polished_magenta_concrete_slab",
+    "consistency_plus:polished_light_blue_concrete_slab",
+    "consistency_plus:polished_yellow_concrete_slab",
+    "consistency_plus:polished_lime_concrete_slab",
+    "consistency_plus:polished_pink_concrete_slab",
+    "consistency_plus:polished_gray_concrete_slab",
+    "consistency_plus:polished_light_gray_concrete_slab",
+    "consistency_plus:polished_cyan_concrete_slab",
+    "consistency_plus:polished_purple_concrete_slab",
+    "consistency_plus:polished_blue_concrete_slab",
+    "consistency_plus:polished_brown_concrete_slab",
+    "consistency_plus:polished_green_concrete_slab",
+    "consistency_plus:polished_red_concrete_slab",
+    "consistency_plus:polished_black_concrete_slab"
+  ]
+}

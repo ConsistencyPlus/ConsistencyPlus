@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:netherrack_pillar",
+    "consistency_plus:netherrack_corner_pillar",
+    "consistency_plus:chiseled_netherrack",
+    "consistency_plus:polished_netherrack",
+    "consistency_plus:cut_netherrack",
+    "consistency_plus:netherrack_tiles",
+    "consistency_plus:cobbled_netherrack",
+    "consistency_plus:smooth_netherrack"
+  ]
+}

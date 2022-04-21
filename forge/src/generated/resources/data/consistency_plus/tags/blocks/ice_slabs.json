@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_ice_slab",
+    "consistency_plus:orange_ice_slab",
+    "consistency_plus:magenta_ice_slab",
+    "consistency_plus:light_blue_ice_slab",
+    "consistency_plus:yellow_ice_slab",
+    "consistency_plus:lime_ice_slab",
+    "consistency_plus:pink_ice_slab",
+    "consistency_plus:gray_ice_slab",
+    "consistency_plus:light_gray_ice_slab",
+    "consistency_plus:cyan_ice_slab",
+    "consistency_plus:purple_ice_slab",
+    "consistency_plus:blue_ice_slab",
+    "consistency_plus:brown_ice_slab",
+    "consistency_plus:green_ice_slab",
+    "consistency_plus:red_ice_slab",
+    "consistency_plus:black_ice_slab"
+  ]
+}

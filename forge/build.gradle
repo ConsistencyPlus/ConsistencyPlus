@@ -39,8 +39,30 @@ processResources {
     }
 }
 
+sourceSets.main {
+    resources {
+        srcDirs += [
+                'src/generated/resources'
+        ]
+    }
+}
+
+tasks.withType(processResources.class) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 loom {
     forge {
+        dataGen{
+            mod "consistency_plus"
+        }
+
+        launches {
+            data {
+                arg "--existing", file("src/main/resources").absolutePath
+            }
+        }
+
         mixinConfigs = [ "consistency_plus.mixins.json" ]
     }
 }

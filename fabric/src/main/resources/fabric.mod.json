@@ -133,6 +133,9 @@
     ],
     "client": [
       "io.github.consistencyplus.consistency_plus.ConsistencyPlusClient"
+    ],
+    "fabric-datagen": [
+          "io.github.consistencyplus.consistency_plus.ConsistencyPlusDatagen"
     ]
   },
   "mixins": [

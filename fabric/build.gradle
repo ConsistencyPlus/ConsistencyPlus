@@ -48,6 +48,14 @@ dependencies {
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
 }
 
+sourceSets.main {
+    resources {
+        srcDirs += [
+                'src/generated/resources'
+        ]
+    }
+}
+
 processResources {
     inputs.property "version", rootProject.version
     filesMatching("fabric.mod.json") {

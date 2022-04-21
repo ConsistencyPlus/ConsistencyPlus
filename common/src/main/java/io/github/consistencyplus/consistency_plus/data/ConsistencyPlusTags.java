@@ -19,7 +19,7 @@ public class ConsistencyPlusTags {
         public static final TagKey<Block> CONCRETE = register("concrete");
         public static final TagKey<Block> GLOWSTONE = register("glowstone");
 
-        private static TagKey<Block> register(String name){
+        public static TagKey<Block> register(String name){
             return TagUtil.initBlockTag(name, Registry.BLOCK_KEY);
         }
     }
@@ -55,7 +55,7 @@ public class ConsistencyPlusTags {
         public static final TagKey<Block> CONCRETE = register("concrete");
         public static final TagKey<Block> GLOWSTONE = register("glowstone");
 
-        private static TagKey<Block> register(String string){
+        public static TagKey<Block> register(String string){
             TagKey<Block> temp = TagKey.of(Registry.BLOCK_KEY, new Identifier(ConsistencyPlusMain.ID, string));
             ALL_COMMON_BLOCK_TAGS.add(temp);
             return temp;
@@ -167,7 +167,7 @@ public class ConsistencyPlusTags {
 
         public static final TagKey<Block> TINTED_GLASS_BLOCK = register(new Identifier(ConsistencyPlusMain.ID, "tinted_glass"));
 
-        private static TagKey<Block> register(Identifier id){
+        public static TagKey<Block> register(Identifier id){
             TagKey<Block> temp = TagKey.of(Registry.BLOCK_KEY, id);
             ALL_DYEABLE_BLOCK_TAGS.add(temp);
             return temp;

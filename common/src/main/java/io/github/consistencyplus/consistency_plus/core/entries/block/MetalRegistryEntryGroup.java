@@ -22,8 +22,6 @@ import org.apache.commons.lang3.tuple.Pair;
 import java.util.HashMap;
 import java.util.Map;
 
-import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
-
 public class MetalRegistryEntryGroup extends RegistryEntryGroup {
     public MetalRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings);
@@ -102,8 +100,8 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
     private String getOxiID(CopperOxidization oxidization, BlockShapes shape, BlockTypes type){
         String id = oxidization.addOxidization(shape.addShapes(type.addType(name), type));
 
-        RegistryEntryGroup.ULTIMATE_KEY_RING.put(id, MasterKey.createOxidKey(shape, type, oxidization, this.name));
-        RegistryEntryGroup.ULTIMATE_KEY_RING.put("waxed_" + id, MasterKey.createOxidKey(shape, type, oxidization, this.name).waxed(true));
+        MasterKey.ULTIMATE_KEY_RING.put(id, MasterKey.createOxidKey(shape, type, oxidization, this.name));
+        MasterKey.ULTIMATE_KEY_RING.put("waxed_" + id, MasterKey.createOxidKey(shape, type, oxidization, this.name).waxed(true));
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

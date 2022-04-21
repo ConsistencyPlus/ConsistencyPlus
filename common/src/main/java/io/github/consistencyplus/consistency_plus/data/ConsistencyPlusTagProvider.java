@@ -1,6 +1,11 @@
 package io.github.consistencyplus.consistency_plus.data;
 
+import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
+import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
+import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
+import io.github.consistencyplus.consistency_plus.blocks.SetModifiers;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.minecraft.block.*;
@@ -14,6 +19,7 @@ import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -305,6 +311,90 @@ public class ConsistencyPlusTagProvider {
             if(identified == ConsistencyPlusTags.DyeableBlocks.GLOWSTONE){
                 getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.GLOWSTONE).addTag(ConsistencyPlusTags.DyeableBlocks.GLOWSTONE);
             }
+        }
+    }
+
+    public static class UltimateBlockTagProvider extends BlockTagProvider {
+
+        private static final Logger LOGGER = LogManager.getLogger(UltimateBlockTagProvider.class);
+
+        public UltimateBlockTagProvider(DataGenerator dataGenerator) {
+            super(dataGenerator);
+        }
+
+        protected void configure() {}
+
+        public static void createAndFillTags(Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc) {
+            for(Map.Entry<String, MasterKey> entry : MasterKey.ULTIMATE_KEY_RING.entrySet()){
+                Block block = Registry.BLOCK.get(ConsistencyPlusMain.id(entry.getKey()));
+
+                MasterKey key = entry.getValue();
+
+                String material = key.material;
+
+                applyToBothTags(material, block, getOrCreateTagBuilderFunc);
+
+                if(!key.shape.isBase()) {
+                    applyToBothTags(key.shape.toString(), block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.shape.addShapes(key.type.addType(material), key.type), block, getOrCreateTagBuilderFunc);
+                }
+
+                if(!key.type.isBase()) {
+                    applyToBothTags(key.type.toString(), block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.type.addType(material), block, getOrCreateTagBuilderFunc);
+                }
+
+                if(!key.setModifiers.isBase()) {
+                    applyToBothTags(key.setModifiers.toString(), block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.setModifiers.addModifier(material), block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.setModifiers.addModifier(key.type.addType(material)), block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.setModifiers.addModifier(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
+                }
+
+                //--------------------------------------------------------------------
+
+                if(!key.oxidization.isBase()) {
+                    applyToBothTags(key.oxidization.toString(), block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.oxidization.addOxidization(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
+                }
+
+                if(key.isWaxed) {
+                    applyToBothTags("waxed", block, getOrCreateTagBuilderFunc);
+                }
+
+                //--------------------------------------------------------------------
+
+                if(key.dyeColor != null) {
+                    applyToBothTags(key.dyeColor.toString(), block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.dyeColor.toString() + "_" + material, block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(key.shape.addShapes(key.type.addType(key.dyeColor.toString() + "_" + material), key.type), block, getOrCreateTagBuilderFunc);
+                }
+
+                //--------------------------------------------------------------------
+            }
+        }
+
+        private static void applyToBothTags(String tag, Block block, Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc){
+            getOrCreateTagBuilderFunc.apply(getCommonBlockTag(tag)).add(block);
+            getOrCreateTagBuilderFunc.apply(getConsistencyTag(tag)).addTag(getCommonBlockTag(tag));
+        }
+
+        private static TagKey<Block> getCommonBlockTag(String path){
+            return TagUtil.initBlockTag(path, Registry.BLOCK_KEY);
+        }
+
+        private static TagKey<Block> getConsistencyTag(String path){
+            return TagUtil.initBlockTag(path, Registry.BLOCK_KEY);
         }
     }
 }

@@ -2,8 +2,10 @@ package io.github.consistencyplus.consistency_plus.blocks;
 
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Oxidizable;
+import net.minecraft.util.Pair;
 
 import java.util.Locale;
+import java.util.Objects;
 
 public enum CopperOxidization {
     BASE, EXPOSED, WEATHERED, OXIDIZED;
@@ -42,5 +44,66 @@ public enum CopperOxidization {
     @Override
     public String toString() {
         return this == BASE ? "" : name().toLowerCase(Locale.ROOT) + '_';
+    }
+
+    public boolean isBase(){
+        return this == BASE;
+    }
+
+    public static Pair<CopperOxidization, String> getOxidizationFromString(String path){
+        String[] pathParts = path.split("_");
+
+        StringBuilder builder = new StringBuilder();
+        CopperOxidization oxidization = BASE;
+
+        for(int i = 0; i < pathParts.length; i++){
+            String part = pathParts[i];
+
+            if(oxidization == BASE) {
+                for (CopperOxidization possibleOxidization : CopperOxidization.values()) {
+                    if (Objects.equals(part, possibleOxidization.toString())) {
+                        oxidization = possibleOxidization;
+                        break;
+                    }
+                }
+            }
+
+            if(!Objects.equals(part, oxidization.toString())){
+                builder.append(part);
+
+                if(i != pathParts.length - 1) {
+                    builder.append("_");
+                }
+            }
+        }
+
+        return new Pair<>(oxidization, builder.toString());
+    }
+
+    public static Pair<Boolean, String> isWaxed(String path){
+        String[] pathParts = path.split("_");
+
+        StringBuilder builder = new StringBuilder();
+        boolean isWaxed = false;
+
+        for(int i = 0; i < pathParts.length; i++){
+            String part = pathParts[i];
+
+            if(!isWaxed) {
+                if (Objects.equals(part, "waxed")) {
+                    isWaxed = true;
+                }
+            }
+
+            if(!Objects.equals(part, "waxed")){
+                builder.append(part);
+
+                if(i != pathParts.length - 1) {
+                    builder.append("_");
+                }
+            }
+        }
+
+        return new Pair<>(isWaxed, builder.toString());
     }
 }

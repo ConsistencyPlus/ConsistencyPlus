@@ -14,8 +14,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 
-import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
-
 public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
     public ModifierStoneRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings, false);
@@ -40,7 +38,7 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
     public String getSetModifiedID(SetModifiers modifier, BlockShapes shapes, BlockTypes type) {
         String id = modifier.addModifier(shapes.addShapes(type.addType(name), type));
 
-        RegistryEntryGroup.ULTIMATE_KEY_RING.put(id, MasterKey.createKey(shapes, type, modifier, this.name));
+        MasterKey.ULTIMATE_KEY_RING.put(id, MasterKey.createKey(shapes, type, modifier, this.name));
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

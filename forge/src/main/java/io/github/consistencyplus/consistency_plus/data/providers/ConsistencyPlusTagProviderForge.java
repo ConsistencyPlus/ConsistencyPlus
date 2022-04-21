@@ -32,4 +32,16 @@ public class ConsistencyPlusTagProviderForge {
             ConsistencyPlusTagProvider.DyeableBlockTagProvider.createAndFillTag(this::getOrCreateTagBuilder);
         }
     }
+
+    public static class UltimateBlockTagProvider extends BlockTagProvider {
+
+        public UltimateBlockTagProvider(DataGenerator arg, String modId, @Nullable ExistingFileHelper existingFileHelper) {
+            super(arg, modId, existingFileHelper);
+        }
+
+        @Override
+        protected void configure() {
+            ConsistencyPlusTagProvider.UltimateBlockTagProvider.createAndFillTags(this::getOrCreateTagBuilder);
+        }
+    }
 }

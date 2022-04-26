@@ -8,16 +8,16 @@ import java.util.Locale;
 public enum CopperOxidization {
     BASE, EXPOSED, WEATHERED, OXIDIZED;
 
-    public Oxidizable.OxidationLevel toVanilla() {
+    public Oxidizable.OxidizationLevel toVanilla() {
         return switch (this) {
-            case BASE -> Oxidizable.OxidationLevel.UNAFFECTED;
-            case EXPOSED -> Oxidizable.OxidationLevel.EXPOSED;
-            case WEATHERED -> Oxidizable.OxidationLevel.WEATHERED;
-            case OXIDIZED -> Oxidizable.OxidationLevel.OXIDIZED;
+            case BASE -> Oxidizable.OxidizationLevel.UNAFFECTED;
+            case EXPOSED -> Oxidizable.OxidizationLevel.EXPOSED;
+            case WEATHERED -> Oxidizable.OxidizationLevel.WEATHERED;
+            case OXIDIZED -> Oxidizable.OxidizationLevel.OXIDIZED;
         };
     }
 
-    public static CopperOxidization fromVanilla(Oxidizable.OxidationLevel level) {
+    public static CopperOxidization fromVanilla(Oxidizable.OxidizationLevel level) {
         return switch (level) {
             case UNAFFECTED -> CopperOxidization.BASE;
             case EXPOSED -> CopperOxidization.EXPOSED;

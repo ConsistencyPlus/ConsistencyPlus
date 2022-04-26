@@ -34,7 +34,7 @@ dependencies {
     modRuntimeOnly "mcp.mobius.waila:wthit:fabric-${rootProject.wthit_version}" // run against the full jar
 
     modRuntimeOnly "maven.modrinth:lazydfu:0.1.2"
-   // modRuntimeOnly "maven.modrinth:suggestionproviderfabric:1.0.0"
+    modRuntimeOnly "maven.modrinth:suggestionproviderfabric:1.0.1"
     modRuntimeOnly("com.terraformersmc:modmenu:3.1.0") {
         exclude group: "net.fabricmc"; exclude group: "net.fabricmc.fabric-api"
     }

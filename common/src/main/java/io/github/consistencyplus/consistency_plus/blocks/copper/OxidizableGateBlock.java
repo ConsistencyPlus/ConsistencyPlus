@@ -9,9 +9,9 @@ import net.minecraft.util.math.BlockPos;
 import java.util.Random;
 
 public class OxidizableGateBlock extends FenceGateBlock implements Oxidizable {
-	private final OxidationLevel oxidationLevel;
+	private final OxidizationLevel oxidationLevel;
 	
-	public OxidizableGateBlock(OxidationLevel level, Settings settings) {
+	public OxidizableGateBlock(OxidizationLevel level, Settings settings) {
 		super(settings);
 		this.oxidationLevel = level;
 	}
@@ -27,7 +27,7 @@ public class OxidizableGateBlock extends FenceGateBlock implements Oxidizable {
 	}
 	
 	@Override
-	public OxidationLevel getDegradationLevel() {
+	public OxidizationLevel getDegradationLevel() {
 		return this.oxidationLevel;
 	}
 }

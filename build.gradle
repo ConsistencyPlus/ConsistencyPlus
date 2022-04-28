@@ -1,24 +1,26 @@
-//file:noinspection GroovyAssignabilityCheck
 plugins {
-    id "architectury-plugin" version "3.4-SNAPSHOT"
-    id "dev.architectury.loom" version "0.11.0-SNAPSHOT" apply false
-    id 'io.github.juuxel.loom-quiltflower' version '1.+' apply false
+    id "architectury-plugin" version "3.4.+"
+    id "dev.architectury.loom" version "0.11.0.+" apply false
+    id "io.github.juuxel.loom-quiltflower" version "1.+" apply false
+    id "io.github.p03w.machete" version "1.0.3"
+    id "org.quiltmc.quilt-mappings-on-loom" version "4.+"
+    id "com.github.johnrengelman.shadow" version "7.+" apply false
     id "maven-publish"
 }
 
-version = rootProject.mod_version + "+" + rootProject.minecraft_version
-
-architectury {
-    minecraft = rootProject.minecraft_version
-}
+architectury.minecraft = rootProject.minecraft_version
 
 subprojects {
     apply plugin: "dev.architectury.loom"
     apply plugin: "io.github.juuxel.loom-quiltflower"
 
+    archivesBaseName = "$rootProject.archives_base_name-$project.name"
+
     dependencies {
-        minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
-        mappings "net.fabricmc:yarn:${rootProject.minecraft_version}+build.${rootProject.mappings_version}:v2"
+        minecraft "com.mojang:minecraft:$rootProject.minecraft_version"
+        mappings loom.layered { addLayer quiltMappings.mappings(
+                "org.quiltmc:quilt-mappings:$rootProject.minecraft_version+build.$rootProject.mappings_version:v2"
+        )}
     }
 }
 
@@ -26,12 +28,16 @@ allprojects {
     apply plugin: "java"
     apply plugin: "architectury-plugin"
     apply plugin: "maven-publish"
+    apply plugin: "io.github.p03w.machete"
 
-    archivesBaseName = rootProject.archives_base_name
-    version = rootProject.mod_version + "+" + rootProject.minecraft_version
+    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
 
-    tasks.withType(JavaCompile) {
-        options.release.set(17)
+    group = "io.github.consistencyplus"
+    version = "$rootProject.mod_version+$rootProject.minecraft_version"
+
+    tasks.withType(JavaCompile).forEach {
+        it.options.release.set(17)
         it.options.encoding = "UTF-8"
     }
 
@@ -47,10 +53,10 @@ allprojects {
     }
 
     jar {
-        from("LICENSE")
-        exclude("**/upcoming/**")
-        exclude("**/unused/**")
+        from "LICENSE"
+        exclude "**/upcoming/**"
+        exclude "**/unused/**"
     }
 
-    java { withSourcesJar() }
+    java.withSourcesJar()
 }

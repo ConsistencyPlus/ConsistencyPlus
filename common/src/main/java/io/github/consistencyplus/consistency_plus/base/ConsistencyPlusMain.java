@@ -2,10 +2,13 @@ package io.github.consistencyplus.consistency_plus.base;
 
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertCartDispenserBehavior;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertDispenserBehavior;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import net.minecraft.block.Block;
+import net.minecraft.block.DispenserBlock;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -30,7 +33,17 @@ public class ConsistencyPlusMain {
 		BLOCKS.register();
 		LOGGER.info("Consistency+ Main - Registration Checkpoint 1");
 		ITEMS.register();
+		nubertDispenserBehaviors();
 		LOGGER.info("Consistency+ Main - Finished initialization process");
+	}
+
+	private static void nubertDispenserBehaviors() {
+		NubertDispenserBehavior block = new NubertDispenserBehavior();
+		DispenserBlock.registerBehavior(CPlusItems.NUBERT.get(), block);
+		DispenserBlock.registerBehavior(CPlusItems.WIGGED_NUBERT.get(), block);
+		NubertCartDispenserBehavior cart = new NubertCartDispenserBehavior();
+		DispenserBlock.registerBehavior(CPlusItems.NUBERT_MINECART.get(), cart);
+		DispenserBlock.registerBehavior(CPlusItems.WIGGED_NUBERT_MINECART.get(), cart);
 	}
 	
 	public static Identifier id(String name) {

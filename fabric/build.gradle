@@ -1,20 +1,8 @@
-//file:noinspection GroovyAssignabilityCheck
-plugins {
-    id "com.github.johnrengelman.shadow" version "7.0.0"
-}
+apply from: "../gradle/loader.gradle"
 
-version = rootProject.version + "-fabric"
-
-architectury {
-    platformSetupLoomIde()
-    fabric()
-}
+architectury.fabric()
 
 configurations {
-    common
-    shadowCommon // Don't use shadow from the shadow plugin because we don't want IDEA to index this.
-    compileClasspath.extendsFrom common
-    runtimeClasspath.extendsFrom common
     developmentFabric.extendsFrom common
 }
 
@@ -34,8 +22,8 @@ dependencies {
     modRuntimeOnly "mcp.mobius.waila:wthit:fabric-${rootProject.wthit_version}" // run against the full jar
 
     modRuntimeOnly "maven.modrinth:lazydfu:0.1.2"
-   // modRuntimeOnly "maven.modrinth:suggestionproviderfabric:1.0.0"
-    modRuntimeOnly("com.terraformersmc:modmenu:2.0.14") {
+    modRuntimeOnly "maven.modrinth:suggestionproviderfabric:1.0.1"
+    modRuntimeOnly("com.terraformersmc:modmenu:3.2.1") {
         exclude group: "net.fabricmc"; exclude group: "net.fabricmc.fabric-api"
     }
 
@@ -44,7 +32,6 @@ dependencies {
         //modRuntimeOnly "maven.modrinth:lithium:mc1.17.1-0.7.5"
     }
 
-    common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
 }
 
@@ -57,58 +44,12 @@ sourceSets.main {
 }
 
 processResources {
-    inputs.property "version", rootProject.version
+    inputs.property "version", project.version
     filesMatching("fabric.mod.json") {
-        expand "version": rootProject.version
+        expand "version": project.version
     }
 }
 
-shadowJar {
-    configurations = [project.configurations.shadowCommon]
-    classifier "dev-shadow"
-}
-
-remapJar {
-    input.set shadowJar.archiveFile
-    dependsOn shadowJar
-    classifier null
-}
-
-jar {
-    classifier "dev"
-}
-
-sourcesJar {
-    def commonSources = project(":common").sourcesJar
-    dependsOn commonSources
-    from commonSources.archiveFile.map { zipTree(it) }
-}
-
-components.java {
-    withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
-        skip()
-    }
-}
-
-
-publishing {
-    publications {
-        mavenFabric(MavenPublication) {
-            groupId = 'io.github.consistencyplus'
-            artifactId = rootProject.archives_base_name + "-" + project.name
-            version = rootProject.mod_version + "+" + rootProject.minecraft_version
-            from components.java
-        }
-    }
-
-    repositories {
-        maven {
-            url = System.getenv().MAVEN_URL
-            credentials {
-                username = System.getenv().MAVEN_USER
-                password = System.getenv().MAVEN_PASS
-            }
-            authentication { basic(BasicAuthentication) }
-        }
-    }
+publishing.publications {
+    mavenFabric(MavenPublication) from components.java
 }

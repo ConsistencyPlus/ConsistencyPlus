@@ -9,9 +9,9 @@ import net.minecraft.util.math.BlockPos;
 import java.util.Random;
 
 public class OxidizableLightningRodBlock extends LightningRodBlock implements Oxidizable {
-	private final OxidationLevel oxidationLevel;
+	private final OxidizationLevel oxidationLevel;
 	
-	public OxidizableLightningRodBlock(OxidationLevel level, Settings settings) {
+	public OxidizableLightningRodBlock(OxidizationLevel level, Settings settings) {
 		super(settings);
 		this.oxidationLevel = level;
 	}
@@ -27,7 +27,7 @@ public class OxidizableLightningRodBlock extends LightningRodBlock implements Ox
 	}
 	
 	@Override
-	public OxidationLevel getDegradationLevel() {
+	public OxidizationLevel getDegradationLevel() {
 		return this.oxidationLevel;
 	}
 }

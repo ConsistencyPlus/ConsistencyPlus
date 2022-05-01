@@ -9,9 +9,9 @@ import net.minecraft.util.math.BlockPos;
 import java.util.Random;
 
 public class OxidizableWallBlock extends WallBlock implements Oxidizable {
-	private final OxidationLevel oxidationLevel;
+	private final OxidizationLevel oxidationLevel;
 	
-	public OxidizableWallBlock(OxidationLevel level, Settings settings) {
+	public OxidizableWallBlock(OxidizationLevel level, Settings settings) {
 		super(settings);
 		this.oxidationLevel = level;
 	}
@@ -27,7 +27,7 @@ public class OxidizableWallBlock extends WallBlock implements Oxidizable {
 	}
 	
 	@Override
-	public OxidationLevel getDegradationLevel() {
+	public OxidizationLevel getDegradationLevel() {
 		return this.oxidationLevel;
 	}
 }

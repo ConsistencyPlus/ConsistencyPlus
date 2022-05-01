@@ -65,7 +65,7 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
         finish();
     }
 
-    public void register(String name, BlockShapes shape, AbstractBlock.Settings blockSettings, Oxidizable.OxidationLevel level, BlockTypes type) {
+    public void register(String name, BlockShapes shape, AbstractBlock.Settings blockSettings, Oxidizable.OxidizationLevel level, BlockTypes type) {
         RegistrySupplier<Block> unwaxedBlock = unwaxedBlockRegistration(name, shape, blockSettings, level);
         RegistrySupplier<Item> unwaxedItem =  ConsistencyPlusMain.ITEMS.register(name, () -> new BlockItem(unwaxedBlock.get(), CPlusItemGroups.consistencyPlusMiscItemSettings()));
         BLOCKS.put(new Key(CopperOxidization.fromVanilla(level), type, shape, false), Pair.of(unwaxedBlock, unwaxedItem));
@@ -79,7 +79,7 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
         registerWaxable(unwaxedBlock, waxedBlock);
     }
 
-    public RegistrySupplier<Block> unwaxedBlockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings, Oxidizable.OxidationLevel level) {
+    public RegistrySupplier<Block> unwaxedBlockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings, Oxidizable.OxidizationLevel level) {
         return switch (blockShapes) {
             default -> ConsistencyPlusMain.BLOCKS.register(name, () ->  new OxidizableBlock(level, blockSettings));
             case SLAB -> ConsistencyPlusMain.BLOCKS.register(name, () -> new OxidizableSlabBlock(level, blockSettings));

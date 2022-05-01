@@ -33,7 +33,7 @@ public class NubertHandler {
                 TEXT_GOT_THIS_TICK = true;
             }
         } else if (stack.getItem() instanceof NubertMinecartItem item) {
-            texts.add(1, getNubertText(item.wigged, false));
+            texts.add(1, getNubertText(item.wigged, true));
             TEXT_GOT_THIS_TICK = true;
         } else TEXT_NEEDS_UPDATE = true;
     }

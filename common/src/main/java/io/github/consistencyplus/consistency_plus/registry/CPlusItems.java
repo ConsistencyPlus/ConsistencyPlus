@@ -143,8 +143,8 @@ public class CPlusItems {
 	public static final RegistrySupplier<Item> JET = ConsistencyPlusMain.ITEMS.register("jet", () -> new BlockItem(CPlusBlocks.JET.get(), new Item.Settings()));
 	public static final RegistrySupplier<Item> NUBERT = ConsistencyPlusMain.ITEMS.register("nubert", () -> new BlockItem(CPlusBlocks.NUBERT.get(), new Item.Settings().fireproof().rarity(Rarity.EPIC)));
 	public static final RegistrySupplier<Item> WIGGED_NUBERT = ConsistencyPlusMain.ITEMS.register("wigged_nubert", () -> new BlockItem(CPlusBlocks.WIGGED_NUBERT.get(), new Item.Settings().fireproof().rarity(Rarity.EPIC)));
-	public static final RegistrySupplier<Item> NUBERT_MINECART = ConsistencyPlusMain.ITEMS.register("nubert_minecart", () -> new NubertMinecartItem(new Item.Settings().maxCount(1), false));
-	public static final RegistrySupplier<Item> WIGGED_NUBERT_MINECART = ConsistencyPlusMain.ITEMS.register("wigged_nubert_minecart", () -> new NubertMinecartItem(new Item.Settings().maxCount(1), true));
+	public static final RegistrySupplier<Item> NUBERT_MINECART = ConsistencyPlusMain.ITEMS.register("nubert_minecart", () -> new NubertMinecartItem(new Item.Settings().maxCount(1), CPlusBlocks.NUBERT.get(), false));
+	public static final RegistrySupplier<Item> WIGGED_NUBERT_MINECART = ConsistencyPlusMain.ITEMS.register("wigged_nubert_minecart", () -> new NubertMinecartItem(new Item.Settings().maxCount(1), CPlusBlocks.WIGGED_NUBERT.get(), true));
 
 
 // ITEMS

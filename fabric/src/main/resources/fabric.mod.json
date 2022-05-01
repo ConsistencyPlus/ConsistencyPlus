@@ -143,6 +143,7 @@
   ],
 
   "depends": {
+    "fabricloader": ">=0.13.0",
     "fabric-api-base": "*",
     "fabric-lifecycle-events-v1": "*",
     "fabric-blockrenderlayer-v1": "*",

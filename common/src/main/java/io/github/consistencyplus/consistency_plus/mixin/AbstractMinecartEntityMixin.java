@@ -11,32 +11,26 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.function.Predicate;
 
 @Mixin(AbstractMinecartEntity.class)
 public abstract class AbstractMinecartEntityMixin extends Entity {
+
 	@Shadow
-	public abstract void setCustomBlock(BlockState state);
-	
-	@Shadow
-	public void dropItems(DamageSource damageSource) {
-	}
-	
-	@Shadow public abstract BlockState getContainedBlock();
+	public abstract BlockState getContainedBlock();
 	
 	public AbstractMinecartEntityMixin(EntityType<?> entityType, World world) {
 		super(entityType, world);
 	}
 
-	@Redirect(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;getOtherEntities(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/Box;Ljava/util/function/Predicate;)Ljava/util/List;"))
-	private List<Entity> cPlus$redirectGetOtherEntitesNubertCheck(World instance, Entity except, Box box, Predicate<? super Entity> predicate) {
+	@ModifyVariable(method = "tick", at = @At(value = "INVOKE_ASSIGN", target = "Lnet/minecraft/world/World;getOtherEntities(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/Box;Ljava/util/function/Predicate;)Ljava/util/List;"))
+	private List<Entity> cPlus$replaceListToPreventRidingNubert(List<Entity> list) {
 		if (getContainedBlock().getBlock() instanceof NubertBlock) {
-			return Collections.emptyList(); // no entities to check, prevent riding
+			return Collections.emptyList(); // no entities to check, prevents riding
 		}
-		return instance.getOtherEntities(except, box, predicate);
+		return list;
 	}
 }

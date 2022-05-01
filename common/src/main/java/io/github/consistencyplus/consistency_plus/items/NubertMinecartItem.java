@@ -1,8 +1,8 @@
 package io.github.consistencyplus.consistency_plus.items;
 
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.minecraft.block.AbstractRailBlock;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.enums.RailShape;
 import net.minecraft.entity.vehicle.AbstractMinecartEntity;
@@ -15,13 +15,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
-import static net.minecraft.block.Blocks.SLIME_BLOCK;
-
 public class NubertMinecartItem extends MinecartItem {
 	public final boolean wigged;
-	public NubertMinecartItem(Settings settings, boolean wigged) {
+	public final NubertBlock block;
+
+	public NubertMinecartItem(Settings settings, NubertBlock block, boolean wigged) {
 		super(AbstractMinecartEntity.Type.RIDEABLE, settings);
 		this.wigged = wigged;
+		this.block = block;
 	}
 	
 	@Override

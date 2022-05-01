@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_magenta_concrete_gate",
+    "consistency_plus:cut_magenta_concrete_wall",
+    "consistency_plus:cut_magenta_concrete",
+    "consistency_plus:cut_magenta_concrete_slab",
+    "consistency_plus:cut_magenta_concrete_stairs"
+  ]
+}

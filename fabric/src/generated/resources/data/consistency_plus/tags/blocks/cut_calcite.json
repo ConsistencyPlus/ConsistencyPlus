@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_calcite_gate",
+    "consistency_plus:cut_calcite_slab",
+    "consistency_plus:cut_calcite_stairs",
+    "consistency_plus:cut_calcite_wall",
+    "consistency_plus:cut_calcite"
+  ]
+}

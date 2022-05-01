@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:obsidian_tile_stairs",
+    "consistency_plus:smooth_obsidian_stairs",
+    "consistency_plus:polished_obsidian_stairs",
+    "consistency_plus:obsidian_stairs",
+    "consistency_plus:cut_obsidian_stairs",
+    "consistency_plus:obsidian_brick_stairs"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_magenta_concrete_slab",
+    "consistency_plus:polished_magenta_concrete_gate",
+    "consistency_plus:polished_magenta_concrete_stairs",
+    "consistency_plus:polished_magenta_concrete_wall",
+    "consistency_plus:polished_magenta_concrete"
+  ]
+}

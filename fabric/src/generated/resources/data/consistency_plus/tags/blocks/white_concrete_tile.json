@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_concrete_tile_stairs",
+    "consistency_plus:white_concrete_tile_gate",
+    "consistency_plus:white_concrete_tile_wall",
+    "consistency_plus:white_concrete_tiles",
+    "consistency_plus:white_concrete_tile_slab"
+  ]
+}

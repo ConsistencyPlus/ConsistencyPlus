@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:black_ice",
+    "consistency_plus:black_ice_wall",
+    "consistency_plus:black_ice_stairs",
+    "consistency_plus:black_ice_gate",
+    "consistency_plus:black_ice_slab"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cobbled_granite_wall",
+    "consistency_plus:cobbled_granite",
+    "consistency_plus:cobbled_granite_stairs",
+    "consistency_plus:cobbled_granite_gate",
+    "consistency_plus:cobbled_granite_slab"
+  ]
+}

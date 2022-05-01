@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:obsidian_gate",
+    "consistency_plus:polished_obsidian_gate",
+    "consistency_plus:smooth_obsidian_gate",
+    "consistency_plus:obsidian_tile_gate",
+    "consistency_plus:cut_obsidian_gate",
+    "consistency_plus:obsidian_brick_gate"
+  ]
+}

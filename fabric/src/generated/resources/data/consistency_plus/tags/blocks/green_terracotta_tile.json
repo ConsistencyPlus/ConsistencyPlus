@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:green_terracotta_tile_stairs",
+    "consistency_plus:green_terracotta_tile_wall",
+    "consistency_plus:green_terracotta_tiles",
+    "consistency_plus:green_terracotta_tile_gate",
+    "consistency_plus:green_terracotta_tile_slab"
+  ]
+}

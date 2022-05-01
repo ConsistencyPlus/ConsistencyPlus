@@ -3,11 +3,11 @@
   "values": [
     "consistency_plus:mossy_blackstone_brick_wall",
     "consistency_plus:mossy_blackstone_brick_stairs",
-    "consistency_plus:mossy_blackstone_brick_slab",
-    "consistency_plus:mossy_carved_blackstone",
     "consistency_plus:mossy_chiseled_blackstone",
-    "consistency_plus:mossy_blackstone_brick_gate",
     "consistency_plus:mossy_blackstone_corner_pillar",
-    "consistency_plus:mossy_blackstone_pillar"
+    "consistency_plus:mossy_carved_blackstone",
+    "consistency_plus:mossy_blackstone_brick_gate",
+    "consistency_plus:mossy_blackstone_pillar",
+    "consistency_plus:mossy_blackstone_brick_slab"
   ]
 }

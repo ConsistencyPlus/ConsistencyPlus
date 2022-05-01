@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:red_sandstone_tiles",
+    "consistency_plus:red_sandstone_tile_wall",
+    "consistency_plus:red_sandstone_tile_gate",
+    "consistency_plus:red_sandstone_tile_stairs",
+    "consistency_plus:red_sandstone_tile_slab"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:pink_terracotta_bricks",
+    "consistency_plus:pink_terracotta_brick_slab",
+    "consistency_plus:pink_terracotta_brick_wall",
+    "consistency_plus:pink_terracotta_brick_stairs",
+    "consistency_plus:pink_terracotta_brick_gate"
+  ]
+}

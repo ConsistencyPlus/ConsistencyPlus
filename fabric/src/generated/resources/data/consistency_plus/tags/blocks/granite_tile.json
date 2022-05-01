@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:granite_tile_wall",
+    "consistency_plus:granite_tiles",
+    "consistency_plus:granite_tile_stairs",
+    "consistency_plus:granite_tile_slab",
+    "consistency_plus:granite_tile_gate"
+  ]
+}

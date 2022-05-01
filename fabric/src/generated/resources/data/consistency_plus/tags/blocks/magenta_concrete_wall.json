@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_magenta_concrete_wall",
+    "consistency_plus:cut_magenta_concrete_wall",
+    "consistency_plus:magenta_concrete_tile_wall",
+    "consistency_plus:polished_magenta_concrete_wall",
+    "consistency_plus:magenta_concrete_brick_wall",
+    "consistency_plus:magenta_concrete_wall"
+  ]
+}

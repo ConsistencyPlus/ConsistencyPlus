@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_black_glazed_terracotta_wall",
+    "consistency_plus:polished_black_glazed_terracotta_stairs",
+    "consistency_plus:polished_black_glazed_terracotta_gate",
+    "consistency_plus:polished_black_glazed_terracotta_slab",
+    "consistency_plus:polished_black_glazed_terracotta"
+  ]
+}

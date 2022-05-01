@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_pink_concrete_gate",
+    "consistency_plus:smooth_pink_concrete",
+    "consistency_plus:smooth_pink_concrete_wall",
+    "consistency_plus:smooth_pink_concrete_stairs",
+    "consistency_plus:smooth_pink_concrete_slab"
+  ]
+}

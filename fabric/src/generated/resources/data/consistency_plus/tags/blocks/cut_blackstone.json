@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_blackstone",
+    "consistency_plus:cut_blackstone_wall",
+    "consistency_plus:cut_blackstone_slab",
+    "consistency_plus:cut_blackstone_gate",
+    "consistency_plus:cut_blackstone_stairs"
+  ]
+}

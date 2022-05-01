@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:basalt_brick_stairs",
+    "consistency_plus:cobbled_basalt_stairs",
+    "consistency_plus:polished_basalt_stairs",
+    "consistency_plus:smooth_basalt_stairs",
+    "consistency_plus:basalt_stairs",
+    "consistency_plus:basalt_tile_stairs",
+    "consistency_plus:cut_basalt_stairs"
+  ]
+}

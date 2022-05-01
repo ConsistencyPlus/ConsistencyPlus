@@ -87,7 +87,7 @@ public class MasterKey {
         keyValues.add(this.material);
 
         if(!this.oxidization.isBase()) {
-            keyValues.add(this.type.toString());
+            keyValues.add(this.oxidization.toString());
         }
 
         if(this.isWaxed) {

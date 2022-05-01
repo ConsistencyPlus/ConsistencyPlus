@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cobbled_light_gray_terracotta_wall",
+    "consistency_plus:light_gray_terracotta_wall",
+    "consistency_plus:polished_light_gray_terracotta_wall",
+    "consistency_plus:cut_light_gray_terracotta_wall",
+    "consistency_plus:light_gray_terracotta_brick_wall",
+    "consistency_plus:smooth_light_gray_terracotta_wall",
+    "consistency_plus:light_gray_terracotta_tile_wall"
+  ]
+}

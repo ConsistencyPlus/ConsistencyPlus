@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_prismarine_wall",
+    "consistency_plus:cut_prismarine_stairs",
+    "consistency_plus:cut_prismarine_slab",
+    "consistency_plus:cut_prismarine",
+    "consistency_plus:cut_prismarine_gate"
+  ]
+}

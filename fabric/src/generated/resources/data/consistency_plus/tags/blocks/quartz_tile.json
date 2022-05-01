@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:quartz_tile_gate",
+    "consistency_plus:quartz_tile_stairs",
+    "consistency_plus:quartz_tile_slab",
+    "consistency_plus:quartz_tile_wall",
+    "consistency_plus:quartz_tiles"
+  ]
+}

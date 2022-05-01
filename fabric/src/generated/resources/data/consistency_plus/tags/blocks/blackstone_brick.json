@@ -1,13 +1,14 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cracked_blackstone_brick_slab",
+    "consistency_plus:blackstone_brick_gate",
     "consistency_plus:cracked_blackstone_brick_stairs",
     "consistency_plus:mossy_blackstone_brick_wall",
-    "consistency_plus:cracked_blackstone_brick_wall",
     "consistency_plus:mossy_blackstone_brick_stairs",
-    "consistency_plus:mossy_blackstone_brick_slab",
+    "consistency_plus:cracked_blackstone_brick_slab",
+    "consistency_plus:cracked_blackstone_brick_wall",
+    "consistency_plus:cracked_blackstone_brick_gate",
     "consistency_plus:mossy_blackstone_brick_gate",
-    "consistency_plus:cracked_blackstone_brick_gate"
+    "consistency_plus:mossy_blackstone_brick_slab"
   ]
 }

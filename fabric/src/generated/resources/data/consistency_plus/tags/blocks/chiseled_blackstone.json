@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "consistency_plus:mossy_chiseled_blackstone",
-    "consistency_plus:cracked_chiseled_blackstone"
+    "consistency_plus:cracked_chiseled_blackstone",
+    "consistency_plus:chiseled_blackstone"
   ]
 }

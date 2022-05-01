@@ -361,24 +361,24 @@ public class ConsistencyPlusTagProvider {
 
                 String material = key.material;
 
-                applyToBothTags(material, block, getOrCreateTagBuilderFunc);
+                applyToBothTags("material/"+ material, block, getOrCreateTagBuilderFunc);
 
                 if(!key.shape.isBase()) {
-                    applyToBothTags(key.shape.toString(), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags("block_shape/" + key.shape.toString(), block, getOrCreateTagBuilderFunc);
 
                     applyToBothTags(key.shape.addShapes(material, key.type), block, getOrCreateTagBuilderFunc);
                 }else{
-                    applyToBothTags(key.shape.addShapes(material, key.type) + "_block", block, getOrCreateTagBuilderFunc);
+                    applyToBothTags(key.shape.addShapes(material, BlockTypes.BASE) + "_block", block, getOrCreateTagBuilderFunc);
                 }
 
                 if(!key.type.isBase()) {
-                    applyToBothTags(key.type.toString(), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags("block_type/" + key.type.toString(), block, getOrCreateTagBuilderFunc);
 
                     applyToBothTags(key.type.addType(material), block, getOrCreateTagBuilderFunc);
                 }
 
                 if(!key.setModifiers.isBase()) {
-                    applyToBothTags(key.setModifiers.toString(), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags("set_modifier/" + key.setModifiers.toString(), block, getOrCreateTagBuilderFunc);
 
                     applyToBothTags(key.setModifiers.addModifier(material), block, getOrCreateTagBuilderFunc);
 
@@ -394,7 +394,7 @@ public class ConsistencyPlusTagProvider {
                 //--------------------------------------------------------------------
 
                 if(!key.oxidization.isBase()) {
-                    applyToBothTags(key.oxidization.toString(), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags("oxidization/" + key.oxidization.toString(), block, getOrCreateTagBuilderFunc);
 
                     if(!key.shape.isBase() && !key.type.isBase()) {
                         applyToBothTags(key.oxidization.addOxidization(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
@@ -408,17 +408,18 @@ public class ConsistencyPlusTagProvider {
                 //--------------------------------------------------------------------
 
                 if(key.dyeColor != null) {
-                    applyToBothTags(key.dyeColor.toString(), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags("color/" + key.dyeColor.toString(), block, getOrCreateTagBuilderFunc);
 
                     applyToBothTags(key.dyeColor.toString() + "_" + material, block, getOrCreateTagBuilderFunc);
 
                     if(key.shape != BlockShapes.BLOCK) {
                         applyToBothTags(key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), block, getOrCreateTagBuilderFunc);
-
-                        if(key.type != BlockTypes.BASE){
-                            applyToBothTags(key.shape.addShapes(key.type.addType(key.dyeColor.toString() + "_" + material), key.type), block, getOrCreateTagBuilderFunc);
-                        }
                     }
+
+                    if(key.type != BlockTypes.BASE){
+                        applyToBothTags(key.type.addType(key.dyeColor.toString() + "_" + material), block, getOrCreateTagBuilderFunc);
+                    }
+
                 }
 
                 //--------------------------------------------------------------------

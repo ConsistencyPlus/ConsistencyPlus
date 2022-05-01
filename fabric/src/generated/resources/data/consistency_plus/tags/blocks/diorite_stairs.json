@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:diorite_brick_stairs",
+    "consistency_plus:cobbled_diorite_stairs",
+    "consistency_plus:diorite_tile_stairs",
+    "consistency_plus:cut_diorite_stairs",
+    "consistency_plus:smooth_diorite_stairs"
+  ]
+}

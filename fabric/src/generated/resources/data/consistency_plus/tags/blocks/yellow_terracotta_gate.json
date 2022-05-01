@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:yellow_terracotta_gate",
+    "consistency_plus:smooth_yellow_terracotta_gate",
+    "consistency_plus:cobbled_yellow_terracotta_gate",
+    "consistency_plus:polished_yellow_terracotta_gate",
+    "consistency_plus:yellow_terracotta_tile_gate",
+    "consistency_plus:yellow_terracotta_brick_gate",
+    "consistency_plus:cut_yellow_terracotta_gate"
+  ]
+}

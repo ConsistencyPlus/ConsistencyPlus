@@ -30,10 +30,10 @@ public class ConsistencyPlusTags {
         public static final TagKey<Block> VALID_PORTAL_BLOCKS = register("valid_portal_blocks");
         public static final TagKey<Block> VALID_CONDUIT_BLOCKS = register("valid_conduit_blocks");
 
-        public static final TagKey<Block> STAIRS = register("stairs");
-        public static final TagKey<Block> SLABS = register("slabs");
-        public static final TagKey<Block> WALLS = register("walls");
-        public static final TagKey<Block> FENCE_GATES = register("fence_gates");
+        public static final TagKey<Block> STAIRS = register("block_shape/stairs");
+        public static final TagKey<Block> SLABS = register("block_shape/slab");
+        public static final TagKey<Block> WALLS = register("block_shape/wall");
+        public static final TagKey<Block> FENCE_GATES = register("block_shape/gate");
 
         public static final TagKey<Block> IMPERMEABLE = register("impermeable");
 
@@ -47,13 +47,14 @@ public class ConsistencyPlusTags {
         public static final TagKey<Block> INFINIBURN_OVERWORLD = register("infiniburn_overworld");
         public static final TagKey<Block> INFINIBURN_NETHER = register("infiniburn_nether");
 
-        public static final TagKey<Block> OBSIDIAN = register("obsidian");
-        public static final TagKey<Block> NETHERRACK = register("netherrack");
-        public static final TagKey<Block> SANDSTONE = register("sandstone");
-        public static final TagKey<Block> STONE = register("stone");
-        public static final TagKey<Block> TERRACOTTA = register("terracotta");
-        public static final TagKey<Block> CONCRETE = register("concrete");
-        public static final TagKey<Block> GLOWSTONE = register("glowstone");
+        public static final TagKey<Block> OBSIDIAN = register("material/obsidian");
+        public static final TagKey<Block> NETHERRACK = register("material/netherrack");
+        public static final TagKey<Block> SANDSTONE = register("material/sandstone");
+        public static final TagKey<Block> STONE = register("material/stone");
+        public static final TagKey<Block> TERRACOTTA = register("material/terracotta");
+        public static final TagKey<Block> CONCRETE = register("material/concrete");
+        public static final TagKey<Block> GLOWSTONE = register("material/glowstone");
+        public static final TagKey<Block> SOUL_SANDSTONE = register("material/soul_sandstone");
 
         public static TagKey<Block> register(String string){
             TagKey<Block> temp = TagKey.of(Registry.BLOCK_KEY, new Identifier(ConsistencyPlusMain.ID, string));

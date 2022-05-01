@@ -17,6 +17,7 @@ import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBloc
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusCarvedPumpkinBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
+import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags;
 import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
@@ -36,8 +37,6 @@ import java.util.function.Supplier;
 import static net.minecraft.block.Blocks.*;
 
 public class CPlusBlocks {
-	public static final TagKey<Block> VALID_PORTAL_BLOCKS = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("valid_portal_blocks"));
-	public static final TagKey<Block> VALID_CONDUIT_BLOCKS = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("valid_conduit_blocks"));
 	public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("dirt_slabs"));
 	public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("dirt_stairs"));
 
@@ -210,7 +209,7 @@ public class CPlusBlocks {
 	}
 
 	public static boolean isValidPortalBlock(BlockState state) {
-		if ((state.isIn(VALID_PORTAL_BLOCKS))) {
+		if ((state.isIn(ConsistencyPlusTags.ConsistencySpecificTags.VALID_PORTAL_BLOCKS))) {
 			if (state.contains(SlabBlock.TYPE)) {
 				return state.get(SlabBlock.TYPE) == SlabType.DOUBLE;
 			} return true;
@@ -218,6 +217,6 @@ public class CPlusBlocks {
 	}
 	
 	public static boolean isValidConduitBlock(BlockState state) {
-		return (state.isIn(VALID_CONDUIT_BLOCKS));
+		return (state.isIn(ConsistencyPlusTags.ConsistencySpecificTags.VALID_CONDUIT_BLOCKS));
 	}
 }

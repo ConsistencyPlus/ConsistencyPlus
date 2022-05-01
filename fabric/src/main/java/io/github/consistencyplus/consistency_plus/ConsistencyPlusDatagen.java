@@ -14,10 +14,11 @@ public class ConsistencyPlusDatagen implements DataGeneratorEntrypoint {
         ConsistencyPlusTags.init();
 //
 //        fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.DyeableBlockTagProvider(fabricDataGenerator));
-//        fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.CommonBlockTagProvider(fabricDataGenerator));
 
         fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.UltimateBlockTagProvider(fabricDataGenerator));
+        fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.UltimateItemTagProvider(fabricDataGenerator));
 
+        //fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.CommonBlockTagProvider(fabricDataGenerator));
 
         long finishTime = System.currentTimeMillis();
 

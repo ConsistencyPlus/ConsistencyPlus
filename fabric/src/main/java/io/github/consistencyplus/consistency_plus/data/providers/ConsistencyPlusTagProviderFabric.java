@@ -10,19 +10,6 @@ import javax.annotation.Nullable;
 
 public class ConsistencyPlusTagProviderFabric {
 
-    public static class CommonBlockTagProvider extends FabricTagProvider.BlockTagProvider {
-
-        public CommonBlockTagProvider(FabricDataGenerator dataGenerator) {
-            super(dataGenerator);
-        }
-
-        @Override
-        protected void generateTags() {
-            ConsistencyPlusTagProvider.CommonBlockTagProvider.createAndFillTags(this::getOrCreateTagBuilder);
-        }
-
-    }
-
     public static class DyeableBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         public DyeableBlockTagProvider(FabricDataGenerator dataGenerator) {
@@ -43,7 +30,19 @@ public class ConsistencyPlusTagProviderFabric {
 
         @Override
         protected void generateTags() {
-            ConsistencyPlusTagProvider.UltimateBlockTagProvider.createAndFillTags(this::getOrCreateTagBuilder);
+            ConsistencyPlusTagProvider.UltimateBlockTagProvider.INSTANCE.createAndFillTags(this::getOrCreateTagBuilder);
+        }
+    }
+
+    public static class UltimateItemTagProvider extends FabricTagProvider.ItemTagProvider {
+
+        public UltimateItemTagProvider(FabricDataGenerator dataGenerator) {
+            super(dataGenerator);
+        }
+
+        @Override
+        protected void generateTags() {
+            ConsistencyPlusTagProvider.UltimateItemTagProvider.INSTANCE.createAndFillTags(this::getOrCreateTagBuilder);
         }
     }
 }

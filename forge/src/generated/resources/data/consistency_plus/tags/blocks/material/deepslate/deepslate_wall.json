@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cracked_deepslate_brick_wall",
+    "consistency_plus:deepslate_wall",
+    "consistency_plus:cracked_deepslate_tile_wall",
+    "consistency_plus:cut_deepslate_wall",
+    "consistency_plus:smooth_deepslate_wall"
+  ]
+}

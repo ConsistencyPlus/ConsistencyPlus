@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:crimson_wart_wall",
+    "consistency_plus:polished_crimson_wart_wall",
+    "consistency_plus:cut_crimson_wart_wall",
+    "consistency_plus:crimson_wart_tile_wall",
+    "consistency_plus:smooth_crimson_wart_wall"
+  ]
+}

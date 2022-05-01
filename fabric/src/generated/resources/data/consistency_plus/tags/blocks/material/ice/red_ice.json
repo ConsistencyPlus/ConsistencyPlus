@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:red_ice_wall",
     "consistency_plus:red_ice_stairs",
-    "consistency_plus:red_ice_gate",
     "consistency_plus:red_ice_slab",
+    "consistency_plus:red_ice_gate",
     "consistency_plus:red_ice"
   ]
 }

@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "consistency_plus:gray_concrete_wall",
-    "consistency_plus:gray_concrete_brick_wall",
-    "consistency_plus:smooth_gray_concrete_wall",
     "consistency_plus:cut_gray_concrete_wall",
     "consistency_plus:polished_gray_concrete_wall",
-    "consistency_plus:gray_concrete_tile_wall"
+    "consistency_plus:gray_concrete_tile_wall",
+    "consistency_plus:smooth_gray_concrete_wall",
+    "consistency_plus:gray_concrete_brick_wall"
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:light_blue_glowstone_slab",
+    "consistency_plus:light_blue_glowstone_wall",
+    "consistency_plus:light_blue_glowstone_stairs",
+    "consistency_plus:light_blue_glowstone",
+    "consistency_plus:light_blue_glowstone_gate"
+  ]
+}

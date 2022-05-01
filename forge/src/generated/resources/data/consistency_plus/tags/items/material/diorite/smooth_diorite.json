@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_diorite_slab",
+    "consistency_plus:smooth_diorite_gate",
+    "consistency_plus:smooth_diorite_stairs",
+    "consistency_plus:smooth_diorite",
+    "consistency_plus:smooth_diorite_wall"
+  ]
+}

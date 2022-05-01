@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:warped_wart_wall",
-    "consistency_plus:warped_wart_brick_wall",
     "consistency_plus:warped_wart_tile_wall",
+    "consistency_plus:warped_wart_wall",
     "consistency_plus:cut_warped_wart_wall",
-    "consistency_plus:smooth_warped_wart_wall",
-    "consistency_plus:polished_warped_wart_wall"
+    "consistency_plus:polished_warped_wart_wall",
+    "consistency_plus:warped_wart_brick_wall",
+    "consistency_plus:smooth_warped_wart_wall"
   ]
 }

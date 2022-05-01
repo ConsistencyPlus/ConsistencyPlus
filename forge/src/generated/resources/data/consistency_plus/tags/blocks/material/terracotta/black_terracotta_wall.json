@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_black_terracotta_wall",
+    "consistency_plus:polished_black_terracotta_wall",
+    "consistency_plus:black_terracotta_brick_wall",
+    "consistency_plus:cut_black_terracotta_wall",
+    "consistency_plus:black_terracotta_tile_wall",
+    "consistency_plus:cobbled_black_terracotta_wall",
+    "consistency_plus:black_terracotta_wall"
+  ]
+}

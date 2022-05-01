@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_warped_wart_slab",
+    "consistency_plus:cut_warped_wart_gate",
+    "consistency_plus:cut_warped_wart",
+    "consistency_plus:cut_warped_wart_wall",
+    "consistency_plus:cut_warped_wart_stairs"
+  ]
+}

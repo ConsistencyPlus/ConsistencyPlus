@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:light_blue_concrete_brick_slab",
+    "consistency_plus:light_blue_concrete_brick_wall",
+    "consistency_plus:light_blue_concrete_brick_gate",
+    "consistency_plus:light_blue_concrete_bricks",
+    "consistency_plus:light_blue_concrete_brick_stairs"
+  ]
+}

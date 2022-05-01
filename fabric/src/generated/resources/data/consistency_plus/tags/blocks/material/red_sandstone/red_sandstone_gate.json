@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cobbled_red_sandstone_gate",
+    "consistency_plus:red_sandstone_brick_gate",
     "consistency_plus:red_sandstone_gate",
+    "consistency_plus:cobbled_red_sandstone_gate",
     "consistency_plus:smooth_red_sandstone_gate",
     "consistency_plus:red_sandstone_tile_gate",
-    "consistency_plus:polished_red_sandstone_gate",
-    "consistency_plus:red_sandstone_brick_gate",
-    "consistency_plus:cut_red_sandstone_gate"
+    "consistency_plus:cut_red_sandstone_gate",
+    "consistency_plus:polished_red_sandstone_gate"
   ]
 }

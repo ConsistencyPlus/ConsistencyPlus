@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_warped_wart_stairs",
+    "consistency_plus:warped_wart_tile_stairs",
+    "consistency_plus:warped_wart_stairs",
+    "consistency_plus:warped_wart_brick_stairs",
+    "consistency_plus:cut_warped_wart_stairs",
+    "consistency_plus:polished_warped_wart_stairs"
+  ]
+}

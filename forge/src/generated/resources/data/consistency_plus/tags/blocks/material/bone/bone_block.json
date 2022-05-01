@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_bone",
+    "consistency_plus:bone_tiles",
+    "consistency_plus:bone_bricks",
+    "consistency_plus:polished_bone",
+    "consistency_plus:cut_bone"
+  ]
+}

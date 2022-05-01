@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_soul_sandstone_stairs",
+    "consistency_plus:soul_sandstone_brick_stairs",
+    "consistency_plus:soul_sandstone_stairs",
+    "consistency_plus:smooth_soul_sandstone_stairs",
+    "consistency_plus:cut_soul_sandstone_stairs",
+    "consistency_plus:cobbled_soul_sandstone_stairs",
+    "consistency_plus:soul_sandstone_tile_stairs"
+  ]
+}

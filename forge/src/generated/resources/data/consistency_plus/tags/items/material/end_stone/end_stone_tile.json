@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:end_stone_tile_slab",
+    "consistency_plus:end_stone_tile_gate",
+    "consistency_plus:end_stone_tiles",
+    "consistency_plus:end_stone_tile_wall",
+    "consistency_plus:end_stone_tile_stairs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_purple_concrete_stairs",
+    "consistency_plus:cut_purple_concrete_stairs",
+    "consistency_plus:polished_purple_concrete_stairs",
+    "consistency_plus:purple_concrete_tile_stairs",
+    "consistency_plus:purple_concrete_stairs",
+    "consistency_plus:purple_concrete_brick_stairs"
+  ]
+}

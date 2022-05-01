@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:withered_bone_tile_wall",
-    "consistency_plus:withered_bone_wall",
-    "consistency_plus:polished_withered_bone_wall",
-    "consistency_plus:withered_bone_brick_wall",
     "consistency_plus:smooth_withered_bone_wall",
-    "consistency_plus:cut_withered_bone_wall"
+    "consistency_plus:withered_bone_wall",
+    "consistency_plus:cut_withered_bone_wall",
+    "consistency_plus:withered_bone_tile_wall",
+    "consistency_plus:withered_bone_brick_wall",
+    "consistency_plus:polished_withered_bone_wall"
   ]
 }

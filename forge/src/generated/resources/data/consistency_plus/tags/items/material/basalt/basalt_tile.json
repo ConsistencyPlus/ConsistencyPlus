@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:basalt_tile_slab",
+    "consistency_plus:basalt_tile_stairs",
+    "consistency_plus:basalt_tiles",
+    "consistency_plus:basalt_tile_wall",
+    "consistency_plus:basalt_tile_gate"
+  ]
+}

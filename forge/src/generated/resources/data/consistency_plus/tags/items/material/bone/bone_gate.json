@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_bone_gate",
+    "consistency_plus:cut_bone_gate",
+    "consistency_plus:bone_tile_gate",
+    "consistency_plus:smooth_bone_gate",
+    "consistency_plus:bone_brick_gate",
+    "consistency_plus:bone_gate"
+  ]
+}

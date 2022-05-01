@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_dripstone_slab",
+    "consistency_plus:polished_dripstone_stairs",
+    "consistency_plus:polished_dripstone",
+    "consistency_plus:polished_dripstone_gate",
+    "consistency_plus:polished_dripstone_wall"
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:smooth_purpur",
     "consistency_plus:cut_purpur",
+    "consistency_plus:purpur_block",
     "consistency_plus:polished_purpur",
-    "consistency_plus:purpur_bricks",
-    "consistency_plus:purpur_block"
+    "consistency_plus:smooth_purpur",
+    "consistency_plus:purpur_bricks"
   ]
 }

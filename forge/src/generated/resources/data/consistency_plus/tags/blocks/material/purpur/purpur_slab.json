@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_purpur_slab",
+    "consistency_plus:purpur_brick_slab",
+    "consistency_plus:smooth_purpur_slab",
+    "consistency_plus:cracked_purpur_brick_slab",
+    "consistency_plus:purpur_slab",
+    "consistency_plus:polished_purpur_slab"
+  ]
+}

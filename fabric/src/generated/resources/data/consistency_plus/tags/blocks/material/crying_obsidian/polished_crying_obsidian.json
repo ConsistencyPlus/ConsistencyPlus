@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "consistency_plus:polished_crying_obsidian_slab",
-    "consistency_plus:polished_crying_obsidian_stairs",
     "consistency_plus:polished_crying_obsidian_gate",
+    "consistency_plus:polished_crying_obsidian_stairs",
     "consistency_plus:polished_crying_obsidian",
     "consistency_plus:polished_crying_obsidian_wall"
   ]

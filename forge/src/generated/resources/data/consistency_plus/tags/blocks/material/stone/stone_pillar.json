@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:stone_pillar",
+    "consistency_plus:cracked_stone_pillar",
+    "consistency_plus:mossy_stone_pillar"
+  ]
+}

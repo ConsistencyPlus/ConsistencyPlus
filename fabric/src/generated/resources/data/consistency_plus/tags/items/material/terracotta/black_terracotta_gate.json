@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_black_terracotta_gate",
+    "consistency_plus:smooth_black_terracotta_gate",
+    "consistency_plus:polished_black_terracotta_gate",
+    "consistency_plus:black_terracotta_brick_gate",
+    "consistency_plus:cobbled_black_terracotta_gate",
+    "consistency_plus:black_terracotta_tile_gate",
+    "consistency_plus:black_terracotta_gate"
+  ]
+}

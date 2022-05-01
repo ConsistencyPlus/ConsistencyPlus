@@ -1,17 +1,17 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:cracked_polished_andesite_wall",
+    "consistency_plus:mossy_polished_andesite_gate",
+    "consistency_plus:mossy_polished_andesite",
+    "consistency_plus:mossy_polished_andesite_stairs",
+    "consistency_plus:cracked_polished_andesite_stairs",
     "consistency_plus:mossy_polished_andesite_wall",
     "consistency_plus:polished_andesite_wall",
-    "consistency_plus:cracked_polished_andesite_slab",
-    "consistency_plus:mossy_polished_andesite_gate",
-    "consistency_plus:mossy_polished_andesite_stairs",
-    "consistency_plus:cracked_polished_andesite",
     "consistency_plus:cracked_polished_andesite_gate",
-    "consistency_plus:mossy_polished_andesite_slab",
     "consistency_plus:polished_andesite_gate",
-    "consistency_plus:cracked_polished_andesite_wall",
-    "consistency_plus:cracked_polished_andesite_stairs",
-    "consistency_plus:mossy_polished_andesite"
+    "consistency_plus:mossy_polished_andesite_slab",
+    "consistency_plus:cracked_polished_andesite_slab",
+    "consistency_plus:cracked_polished_andesite"
   ]
 }

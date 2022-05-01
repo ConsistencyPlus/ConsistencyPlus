@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_netherrack_stairs",
-    "consistency_plus:netherrack_tile_stairs",
-    "consistency_plus:cobbled_netherrack_stairs",
-    "consistency_plus:smooth_netherrack_stairs",
     "consistency_plus:netherrack_stairs",
-    "consistency_plus:cut_netherrack_stairs"
+    "consistency_plus:polished_netherrack_stairs",
+    "consistency_plus:smooth_netherrack_stairs",
+    "consistency_plus:netherrack_tile_stairs",
+    "consistency_plus:cut_netherrack_stairs",
+    "consistency_plus:cobbled_netherrack_stairs"
   ]
 }

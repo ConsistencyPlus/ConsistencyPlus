@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:tuff_brick_stairs",
+    "consistency_plus:polished_tuff_stairs",
+    "consistency_plus:cobbled_tuff_stairs",
+    "consistency_plus:tuff_stairs",
+    "consistency_plus:tuff_tile_stairs",
+    "consistency_plus:smooth_tuff_stairs",
+    "consistency_plus:cut_tuff_stairs"
+  ]
+}

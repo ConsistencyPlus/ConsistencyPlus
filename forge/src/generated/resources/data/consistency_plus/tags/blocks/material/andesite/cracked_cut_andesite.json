@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cracked_cut_andesite_wall",
+    "consistency_plus:cracked_cut_andesite_gate",
+    "consistency_plus:cracked_cut_andesite_stairs",
+    "consistency_plus:cracked_cut_andesite_slab",
+    "consistency_plus:cracked_cut_andesite"
+  ]
+}

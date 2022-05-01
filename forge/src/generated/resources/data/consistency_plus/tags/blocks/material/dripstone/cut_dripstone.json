@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_dripstone_stairs",
+    "consistency_plus:cut_dripstone_wall",
+    "consistency_plus:cut_dripstone_gate",
+    "consistency_plus:cut_dripstone_slab",
+    "consistency_plus:cut_dripstone"
+  ]
+}

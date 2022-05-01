@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:obsidian_tile_stairs",
+    "consistency_plus:obsidian_tile_gate",
+    "consistency_plus:obsidian_tile_wall",
+    "consistency_plus:obsidian_tile_slab",
+    "consistency_plus:obsidian_tiles"
+  ]
+}

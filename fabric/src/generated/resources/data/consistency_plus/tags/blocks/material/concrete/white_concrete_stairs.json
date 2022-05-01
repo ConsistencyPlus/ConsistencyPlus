@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:white_concrete_tile_stairs",
     "consistency_plus:polished_white_concrete_stairs",
+    "consistency_plus:cut_white_concrete_stairs",
+    "consistency_plus:white_concrete_tile_stairs",
     "consistency_plus:white_concrete_stairs",
     "consistency_plus:smooth_white_concrete_stairs",
-    "consistency_plus:cut_white_concrete_stairs",
     "consistency_plus:white_concrete_brick_stairs"
   ]
 }

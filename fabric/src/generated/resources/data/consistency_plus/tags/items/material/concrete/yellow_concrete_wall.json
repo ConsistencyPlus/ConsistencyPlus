@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:yellow_concrete_wall",
+    "consistency_plus:smooth_yellow_concrete_wall",
+    "consistency_plus:cut_yellow_concrete_wall",
+    "consistency_plus:yellow_concrete_brick_wall",
+    "consistency_plus:yellow_concrete_tile_wall",
+    "consistency_plus:polished_yellow_concrete_wall"
+  ]
+}

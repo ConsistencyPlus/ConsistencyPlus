@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cracked_blackstone_brick_stairs",
+    "consistency_plus:cracked_blackstone_pillar",
+    "consistency_plus:cracked_blackstone_brick_wall",
+    "consistency_plus:cracked_chiseled_blackstone",
+    "consistency_plus:cracked_blackstone_corner_pillar",
+    "consistency_plus:cracked_blackstone_brick_gate",
+    "consistency_plus:cracked_carved_blackstone",
+    "consistency_plus:cracked_blackstone_brick_slab"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:pink_terracotta_brick_stairs",
+    "consistency_plus:pink_terracotta_tile_stairs",
+    "consistency_plus:polished_pink_terracotta_stairs",
+    "consistency_plus:smooth_pink_terracotta_stairs",
+    "consistency_plus:pink_terracotta_stairs",
+    "consistency_plus:cobbled_pink_terracotta_stairs",
+    "consistency_plus:cut_pink_terracotta_stairs"
+  ]
+}

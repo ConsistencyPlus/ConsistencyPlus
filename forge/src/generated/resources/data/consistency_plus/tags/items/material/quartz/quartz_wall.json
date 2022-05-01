@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:quartz_tile_wall",
+    "consistency_plus:polished_quartz_wall",
+    "consistency_plus:quartz_wall",
+    "consistency_plus:smooth_quartz_wall",
+    "consistency_plus:quartz_brick_wall",
+    "consistency_plus:cut_quartz_wall"
+  ]
+}

@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:tuff_tiles",
-    "consistency_plus:polished_tuff",
     "consistency_plus:cobbled_tuff",
+    "consistency_plus:cut_tuff",
     "consistency_plus:smooth_tuff",
-    "consistency_plus:tuff_bricks",
-    "consistency_plus:cut_tuff"
+    "consistency_plus:polished_tuff",
+    "consistency_plus:tuff_tiles",
+    "consistency_plus:tuff_bricks"
   ]
 }

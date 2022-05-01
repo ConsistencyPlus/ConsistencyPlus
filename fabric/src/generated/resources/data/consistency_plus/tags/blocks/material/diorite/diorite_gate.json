@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:diorite_brick_gate",
-    "consistency_plus:smooth_diorite_gate",
-    "consistency_plus:cut_diorite_gate",
     "consistency_plus:diorite_gate",
+    "consistency_plus:polished_diorite_gate",
     "consistency_plus:diorite_tile_gate",
     "consistency_plus:cobbled_diorite_gate",
-    "consistency_plus:polished_diorite_gate"
+    "consistency_plus:diorite_brick_gate",
+    "consistency_plus:smooth_diorite_gate",
+    "consistency_plus:cut_diorite_gate"
   ]
 }

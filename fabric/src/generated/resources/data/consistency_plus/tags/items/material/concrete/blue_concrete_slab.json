@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_blue_concrete_slab",
+    "consistency_plus:polished_blue_concrete_slab",
+    "consistency_plus:blue_concrete_slab",
+    "consistency_plus:blue_concrete_brick_slab",
+    "consistency_plus:smooth_blue_concrete_slab",
+    "consistency_plus:blue_concrete_tile_slab"
+  ]
+}

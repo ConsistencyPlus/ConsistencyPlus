@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:cut_basalt_gate",
     "consistency_plus:basalt_brick_gate",
+    "consistency_plus:basalt_tile_gate",
+    "consistency_plus:cobbled_basalt_gate",
     "consistency_plus:smooth_basalt_gate",
     "consistency_plus:basalt_gate",
-    "consistency_plus:cut_basalt_gate",
-    "consistency_plus:polished_basalt_gate",
-    "consistency_plus:basalt_tile_gate",
-    "consistency_plus:cobbled_basalt_gate"
+    "consistency_plus:polished_basalt_gate"
   ]
 }

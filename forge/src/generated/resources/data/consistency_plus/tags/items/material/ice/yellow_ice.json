@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:yellow_ice_slab",
+    "consistency_plus:yellow_ice_gate",
+    "consistency_plus:yellow_ice",
+    "consistency_plus:yellow_ice_stairs",
+    "consistency_plus:yellow_ice_wall"
+  ]
+}

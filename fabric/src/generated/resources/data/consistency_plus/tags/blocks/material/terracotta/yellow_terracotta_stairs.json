@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_yellow_terracotta_stairs",
     "consistency_plus:cobbled_yellow_terracotta_stairs",
-    "consistency_plus:yellow_terracotta_stairs",
     "consistency_plus:cut_yellow_terracotta_stairs",
     "consistency_plus:yellow_terracotta_brick_stairs",
+    "consistency_plus:yellow_terracotta_stairs",
+    "consistency_plus:polished_yellow_terracotta_stairs",
     "consistency_plus:smooth_yellow_terracotta_stairs",
     "consistency_plus:yellow_terracotta_tile_stairs"
   ]

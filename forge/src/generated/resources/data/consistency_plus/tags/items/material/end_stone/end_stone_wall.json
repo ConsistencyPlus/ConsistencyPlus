@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_end_stone_wall",
+    "consistency_plus:cut_end_stone_wall",
+    "consistency_plus:smooth_end_stone_wall",
+    "consistency_plus:end_stone_tile_wall",
+    "consistency_plus:cobbled_end_stone_wall",
+    "consistency_plus:end_stone_wall"
+  ]
+}

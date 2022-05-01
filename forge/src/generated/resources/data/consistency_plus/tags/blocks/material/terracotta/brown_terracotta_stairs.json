@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_brown_terracotta_stairs",
+    "consistency_plus:cut_brown_terracotta_stairs",
+    "consistency_plus:cobbled_brown_terracotta_stairs",
+    "consistency_plus:brown_terracotta_brick_stairs",
+    "consistency_plus:brown_terracotta_stairs",
+    "consistency_plus:brown_terracotta_tile_stairs",
+    "consistency_plus:polished_brown_terracotta_stairs"
+  ]
+}

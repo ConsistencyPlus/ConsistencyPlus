@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:magenta_ice_stairs",
+    "consistency_plus:magenta_ice_slab",
+    "consistency_plus:magenta_ice_gate",
+    "consistency_plus:magenta_ice_wall",
+    "consistency_plus:magenta_ice"
+  ]
+}

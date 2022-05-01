@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_basalt",
+    "consistency_plus:cut_basalt",
+    "consistency_plus:basalt_bricks",
+    "consistency_plus:cobbled_basalt",
+    "consistency_plus:basalt_tiles"
+  ]
+}

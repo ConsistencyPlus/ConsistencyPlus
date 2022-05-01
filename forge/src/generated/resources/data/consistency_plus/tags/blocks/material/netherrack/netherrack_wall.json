@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:netherrack_tile_wall",
+    "consistency_plus:polished_netherrack_wall",
+    "consistency_plus:smooth_netherrack_wall",
+    "consistency_plus:cobbled_netherrack_wall",
+    "consistency_plus:cut_netherrack_wall",
+    "consistency_plus:netherrack_wall"
+  ]
+}

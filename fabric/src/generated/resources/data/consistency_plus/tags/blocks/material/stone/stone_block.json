@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:polished_stone",
     "consistency_plus:cut_stone",
-    "consistency_plus:stone_tiles",
-    "consistency_plus:polished_stone"
+    "consistency_plus:stone_tiles"
   ]
 }

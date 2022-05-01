@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:crying_obsidian_brick_stairs",
+    "consistency_plus:crying_obsidian_stairs",
+    "consistency_plus:polished_crying_obsidian_stairs",
+    "consistency_plus:cut_crying_obsidian_stairs",
+    "consistency_plus:crying_obsidian_tile_stairs",
+    "consistency_plus:smooth_crying_obsidian_stairs"
+  ]
+}

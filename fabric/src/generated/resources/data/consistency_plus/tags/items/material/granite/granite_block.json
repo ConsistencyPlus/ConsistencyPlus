@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cobbled_granite",
+    "consistency_plus:granite_tiles",
+    "consistency_plus:smooth_granite",
+    "consistency_plus:granite_bricks",
+    "consistency_plus:cut_granite"
+  ]
+}

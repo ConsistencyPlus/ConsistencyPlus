@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_pink_terracotta_wall",
+    "consistency_plus:cobbled_pink_terracotta_wall",
+    "consistency_plus:polished_pink_terracotta_wall",
+    "consistency_plus:pink_terracotta_wall",
+    "consistency_plus:smooth_pink_terracotta_wall",
+    "consistency_plus:pink_terracotta_tile_wall",
+    "consistency_plus:pink_terracotta_brick_wall"
+  ]
+}

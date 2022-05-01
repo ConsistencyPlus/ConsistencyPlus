@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     "consistency_plus:end_stone_gate",
+    "consistency_plus:polished_end_stone_gate",
     "consistency_plus:end_stone_tile_gate",
+    "consistency_plus:cobbled_end_stone_gate",
     "consistency_plus:cut_end_stone_gate",
     "consistency_plus:smooth_end_stone_gate",
-    "consistency_plus:end_stone_brick_gate",
-    "consistency_plus:polished_end_stone_gate",
-    "consistency_plus:cobbled_end_stone_gate"
+    "consistency_plus:end_stone_brick_gate"
   ]
 }

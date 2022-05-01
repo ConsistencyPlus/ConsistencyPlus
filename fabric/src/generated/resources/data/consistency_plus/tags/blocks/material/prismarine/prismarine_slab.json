@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:smooth_prismarine_slab",
     "consistency_plus:polished_prismarine_slab",
     "consistency_plus:cut_prismarine_slab",
-    "consistency_plus:prismarine_tile_slab"
+    "consistency_plus:prismarine_tile_slab",
+    "consistency_plus:smooth_prismarine_slab"
   ]
 }

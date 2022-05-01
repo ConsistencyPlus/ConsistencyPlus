@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_dripstone_gate",
-    "consistency_plus:smooth_dripstone_gate",
-    "consistency_plus:cut_dripstone_gate",
-    "consistency_plus:dripstone_gate",
     "consistency_plus:cobbled_dripstone_gate",
+    "consistency_plus:dripstone_tile_gate",
+    "consistency_plus:dripstone_gate",
+    "consistency_plus:cut_dripstone_gate",
+    "consistency_plus:polished_dripstone_gate",
     "consistency_plus:dripstone_brick_gate",
-    "consistency_plus:dripstone_tile_gate"
+    "consistency_plus:smooth_dripstone_gate"
   ]
 }

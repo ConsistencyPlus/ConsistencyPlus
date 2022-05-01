@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cut_dripstone",
+    "consistency_plus:cobbled_dripstone",
     "consistency_plus:dripstone_bricks",
     "consistency_plus:smooth_dripstone",
+    "consistency_plus:cut_dripstone",
     "consistency_plus:dripstone_tiles",
-    "consistency_plus:cobbled_dripstone",
     "consistency_plus:polished_dripstone"
   ]
 }

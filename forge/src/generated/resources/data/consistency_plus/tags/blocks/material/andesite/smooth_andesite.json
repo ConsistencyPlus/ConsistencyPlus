@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:mossy_smooth_andesite_wall",
+    "consistency_plus:mossy_smooth_andesite_slab",
+    "consistency_plus:cracked_smooth_andesite_wall",
+    "consistency_plus:cracked_smooth_andesite_stairs",
+    "consistency_plus:cracked_smooth_andesite",
+    "consistency_plus:smooth_andesite_gate",
+    "consistency_plus:cracked_smooth_andesite_slab",
+    "consistency_plus:smooth_andesite",
+    "consistency_plus:smooth_andesite_wall",
+    "consistency_plus:mossy_smooth_andesite_gate",
+    "consistency_plus:mossy_smooth_andesite_stairs",
+    "consistency_plus:mossy_smooth_andesite",
+    "consistency_plus:smooth_andesite_slab",
+    "consistency_plus:cracked_smooth_andesite_gate",
+    "consistency_plus:smooth_andesite_stairs"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:waxed__chiseled_copper",
+    "consistency_plus:exposed_chiseled_copper",
+    "consistency_plus:weathered_chiseled_copper",
+    "consistency_plus:waxed_weathered_chiseled_copper",
+    "consistency_plus:_chiseled_copper",
+    "consistency_plus:oxidized_chiseled_copper",
+    "consistency_plus:waxed_oxidized_chiseled_copper",
+    "consistency_plus:waxed_exposed_chiseled_copper"
+  ]
+}

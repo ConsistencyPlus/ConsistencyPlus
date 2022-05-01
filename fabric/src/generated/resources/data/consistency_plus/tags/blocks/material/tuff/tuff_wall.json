@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:tuff_tile_wall",
-    "consistency_plus:smooth_tuff_wall",
-    "consistency_plus:tuff_wall",
-    "consistency_plus:polished_tuff_wall",
     "consistency_plus:cut_tuff_wall",
     "consistency_plus:cobbled_tuff_wall",
-    "consistency_plus:tuff_brick_wall"
+    "consistency_plus:smooth_tuff_wall",
+    "consistency_plus:tuff_brick_wall",
+    "consistency_plus:tuff_tile_wall",
+    "consistency_plus:tuff_wall",
+    "consistency_plus:polished_tuff_wall"
   ]
 }

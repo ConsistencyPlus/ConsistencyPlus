@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:polished_quartz_stairs",
     "consistency_plus:quartz_brick_stairs",
     "consistency_plus:cut_quartz_stairs",
-    "consistency_plus:quartz_tile_stairs",
-    "consistency_plus:polished_quartz_stairs"
+    "consistency_plus:quartz_tile_stairs"
   ]
 }

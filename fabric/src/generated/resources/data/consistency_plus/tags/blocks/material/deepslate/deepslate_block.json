@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cut_deepslate",
-    "consistency_plus:smooth_deepslate"
+    "consistency_plus:smooth_deepslate",
+    "consistency_plus:cut_deepslate"
   ]
 }

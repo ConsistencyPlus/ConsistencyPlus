@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:tuff_tile_gate",
+    "consistency_plus:tuff_tile_stairs",
+    "consistency_plus:tuff_tile_wall",
+    "consistency_plus:tuff_tile_slab",
+    "consistency_plus:tuff_tiles"
+  ]
+}

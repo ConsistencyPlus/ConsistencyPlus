@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:lime_terracotta_brick_gate",
+    "consistency_plus:smooth_lime_terracotta_gate",
+    "consistency_plus:polished_lime_terracotta_gate",
+    "consistency_plus:cobbled_lime_terracotta_gate",
+    "consistency_plus:cut_lime_terracotta_gate",
+    "consistency_plus:lime_terracotta_tile_gate",
+    "consistency_plus:lime_terracotta_gate"
+  ]
+}

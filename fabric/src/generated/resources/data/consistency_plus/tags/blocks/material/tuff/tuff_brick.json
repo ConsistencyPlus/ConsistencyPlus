@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:tuff_brick_stairs",
+    "consistency_plus:tuff_brick_wall",
     "consistency_plus:tuff_brick_slab",
     "consistency_plus:tuff_bricks",
-    "consistency_plus:tuff_brick_gate",
-    "consistency_plus:tuff_brick_wall"
+    "consistency_plus:tuff_brick_gate"
   ]
 }

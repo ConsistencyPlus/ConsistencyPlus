@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:netherrack_tile_gate",
-    "consistency_plus:polished_netherrack_gate",
     "consistency_plus:cobbled_netherrack_gate",
-    "consistency_plus:netherrack_gate",
+    "consistency_plus:cut_netherrack_gate",
+    "consistency_plus:netherrack_tile_gate",
     "consistency_plus:smooth_netherrack_gate",
-    "consistency_plus:cut_netherrack_gate"
+    "consistency_plus:polished_netherrack_gate",
+    "consistency_plus:netherrack_gate"
   ]
 }

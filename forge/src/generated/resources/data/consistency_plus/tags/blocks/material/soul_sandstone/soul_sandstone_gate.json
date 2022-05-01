@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cobbled_soul_sandstone_gate",
+    "consistency_plus:smooth_soul_sandstone_gate",
+    "consistency_plus:soul_sandstone_tile_gate",
+    "consistency_plus:polished_soul_sandstone_gate",
+    "consistency_plus:soul_sandstone_gate",
+    "consistency_plus:cut_soul_sandstone_gate",
+    "consistency_plus:soul_sandstone_brick_gate"
+  ]
+}

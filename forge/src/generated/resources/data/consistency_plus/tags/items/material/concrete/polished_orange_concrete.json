@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_orange_concrete",
+    "consistency_plus:polished_orange_concrete_gate",
+    "consistency_plus:polished_orange_concrete_stairs",
+    "consistency_plus:polished_orange_concrete_wall",
+    "consistency_plus:polished_orange_concrete_slab"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_lime_terracotta_wall",
+    "consistency_plus:smooth_lime_terracotta_gate",
+    "consistency_plus:smooth_lime_terracotta_slab",
+    "consistency_plus:smooth_lime_terracotta_stairs",
+    "consistency_plus:smooth_lime_terracotta"
+  ]
+}

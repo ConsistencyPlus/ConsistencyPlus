@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:mossy_blackstone_corner_pillar",
+    "consistency_plus:cracked_blackstone_corner_pillar",
+    "consistency_plus:blackstone_corner_pillar"
+  ]
+}

@@ -15,6 +15,7 @@ public class ConsistencyPlusDatagen {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator gen = event.getGenerator();
+
         if (event.includeServer()) {
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 //            gen.addProvider(new ConsistencyPlusTagProviderForge.DyeableBlockTagProviderImpl(gen, ConsistencyPlusMain.ID, existingFileHelper));
@@ -26,7 +27,5 @@ public class ConsistencyPlusDatagen {
 
             //gen.addProvider(new ConsistencyPlusTagProviderForge.CommonBlockTagProviderImpl(gen, ConsistencyPlusMain.ID, existingFileHelper));
         }
-
-        System.exit(0);
     }
 }

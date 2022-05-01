@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cut_granite_slab",
+    "consistency_plus:cut_granite_stairs",
+    "consistency_plus:cut_granite",
+    "consistency_plus:cut_granite_gate",
+    "consistency_plus:cut_granite_wall"
+  ]
+}

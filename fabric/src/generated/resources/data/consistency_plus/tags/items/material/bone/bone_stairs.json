@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:bone_tile_stairs",
+    "consistency_plus:cut_bone_stairs",
+    "consistency_plus:bone_brick_stairs",
+    "consistency_plus:bone_stairs",
+    "consistency_plus:polished_bone_stairs",
+    "consistency_plus:smooth_bone_stairs"
+  ]
+}

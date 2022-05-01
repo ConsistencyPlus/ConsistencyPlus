@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cracked_purpur_brick_gate",
+    "consistency_plus:cut_purpur_gate",
+    "consistency_plus:polished_purpur_gate",
+    "consistency_plus:purpur_tile_gate",
+    "consistency_plus:smooth_purpur_gate",
+    "consistency_plus:purpur_gate",
+    "consistency_plus:purpur_brick_gate"
+  ]
+}

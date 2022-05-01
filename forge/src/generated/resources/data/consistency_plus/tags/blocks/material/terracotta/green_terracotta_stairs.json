@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:polished_green_terracotta_stairs",
+    "consistency_plus:green_terracotta_stairs",
+    "consistency_plus:green_terracotta_tile_stairs",
+    "consistency_plus:cobbled_green_terracotta_stairs",
+    "consistency_plus:cut_green_terracotta_stairs",
+    "consistency_plus:green_terracotta_brick_stairs",
+    "consistency_plus:smooth_green_terracotta_stairs"
+  ]
+}

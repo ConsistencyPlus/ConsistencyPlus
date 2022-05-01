@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:calcite_brick_stairs",
+    "consistency_plus:calcite_tile_stairs",
+    "consistency_plus:calcite_stairs",
+    "consistency_plus:smooth_calcite_stairs",
+    "consistency_plus:polished_calcite_stairs",
+    "consistency_plus:cobbled_calcite_stairs",
+    "consistency_plus:cut_calcite_stairs"
+  ]
+}

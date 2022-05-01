@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_granite_gate",
+    "consistency_plus:smooth_granite_stairs",
+    "consistency_plus:smooth_granite",
+    "consistency_plus:smooth_granite_slab",
+    "consistency_plus:smooth_granite_wall"
+  ]
+}

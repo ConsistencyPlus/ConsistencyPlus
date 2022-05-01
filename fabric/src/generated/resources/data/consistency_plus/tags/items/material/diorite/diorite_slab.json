@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cobbled_diorite_slab",
+    "consistency_plus:diorite_tile_slab",
+    "consistency_plus:smooth_diorite_slab",
+    "consistency_plus:diorite_brick_slab",
+    "consistency_plus:cut_diorite_slab"
+  ]
+}

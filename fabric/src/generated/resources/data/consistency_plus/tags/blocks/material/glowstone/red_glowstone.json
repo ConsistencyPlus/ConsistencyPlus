@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:red_glowstone_wall",
     "consistency_plus:red_glowstone_stairs",
-    "consistency_plus:red_glowstone_slab",
     "consistency_plus:red_glowstone",
+    "consistency_plus:red_glowstone_slab",
     "consistency_plus:red_glowstone_gate"
   ]
 }

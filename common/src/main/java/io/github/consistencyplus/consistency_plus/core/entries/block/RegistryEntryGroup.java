@@ -108,7 +108,9 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
     public String getID(BlockShapes shapes, BlockTypes type) {
         String id = shapes.addShapes(type.addType(name), type);
 
-        MasterKey.ULTIMATE_KEY_RING.put(id, MasterKey.createKey(shapes, type, this.name));
+        if(!checkset2(CPlusEntries.overrideMap.getOrDefault(id, id))) {
+            MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createKey(shapes, type, this.name));
+        }
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

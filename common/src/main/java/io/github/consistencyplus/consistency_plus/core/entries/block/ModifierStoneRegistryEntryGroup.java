@@ -38,7 +38,9 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
     public String getSetModifiedID(SetModifiers modifier, BlockShapes shapes, BlockTypes type) {
         String id = modifier.addModifier(shapes.addShapes(type.addType(name), type));
 
-        MasterKey.ULTIMATE_KEY_RING.put(id, MasterKey.createKey(shapes, type, modifier, this.name));
+        if(!checkset2(CPlusEntries.overrideMap.getOrDefault(id, id))) {
+            MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createKey(shapes, type, modifier, this.name));
+        }
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

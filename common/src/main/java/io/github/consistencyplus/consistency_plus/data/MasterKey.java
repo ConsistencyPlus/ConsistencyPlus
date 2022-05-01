@@ -13,9 +13,7 @@ import net.minecraft.util.DyeColor;
 import net.minecraft.util.Pair;
 
 import javax.annotation.Nullable;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 public class MasterKey {
 
@@ -76,43 +74,42 @@ public class MasterKey {
 
     @Override
     public String toString() {
-        StringBuilder stringOut = new StringBuilder();
+        List<String> keyValues = new ArrayList<>();
 
         if(!this.shape.isBase()) {
-            stringOut.append(this.shape.toString());
+            keyValues.add(this.shape.toString());
         }
 
         if(!this.type.isBase()) {
-            if(!stringOut.isEmpty()) {
-                stringOut.append(", ");
-            }
-            stringOut.append(this.type.toString());
+            keyValues.add(this.type.toString());
         }
 
-        if(!stringOut.isEmpty()) {
-            stringOut.append(", ");
-        }
-
-        stringOut.append(this.material);
+        keyValues.add(this.material);
 
         if(!this.oxidization.isBase()) {
-            stringOut.append(", ");
-            stringOut.append(this.type.toString());
+            keyValues.add(this.type.toString());
         }
 
-        if(!this.isWaxed) {
-            stringOut.append(", ");
-            stringOut.append("waxed");
+        if(this.isWaxed) {
+            keyValues.add("waxed");
         }
 
         if(!this.setModifiers.isBase()) {
-            stringOut.append(", ");
-            stringOut.append(this.setModifiers.toString());
+            keyValues.add(this.setModifiers.toString());
         }
 
         if(this.dyeColor != null){
-            stringOut.append(", ");
-            this.dyeColor.toString();
+            keyValues.add(this.dyeColor.toString());
+        }
+
+        StringBuilder stringOut = new StringBuilder();
+        for(int i = 0; i < keyValues.size(); i++){
+            if(i == keyValues.size() - 1) {
+                stringOut.append(keyValues.get(i));
+            }else{
+                stringOut.append(keyValues.get(i));
+                stringOut.append(", ");
+            }
         }
 
         return stringOut.toString();

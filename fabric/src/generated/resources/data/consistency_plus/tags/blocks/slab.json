@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:dirt_slab",
+    "consistency_plus:cracked_blackstone_brick_slab",
+    "consistency_plus:grass_slab",
+    "consistency_plus:cracked_deepslate_brick_slab",
+    "consistency_plus:mossy_blackstone_brick_slab",
+    "consistency_plus:cracked_stone_brick_slab",
+    "consistency_plus:mycelium_slab",
+    "consistency_plus:cracked_deepslate_tile_slab",
+    "consistency_plus:cracked_purpur_brick_slab",
+    "consistency_plus:cracked_nether_brick_slab"
+  ]
+}

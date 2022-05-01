@@ -20,7 +20,7 @@ public enum BlockShapes {
 
     @Override
     public String toString() {
-        if (this == BLOCK) return "";
+        if (isBase()) return "";
         return name().toLowerCase(Locale.ROOT);
     }
 

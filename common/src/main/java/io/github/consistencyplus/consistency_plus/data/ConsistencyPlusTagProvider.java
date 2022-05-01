@@ -8,6 +8,8 @@ import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import io.github.consistencyplus.consistency_plus.blocks.SetModifiers;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
+import it.unimi.dsi.fastutil.Hash;
 import net.minecraft.block.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.server.BlockTagProvider;
@@ -20,9 +22,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Nullable;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Function;
 
 public class ConsistencyPlusTagProvider {
@@ -318,6 +318,8 @@ public class ConsistencyPlusTagProvider {
 
         private static final Logger LOGGER = LogManager.getLogger(UltimateBlockTagProvider.class);
 
+        private static final Set<TagKey<Block>> ALREADY_MADE_COMMON_TAGS = new HashSet<>();
+
         public UltimateBlockTagProvider(DataGenerator dataGenerator) {
             super(dataGenerator);
         }
@@ -326,7 +328,34 @@ public class ConsistencyPlusTagProvider {
 
         public static void createAndFillTags(Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc) {
             for(Map.Entry<String, MasterKey> entry : MasterKey.ULTIMATE_KEY_RING.entrySet()){
+                LOGGER.info("[" + entry.getKey() + "]: {" + entry.getValue() + "}" );
+
                 Block block = Registry.BLOCK.get(ConsistencyPlusMain.id(entry.getKey()));
+
+                if(block == Blocks.AIR){
+                    block = Registry.BLOCK.get(new Identifier(entry.getKey()));
+
+                    if(block != Blocks.AIR){
+                        LOGGER.info("Found a minecraft Block... YEETING AND SKIPPING");
+                        continue;
+                    }else{
+                        if(CPlusEntries.overrideMap.containsKey(entry.getKey())) {
+                            block = Registry.BLOCK.get(new Identifier(CPlusEntries.overrideMap.get(entry.getKey())));
+
+                            if (block != Blocks.AIR) {
+                                LOGGER.info("Found a minecraft Block... YEETING AND SKIPPING");
+                                continue;
+                            } else {
+                                block = Registry.BLOCK.get(ConsistencyPlusMain.id(CPlusEntries.overrideMap.get(entry.getKey())));
+                            }
+                        }
+
+                        if (block == Blocks.AIR) {
+                            LOGGER.info("O FUCK SOMETHING HAS GONE WRONG!... still YEETING AND SKIPPING");
+                            continue;
+                        }
+                    }
+                }
 
                 MasterKey key = entry.getValue();
 
@@ -337,7 +366,9 @@ public class ConsistencyPlusTagProvider {
                 if(!key.shape.isBase()) {
                     applyToBothTags(key.shape.toString(), block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.shape.addShapes(key.type.addType(material), key.type), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags(key.shape.addShapes(material, key.type), block, getOrCreateTagBuilderFunc);
+                }else{
+                    applyToBothTags(key.shape.addShapes(material, key.type) + "_block", block, getOrCreateTagBuilderFunc);
                 }
 
                 if(!key.type.isBase()) {
@@ -351,9 +382,13 @@ public class ConsistencyPlusTagProvider {
 
                     applyToBothTags(key.setModifiers.addModifier(material), block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.setModifiers.addModifier(key.type.addType(material)), block, getOrCreateTagBuilderFunc);
+                    if(!key.type.isBase()) {
+                        applyToBothTags(key.setModifiers.addModifier(key.type.addType(material)), block, getOrCreateTagBuilderFunc);
+                    }
 
-                    applyToBothTags(key.setModifiers.addModifier(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
+                    if(!key.shape.isBase()){
+                        applyToBothTags(key.setModifiers.addModifier(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
+                    }
                 }
 
                 //--------------------------------------------------------------------
@@ -361,7 +396,9 @@ public class ConsistencyPlusTagProvider {
                 if(!key.oxidization.isBase()) {
                     applyToBothTags(key.oxidization.toString(), block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.oxidization.addOxidization(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
+                    if(!key.shape.isBase() && !key.type.isBase()) {
+                        applyToBothTags(key.oxidization.addOxidization(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
+                    }
                 }
 
                 if(key.isWaxed) {
@@ -375,9 +412,13 @@ public class ConsistencyPlusTagProvider {
 
                     applyToBothTags(key.dyeColor.toString() + "_" + material, block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), block, getOrCreateTagBuilderFunc);
+                    if(key.shape != BlockShapes.BLOCK) {
+                        applyToBothTags(key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.shape.addShapes(key.type.addType(key.dyeColor.toString() + "_" + material), key.type), block, getOrCreateTagBuilderFunc);
+                        if(key.type != BlockTypes.BASE){
+                            applyToBothTags(key.shape.addShapes(key.type.addType(key.dyeColor.toString() + "_" + material), key.type), block, getOrCreateTagBuilderFunc);
+                        }
+                    }
                 }
 
                 //--------------------------------------------------------------------
@@ -385,8 +426,18 @@ public class ConsistencyPlusTagProvider {
         }
 
         private static void applyToBothTags(String tag, Block block, Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc){
-            getOrCreateTagBuilderFunc.apply(getCommonBlockTag(tag)).add(block);
-            getOrCreateTagBuilderFunc.apply(getConsistencyTag(tag)).addTag(getCommonBlockTag(tag));
+            TagKey<Block> common = getCommonBlockTag(tag);
+            TagKey<Block> consitencyPlus = getConsistencyTag(tag);
+
+            LOGGER.info("   ^- Making C-Plus: " + common);
+            LOGGER.info("   ^- Making Common: " + consitencyPlus);
+
+            getOrCreateTagBuilderFunc.apply(consitencyPlus).add(block);
+
+            if(!ALREADY_MADE_COMMON_TAGS.contains(common)) {
+                getOrCreateTagBuilderFunc.apply(common).addTag(consitencyPlus);
+                ALREADY_MADE_COMMON_TAGS.add(common);
+            }
         }
 
         private static TagKey<Block> getCommonBlockTag(String path){
@@ -394,7 +445,7 @@ public class ConsistencyPlusTagProvider {
         }
 
         private static TagKey<Block> getConsistencyTag(String path){
-            return TagUtil.initBlockTag(path, Registry.BLOCK_KEY);
+            return TagKey.of(Registry.BLOCK_KEY, new Identifier(ConsistencyPlusMain.ID, path));
         }
     }
 }

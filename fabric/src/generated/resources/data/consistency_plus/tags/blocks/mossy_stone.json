@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:mossy_stone_pillar",
+    "consistency_plus:mossy_stone_brick_gate",
+    "consistency_plus:mossy_stone_corner_pillar",
+    "consistency_plus:mossy_chiseled_stone"
+  ]
+}

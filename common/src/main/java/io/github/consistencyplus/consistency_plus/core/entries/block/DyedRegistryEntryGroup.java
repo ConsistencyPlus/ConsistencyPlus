@@ -69,7 +69,9 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
     public String getDyedID(DyeColor color, BlockShapes shapes, BlockTypes type) {
         String id = shapes.addShapes(type.addType(color.toString() + "_" + name), type);
 
-        MasterKey.ULTIMATE_KEY_RING.put(id, MasterKey.createDyedKey(shapes, type, color, this.name));
+        if(!checkset2(CPlusEntries.overrideMap.getOrDefault(id, id))) {
+            MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createDyedKey(shapes, type, color, this.name));
+        }
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

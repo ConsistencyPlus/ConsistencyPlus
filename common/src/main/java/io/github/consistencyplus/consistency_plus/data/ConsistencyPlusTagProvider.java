@@ -320,6 +320,8 @@ public class ConsistencyPlusTagProvider {
 
         private static final Set<TagKey<Block>> ALREADY_MADE_COMMON_TAGS = new HashSet<>();
 
+        private static final HashMap<String, Set<Block>> toBeCreatedTags = new HashMap<>();
+
         public UltimateBlockTagProvider(DataGenerator dataGenerator) {
             super(dataGenerator);
         }
@@ -360,34 +362,37 @@ public class ConsistencyPlusTagProvider {
                 MasterKey key = entry.getValue();
 
                 String material = key.material;
+                String materialDir = "material/" + material + "/";
 
                 applyToBothTags("material/"+ material, block, getOrCreateTagBuilderFunc);
 
                 if(!key.shape.isBase()) {
                     applyToBothTags("block_shape/" + key.shape.toString(), block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.shape.addShapes(material, key.type), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags(materialDir + key.shape.addShapes(material, key.type), block, getOrCreateTagBuilderFunc);
                 }else{
-                    applyToBothTags(key.shape.addShapes(material, BlockTypes.BASE) + "_block", block, getOrCreateTagBuilderFunc);
+                    applyToBothTags("block_shape/" + "block", block, getOrCreateTagBuilderFunc);
+
+                    applyToBothTags(materialDir + key.shape.addShapes(material, BlockTypes.BASE) + "_block", block, getOrCreateTagBuilderFunc);
                 }
 
                 if(!key.type.isBase()) {
                     applyToBothTags("block_type/" + key.type.toString(), block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.type.addType(material), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags(materialDir + key.type.addType(material), block, getOrCreateTagBuilderFunc);
                 }
 
                 if(!key.setModifiers.isBase()) {
                     applyToBothTags("set_modifier/" + key.setModifiers.toString(), block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.setModifiers.addModifier(material), block, getOrCreateTagBuilderFunc);
+                    applyToBothTags(materialDir + key.setModifiers.addModifier(material), block, getOrCreateTagBuilderFunc);
 
                     if(!key.type.isBase()) {
-                        applyToBothTags(key.setModifiers.addModifier(key.type.addType(material)), block, getOrCreateTagBuilderFunc);
+                        applyToBothTags(materialDir + key.setModifiers.addModifier(key.type.addType(material)), block, getOrCreateTagBuilderFunc);
                     }
-
+//
                     if(!key.shape.isBase()){
-                        applyToBothTags(key.setModifiers.addModifier(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
+                        applyToBothTags(materialDir + key.setModifiers.addModifier(key.shape.addShapes(material, key.type)), block, getOrCreateTagBuilderFunc);
                     }
                 }
 
@@ -397,12 +402,12 @@ public class ConsistencyPlusTagProvider {
                     applyToBothTags("oxidization/" + key.oxidization.toString(), block, getOrCreateTagBuilderFunc);
 
                     if(!key.shape.isBase() && !key.type.isBase()) {
-                        applyToBothTags(key.oxidization.addOxidization(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
+                        applyToBothTags(materialDir + key.oxidization.addOxidization(key.shape.addShapes(key.type.addType(material), key.type)), block, getOrCreateTagBuilderFunc);
                     }
                 }
 
                 if(key.isWaxed) {
-                    applyToBothTags("waxed", block, getOrCreateTagBuilderFunc);
+                    applyToBothTags(materialDir + "waxed", block, getOrCreateTagBuilderFunc);
                 }
 
                 //--------------------------------------------------------------------
@@ -410,19 +415,32 @@ public class ConsistencyPlusTagProvider {
                 if(key.dyeColor != null) {
                     applyToBothTags("color/" + key.dyeColor.toString(), block, getOrCreateTagBuilderFunc);
 
-                    applyToBothTags(key.dyeColor.toString() + "_" + material, block, getOrCreateTagBuilderFunc);
+                    applyToBothTags(materialDir + key.dyeColor.toString() + "_" + material, block, getOrCreateTagBuilderFunc);
 
                     if(key.shape != BlockShapes.BLOCK) {
-                        applyToBothTags(key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), block, getOrCreateTagBuilderFunc);
+                        applyToBothTags(materialDir + key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), block, getOrCreateTagBuilderFunc);
                     }
 
                     if(key.type != BlockTypes.BASE){
-                        applyToBothTags(key.type.addType(key.dyeColor.toString() + "_" + material), block, getOrCreateTagBuilderFunc);
+                        applyToBothTags(materialDir + key.type.addType(key.dyeColor.toString() + "_" + material), block, getOrCreateTagBuilderFunc);
                     }
 
                 }
 
                 //--------------------------------------------------------------------
+            }
+
+
+        }
+
+        private static void addToTagMap(String tag, Block block){
+            if(toBeCreatedTags.containsKey(tag)){
+                toBeCreatedTags.get(tag).add(block);
+            }else{
+                Set<Block> blockSet = new HashSet<>();
+                blockSet.add(block);
+
+                toBeCreatedTags.put(tag, blockSet);
             }
         }
 

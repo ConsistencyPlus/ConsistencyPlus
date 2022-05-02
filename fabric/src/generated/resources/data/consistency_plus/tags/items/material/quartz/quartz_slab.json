@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "consistency_plus:cut_quartz_slab",
-    "consistency_plus:polished_quartz_slab",
-    "consistency_plus:quartz_brick_slab",
-    "consistency_plus:quartz_tile_slab"
-  ]
-}

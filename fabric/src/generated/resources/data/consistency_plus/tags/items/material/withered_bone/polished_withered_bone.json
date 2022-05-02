@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:polished_withered_bone_slab",
+    "consistency_plus:polished_withered_bone_stairs",
     "consistency_plus:polished_withered_bone_gate",
     "consistency_plus:polished_withered_bone",
-    "consistency_plus:polished_withered_bone_stairs",
-    "consistency_plus:polished_withered_bone_slab",
     "consistency_plus:polished_withered_bone_wall"
   ]
 }

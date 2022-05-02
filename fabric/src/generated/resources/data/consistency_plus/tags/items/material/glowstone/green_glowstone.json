@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:green_glowstone_stairs",
+    "consistency_plus:green_glowstone",
     "consistency_plus:green_glowstone_slab",
     "consistency_plus:green_glowstone_wall",
-    "consistency_plus:green_glowstone",
     "consistency_plus:green_glowstone_gate"
   ]
 }

@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cut_tuff_slab",
-    "consistency_plus:cut_tuff_stairs",
-    "consistency_plus:cut_tuff_gate",
     "consistency_plus:cut_tuff_wall",
+    "consistency_plus:cut_tuff_slab",
+    "consistency_plus:cut_tuff_gate",
+    "consistency_plus:cut_tuff_stairs",
     "consistency_plus:cut_tuff"
   ]
 }

@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:waxed_exposed_copper_pillar",
     "consistency_plus:exposed_copper_pillar",
-    "consistency_plus:waxed__copper_pillar",
-    "consistency_plus:_copper_pillar",
-    "consistency_plus:weathered_copper_pillar",
-    "consistency_plus:waxed_weathered_copper_pillar",
     "consistency_plus:oxidized_copper_pillar",
-    "consistency_plus:waxed_oxidized_copper_pillar"
+    "consistency_plus:waxed_exposed_copper_pillar",
+    "consistency_plus:waxed_copper_pillar",
+    "consistency_plus:waxed_weathered_copper_pillar",
+    "consistency_plus:waxed_oxidized_copper_pillar",
+    "consistency_plus:weathered_copper_pillar",
+    "consistency_plus:copper_pillar"
   ]
 }

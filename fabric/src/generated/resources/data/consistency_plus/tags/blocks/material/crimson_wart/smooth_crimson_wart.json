@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:smooth_crimson_wart_wall",
     "consistency_plus:smooth_crimson_wart_gate",
-    "consistency_plus:smooth_crimson_wart_stairs",
+    "consistency_plus:smooth_crimson_wart_wall",
     "consistency_plus:smooth_crimson_wart_slab",
+    "consistency_plus:smooth_crimson_wart_stairs",
     "consistency_plus:smooth_crimson_wart"
   ]
 }

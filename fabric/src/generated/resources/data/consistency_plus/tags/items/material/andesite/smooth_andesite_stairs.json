@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:mossy_smooth_andesite_stairs",
+    "consistency_plus:cracked_smooth_andesite_stairs",
+    "consistency_plus:smooth_andesite_stairs"
+  ]
+}

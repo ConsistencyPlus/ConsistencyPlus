@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "consistency_plus:blackstone_tiles",
-    "consistency_plus:smooth_blackstone",
-    "consistency_plus:cut_blackstone",
-    "consistency_plus:cobbled_blackstone"
-  ]
-}

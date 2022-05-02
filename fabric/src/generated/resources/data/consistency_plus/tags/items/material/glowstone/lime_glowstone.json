@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:lime_glowstone_slab",
-    "consistency_plus:lime_glowstone_wall",
-    "consistency_plus:lime_glowstone_stairs",
+    "consistency_plus:lime_glowstone",
     "consistency_plus:lime_glowstone_gate",
-    "consistency_plus:lime_glowstone"
+    "consistency_plus:lime_glowstone_stairs",
+    "consistency_plus:lime_glowstone_wall"
   ]
 }

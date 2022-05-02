@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:cut_soul_sandstone_stairs",
     "consistency_plus:cut_soul_sandstone_slab",
-    "consistency_plus:cut_soul_sandstone",
+    "consistency_plus:cut_soul_sandstone_wall",
     "consistency_plus:cut_soul_sandstone_gate",
-    "consistency_plus:cut_soul_sandstone_wall"
+    "consistency_plus:cut_soul_sandstone"
   ]
 }

@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "consistency_plus:smooth_stone_wall",
-    "consistency_plus:smooth_stone_gate",
-    "consistency_plus:smooth_stone_stairs"
-  ]
-}

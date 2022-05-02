@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:polished_light_gray_glazed_terracotta_wall",
     "consistency_plus:polished_light_gray_glazed_terracotta_slab",
-    "consistency_plus:polished_light_gray_glazed_terracotta_gate",
     "consistency_plus:polished_light_gray_glazed_terracotta",
+    "consistency_plus:polished_light_gray_glazed_terracotta_gate",
     "consistency_plus:polished_light_gray_glazed_terracotta_stairs"
   ]
 }

@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:dripstone_brick_stairs",
-    "consistency_plus:dripstone_brick_slab",
-    "consistency_plus:dripstone_brick_gate",
     "consistency_plus:dripstone_bricks",
-    "consistency_plus:dripstone_brick_wall"
+    "consistency_plus:dripstone_brick_stairs",
+    "consistency_plus:dripstone_brick_wall",
+    "consistency_plus:dripstone_brick_gate",
+    "consistency_plus:dripstone_brick_slab"
   ]
 }

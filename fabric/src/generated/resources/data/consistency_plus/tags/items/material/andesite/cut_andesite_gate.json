@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:cracked_cut_andesite_gate",
+    "consistency_plus:mossy_cut_andesite_gate",
+    "consistency_plus:cut_andesite_gate"
+  ]
+}

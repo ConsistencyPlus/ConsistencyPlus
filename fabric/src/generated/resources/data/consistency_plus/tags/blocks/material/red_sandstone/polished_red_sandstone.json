@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_red_sandstone_stairs",
-    "consistency_plus:polished_red_sandstone_wall",
-    "consistency_plus:polished_red_sandstone_gate",
     "consistency_plus:polished_red_sandstone_slab",
-    "consistency_plus:polished_red_sandstone"
+    "consistency_plus:polished_red_sandstone_wall",
+    "consistency_plus:polished_red_sandstone",
+    "consistency_plus:polished_red_sandstone_stairs",
+    "consistency_plus:polished_red_sandstone_gate"
   ]
 }

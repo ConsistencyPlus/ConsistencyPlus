@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:orange_ice_slab",
     "consistency_plus:orange_ice_wall",
-    "consistency_plus:orange_ice",
+    "consistency_plus:orange_ice_slab",
     "consistency_plus:orange_ice_stairs",
-    "consistency_plus:orange_ice_gate"
+    "consistency_plus:orange_ice_gate",
+    "consistency_plus:orange_ice"
   ]
 }

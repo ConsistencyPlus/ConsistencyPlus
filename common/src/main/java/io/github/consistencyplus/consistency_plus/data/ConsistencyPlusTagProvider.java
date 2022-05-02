@@ -23,8 +23,11 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class ConsistencyPlusTagProvider {
+
+    private static final int MINIMUM_BLOCK_COUNT_FOR_TAG = 5;
 
     public static class DyeableBlockTagProvider extends BlockTagsProvider {
 
@@ -206,23 +209,41 @@ public class ConsistencyPlusTagProvider {
             int removedTags = 0;
             int madeTags = 0;
 
-            for(Map.Entry<String, Set<Block>> entry : toBeCreatedTags.entrySet()){
-                if(entry.getValue().size() > 1){
-                    for(Block block : entry.getValue()){
-                        applyToBothTags(entry.getKey(), block, getOrCreateTagBuilderFunc);
-                    }
-                    madeTags += 2;
+            List<Map.Entry<String, Set<Block>>> entryList = new ArrayList<>(toBeCreatedTags.entrySet());
 
-                }else{
-                    removedTags++;
-                    LOGGER.info("Removing -> [" + entry.getKey() + "] as it only contained a single block.");
+            for(int minBlockCount = 0; minBlockCount < MINIMUM_BLOCK_COUNT_FOR_TAG; minBlockCount++) {
+                for (int index = 0; index < entryList.size(); index++) {
+                    Map.Entry<String, Set<Block>> entry = entryList.get(index);
+
+                    if(entry.getKey().contains("dirt")
+                            || entry.getKey().contains("grass")
+                            || entry.getKey().contains("mycelium")
+                            || Objects.equals(entry.getKey(), "nether")
+                    ){
+                        continue;
+                    }
+
+                    if (entry.getValue().size() < minBlockCount) {
+                        entryList.remove(entry);
+
+                        removedTags++;
+                        LOGGER.info("Removing -> [" + entry.getKey() + "] as it only contained a " + minBlockCount + " block.");
+                    }
                 }
             }
 
+            for(Map.Entry<String, Set<Block>> entry : entryList){
+                for (Block block : entry.getValue()) {
+                    applyToBothTags(entry.getKey(), block, getOrCreateTagBuilderFunc);
+                }
+                madeTags += 2;
+            }
+
+
             LOGGER.info("-------------------------------------------------------------------");
 
-            LOGGER.info("Removed " + removedTags + " tags due to only containing one block.");
-            LOGGER.info("Made " + madeTags + " tags total(Is doubled since were making common tags as well).");
+            LOGGER.info("Removed " + removedTags + " tags due to not meeting the minimum requirements for block count.");
+            LOGGER.info("Made " + madeTags + " tags total(Is already doubled since were making common tags as well).");
 
             LOGGER.info("-------------------------------------------------------------------");
 
@@ -233,7 +254,7 @@ public class ConsistencyPlusTagProvider {
 
                         boolean isNormalBlock = true;
 
-                        LOGGER.info("[CommonBlockTagProvider]: " + identifier + " / " + block);
+                        //LOGGER.info("[CommonBlockTagProvider]: " + identifier + " / " + block);
 
                         String[] splitIdentifier = identifier.getPath().split("_");
                         boolean isCryingObs = false;
@@ -391,23 +412,40 @@ public class ConsistencyPlusTagProvider {
             int removedTags = 0;
             int madeTags = 0;
 
-            for(Map.Entry<String, Set<Item>> entry : toBeCreatedTags.entrySet()){
-                if(entry.getValue().size() > 1){
-                    for(Item item : entry.getValue()){
-                        applyToBothTags(entry.getKey(), item, getOrCreateTagBuilderFunc);
-                    }
-                    madeTags += 2;
+            List<Map.Entry<String, Set<Item>>> entryList = new ArrayList<>(toBeCreatedTags.entrySet());
 
-                }else{
-                    removedTags++;
-                    LOGGER.info("Removing -> [" + entry.getKey() + "] as it only contained a single block.");
+            for(int minBlockCount = 0; minBlockCount < MINIMUM_BLOCK_COUNT_FOR_TAG; minBlockCount++) {
+                for (int index = 0; index < entryList.size(); index++) {
+                    Map.Entry<String, Set<Item>> entry = entryList.get(index);
+
+                    if(entry.getKey().contains("dirt")
+                            || entry.getKey().contains("grass")
+                            || entry.getKey().contains("mycelium")
+                            || Objects.equals(entry.getKey(), "nether")
+                    ){
+                        continue;
+                    }
+
+                    if (entry.getValue().size() < minBlockCount) {
+                        entryList.remove(entry);
+
+                        removedTags++;
+                        LOGGER.info("Removing -> [" + entry.getKey() + "] as it only contained a " + minBlockCount + " block.");
+                    }
                 }
+            }
+
+            for(Map.Entry<String, Set<Item>> entry : entryList){
+                for (Item item : entry.getValue()) {
+                    applyToBothTags(entry.getKey(), item, getOrCreateTagBuilderFunc);
+                }
+                madeTags += 2;
             }
 
             LOGGER.info("-------------------------------------------------------------------");
 
-            LOGGER.info("Removed " + removedTags + " tags due to only containing one block.");
-            LOGGER.info("Made " + madeTags + " tags total(Is doubled since were making common tags as well).");
+            LOGGER.info("Removed " + removedTags + " tags due to not meeting the minimum requirements for block count.");
+            LOGGER.info("Made " + madeTags + " tags total(Is already doubled since were making common tags as well).");
         }
 
         @Override
@@ -445,11 +483,19 @@ public class ConsistencyPlusTagProvider {
             if(!key.shape.isBase()) {
                 addToTagMap("block_shape/" + key.shape.toString(), entry);
 
-                addToTagMap(materialDir + key.shape.addShapes(material, key.type), entry);
+                if(!key.type.isBase()) {
+                    addToTagMap(materialDir + key.shape.addShapes(key.type.addType(material), key.type), entry);
+                }else{
+                    addToTagMap(materialDir + key.shape.addShapes(material, BlockTypes.BASE), entry);
+                }
             }else{
                 addToTagMap("block_shape/" + "block", entry);
 
-                addToTagMap(materialDir + key.shape.addShapes(material, BlockTypes.BASE) + "_block", entry);
+                if(!key.type.isBase()) {
+                    addToTagMap(materialDir + key.shape.addShapes(key.type.addType(material), key.type) + "_block", entry);
+                }else{
+                    addToTagMap(materialDir + key.shape.addShapes(material, BlockTypes.BASE) + "_block", entry);
+                }
             }
 
             //--------------------------------------------------------------------
@@ -497,14 +543,21 @@ public class ConsistencyPlusTagProvider {
 
                 addToTagMap(materialDir + key.dyeColor.toString() + "_" + material, entry);
 
-                if(key.shape != BlockShapes.BLOCK) {
-                    addToTagMap(materialDir + key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), entry);
-                }
+//                if(key.shape != BlockShapes.BLOCK) {
+//                    addToTagMap(materialDir + key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), entry);
+//                }
+//
+//                if(key.type != BlockTypes.BASE){
+//                    addToTagMap(materialDir + key.type.addType(key.dyeColor.toString() + "_" + material), entry);
+//                }
 
-                if(key.type != BlockTypes.BASE){
-                    addToTagMap(materialDir + key.type.addType(key.dyeColor.toString() + "_" + material), entry);
-                }
+            }else{
+                //TODO: ENABLE GLASS TAG WHEN SUCH IS READY
+                if(Objects.equals(material, "terracotta") /* || Objects.equals(material, "glass") */){
+                    addToTagMap("color/" + "plain", entry);
 
+                    addToTagMap(materialDir + "plain" + "_" + material, entry);
+                }
             }
 
             //--------------------------------------------------------------------

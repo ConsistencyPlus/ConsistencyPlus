@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:pink_glowstone_wall",
-    "consistency_plus:pink_glowstone_slab",
     "consistency_plus:pink_glowstone",
+    "consistency_plus:pink_glowstone_gate",
+    "consistency_plus:pink_glowstone_wall",
     "consistency_plus:pink_glowstone_stairs",
-    "consistency_plus:pink_glowstone_gate"
+    "consistency_plus:pink_glowstone_slab"
   ]
 }

@@ -15,8 +15,8 @@ public class ConsistencyPlusDatagen implements DataGeneratorEntrypoint {
 //
 //        fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.DyeableBlockTagProvider(fabricDataGenerator));
 
-        fabricDataGenerator.addProvider(ConsistencyPlusTagProviderFabric.UltimateBlockTagProvider::new);
         fabricDataGenerator.addProvider(ConsistencyPlusTagProviderFabric.UltimateItemTagProvider::new);
+        fabricDataGenerator.addProvider(ConsistencyPlusTagProviderFabric.UltimateBlockTagProvider::new);
 
         //fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.CommonBlockTagProvider(fabricDataGenerator));
 

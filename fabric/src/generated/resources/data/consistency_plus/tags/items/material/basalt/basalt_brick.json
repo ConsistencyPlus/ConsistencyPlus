@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:basalt_brick_gate",
-    "consistency_plus:basalt_brick_stairs",
-    "consistency_plus:basalt_brick_wall",
     "consistency_plus:basalt_brick_slab",
-    "consistency_plus:basalt_bricks"
+    "consistency_plus:basalt_brick_wall",
+    "consistency_plus:basalt_bricks",
+    "consistency_plus:basalt_brick_stairs"
   ]
 }

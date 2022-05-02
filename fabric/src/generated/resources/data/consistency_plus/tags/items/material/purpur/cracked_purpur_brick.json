@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cracked_purpur_brick_slab",
     "consistency_plus:cracked_purpur_brick_wall",
-    "consistency_plus:cracked_purpur_brick_stairs",
-    "consistency_plus:cracked_purpur_brick_gate"
+    "consistency_plus:cracked_purpur_brick_gate",
+    "consistency_plus:cracked_purpur_brick_slab",
+    "consistency_plus:cracked_purpur_brick_stairs"
   ]
 }

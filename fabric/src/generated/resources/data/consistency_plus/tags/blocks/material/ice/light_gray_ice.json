@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:light_gray_ice_gate",
-    "consistency_plus:light_gray_ice_wall",
     "consistency_plus:light_gray_ice",
+    "consistency_plus:light_gray_ice_gate",
+    "consistency_plus:light_gray_ice_slab",
     "consistency_plus:light_gray_ice_stairs",
-    "consistency_plus:light_gray_ice_slab"
+    "consistency_plus:light_gray_ice_wall"
   ]
 }

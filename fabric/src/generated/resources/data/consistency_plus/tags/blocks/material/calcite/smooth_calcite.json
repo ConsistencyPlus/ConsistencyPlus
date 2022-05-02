@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:smooth_calcite_gate",
+    "consistency_plus:smooth_calcite_wall",
+    "consistency_plus:smooth_calcite_slab",
     "consistency_plus:smooth_calcite_stairs",
     "consistency_plus:smooth_calcite",
-    "consistency_plus:smooth_calcite_wall",
-    "consistency_plus:smooth_calcite_slab"
+    "consistency_plus:smooth_calcite_gate"
   ]
 }

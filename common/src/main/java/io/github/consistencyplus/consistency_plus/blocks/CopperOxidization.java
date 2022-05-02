@@ -38,7 +38,7 @@ public enum CopperOxidization {
     }
 
     public String addOxidization(String id) {
-        return toString() + '_' + id;
+        return !isBase() ?  toString() + '_' + id : id;
     }
 
     @Override

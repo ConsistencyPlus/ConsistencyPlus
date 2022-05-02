@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cobbled_dripstone_wall",
     "consistency_plus:cobbled_dripstone_gate",
+    "consistency_plus:cobbled_dripstone_wall",
     "consistency_plus:cobbled_dripstone_slab",
     "consistency_plus:cobbled_dripstone",
     "consistency_plus:cobbled_dripstone_stairs"

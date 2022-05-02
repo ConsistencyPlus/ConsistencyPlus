@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_purpur_stairs",
-    "consistency_plus:polished_purpur_slab",
     "consistency_plus:polished_purpur",
-    "consistency_plus:polished_purpur_gate",
-    "consistency_plus:polished_purpur_wall"
+    "consistency_plus:polished_purpur_wall",
+    "consistency_plus:polished_purpur_slab",
+    "consistency_plus:polished_purpur_stairs",
+    "consistency_plus:polished_purpur_gate"
   ]
 }

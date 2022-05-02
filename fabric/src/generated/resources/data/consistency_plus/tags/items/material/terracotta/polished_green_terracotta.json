@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:polished_green_terracotta_wall",
-    "consistency_plus:polished_green_terracotta_stairs",
     "consistency_plus:polished_green_terracotta_slab",
     "consistency_plus:polished_green_terracotta_gate",
+    "consistency_plus:polished_green_terracotta_stairs",
     "consistency_plus:polished_green_terracotta"
   ]
 }

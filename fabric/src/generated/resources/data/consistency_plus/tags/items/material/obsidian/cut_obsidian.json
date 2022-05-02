@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:cut_obsidian",
     "consistency_plus:cut_obsidian_gate",
-    "consistency_plus:cut_obsidian_slab",
+    "consistency_plus:cut_obsidian_stairs",
     "consistency_plus:cut_obsidian_wall",
-    "consistency_plus:cut_obsidian_stairs"
+    "consistency_plus:cut_obsidian_slab"
   ]
 }

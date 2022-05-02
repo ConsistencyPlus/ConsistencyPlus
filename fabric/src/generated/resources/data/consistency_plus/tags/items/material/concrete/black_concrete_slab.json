@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "consistency_plus:smooth_black_concrete_slab",
-    "consistency_plus:black_concrete_brick_slab",
-    "consistency_plus:cut_black_concrete_slab",
     "consistency_plus:polished_black_concrete_slab",
-    "consistency_plus:black_concrete_tile_slab",
-    "consistency_plus:black_concrete_slab"
+    "consistency_plus:cut_black_concrete_slab",
+    "consistency_plus:black_concrete_slab",
+    "consistency_plus:black_concrete_brick_slab",
+    "consistency_plus:black_concrete_tile_slab"
   ]
 }

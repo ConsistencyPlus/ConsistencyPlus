@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cut_crimson_wart",
     "consistency_plus:smooth_crimson_wart",
     "consistency_plus:crimson_wart_tiles",
+    "consistency_plus:cut_crimson_wart",
     "consistency_plus:polished_crimson_wart"
   ]
 }

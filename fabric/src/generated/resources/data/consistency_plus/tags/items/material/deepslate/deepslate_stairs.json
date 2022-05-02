@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:deepslate_stairs",
-    "consistency_plus:smooth_deepslate_stairs",
     "consistency_plus:cut_deepslate_stairs",
+    "consistency_plus:cracked_deepslate_tile_stairs",
     "consistency_plus:cracked_deepslate_brick_stairs",
-    "consistency_plus:cracked_deepslate_tile_stairs"
+    "consistency_plus:smooth_deepslate_stairs"
   ]
 }

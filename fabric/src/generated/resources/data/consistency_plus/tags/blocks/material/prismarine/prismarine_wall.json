@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:prismarine_brick_wall",
-    "consistency_plus:cut_prismarine_wall",
-    "consistency_plus:polished_prismarine_wall",
+    "consistency_plus:prismarine_tile_wall",
     "consistency_plus:smooth_prismarine_wall",
-    "consistency_plus:prismarine_tile_wall"
+    "consistency_plus:polished_prismarine_wall",
+    "consistency_plus:cut_prismarine_wall",
+    "consistency_plus:prismarine_brick_wall"
   ]
 }

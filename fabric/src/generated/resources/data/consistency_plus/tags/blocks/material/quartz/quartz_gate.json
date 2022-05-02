@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:quartz_gate",
     "consistency_plus:smooth_quartz_gate",
-    "consistency_plus:cut_quartz_gate",
+    "consistency_plus:quartz_gate",
+    "consistency_plus:quartz_tile_gate",
     "consistency_plus:quartz_brick_gate",
-    "consistency_plus:polished_quartz_gate",
-    "consistency_plus:quartz_tile_gate"
+    "consistency_plus:cut_quartz_gate",
+    "consistency_plus:polished_quartz_gate"
   ]
 }

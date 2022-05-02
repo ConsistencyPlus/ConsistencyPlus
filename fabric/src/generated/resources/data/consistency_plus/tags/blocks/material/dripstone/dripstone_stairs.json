@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_dripstone_stairs",
-    "consistency_plus:dripstone_tile_stairs",
     "consistency_plus:dripstone_brick_stairs",
-    "consistency_plus:dripstone_stairs",
-    "consistency_plus:cobbled_dripstone_stairs",
+    "consistency_plus:dripstone_tile_stairs",
+    "consistency_plus:cut_dripstone_stairs",
     "consistency_plus:smooth_dripstone_stairs",
-    "consistency_plus:cut_dripstone_stairs"
+    "consistency_plus:polished_dripstone_stairs",
+    "consistency_plus:dripstone_stairs",
+    "consistency_plus:cobbled_dripstone_stairs"
   ]
 }

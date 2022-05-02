@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:smooth_warped_wart",
-    "consistency_plus:polished_warped_wart",
-    "consistency_plus:warped_wart_bricks",
     "consistency_plus:cut_warped_wart",
+    "consistency_plus:warped_wart_bricks",
+    "consistency_plus:polished_warped_wart",
     "consistency_plus:warped_wart_tiles"
   ]
 }

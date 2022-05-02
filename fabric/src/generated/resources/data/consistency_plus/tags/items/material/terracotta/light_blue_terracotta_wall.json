@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     "consistency_plus:cobbled_light_blue_terracotta_wall",
-    "consistency_plus:light_blue_terracotta_brick_wall",
+    "consistency_plus:light_blue_terracotta_tile_wall",
     "consistency_plus:smooth_light_blue_terracotta_wall",
     "consistency_plus:polished_light_blue_terracotta_wall",
-    "consistency_plus:light_blue_terracotta_tile_wall",
-    "consistency_plus:cut_light_blue_terracotta_wall",
-    "consistency_plus:light_blue_terracotta_wall"
+    "consistency_plus:light_blue_terracotta_wall",
+    "consistency_plus:light_blue_terracotta_brick_wall",
+    "consistency_plus:cut_light_blue_terracotta_wall"
   ]
 }

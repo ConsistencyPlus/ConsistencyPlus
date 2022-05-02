@@ -1,21 +1,21 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:mossy_andesite_tiles",
-    "consistency_plus:cracked_smooth_andesite",
-    "consistency_plus:cracked_andesite_tiles",
-    "consistency_plus:cut_andesite",
-    "consistency_plus:andesite_tiles",
-    "consistency_plus:mossy_andesite_bricks",
     "consistency_plus:smooth_andesite",
-    "consistency_plus:mossy_andesite",
     "consistency_plus:andesite_bricks",
+    "consistency_plus:mossy_andesite",
+    "consistency_plus:cracked_andesite_tiles",
+    "consistency_plus:cracked_polished_andesite",
     "consistency_plus:cobbled_andesite",
+    "consistency_plus:andesite_tiles",
+    "consistency_plus:mossy_smooth_andesite",
     "consistency_plus:mossy_cut_andesite",
     "consistency_plus:cracked_andesite_bricks",
-    "consistency_plus:mossy_smooth_andesite",
-    "consistency_plus:cracked_polished_andesite",
+    "consistency_plus:cracked_smooth_andesite",
+    "consistency_plus:mossy_andesite_bricks",
+    "consistency_plus:mossy_polished_andesite",
     "consistency_plus:cracked_cut_andesite",
-    "consistency_plus:mossy_polished_andesite"
+    "consistency_plus:cut_andesite",
+    "consistency_plus:mossy_andesite_tiles"
   ]
 }

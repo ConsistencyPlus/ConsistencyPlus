@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:cut_withered_bone",
     "consistency_plus:withered_bone_tiles",
     "consistency_plus:smooth_withered_bone",
+    "consistency_plus:withered_bone_block",
     "consistency_plus:withered_bone_bricks",
-    "consistency_plus:polished_withered_bone",
-    "consistency_plus:cut_withered_bone",
-    "consistency_plus:withered_bone_block"
+    "consistency_plus:polished_withered_bone"
   ]
 }

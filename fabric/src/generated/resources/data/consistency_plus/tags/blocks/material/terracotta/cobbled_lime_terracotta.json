@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cobbled_lime_terracotta_gate",
-    "consistency_plus:cobbled_lime_terracotta",
     "consistency_plus:cobbled_lime_terracotta_slab",
+    "consistency_plus:cobbled_lime_terracotta",
+    "consistency_plus:cobbled_lime_terracotta_gate",
     "consistency_plus:cobbled_lime_terracotta_stairs",
     "consistency_plus:cobbled_lime_terracotta_wall"
   ]

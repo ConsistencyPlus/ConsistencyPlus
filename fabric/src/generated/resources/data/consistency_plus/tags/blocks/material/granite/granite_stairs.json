@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:granite_tile_stairs",
+    "consistency_plus:cobbled_granite_stairs",
     "consistency_plus:smooth_granite_stairs",
     "consistency_plus:granite_brick_stairs",
     "consistency_plus:cut_granite_stairs",
-    "consistency_plus:cobbled_granite_stairs"
+    "consistency_plus:granite_tile_stairs"
   ]
 }

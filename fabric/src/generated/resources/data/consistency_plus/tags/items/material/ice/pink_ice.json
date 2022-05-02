@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:pink_ice_wall",
-    "consistency_plus:pink_ice",
-    "consistency_plus:pink_ice_gate",
+    "consistency_plus:pink_ice_stairs",
     "consistency_plus:pink_ice_slab",
-    "consistency_plus:pink_ice_stairs"
+    "consistency_plus:pink_ice_wall",
+    "consistency_plus:pink_ice_gate",
+    "consistency_plus:pink_ice"
   ]
 }

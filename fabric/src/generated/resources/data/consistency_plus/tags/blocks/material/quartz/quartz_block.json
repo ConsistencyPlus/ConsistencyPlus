@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:quartz_tiles",
     "consistency_plus:polished_quartz",
-    "consistency_plus:cut_quartz",
-    "consistency_plus:quartz_tiles"
+    "consistency_plus:cut_quartz"
   ]
 }

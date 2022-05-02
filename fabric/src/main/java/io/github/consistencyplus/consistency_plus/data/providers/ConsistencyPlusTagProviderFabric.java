@@ -3,10 +3,6 @@ package io.github.consistencyplus.consistency_plus.data.providers;
 import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTagProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.server.BlockTagProvider;
-
-import javax.annotation.Nullable;
 
 public class ConsistencyPlusTagProviderFabric {
 

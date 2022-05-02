@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:smooth_orange_concrete",
+    "consistency_plus:smooth_orange_concrete_wall",
     "consistency_plus:smooth_orange_concrete_slab",
     "consistency_plus:smooth_orange_concrete_gate",
-    "consistency_plus:smooth_orange_concrete_stairs",
-    "consistency_plus:smooth_orange_concrete_wall"
+    "consistency_plus:smooth_orange_concrete_stairs"
   ]
 }

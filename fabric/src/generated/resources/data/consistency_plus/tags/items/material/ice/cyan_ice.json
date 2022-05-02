@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:cyan_ice_wall",
     "consistency_plus:cyan_ice_stairs",
-    "consistency_plus:cyan_ice_gate",
     "consistency_plus:cyan_ice",
+    "consistency_plus:cyan_ice_gate",
     "consistency_plus:cyan_ice_slab"
   ]
 }

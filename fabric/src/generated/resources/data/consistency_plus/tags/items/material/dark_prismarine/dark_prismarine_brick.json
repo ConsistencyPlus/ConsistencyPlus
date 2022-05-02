@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:dark_prismarine_brick_wall",
+    "consistency_plus:dark_prismarine_bricks",
     "consistency_plus:dark_prismarine_brick_slab",
     "consistency_plus:dark_prismarine_brick_gate",
-    "consistency_plus:dark_prismarine_brick_stairs",
-    "consistency_plus:dark_prismarine_bricks"
+    "consistency_plus:dark_prismarine_brick_stairs"
   ]
 }

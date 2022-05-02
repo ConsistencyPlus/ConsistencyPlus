@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cobbled_netherrack_gate",
-    "consistency_plus:cobbled_netherrack",
-    "consistency_plus:cobbled_netherrack_slab",
     "consistency_plus:cobbled_netherrack_wall",
-    "consistency_plus:cobbled_netherrack_stairs"
+    "consistency_plus:cobbled_netherrack_stairs",
+    "consistency_plus:cobbled_netherrack_gate",
+    "consistency_plus:cobbled_netherrack_slab",
+    "consistency_plus:cobbled_netherrack"
   ]
 }

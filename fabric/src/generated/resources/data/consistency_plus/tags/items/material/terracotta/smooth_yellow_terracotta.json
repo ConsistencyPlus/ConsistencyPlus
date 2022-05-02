@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:smooth_yellow_terracotta_wall",
     "consistency_plus:smooth_yellow_terracotta_stairs",
+    "consistency_plus:smooth_yellow_terracotta_wall",
     "consistency_plus:smooth_yellow_terracotta_gate",
     "consistency_plus:smooth_yellow_terracotta",
     "consistency_plus:smooth_yellow_terracotta_slab"

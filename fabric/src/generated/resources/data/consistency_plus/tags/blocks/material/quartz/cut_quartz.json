@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cut_quartz",
+    "consistency_plus:cut_quartz_stairs",
+    "consistency_plus:cut_quartz_wall",
     "consistency_plus:cut_quartz_slab",
     "consistency_plus:cut_quartz_gate",
-    "consistency_plus:cut_quartz_wall",
-    "consistency_plus:cut_quartz_stairs"
+    "consistency_plus:cut_quartz"
   ]
 }

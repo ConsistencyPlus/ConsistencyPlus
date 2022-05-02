@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:green_concrete_gate",
-    "consistency_plus:green_concrete_tile_gate",
-    "consistency_plus:polished_green_concrete_gate",
     "consistency_plus:cut_green_concrete_gate",
+    "consistency_plus:green_concrete_tile_gate",
+    "consistency_plus:green_concrete_brick_gate",
     "consistency_plus:smooth_green_concrete_gate",
-    "consistency_plus:green_concrete_brick_gate"
+    "consistency_plus:polished_green_concrete_gate",
+    "consistency_plus:green_concrete_gate"
   ]
 }

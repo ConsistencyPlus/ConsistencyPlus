@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:red_glowstone_gate",
     "consistency_plus:red_glowstone_stairs",
+    "consistency_plus:red_glowstone_gate",
     "consistency_plus:red_glowstone_slab",
     "consistency_plus:red_glowstone_wall",
     "consistency_plus:red_glowstone"

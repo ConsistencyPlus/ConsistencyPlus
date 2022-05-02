@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:cut_deepslate_slab",
-    "consistency_plus:cut_deepslate",
     "consistency_plus:cut_deepslate_stairs",
     "consistency_plus:cut_deepslate_wall",
+    "consistency_plus:cut_deepslate",
     "consistency_plus:cut_deepslate_gate"
   ]
 }

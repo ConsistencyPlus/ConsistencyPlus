@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "consistency_plus:granite_brick_wall",
-    "consistency_plus:granite_bricks",
     "consistency_plus:granite_brick_slab",
+    "consistency_plus:granite_bricks",
     "consistency_plus:granite_brick_gate",
     "consistency_plus:granite_brick_stairs"
   ]

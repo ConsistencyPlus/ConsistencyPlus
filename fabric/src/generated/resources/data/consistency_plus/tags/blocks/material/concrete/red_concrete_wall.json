@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:red_concrete_brick_wall",
     "consistency_plus:smooth_red_concrete_wall",
-    "consistency_plus:cut_red_concrete_wall",
-    "consistency_plus:red_concrete_tile_wall",
     "consistency_plus:polished_red_concrete_wall",
-    "consistency_plus:red_concrete_wall",
-    "consistency_plus:red_concrete_brick_wall"
+    "consistency_plus:red_concrete_tile_wall",
+    "consistency_plus:cut_red_concrete_wall",
+    "consistency_plus:red_concrete_wall"
   ]
 }

@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "consistency_plus:polished_brown_concrete_gate",
-    "consistency_plus:brown_concrete_gate",
     "consistency_plus:smooth_brown_concrete_gate",
     "consistency_plus:cut_brown_concrete_gate",
     "consistency_plus:brown_concrete_tile_gate",
+    "consistency_plus:brown_concrete_gate",
     "consistency_plus:brown_concrete_brick_gate"
   ]
 }

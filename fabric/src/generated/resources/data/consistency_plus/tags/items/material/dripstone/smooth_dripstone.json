@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:smooth_dripstone_gate",
     "consistency_plus:smooth_dripstone_wall",
-    "consistency_plus:smooth_dripstone_stairs",
+    "consistency_plus:smooth_dripstone_slab",
     "consistency_plus:smooth_dripstone",
-    "consistency_plus:smooth_dripstone_slab"
+    "consistency_plus:smooth_dripstone_stairs"
   ]
 }

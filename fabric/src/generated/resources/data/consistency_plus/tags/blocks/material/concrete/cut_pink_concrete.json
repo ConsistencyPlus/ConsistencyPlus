@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:cut_pink_concrete_wall",
     "consistency_plus:cut_pink_concrete_slab",
-    "consistency_plus:cut_pink_concrete_stairs",
+    "consistency_plus:cut_pink_concrete_gate",
     "consistency_plus:cut_pink_concrete",
-    "consistency_plus:cut_pink_concrete_gate"
+    "consistency_plus:cut_pink_concrete_stairs"
   ]
 }

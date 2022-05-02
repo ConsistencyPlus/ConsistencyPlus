@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:oxidized_copper_brick_stairs",
-    "consistency_plus:waxed_oxidized_copper_brick_stairs"
+    "consistency_plus:waxed_oxidized_copper_brick_stairs",
+    "consistency_plus:oxidized_copper_brick_stairs"
   ]
 }

@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:dark_prismarine_tile_gate",
-    "consistency_plus:polished_dark_prismarine_gate",
     "consistency_plus:smooth_dark_prismarine_gate",
+    "consistency_plus:cut_dark_prismarine_gate",
     "consistency_plus:dark_prismarine_brick_gate",
+    "consistency_plus:polished_dark_prismarine_gate",
     "consistency_plus:dark_prismarine_gate",
-    "consistency_plus:cut_dark_prismarine_gate"
+    "consistency_plus:dark_prismarine_tile_gate"
   ]
 }

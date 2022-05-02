@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:basalt_wall",
-    "consistency_plus:basalt_tile_wall",
     "consistency_plus:smooth_basalt_wall",
+    "consistency_plus:basalt_tile_wall",
     "consistency_plus:polished_basalt_wall",
-    "consistency_plus:cobbled_basalt_wall",
+    "consistency_plus:basalt_brick_wall",
     "consistency_plus:cut_basalt_wall",
-    "consistency_plus:basalt_brick_wall"
+    "consistency_plus:cobbled_basalt_wall",
+    "consistency_plus:basalt_wall"
   ]
 }

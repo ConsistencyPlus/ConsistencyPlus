@@ -1,21 +1,21 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:waxed_weathered_copper_tile_gate",
+    "consistency_plus:waxed__copper_tile_gate",
     "consistency_plus:waxed_weathered_copper_tile_wall",
     "consistency_plus:oxidized_copper_tile_wall",
-    "consistency_plus:waxed_oxidized_copper_tile_gate",
     "consistency_plus:waxed_oxidized_copper_tile_wall",
-    "consistency_plus:weathered_copper_tile_gate",
-    "consistency_plus:waxed_exposed_copper_tile_gate",
-    "consistency_plus:exposed_copper_tile_gate",
-    "consistency_plus:waxed__copper_tile_wall",
+    "consistency_plus:waxed_weathered_copper_tile_gate",
+    "consistency_plus:_copper_tile_wall",
+    "consistency_plus:waxed_oxidized_copper_tile_gate",
     "consistency_plus:exposed_copper_tile_wall",
-    "consistency_plus:waxed__copper_tile_gate",
     "consistency_plus:oxidized_copper_tile_gate",
     "consistency_plus:waxed_exposed_copper_tile_wall",
-    "consistency_plus:_copper_tile_wall",
+    "consistency_plus:waxed_exposed_copper_tile_gate",
+    "consistency_plus:weathered_copper_tile_wall",
     "consistency_plus:_copper_tile_gate",
-    "consistency_plus:weathered_copper_tile_wall"
+    "consistency_plus:exposed_copper_tile_gate",
+    "consistency_plus:weathered_copper_tile_gate",
+    "consistency_plus:waxed__copper_tile_wall"
   ]
 }

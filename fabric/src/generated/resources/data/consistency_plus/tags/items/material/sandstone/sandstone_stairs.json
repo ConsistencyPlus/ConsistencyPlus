@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "consistency_plus:cut_sandstone_stairs",
-    "consistency_plus:sandstone_brick_stairs",
+    "consistency_plus:polished_sandstone_stairs",
     "consistency_plus:cobbled_sandstone_stairs",
-    "consistency_plus:sandstone_tile_stairs",
-    "consistency_plus:polished_sandstone_stairs"
+    "consistency_plus:sandstone_brick_stairs",
+    "consistency_plus:sandstone_tile_stairs"
   ]
 }

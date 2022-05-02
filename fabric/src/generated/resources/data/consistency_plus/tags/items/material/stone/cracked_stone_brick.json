@@ -3,7 +3,7 @@
   "values": [
     "consistency_plus:cracked_stone_brick_slab",
     "consistency_plus:cracked_stone_brick_gate",
-    "consistency_plus:cracked_stone_brick_wall",
-    "consistency_plus:cracked_stone_brick_stairs"
+    "consistency_plus:cracked_stone_brick_stairs",
+    "consistency_plus:cracked_stone_brick_wall"
   ]
 }

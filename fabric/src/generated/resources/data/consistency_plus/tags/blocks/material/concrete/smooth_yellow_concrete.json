@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:smooth_yellow_concrete_slab",
-    "consistency_plus:smooth_yellow_concrete_stairs",
-    "consistency_plus:smooth_yellow_concrete_gate",
     "consistency_plus:smooth_yellow_concrete",
+    "consistency_plus:smooth_yellow_concrete_slab",
+    "consistency_plus:smooth_yellow_concrete_gate",
+    "consistency_plus:smooth_yellow_concrete_stairs",
     "consistency_plus:smooth_yellow_concrete_wall"
   ]
 }

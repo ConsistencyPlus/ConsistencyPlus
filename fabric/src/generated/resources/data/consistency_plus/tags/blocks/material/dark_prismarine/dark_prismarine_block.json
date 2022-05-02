@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cut_dark_prismarine",
-    "consistency_plus:dark_prismarine_bricks",
     "consistency_plus:smooth_dark_prismarine",
+    "consistency_plus:dark_prismarine_tiles",
     "consistency_plus:polished_dark_prismarine",
-    "consistency_plus:dark_prismarine_tiles"
+    "consistency_plus:dark_prismarine_bricks",
+    "consistency_plus:cut_dark_prismarine"
   ]
 }

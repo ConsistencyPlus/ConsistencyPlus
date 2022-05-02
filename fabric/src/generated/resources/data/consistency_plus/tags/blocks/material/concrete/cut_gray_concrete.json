@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cut_gray_concrete_stairs",
     "consistency_plus:cut_gray_concrete_slab",
     "consistency_plus:cut_gray_concrete",
     "consistency_plus:cut_gray_concrete_wall",
+    "consistency_plus:cut_gray_concrete_stairs",
     "consistency_plus:cut_gray_concrete_gate"
   ]
 }

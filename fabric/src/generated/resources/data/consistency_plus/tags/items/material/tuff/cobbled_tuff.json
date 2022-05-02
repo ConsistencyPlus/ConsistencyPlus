@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cobbled_tuff",
-    "consistency_plus:cobbled_tuff_wall",
-    "consistency_plus:cobbled_tuff_stairs",
     "consistency_plus:cobbled_tuff_slab",
-    "consistency_plus:cobbled_tuff_gate"
+    "consistency_plus:cobbled_tuff_stairs",
+    "consistency_plus:cobbled_tuff",
+    "consistency_plus:cobbled_tuff_gate",
+    "consistency_plus:cobbled_tuff_wall"
   ]
 }

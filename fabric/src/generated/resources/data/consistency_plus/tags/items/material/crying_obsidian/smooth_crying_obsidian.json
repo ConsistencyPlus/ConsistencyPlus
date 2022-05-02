@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:smooth_crying_obsidian_wall",
     "consistency_plus:smooth_crying_obsidian_gate",
     "consistency_plus:smooth_crying_obsidian_slab",
     "consistency_plus:smooth_crying_obsidian",
-    "consistency_plus:smooth_crying_obsidian_stairs",
-    "consistency_plus:smooth_crying_obsidian_wall"
+    "consistency_plus:smooth_crying_obsidian_stairs"
   ]
 }

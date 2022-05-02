@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:waxed_exposed_polished_copper_stairs",
-    "consistency_plus:exposed_polished_copper_stairs"
+    "consistency_plus:exposed_polished_copper_stairs",
+    "consistency_plus:waxed_exposed_polished_copper_stairs"
   ]
 }

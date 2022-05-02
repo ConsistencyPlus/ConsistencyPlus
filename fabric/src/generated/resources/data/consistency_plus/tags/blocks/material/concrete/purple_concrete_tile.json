@@ -3,8 +3,8 @@
   "values": [
     "consistency_plus:purple_concrete_tile_gate",
     "consistency_plus:purple_concrete_tile_wall",
+    "consistency_plus:purple_concrete_tiles",
     "consistency_plus:purple_concrete_tile_slab",
-    "consistency_plus:purple_concrete_tile_stairs",
-    "consistency_plus:purple_concrete_tiles"
+    "consistency_plus:purple_concrete_tile_stairs"
   ]
 }

@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
+    "consistency_plus:smooth_magenta_concrete_stairs",
+    "consistency_plus:cut_magenta_concrete_stairs",
+    "consistency_plus:polished_magenta_concrete_stairs",
     "consistency_plus:magenta_concrete_tile_stairs",
     "consistency_plus:magenta_concrete_brick_stairs",
-    "consistency_plus:smooth_magenta_concrete_stairs",
-    "consistency_plus:polished_magenta_concrete_stairs",
-    "consistency_plus:cut_magenta_concrete_stairs",
     "consistency_plus:magenta_concrete_stairs"
   ]
 }

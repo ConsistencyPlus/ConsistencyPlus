@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cobbled_cyan_terracotta_stairs",
-    "consistency_plus:cobbled_cyan_terracotta",
     "consistency_plus:cobbled_cyan_terracotta_slab",
+    "consistency_plus:cobbled_cyan_terracotta",
+    "consistency_plus:cobbled_cyan_terracotta_stairs",
     "consistency_plus:cobbled_cyan_terracotta_gate",
     "consistency_plus:cobbled_cyan_terracotta_wall"
   ]

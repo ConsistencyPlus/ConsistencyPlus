@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "consistency_plus:calcite_bricks",
-    "consistency_plus:calcite_tiles",
     "consistency_plus:polished_calcite",
-    "consistency_plus:cut_calcite",
     "consistency_plus:smooth_calcite",
-    "consistency_plus:cobbled_calcite"
+    "consistency_plus:cobbled_calcite",
+    "consistency_plus:calcite_tiles",
+    "consistency_plus:cut_calcite"
   ]
 }

@@ -3,7 +3,7 @@ package io.github.consistencyplus.consistency_plus;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.data.providers.ConsistencyPlusTagProviderForge;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.server.BlockTagProvider;
+import net.minecraft.data.server.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -20,10 +20,10 @@ public class ConsistencyPlusDatagen {
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 //            gen.addProvider(new ConsistencyPlusTagProviderForge.DyeableBlockTagProviderImpl(gen, ConsistencyPlusMain.ID, existingFileHelper));
 
-            BlockTagProvider tagProvider = new ConsistencyPlusTagProviderForge.UltimateBlockTagProvider(gen, ConsistencyPlusMain.ID, existingFileHelper);
-
-            gen.addProvider(tagProvider);
-            gen.addProvider(new ConsistencyPlusTagProviderForge.UltimateItemTagProvider(gen, tagProvider, ConsistencyPlusMain.ID, existingFileHelper));
+//            BlockTagsProvider tagProvider = new ConsistencyPlusTagProviderForge.UltimateBlockTagProvider(gen, ConsistencyPlusMain.ID, existingFileHelper);
+//
+//            gen.install(tagProvider);
+//            gen.install(new ConsistencyPlusTagProviderForge.UltimateItemTagProvider(gen, tagProvider, ConsistencyPlusMain.ID, existingFileHelper));
 
             //gen.addProvider(new ConsistencyPlusTagProviderForge.CommonBlockTagProviderImpl(gen, ConsistencyPlusMain.ID, existingFileHelper));
         }

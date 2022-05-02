@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:lime_ice_stairs",
     "consistency_plus:lime_ice_gate",
     "consistency_plus:lime_ice_slab",
     "consistency_plus:lime_ice",
+    "consistency_plus:lime_ice_stairs",
     "consistency_plus:lime_ice_wall"
   ]
 }

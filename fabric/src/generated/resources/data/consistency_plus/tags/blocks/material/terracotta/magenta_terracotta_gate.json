@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:cut_magenta_terracotta_gate",
     "consistency_plus:polished_magenta_terracotta_gate",
+    "consistency_plus:cut_magenta_terracotta_gate",
+    "consistency_plus:cobbled_magenta_terracotta_gate",
     "consistency_plus:magenta_terracotta_gate",
-    "consistency_plus:magenta_terracotta_brick_gate",
-    "consistency_plus:smooth_magenta_terracotta_gate",
     "consistency_plus:magenta_terracotta_tile_gate",
-    "consistency_plus:cobbled_magenta_terracotta_gate"
+    "consistency_plus:magenta_terracotta_brick_gate",
+    "consistency_plus:smooth_magenta_terracotta_gate"
   ]
 }

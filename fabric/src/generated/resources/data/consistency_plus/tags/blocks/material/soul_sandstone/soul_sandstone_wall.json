@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     "consistency_plus:soul_sandstone_brick_wall",
-    "consistency_plus:soul_sandstone_tile_wall",
-    "consistency_plus:smooth_soul_sandstone_wall",
+    "consistency_plus:polished_soul_sandstone_wall",
+    "consistency_plus:cobbled_soul_sandstone_wall",
     "consistency_plus:cut_soul_sandstone_wall",
     "consistency_plus:soul_sandstone_wall",
-    "consistency_plus:cobbled_soul_sandstone_wall",
-    "consistency_plus:polished_soul_sandstone_wall"
+    "consistency_plus:soul_sandstone_tile_wall",
+    "consistency_plus:smooth_soul_sandstone_wall"
   ]
 }

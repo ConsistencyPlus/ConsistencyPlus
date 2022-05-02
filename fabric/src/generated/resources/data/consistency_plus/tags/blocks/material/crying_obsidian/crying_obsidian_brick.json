@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:crying_obsidian_brick_wall",
-    "consistency_plus:crying_obsidian_brick_gate",
     "consistency_plus:crying_obsidian_brick_stairs",
     "consistency_plus:crying_obsidian_bricks",
-    "consistency_plus:crying_obsidian_brick_slab"
+    "consistency_plus:crying_obsidian_brick_slab",
+    "consistency_plus:crying_obsidian_brick_wall",
+    "consistency_plus:crying_obsidian_brick_gate"
   ]
 }

@@ -5,10 +5,11 @@ import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.server.AbstractTagProvider;
-import net.minecraft.data.server.BlockTagProvider;
+import net.minecraft.data.server.BlockTagsProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.tag.BlockTags;
@@ -25,7 +26,7 @@ import java.util.function.Function;
 
 public class ConsistencyPlusTagProvider {
 
-    public static class DyeableBlockTagProvider extends BlockTagProvider {
+    public static class DyeableBlockTagProvider extends BlockTagsProvider {
 
         public DyeableBlockTagProvider(DataGenerator dataGenerator) {
             super(dataGenerator);
@@ -225,7 +226,7 @@ public class ConsistencyPlusTagProvider {
 
             LOGGER.info("-------------------------------------------------------------------");
 
-            Registry.BLOCK.getEntrySet().stream().filter((entry) -> Objects.equals(entry.getKey().getValue().getNamespace(), ConsistencyPlusMain.ID))
+            Registry.BLOCK.getEntries().stream().filter((entry) -> Objects.equals(entry.getKey().getValue().getNamespace(), ConsistencyPlusMain.ID))
                     .forEach((entry) -> {
                         Identifier identifier = entry.getKey().getValue();
                         Block block = entry.getValue();

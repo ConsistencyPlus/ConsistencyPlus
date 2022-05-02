@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_prismarine",
     "consistency_plus:cut_prismarine",
+    "consistency_plus:polished_prismarine",
     "consistency_plus:smooth_prismarine",
     "consistency_plus:prismarine_tiles"
   ]

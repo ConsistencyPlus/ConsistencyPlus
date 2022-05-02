@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "consistency_plus:polished_black_concrete_wall",
     "consistency_plus:cut_black_concrete_wall",
-    "consistency_plus:black_concrete_tile_wall",
-    "consistency_plus:smooth_black_concrete_wall",
     "consistency_plus:black_concrete_wall",
+    "consistency_plus:black_concrete_tile_wall",
+    "consistency_plus:polished_black_concrete_wall",
+    "consistency_plus:smooth_black_concrete_wall",
     "consistency_plus:black_concrete_brick_wall"
   ]
 }

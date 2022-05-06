@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:material/netherrack"
+    "#consistency_plus:material/netherrack",
+    "minecraft:netherrack"
   ]
 }

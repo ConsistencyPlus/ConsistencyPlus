@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:material/purpur"
+    "#consistency_plus:material/purpur",
+    "minecraft:purpur_pillar"
   ]
 }

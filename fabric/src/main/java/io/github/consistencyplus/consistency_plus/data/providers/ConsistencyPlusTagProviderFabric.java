@@ -6,18 +6,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 
 public class ConsistencyPlusTagProviderFabric {
 
-    public static class DyeableBlockTagProvider extends FabricTagProvider.BlockTagProvider {
-
-        public DyeableBlockTagProvider(FabricDataGenerator dataGenerator) {
-            super(dataGenerator);
-        }
-
-        @Override
-        protected void generateTags() {
-            ConsistencyPlusTagProvider.DyeableBlockTagProvider.createAndFillTag(this::getOrCreateTagBuilder);
-        }
-    }
-
     public static class UltimateBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         public UltimateBlockTagProvider(FabricDataGenerator dataGenerator) {

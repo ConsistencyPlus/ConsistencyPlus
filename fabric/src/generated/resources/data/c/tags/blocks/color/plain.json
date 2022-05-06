@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:color/plain"
+    "#consistency_plus:color/plain",
+    "minecraft:terracotta",
+    "minecraft:glowstone"
   ]
 }

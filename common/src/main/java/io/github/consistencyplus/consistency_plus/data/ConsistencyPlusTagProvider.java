@@ -23,193 +23,37 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class ConsistencyPlusTagProvider {
 
     private static final int MINIMUM_BLOCK_COUNT_FOR_TAG = 5;
-
-    public static class DyeableBlockTagProvider extends BlockTagsProvider {
-
-        public DyeableBlockTagProvider(DataGenerator dataGenerator) {
-            super(dataGenerator);
-        }
-
-        private static final Logger LOGGER = LogManager.getLogger(DyeableBlockTagProvider.class);
-
-        private static final DyeColor[] DYE_VALUES = DyeColor.values();
-
-        private static final List<String> BLOCK_PREFIXES = List.of("cobbled", "smooth", "cut", "chiseled", "carved", "polished");
-
-        private static final Map<String, String> BLOCK_SUFFIXES = Map.of(
-                "brick", "bricks",
-                "tile", "tiles",
-                "corner", "corner_pillar",
-                "pillar", "pillar",
-                "glass", "glass");
-
-        private static final Map<String, String> BLOCK_TYPE = Map.of(
-                "gates", "gate",
-                "slabs", "slab",
-                "stairs", "stairs",
-                "walls", "wall");
-
-        private static final Map<String, Identifier> TERRACOTA_BRICK_REMAP = Map.of(
-                "brick", new Identifier("bricks"),
-                "slabs", new Identifier("brick_slab"),
-                "stairs", new Identifier("brick_stairs"),
-                "walls", new Identifier("brick_wall"),
-                "gates", new Identifier(ConsistencyPlusMain.ID, "brick_gate"));
-
-        protected void configure() {
-        }
-
-        public static void createAndFillTag(Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc) {
-            ConsistencyPlusTags.DyeableBlocks.ALL_DYEABLE_BLOCK_TAGS.forEach(identified -> createAndFillTags(identified, getOrCreateTagBuilderFunc));
-        }
-
-        private static void createAndFillTags(TagKey<Block> identified, Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc){
-            String[] nameParts = identified.id().getPath().split("_");
-
-            String blockNamePrefix;
-            String blockNameSuffix;
-
-            if(BLOCK_PREFIXES.contains(nameParts[0])){
-                blockNamePrefix = nameParts[0];
-                blockNameSuffix = nameParts[1];
-
-                if(nameParts.length == 3){
-                    blockNameSuffix = blockNameSuffix + "_" + BLOCK_TYPE.get(nameParts[nameParts.length - 1]);
-                }
-            }else if(nameParts.length > 1 && BLOCK_SUFFIXES.containsKey(nameParts[1])){
-                blockNamePrefix = null;
-
-
-                if(nameParts.length == 3 && !(Objects.equals(nameParts[1], "corner"))){
-                    blockNameSuffix = nameParts[0] + "_" + nameParts[1];
-
-                    blockNameSuffix = blockNameSuffix + "_" + BLOCK_TYPE.get(nameParts[nameParts.length - 1]);
-                }else{
-                    blockNameSuffix = nameParts[0] + "_" + BLOCK_SUFFIXES.get(nameParts[1]);
-                }
-            }else{
-                blockNamePrefix = null;
-
-                if(nameParts.length > 1){
-                    blockNameSuffix = nameParts[0] + "_" + BLOCK_TYPE.get(nameParts[1]);
-                }else{
-                    blockNameSuffix = nameParts[0];
-                }
-            }
-
-            Block defaultBlock;
-
-            boolean minecraftNameSpace = Objects.equals(nameParts[0], "tinted") || (nameParts.length == 1 && (Objects.equals(nameParts[0], "ice") || Objects.equals(nameParts[0], "glowstone")));
-
-            if(blockNamePrefix != null){
-                defaultBlock = Registry.BLOCK.get(new Identifier(minecraftNameSpace ? "minecraft" : ConsistencyPlusMain.ID, blockNamePrefix + "_" + blockNameSuffix));
-                LOGGER.info("[1]:" +  new Identifier(minecraftNameSpace ? "minecraft" : ConsistencyPlusMain.ID, blockNamePrefix + "_" + blockNameSuffix));
-            }else{
-                defaultBlock = Registry.BLOCK.get(new Identifier(minecraftNameSpace ? "minecraft" : ConsistencyPlusMain.ID, blockNameSuffix));
-                LOGGER.info("[2]:" + new Identifier(minecraftNameSpace ? "minecraft" : ConsistencyPlusMain.ID, blockNameSuffix));
-            }
-
-            if(defaultBlock == Blocks.AIR) {
-                if (nameParts.length >= 2 && nameParts[0].equals("terracotta")) {
-                    if (Objects.equals(nameParts[1], "brick") || Objects.equals(nameParts[1], "bricks")) {
-                        LOGGER.info("FUCKFUCKFUCKF");
-                        defaultBlock = Registry.BLOCK.get(TERRACOTA_BRICK_REMAP.get(nameParts[nameParts.length - 1]));
-                    }
-                }
-            }
-
-            if(defaultBlock == Blocks.AIR){
-                if(blockNamePrefix != null){
-                    LOGGER.info("[1]:" + blockNamePrefix + "_" + blockNameSuffix);
-                }else{
-                    LOGGER.info("[2]:" + blockNameSuffix);
-                }
-            }
-
-            for(int i = 0; i < DYE_VALUES.length; i++){
-                boolean isItBlueIce = nameParts[0] == "ice" && DYE_VALUES[i].getName() == "blue";
-
-                if(blockNamePrefix != null){
-                    getOrCreateTagBuilderFunc.apply(identified).add(Registry.BLOCK.get(new Identifier(ConsistencyPlusMain.ID, blockNamePrefix + "_" + DYE_VALUES[i].getName() + "_" + blockNameSuffix)));
-                    //this.getOrCreateTagBuilder(identified).add(Registry.BLOCK.get(new Identifier(ConsistencyPlusMain.ID, blockNamePrefix + "_" + DYE_VALUES[i].getName() + "_" + blockNameSuffix)));
-                }else{
-
-                    getOrCreateTagBuilderFunc.apply(identified).add(Registry.BLOCK.get(new Identifier(isItBlueIce ? "minecraft" : ConsistencyPlusMain.ID, DYE_VALUES[i].getName() + "_" + blockNameSuffix)));
-                    //this.getOrCreateTagBuilder(identified).add(Registry.BLOCK.get(new Identifier(isItBlueIce ? "minecraft" : ConsistencyPlusMain.ID, DYE_VALUES[i].getName() + "_" + blockNameSuffix)));
-                }
-            }
-
-            if(defaultBlock != Blocks.AIR){
-                getOrCreateTagBuilderFunc.apply(identified).add(defaultBlock);
-            }else{
-                LOGGER.info(nameParts[0] + " / " + defaultBlock + " / " + identified.id());
-                //System.out.println(identified.getId() + " / " +  defaultBlock.toString());
-            }
-
-            if(identified == ConsistencyPlusTags.DyeableBlocks.GLOWSTONE){
-                getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.Common.GLOWSTONE).addTag(ConsistencyPlusTags.DyeableBlocks.GLOWSTONE);
-            }
-        }
-    }
 
     public static class UltimateBlockTagProvider extends BaseConsitencyPlusTagProvider<Block>{
 
         public static UltimateBlockTagProvider INSTANCE = new UltimateBlockTagProvider();
 
         protected UltimateBlockTagProvider() {
-            super(Registry.BLOCK);
+            super(Registry.BLOCK, Blocks.AIR);
         }
 
         public void createAndFillTags(Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc) {
+
             LOGGER.info("");
             LOGGER.info("Starting Tag Creation for Block Tags!");
             LOGGER.info("-----------------------------------------------------------");
 
             for(Map.Entry<String, MasterKey> entry : MasterKey.ULTIMATE_KEY_RING.entrySet()){
-                LOGGER.info("[" + entry.getKey() + "]: {" + entry.getValue() + "}" );
-
-                Block block = Registry.BLOCK.get(ConsistencyPlusMain.id(entry.getKey()));
-
-                if(block == Blocks.AIR){
-                    block = Registry.BLOCK.get(new Identifier(entry.getKey()));
-
-                    if(block != Blocks.AIR){
-                        LOGGER.info("Found a minecraft Block... YEETING AND SKIPPING");
-                        continue;
-                    }else{
-                        if(CPlusEntries.overrideMap.containsKey(entry.getKey())) {
-                            block = Registry.BLOCK.get(new Identifier(CPlusEntries.overrideMap.get(entry.getKey())));
-
-                            if (block != Blocks.AIR) {
-                                LOGGER.info("Found a minecraft Block... YEETING AND SKIPPING");
-                                continue;
-                            } else {
-                                block = Registry.BLOCK.get(ConsistencyPlusMain.id(CPlusEntries.overrideMap.get(entry.getKey())));
-                            }
-                        }
-
-                        if (block == Blocks.AIR) {
-                            LOGGER.info("O FUCK SOMETHING HAS GONE WRONG!... still YEETING AND SKIPPING");
-                            continue;
-                        }
-                    }
-                }
-
-                this.createTagsFromKeyAndEntry(entry.getValue(), block);
+                evaluateStringEntry(entry.getValue(), entry.getKey());
             }
-
 
             LOGGER.info("-------------------------------------------------------------------");
 
-            int removedTags = 0;
-            int madeTags = 0;
+            //----------------------------------------------------------------------------------------------------------------------------------------
+            //  Remove Tags that don't meet a defined minimum block count
 
-            List<Map.Entry<String, Set<Block>>> entryList = new ArrayList<>(toBeCreatedTags.entrySet());
+            int removedTags = 0;
+
+            List<Map.Entry<String, Set<Block>>> entryList = new ArrayList<>(bothTagEntries.entrySet());
 
             for(int minBlockCount = 0; minBlockCount < MINIMUM_BLOCK_COUNT_FOR_TAG; minBlockCount++) {
                 for (int index = 0; index < entryList.size(); index++) {
@@ -232,13 +76,28 @@ public class ConsistencyPlusTagProvider {
                 }
             }
 
+            //----------------------------------------------------------------------------------------------------------------------------------------
+            //  Both Tags but only Consistency Plus Tags / Blocks
+
+            int madeTags = 0;
+
             for(Map.Entry<String, Set<Block>> entry : entryList){
-                for (Block block : entry.getValue()) {
-                    applyToBothTags(entry.getKey(), block, getOrCreateTagBuilderFunc);
-                }
-                madeTags += 2;
+                int tagsCreated = 0;
+
+                for (Block block : entry.getValue())
+                    tagsCreated = Math.max(applyToBothTags(entry.getKey(), block, getOrCreateTagBuilderFunc), tagsCreated);
+
+                madeTags += tagsCreated;
             }
 
+            //----------------------------------------------------------------------------------------------------------------------------------------
+            //  Common Only Tags (i.e. Minecraft blocks being added to Consistency Plus based tags
+
+            for(Map.Entry<String, Set<Block>> entry : commonOnlyEntries.entrySet()){
+                for (Block block : entry.getValue()) {
+                    applyToBothTags(entry.getKey(), block, true, getOrCreateTagBuilderFunc);
+                }
+            }
 
             LOGGER.info("-------------------------------------------------------------------");
 
@@ -247,71 +106,70 @@ public class ConsistencyPlusTagProvider {
 
             LOGGER.info("-------------------------------------------------------------------");
 
-            Registry.BLOCK.getEntries().stream().filter((entry) -> Objects.equals(entry.getKey().getValue().getNamespace(), ConsistencyPlusMain.ID))
-                    .forEach((entry) -> {
-                        Identifier identifier = entry.getKey().getValue();
-                        Block block = entry.getValue();
+            //----------------------------------------------------------------------------------------------------------------------------------------
+            // Rest if the hard tags to do with MasterKeys
 
-                        boolean isNormalBlock = true;
+            ConsistencyPlusMain.BLOCKS.forEach(blockRegistrySupplier -> {
+                Block block = blockRegistrySupplier.get();
+                Identifier identifier = blockRegistrySupplier.getId();
 
-                        //LOGGER.info("[CommonBlockTagProvider]: " + identifier + " / " + block);
+                //LOGGER.info("[CommonBlockTagProvider]: " + identifier + " / " + block);
 
-                        String[] splitIdentifier = identifier.getPath().split("_");
-                        boolean isCryingObs = false;
+                String[] splitIdentifier = identifier.getPath().split("_");
+                boolean isCryingObs = false;
 
-                        for(String string :  splitIdentifier){
-                            switch(string) {
-                                case "obsidian":
-                                    getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.DRAGON_IMMUNE).add(block);
-                                    getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.NEEDS_DIAMOND_TOOL).add(block);
+                for(String string :  splitIdentifier){
+                    switch(string) {
+                        case "obsidian":
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.DRAGON_IMMUNE).add(block);
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.NEEDS_DIAMOND_TOOL).add(block);
 
-                                    break;
-                                case "crying":
-                                    isCryingObs = true;
-                                    break;
-                                case "prismarine":
-                                    getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.VALID_CONDUIT_BLOCKS).add(block);
-                                    break;
-                            }
+                            break;
+                        case "crying":
+                            isCryingObs = true;
+                            break;
+                        case "prismarine":
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.VALID_CONDUIT_BLOCKS).add(block);
+                            break;
+                    }
 
-                            if(isNormalBlock){
-                                boolean shouldBreakForLoop = false;
+                    boolean shouldBreakForLoop = false;
 
-                                switch(string){
-                                    case "obsidian":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.OBSIDIAN).add(block);
+                    switch(string){
+                        case "obsidian":
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.OBSIDIAN).add(block);
 
-                                        if(!isCryingObs)
-                                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.VALID_PORTAL_BLOCKS).add(block);
+                            if(!isCryingObs)
+                                getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.VALID_PORTAL_BLOCKS).add(block);
 
-                                        break;
-                                    case "glass":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.IMPERMEABLE).add(block);
-                                        shouldBreakForLoop = true;
-                                        break;
-                                    case "end":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.DRAGON_IMMUNE).add(block);
-                                        shouldBreakForLoop = true;
-                                        break;
-                                    case "soul":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.SOUL_FIRE_BASE_BLOCKS).add(block);
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.SOUL_SPEED_BLOCKS).add(block);
-                                        shouldBreakForLoop = true;
-                                        break;
-                                    case "netherrack":
-                                    case "nether":
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_OVERWORLD).add(block);
-                                        getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_NETHER).add(block);
-                                        shouldBreakForLoop = true;
-                                        break;
-                                }
+                            break;
+                        case "glass":
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.IMPERMEABLE).add(block);
+                            shouldBreakForLoop = true;
+                            break;
+                        case "end":
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.DRAGON_IMMUNE).add(block);
+                            shouldBreakForLoop = true;
+                            break;
+                        case "soul":
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.SOUL_FIRE_BASE_BLOCKS).add(block);
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.SOUL_SPEED_BLOCKS).add(block);
+                            shouldBreakForLoop = true;
+                            break;
+                        case "netherrack":
+                        case "nether":
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_OVERWORLD).add(block);
+                            getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_NETHER).add(block);
+                            shouldBreakForLoop = true;
+                            break;
+                    }
 
-                                if(shouldBreakForLoop){
-                                    break;
-                                }
-                            }
-                        }
-                    });
+                    if(shouldBreakForLoop)
+                        break;
+                }
+            });
+
+            //----------------------------------------------------------------------------------------------------------------------------------------
 
             getOrCreateTagBuilderFunc.apply(ConsistencyPlusTags.ConsistencySpecificTags.NEEDS_DIAMOND_TOOL).add(CPlusBlocks.NETHERITE_STAIRS.get());
 
@@ -365,7 +223,7 @@ public class ConsistencyPlusTagProvider {
         public static UltimateItemTagProvider INSTANCE = new UltimateItemTagProvider();
 
         protected UltimateItemTagProvider() {
-            super(Registry.ITEM);
+            super(Registry.ITEM, Items.AIR);
         }
 
         public void createAndFillTags(Function<TagKey<Item>, ObjectBuilder<Item>> getOrCreateTagBuilderFunc) {
@@ -374,45 +232,17 @@ public class ConsistencyPlusTagProvider {
             LOGGER.info("-----------------------------------------------------------");
 
             for(Map.Entry<String, MasterKey> entry : MasterKey.ULTIMATE_KEY_RING.entrySet()){
-                LOGGER.info("[" + entry.getKey() + "]: {" + entry.getValue() + "}" );
-
-                Item item = Registry.ITEM.get(ConsistencyPlusMain.id(entry.getKey()));
-
-                if(item == Items.AIR){
-                    item = Registry.ITEM.get(new Identifier(entry.getKey()));
-
-                    if(item != Items.AIR){
-                        LOGGER.info("Found a minecraft Block... YEETING AND SKIPPING");
-                        continue;
-                    }else{
-                        if(CPlusEntries.overrideMap.containsKey(entry.getKey())) {
-                            item = Registry.ITEM.get(new Identifier(CPlusEntries.overrideMap.get(entry.getKey())));
-
-                            if (item != Items.AIR) {
-                                LOGGER.info("Found a minecraft Block... YEETING AND SKIPPING");
-                                continue;
-                            } else {
-                                item = Registry.ITEM.get(ConsistencyPlusMain.id(CPlusEntries.overrideMap.get(entry.getKey())));
-                            }
-                        }
-
-                        if (item == Items.AIR) {
-                            LOGGER.info("O FUCK SOMETHING HAS GONE WRONG!... still YEETING AND SKIPPING");
-                            continue;
-                        }
-                    }
-                }
-
-                this.createTagsFromKeyAndEntry(entry.getValue(), item);
+                evaluateStringEntry(entry.getValue(), entry.getKey());
             }
-
 
             LOGGER.info("-------------------------------------------------------------------");
 
-            int removedTags = 0;
-            int madeTags = 0;
+            //-------------------------------------------------------------------------------------------------------------------
+            //  Remove Tags that don't meet a defined minimum block count
 
-            List<Map.Entry<String, Set<Item>>> entryList = new ArrayList<>(toBeCreatedTags.entrySet());
+            int removedTags = 0;
+
+            List<Map.Entry<String, Set<Item>>> entryList = new ArrayList<>(bothTagEntries.entrySet());
 
             for(int minBlockCount = 0; minBlockCount < MINIMUM_BLOCK_COUNT_FOR_TAG; minBlockCount++) {
                 for (int index = 0; index < entryList.size(); index++) {
@@ -435,11 +265,28 @@ public class ConsistencyPlusTagProvider {
                 }
             }
 
+            //-------------------------------------------------------------------------------------------------------------------
+            //  Both Tags but only Consistency Plus Tags / Blocks
+
+            int madeTags = 0;
+
             for(Map.Entry<String, Set<Item>> entry : entryList){
+                int tagsCreated = 0;
+
                 for (Item item : entry.getValue()) {
-                    applyToBothTags(entry.getKey(), item, getOrCreateTagBuilderFunc);
+                    tagsCreated = Math.max(applyToBothTags(entry.getKey(), item, getOrCreateTagBuilderFunc), tagsCreated);
                 }
-                madeTags += 2;
+
+                madeTags += tagsCreated;
+            }
+
+            //-------------------------------------------------------------------------------------------------------------------
+            //  Common Only Tags (i.e. Minecraft blocks being added to Consistency Plus based tags
+
+            for(Map.Entry<String, Set<Item>> entry : commonOnlyEntries.entrySet()){
+                for (Item item : entry.getValue()) {
+                    applyToBothTags(entry.getKey(), item, true, getOrCreateTagBuilderFunc);
+                }
             }
 
             LOGGER.info("-------------------------------------------------------------------");
@@ -461,137 +308,258 @@ public class ConsistencyPlusTagProvider {
 
         protected static final Logger LOGGER = LogManager.getLogger(BaseConsitencyPlusTagProvider.class);
 
-        protected final Set<TagKey<T>> ALREADY_MADE_COMMON_TAGS = new HashSet<>();
         protected final RegistryKey<? extends Registry<T>> registryKey;
+        protected final Registry<T> registry;
 
-        protected final HashMap<String, Set<T>> toBeCreatedTags = new HashMap<>();
+        protected final T defaultEntry;
 
-        protected BaseConsitencyPlusTagProvider(Registry<T> registry) {
+        protected final Set<TagKey<T>> ALREADY_MADE_COMMON_TAGS = new HashSet<>();
+        protected final Map<String, Boolean> restrictCommonTagCreation = new HashMap<>();
+
+        protected final Map<String, Set<T>> commonOnlyEntries = new HashMap<>();
+        protected final Map<String, Set<T>> bothTagEntries = new HashMap<>();
+
+
+        protected BaseConsitencyPlusTagProvider(Registry<T> registry, T defaultEntry) {
             super(null, registry);
 
-            registryKey = registry.getKey();
+            this.registryKey = registry.getKey();
+            this.defaultEntry = defaultEntry;
+            this.registry = registry;
         }
 
-        public void createTagsFromKeyAndEntry(MasterKey key, T entry) {
+        public void evaluateStringEntry(MasterKey key, String stringEntry){
+            boolean commonOnly = false;
+
+            LOGGER.info("[" + stringEntry + "]: {" + key + "}" );
+
+            T entry = this.registry.get(ConsistencyPlusMain.id(stringEntry));
+
+            if(entry == defaultEntry){
+                if(Objects.equals(key.material, "copper")){
+                    LOGGER.info(stringEntry);
+                }
+
+                entry = this.registry.get(new Identifier(stringEntry));
+
+                if(entry != defaultEntry){
+                    LOGGER.info("Found a minecraft Block... ONLY ADDING TO COMMON TAGS!");
+                    commonOnly = true;
+                }else{
+                    if(CPlusEntries.overrideMap.containsKey(stringEntry)) {
+                        entry = this.registry.get(new Identifier(CPlusEntries.overrideMap.get(stringEntry)));
+
+                        if (entry != defaultEntry) {
+                            LOGGER.info("Found a minecraft Block... ONLY ADDING TO COMMON TAGS!");
+                            commonOnly = true;
+                        } else {
+                            entry = this.registry.get(ConsistencyPlusMain.id(CPlusEntries.overrideMap.get(stringEntry)));
+                        }
+                    }
+
+                    if (entry == defaultEntry) {
+                        LOGGER.info("O FUCK SOMETHING HAS GONE WRONG!... still YEETING AND SKIPPING");
+
+                        return;
+                    }
+                }
+            }
+
+            this.createTagsFromKeyAndEntry(key, entry, commonOnly);
+        }
+
+        public void createTagsFromKeyAndEntry(MasterKey key, T entry, boolean commonOnly) {
             String material = key.material;
             String materialDir = "material/" + material + "/";
 
-            addToTagMap("material/"+ material, entry);
+            //--------------------------------------------------------------------
+
+            addToTagMap("material/" + material, entry, true, commonOnly);
 
             //--------------------------------------------------------------------
 
-            if(!key.shape.isBase()) {
-                addToTagMap("block_shape/" + key.shape.toString(), entry);
+            if(!commonOnly) {
+                if (!key.shape.isBase()) {
+
+                    //TODO: Change this within the future when block types and shapes get worked out
+                    if (!isShapeAtype(key.shape)) {
+                        addToTagMap("block_shape/" + key.shape.toString(), entry, true);
+                    } else {
+                        addToTagMap("block_type/" + key.shape.toString(), entry, false);
+                    }
+
+                    if (isAllowedMaterial(material)) {
+                        if (!key.type.isBase()) {
+                            addToTagMap(materialDir + key.shape.addShapes(key.type.addType(material), key.type), entry, true);
+                        } else {
+                            addToTagMap(materialDir + key.shape.addShapes(material, BlockTypes.BASE), entry, true);
+                        }
+                    }
+                } else {
+                    addToTagMap("block_shape/" + "block", entry, true);
+
+                    if (isAllowedMaterial(material)) {
+                        if (!key.type.isBase()) {
+                            addToTagMap(materialDir + key.shape.addShapes(key.type.addType(material), key.type) + "_block", entry, true);
+                        } else {
+                            addToTagMap(materialDir + key.shape.addShapes(material, BlockTypes.BASE) + "_block", entry, true);
+                        }
+                    }
+                }
+
+                //--------------------------------------------------------------------
 
                 if(!key.type.isBase()) {
-                    addToTagMap(materialDir + key.shape.addShapes(key.type.addType(material), key.type), entry);
-                }else{
-                    addToTagMap(materialDir + key.shape.addShapes(material, BlockTypes.BASE), entry);
+                    addToTagMap("block_type/" + key.type.toString(), entry, false, commonOnly);
                 }
-            }else{
-                addToTagMap("block_shape/" + "block", entry);
 
-                if(!key.type.isBase()) {
-                    addToTagMap(materialDir + key.shape.addShapes(key.type.addType(material), key.type) + "_block", entry);
-                }else{
-                    addToTagMap(materialDir + key.shape.addShapes(material, BlockTypes.BASE) + "_block", entry);
+                //--------------------------------------------------------------------
+
+                if(!key.setModifiers.isBase()) {
+                    addToTagMap("set_modifier/" + key.setModifiers.toString(), entry, false, commonOnly);
                 }
             }
 
             //--------------------------------------------------------------------
 
-            if(!key.type.isBase()) {
-                addToTagMap("block_type/" + key.type.toString(), entry);
-
-                addToTagMap(materialDir + key.type.addType(material), entry);
-            }
-
-            //--------------------------------------------------------------------
-
-            if(!key.setModifiers.isBase()) {
-                addToTagMap("set_modifier/" + key.setModifiers.toString(), entry);
-
-                addToTagMap(materialDir + key.setModifiers.addModifier(material), entry);
-
-                if(!key.type.isBase()) {
-                    addToTagMap(materialDir + key.setModifiers.addModifier(key.type.addType(material)), entry);
+            if(isOxidableBlock(material)) {
+                if (!key.oxidization.isBase()) {
+                    addToTagMap("oxidization/" + key.oxidization.toString(), entry, true, commonOnly);
+                } else {
+                    addToTagMap("oxidization/" + "none", entry, true, commonOnly);
                 }
 
-                if(!key.shape.isBase()){
-                    addToTagMap(materialDir + key.setModifiers.addModifier(key.shape.addShapes(material, key.type)), entry);
+                if (key.isWaxed) {
+                    addToTagMap("waxed", entry, true, commonOnly);
+                } else {
+                    addToTagMap("unwaxed", entry, true, commonOnly);
                 }
-            }
-
-            //--------------------------------------------------------------------
-
-            if(!key.oxidization.isBase()) {
-                addToTagMap("oxidization/" + key.oxidization.toString(), entry);
-
-                if(!key.shape.isBase() && !key.type.isBase()) {
-                    addToTagMap(materialDir + key.oxidization.addOxidization(key.shape.addShapes(key.type.addType(material), key.type)), entry);
-                }
-            }
-
-            if(key.isWaxed) {
-                addToTagMap(materialDir + "waxed", entry);
             }
 
             //--------------------------------------------------------------------
 
             if(key.dyeColor != null) {
-                addToTagMap("color/" + key.dyeColor.toString(), entry);
-
-                addToTagMap(materialDir + key.dyeColor.toString() + "_" + material, entry);
-
-//                if(key.shape != BlockShapes.BLOCK) {
-//                    addToTagMap(materialDir + key.shape.addShapes(key.dyeColor.toString() + "_" + material, key.type), entry);
-//                }
-//
-//                if(key.type != BlockTypes.BASE){
-//                    addToTagMap(materialDir + key.type.addType(key.dyeColor.toString() + "_" + material), entry);
-//                }
-
+                addToTagMap("color/" + key.dyeColor.toString(), entry, true, commonOnly);
             }else{
-                //TODO: ENABLE GLASS TAG WHEN SUCH IS READY
-                if(Objects.equals(material, "terracotta") /* || Objects.equals(material, "glass") */){
-                    addToTagMap("color/" + "plain", entry);
+                if(isAllowedMaterial(material)){
+                    addToTagMap("color/" + "plain", entry, true, commonOnly);
+                }
+            }
+        }
 
-                    addToTagMap(materialDir + "plain" + "_" + material, entry);
+        //-------------------------------------------------------------------------------------------------------------------
+
+        /**
+         * Checks if a shape is really a type. (Should be removed in the future when this gets worked out)
+         */
+        public boolean isShapeAtype(BlockShapes shape){
+            return shape == BlockShapes.CARVED || shape == BlockShapes.CHISELED || shape == BlockShapes.PILLAR || shape == BlockShapes.CORNER_PILLAR;
+        }
+
+        /**
+         * Checks if the material is an oxidisable metal block
+         */
+        public boolean isOxidableBlock(String material){
+            return Objects.equals("copper", material);
+        }
+
+        /**
+         * Checks if the material is allowed for creating certain sub tags of a material
+         */
+        public boolean isAllowedMaterial(String material){
+            //TODO: ENABLE GLASS TAG WHEN SUCH IS READY
+            return Objects.equals("terracotta", material) || Objects.equals("concrete", material) || Objects.equals("ice", material) || Objects.equals("glowstone", material)/* || Objects.equals(material, "glass") */;
+        }
+
+        //-------------------------------------------------------------------------------------------------------------------
+
+        protected void addToTagMap(String tag, T entry, boolean createCommon) {
+            this.addToTagMap(tag, entry, createCommon,false);
+        }
+
+        protected void addToTagMap(String tag, T entry, boolean createCommon, boolean commonOnly){
+            if (commonOnly && !createCommon)
+                return;
+
+            TagKey<T> common = getCommonTag(tag, registryKey);
+
+            if(createCommon){
+                if(commonOnly) {
+                    LOGGER.info("   ^- Adding to Common: " + common);
+                }else{
+                    LOGGER.info("   ^- Making Common: " + common);
                 }
             }
 
-            //--------------------------------------------------------------------
+            if(!commonOnly) {
+                TagKey<T> consitencyPlus = getConsistencyTag(tag, registryKey);
 
+                LOGGER.info("   ^- Making C-Plus: " + consitencyPlus);
+
+                if (!restrictCommonTagCreation.containsKey(tag)) {
+                    if (createCommon) {
+                        restrictCommonTagCreation.put(tag, true);
+                    } else {
+                        restrictCommonTagCreation.put(tag, false);
+                    }
+                }
+
+                if (bothTagEntries.containsKey(tag)) {
+                    bothTagEntries.get(tag).add(entry);
+                } else {
+                    Set<T> blockSet = new HashSet<>();
+                    blockSet.add(entry);
+
+                    bothTagEntries.put(tag, blockSet);
+                }
+
+            } else {
+
+                if (commonOnlyEntries.containsKey(tag)) {
+                    commonOnlyEntries.get(tag).add(entry);
+                } else {
+                    Set<T> blockSet = new HashSet<>();
+                    blockSet.add(entry);
+
+                    commonOnlyEntries.put(tag, blockSet);
+                }
+            }
         }
 
-        protected void addToTagMap(String tag, T block){
-            TagKey<T> common = getCommonTag(tag, registryKey);
-            TagKey<T> consitencyPlus = getConsistencyTag(tag, registryKey);
+        //-------------------------------------------------------------------------------------------------------------------
 
-            LOGGER.info("   ^- Making C-Plus: " + common);
-            LOGGER.info("   ^- Making Common: " + consitencyPlus);
+        protected int applyToBothTags(String tag, T entry, Function<TagKey<T>, ObjectBuilder<T>> getOrCreateTagBuilderFunc){
+            return this.applyToBothTags(tag, entry, false, getOrCreateTagBuilderFunc);
+        }
 
-            if(toBeCreatedTags.containsKey(tag)){
-                toBeCreatedTags.get(tag).add(block);
+        protected int applyToBothTags(String tag, T entry, boolean addDirectlyToCommonTagOnly, Function<TagKey<T>, ObjectBuilder<T>> getOrCreateTagBuilderFunc){
+            int tagsCreated = 1;
+
+            if(!addDirectlyToCommonTagOnly) {
+                TagKey<T> consitencyPlus = getConsistencyTag(tag, registryKey);
+
+                getOrCreateTagBuilderFunc.apply(consitencyPlus).add(entry);
+
+                if(restrictCommonTagCreation.containsKey(tag) && restrictCommonTagCreation.get(tag)) {
+                    TagKey<T> common = getCommonTag(tag, registryKey);
+
+                    if (!ALREADY_MADE_COMMON_TAGS.contains(common)) {
+                        getOrCreateTagBuilderFunc.apply(common).addTag(consitencyPlus);
+                        ALREADY_MADE_COMMON_TAGS.add(common);
+
+                        tagsCreated++;
+                    }
+                }
             }else{
-                Set<T> blockSet = new HashSet<>();
-                blockSet.add(block);
+                TagKey<T> common = getCommonTag(tag, registryKey);
 
-                toBeCreatedTags.put(tag, blockSet);
+                getOrCreateTagBuilderFunc.apply(common).add(entry);
             }
+
+            return tagsCreated;
         }
 
-        protected void applyToBothTags(String tag, T block, Function<TagKey<T>, ObjectBuilder<T>> getOrCreateTagBuilderFunc){
-            TagKey<T> common = getCommonTag(tag, registryKey);
-            TagKey<T> consitencyPlus = getConsistencyTag(tag, registryKey);
-
-            getOrCreateTagBuilderFunc.apply(consitencyPlus).add(block);
-
-            if(!ALREADY_MADE_COMMON_TAGS.contains(common)) {
-                getOrCreateTagBuilderFunc.apply(common).addTag(consitencyPlus);
-                ALREADY_MADE_COMMON_TAGS.add(common);
-            }
-        }
+        //-------------------------------------------------------------------------------------------------------------------
 
         protected TagKey<T> getCommonTag(String path, RegistryKey<? extends Registry<T>> registryKey){
             return TagUtil.initTag(path, registryKey);

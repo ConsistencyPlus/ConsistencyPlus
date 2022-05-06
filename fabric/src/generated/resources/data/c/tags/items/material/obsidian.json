@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:material/obsidian"
+    "#consistency_plus:material/obsidian",
+    "minecraft:obsidian"
   ]
 }

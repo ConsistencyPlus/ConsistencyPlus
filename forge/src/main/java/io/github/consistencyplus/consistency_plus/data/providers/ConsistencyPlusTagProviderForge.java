@@ -10,18 +10,6 @@ import javax.annotation.Nullable;
 
 public class ConsistencyPlusTagProviderForge {
 
-    public static class DyeableBlockTagProviderImpl extends BlockTagsProvider {
-
-        public DyeableBlockTagProviderImpl(DataGenerator arg, String modId, @Nullable ExistingFileHelper existingFileHelper) {
-            super(arg, modId, existingFileHelper);
-        }
-
-        @Override
-        protected void configure() {
-            ConsistencyPlusTagProvider.DyeableBlockTagProvider.createAndFillTag(this::getOrCreateTagBuilder);
-        }
-    }
-
     public static class UltimateBlockTagProvider extends BlockTagsProvider {
 
         public UltimateBlockTagProvider(DataGenerator arg, String modId, @Nullable ExistingFileHelper existingFileHelper) {

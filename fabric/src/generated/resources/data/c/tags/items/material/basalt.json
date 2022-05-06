@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:material/basalt"
+    "#consistency_plus:material/basalt",
+    "minecraft:basalt",
+    "minecraft:smooth_basalt"
   ]
 }

@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:oxidization/weathered"
+    "#consistency_plus:oxidization/weathered",
+    "minecraft:waxed_weathered_cut_copper_stairs",
+    "minecraft:waxed_weathered_cut_copper_slab",
+    "minecraft:weathered_copper",
+    "minecraft:waxed_weathered_cut_copper",
+    "minecraft:weathered_cut_copper",
+    "minecraft:waxed_weathered_copper",
+    "minecraft:weathered_cut_copper_slab",
+    "minecraft:weathered_cut_copper_stairs"
   ]
 }

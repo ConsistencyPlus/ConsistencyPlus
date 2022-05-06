@@ -100,10 +100,8 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
     private String getOxiID(CopperOxidization oxidization, BlockShapes shape, BlockTypes type){
         String id = oxidization.addOxidization(shape.addShapes(type.addType(name), type));
 
-        if(checkset2(CPlusEntries.overrideMap.getOrDefault(id, id))) {
-            MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createOxidKey(shape, type, oxidization, this.name));
-            MasterKey.ULTIMATE_KEY_RING.put("waxed_" + CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createOxidKey(shape, type, oxidization, this.name).waxed(true));
-        }
+        MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createOxidKey(shape, type, oxidization, this.name));
+        MasterKey.ULTIMATE_KEY_RING.put("waxed_" + CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createOxidKey(shape, type, oxidization, this.name).waxed(true));
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

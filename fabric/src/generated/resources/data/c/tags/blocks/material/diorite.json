@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:material/diorite"
+    "#consistency_plus:material/diorite",
+    "minecraft:polished_diorite",
+    "minecraft:polished_diorite_stairs",
+    "minecraft:diorite_stairs",
+    "minecraft:diorite_slab",
+    "minecraft:polished_diorite_slab",
+    "minecraft:diorite_wall",
+    "minecraft:diorite"
   ]
 }

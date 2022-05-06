@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:color/pink"
+    "#consistency_plus:color/pink",
+    "minecraft:pink_concrete",
+    "minecraft:pink_terracotta"
   ]
 }

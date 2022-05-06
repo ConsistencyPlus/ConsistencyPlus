@@ -102,7 +102,7 @@ public class ConsistencyPlusTagProvider {
             LOGGER.info("-------------------------------------------------------------------");
 
             LOGGER.info("Removed " + removedTags + " tags due to not meeting the minimum requirements for block count.");
-            LOGGER.info("Made " + madeTags + " tags total(Is already doubled since were making common tags as well).");
+            LOGGER.info("Made " + madeTags + " tags total(Common and ModId based tags combined).");
 
             LOGGER.info("-------------------------------------------------------------------");
 
@@ -292,7 +292,7 @@ public class ConsistencyPlusTagProvider {
             LOGGER.info("-------------------------------------------------------------------");
 
             LOGGER.info("Removed " + removedTags + " tags due to not meeting the minimum requirements for block count.");
-            LOGGER.info("Made " + madeTags + " tags total(Is already doubled since were making common tags as well).");
+            LOGGER.info("Made " + madeTags + " tags total(Common and ModId based tags combined).");
         }
 
         @Override

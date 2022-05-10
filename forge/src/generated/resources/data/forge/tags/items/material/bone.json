@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:material/bone",
+    "minecraft:bone_block"
+  ]
+}

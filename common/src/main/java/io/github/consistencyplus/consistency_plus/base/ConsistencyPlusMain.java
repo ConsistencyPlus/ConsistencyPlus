@@ -32,8 +32,8 @@ public class ConsistencyPlusMain {
 		CPlusItems.init();
 		BLOCKS.register();
 		LOGGER.info("Consistency+ Main - Registration Checkpoint 1");
-		ITEMS.register();
-		nubertDispenserBehaviors();
+		ITEMS.register();				// wig registered after
+		BLOCKS.getRegistrar().listen(CPlusBlocks.WIGGED_NUBERT, nubert -> nubertDispenserBehaviors());
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 	}
 

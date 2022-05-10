@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "consistency_plus:cobbled_sandstone",
-    "consistency_plus:sandstone_tiles",
-    "consistency_plus:sandstone_bricks",
-    "consistency_plus:polished_sandstone"
-  ]
-}

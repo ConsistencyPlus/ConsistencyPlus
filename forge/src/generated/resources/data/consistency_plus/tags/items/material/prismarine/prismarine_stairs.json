@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "consistency_plus:prismarine_tile_stairs",
-    "consistency_plus:polished_prismarine_stairs",
-    "consistency_plus:smooth_prismarine_stairs",
-    "consistency_plus:cut_prismarine_stairs"
-  ]
-}

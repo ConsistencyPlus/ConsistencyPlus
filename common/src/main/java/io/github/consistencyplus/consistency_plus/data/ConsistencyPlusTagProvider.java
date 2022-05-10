@@ -328,6 +328,12 @@ public class ConsistencyPlusTagProvider {
             this.registry = registry;
         }
 
+
+        /**
+         * Attempts to get a valid block from string entry to then make tags of
+         * @param key
+         * @param stringEntry
+         */
         public void evaluateStringEntry(MasterKey key, String stringEntry){
             boolean commonOnly = false;
 
@@ -368,6 +374,9 @@ public class ConsistencyPlusTagProvider {
             this.createTagsFromKeyAndEntry(key, entry, commonOnly);
         }
 
+        /**
+         * Find what the Master Key fits into for a certain tag based on its block characteristic
+         */
         public void createTagsFromKeyAndEntry(MasterKey key, T entry, boolean commonOnly) {
             String material = key.material;
             String materialDir = "material/" + material + "/";

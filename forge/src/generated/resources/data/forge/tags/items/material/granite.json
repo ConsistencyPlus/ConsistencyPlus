@@ -2,12 +2,12 @@
   "replace": false,
   "values": [
     "#consistency_plus:material/granite",
-    "minecraft:granite_stairs",
     "minecraft:granite_slab",
     "minecraft:polished_granite",
     "minecraft:granite_wall",
     "minecraft:granite",
-    "minecraft:polished_granite_slab",
-    "minecraft:polished_granite_stairs"
+    "minecraft:granite_stairs",
+    "minecraft:polished_granite_stairs",
+    "minecraft:polished_granite_slab"
   ]
 }

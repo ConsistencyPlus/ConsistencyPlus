@@ -3,11 +3,11 @@
   "values": [
     "#consistency_plus:material/prismarine",
     "minecraft:prismarine_bricks",
-    "minecraft:prismarine_brick_slab",
     "minecraft:prismarine_brick_stairs",
     "minecraft:prismarine_wall",
-    "minecraft:prismarine",
     "minecraft:prismarine_slab",
+    "minecraft:prismarine",
+    "minecraft:prismarine_brick_slab",
     "minecraft:prismarine_stairs"
   ]
 }

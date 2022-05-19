@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:material/tinted_glass"
+    "#consistency_plus:material/tinted_glass",
+    "minecraft:tinted_glass"
   ]
 }

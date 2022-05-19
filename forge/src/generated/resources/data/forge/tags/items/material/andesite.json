@@ -3,11 +3,11 @@
   "values": [
     "#consistency_plus:material/andesite",
     "minecraft:polished_andesite_slab",
-    "minecraft:andesite_slab",
-    "minecraft:andesite",
-    "minecraft:andesite_stairs",
-    "minecraft:polished_andesite",
     "minecraft:polished_andesite_stairs",
-    "minecraft:andesite_wall"
+    "minecraft:andesite",
+    "minecraft:andesite_slab",
+    "minecraft:andesite_wall",
+    "minecraft:andesite_stairs",
+    "minecraft:polished_andesite"
   ]
 }

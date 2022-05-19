@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     "#consistency_plus:oxidization/oxidized",
-    "minecraft:waxed_oxidized_cut_copper_slab",
+    "minecraft:waxed_oxidized_cut_copper_stairs",
+    "minecraft:waxed_oxidized_cut_copper",
+    "minecraft:oxidized_cut_copper_slab",
     "minecraft:oxidized_cut_copper",
     "minecraft:oxidized_cut_copper_stairs",
-    "minecraft:oxidized_cut_copper_slab",
-    "minecraft:waxed_oxidized_cut_copper",
-    "minecraft:waxed_oxidized_cut_copper_stairs"
+    "minecraft:waxed_oxidized_cut_copper_slab"
   ]
 }

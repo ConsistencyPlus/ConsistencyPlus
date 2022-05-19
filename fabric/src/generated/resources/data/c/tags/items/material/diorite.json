@@ -3,9 +3,9 @@
   "values": [
     "#consistency_plus:material/diorite",
     "minecraft:polished_diorite_slab",
-    "minecraft:diorite_wall",
     "minecraft:polished_diorite_stairs",
     "minecraft:diorite",
+    "minecraft:diorite_wall",
     "minecraft:diorite_stairs",
     "minecraft:diorite_slab",
     "minecraft:polished_diorite"

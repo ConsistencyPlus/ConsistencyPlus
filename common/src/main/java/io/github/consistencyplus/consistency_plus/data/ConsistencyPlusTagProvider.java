@@ -5,6 +5,7 @@ import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
+import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.DataGenerator;
@@ -13,6 +14,7 @@ import net.minecraft.data.server.BlockTagsProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.tag.ItemTags;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
@@ -207,7 +209,40 @@ public class ConsistencyPlusTagProvider {
             getOrCreateTagBuilderFunc.apply(BlockTags.INFINIBURN_NETHER).addTag(ConsistencyPlusTags.ConsistencySpecificTags.INFINIBURN_NETHER);
 
             getOrCreateTagBuilderFunc.apply(BlockTags.TERRACOTTA).addTag(ConsistencyPlusTags.ConsistencySpecificTags.TERRACOTTA);
-        }
+
+            //------------------------------------------
+            //Section of manually patched tags because I can't be dammed to hunt down these outlying odd balls
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("material/netherrack"))
+                    .add(Blocks.NETHER_BRICKS,
+                        Blocks.NETHER_BRICK_FENCE,
+                        Blocks.NETHER_BRICK_WALL,
+                        Blocks.NETHER_BRICK_SLAB,
+                        Blocks.NETHER_BRICK_STAIRS,
+                        Blocks.CRACKED_NETHER_BRICKS,
+                        Blocks.CHISELED_NETHER_BRICKS);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("material/dripstone"))
+                    .add(Blocks.DRIPSTONE_BLOCK);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("material/crimson_wart"))
+                    .add(Blocks.NETHER_WART_BLOCK);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("material/terracotta/terracotta_bricks_block"))
+                    .add(Blocks.BRICKS);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("material/tinted_glass"))
+                    .add(Blocks.TINTED_GLASS);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("material/oxidization/none"))
+                    .add(Blocks.COPPER_BLOCK,
+                         Blocks.CUT_COPPER,
+                         Blocks.CUT_COPPER_SLAB,
+                         Blocks.CUT_COPPER_STAIRS);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("material/blackstone"))
+                    .add(Blocks.POLISHED_BLACKSTONE_BRICKS);
+    }
 
         @Override
         protected void configure() {}
@@ -293,6 +328,27 @@ public class ConsistencyPlusTagProvider {
 
             LOGGER.info("Removed " + removedTags + " tags due to not meeting the minimum requirements for block count.");
             LOGGER.info("Made " + madeTags + " tags total(Common and ModId based tags combined).");
+
+            //----------------------------------------------------------------------------------------------------------------------------------------
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("nuggets/copper"))
+                    .add(CPlusItems.COPPER_NUGGET.get());
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("nuggets/netherite"))
+                    .add(CPlusItems.NETHERITE_NUGGET.get());
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("nuggets/netherite"))
+                    .add(CPlusItems.NETHERITE_NUGGET.get());
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("bones"))
+                    .add(CPlusItems.WITHERED_BONE.get());
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("crops/nether_wart"))
+                    .add(CPlusItems.WARPED_WART.get());
+
+//            getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
+//                    .add(CPlusItems.BRICK.get());
+
         }
 
         @Override
@@ -490,7 +546,7 @@ public class ConsistencyPlusTagProvider {
             if (commonOnly && !createCommon)
                 return;
 
-            TagKey<T> common = getCommonTag(tag, registryKey);
+            TagKey<T> common = getCommonTag(tag);
 
             if(createCommon){
                 if(commonOnly) {
@@ -501,7 +557,7 @@ public class ConsistencyPlusTagProvider {
             }
 
             if(!commonOnly) {
-                TagKey<T> consitencyPlus = getConsistencyTag(tag, registryKey);
+                TagKey<T> consitencyPlus = getConsistencyTag(tag);
 
                 LOGGER.info("   ^- Making C-Plus: " + consitencyPlus);
 
@@ -545,12 +601,12 @@ public class ConsistencyPlusTagProvider {
             int tagsCreated = 1;
 
             if(!addDirectlyToCommonTagOnly) {
-                TagKey<T> consitencyPlus = getConsistencyTag(tag, registryKey);
+                TagKey<T> consitencyPlus = getConsistencyTag(tag);
 
                 getOrCreateTagBuilderFunc.apply(consitencyPlus).add(entry);
 
                 if(restrictCommonTagCreation.containsKey(tag) && restrictCommonTagCreation.get(tag)) {
-                    TagKey<T> common = getCommonTag(tag, registryKey);
+                    TagKey<T> common = getCommonTag(tag);
 
                     if (!ALREADY_MADE_COMMON_TAGS.contains(common)) {
                         getOrCreateTagBuilderFunc.apply(common).addTag(consitencyPlus);
@@ -560,7 +616,7 @@ public class ConsistencyPlusTagProvider {
                     }
                 }
             }else{
-                TagKey<T> common = getCommonTag(tag, registryKey);
+                TagKey<T> common = getCommonTag(tag);
 
                 getOrCreateTagBuilderFunc.apply(common).add(entry);
             }
@@ -570,12 +626,12 @@ public class ConsistencyPlusTagProvider {
 
         //-------------------------------------------------------------------------------------------------------------------
 
-        protected TagKey<T> getCommonTag(String path, RegistryKey<? extends Registry<T>> registryKey){
-            return TagUtil.initTag(path, registryKey);
+        protected TagKey<T> getCommonTag(String path){
+            return TagUtil.initTag(path, this.registryKey);
         }
 
-        protected TagKey<T> getConsistencyTag(String path, RegistryKey<? extends Registry<T>> registryKey){
-            return TagKey.of(registryKey, new Identifier(ConsistencyPlusMain.ID, path));
+        protected TagKey<T> getConsistencyTag(String path){
+            return TagKey.of(this.registryKey, new Identifier(ConsistencyPlusMain.ID, path));
         }
     }
 }

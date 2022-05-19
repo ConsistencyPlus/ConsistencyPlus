@@ -17,18 +17,30 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import javax.annotation.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInterface {
+
+    public static final List<RegistryEntryGroup> ALL_ENTRY_GROUPS = new ArrayList<>();
+
     public String name;
     public AbstractBlock.Settings blockSettings;
     public FalseBlock settingsStorage; // My pride and joy
+
+    protected @Nullable RegistrySupplier<Item> BRICK_ITEM = null;
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         this.name = name;
         this.blockSettings = blockSettings;
         settingsStorage = new FalseBlock(blockSettings);
         construct();
+
+        ALL_ENTRY_GROUPS.add(this);
     }
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, boolean construct) {
@@ -49,7 +61,9 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
             }
         }
 
-        if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+        if (checkset2(name + "_brick")){
+            BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+        }
     }
 
     public AbstractBlock.Settings getBlockSettings() {
@@ -103,6 +117,11 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
         String id = getID(shapes, type);
         if (checkMinecraft(id)) return Registry.ITEM.get(new Identifier("minecraft", (id)));
         return Registry.ITEM.get(ConsistencyPlusMain.id(id));
+    }
+
+    @Nullable
+    public Item getBrickItem(){
+        return this.BRICK_ITEM != null ? this.BRICK_ITEM.get() : null;
     }
 
     public String getID(BlockShapes shapes, BlockTypes type) {

@@ -3,18 +3,18 @@ package io.github.consistencyplus.consistency_plus.data;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
+import io.github.consistencyplus.consistency_plus.core.entries.block.DyedRegistryEntryGroup;
+import io.github.consistencyplus.consistency_plus.core.entries.block.MetalRegistryEntryGroup;
+import io.github.consistencyplus.consistency_plus.core.entries.block.RegistryEntryGroup;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.DataGenerator;
 import net.minecraft.data.server.AbstractTagProvider;
-import net.minecraft.data.server.BlockTagsProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.tag.BlockTags;
-import net.minecraft.tag.ItemTags;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
@@ -24,6 +24,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.*;
+import java.util.function.BiConsumer;
 import java.util.function.Function;
 
 public class ConsistencyPlusTagProvider {
@@ -234,11 +235,23 @@ public class ConsistencyPlusTagProvider {
             getOrCreateTagBuilderFunc.apply(getCommonTag("material/tinted_glass"))
                     .add(Blocks.TINTED_GLASS);
 
-            getOrCreateTagBuilderFunc.apply(getCommonTag("material/oxidization/none"))
+            getOrCreateTagBuilderFunc.apply(getCommonTag("oxidization/none"))
                     .add(Blocks.COPPER_BLOCK,
                          Blocks.CUT_COPPER,
                          Blocks.CUT_COPPER_SLAB,
                          Blocks.CUT_COPPER_STAIRS);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("unwaxed"))
+                    .add(Blocks.COPPER_BLOCK,
+                            Blocks.CUT_COPPER,
+                            Blocks.CUT_COPPER_SLAB,
+                            Blocks.CUT_COPPER_STAIRS);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("waxed"))
+                    .add(Blocks.WAXED_COPPER_BLOCK,
+                            Blocks.WAXED_CUT_COPPER,
+                            Blocks.WAXED_CUT_COPPER_SLAB,
+                            Blocks.WAXED_CUT_COPPER_STAIRS);
 
             getOrCreateTagBuilderFunc.apply(getCommonTag("material/blackstone"))
                     .add(Blocks.POLISHED_BLACKSTONE_BRICKS);
@@ -261,75 +274,85 @@ public class ConsistencyPlusTagProvider {
             super(Registry.ITEM, Items.AIR);
         }
 
-        public void createAndFillTags(Function<TagKey<Item>, ObjectBuilder<Item>> getOrCreateTagBuilderFunc) {
-            LOGGER.info("");
-            LOGGER.info("Starting Tag Creation for Block Tags!");
-            LOGGER.info("-----------------------------------------------------------");
+        public void createAndFillTags(Function<TagKey<Item>, ObjectBuilder<Item>> getOrCreateTagBuilderFunc, BiConsumer<TagKey<Block>, TagKey<Item>> copyMethod) {
+            ALL_BLOCK_TAGS.stream().filter(tagKey -> Objects.equals(tagKey.id().getNamespace(), ConsistencyPlusMain.ID))
+            .toList().forEach(tagKey -> {
+                copyMethod.accept((TagKey<Block>) tagKey, getConsistencyTag(tagKey.id().getPath()));
+            });
 
-            for(Map.Entry<String, MasterKey> entry : MasterKey.ULTIMATE_KEY_RING.entrySet()){
-                evaluateStringEntry(entry.getValue(), entry.getKey());
-            }
+            ALL_BLOCK_TAGS.stream().filter(tagKey -> Objects.equals(tagKey.id().getNamespace(), "c") || Objects.equals(tagKey.id().getNamespace(), "forge"))
+            .toList().forEach(tagKey -> {
+                copyMethod.accept((TagKey<Block>) tagKey, getCommonTag(tagKey.id().getPath()));
+            });
 
-            LOGGER.info("-------------------------------------------------------------------");
-
-            //-------------------------------------------------------------------------------------------------------------------
-            //  Remove Tags that don't meet a defined minimum block count
-
-            int removedTags = 0;
-
-            List<Map.Entry<String, Set<Item>>> entryList = new ArrayList<>(bothTagEntries.entrySet());
-
-            for(int minBlockCount = 0; minBlockCount < MINIMUM_BLOCK_COUNT_FOR_TAG; minBlockCount++) {
-                for (int index = 0; index < entryList.size(); index++) {
-                    Map.Entry<String, Set<Item>> entry = entryList.get(index);
-
-                    if(entry.getKey().contains("dirt")
-                            || entry.getKey().contains("grass")
-                            || entry.getKey().contains("mycelium")
-                            || Objects.equals(entry.getKey(), "nether")
-                    ){
-                        continue;
-                    }
-
-                    if (entry.getValue().size() < minBlockCount) {
-                        entryList.remove(entry);
-
-                        removedTags++;
-                        LOGGER.info("Removing -> [" + entry.getKey() + "] as it only contained a " + minBlockCount + " block.");
-                    }
-                }
-            }
-
-            //-------------------------------------------------------------------------------------------------------------------
-            //  Both Tags but only Consistency Plus Tags / Blocks
-
-            int madeTags = 0;
-
-            for(Map.Entry<String, Set<Item>> entry : entryList){
-                int tagsCreated = 0;
-
-                for (Item item : entry.getValue()) {
-                    tagsCreated = Math.max(applyToBothTags(entry.getKey(), item, getOrCreateTagBuilderFunc), tagsCreated);
-                }
-
-                madeTags += tagsCreated;
-            }
-
-            //-------------------------------------------------------------------------------------------------------------------
-            //  Common Only Tags (i.e. Minecraft blocks being added to Consistency Plus based tags
-
-            for(Map.Entry<String, Set<Item>> entry : commonOnlyEntries.entrySet()){
-                for (Item item : entry.getValue()) {
-                    applyToBothTags(entry.getKey(), item, true, getOrCreateTagBuilderFunc);
-                }
-            }
-
-            LOGGER.info("-------------------------------------------------------------------");
-
-            LOGGER.info("Removed " + removedTags + " tags due to not meeting the minimum requirements for block count.");
-            LOGGER.info("Made " + madeTags + " tags total(Common and ModId based tags combined).");
-
-            //----------------------------------------------------------------------------------------------------------------------------------------
+//            LOGGER.info("");
+//            LOGGER.info("Starting Tag Creation for Block Tags!");
+//            LOGGER.info("-----------------------------------------------------------");
+//
+//            for(Map.Entry<String, MasterKey> entry : MasterKey.ULTIMATE_KEY_RING.entrySet()){
+//                evaluateStringEntry(entry.getValue(), entry.getKey());
+//            }
+//
+//            LOGGER.info("-------------------------------------------------------------------");
+//
+//            //-------------------------------------------------------------------------------------------------------------------
+//            //  Remove Tags that don't meet a defined minimum block count
+//
+//            int removedTags = 0;
+//
+//            List<Map.Entry<String, Set<Item>>> entryList = new ArrayList<>(bothTagEntries.entrySet());
+//
+//            for(int minBlockCount = 0; minBlockCount < MINIMUM_BLOCK_COUNT_FOR_TAG; minBlockCount++) {
+//                for (int index = 0; index < entryList.size(); index++) {
+//                    Map.Entry<String, Set<Item>> entry = entryList.get(index);
+//
+//                    if(entry.getKey().contains("dirt")
+//                            || entry.getKey().contains("grass")
+//                            || entry.getKey().contains("mycelium")
+//                            || Objects.equals(entry.getKey(), "nether")
+//                    ){
+//                        continue;
+//                    }
+//
+//                    if (entry.getValue().size() < minBlockCount) {
+//                        entryList.remove(entry);
+//
+//                        removedTags++;
+//                        LOGGER.info("Removing -> [" + entry.getKey() + "] as it only contained a " + minBlockCount + " block.");
+//                    }
+//                }
+//            }
+//
+//            //-------------------------------------------------------------------------------------------------------------------
+//            //  Both Tags but only Consistency Plus Tags / Blocks
+//
+//            int madeTags = 0;
+//
+//            for(Map.Entry<String, Set<Item>> entry : entryList){
+//                int tagsCreated = 0;
+//
+//                for (Item item : entry.getValue()) {
+//                    tagsCreated = Math.max(applyToBothTags(entry.getKey(), item, getOrCreateTagBuilderFunc), tagsCreated);
+//                }
+//
+//                madeTags += tagsCreated;
+//            }
+//
+//            //-------------------------------------------------------------------------------------------------------------------
+//            //  Common Only Tags (i.e. Minecraft blocks being added to Consistency Plus based tags
+//
+//            for(Map.Entry<String, Set<Item>> entry : commonOnlyEntries.entrySet()){
+//                for (Item item : entry.getValue()) {
+//                    applyToBothTags(entry.getKey(), item, true, getOrCreateTagBuilderFunc);
+//                }
+//            }
+//
+//            LOGGER.info("-------------------------------------------------------------------");
+//
+//            LOGGER.info("Removed " + removedTags + " tags due to not meeting the minimum requirements for block count.");
+//            LOGGER.info("Made " + madeTags + " tags total(Common and ModId based tags combined).");
+//
+//            //----------------------------------------------------------------------------------------------------------------------------------------
 
             getOrCreateTagBuilderFunc.apply(getCommonTag("nuggets/copper"))
                     .add(CPlusItems.COPPER_NUGGET.get());
@@ -346,9 +369,39 @@ public class ConsistencyPlusTagProvider {
             getOrCreateTagBuilderFunc.apply(getCommonTag("crops/nether_wart"))
                     .add(CPlusItems.WARPED_WART.get());
 
-//            getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
-//                    .add(CPlusItems.BRICK.get());
+            for(DyeColor dyeColor : DyeColor.values()) {
+                getOrCreateTagBuilderFunc.apply(getCommonTag("bundles"))
+                        .add(CPlusEntries.DYED_BUNDLE.getDyedItem(dyeColor));
+            }
 
+            for(RegistryEntryGroup registryEntryGroup : RegistryEntryGroup.ALL_ENTRY_GROUPS){
+                Item item = registryEntryGroup.getBrickItem();
+
+                if(item != null){
+                    getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
+                            .add(item);
+                }
+            }
+
+            for(DyedRegistryEntryGroup dyedRegistryEntryGroup : DyedRegistryEntryGroup.ALL_DYED_ENTRY_GROUPS){
+                for(DyeColor dyeColor : DyeColor.values()) {
+                    Item item = dyedRegistryEntryGroup.getDyedBrick(dyeColor);
+
+                    if(item != null){
+                        getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
+                                .add(item);
+                    }
+                }
+            }
+
+            for(MetalRegistryEntryGroup metalRegistryEntryGroup : MetalRegistryEntryGroup.ALL_METAL_ENTRY_GROUPS){
+                Item item = metalRegistryEntryGroup.getWaxedBrickItem();
+
+                if(item != null){
+                    getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
+                            .add(item);
+                }
+            }
         }
 
         @Override
@@ -364,16 +417,18 @@ public class ConsistencyPlusTagProvider {
 
         protected static final Logger LOGGER = LogManager.getLogger(BaseConsitencyPlusTagProvider.class);
 
+        public static List<TagKey<?>> ALL_BLOCK_TAGS = new ArrayList<>();
+
         protected final RegistryKey<? extends Registry<T>> registryKey;
         protected final Registry<T> registry;
 
         protected final T defaultEntry;
 
         protected final Set<TagKey<T>> ALREADY_MADE_COMMON_TAGS = new HashSet<>();
-        protected final Map<String, Boolean> restrictCommonTagCreation = new HashMap<>();
+        protected final Map<String, Boolean> restrictCommonTagCreation = new LinkedHashMap<>();
 
-        protected final Map<String, Set<T>> commonOnlyEntries = new HashMap<>();
-        protected final Map<String, Set<T>> bothTagEntries = new HashMap<>();
+        protected final Map<String, Set<T>> commonOnlyEntries = new LinkedHashMap<>();
+        protected final Map<String, Set<T>> bothTagEntries = new LinkedHashMap<>();
 
 
         protected BaseConsitencyPlusTagProvider(Registry<T> registry, T defaultEntry) {
@@ -605,6 +660,9 @@ public class ConsistencyPlusTagProvider {
 
                 getOrCreateTagBuilderFunc.apply(consitencyPlus).add(entry);
 
+                if(entry instanceof Block && !ALL_BLOCK_TAGS.contains(consitencyPlus))
+                    ALL_BLOCK_TAGS.add(consitencyPlus);
+
                 if(restrictCommonTagCreation.containsKey(tag) && restrictCommonTagCreation.get(tag)) {
                     TagKey<T> common = getCommonTag(tag);
 
@@ -614,11 +672,17 @@ public class ConsistencyPlusTagProvider {
 
                         tagsCreated++;
                     }
+
+                    if(entry instanceof Block && !ALL_BLOCK_TAGS.contains(common))
+                        ALL_BLOCK_TAGS.add(common);
                 }
             }else{
                 TagKey<T> common = getCommonTag(tag);
 
                 getOrCreateTagBuilderFunc.apply(common).add(entry);
+
+                if(entry instanceof Block && !ALL_BLOCK_TAGS.contains(common))
+                    ALL_BLOCK_TAGS.add(common);
             }
 
             return tagsCreated;

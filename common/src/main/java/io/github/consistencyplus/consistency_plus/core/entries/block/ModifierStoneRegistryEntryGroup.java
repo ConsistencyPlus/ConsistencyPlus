@@ -32,7 +32,9 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
                 }
             }
         }
-        if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+        if (checkset2(name + "_brick")){
+            BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+        }
     }
 
     public String getSetModifiedID(SetModifiers modifier, BlockShapes shapes, BlockTypes type) {

@@ -9,6 +9,6 @@ public class TagUtilImpl {
 
     public static <T> TagKey<T> initTag(String name, RegistryKey<? extends Registry<T>> registryKey)
     {
-        return TagKey.of(registryKey, new Identifier("forge", name));
+        return TagKey.of(registryKey, new Identifier("c", name));
     }
 }

@@ -17,15 +17,27 @@ import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBlockRegistryEntryGroupInterface {
     boolean withBase;
 
+    public static final List<DyedRegistryEntryGroup> ALL_DYED_ENTRY_GROUPS = new ArrayList<>();
+
+    Map<DyeColor, RegistrySupplier<Item>> DYED_BRICKS = new HashMap<>();
+
     public DyedRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, Boolean withBase) {
         super(name, blockSettings, false);
         this.withBase = withBase;
         construct();
+
+        ALL_DYED_ENTRY_GROUPS.add(this);
     }
 
     @Override
@@ -45,7 +57,11 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
                 }
             }
 
-            if (!(name.equals("glowstone") || name.equals("tinted_glass")) ) ConsistencyPlusMain.ITEMS.register(color.toString() + "_" + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+            if (!(name.equals("glowstone") || name.equals("tinted_glass"))){
+                RegistrySupplier<Item> dyed_brick = ConsistencyPlusMain.ITEMS.register(color.toString() + "_" + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+
+                DYED_BRICKS.put(color, dyed_brick);
+            }
         }
     }
 
@@ -64,6 +80,11 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
         String id = getDyedID(dyeColor, shapes, type);
         if (checkMinecraft(id)) return Registry.ITEM.get(new Identifier("minecraft", (id)));
         return Registry.ITEM.get(ConsistencyPlusMain.id(id));
+    }
+
+    @Nullable
+    public Item getDyedBrick(DyeColor color){
+        return !this.DYED_BRICKS.isEmpty() ? DYED_BRICKS.get(color).get() : null;
     }
 
     public String getDyedID(DyeColor color, BlockShapes shapes, BlockTypes type) {
@@ -89,6 +110,7 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
             return Registry.ITEM.get(ConsistencyPlusMain.id(id));
         } else return getDyedItem(DyeColor.WHITE, shapes, type);
     }
+
 
     //dyeColor.toString() + "_" +
 }

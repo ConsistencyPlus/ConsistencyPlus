@@ -4,6 +4,8 @@ import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags;
 import io.github.consistencyplus.consistency_plus.data.providers.ConsistencyPlusTagProviderFabric;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.data.server.BlockTagsProvider;
 
 public class ConsistencyPlusDatagen implements DataGeneratorEntrypoint {
     @Override
@@ -12,13 +14,9 @@ public class ConsistencyPlusDatagen implements DataGeneratorEntrypoint {
         long startTime = System.currentTimeMillis();
 
         ConsistencyPlusTags.init();
-//
-//        fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.DyeableBlockTagProvider(fabricDataGenerator));
 
-        fabricDataGenerator.addProvider(ConsistencyPlusTagProviderFabric.UltimateItemTagProvider::new);
-        fabricDataGenerator.addProvider(ConsistencyPlusTagProviderFabric.UltimateBlockTagProvider::new);
-
-        //fabricDataGenerator.addProvider(new ConsistencyPlusTagProviderFabric.CommonBlockTagProvider(fabricDataGenerator));
+        FabricTagProvider.BlockTagProvider tagProvider = fabricDataGenerator.addProvider(ConsistencyPlusTagProviderFabric.UltimateBlockTagProvider::new);
+        fabricDataGenerator.addProvider(fabricDataGenerator1 -> new ConsistencyPlusTagProviderFabric.UltimateItemTagProvider(fabricDataGenerator1, tagProvider));
 
         long finishTime = System.currentTimeMillis();
 

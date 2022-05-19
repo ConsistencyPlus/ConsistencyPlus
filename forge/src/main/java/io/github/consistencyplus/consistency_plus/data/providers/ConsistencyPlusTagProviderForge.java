@@ -30,7 +30,7 @@ public class ConsistencyPlusTagProviderForge {
 
         @Override
         protected void configure() {
-            ConsistencyPlusTagProvider.UltimateItemTagProvider.INSTANCE.createAndFillTags(this::getOrCreateTagBuilder);
+            ConsistencyPlusTagProvider.UltimateItemTagProvider.INSTANCE.createAndFillTags(this::getOrCreateTagBuilder, this::copy);
         }
     }
 }

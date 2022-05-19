@@ -19,12 +19,22 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import org.apache.commons.lang3.tuple.Pair;
 
+import javax.annotation.Nullable;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MetalRegistryEntryGroup extends RegistryEntryGroup {
+
+    public static final List<MetalRegistryEntryGroup> ALL_METAL_ENTRY_GROUPS = new ArrayList<>();
+
+    protected @Nullable RegistrySupplier<Item> WAXED_BRICK_ITEM = null;
+
     public MetalRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings);
+
+        ALL_METAL_ENTRY_GROUPS.add(this);
     }
 
     //todo: Make this work non-statically (FOR THE OTHER TYPES OF METALS) and decide what happens to this system.
@@ -58,8 +68,10 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
                 }
             }
 
-            if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register(oxidization.toString() + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
-            if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register("waxed_" + oxidization.toString() + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+            if (checkset2(name + "_brick")){
+                BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(oxidization.toString() + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+                WAXED_BRICK_ITEM = ConsistencyPlusMain.ITEMS.register("waxed_" + oxidization.toString() + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+            }
 
         }
         finish();
@@ -95,6 +107,11 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
         CopperOxidization last = CopperOxidization.values()[current.ordinal() - 1];
         RegistrySupplier<Block> less = getBlock(last, type, shape, false);
         registerOxidizable(less, more);
+    }
+
+    @Nullable
+    public Item getWaxedBrickItem(){
+        return this.WAXED_BRICK_ITEM != null ? this.WAXED_BRICK_ITEM.get() : null;
     }
 
     private String getOxiID(CopperOxidization oxidization, BlockShapes shape, BlockTypes type){

@@ -4,6 +4,8 @@ import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTagProvide
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 
+import javax.annotation.Nullable;
+
 public class ConsistencyPlusTagProviderFabric {
 
     public static class UltimateBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -20,13 +22,13 @@ public class ConsistencyPlusTagProviderFabric {
 
     public static class UltimateItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
-        public UltimateItemTagProvider(FabricDataGenerator dataGenerator) {
-            super(dataGenerator);
+        public UltimateItemTagProvider(FabricDataGenerator dataGenerator, @Nullable BlockTagProvider blockTagProvider) {
+            super(dataGenerator, blockTagProvider);
         }
 
         @Override
         protected void generateTags() {
-            ConsistencyPlusTagProvider.UltimateItemTagProvider.INSTANCE.createAndFillTags(this::getOrCreateTagBuilder);
+            ConsistencyPlusTagProvider.UltimateItemTagProvider.INSTANCE.createAndFillTags(this::getOrCreateTagBuilder, this::copy);
         }
     }
 }

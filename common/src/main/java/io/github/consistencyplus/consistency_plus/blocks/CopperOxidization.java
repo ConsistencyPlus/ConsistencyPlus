@@ -38,12 +38,12 @@ public enum CopperOxidization {
     }
 
     public String addOxidization(String id) {
-        return isBase() ? id : toString() + '_' + id;
+        return !isBase() ?  toString() + '_' + id : id;
     }
 
     @Override
     public String toString() {
-        return isBase() ? "" : name().toLowerCase(Locale.ROOT);
+        return this == BASE ? "" : name().toLowerCase(Locale.ROOT);
     }
 
     public boolean isBase(){

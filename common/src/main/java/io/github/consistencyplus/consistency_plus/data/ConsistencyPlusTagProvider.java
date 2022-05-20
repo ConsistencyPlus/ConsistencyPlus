@@ -232,7 +232,13 @@ public class ConsistencyPlusTagProvider {
             getOrCreateTagBuilderFunc.apply(getCommonTag("material/terracotta/terracotta_bricks_block"))
                     .add(Blocks.BRICKS);
 
+            getOrCreateTagBuilderFunc.apply(getCommonTag("color/plain"))
+                    .add(Blocks.BRICKS);
+
             getOrCreateTagBuilderFunc.apply(getCommonTag("material/tinted_glass"))
+                    .add(Blocks.TINTED_GLASS);
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("color/plain"))
                     .add(Blocks.TINTED_GLASS);
 
             getOrCreateTagBuilderFunc.apply(getCommonTag("oxidization/none"))
@@ -378,7 +384,7 @@ public class ConsistencyPlusTagProvider {
                 Item item = registryEntryGroup.getBrickItem();
 
                 if(item != null){
-                    getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
+                    getOrCreateTagBuilderFunc.apply(getConsistencyTag("ingots/brick"))
                             .add(item);
                 }
             }
@@ -388,11 +394,16 @@ public class ConsistencyPlusTagProvider {
                     Item item = dyedRegistryEntryGroup.getDyedBrick(dyeColor);
 
                     if(item != null){
-                        getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
+                        getOrCreateTagBuilderFunc.apply(getConsistencyTag("ingots/brick"))
+                                .add(item);
+
+                        getOrCreateTagBuilderFunc.apply(getConsistencyTag("color/" + dyeColor.toString()))
                                 .add(item);
                     }
                 }
             }
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick")).addTag(getConsistencyTag("ingots/brick"));
 
         }
 

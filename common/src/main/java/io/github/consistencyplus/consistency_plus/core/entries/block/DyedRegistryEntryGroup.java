@@ -30,7 +30,7 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
 
     public static final List<DyedRegistryEntryGroup> ALL_DYED_ENTRY_GROUPS = new ArrayList<>();
 
-    Map<DyeColor, RegistrySupplier<Item>> DYED_BRICKS = new HashMap<>();
+    protected Map<DyeColor, RegistrySupplier<Item>> DYED_BRICKS = new HashMap<>();
 
     public DyedRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, Boolean withBase) {
         super(name, blockSettings, false);

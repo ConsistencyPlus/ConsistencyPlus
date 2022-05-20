@@ -17,7 +17,7 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import org.apache.commons.lang3.tuple.Pair;
+import net.minecraft.util.Pair;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
 
     public static final List<MetalRegistryEntryGroup> ALL_METAL_ENTRY_GROUPS = new ArrayList<>();
 
-    protected @Nullable RegistrySupplier<Item> WAXED_BRICK_ITEM = null;
+    protected Map<CopperOxidization, Pair<RegistrySupplier<Item>, RegistrySupplier<Item>>> ALL_METAL_INGOTS;
 
     public MetalRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         super(name, blockSettings);
@@ -56,6 +56,8 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
 
     //todo: Dehardcodeify this
     public void construct() {
+        ALL_METAL_INGOTS = new HashMap<>();
+
         for (CopperOxidization oxidization : CopperOxidization.values()) {
             for (BlockTypes type : BlockTypes.values()) {
                 for (BlockShapes shape : BlockShapes.values()) {
@@ -69,8 +71,11 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
             }
 
             if (checkset2(name + "_brick")){
-                BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(oxidization.toString() + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
-                WAXED_BRICK_ITEM = ConsistencyPlusMain.ITEMS.register("waxed_" + oxidization.toString() + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+                Pair<RegistrySupplier<Item>, RegistrySupplier<Item>> pair = new Pair<>(
+                        ConsistencyPlusMain.ITEMS.register(oxidization.addOxidization(name) + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC))),
+                        ConsistencyPlusMain.ITEMS.register("waxed_" + oxidization.addOxidization(name) + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC))));
+
+                ALL_METAL_INGOTS.put(oxidization, pair);
             }
 
         }
@@ -80,13 +85,13 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
     public void register(String name, BlockShapes shape, AbstractBlock.Settings blockSettings, Oxidizable.OxidizationLevel level, BlockTypes type) {
         RegistrySupplier<Block> unwaxedBlock = unwaxedBlockRegistration(name, shape, blockSettings, level);
         RegistrySupplier<Item> unwaxedItem =  ConsistencyPlusMain.ITEMS.register(name, () -> new BlockItem(unwaxedBlock.get(), CPlusItemGroups.consistencyPlusMiscItemSettings()));
-        BLOCKS.put(new Key(CopperOxidization.fromVanilla(level), type, shape, false), Pair.of(unwaxedBlock, unwaxedItem));
+        BLOCKS.put(new Key(CopperOxidization.fromVanilla(level), type, shape, false), new Pair<>(unwaxedBlock, unwaxedItem));
         tryRegisterOxidizable(unwaxedBlock, CopperOxidization.fromVanilla(level), type, shape);
 
         String waxedID = "waxed_" + name;
         RegistrySupplier<Block> waxedBlock = blockRegistration(waxedID, shape, blockSettings);
         RegistrySupplier<Item> waxedItem = ConsistencyPlusMain.ITEMS.register(waxedID, () -> new BlockItem(waxedBlock.get(), CPlusItemGroups.consistencyPlusMiscItemSettings()));
-        BLOCKS.put(new Key(CopperOxidization.fromVanilla(level), type, shape, true), Pair.of(waxedBlock, waxedItem));
+        BLOCKS.put(new Key(CopperOxidization.fromVanilla(level), type, shape, true), new Pair<>(waxedBlock, waxedItem));
 
         registerWaxable(unwaxedBlock, waxedBlock);
     }
@@ -110,8 +115,14 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
     }
 
     @Nullable
-    public Item getWaxedBrickItem(){
-        return this.WAXED_BRICK_ITEM != null ? this.WAXED_BRICK_ITEM.get() : null;
+    public Pair<Item, Item> getMetalIngotItems(CopperOxidization oxidization){
+        if(ALL_METAL_INGOTS.containsKey(oxidization)) {
+            Pair<RegistrySupplier<Item>, RegistrySupplier<Item>> pair1 = ALL_METAL_INGOTS.get(oxidization);
+
+            return new Pair<>(pair1.getLeft().get(), pair1.getRight().get());
+        } else {
+            return null;
+        }
     }
 
     private String getOxiID(CopperOxidization oxidization, BlockShapes shape, BlockTypes type){

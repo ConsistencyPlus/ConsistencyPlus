@@ -3,6 +3,7 @@ package io.github.consistencyplus.consistency_plus.data;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
+import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import io.github.consistencyplus.consistency_plus.core.entries.block.DyedRegistryEntryGroup;
 import io.github.consistencyplus.consistency_plus.core.entries.block.MetalRegistryEntryGroup;
 import io.github.consistencyplus.consistency_plus.core.entries.block.RegistryEntryGroup;
@@ -18,6 +19,7 @@ import net.minecraft.tag.BlockTags;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Pair;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
 import org.apache.logging.log4j.LogManager;
@@ -403,16 +405,21 @@ public class ConsistencyPlusTagProvider {
                 }
             }
 
-            getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick")).addTag(getConsistencyTag("ingots/brick"));
-
             for(MetalRegistryEntryGroup metalRegistryEntryGroup : MetalRegistryEntryGroup.ALL_METAL_ENTRY_GROUPS){
-                Item item = metalRegistryEntryGroup.getWaxedBrickItem();
+                for(CopperOxidization oxidization : CopperOxidization.values()) {
+                    Pair<Item, Item> ingots = metalRegistryEntryGroup.getMetalIngotItems(oxidization);
 
-                if(item != null){
-                    getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
-                            .add(item);
+                    if (ingots != null) {
+                        getOrCreateTagBuilderFunc.apply(getConsistencyTag("ingots/brick"))
+                                .add(ingots.getLeft());
+
+                        getOrCreateTagBuilderFunc.apply(getConsistencyTag("ingots/brick"))
+                                .add(ingots.getRight());
+                    }
                 }
             }
+
+            getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick")).addTag(getConsistencyTag("ingots/brick"));
         }
 
         @Override

@@ -394,14 +394,6 @@ public class ConsistencyPlusTagProvider {
                 }
             }
 
-            for(MetalRegistryEntryGroup metalRegistryEntryGroup : MetalRegistryEntryGroup.ALL_METAL_ENTRY_GROUPS){
-                Item item = metalRegistryEntryGroup.getWaxedBrickItem();
-
-                if(item != null){
-                    getOrCreateTagBuilderFunc.apply(getCommonTag("ingots/brick"))
-                            .add(item);
-                }
-            }
         }
 
         @Override

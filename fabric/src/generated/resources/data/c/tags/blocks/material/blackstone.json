@@ -2,14 +2,14 @@
   "replace": false,
   "values": [
     "#consistency_plus:material/blackstone",
-    "minecraft:blackstone_slab",
-    "minecraft:blackstone",
-    "minecraft:blackstone_wall",
-    "minecraft:polished_blackstone_slab",
     "minecraft:blackstone_stairs",
+    "minecraft:polished_blackstone_slab",
+    "minecraft:blackstone_wall",
+    "minecraft:polished_blackstone",
+    "minecraft:blackstone",
     "minecraft:polished_blackstone_wall",
     "minecraft:polished_blackstone_stairs",
-    "minecraft:polished_blackstone",
+    "minecraft:blackstone_slab",
     "minecraft:polished_blackstone_bricks"
   ]
 }

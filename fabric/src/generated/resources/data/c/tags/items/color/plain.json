@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "#consistency_plus:color/plain",
+    "minecraft:glowstone",
     "minecraft:terracotta",
-    "minecraft:glowstone"
+    "minecraft:bricks",
+    "minecraft:tinted_glass"
   ]
 }

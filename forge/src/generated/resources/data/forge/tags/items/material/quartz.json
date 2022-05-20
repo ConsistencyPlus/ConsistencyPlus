@@ -2,14 +2,14 @@
   "replace": false,
   "values": [
     "#consistency_plus:material/quartz",
-    "minecraft:smooth_quartz_stairs",
-    "minecraft:smooth_quartz",
+    "minecraft:quartz_bricks",
+    "minecraft:quartz_pillar",
+    "minecraft:quartz_stairs",
+    "minecraft:quartz_slab",
     "minecraft:quartz_block",
     "minecraft:smooth_quartz_slab",
-    "minecraft:quartz_slab",
-    "minecraft:quartz_pillar",
-    "minecraft:chiseled_quartz_block",
-    "minecraft:quartz_bricks",
-    "minecraft:quartz_stairs"
+    "minecraft:smooth_quartz",
+    "minecraft:smooth_quartz_stairs",
+    "minecraft:chiseled_quartz_block"
   ]
 }

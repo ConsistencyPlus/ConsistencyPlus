@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "#consistency_plus:color/light_gray",
-    "minecraft:light_gray_concrete",
-    "minecraft:light_gray_terracotta"
+    "minecraft:light_gray_terracotta",
+    "minecraft:light_gray_concrete"
   ]
 }

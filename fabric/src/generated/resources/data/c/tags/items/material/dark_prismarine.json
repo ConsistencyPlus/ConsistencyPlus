@@ -3,7 +3,7 @@
   "values": [
     "#consistency_plus:material/dark_prismarine",
     "minecraft:dark_prismarine_slab",
-    "minecraft:dark_prismarine",
-    "minecraft:dark_prismarine_stairs"
+    "minecraft:dark_prismarine_stairs",
+    "minecraft:dark_prismarine"
   ]
 }

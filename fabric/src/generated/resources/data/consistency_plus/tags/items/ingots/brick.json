@@ -54,6 +54,14 @@
     "consistency_plus:brown_concrete_brick",
     "consistency_plus:green_concrete_brick",
     "consistency_plus:red_concrete_brick",
-    "consistency_plus:black_concrete_brick"
+    "consistency_plus:black_concrete_brick",
+    "consistency_plus:copper_brick",
+    "consistency_plus:waxed_copper_brick",
+    "consistency_plus:exposed_copper_brick",
+    "consistency_plus:waxed_exposed_copper_brick",
+    "consistency_plus:weathered_copper_brick",
+    "consistency_plus:waxed_weathered_copper_brick",
+    "consistency_plus:oxidized_copper_brick",
+    "consistency_plus:waxed_oxidized_copper_brick"
   ]
 }

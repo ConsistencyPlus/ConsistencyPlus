@@ -9,7 +9,7 @@ public enum BlockTypes {
     BRICK, TILE,
 
     //Prefixes the material
-    BASE, POLISHED, CUT,  COBBLED, SMOOTH;
+    BASE, POLISHED, CUT, COBBLED, SMOOTH;
 
     @Override
     public String toString() {

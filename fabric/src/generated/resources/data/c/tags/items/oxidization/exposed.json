@@ -1,12 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#consistency_plus:oxidization/exposed",
-    "minecraft:exposed_cut_copper",
-    "minecraft:exposed_cut_copper_stairs",
-    "minecraft:waxed_exposed_cut_copper_slab",
-    "minecraft:exposed_cut_copper_slab",
-    "minecraft:waxed_exposed_cut_copper_stairs",
-    "minecraft:waxed_exposed_cut_copper"
+    "#consistency_plus:oxidization/exposed"
   ]
 }

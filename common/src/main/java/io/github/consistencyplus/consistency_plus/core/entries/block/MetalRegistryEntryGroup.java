@@ -61,11 +61,17 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
         for (CopperOxidization oxidization : CopperOxidization.values()) {
             for (BlockTypes type : BlockTypes.values()) {
                 for (BlockShapes shape : BlockShapes.values()) {
+                    System.out.println("1:" + oxidization.addOxidization(shape.addShapes(type.addType(name), type)));
+
                     if (!checkset1(shape, type)) break;
                     if (type.equals(BlockTypes.TILE) && (shape.equals(BlockShapes.BLOCK) || shape.equals(BlockShapes.SLAB) || shape.equals(BlockShapes.STAIRS))) continue;
                     if (type.equals(BlockTypes.BASE) && shape.equals(BlockShapes.BLOCK)) continue;
+
+                    System.out.println("2:" + oxidization.addOxidization(shape.addShapes(type.addType(name), type)));
                     String id = getOxiID(oxidization, shape, type);
                     if (!checkset2(id)) continue;
+
+                    System.out.println("3:" + oxidization.addOxidization(shape.addShapes(type.addType(name), type)));
                     register(id, shape, CPlusSharedBlockSettings.copper(oxidization), oxidization.toVanilla(), type);
                 }
             }

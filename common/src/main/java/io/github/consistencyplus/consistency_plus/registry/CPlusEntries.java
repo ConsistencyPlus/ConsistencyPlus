@@ -118,12 +118,12 @@ public class CPlusEntries {
         whitelist.add("chiseled_red_sandstone");
         whitelist.add("polished_basalt");
         for (CopperOxidization oxidization : CopperOxidization.values()) {
-            whitelist.add(oxidization.toString() + "cut_copper");
-            whitelist.add(oxidization.toString() + "cut_copper_slab");
-            whitelist.add(oxidization.toString() + "cut_copper_stairs");
-            whitelist.add("waxed" + oxidization.toString() + "cut_copper");
-            whitelist.add("waxed" + oxidization.toString() + "cut_copper_slab");
-            whitelist.add("waxed" + oxidization.toString() + "cut_copper_stairs");
+            whitelist.add(oxidization.addOxidization("cut_copper"));
+            whitelist.add(oxidization.addOxidization("cut_copper_slab"));
+            whitelist.add(oxidization.addOxidization("cut_copper_stairs"));
+            whitelist.add("waxed_" + oxidization.addOxidization("cut_copper"));
+            whitelist.add("waxed_" + oxidization.addOxidization("cut_copper_slab"));
+            whitelist.add("waxed_" + oxidization.addOxidization("cut_copper_stairs"));
         }
         return whitelist;
     }

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cut_clay"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:clay_tiles",
+        "count": 4
+    }
+}

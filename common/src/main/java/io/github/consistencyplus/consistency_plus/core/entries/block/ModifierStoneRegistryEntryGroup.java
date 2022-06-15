@@ -27,12 +27,12 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
                     if (!type.equals(BlockTypes.BASE) && !shape.withTypes) continue;
                     if (!modifier.canGenerate(type, shape)) continue;
                     String id = getSetModifiedID(modifier, shape, type);
-                    if (!checkset2(id)) continue;
+                    if (!postIDChecks(id)) continue;
                     register(id, shape, specialCasing(type,shape));
                 }
             }
         }
-        if (checkset2(name + "_brick")){
+        if (postIDChecks(name + "_brick")){
             BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
         }
     }

@@ -8,6 +8,7 @@ import io.github.consistencyplus.consistency_plus.core.entries.block.DyedRegistr
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SnowBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.DyeColor;
@@ -24,6 +25,7 @@ public class DyedIceRegistryEntryGroup extends DyedRegistryEntryGroup {
         for (DyeColor color : DyeColor.values()) {
             for (BlockShapes shape : BlockShapes.values()) {
                 if (!shape.withTypes) break;
+                if (color.equals(DyeColor.BLUE)) continue;
                 String id = getDyedID(color, shape, BlockTypes.BASE);
                 if (checkMinecraft(id)) continue;
                 register(id, shape, getBlockSettings().mapColor(color.getMapColor()));

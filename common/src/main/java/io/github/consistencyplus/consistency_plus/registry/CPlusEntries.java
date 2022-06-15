@@ -53,7 +53,15 @@ public class CPlusEntries {
     public static final DyedRegistryEntryGroup GLOWSTONE = new DyedRegistryEntryGroup("glowstone", CPlusSharedBlockSettings.glowstone(), true);
     public static final DyedRegistryEntryGroup TINTED_GLASS = new TintedGlassRegistryEntryGroup("tinted_glass", CPlusSharedBlockSettings.tintedGlass(), false);
     public static final DyedRegistryEntryGroup GLAZED_TERRACOTTA = new PolishedGlazedTerracottaRegistryEntryGroup("glazed_terracotta", CPlusSharedBlockSettings.glazedTerracotta());
-    public static final DyedIceRegistryEntryGroup ICE = new DyedIceRegistryEntryGroup("ice", AbstractBlock.Settings.copy(Blocks.BLUE_ICE));
+    public static final DyedIceRegistryEntryGroup DYED_ICE = new DyedIceRegistryEntryGroup("ice", AbstractBlock.Settings.copy(Blocks.BLUE_ICE));
+
+    public static final RegistryEntryGroup ICE = new IceRegistryEntryGroup("ice", AbstractBlock.Settings.copy(Blocks.ICE));
+    public static final RegistryEntryGroup PACKED_ICE = new MiscRegistryEntryGroup("packed_ice", AbstractBlock.Settings.copy(Blocks.PACKED_ICE));
+    public static final RegistryEntryGroup BLUE_ICE = new MiscRegistryEntryGroup("blue_ice", AbstractBlock.Settings.copy(Blocks.BLUE_ICE));
+    public static final RegistryEntryGroup CLAY = new MiscRegistryEntryGroup("clay", AbstractBlock.Settings.copy(Blocks.CLAY));
+    public static final RegistryEntryGroup SNOW = new MiscRegistryEntryGroup("snow", AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK));
+    // public static final RegistryEntryGroup MUD = new MiscRegistryEntryGroup("mud", AbstractBlock.Settings.copy(Blocks.MUD));
+    // public static final RegistryEntryGroup PACKED_MUD = new MiscRegistryEntryGroup("packed_mud", AbstractBlock.Settings.copy(Blocks.PACKED_MUD));
 
 
     public static boolean checkMinecraft(String id) {
@@ -106,6 +114,7 @@ public class CPlusEntries {
         blacklist.add("glowstone_brick");
         blacklist.add("netherrack_brick");
         blacklist.add("prismarine_brick");
+        blacklist.add("snow");
         return blacklist;
     }
 

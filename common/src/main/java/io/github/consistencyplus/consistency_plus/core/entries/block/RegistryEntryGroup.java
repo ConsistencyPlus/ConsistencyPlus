@@ -54,14 +54,14 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
     public void construct() {
         for (BlockTypes type : BlockTypes.values()) {
             for (BlockShapes shape : BlockShapes.values()) {
-                if (!checkset1(shape, type)) break;
+                if (!preIDChecks(shape, type)) break;
                 String id = getID(shape, type);
-                if (!checkset2(id)) continue;
+                if (!postIDChecks(id)) continue;
                 register(id, shape, specialCasing(type,shape));
             }
         }
 
-        if (checkset2(name + "_brick")){
+        if (postIDChecks(name + "_brick")){
             BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
         }
     }
@@ -70,14 +70,14 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
         return AbstractBlock.Settings.copy(settingsStorage);
     }
 
-    public boolean checkset1(BlockShapes shape, BlockTypes type) {
+    public boolean preIDChecks(BlockShapes shape, BlockTypes type) {
         if ((!shape.withTypes || !type.equals(BlockTypes.BASE)) && CPlusEntries.baseOnlyIDs.contains(name)) return false;
         if (!type.equals(BlockTypes.BASE) && !shape.withTypes) return false;
         if (type.equals(BlockTypes.COBBLED) && CPlusEntries.cobblelessMaterials.contains(name)) return false;
         return true;
     }
 
-    public boolean checkset2(String id) {
+    public boolean postIDChecks(String id) {
         if (checkMinecraft(id)) return false;
         if (CPlusEntries.blacklistedIDs.contains(id)) return false;
         return true;

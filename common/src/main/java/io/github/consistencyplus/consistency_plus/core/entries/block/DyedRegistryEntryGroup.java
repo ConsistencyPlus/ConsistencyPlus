@@ -46,10 +46,10 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
         for (DyeColor color : DyeColor.values()) {
             for (BlockTypes type : BlockTypes.values()) {
                 for (BlockShapes shape : BlockShapes.values()) {
-                    if (!checkset1(shape, type)) break;
+                    if (!preIDChecks(shape, type)) break;
                     if (!shape.equals(BlockShapes.BLOCK) && name.equals("tinted_glass")) break;
                     String id = getDyedID(color, shape, type);
-                    if (!checkset2(id)) continue;
+                    if (!postIDChecks(id)) continue;
                     // Block Setting Code is here.
                     AbstractBlock.Settings dyedBlockSettings = getBlockSettings();
                     dyedBlockSettings = (name.equals("terracotta")) ? dyedBlockSettings.mapColor(CPlusEntries.toTerracottaMapColor(color)) : dyedBlockSettings.mapColor(color.getMapColor());

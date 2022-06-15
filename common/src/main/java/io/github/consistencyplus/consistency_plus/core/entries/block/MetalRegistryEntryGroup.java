@@ -62,18 +62,18 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
             for (BlockTypes type : BlockTypes.values()) {
                 for (BlockShapes shape : BlockShapes.values()) {
 
-                    if (!checkset1(shape, type)) break;
+                    if (!preIDChecks(shape, type)) break;
                     if (type.equals(BlockTypes.TILE) && (shape.equals(BlockShapes.BLOCK) || shape.equals(BlockShapes.SLAB) || shape.equals(BlockShapes.STAIRS))) continue;
                     if (type.equals(BlockTypes.BASE) && shape.equals(BlockShapes.BLOCK)) continue;
 
                     String id = getOxiID(oxidization, shape, type);
-                    if (!checkset2(id)) continue;
+                    if (!postIDChecks(id)) continue;
 
                     register(id, shape, CPlusSharedBlockSettings.copper(oxidization), oxidization.toVanilla(), type);
                 }
             }
 
-            if (checkset2(name + "_brick")){
+            if (postIDChecks(name + "_brick")){
                 Pair<RegistrySupplier<Item>, RegistrySupplier<Item>> pair = new Pair<>(
                         ConsistencyPlusMain.ITEMS.register(oxidization.addOxidization(name) + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC))),
                         ConsistencyPlusMain.ITEMS.register("waxed_" + oxidization.addOxidization(name) + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC))));

@@ -17,7 +17,7 @@ public class PolishedGlazedTerracottaRegistryEntryGroup extends DyedRegistryEntr
                 for (BlockShapes shape : BlockShapes.values()) {
                     if (!shape.withTypes || !type.equals(BlockTypes.POLISHED)) break;
                     String id = getDyedID(color, shape, type);
-                    if (!checkset2(id)) continue;
+                    if (!postIDChecks(id)) continue;
                     register(id, shape, blockSettings.mapColor(color.getMapColor()));
                 }
             }

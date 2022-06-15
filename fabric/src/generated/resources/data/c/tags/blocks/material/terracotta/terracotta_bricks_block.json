@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:material/terracotta/terracotta_bricks_block",
+    "minecraft:bricks"
+  ]
+}

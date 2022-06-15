@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:carved_prismarine",
+    "consistency_plus:prismarine_tile_slab",
+    "consistency_plus:prismarine_pillar",
+    "consistency_plus:polished_prismarine_gate",
+    "consistency_plus:prismarine_tiles",
+    "consistency_plus:prismarine_tile_wall",
+    "consistency_plus:smooth_prismarine",
+    "consistency_plus:chiseled_prismarine",
+    "consistency_plus:prismarine_brick_wall",
+    "consistency_plus:cut_prismarine_wall",
+    "consistency_plus:prismarine_tile_gate",
+    "consistency_plus:smooth_prismarine_slab",
+    "consistency_plus:polished_prismarine_slab",
+    "consistency_plus:polished_prismarine_stairs",
+    "consistency_plus:cut_prismarine_slab",
+    "consistency_plus:prismarine_tile_stairs",
+    "consistency_plus:prismarine_gate",
+    "consistency_plus:smooth_prismarine_wall",
+    "consistency_plus:cut_prismarine",
+    "consistency_plus:polished_prismarine_wall",
+    "consistency_plus:polished_prismarine",
+    "consistency_plus:prismarine_brick_gate",
+    "consistency_plus:cut_prismarine_gate",
+    "consistency_plus:prismarine_corner_pillar",
+    "consistency_plus:cut_prismarine_stairs",
+    "consistency_plus:smooth_prismarine_stairs",
+    "consistency_plus:smooth_prismarine_gate"
+  ]
+}

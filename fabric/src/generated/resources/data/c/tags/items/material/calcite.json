@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:material/calcite",
+    "minecraft:calcite"
+  ]
+}

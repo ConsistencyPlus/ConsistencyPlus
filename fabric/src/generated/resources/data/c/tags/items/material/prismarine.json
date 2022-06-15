@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:material/prismarine",
+    "minecraft:prismarine",
+    "minecraft:prismarine_brick_stairs",
+    "minecraft:prismarine_slab",
+    "minecraft:prismarine_bricks",
+    "minecraft:prismarine_stairs",
+    "minecraft:prismarine_wall",
+    "minecraft:prismarine_brick_slab"
+  ]
+}

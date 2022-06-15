@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:material/crimson_wart",
+    "minecraft:nether_wart_block"
+  ]
+}

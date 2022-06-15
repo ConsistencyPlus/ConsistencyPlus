@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:unwaxed",
+    "minecraft:copper_block",
+    "minecraft:cut_copper",
+    "minecraft:cut_copper_slab",
+    "minecraft:cut_copper_stairs"
+  ]
+}

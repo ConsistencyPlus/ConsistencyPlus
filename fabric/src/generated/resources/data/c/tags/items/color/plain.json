@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:color/plain",
+    "minecraft:glowstone",
+    "minecraft:terracotta",
+    "minecraft:bricks",
+    "minecraft:tinted_glass"
+  ]
+}

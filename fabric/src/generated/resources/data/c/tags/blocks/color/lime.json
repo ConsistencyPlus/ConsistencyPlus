@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:color/lime",
+    "minecraft:lime_concrete",
+    "minecraft:lime_terracotta"
+  ]
+}

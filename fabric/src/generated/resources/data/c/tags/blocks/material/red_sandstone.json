@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:material/red_sandstone",
+    "minecraft:red_sandstone_slab",
+    "minecraft:red_sandstone_stairs",
+    "minecraft:red_sandstone_wall",
+    "minecraft:smooth_red_sandstone_slab",
+    "minecraft:smooth_red_sandstone",
+    "minecraft:cut_red_sandstone",
+    "minecraft:cut_red_sandstone_slab",
+    "minecraft:smooth_red_sandstone_stairs",
+    "minecraft:red_sandstone"
+  ]
+}

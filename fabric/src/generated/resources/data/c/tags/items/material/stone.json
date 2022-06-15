@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:material/stone",
+    "minecraft:stone_brick_wall",
+    "minecraft:stone_bricks",
+    "minecraft:smooth_stone",
+    "minecraft:smooth_stone_slab",
+    "minecraft:stone_stairs",
+    "minecraft:stone",
+    "minecraft:stone_slab",
+    "minecraft:stone_brick_slab",
+    "minecraft:stone_brick_stairs"
+  ]
+}

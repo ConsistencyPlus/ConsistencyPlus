@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:white_dyed_bundle",
+    "consistency_plus:orange_dyed_bundle",
+    "consistency_plus:magenta_dyed_bundle",
+    "consistency_plus:light_blue_dyed_bundle",
+    "consistency_plus:yellow_dyed_bundle",
+    "consistency_plus:lime_dyed_bundle",
+    "consistency_plus:pink_dyed_bundle",
+    "consistency_plus:gray_dyed_bundle",
+    "consistency_plus:light_gray_dyed_bundle",
+    "consistency_plus:cyan_dyed_bundle",
+    "consistency_plus:purple_dyed_bundle",
+    "consistency_plus:blue_dyed_bundle",
+    "consistency_plus:brown_dyed_bundle",
+    "consistency_plus:green_dyed_bundle",
+    "consistency_plus:red_dyed_bundle",
+    "consistency_plus:black_dyed_bundle"
+  ]
+}

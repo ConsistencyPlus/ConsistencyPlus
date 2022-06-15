@@ -9,27 +9,38 @@ import io.github.consistencyplus.consistency_plus.blocks.FalseBlock;
 import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BlockRegistryEntryGroupInterface;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
+import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
-import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
-import io.github.consistencyplus.consistency_plus.registry.CPlusSharedBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
+import javax.annotation.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInterface {
+
+    public static final List<RegistryEntryGroup> ALL_ENTRY_GROUPS = new ArrayList<>();
+
     public String name;
     public AbstractBlock.Settings blockSettings;
     public FalseBlock settingsStorage; // My pride and joy
 
+    protected @Nullable RegistrySupplier<Item> BRICK_ITEM = null;
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings) {
         this.name = name;
         this.blockSettings = blockSettings;
         settingsStorage = new FalseBlock(blockSettings);
         construct();
+
+        ALL_ENTRY_GROUPS.add(this);
     }
 
     public RegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, boolean construct) {
@@ -50,7 +61,9 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
             }
         }
 
-        if (checkset2(name + "_brick")) ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+        if (checkset2(name + "_brick")){
+            BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+        }
     }
 
     public AbstractBlock.Settings getBlockSettings() {
@@ -106,8 +119,16 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
         return Registry.ITEM.get(ConsistencyPlusMain.id(id));
     }
 
+    @Nullable
+    public Item getBrickItem(){
+        return this.BRICK_ITEM != null ? this.BRICK_ITEM.get() : null;
+    }
+
     public String getID(BlockShapes shapes, BlockTypes type) {
         String id = shapes.addShapes(type.addType(name), type);
+
+        MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createKey(shapes, type, this.name));
+
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 }

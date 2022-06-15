@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "#consistency_plus:material/terracotta",
+    "minecraft:magenta_terracotta",
+    "minecraft:terracotta",
+    "minecraft:lime_terracotta",
+    "minecraft:white_terracotta",
+    "minecraft:brown_terracotta",
+    "minecraft:light_blue_terracotta",
+    "minecraft:green_terracotta",
+    "minecraft:black_terracotta",
+    "minecraft:blue_terracotta",
+    "minecraft:gray_terracotta",
+    "minecraft:red_terracotta",
+    "minecraft:pink_terracotta",
+    "minecraft:yellow_terracotta",
+    "minecraft:orange_terracotta",
+    "minecraft:purple_terracotta",
+    "minecraft:cyan_terracotta",
+    "minecraft:light_gray_terracotta"
+  ]
+}

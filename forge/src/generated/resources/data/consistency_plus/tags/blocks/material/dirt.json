@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:dirt_stairs",
+    "consistency_plus:dirt_wall",
+    "consistency_plus:dirt_slab"
+  ]
+}

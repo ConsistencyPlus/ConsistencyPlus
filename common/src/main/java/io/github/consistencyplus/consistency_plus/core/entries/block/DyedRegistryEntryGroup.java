@@ -5,11 +5,11 @@ import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.core.entries.interfaces.DyedBlockRegistryEntryGroupInterface;
+import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -17,15 +17,27 @@ import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
 public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBlockRegistryEntryGroupInterface {
     boolean withBase;
 
+    public static final List<DyedRegistryEntryGroup> ALL_DYED_ENTRY_GROUPS = new ArrayList<>();
+
+    protected Map<DyeColor, RegistrySupplier<Item>> DYED_BRICKS = new HashMap<>();
+
     public DyedRegistryEntryGroup(String name, AbstractBlock.Settings blockSettings, Boolean withBase) {
         super(name, blockSettings, false);
         this.withBase = withBase;
         construct();
+
+        ALL_DYED_ENTRY_GROUPS.add(this);
     }
 
     @Override
@@ -45,7 +57,11 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
                 }
             }
 
-            if (!(name.equals("glowstone") || name.equals("tinted_glass")) ) ConsistencyPlusMain.ITEMS.register(color.toString() + "_" + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+            if (!(name.equals("glowstone") || name.equals("tinted_glass"))){
+                RegistrySupplier<Item> dyed_brick = ConsistencyPlusMain.ITEMS.register(color.toString() + "_" + name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+
+                DYED_BRICKS.put(color, dyed_brick);
+            }
         }
     }
 
@@ -66,8 +82,16 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
         return Registry.ITEM.get(ConsistencyPlusMain.id(id));
     }
 
+    @Nullable
+    public Item getDyedBrick(DyeColor color){
+        return !this.DYED_BRICKS.isEmpty() ? DYED_BRICKS.get(color).get() : null;
+    }
+
     public String getDyedID(DyeColor color, BlockShapes shapes, BlockTypes type) {
-        String id = shapes.addShapes(type.addType(color.toString().toLowerCase() + "_" + name), type);
+        String id = shapes.addShapes(type.addType(color.toString() + "_" + name), type);
+
+        MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createDyedKey(shapes, type, color, this.name));
+
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }
 
@@ -86,6 +110,7 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
             return Registry.ITEM.get(ConsistencyPlusMain.id(id));
         } else return getDyedItem(DyeColor.WHITE, shapes, type);
     }
+
 
     //dyeColor.toString() + "_" +
 }

@@ -1,7 +1,6 @@
 apply from: "../gradle/loader.gradle"
 
 architectury.forge()
-loom.forge.mixinConfigs = ["consistency_plus.mixins.json"]
 
 configurations {
     developmentForge.extendsFrom common
@@ -22,6 +21,34 @@ processResources {
 
     filesMatching("META-INF/mods.toml") {
         expand "version": project.version
+    }
+}
+
+sourceSets.main {
+    resources {
+        srcDirs += [
+                'src/generated/resources'
+        ]
+    }
+}
+
+tasks.withType(processResources.class) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+loom {
+    forge {
+        dataGen{
+            mod "consistency_plus"
+        }
+
+        launches {
+            data {
+                arg "--existing", file("src/main/resources").absolutePath
+            }
+        }
+
+        mixinConfigs = [ "consistency_plus.mixins.json" ]
     }
 }
 

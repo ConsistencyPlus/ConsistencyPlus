@@ -461,6 +461,12 @@
     "consistency_plus:polished_light_gray_glazed_terracotta_stairs",
     "consistency_plus:polished_gray_glazed_terracotta_stairs",
     "consistency_plus:polished_black_glazed_terracotta_stairs",
-    "consistency_plus:polished_brown_glazed_terracotta_stairs"
+    "consistency_plus:polished_brown_glazed_terracotta_stairs",
+    "consistency_plus:clay_stairs",
+    "consistency_plus:smooth_clay_stairs",
+    "consistency_plus:polished_clay_stairs",
+    "consistency_plus:clay_brick_stairs",
+    "consistency_plus:cut_clay_stairs",
+    "consistency_plus:clay_tile_stairs"
   ]
 }

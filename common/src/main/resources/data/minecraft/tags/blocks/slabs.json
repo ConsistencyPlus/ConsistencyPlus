@@ -458,6 +458,12 @@
     "consistency_plus:polished_light_gray_glazed_terracotta_slab",
     "consistency_plus:polished_gray_glazed_terracotta_slab",
     "consistency_plus:polished_black_glazed_terracotta_slab",
-    "consistency_plus:polished_brown_glazed_terracotta_slab"
+    "consistency_plus:polished_brown_glazed_terracotta_slab",
+    "consistency_plus:clay_slab",
+    "consistency_plus:smooth_clay_slab",
+    "consistency_plus:polished_clay_slab",
+    "consistency_plus:clay_brick_slab",
+    "consistency_plus:cut_clay_slab",
+    "consistency_plus:clay_tile_slab"
   ]
 }

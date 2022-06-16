@@ -139,6 +139,11 @@ public class CPlusEntries {
 
     public static List<String> createCobbleless() {
         List<String> cobbleless = new ArrayList<>();
+        cobbleless.add("clay");
+        cobbleless.add("snow");
+        cobbleless.add("ice");
+        cobbleless.add("packed_ice");
+        cobbleless.add("blue_ice");
         cobbleless.add("prismarine");
         cobbleless.add("dark_prismarine");
         cobbleless.add("bone");

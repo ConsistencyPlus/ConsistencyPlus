@@ -37,5 +37,6 @@
   "block.consistency_plus.blank_pillar": "Blank Pillar",
   "block.consistency_plus.blank_corner_pillar": "Blank Corner Pillar",
   "block.consistency_plus.chiseled_blank": "Chiseled Blank",
-  "block.consistency_plus.carved_blank": "Carved Blank"
+  "block.consistency_plus.carved_blank": "Carved Blank",
+  "item.consistency_plus.blank_brick": "Blank Brick"
 }

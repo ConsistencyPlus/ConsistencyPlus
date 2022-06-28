@@ -464,6 +464,12 @@
     "consistency_plus:polished_clay_slab",
     "consistency_plus:clay_brick_slab",
     "consistency_plus:cut_clay_slab",
-    "consistency_plus:clay_tile_slab"
+    "consistency_plus:clay_tile_slab",
+    "consistency_plus:snow_slab",
+    "consistency_plus:smooth_snow_slab",
+    "consistency_plus:polished_snow_slab",
+    "consistency_plus:snow_brick_slab",
+    "consistency_plus:cut_snow_slab",
+    "consistency_plus:snow_tile_slab"
   ]
 }

@@ -489,6 +489,12 @@
     "consistency_plus:polished_clay_wall",
     "consistency_plus:clay_brick_wall",
     "consistency_plus:cut_clay_wall",
-    "consistency_plus:clay_tile_wall"
+    "consistency_plus:clay_tile_wall",
+    "consistency_plus:snow_wall",
+    "consistency_plus:smooth_snow_wall",
+    "consistency_plus:polished_snow_wall",
+    "consistency_plus:snow_brick_wall",
+    "consistency_plus:cut_snow_wall",
+    "consistency_plus:snow_tile_wall"
   ]
 }

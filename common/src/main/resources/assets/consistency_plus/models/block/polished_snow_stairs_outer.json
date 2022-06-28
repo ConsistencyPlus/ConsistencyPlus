@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/polished_snow",
+    "top": "consistency_plus:block/polished_snow",
+    "side": "consistency_plus:block/polished_snow"
+  }
+}

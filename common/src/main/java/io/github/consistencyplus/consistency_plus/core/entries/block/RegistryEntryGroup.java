@@ -86,7 +86,7 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
     public AbstractBlock.Settings specialCasing(BlockTypes type, BlockShapes shape) {
         if (name.equals("crying_obsidian") && (shape.equals(BlockShapes.SLAB) || shape.equals(BlockShapes.STAIRS))) return getBlockSettings().nonOpaque();
         if (name.equals("netherrack") && (shape.withTypes)) return getBlockSettings();
-        if (checkMinecraft(type.addType(name))) return AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
+        if (!this.name.equals("snow") && checkMinecraft(type.addType(name))) return AbstractBlock.Settings.copy(getBlock(BlockShapes.BLOCK, type));
         return getBlockSettings();
     }
 

@@ -4,7 +4,7 @@
       "model": "consistency_plus:block/snow_slab"
     },
     "type=double": {
-      "model": "minecraft:block/snow"
+      "model": "minecraft:block/snow_block"
     },
     "type=top": {
       "model": "consistency_plus:block/snow_slab_top"

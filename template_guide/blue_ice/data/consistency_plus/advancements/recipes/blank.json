@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+
+      "consistency_plus:chiseled_blank_crafting",
+      "consistency_plus:cobbled_blank_gate",
+      "consistency_plus:cobbled_blank_slab",
+      "consistency_plus:cobbled_blank_stairs",
+      "consistency_plus:cobbled_blank_wall",
+      "consistency_plus:cut_blank_crafting",
+      "consistency_plus:cut_blank_gate_crafting",
+      "consistency_plus:cut_blank_slab_crafting",
+      "consistency_plus:cut_blank_stairs_crafting",
+      "consistency_plus:cut_blank_wall_crafting",
+      "consistency_plus:blank",
+      "consistency_plus:blank_brick",
+      "consistency_plus:blank_bricks",
+      "consistency_plus:blank_bricks_crafting",
+      "consistency_plus:blank_corner_pillar",
+      "consistency_plus:blank_crafting",
+      "consistency_plus:blank_crafting2",
+      "consistency_plus:blank_gate_crafting",
+      "consistency_plus:blank_pillar_crafting",
+      "consistency_plus:blank_slab_crafting",
+      "consistency_plus:blank_stairs_crafting",
+      "consistency_plus:blank_tiles_crafting",
+      "consistency_plus:blank_tile_gate_crafting",
+      "consistency_plus:blank_tile_slab_crafting",
+      "consistency_plus:blank_tile_stairs_crafting",
+      "consistency_plus:blank_tile_wall_crafting",
+      "consistency_plus:blank_wall_crafting",
+      "consistency_plus:polished_blank_crafting",
+      "consistency_plus:polished_blank_gate_crafting",
+      "consistency_plus:polished_blank_slab_crafting",
+      "consistency_plus:polished_blank_stairs_crafting",
+      "consistency_plus:polished_blank_wall_crafting",
+      "consistency_plus:smooth_blank",
+      "consistency_plus:smooth_blank_gate",
+      "consistency_plus:smooth_blank_gate_crafting",
+      "consistency_plus:smooth_blank_slab",
+      "consistency_plus:smooth_blank_slab_crafting",
+      "consistency_plus:smooth_blank_stairs",
+      "consistency_plus:smooth_blank_stairs_crafting",
+      "consistency_plus:smooth_blank_wall",
+      "consistency_plus:smooth_blank_wall_crafting"
+
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+"consistency_plus:cobbled_blank",
+"minecraft:blank"
+]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -4,16 +4,12 @@
     "recipes": [
 
       "consistency_plus:chiseled_clay_crafting",
-      "consistency_plus:cobbled_clay_gate",
-      "consistency_plus:cobbled_clay_slab",
-      "consistency_plus:cobbled_clay_stairs",
-      "consistency_plus:cobbled_clay_wall",
+      "consistency_plus:carved_clay_crafting",
       "consistency_plus:cut_clay_crafting",
       "consistency_plus:cut_clay_gate_crafting",
       "consistency_plus:cut_clay_slab_crafting",
       "consistency_plus:cut_clay_stairs_crafting",
       "consistency_plus:cut_clay_wall_crafting",
-      "consistency_plus:clay",
       "consistency_plus:clay_brick",
       "consistency_plus:clay_bricks",
       "consistency_plus:clay_bricks_crafting",

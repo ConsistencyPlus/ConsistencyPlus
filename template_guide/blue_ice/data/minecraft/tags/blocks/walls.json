@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:blank_wall",
+    "consistency_plus:smooth_blank_wall",
+    "consistency_plus:polished_blank_wall",
+    "consistency_plus:blank_brick_wall",
+    "consistency_plus:cut_blank_wall",
+    "consistency_plus:blank_tile_wall",
+    "consistency_plus:cobbled_blank_wall"
+  ]
+}

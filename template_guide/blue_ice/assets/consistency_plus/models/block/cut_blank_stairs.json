@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/cut_blank",
+    "top": "consistency_plus:block/cut_blank",
+    "side": "consistency_plus:block/cut_blank"
+  }
+}

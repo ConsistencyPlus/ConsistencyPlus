@@ -473,6 +473,12 @@
     "consistency_plus:polished_snow_stairs",
     "consistency_plus:snow_brick_stairs",
     "consistency_plus:cut_snow_stairs",
-    "consistency_plus:snow_tile_stairs"
+    "consistency_plus:snow_tile_stairs",
+    "consistency_plus:ice_stairs",
+    "consistency_plus:smooth_ice_stairs",
+    "consistency_plus:polished_ice_stairs",
+    "consistency_plus:ice_brick_stairs",
+    "consistency_plus:cut_ice_stairs",
+    "consistency_plus:ice_tile_stairs"
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_blank",
+    "consistency_plus:smooth_blank_slab",
+    "consistency_plus:smooth_blank_stairs",
+    "consistency_plus:smooth_blank_wall",
+    "consistency_plus:smooth_blank_gate"
+  ]
+}

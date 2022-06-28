@@ -4,16 +4,12 @@
     "recipes": [
 
       "consistency_plus:chiseled_snow_crafting",
-      "consistency_plus:cobbled_snow_gate",
-      "consistency_plus:cobbled_snow_slab",
-      "consistency_plus:cobbled_snow_stairs",
-      "consistency_plus:cobbled_snow_wall",
+      "consistency_plus:carved_snow_crafting",
       "consistency_plus:cut_snow_crafting",
       "consistency_plus:cut_snow_gate_crafting",
       "consistency_plus:cut_snow_slab_crafting",
       "consistency_plus:cut_snow_stairs_crafting",
       "consistency_plus:cut_snow_wall_crafting",
-      "consistency_plus:snow",
       "consistency_plus:snow_brick",
       "consistency_plus:snow_bricks",
       "consistency_plus:snow_bricks_crafting",

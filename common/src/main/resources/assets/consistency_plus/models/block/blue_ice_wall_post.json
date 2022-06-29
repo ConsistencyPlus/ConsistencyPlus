@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/template_wall_post",
+  "parent": "consistency_plus:block/template_consistency_wall_post_tri",
   "textures": {
-    "wall": "minecraft:block/blue_ice"
+    "wall": "minecraft:block/blue_ice",
+    "wall_top": "minecraft:block/blue_ice",
+    "wall_bottom": "minecraft:block/blue_ice"
   }
 }

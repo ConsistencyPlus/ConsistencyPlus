@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "consistency_plus:block/smooth_packed_ice"
+  }
+}

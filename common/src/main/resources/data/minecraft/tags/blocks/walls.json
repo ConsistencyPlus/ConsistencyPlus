@@ -506,6 +506,12 @@
     "consistency_plus:polished_ice_wall",
     "consistency_plus:ice_brick_wall",
     "consistency_plus:cut_ice_wall",
-    "consistency_plus:ice_tile_wall"
+    "consistency_plus:ice_tile_wall",
+    "consistency_plus:packed_ice_wall",
+    "consistency_plus:smooth_packed_ice_wall",
+    "consistency_plus:polished_packed_ice_wall",
+    "consistency_plus:packed_ice_brick_wall",
+    "consistency_plus:cut_packed_ice_wall",
+    "consistency_plus:packed_ice_tile_wall"
   ]
 }

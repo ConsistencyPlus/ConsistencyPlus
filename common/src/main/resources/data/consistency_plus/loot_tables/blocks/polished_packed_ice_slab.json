@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "consistency_plus:blue_ice_slab",
+              "name": "consistency_plus:polished_packed_ice_slab",
               "functions": [
                 {
                   "function": "minecraft:set_count",
@@ -18,7 +18,7 @@
                   "conditions": [
                     {
                       "condition": "minecraft:block_state_property",
-                      "block": "consistency_plus:blue_ice_slab",
+                      "block": "consistency_plus:polished_packed_ice_slab",
                       "properties": {
                         "type": "double"
                       }

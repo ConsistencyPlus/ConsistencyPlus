@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "top": "consistency_plus:block/smooth_snow",
+    "bottom": "consistency_plus:block/smooth_snow",
+    "side": "consistency_plus:block/smooth_snow"
+  }
+}

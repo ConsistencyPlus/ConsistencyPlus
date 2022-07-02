@@ -3,23 +3,41 @@
   "pools": [
     {
       "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "consistency_plus:blue_ice_slab",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:explosion_decay"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 2,
+              "type": "minecraft:item",
+              "name": "consistency_plus:blue_ice_slab",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 2,
+                  "conditions": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "consistency_plus:blue_ice_slab",
+                      "properties": {
+                        "type": "double"
+                      }
+                    }
+                  ]
+                }
+              ],
               "conditions": [
                 {
-                  "condition": "minecraft:block_state_property",
-                  "block": "consistency_plus:blue_ice_slab",
-                  "properties": {
-                    "type": "double"
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
                   }
                 }
               ]

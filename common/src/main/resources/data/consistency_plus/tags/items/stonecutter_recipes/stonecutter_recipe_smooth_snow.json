@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_snow",
+    "consistency_plus:smooth_snow_slab",
+    "consistency_plus:smooth_snow_stairs",
+    "consistency_plus:smooth_snow_wall",
+    "consistency_plus:smooth_snow_gate"
+  ]
+}

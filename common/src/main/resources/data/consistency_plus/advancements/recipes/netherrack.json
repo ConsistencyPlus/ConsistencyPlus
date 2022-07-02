@@ -4,6 +4,7 @@
     "recipes": [
 
       "consistency_plus:chiseled_netherrack_crafting",
+      "consistency_plus:carved_netherrack_crafting",
       "consistency_plus:cobbled_netherrack_gate",
       "consistency_plus:cobbled_netherrack_slab",
       "consistency_plus:cobbled_netherrack_stairs",

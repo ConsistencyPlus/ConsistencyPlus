@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+
+      "consistency_plus:chiseled_packed_mud_crafting",
+      "consistency_plus:carved_packed_mud_crafting",
+      "consistency_plus:cut_packed_mud_crafting",
+      "consistency_plus:cut_packed_mud_gate_crafting",
+      "consistency_plus:cut_packed_mud_slab_crafting",
+      "consistency_plus:cut_packed_mud_stairs_crafting",
+      "consistency_plus:cut_packed_mud_wall_crafting",
+      "consistency_plus:packed_mud",
+      "consistency_plus:packed_mud_brick",
+      "consistency_plus:packed_mud_bricks",
+      "consistency_plus:packed_mud_corner_pillar",
+      "consistency_plus:packed_mud_crafting",
+      "consistency_plus:packed_mud_crafting2",
+      "consistency_plus:packed_mud_gate_crafting",
+      "consistency_plus:packed_mud_pillar_crafting",
+      "consistency_plus:packed_mud_slab_crafting",
+      "consistency_plus:packed_mud_stairs_crafting",
+      "consistency_plus:packed_mud_tiles_crafting",
+      "consistency_plus:packed_mud_tile_gate_crafting",
+      "consistency_plus:packed_mud_tile_slab_crafting",
+      "consistency_plus:packed_mud_tile_stairs_crafting",
+      "consistency_plus:packed_mud_tile_wall_crafting",
+      "consistency_plus:packed_mud_wall_crafting",
+      "consistency_plus:polished_packed_mud_crafting",
+      "consistency_plus:polished_packed_mud_gate_crafting",
+      "consistency_plus:polished_packed_mud_slab_crafting",
+      "consistency_plus:polished_packed_mud_stairs_crafting",
+      "consistency_plus:polished_packed_mud_wall_crafting",
+      "consistency_plus:smooth_packed_mud",
+      "consistency_plus:smooth_packed_mud_gate",
+      "consistency_plus:smooth_packed_mud_gate_crafting",
+      "consistency_plus:smooth_packed_mud_slab",
+      "consistency_plus:smooth_packed_mud_slab_crafting",
+      "consistency_plus:smooth_packed_mud_stairs",
+      "consistency_plus:smooth_packed_mud_stairs_crafting",
+      "consistency_plus:smooth_packed_mud_wall",
+      "consistency_plus:smooth_packed_mud_wall_crafting"
+
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+"consistency_plus:cobbled_packed_mud",
+"minecraft:packed_mud"
+]
+          }
+        ]
+      }
+    }
+  }
+}

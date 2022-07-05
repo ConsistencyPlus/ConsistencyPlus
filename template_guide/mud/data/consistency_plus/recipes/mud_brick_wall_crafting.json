@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:mud_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:mud_brick_wall",
+        "count": 6
+    }
+}

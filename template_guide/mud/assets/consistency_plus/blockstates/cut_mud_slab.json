@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/cut_mud_slab"
+    },
+    "type=double": {
+      "model": "consistency_plus:block/cut_mud"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/cut_mud_slab_top"
+    }
+  }
+}

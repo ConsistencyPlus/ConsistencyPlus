@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:packed_mud_stairs",
+    "consistency_plus:smooth_packed_mud_stairs",
+    "consistency_plus:polished_packed_mud_stairs",
+    "minecraft:mud_brick_stairs",
+    "consistency_plus:cut_packed_mud_stairs",
+    "consistency_plus:packed_mud_tile_stairs"
+  ]
+}

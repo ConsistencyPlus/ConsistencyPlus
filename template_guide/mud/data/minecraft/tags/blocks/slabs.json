@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+
+    "consistency_plus:mud_slab",
+    "consistency_plus:smooth_mud_slab",
+    "consistency_plus:polished_mud_slab",
+    "consistency_plus:mud_brick_slab",
+    "consistency_plus:cut_mud_slab",
+    "consistency_plus:mud_tile_slab"
+  ]
+}

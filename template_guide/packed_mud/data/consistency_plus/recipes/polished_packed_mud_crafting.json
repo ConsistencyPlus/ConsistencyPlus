@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:packed_mud"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_packed_mud",
+        "count": 4
+    }
+}

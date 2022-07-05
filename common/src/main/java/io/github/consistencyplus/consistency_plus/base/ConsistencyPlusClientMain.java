@@ -2,11 +2,14 @@ package io.github.consistencyplus.consistency_plus.base;
 
 import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
+import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertHandler;
+import io.github.consistencyplus.consistency_plus.core.entries.block.IceRegistryEntryGroup;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.block.Block;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.client.item.UnclampedModelPredicateProvider;
@@ -30,6 +33,10 @@ public class ConsistencyPlusClientMain {
 
 		for (DyeColor color : DyeColor.values()) {
 			RenderTypeRegistry.register(RenderLayer.getTranslucent(), Registry.BLOCK.get(ConsistencyPlusMain.id(color + "_" + "tinted_glass")));
+		}
+
+		for (RegistrySupplier<Block> block : IceRegistryEntryGroup.iceBlocks) {
+			RenderTypeRegistry.register(RenderLayer.getTranslucent(), block.get());
 		}
 
 		for (DyeColor color : DyeColor.values()) {

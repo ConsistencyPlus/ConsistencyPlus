@@ -14,6 +14,7 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class NubertDispenserBehavior extends ItemDispenserBehavior {
+	public static final NubertDispenserBehavior INSTANCE = new NubertDispenserBehavior();
 	public static final ItemDispenserBehavior DEFAULT_BEHAVIOR = new ItemDispenserBehavior();
 
 	public ItemStack dispenseSilently(BlockPointer pointer, ItemStack stack) {

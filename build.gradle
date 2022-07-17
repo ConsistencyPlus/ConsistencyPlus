@@ -40,6 +40,7 @@ allprojects {
     }
 
     repositories {
+        maven { url "https://maven.bai.lol" }
         maven {
             url = "https://api.modrinth.com/maven"
             content { includeGroup "maven.modrinth" }

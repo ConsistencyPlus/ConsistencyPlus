@@ -5,8 +5,9 @@ import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.Oxidizable;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.random.RandomGenerator;
 
-import java.util.Random;
+import net.minecraft.util.random.RandomGenerator;
 
 public class OxidizableGateBlock extends FenceGateBlock implements Oxidizable {
 	private final OxidizationLevel oxidationLevel;
@@ -17,7 +18,7 @@ public class OxidizableGateBlock extends FenceGateBlock implements Oxidizable {
 	}
 	
 	@Override
-	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
 		this.tickDegradation(state, world, pos, random);
 	}
 	

@@ -13,7 +13,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.chunk.light.ChunkLightProvider;
 
-import java.util.Random;
+import net.minecraft.util.random.RandomGenerator;
 
 import static io.github.consistencyplus.consistency_plus.registry.CPlusBlocks.DIRT_WALL;
 import static net.minecraft.block.Blocks.AIR;
@@ -50,7 +50,7 @@ public class MyceliumWallBlock extends WallBlock implements HasUngrownVariant, S
 	}
 	
 	@Override
-	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
 		grow(state, world, pos, random);
 	}
 }

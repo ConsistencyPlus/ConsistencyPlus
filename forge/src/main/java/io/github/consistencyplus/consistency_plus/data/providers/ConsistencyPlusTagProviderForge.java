@@ -2,8 +2,8 @@ package io.github.consistencyplus.consistency_plus.data.providers;
 
 import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTagProvider;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.server.BlockTagsProvider;
-import net.minecraft.data.server.ItemTagsProvider;
+import net.minecraft.data.server.tag.BlockTagsProvider;
+import net.minecraft.data.server.tag.ItemTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nullable;

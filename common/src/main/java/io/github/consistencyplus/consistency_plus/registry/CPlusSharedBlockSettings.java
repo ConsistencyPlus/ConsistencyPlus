@@ -1,7 +1,5 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import dev.architectury.registry.block.BlockProperties;
-import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;

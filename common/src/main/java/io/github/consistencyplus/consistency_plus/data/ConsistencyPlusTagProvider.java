@@ -12,10 +12,11 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.AbstractTagProvider;
+import net.minecraft.data.server.tag.AbstractTagProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.tag.TagBuilder;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
@@ -41,7 +42,7 @@ public class ConsistencyPlusTagProvider {
             super(Registry.BLOCK, Blocks.AIR);
         }
 
-        public void createAndFillTags(Function<TagKey<Block>, ObjectBuilder<Block>> getOrCreateTagBuilderFunc) {
+        public void createAndFillTags(Function<TagKey<Block>, AbstractTagProvider.ObjectBuilder<Block>> getOrCreateTagBuilderFunc) {
 
             LOGGER.info("");
             LOGGER.info("Starting Tag Creation for Block Tags!");
@@ -267,11 +268,6 @@ public class ConsistencyPlusTagProvider {
 
         @Override
         protected void configure() {}
-
-        @Override
-        public String getName() {
-            return "Item Tags";
-        }
     }
 
     public static class UltimateItemTagProvider extends BaseConsitencyPlusTagProvider<Item>{
@@ -424,11 +420,6 @@ public class ConsistencyPlusTagProvider {
 
         @Override
         protected void configure() {}
-
-        @Override
-        public String getName() {
-            return "Item Tags";
-        }
     }
 
     public abstract static class BaseConsitencyPlusTagProvider<T> extends AbstractTagProvider<T>{

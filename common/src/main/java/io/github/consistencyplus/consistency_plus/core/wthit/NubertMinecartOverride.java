@@ -8,8 +8,7 @@ import mcp.mobius.waila.api.*;
 import mcp.mobius.waila.api.component.ItemComponent;
 import net.minecraft.entity.vehicle.MinecartEntity;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.text.LiteralText;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 
@@ -33,7 +32,7 @@ public class NubertMinecartOverride implements IEntityComponentProvider {
 	public void appendHead(ITooltip tooltip, IEntityAccessor accessor, IPluginConfig config) {
 		if (accessor.getEntity() instanceof MinecartEntity cart && cart.getContainedBlock().getBlock() instanceof NubertBlock nubert) {
 			boolean wig = nubert instanceof WiggedNubertBlock;
-			tooltip.setLine(WailaConstants.OBJECT_NAME_TAG, new TranslatableText("block.consistency_plus" + (wig ? ".wigged_nubert" : ".nubert")).formatted(Formatting.WHITE));
+			tooltip.setLine(WailaConstants.OBJECT_NAME_TAG, Text.translatable("block.consistency_plus" + (wig ? ".wigged_nubert" : ".nubert")).formatted(Formatting.WHITE));
 		}
 	}
 	
@@ -52,7 +51,7 @@ public class NubertMinecartOverride implements IEntityComponentProvider {
 	@Override
 	public void appendTail(ITooltip tooltip, IEntityAccessor accessor, IPluginConfig config) {
 		if (accessor.getEntity() instanceof MinecartEntity cart && cart.getContainedBlock().getBlock() instanceof NubertBlock) {
-			tooltip.setLine(WailaConstants.MOD_NAME_TAG, new LiteralText("Consistency Plus").formatted(Formatting.BLUE, Formatting.ITALIC));
+			tooltip.setLine(WailaConstants.MOD_NAME_TAG, Text.literal("Consistency Plus").formatted(Formatting.BLUE, Formatting.ITALIC));
 		}
 	}
 }

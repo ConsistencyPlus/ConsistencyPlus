@@ -11,7 +11,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 
-import java.util.Random;
+import net.minecraft.util.random.RandomGenerator;
 
 @Mixin(MyceliumBlock.class)
 public abstract class MyceliumBlockMixin extends SpreadableBlock implements HasUngrownVariant, SpreadableMyceliumBlock {
@@ -20,7 +20,7 @@ public abstract class MyceliumBlockMixin extends SpreadableBlock implements HasU
 	}
 	
 	@Override
-	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
 		grow(state, world, pos, random);
 	}
 	

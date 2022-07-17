@@ -11,7 +11,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Random;
+import net.minecraft.util.random.RandomGenerator;
 
 public class IceGateBlock extends CPlusFenceGateBlock implements CanMeltIntoWater {
     public IceGateBlock(Settings settings) {
@@ -24,7 +24,7 @@ public class IceGateBlock extends CPlusFenceGateBlock implements CanMeltIntoWate
     }
 
     @Override
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
         customRandomTick(state, world, pos);
     }
 }

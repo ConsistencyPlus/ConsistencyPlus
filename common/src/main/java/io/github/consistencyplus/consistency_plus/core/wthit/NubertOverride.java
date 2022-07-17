@@ -15,7 +15,7 @@ public class NubertOverride implements IBlockComponentProvider {
   public void appendBody(ITooltip tooltip, IBlockAccessor accessor, IPluginConfig config) {
     BlockPos pos = accessor.getPosition();
     boolean wigged = accessor.getBlock() instanceof WiggedNubertBlock;
-    tooltip.add(NubertHandler.getNubertText(wigged, false));
+    tooltip.addLine(NubertHandler.getNubertText(wigged, false));
     NubertHandler.TEXT_GOT_THIS_TICK = pos.equals(lastPos);
     lastPos = accessor.getPosition();
   }

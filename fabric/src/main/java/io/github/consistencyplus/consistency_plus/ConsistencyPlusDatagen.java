@@ -5,7 +5,6 @@ import io.github.consistencyplus.consistency_plus.data.providers.ConsistencyPlus
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.data.server.BlockTagsProvider;
 
 public class ConsistencyPlusDatagen implements DataGeneratorEntrypoint {
     @Override

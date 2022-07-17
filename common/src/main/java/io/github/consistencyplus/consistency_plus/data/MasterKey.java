@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.data;
 
-import dev.architectury.core.RegistryEntry;
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;

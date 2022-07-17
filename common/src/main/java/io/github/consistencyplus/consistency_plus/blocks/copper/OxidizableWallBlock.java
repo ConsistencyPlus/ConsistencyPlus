@@ -6,7 +6,7 @@ import net.minecraft.block.WallBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 
-import java.util.Random;
+import net.minecraft.util.random.RandomGenerator;
 
 public class OxidizableWallBlock extends WallBlock implements Oxidizable {
 	private final OxidizationLevel oxidationLevel;
@@ -17,7 +17,7 @@ public class OxidizableWallBlock extends WallBlock implements Oxidizable {
 	}
 	
 	@Override
-	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
 		this.tickDegradation(state, world, pos, random);
 	}
 	

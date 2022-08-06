@@ -16,14 +16,14 @@ repositories {
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_version}"
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
-    modApi include("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}")
+    modApi include("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}-fabric")
     modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
     modCompileOnly "mcp.mobius.waila:wthit-api:fabric-${rootProject.wthit_version}" // compile against the WTHIT API
     modRuntimeOnly "mcp.mobius.waila:wthit:fabric-${rootProject.wthit_version}" // run against the full jar
-
+    modImplementation "lol.bai:badpackets:fabric-${rootProject.badpackets_version}"
     modRuntimeOnly "maven.modrinth:lazydfu:0.1.3"
     modImplementation "maven.modrinth:isnrmn:v1_03"
-    modRuntimeOnly("com.terraformersmc:modmenu:4.0.4") {
+    modRuntimeOnly("com.terraformersmc:modmenu:4.0.5") {
         exclude group: "net.fabricmc"; exclude group: "net.fabricmc.fabric-api"
     }
 

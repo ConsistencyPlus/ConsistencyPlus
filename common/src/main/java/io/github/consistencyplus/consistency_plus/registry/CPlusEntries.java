@@ -60,8 +60,8 @@ public class CPlusEntries {
     public static final RegistryEntryGroup BLUE_ICE = new MiscRegistryEntryGroup("blue_ice", AbstractBlock.Settings.copy(Blocks.BLUE_ICE));
     public static final RegistryEntryGroup CLAY = new MiscRegistryEntryGroup("clay", AbstractBlock.Settings.copy(Blocks.CLAY));
     public static final RegistryEntryGroup SNOW = new MiscRegistryEntryGroup("snow", AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK));
-    // public static final RegistryEntryGroup MUD = new MiscRegistryEntryGroup("mud", AbstractBlock.Settings.copy(Blocks.MUD));
-    // public static final RegistryEntryGroup PACKED_MUD = new MiscRegistryEntryGroup("packed_mud", AbstractBlock.Settings.copy(Blocks.PACKED_MUD));
+    public static final RegistryEntryGroup MUD = new MiscRegistryEntryGroup("mud", AbstractBlock.Settings.copy(Blocks.MUD));
+    public static final RegistryEntryGroup PACKED_MUD = new MiscRegistryEntryGroup("packed_mud", AbstractBlock.Settings.copy(Blocks.PACKED_MUD));
 
 
     public static boolean checkMinecraft(String id) {

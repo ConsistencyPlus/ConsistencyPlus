@@ -109,6 +109,10 @@ public class CPlusEntries {
         blacklist.add("blackstone_brick_slab");
         blacklist.add("blackstone_brick_stairs");
         blacklist.add("blackstone_brick_wall");
+        blacklist.add("packed_mud_bricks");
+        blacklist.add("packed_mud_brick_slab");
+        blacklist.add("packed_mud_brick_stairs");
+        blacklist.add("packed_mud_brick_wall");
         blacklist.add("carved_blackstone");
         blacklist.add("terracotta_brick");
         blacklist.add("glowstone_brick");
@@ -126,6 +130,10 @@ public class CPlusEntries {
         whitelist.add("chiseled_sandstone");
         whitelist.add("chiseled_red_sandstone");
         whitelist.add("polished_basalt");
+        whitelist.add("mud_bricks");
+        whitelist.add("mud_brick_slab");
+        whitelist.add("mud_brick_stairs");
+        whitelist.add("mud_brick_wall");
         for (CopperOxidization oxidization : CopperOxidization.values()) {
             whitelist.add(oxidization.addOxidization("cut_copper"));
             whitelist.add(oxidization.addOxidization("cut_copper_slab"));
@@ -156,6 +164,8 @@ public class CPlusEntries {
         cobbleless.add("quartz");
         cobbleless.add("concrete");
         cobbleless.add("copper");
+        cobbleless.add("mud");
+        cobbleless.add("packed_mud");
         return cobbleless;
     }
 

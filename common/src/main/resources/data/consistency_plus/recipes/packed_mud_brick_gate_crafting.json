@@ -9,7 +9,7 @@
             "item": "minecraft:mud_bricks"
         },
         "Y": {
-            "item": "consistency_plus:packed_mud_brick_wall"
+            "item": "minecraft:mud_brick_wall"
         }
     },
     "result": {

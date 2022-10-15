@@ -2,6 +2,7 @@ package io.github.consistencyplus.consistency_plus.base;
 
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.Registrar;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertCartDispenserBehavior;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertDispenserBehavior;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
@@ -30,20 +31,19 @@ public class ConsistencyPlusMain {
 		CPlusEntries.init();
 		CPlusBlocks.init();
 		CPlusItems.init();
+		nubertDispenserBehaviors();
 		BLOCKS.register();
 		LOGGER.info("Consistency+ Main - Registration Checkpoint 1");
-		ITEMS.register();				// wig registered after
-		BLOCKS.getRegistrar().listen(CPlusBlocks.WIGGED_NUBERT, nubert -> nubertDispenserBehaviors());
+		ITEMS.register();
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 	}
 
 	private static void nubertDispenserBehaviors() {
-		NubertDispenserBehavior block = new NubertDispenserBehavior();
-		DispenserBlock.registerBehavior(CPlusItems.NUBERT.get(), block);
-		DispenserBlock.registerBehavior(CPlusItems.WIGGED_NUBERT.get(), block);
-		NubertCartDispenserBehavior cart = new NubertCartDispenserBehavior();
-		DispenserBlock.registerBehavior(CPlusItems.NUBERT_MINECART.get(), cart);
-		DispenserBlock.registerBehavior(CPlusItems.WIGGED_NUBERT_MINECART.get(), cart);
+		Registrar<Item> registrar = ITEMS.getRegistrar();
+		registrar.listen(CPlusItems.NUBERT, nubert -> DispenserBlock.registerBehavior(nubert, NubertDispenserBehavior.INSTANCE));
+		registrar.listen(CPlusItems.WIGGED_NUBERT, nubert -> DispenserBlock.registerBehavior(nubert, NubertDispenserBehavior.INSTANCE));
+		registrar.listen(CPlusItems.NUBERT_MINECART, nubert -> DispenserBlock.registerBehavior(nubert, NubertCartDispenserBehavior.INSTANCE));
+		registrar.listen(CPlusItems.WIGGED_NUBERT_MINECART, nubert -> DispenserBlock.registerBehavior(nubert, NubertCartDispenserBehavior.INSTANCE));
 	}
 	
 	public static Identifier id(String name) {

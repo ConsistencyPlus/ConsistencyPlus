@@ -3,10 +3,10 @@ Translation Statuses:
 English-US (Base) - Obviously up to date
 English (Non-US Variants) - Unmanaged. Up to date with 0.4.x, however this one being behind only causes issues for blocks where vanilla lang that is changed, or where slight spelling alterations occur.
 Polish - Managed by RDK. Up to date to 0.3.0-RC1. 04.22.21
-Russian - Managed by MobButcher. Up to date as of 0.5.0. 01.18.22
-Ukrainian - Managed by MobButcher. Up to date as of 0.5.0. 01.18.22
+Russian - Managed by MobButcher. Up to date as of 0.5.1. 20.08.22
+Ukrainian - Managed by MobButcher. Up to date as of 0.5.1. 20.08.22
 
-English (Upside-Down) - Managed by MobButcher. Up to date as of 0.4.1-rc.2. 10.17.21
+English (Upside-Down) - Managed by MobButcher. Up to date as of 0.5.1. 20.08.22
 Lolcat - Unmanaged. Pretty much every string would need to manually be created rather than using find/replace programs like we did for some of the other meme languages
 Shakespearian english - Unmanaged. Should be up to date with 0.4.x at least.
 Pirate Speak - Unmanaged - The file exists but no strings are translated.  Might be doable via find and replace, however it probably would need the same treatment as lolcat
@@ -44,3 +44,6 @@ P.S.: The fact that dates in this document follow mm.dd.yy format annoys the hel
 
 Carter - Updated the status of a few that weren't correct, and added some more notes. 
 - 02/23/22
+
+MobButcher - I expected a lot more work, to be honest.
+- 20.08.22

@@ -16,6 +16,8 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
 public class NubertCartDispenserBehavior extends ItemDispenserBehavior {
+	public static final NubertCartDispenserBehavior INSTANCE = new NubertCartDispenserBehavior();
+
 	public ItemStack dispenseSilently(BlockPointer pointer, ItemStack stack) {
 		Direction direction = pointer.getBlockState().get(DispenserBlock.FACING);
 		World world = pointer.getWorld();

@@ -1,0 +1,53 @@
+- type: embed
+  embeds:
+    - title: "Welcome to the Consistency Plus Discord!"
+      description: Here are the rules of the server.
+      url: https://discord.gg/VeNX7h8bAK
+      color: 0x279494
+      thumbnail:
+        url: https://avatars.githubusercontent.com/u/76417362?v=4
+
+- type: rules
+  rules:
+    Follow Discord's rules: "Both the [Community Guidelines](https://discord.com/guidelines) and the [Terms of Service](https://discord.com/terms)."
+    Don't be an asshole: This includes attacking others or starting unwanted debates for most any reason.
+    Don't spam: "[You're not a member of Monty Python.](https://youtu.be/_bW4vEo1F4E)"
+    No offensive/questionable content: This is for a Minecraft mod, we don't need any of that kind of stuff here.
+    Leave drama outside this server: There are whole servers for that, and this isn't one of them.
+
+- type: links
+  color: 0x00AAFF
+  title: ":link: Useful links"
+  links:
+    CurseForge: https://www.curseforge.com/minecraft/mc-mods/consistencyplus
+    Modrinth: https://modrinth.com/mod/consistencyplus
+    GitHub organization: https://github.com/ConsistencyPlus
+    Source code: https://github.com/ConsistencyPlus/ConsistencyPlus
+    Issue tracker: https://github.com/ConsistencyPlus/ConsistencyPlus/issues
+    Wiki: https://github.com/ConsistencyPlus/ConsistencyPlus/wiki
+    Upcoming block set planning board: https://github.com/orgs/ConsistencyPlus/projects/6
+    Other feature planning board: https://github.com/orgs/ConsistencyPlus/projects/7/views/1
+
+- type: roles
+  id: community-roles
+  color: 0x7300FF
+  title: Opt-in roles
+  description: Click the button below to assign or remove any of the following roles.
+  template: "{EMOJI} **{NAME}**: {DESCRIPTION}\n"
+
+  roles:
+    929168258714714113:
+      description: "for when we post in <#807808356181737483>"
+      emoji: 📣
+    929280472876449842:
+      description: for when we are looking for people to help us test new versions
+      emoji: ⚙️
+    882405897333243924:
+      description: for when we release new versions
+      emoji: 📩
+    938258219200041000:
+      description: "for when we are looking for feedback on things posted in <#906339951640215583>"
+      emoji: 💭
+
+- type: text
+  text: https://discord.gg/VeNX7h8bAK

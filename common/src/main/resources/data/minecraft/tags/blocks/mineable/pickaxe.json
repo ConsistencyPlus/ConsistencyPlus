@@ -2716,6 +2716,7 @@
     "consistency_plus:carved_packed_mud",
     "consistency_plus:chiseled_packed_mud",
     "consistency_plus:packed_mud_pillar",
-    "consistency_plus:packed_mud_corner_pillar"
+    "consistency_plus:packed_mud_corner_pillar",
+    "consistency_plus:netherite_stairs"
   ]
 }

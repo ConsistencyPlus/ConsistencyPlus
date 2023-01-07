@@ -7,13 +7,7 @@ configurations {
 }
 
 dependencies {
-    forge "net.minecraftforge:forge:$rootProject.minecraft_version-$rootProject.forge_version"
-    modApi "dev.architectury:architectury-forge:$rootProject.architectury_version"
-    modCompileOnly "mcp.mobius.waila:wthit-api:forge-$rootProject.wthit_version" // compile against the WTHIT API
-    modRuntimeOnly "mcp.mobius.waila:wthit:forge-$rootProject.wthit_version" // run against the full jar
-    modApi "maven.modrinth:stonecutter_recipe_tags:$rootProject.scrt_version_forge-forge"
-    modImplementation "lol.bai:badpackets:forge-${rootProject.badpackets_version}"
-
+    forge("net.minecraftforge:forge:$rootProject.minecraft_version-$rootProject.forge_version")
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
 

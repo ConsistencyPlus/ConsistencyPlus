@@ -2,7 +2,6 @@ plugins {
     id "architectury-plugin" version "3.+"
     id "dev.architectury.loom" version "0.12.+" apply false
     id "io.github.juuxel.loom-quiltflower" version "1.+" apply false
-    id "org.quiltmc.quilt-mappings-on-loom" version "4.2.0"
     id "com.github.johnrengelman.shadow" version "7.+" apply false
     id "maven-publish"
 }
@@ -18,11 +17,20 @@ subprojects {
     //Mapping idea: QM on Yarn on parchment on Moj? We need Moj with tweaks tbh
     dependencies {
         minecraft "com.mojang:minecraft:$rootProject.minecraft_version"
-       // mappings "org.quiltmc:quilt-mappings:1.19.2+build.intermediary-test.1:intermediary-v2"
-        mappings loom.layered {
-            //mappings "org.quiltmc:quilt-mappings:1.19.2+build.intermediary-test.1:intermediary-v2"
-            addLayer quiltMappings.mappings("org.quiltmc:quilt-mappings:$rootProject.minecraft_version+build.$rootProject.mappings_version:v2")
-        }
+        mappings "org.quiltmc:quilt-mappings:1.19.2+build.${project.qm_build}:intermediary-v2"
+
+
+        String platform = project.name
+        if (platform == "common") return
+
+        modApi("dev.architectury:architectury-${platform}:${rootProject.architectury_version}")
+
+        modApi("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}-${platform}")
+        modImplementation("com.github.LlamaLad7:MixinExtras:0.1.1") // for SCRT
+
+        modCompileOnly("mcp.mobius.waila:wthit-api:${platform}-$rootProject.wthit_version") // compile against the WTHIT API
+        modRuntimeOnly("mcp.mobius.waila:wthit:${platform}-$rootProject.wthit_version") // run against the full jar
+        modImplementation("lol.bai:badpackets:${platform}-${rootProject.badpackets_version}") // for WTHIT
     }
 }
 
@@ -43,16 +51,9 @@ allprojects {
     }
 
     repositories {
-        maven { url "https://maven.bai.lol" }
-        maven {
-            url = "https://api.modrinth.com/maven"
-            content { includeGroup "maven.modrinth" }
-        }
-        maven {
-            url = "https://maven.bai.lol"
-            content { includeGroup "mcp.mobius.waila" }
-        }
-
+        maven { url = "https://maven.quiltmc.org/repository/release/" }
+        maven { url = "https://maven.bai.lol" } // WTHIT
+        maven { url = "https://api.modrinth.com/maven" }
     }
 
     jar {

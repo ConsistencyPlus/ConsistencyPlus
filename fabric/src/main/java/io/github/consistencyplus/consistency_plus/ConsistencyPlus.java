@@ -5,6 +5,8 @@ import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
 import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import io.github.consistencyplus.consistency_plus.core.entries.block.fabric.MetalRegistryEntryGroupImpl;
+import io.github.consistencyplus.consistency_plus.core.util.Fabric;
+import io.github.consistencyplus.consistency_plus.core.util.Loader;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v2.FabricLootPoolBuilder;
@@ -19,9 +21,11 @@ import net.minecraft.util.Identifier;
 public class ConsistencyPlus implements ModInitializer {
 	private static final Identifier WITHER_SKELE_LOOT = EntityType.WITHER_SKELETON.getLootTableId();
 
+	public static Loader LOADER = new Fabric();
+
 	@Override
 	public void onInitialize() {
-		ConsistencyPlusMain.init();
+		ConsistencyPlusMain.init(LOADER);
 		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, table, setter) -> {
 			if (WITHER_SKELE_LOOT.equals(id)) {
 				LootPool.Builder poolBuilder = LootPool.builder()

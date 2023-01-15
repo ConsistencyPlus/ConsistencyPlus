@@ -1,40 +1,43 @@
 package io.github.consistencyplus.consistency_plus.base;
 
-import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registrar;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertCartDispenserBehavior;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertDispenserBehavior;
-import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
-import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
-import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
+import io.github.consistencyplus.consistency_plus.core.util.DefaultLoader;
+import io.github.consistencyplus.consistency_plus.core.util.Loader;
+import io.github.consistencyplus.consistency_plus.registry.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.item.Item;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ConsistencyPlusMain {
 	public static final Logger LOGGER = LogManager.getLogger("Consistency+");
 	public static final String ID = "consistency_plus";
-	public static final boolean DEVENV = Platform.isDevelopmentEnvironment();
-	public static final Boolean isSoulIceLoaded = Platform.isModLoaded("soul_ice");
 
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.ITEM_KEY);
+	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, RegistryKeys.BLOCK);
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ConsistencyPlusMain.ID, RegistryKeys.ITEM);
 
+	public static Loader LOADER = new DefaultLoader();
 
-	public static void init() {
+	public static void init(Loader loader) {
+		LOADER = loader;
 		LOGGER.info("Consistency+ Main - Beginning initialization process");
+		CPlusItemGroups.init();
 		CPlusEntries.init();
 		CPlusBlocks.init();
 		CPlusItems.init();
+		CPlusNewEntries.init();
 		nubertDispenserBehaviors();
 		BLOCKS.register();
 		LOGGER.info("Consistency+ Main - Registration Checkpoint 1");
 		ITEMS.register();
+		CPlusItemGroups.postRegistry();
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 	}
 

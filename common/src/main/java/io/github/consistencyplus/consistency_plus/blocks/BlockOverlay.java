@@ -5,8 +5,8 @@ import net.minecraft.util.Pair;
 import java.util.Locale;
 import java.util.Objects;
 
-public enum SetModifiers {
-    //Todo: Rename these
+// RENAME TO BlockOverlay (More descriptive)
+public enum BlockOverlay {
     BASE, CRACKED, MOSSY;
 
     public boolean canGenerate(BlockTypes type, BlockShapes shape) {
@@ -29,17 +29,17 @@ public enum SetModifiers {
         return this == BASE;
     }
 
-    public static Pair<SetModifiers, String> getSetModifierFromString(String path){
+    public static Pair<BlockOverlay, String> getBlockOverlayFromString(String path){
         String[] pathParts = path.split("_");
 
         StringBuilder builder = new StringBuilder();
-        SetModifiers set = BASE;
+        BlockOverlay set = BASE;
 
         for(int i = 0; i < pathParts.length; i++){
             String part = pathParts[i];
 
             if(set == BASE) {
-                for (SetModifiers possibleSet : SetModifiers.values()) {
+                for (BlockOverlay possibleSet : BlockOverlay.values()) {
                     if (Objects.equals(part, possibleSet.toString())) {
                         set = possibleSet;
                         break;

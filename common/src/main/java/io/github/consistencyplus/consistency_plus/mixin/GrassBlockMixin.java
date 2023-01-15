@@ -8,11 +8,9 @@ import net.minecraft.block.GrassBlock;
 import net.minecraft.block.SpreadableBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
-
-import net.minecraft.util.random.RandomGenerator;
-
 @Mixin(GrassBlock.class)
 public abstract class GrassBlockMixin extends SpreadableBlock implements HasUngrownVariant, SpreadableGrassBlock {
 	protected GrassBlockMixin(Settings settings) {
@@ -20,7 +18,7 @@ public abstract class GrassBlockMixin extends SpreadableBlock implements HasUngr
 	}
 	
 	@Override
-	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 		grow(state, world, pos, random);
 	}
 	

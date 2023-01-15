@@ -9,7 +9,6 @@ import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableGateBlock;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizablePillarBlock;
 import io.github.consistencyplus.consistency_plus.blocks.copper.OxidizableWallBlock;
-import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import io.github.consistencyplus.consistency_plus.registry.CPlusSharedBlockSettings;
@@ -19,7 +18,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Pair;
 
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -75,8 +74,8 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
 
             if (postIDChecks(name + "_brick")){
                 Pair<RegistrySupplier<Item>, RegistrySupplier<Item>> pair = new Pair<>(
-                        ConsistencyPlusMain.ITEMS.register(oxidization.addOxidization(name) + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC))),
-                        ConsistencyPlusMain.ITEMS.register("waxed_" + oxidization.addOxidization(name) + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC))));
+                        ConsistencyPlusMain.ITEMS.register(oxidization.addOxidization(name) + "_brick", () -> new Item(new Item.Settings())),
+                        ConsistencyPlusMain.ITEMS.register("waxed_" + oxidization.addOxidization(name) + "_brick", () -> new Item(new Item.Settings())));
 
                 ALL_METAL_INGOTS.put(oxidization, pair);
             }
@@ -85,7 +84,7 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
         finish();
     }
 
-    public void register(String name, BlockShapes shape, AbstractBlock.Settings blockSettings, Oxidizable.OxidizationLevel level, BlockTypes type) {
+    public void register(String name, BlockShapes shape, AbstractBlock.Settings blockSettings, Oxidizable.OxidationLevel level, BlockTypes type) {
         RegistrySupplier<Block> unwaxedBlock = unwaxedBlockRegistration(name, shape, blockSettings, level);
         RegistrySupplier<Item> unwaxedItem =  ConsistencyPlusMain.ITEMS.register(name, () -> new BlockItem(unwaxedBlock.get(), CPlusItemGroups.consistencyPlusMiscItemSettings()));
         BLOCKS.put(new Key(CopperOxidization.fromVanilla(level), type, shape, false), new Pair<>(unwaxedBlock, unwaxedItem));
@@ -99,7 +98,7 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
         registerWaxable(unwaxedBlock, waxedBlock);
     }
 
-    public RegistrySupplier<Block> unwaxedBlockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings, Oxidizable.OxidizationLevel level) {
+    public RegistrySupplier<Block> unwaxedBlockRegistration(String name, BlockShapes blockShapes, AbstractBlock.Settings blockSettings, Oxidizable.OxidationLevel level) {
         return switch (blockShapes) {
             default -> ConsistencyPlusMain.BLOCKS.register(name, () ->  new OxidizableBlock(level, blockSettings));
             case SLAB -> ConsistencyPlusMain.BLOCKS.register(name, () -> new OxidizableSlabBlock(level, blockSettings));
@@ -131,8 +130,8 @@ public class MetalRegistryEntryGroup extends RegistryEntryGroup {
     private String getOxiID(CopperOxidization oxidization, BlockShapes shape, BlockTypes type){
         String id = oxidization.addOxidization(shape.addShapes(type.addType(name), type));
 
-        MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createOxidKey(shape, type, oxidization, this.name));
-        MasterKey.ULTIMATE_KEY_RING.put("waxed_" + CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createOxidKey(shape, type, oxidization, this.name).waxed(true));
+        //MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createOxidKey(shape, type, oxidization, this.name));
+        //MasterKey.ULTIMATE_KEY_RING.put("waxed_" + CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createOxidKey(shape, type, oxidization, this.name).waxed(true));
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

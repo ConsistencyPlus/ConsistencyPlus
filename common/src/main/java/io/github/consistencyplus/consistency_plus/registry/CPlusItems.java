@@ -16,10 +16,9 @@ import net.minecraft.item.*;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.*;
-import static io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain.isSoulIceLoaded;
 import static net.minecraft.block.Blocks.BLUE_ICE;
 
 public class CPlusItems {
@@ -150,18 +149,18 @@ public class CPlusItems {
 // ITEMS
 
 	// Random
-	public static final RegistrySupplier<Item> WARPED_WART = ConsistencyPlusMain.ITEMS.register("warped_wart", () -> new AliasedBlockItem(CPlusBlocks.WARPED_WART.get(), new Item.Settings().group(ItemGroup.MISC)));
-	public static final RegistrySupplier<Item> COPPER_NUGGET = ConsistencyPlusMain.ITEMS.register("copper_nugget", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
-	public static final RegistrySupplier<Item> NETHERITE_NUGGET = ConsistencyPlusMain.ITEMS.register("netherite_nugget", () -> new Item(new Item.Settings().group(ItemGroup.MISC).fireproof()));
-	public static final RegistrySupplier<Item> NETHERITE_HORSE_ARMOR = ConsistencyPlusMain.ITEMS.register("netherite_horse_armor", () -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
-	public static final RegistrySupplier<Item> WITHERED_BONE = ConsistencyPlusMain.ITEMS.register("withered_bone", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
-	public static final RegistrySupplier<Item> WITHERED_BONE_MEAL = ConsistencyPlusMain.ITEMS.register("withered_bone_meal", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
-	public static final RegistrySupplier<Item> GLOW_INK_SAC = ConsistencyPlusMain.ITEMS.register("glow_ink_sac", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+	public static final RegistrySupplier<Item> WARPED_WART = ConsistencyPlusMain.ITEMS.register("warped_wart", () -> new AliasedBlockItem(CPlusBlocks.WARPED_WART.get(), new Item.Settings()));
+	public static final RegistrySupplier<Item> COPPER_NUGGET = ConsistencyPlusMain.ITEMS.register("copper_nugget", () -> new Item(new Item.Settings()));
+	public static final RegistrySupplier<Item> NETHERITE_NUGGET = ConsistencyPlusMain.ITEMS.register("netherite_nugget", () -> new Item(new Item.Settings().fireproof()));
+	public static final RegistrySupplier<Item> NETHERITE_HORSE_ARMOR = ConsistencyPlusMain.ITEMS.register("netherite_horse_armor", () -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof()));
+	public static final RegistrySupplier<Item> WITHERED_BONE = ConsistencyPlusMain.ITEMS.register("withered_bone", () -> new Item(new Item.Settings()));
+	public static final RegistrySupplier<Item> WITHERED_BONE_MEAL = ConsistencyPlusMain.ITEMS.register("withered_bone_meal", () -> new Item(new Item.Settings()));
+	public static final RegistrySupplier<Item> GLOW_INK_SAC = ConsistencyPlusMain.ITEMS.register("glow_ink_sac", () -> new Item(new Item.Settings()));
 
 	// 🐢
-	public static final RegistrySupplier<Item> TURTLE_CHESTPLATE = ConsistencyPlusMain.ITEMS.register("turtle_chestplate", () -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT)));
-	public static final RegistrySupplier<Item> TURTLE_LEGGINGS = ConsistencyPlusMain.ITEMS.register("turtle_leggings", () -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT)));
-	public static final RegistrySupplier<Item> TURTLE_BOOTS = ConsistencyPlusMain.ITEMS.register("turtle_boots", () -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT)));
+	public static final RegistrySupplier<Item> TURTLE_CHESTPLATE = ConsistencyPlusMain.ITEMS.register("turtle_chestplate", () -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings()));
+	public static final RegistrySupplier<Item> TURTLE_LEGGINGS = ConsistencyPlusMain.ITEMS.register("turtle_leggings", () -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, new Item.Settings()));
+	public static final RegistrySupplier<Item> TURTLE_BOOTS = ConsistencyPlusMain.ITEMS.register("turtle_boots", () -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new Item.Settings()));
 
 
 // Deprecated Blocks
@@ -202,13 +201,13 @@ public class CPlusItems {
 	public static final RegistrySupplier<Item> CARVED_RED_NETHER_BRICKS = ConsistencyPlusMain.ITEMS.register("carved_red_nether_bricks", () -> new RedirectedBlockItem(CRIMSON_WART.getBlock(BlockShapes.CARVED, BlockTypes.BASE), CPlusItemGroups.consistencyPlusMiscItemSettings(), CPlusBlocks.CARVED_RED_NETHER_BRICKS.get())); 
 
 	// Soul
-	public static final RegistrySupplier<Item> SOUL_ICE = ConsistencyPlusMain.ITEMS.register("soul_ice", () -> new RedirectedBlockItem((isSoulIceLoaded) ? Registry.BLOCK.get(new Identifier("soul_ice", "soul_ice")) : BLUE_ICE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE.get()));
-	public static final RegistrySupplier<Item> SOUL_ICE_SLAB = ConsistencyPlusMain.ITEMS.register("soul_ice_slab", () -> new RedirectedBlockItem((isSoulIceLoaded) ? Registry.BLOCK.get(new Identifier("soul_ice", "soul_ice_slab")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.SLAB, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_SLAB.get()));
-	public static final RegistrySupplier<Item> SOUL_ICE_STAIRS = ConsistencyPlusMain.ITEMS.register("soul_ice_stairs", () -> new RedirectedBlockItem((isSoulIceLoaded) ? Registry.BLOCK.get(new Identifier("soul_ice", "soul_ice_stairs")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.STAIRS, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_STAIRS.get()));
-	public static final RegistrySupplier<Item> SOUL_ICE_WALL = ConsistencyPlusMain.ITEMS.register("soul_ice_wall", () -> new RedirectedBlockItem((isSoulIceLoaded) ? Registry.BLOCK.get(new Identifier("soul_ice", "soul_ice_wall")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.WALL, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_WALL.get()));
-	public static final RegistrySupplier<Item> SOUL_ICE_GATE = ConsistencyPlusMain.ITEMS.register("soul_ice_gate", () -> new RedirectedBlockItem((isSoulIceLoaded) ? Registry.BLOCK.get(new Identifier("soul_ice", "soul_ice_gate")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.GATE, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_GATE.get()));
+	public static final RegistrySupplier<Item> SOUL_ICE = ConsistencyPlusMain.ITEMS.register("soul_ice", () -> new RedirectedBlockItem((ConsistencyPlusMain.LOADER.checkForMod("soul_ice")) ? Registries.BLOCK.get(new Identifier("soul_ice", "soul_ice")) : BLUE_ICE, CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE.get()));
+	public static final RegistrySupplier<Item> SOUL_ICE_SLAB = ConsistencyPlusMain.ITEMS.register("soul_ice_slab", () -> new RedirectedBlockItem((ConsistencyPlusMain.LOADER.checkForMod("soul_ice")) ? Registries.BLOCK.get(new Identifier("soul_ice", "soul_ice_slab")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.SLAB, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_SLAB.get()));
+	public static final RegistrySupplier<Item> SOUL_ICE_STAIRS = ConsistencyPlusMain.ITEMS.register("soul_ice_stairs", () -> new RedirectedBlockItem((ConsistencyPlusMain.LOADER.checkForMod("soul_ice")) ? Registries.BLOCK.get(new Identifier("soul_ice", "soul_ice_stairs")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.STAIRS, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_STAIRS.get()));
+	public static final RegistrySupplier<Item> SOUL_ICE_WALL = ConsistencyPlusMain.ITEMS.register("soul_ice_wall", () -> new RedirectedBlockItem((ConsistencyPlusMain.LOADER.checkForMod("soul_ice")) ? Registries.BLOCK.get(new Identifier("soul_ice", "soul_ice_wall")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.WALL, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_WALL.get()));
+	public static final RegistrySupplier<Item> SOUL_ICE_GATE = ConsistencyPlusMain.ITEMS.register("soul_ice_gate", () -> new RedirectedBlockItem((ConsistencyPlusMain.LOADER.checkForMod("soul_ice")) ? Registries.BLOCK.get(new Identifier("soul_ice", "soul_ice_gate")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.GATE, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_GATE.get()));
 
 	public static void init() {
-		if (ConsistencyPlusMain.DEVENV) ConsistencyPlusMain.LOGGER.info("CPlusItems - initialization point");
+		if (ConsistencyPlusMain.LOADER.devEnv()) ConsistencyPlusMain.LOGGER.info("CPlusItems - initialization point");
 	}
 }

@@ -5,13 +5,12 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.tag.FluidTags;
+import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.chunk.light.ChunkLightProvider;
-
-import net.minecraft.util.random.RandomGenerator;
 
 import static net.minecraft.block.SnowyBlock.SNOWY;
 
@@ -33,7 +32,7 @@ public interface SpreadableGrassBlock {
 		return customCanSurvive(state, worldView, pos) && !worldView.getFluidState(blockPos).isIn(FluidTags.WATER);
 	}
 
-	default void grow(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
+	default void grow(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 		if (!customCanSurvive(state, world, pos)) {
 			if (this instanceof HasUngrownVariant) {
 				world.setBlockState(pos, ((HasUngrownVariant) this).getUngrownVariant(world, pos));

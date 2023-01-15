@@ -4,6 +4,8 @@ import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager.Builder;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
@@ -12,7 +14,7 @@ public class CPlusFenceGateBlock extends FenceGateBlock implements Waterloggable
 	public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 	
 	public CPlusFenceGateBlock(Settings settings) {
-		super(settings);
+		super(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN);
 		setDefaultState(getDefaultState().with(WATERLOGGED, false));
 	}
 	

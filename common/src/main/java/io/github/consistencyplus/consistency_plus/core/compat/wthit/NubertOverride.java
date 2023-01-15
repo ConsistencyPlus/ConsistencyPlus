@@ -1,4 +1,4 @@
-package io.github.consistencyplus.consistency_plus.core.wthit;
+package io.github.consistencyplus.consistency_plus.core.compat.wthit;
 
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertHandler;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;

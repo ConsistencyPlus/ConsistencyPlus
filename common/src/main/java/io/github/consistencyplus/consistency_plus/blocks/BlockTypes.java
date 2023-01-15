@@ -6,10 +6,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 public enum BlockTypes {
-    BRICK, TILE,
-
-    //Prefixes the material
-    BASE, POLISHED, CUT, COBBLED, SMOOTH;
+    BASE, POLISHED, BRICK, CUT, TILE, COBBLED, SMOOTH;
 
     @Override
     public String toString() {

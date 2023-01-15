@@ -4,8 +4,8 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
-import io.github.consistencyplus.consistency_plus.blocks.SetModifiers;
-import io.github.consistencyplus.consistency_plus.data.MasterKey;
+import io.github.consistencyplus.consistency_plus.blocks.BlockOverlay;
+//import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItemGroups;
 import net.minecraft.block.AbstractBlock;
@@ -21,7 +21,7 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
     }
 
     public void construct() {
-        for (SetModifiers modifier : SetModifiers.values()) {
+        for (BlockOverlay modifier : BlockOverlay.values()) {
             for (BlockTypes type : BlockTypes.values()) {
                 for (BlockShapes shape : BlockShapes.values()) {
                     if (!type.equals(BlockTypes.BASE) && !shape.withTypes) continue;
@@ -33,14 +33,14 @@ public class ModifierStoneRegistryEntryGroup extends RegistryEntryGroup {
             }
         }
         if (postIDChecks(name + "_brick")){
-            BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+            BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings()));
         }
     }
 
-    public String getSetModifiedID(SetModifiers modifier, BlockShapes shapes, BlockTypes type) {
+    public String getSetModifiedID(BlockOverlay modifier, BlockShapes shapes, BlockTypes type) {
         String id = modifier.addModifier(shapes.addShapes(type.addType(name), type));
 
-        MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createKey(shapes, type, modifier, this.name));
+        //MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createKey(shapes, type, modifier, this.name));
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

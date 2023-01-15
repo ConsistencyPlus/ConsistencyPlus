@@ -17,15 +17,17 @@ import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBloc
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusCarvedPumpkinBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
-import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags;
-import io.github.consistencyplus.consistency_plus.data.MasterKey;
+//import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags;
+//import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.EntityType;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.TagKey;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 import net.minecraft.world.BlockView;
 
 import java.util.ArrayList;
@@ -37,8 +39,8 @@ import java.util.function.Supplier;
 import static net.minecraft.block.Blocks.*;
 
 public class CPlusBlocks {
-	public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("dirt_slabs"));
-	public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("dirt_stairs"));
+	public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(RegistryKeys.BLOCK, ConsistencyPlusMain.id("dirt_slabs"));
+	public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(RegistryKeys.BLOCK, ConsistencyPlusMain.id("dirt_stairs"));
 
 	public static final Set<RegistrySupplier<Block>> ALL_BLOCKS = new HashSet<>();
 
@@ -192,7 +194,7 @@ public class CPlusBlocks {
 
 	protected static RegistrySupplier<Block> register(String name, Supplier<Block> block) {
 		RegistrySupplier<Block> blockSupplied = ConsistencyPlusMain.BLOCKS.register(name, block);
-		ConsistencyPlusMain.LOGGER.info("Registered " + name + " as a Block");
+		//ConsistencyPlusMain.LOGGER.info("Registered " + name + " as a Block");
 
 		ALL_BLOCKS.add(blockSupplied);
 
@@ -204,19 +206,19 @@ public class CPlusBlocks {
 	}
 
 	public static void init() {
-		if (ConsistencyPlusMain.DEVENV) ConsistencyPlusMain.LOGGER.info("CPlusBlocks - initialization point");
-		MasterKey.addCPlusBlocksToKeyring();
+		if (ConsistencyPlusMain.LOADER.devEnv()) ConsistencyPlusMain.LOGGER.info("CPlusBlocks - initialization point");
+		//MasterKey.addCPlusBlocksToKeyring();
 	}
 
 	public static boolean isValidPortalBlock(BlockState state) {
-		if ((state.isIn(ConsistencyPlusTags.ConsistencySpecificTags.VALID_PORTAL_BLOCKS))) {
+		/*if ((state.isIn(TagKey.of(Registries.BLOCK.getKey(), Identifier.of("consistency_plus", "valid_portal_blocks"))))) {
 			if (state.contains(SlabBlock.TYPE)) {
 				return state.get(SlabBlock.TYPE) == SlabType.DOUBLE;
 			} return true;
-		} return false;
+		}*/ return false;
 	}
 	
 	public static boolean isValidConduitBlock(BlockState state) {
-		return (state.isIn(ConsistencyPlusTags.ConsistencySpecificTags.VALID_CONDUIT_BLOCKS));
+		return false; //(state.isIn(TagKey.of(Registries.BLOCK.getKey(), Identifier.of("consistency_plus", "valid_conduit_blocks"))));
 	}
 }

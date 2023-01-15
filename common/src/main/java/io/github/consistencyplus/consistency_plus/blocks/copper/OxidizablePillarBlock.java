@@ -6,18 +6,18 @@ import net.minecraft.block.PillarBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 
-import net.minecraft.util.random.RandomGenerator;
+import net.minecraft.util.math.random.Random;
 
 public class OxidizablePillarBlock extends PillarBlock implements Oxidizable {
-	private final OxidizationLevel oxidationLevel;
+	private final OxidationLevel oxidationLevel;
 	
-	public OxidizablePillarBlock(OxidizationLevel level, Settings settings) {
+	public OxidizablePillarBlock(OxidationLevel level, Settings settings) {
 		super(settings);
 		this.oxidationLevel = level;
 	}
 
 	@Override
-	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
+	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 		this.tickDegradation(state, world, pos, random);
 	}
 	
@@ -27,7 +27,7 @@ public class OxidizablePillarBlock extends PillarBlock implements Oxidizable {
 	}
 	
 	@Override
-	public OxidizationLevel getDegradationLevel() {
+	public OxidationLevel getDegradationLevel() {
 		return this.oxidationLevel;
 	}
 }

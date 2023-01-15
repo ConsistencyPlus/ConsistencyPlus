@@ -4,13 +4,13 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.dimension.AreaHelper;
+import net.minecraft.world.dimension.NetherPortal;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(AreaHelper.class)
+@Mixin(NetherPortal.class)
 public abstract class AreaHelperMixin {
 	// IS_VALID_FRAME_BLOCK predicate				// fabric			// forge
 	@Inject(at = @At("RETURN"), require = 0, method = "method_30487", cancellable = true, remap = false)

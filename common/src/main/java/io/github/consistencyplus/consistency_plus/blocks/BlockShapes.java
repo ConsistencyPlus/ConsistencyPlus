@@ -1,18 +1,61 @@
 package io.github.consistencyplus.consistency_plus.blocks;
 
+import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
+import net.minecraft.block.*;
 import net.minecraft.util.Pair;
 
 import java.util.Locale;
 import java.util.Objects;
 
 public enum BlockShapes {
+    BLOCK(true) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new Block(settings);
+        }
+    }, SLAB(true) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new SlabBlock(settings);
+        }
+    }, STAIRS(true) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new StairsBlock(Blocks.STONE.getDefaultState(), settings);
+        }
+    }, WALL(true) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new WallBlock(settings);
+        }
+    }, GATE(true) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new CPlusFenceGateBlock(settings);
+        }
+    }, PILLAR(false) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new PillarBlock(settings);
+        }
+    }, CORNER_PILLAR(false) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new Block(settings);
+        }
+    }, CARVED(false) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new Block(settings);
+        }
+    }, CHISELED(false) {
+        @Override
+        public Block initializeBlock(AbstractBlock.Settings settings) {
+            return new Block(settings);
+        }
+    };
 
-    BLOCK(true), SLAB(true), STAIRS(true), WALL(true), GATE(true), PILLAR(false), CORNER_PILLAR(false),
-
-    //Prefixes the Material
-    CARVED(false), CHISELED(false);
-
-    public boolean withTypes;
+    public final boolean withTypes;
 
     BlockShapes(boolean hasTypes) {
         this.withTypes = hasTypes;
@@ -23,6 +66,8 @@ public enum BlockShapes {
         if (isBase()) return "";
         return name().toLowerCase(Locale.ROOT);
     }
+
+    public abstract Block initializeBlock(AbstractBlock.Settings settings);
 
 
     public String addShapes(String id, BlockTypes type) {

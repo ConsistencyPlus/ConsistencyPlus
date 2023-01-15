@@ -11,7 +11,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import net.minecraft.util.random.RandomGenerator;
+import net.minecraft.util.math.random.Random;
 
 public class IceWallBlock extends WallBlock implements CanMeltIntoWater {
     public IceWallBlock(Settings settings) {
@@ -24,7 +24,7 @@ public class IceWallBlock extends WallBlock implements CanMeltIntoWater {
     }
 
     @Override
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random) {
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         customRandomTick(state, world, pos);
     }
 }

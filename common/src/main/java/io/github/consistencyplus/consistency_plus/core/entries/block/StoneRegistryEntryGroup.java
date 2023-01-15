@@ -17,5 +17,6 @@ public class StoneRegistryEntryGroup extends RegistryEntryGroup {
     public void register(String id, BlockShapes shape, AbstractBlock.Settings blockSettings) {
         RegistrySupplier<Block> a = blockRegistration(id, shape, blockSettings);
         RegistrySupplier<Item> b = ConsistencyPlusMain.ITEMS.register(id, () -> new BlockItem(a.get(), CPlusItemGroups.consistencyPlusStoneItemSettings()));
+        CPlusItemGroups.CONSISTENCY_PLUS_STONES.addItemSupplier(b);
     }
 }

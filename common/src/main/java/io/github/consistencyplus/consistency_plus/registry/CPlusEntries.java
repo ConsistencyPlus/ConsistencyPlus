@@ -9,9 +9,10 @@ import io.github.consistencyplus.consistency_plus.core.entries.items.DyedItemReg
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.util.Pair;
 
 import java.util.*;
 public class CPlusEntries {
@@ -66,27 +67,29 @@ public class CPlusEntries {
 
     public static boolean checkMinecraft(String id) {
         Identifier MCID = new Identifier("minecraft", id);
-        if (Registry.BLOCK.getOrEmpty(MCID).isPresent() || Registry.ITEM.getOrEmpty(MCID).isPresent()) {
+        if (Registries.BLOCK.getOrEmpty(MCID).isPresent() || Registries.ITEM.getOrEmpty(MCID).isPresent()) {
             return !whitelistedIDs.contains(id);
         } else return false;
     }
 
+
+
     public static List<String> createBlacklist() {
         List<String> blacklist = new ArrayList<>();
         blacklist.add("carved_netherrack");
-        blacklist.add("dripstone");
-        blacklist.add("bone");
+        blacklist.add("dripstone"); // X
+        blacklist.add("bone"); // X
         blacklist.add("terracotta_bricks");
         blacklist.add("terracotta_brick_slab");
         blacklist.add("terracotta_brick_stairs");
         blacklist.add("terracotta_brick_wall");
-        blacklist.add("warped_wart");
+        blacklist.add("warped_wart"); // X
         blacklist.add("purpur_tiles");
         blacklist.add("purpur_tile_slab");
         blacklist.add("purpur_tile_stairs");
         blacklist.add("carved_sandstone");
         blacklist.add("carved_red_sandstone");
-        blacklist.add("quartz");
+        blacklist.add("quartz"); // X
         blacklist.add("chiseled_quartz");
         blacklist.add("basalt_pillar");
         blacklist.add("netherrack_bricks");
@@ -94,7 +97,7 @@ public class CPlusEntries {
         blacklist.add("netherrack_brick_stairs");
         blacklist.add("netherrack_brick_wall");
         blacklist.add("netherrack_brick_gate");
-        blacklist.add("crimson_wart");
+        blacklist.add("crimson_wart"); // X
         blacklist.add("crimson_wart_block");
         blacklist.add("crimson_wart_bricks");
         blacklist.add("crimson_wart_brick_slab");
@@ -114,11 +117,11 @@ public class CPlusEntries {
         blacklist.add("packed_mud_brick_stairs");
         blacklist.add("packed_mud_brick_wall");
         blacklist.add("carved_blackstone");
-        blacklist.add("terracotta_brick");
-        blacklist.add("glowstone_brick");
-        blacklist.add("netherrack_brick");
-        blacklist.add("prismarine_brick");
-        blacklist.add("snow");
+        blacklist.add("terracotta_brick"); // X
+        blacklist.add("glowstone_brick"); // X
+        blacklist.add("netherrack_brick"); // X
+        blacklist.add("prismarine_brick"); // X
+        blacklist.add("snow"); // X
         return blacklist;
     }
 
@@ -189,7 +192,7 @@ public class CPlusEntries {
         overrides.put("chiseled_quartz", "chiseled_quartz_block");
         return overrides;
     }
-
+    
     public static MapColor toTerracottaMapColor(DyeColor dyeColor) {
         return switch (dyeColor) {
             case RED -> MapColor.TERRACOTTA_RED;
@@ -212,6 +215,6 @@ public class CPlusEntries {
     }
 
     public static void init() {
-        if (ConsistencyPlusMain.DEVENV) ConsistencyPlusMain.LOGGER.info("CPlusEntries - initialization point");
+        if (ConsistencyPlusMain.LOADER.devEnv()) ConsistencyPlusMain.LOGGER.info("CPlusEntries - initialization point");
     }
 }

@@ -6,7 +6,7 @@ import net.minecraft.item.BundleItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
@@ -27,7 +27,7 @@ public class DyedItemRegistryEntryGroup extends AbstractItemRegistryEntryGroup {
     }
 
     public Item getDyedItem(DyeColor color) {
-        if (checkMinecraft(color.toString() + "_" + name)) return Registry.ITEM.get(new Identifier("minecraft", (color.toString() + "_" + name)));
-        return Registry.ITEM.get(ConsistencyPlusMain.id(color.toString() + "_" + name));
+        if (checkMinecraft(color.toString() + "_" + name)) return Registries.ITEM.get(new Identifier("minecraft", (color.toString() + "_" + name)));
+        return Registries.ITEM.get(ConsistencyPlusMain.id(color.toString() + "_" + name));
     }
 }

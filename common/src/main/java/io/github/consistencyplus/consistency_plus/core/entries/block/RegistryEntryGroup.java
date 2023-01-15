@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.core.entries.block;
 
-
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
@@ -9,15 +8,14 @@ import io.github.consistencyplus.consistency_plus.blocks.FalseBlock;
 import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BlockRegistryEntryGroupInterface;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBlock;
-import io.github.consistencyplus.consistency_plus.data.MasterKey;
+//import io.github.consistencyplus.consistency_plus.data.MasterKey;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +60,7 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
         }
 
         if (postIDChecks(name + "_brick")){
-            BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+            BRICK_ITEM = ConsistencyPlusMain.ITEMS.register(name + "_brick", () -> new Item(new Item.Settings()));
         }
     }
 
@@ -109,14 +107,14 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
 
     public Block getBlock(BlockShapes shapes, BlockTypes type) {
         String id = getID(shapes, type);
-        if (checkMinecraft(id)) return Registry.BLOCK.get(new Identifier("minecraft", (id)));
-        return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
+        if (checkMinecraft(id)) return Registries.BLOCK.get(new Identifier("minecraft", (id)));
+        return Registries.BLOCK.get(ConsistencyPlusMain.id(id));
     }
 
     public Item getItem(BlockShapes shapes, BlockTypes type) {
         String id = getID(shapes, type);
-        if (checkMinecraft(id)) return Registry.ITEM.get(new Identifier("minecraft", (id)));
-        return Registry.ITEM.get(ConsistencyPlusMain.id(id));
+        if (checkMinecraft(id)) return Registries.ITEM.get(new Identifier("minecraft", (id)));
+        return Registries.ITEM.get(ConsistencyPlusMain.id(id));
     }
 
     @Nullable
@@ -127,7 +125,7 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
     public String getID(BlockShapes shapes, BlockTypes type) {
         String id = shapes.addShapes(type.addType(name), type);
 
-        MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createKey(shapes, type, this.name));
+        //MasterKey.ULTIMATE_KEY_RING.put(CPlusEntries.overrideMap.getOrDefault(id, id), MasterKey.createKey(shapes, type, this.name));
 
         return CPlusEntries.overrideMap.getOrDefault(id, id);
     }

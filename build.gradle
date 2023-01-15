@@ -52,6 +52,7 @@ allprojects {
 
     repositories {
         maven { url = "https://maven.quiltmc.org/repository/release/" }
+        maven { url = "https://maven.quiltmc.org/repository/snapshot/" }
         maven { url = "https://maven.bai.lol" } // WTHIT
         maven { url = "https://api.modrinth.com/maven" }
     }

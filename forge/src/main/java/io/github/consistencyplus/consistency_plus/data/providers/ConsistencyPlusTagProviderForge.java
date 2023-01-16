@@ -2,15 +2,15 @@ package io.github.consistencyplus.consistency_plus.data.providers;
 
 import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTagProvider;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.server.tag.BlockTagsProvider;
-import net.minecraft.data.server.tag.ItemTagsProvider;
+import net.minecraft.data.server.BlockTagProvider;
+import net.minecraft.data.server.ItemTagProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nullable;
 
 public class ConsistencyPlusTagProviderForge {
 
-    public static class UltimateBlockTagProvider extends BlockTagsProvider {
+    public static class UltimateBlockTagProvider extends BlockTagProvider {
 
         public UltimateBlockTagProvider(DataGenerator arg, String modId, @Nullable ExistingFileHelper existingFileHelper) {
             super(arg, modId, existingFileHelper);
@@ -22,9 +22,9 @@ public class ConsistencyPlusTagProviderForge {
         }
     }
 
-    public static class UltimateItemTagProvider extends ItemTagsProvider {
+    public static class UltimateItemTagProvider extends ItemTagProvider {
 
-        public UltimateItemTagProvider(DataGenerator arg, BlockTagsProvider provider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
+        public UltimateItemTagProvider(DataGenerator arg, BlockTagProvider provider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
             super(arg, provider,  modId, existingFileHelper);
         }
 

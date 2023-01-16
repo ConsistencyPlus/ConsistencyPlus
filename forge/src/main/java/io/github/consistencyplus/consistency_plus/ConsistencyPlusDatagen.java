@@ -4,7 +4,7 @@ import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTags;
 import io.github.consistencyplus.consistency_plus.data.providers.ConsistencyPlusTagProviderForge;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.server.tag.BlockTagsProvider;
+import net.minecraft.data.server.BlockTagProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,10 +23,10 @@ public class ConsistencyPlusDatagen {
 
             ConsistencyPlusTags.init();
 
-            BlockTagsProvider tagProvider = new ConsistencyPlusTagProviderForge.UltimateBlockTagProvider(gen, ConsistencyPlusMain.ID, existingFileHelper);
+            BlockTagProvider tagProvider = new ConsistencyPlusTagProviderForge.UltimateBlockTagProvider(gen, ConsistencyPlusMain.ID, existingFileHelper);
 
-            gen.install(true, tagProvider);
-            gen.install(true, new ConsistencyPlusTagProviderForge.UltimateItemTagProvider(gen, tagProvider, ConsistencyPlusMain.ID, existingFileHelper));
+            gen.addProvider(true, tagProvider);
+            gen.addProvider(true, new ConsistencyPlusTagProviderForge.UltimateItemTagProvider(gen, tagProvider, ConsistencyPlusMain.ID, existingFileHelper));
 
             //gen.addProvider(new ConsistencyPlusTagProviderForge.CommonBlockTagProviderImpl(gen, ConsistencyPlusMain.ID, existingFileHelper));
         }

@@ -17,7 +17,7 @@ subprojects {
     //Mapping idea: QM on Yarn on parchment on Moj? We need Moj with tweaks tbh
     dependencies {
         minecraft "com.mojang:minecraft:$rootProject.minecraft_version"
-        mappings "org.quiltmc:quilt-mappings:1.19.2+build.${project.qm_build}:intermediary-v2"
+        mappings "net.fabricmc:yarn:1.19.2+build.${project.yarn_build}:v2"
 
         String platform = project.name
         if (platform == "common") return

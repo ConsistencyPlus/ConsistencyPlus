@@ -8,7 +8,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.SpreadableBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.random.RandomGenerator;
+import net.minecraft.util.math.random.Random;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -27,7 +27,7 @@ public abstract class SpreadableBlockMixin {
 			locals = LocalCapture.CAPTURE_FAILHARD
 	)
 	@SuppressWarnings("ConstantConditions")
-	private void cPlus$spreadOtherBlockTypes(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random, CallbackInfo ci,
+	private void cPlus$spreadOtherBlockTypes(BlockState state, ServerWorld world, BlockPos pos, Random random, CallbackInfo ci,
 											 BlockState thisDefaultState, int i, BlockPos spreadPos) {
 		boolean grass = (Object) this == Blocks.GRASS_BLOCK;
 		boolean mycelium = (Object) this == Blocks.MYCELIUM;

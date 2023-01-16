@@ -15,7 +15,7 @@ import org.jetbrains.annotations.Nullable;
 public interface CanMeltIntoWater {
     default void customAfterBreak(World world, BlockPos pos, @Nullable ItemStack stack) {
         if (EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack) == 0) {
-            if (world.getDimension().ultraWarm()) {
+            if (world.getDimension().ultrawarm()) {
                 world.removeBlock(pos, false);
                 return;
             }
@@ -36,7 +36,7 @@ public interface CanMeltIntoWater {
     }
 
     default void melt(World world, BlockPos pos) {
-        if (world.getDimension().ultraWarm()) {
+        if (world.getDimension().ultrawarm()) {
             world.removeBlock(pos, false);
         } else {
             world.setBlockState(pos, Blocks.WATER.getDefaultState());

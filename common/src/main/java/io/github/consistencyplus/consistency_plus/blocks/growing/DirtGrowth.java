@@ -7,7 +7,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.random.RandomGenerator;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.registry.Registry;
 import org.jetbrains.annotations.ApiStatus.Internal;
 import org.jetbrains.annotations.Nullable;
@@ -59,22 +59,22 @@ public class DirtGrowth {
 
 	/**
 	 * Provides a survival predicate with vanilla behavior.
-	 * @see DirtGrowth#randomTickSpreadable(BlockState, ServerWorld, BlockPos, RandomGenerator, GrowthPredicate, SpreadType)
+	 * @see DirtGrowth#randomTickSpreadable(BlockState, ServerWorld, BlockPos, Random, GrowthPredicate, SpreadType)
 	 */
-	public static void randomTickSpreadable(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random, SpreadType type) {
+	public static void randomTickSpreadable(BlockState state, ServerWorld world, BlockPos pos, Random random, SpreadType type) {
 		randomTickSpreadable(state, world, pos, random, GrowthPredicate.DEFAULT_SURVIVE, type);
 	}
 
 	/**
 	 * Default behavior for a custom spreadable block. Should be called on randomTick. Will check if the block can
 	 * survive and spread. Based on
-	 * {@link net.minecraft.block.SpreadableBlock#randomTick(BlockState, ServerWorld, BlockPos, RandomGenerator) SpreadableBlock}.
+	 * {@link net.minecraft.block.SpreadableBlock#randomTick(BlockState, ServerWorld, BlockPos, Random)} .
 	 *
 	 * @param state the state of the spreadable block
 	 * @param pos the block pos of the spreadable block
 	 * @param survivePredicate a predicate determining if the spreadable block can survive at its current position
 	 */
-	public static void randomTickSpreadable(BlockState state, ServerWorld world, BlockPos pos, RandomGenerator random,
+	public static void randomTickSpreadable(BlockState state, ServerWorld world, BlockPos pos, Random random,
 											GrowthPredicate survivePredicate, SpreadType type) {
 		if (!survivePredicate.test(state, world, pos)) {
 			GrowthEntry entry = getEntry(state.getBlock());

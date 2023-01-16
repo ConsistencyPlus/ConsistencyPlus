@@ -10,16 +10,16 @@ import java.util.Objects;
 public enum CopperOxidization {
     BASE, EXPOSED, WEATHERED, OXIDIZED;
 
-    public Oxidizable.OxidizationLevel toVanilla() {
+    public Oxidizable.OxidationLevel toVanilla() {
         return switch (this) {
-            case BASE -> Oxidizable.OxidizationLevel.UNAFFECTED;
-            case EXPOSED -> Oxidizable.OxidizationLevel.EXPOSED;
-            case WEATHERED -> Oxidizable.OxidizationLevel.WEATHERED;
-            case OXIDIZED -> Oxidizable.OxidizationLevel.OXIDIZED;
+            case BASE -> Oxidizable.OxidationLevel.UNAFFECTED;
+            case EXPOSED -> Oxidizable.OxidationLevel.EXPOSED;
+            case WEATHERED -> Oxidizable.OxidationLevel.WEATHERED;
+            case OXIDIZED -> Oxidizable.OxidationLevel.OXIDIZED;
         };
     }
 
-    public static CopperOxidization fromVanilla(Oxidizable.OxidizationLevel level) {
+    public static CopperOxidization fromVanilla(Oxidizable.OxidationLevel level) {
         return switch (level) {
             case UNAFFECTED -> CopperOxidization.BASE;
             case EXPOSED -> CopperOxidization.EXPOSED;

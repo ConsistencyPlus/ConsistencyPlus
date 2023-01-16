@@ -14,12 +14,14 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-//NGL kinda unoptimized
 @Mixin(value = PlantBlock.class)
 public class PlantBlockMixin {
-    @Inject(method = "canPlantOnTop(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;)Z", at = @At("RETURN"), cancellable = true)
+    @Inject(
+            method = "canPlantOnTop(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;)Z",
+            at = @At("HEAD"),
+            cancellable = true
+    )
     private void cPlus$placeOnSlabsAndStairs(BlockState floor, BlockView world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(cir.getReturnValue());
         if (floor.isIn(CPlusBlocks.DIRT_SLABS_TAG)) {
             if (floor.contains(SlabBlock.TYPE)) {
                 if (floor.get(SlabBlock.TYPE).equals(SlabType.DOUBLE) || floor.get(SlabBlock.TYPE).equals(SlabType.TOP)) {

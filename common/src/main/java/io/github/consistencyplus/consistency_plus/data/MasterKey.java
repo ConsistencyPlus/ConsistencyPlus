@@ -10,8 +10,8 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Pair;
+import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nullable;
 import java.util.*;
 
 public class MasterKey {
@@ -24,7 +24,8 @@ public class MasterKey {
     public String material;
     public CopperOxidization oxidization;
     public SetModifiers setModifiers;
-    @Nullable public DyeColor dyeColor;
+    @Nullable
+    public DyeColor dyeColor;
 
     public boolean isWaxed = false;
 

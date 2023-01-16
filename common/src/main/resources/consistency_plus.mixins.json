@@ -13,9 +13,6 @@
     "PlayerEntityMixin",
     "SpreadableBlockMixin"
   ],
-  "client": [
-    "ArmorFeatureRendererMixin"
-  ],
   "injectors": {
     "defaultRequire": 1
   }

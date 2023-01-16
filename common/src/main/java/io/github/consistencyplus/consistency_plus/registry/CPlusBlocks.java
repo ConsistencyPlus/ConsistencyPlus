@@ -210,6 +210,6 @@ public class CPlusBlocks {
 	}
 	
 	public static boolean isValidConduitBlock(BlockState state) {
-		return (state.isIn(ConsistencyPlusTags.ConsistencySpecificTags.VALID_CONDUIT_BLOCKS));
+		return state.isIn(ConsistencyPlusTags.ConsistencySpecificTags.VALID_CONDUIT_BLOCKS);
 	}
 }

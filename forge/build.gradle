@@ -33,13 +33,13 @@ tasks.withType(processResources.class) {
 
 loom {
     forge {
-        dataGen{
+        dataGen {
             mod "consistency_plus"
         }
 
-        launches {
+        runs {
             data {
-                arg "--existing", file("src/main/resources").absolutePath
+                vmArgs("--existing", file("src/main/resources").absolutePath)
             }
         }
 

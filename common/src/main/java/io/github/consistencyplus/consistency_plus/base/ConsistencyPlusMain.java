@@ -1,15 +1,15 @@
 package io.github.consistencyplus.consistency_plus.base;
 
+import dev.architectury.event.events.common.LifecycleEvent;
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.Registrar;
+import io.github.consistencyplus.consistency_plus.blocks.growing.DirtGrowth;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertCartDispenserBehavior;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertDispenserBehavior;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import net.minecraft.block.Block;
-import net.minecraft.block.DispenserBlock;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -31,19 +31,18 @@ public class ConsistencyPlusMain {
 		CPlusEntries.init();
 		CPlusBlocks.init();
 		CPlusItems.init();
-		nubertDispenserBehaviors();
 		BLOCKS.register();
 		LOGGER.info("Consistency+ Main - Registration Checkpoint 1");
 		ITEMS.register();
+		LifecycleEvent.SETUP.register(ConsistencyPlusMain::onRegistryReady);
 		LOGGER.info("Consistency+ Main - Finished initialization process");
+
 	}
 
-	private static void nubertDispenserBehaviors() {
-		Registrar<Item> registrar = ITEMS.getRegistrar();
-		registrar.listen(CPlusItems.NUBERT, nubert -> DispenserBlock.registerBehavior(nubert, NubertDispenserBehavior.INSTANCE));
-		registrar.listen(CPlusItems.WIGGED_NUBERT, nubert -> DispenserBlock.registerBehavior(nubert, NubertDispenserBehavior.INSTANCE));
-		registrar.listen(CPlusItems.NUBERT_MINECART, nubert -> DispenserBlock.registerBehavior(nubert, NubertCartDispenserBehavior.INSTANCE));
-		registrar.listen(CPlusItems.WIGGED_NUBERT_MINECART, nubert -> DispenserBlock.registerBehavior(nubert, NubertCartDispenserBehavior.INSTANCE));
+	private static void onRegistryReady() {
+		NubertDispenserBehavior.register();
+		NubertCartDispenserBehavior.register();
+		DirtGrowth.registerDefaults();
 	}
 	
 	public static Identifier id(String name) {

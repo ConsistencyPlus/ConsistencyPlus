@@ -1,13 +1,9 @@
 package io.github.consistencyplus.consistency_plus;
 
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
-import io.github.consistencyplus.consistency_plus.blocks.BlockShapes;
-import io.github.consistencyplus.consistency_plus.blocks.BlockTypes;
-import io.github.consistencyplus.consistency_plus.blocks.CopperOxidization;
 import io.github.consistencyplus.consistency_plus.core.entries.block.fabric.MetalRegistryEntryGroupImpl;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.loot.v2.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.minecraft.entity.EntityType;

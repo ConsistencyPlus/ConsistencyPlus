@@ -6,14 +6,12 @@
   "mixins": [
     "AbstractMinecartEntityMixin",
     "AreaHelperMixin",
-    "BlocksMixin",
     "ConduitBlockEntityMixin",
-    "GrassBlockMixin",
     "LivingEntityMixin",
     "MinecartEntityMixin",
-    "MyceliumBlockMixin",
     "PlantBlockMixin",
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "SpreadableBlockMixin"
   ],
   "client": [
     "ArmorFeatureRendererMixin"

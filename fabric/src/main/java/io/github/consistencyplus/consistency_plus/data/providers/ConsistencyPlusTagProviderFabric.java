@@ -3,8 +3,7 @@ package io.github.consistencyplus.consistency_plus.data.providers;
 import io.github.consistencyplus.consistency_plus.data.ConsistencyPlusTagProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 public class ConsistencyPlusTagProviderFabric {
 

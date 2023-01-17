@@ -2,17 +2,12 @@ package io.github.consistencyplus.consistency_plus.registry;
 
 import dev.architectury.registry.registries.RegistrySupplier;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.blocks.growing.SpreadType;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
 import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
-import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
-import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
-import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtWallBlock;
-import io.github.consistencyplus.consistency_plus.blocks.grass.GrassSlabBlock;
-import io.github.consistencyplus.consistency_plus.blocks.grass.GrassStairsBlock;
-import io.github.consistencyplus.consistency_plus.blocks.grass.GrassWallBlock;
-import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumSlabBlock;
-import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumStairsBlock;
-import io.github.consistencyplus.consistency_plus.blocks.mycelium.MyceliumWallBlock;
+import io.github.consistencyplus.consistency_plus.blocks.growing.blocks.SpreadableSlabBlock;
+import io.github.consistencyplus.consistency_plus.blocks.growing.blocks.SpreadableStairsBlock;
+import io.github.consistencyplus.consistency_plus.blocks.growing.blocks.SpreadableWallBlock;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.WiggedNubertBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusCarvedPumpkinBlock;
 import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
@@ -30,9 +25,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.registry.Registries;
 import net.minecraft.world.BlockView;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.function.Supplier;
 
@@ -126,19 +119,19 @@ public class CPlusBlocks {
 	public static final RegistrySupplier<Block> SOUL_GLOWSTONE_GATE = ConsistencyPlusMain.BLOCKS.register("soul_glowstone_gate", () -> new CPlusFenceGateBlock(Block.Settings.copy(SOUL_GLOWSTONE.get())));
 
 	// Dirt
-	public static final RegistrySupplier<Block> DIRT_SLAB = register("dirt_slab", () -> new DirtSlabBlock(Block.Settings.copy(DIRT)));
-	public static final RegistrySupplier<Block> DIRT_STAIRS = register("dirt_stairs", () -> new DirtStairsBlock(DIRT.getDefaultState(), Block.Settings.copy(DIRT)));
-	public static final RegistrySupplier<Block> DIRT_WALL = register("dirt_wall", () -> new DirtWallBlock(Block.Settings.copy(DIRT)));
+	public static final RegistrySupplier<Block> DIRT_SLAB = register("dirt_slab", () -> new SlabBlock(Block.Settings.copy(DIRT)));
+	public static final RegistrySupplier<Block> DIRT_STAIRS = register("dirt_stairs", () -> new StairsBlock(DIRT.getDefaultState(), Block.Settings.copy(DIRT)));
+	public static final RegistrySupplier<Block> DIRT_WALL = register("dirt_wall", () -> new WallBlock(Block.Settings.copy(DIRT)));
 
 	// Grass
-	public static final RegistrySupplier<Block> GRASS_SLAB = register("grass_slab", () -> new GrassSlabBlock(Block.Settings.copy(GRASS_BLOCK)));
-	public static final RegistrySupplier<Block> GRASS_STAIRS = register("grass_stairs", () -> new GrassStairsBlock(GRASS_BLOCK.getDefaultState(), Block.Settings.copy(GRASS_BLOCK)));
-	public static final RegistrySupplier<Block> GRASS_WALL = register("grass_wall", () -> new GrassWallBlock(Block.Settings.copy(GRASS_BLOCK)));
+	public static final RegistrySupplier<Block> GRASS_SLAB = register("grass_slab", () -> new SpreadableSlabBlock(SpreadType.GRASS, Block.Settings.copy(GRASS_BLOCK)));
+	public static final RegistrySupplier<Block> GRASS_STAIRS = register("grass_stairs", () -> new SpreadableStairsBlock(SpreadType.GRASS, GRASS_BLOCK.getDefaultState(), Block.Settings.copy(GRASS_BLOCK)));
+	public static final RegistrySupplier<Block> GRASS_WALL = register("grass_wall", () -> new SpreadableWallBlock(SpreadType.GRASS, Block.Settings.copy(GRASS_BLOCK)));
 
 	// Mycelium
-	public static final RegistrySupplier<Block> MYCELIUM_SLAB = register("mycelium_slab", () -> new MyceliumSlabBlock(Block.Settings.copy(MYCELIUM)));
-	public static final RegistrySupplier<Block> MYCELIUM_STAIRS = register("mycelium_stairs", () -> new MyceliumStairsBlock(MYCELIUM.getDefaultState(), Block.Settings.copy(MYCELIUM)));
-	public static final RegistrySupplier<Block> MYCELIUM_WALL = register("mycelium_wall", () -> new MyceliumWallBlock(Block.Settings.copy(MYCELIUM)));
+	public static final RegistrySupplier<Block> MYCELIUM_SLAB = register("mycelium_slab", () -> new SpreadableSlabBlock(SpreadType.MYCELIUM, Block.Settings.copy(MYCELIUM)));
+	public static final RegistrySupplier<Block> MYCELIUM_STAIRS = register("mycelium_stairs", () -> new SpreadableStairsBlock(SpreadType.MYCELIUM, MYCELIUM.getDefaultState(), Block.Settings.copy(MYCELIUM)));
+	public static final RegistrySupplier<Block> MYCELIUM_WALL = register("mycelium_wall", () -> new SpreadableWallBlock(SpreadType.MYCELIUM, Block.Settings.copy(MYCELIUM)));
 
 	// Miscellaneous
 	// public static final RegistrySupplier<Block> JACK_O_RED = register("jack_o_red", () -> new RedstonePumpkinBlock(Block.Settings.of(Material.GOURD, MapColor.ORANGE).strength(1.0F).sounds(BlockSoundGroup.WOOD).luminance(13)));

@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.blocks.nubert;
 
+import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.dispenser.ItemDispenserBehavior;
 import net.minecraft.entity.vehicle.MinecartEntity;
@@ -30,5 +31,10 @@ public class NubertDispenserBehavior extends ItemDispenserBehavior {
 			}
 		}
 		return DEFAULT_BEHAVIOR.dispense(pointer, stack);
+	}
+
+	public static void register() {
+		DispenserBlock.registerBehavior(CPlusItems.NUBERT.get(), INSTANCE);
+		DispenserBlock.registerBehavior(CPlusItems.WIGGED_NUBERT.get(), INSTANCE);
 	}
 }

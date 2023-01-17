@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.blocks.copper;
 
-import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGateBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.Oxidizable;
@@ -8,9 +7,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 
-import net.minecraft.util.math.random.Random;
-
-public class OxidizableGateBlock extends CPlusFenceGateBlock implements Oxidizable {
+public class OxidizableGateBlock extends FenceGateBlock implements Oxidizable {
 	private final OxidationLevel oxidationLevel;
 	
 	public OxidizableGateBlock(OxidationLevel level, Settings settings) {

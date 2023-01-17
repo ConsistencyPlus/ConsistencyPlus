@@ -26,7 +26,7 @@ public abstract class AbstractMinecartEntityMixin extends Entity {
 		super(entityType, world);
 	}
 
-	@ModifyVariable(method = "tick", at = @At(value = "INVOKE_ASSIGN", target = "Lnet/minecraft/world/World;getOtherEntities(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/Box;Ljava/util/function/Predicate;)Ljava/util/List;"))
+	@ModifyVariable(method = "tick", at = @At(value = "INVOKE", target = "Ljava/util/List;isEmpty()Z"))
 	private List<Entity> cPlus$replaceListToPreventRidingNubert(List<Entity> list) {
 		if (getContainedBlock().getBlock() instanceof NubertBlock) {
 			return Collections.emptyList(); // no entities to check, prevents riding

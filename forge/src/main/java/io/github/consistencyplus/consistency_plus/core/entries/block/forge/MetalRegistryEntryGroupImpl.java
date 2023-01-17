@@ -26,7 +26,7 @@ public class MetalRegistryEntryGroupImpl {
     }
 
     // this is yoinked from Create, which is licensed under MIT, so this is as well.
-    // https://github.com/Creators-of-Create/Create/blob/mc1.18/dev/src/main/java/com/simibubi/create/foundation/block/CopperRegistries.java
+    // https://github.com/Creators-of-Create/Create/blob/mc1.18/dev/src/main/java/com/simibubi/create/foundation/block/CopperRegistry.java
     public static void finish() {
         try {
             Field delegateField = Oxidizable.OXIDATION_LEVEL_INCREASES.getClass().getDeclaredField("delegate");

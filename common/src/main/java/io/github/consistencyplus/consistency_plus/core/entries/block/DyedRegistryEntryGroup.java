@@ -14,7 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
-import net.minecraft.registry.Registries;
+import net.minecraft.util.registry.Registry;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -71,14 +71,14 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
 
     public Block getDyedBlock(DyeColor dyeColor, BlockShapes shapes, BlockTypes type) {
         String id = getDyedID(dyeColor, shapes, type);
-        if (checkMinecraft(id)) return Registries.BLOCK.get(new Identifier("minecraft", (id)));
-        return Registries.BLOCK.get(ConsistencyPlusMain.id(id));
+        if (checkMinecraft(id)) return Registry.BLOCK.get(new Identifier("minecraft", (id)));
+        return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
     }
 
     public Item getDyedItem(DyeColor dyeColor, BlockShapes shapes, BlockTypes type) {
         String id = getDyedID(dyeColor, shapes, type);
-        if (checkMinecraft(id)) return Registries.ITEM.get(new Identifier("minecraft", (id)));
-        return Registries.ITEM.get(ConsistencyPlusMain.id(id));
+        if (checkMinecraft(id)) return Registry.ITEM.get(new Identifier("minecraft", (id)));
+        return Registry.ITEM.get(ConsistencyPlusMain.id(id));
     }
 
     @Nullable
@@ -97,16 +97,16 @@ public class DyedRegistryEntryGroup extends RegistryEntryGroup implements DyedBl
     public Block getBlock(BlockShapes shapes, BlockTypes type) {
         if (withBase) {
             String id = getID(shapes, type);
-            if (checkMinecraft(id)) return Registries.BLOCK.get(new Identifier("minecraft", (id)));
-            return Registries.BLOCK.get(ConsistencyPlusMain.id(id));
+            if (checkMinecraft(id)) return Registry.BLOCK.get(new Identifier("minecraft", (id)));
+            return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
         } else return getDyedBlock(DyeColor.WHITE, shapes, type);
     }
 
     public Item getItem(BlockShapes shapes, BlockTypes type) {
         if (withBase) {
             String id = getID(shapes, type);
-            if (checkMinecraft(id)) return Registries.ITEM.get(new Identifier("minecraft", (id)));
-            return Registries.ITEM.get(ConsistencyPlusMain.id(id));
+            if (checkMinecraft(id)) return Registry.ITEM.get(new Identifier("minecraft", (id)));
+            return Registry.ITEM.get(ConsistencyPlusMain.id(id));
         } else return getDyedItem(DyeColor.WHITE, shapes, type);
     }
 

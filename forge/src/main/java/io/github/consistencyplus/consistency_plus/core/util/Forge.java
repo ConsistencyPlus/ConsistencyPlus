@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registries;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -48,13 +48,13 @@ public class Forge implements Loader {
 
     @Override
     public Block registerBlock(Identifier id, Block block) {
-        ForgeRegistries.BLOCKS.register(id, block);
+        ForgeRegistry.BLOCKS.register(id, block);
         return block;
     }
 
     @Override
     public Item registerItem(Identifier id, Item item) {
-        ForgeRegistries.ITEMS.register(id, item);
+        ForgeRegistry.ITEMS.register(id, item);
         return item;
     }
 

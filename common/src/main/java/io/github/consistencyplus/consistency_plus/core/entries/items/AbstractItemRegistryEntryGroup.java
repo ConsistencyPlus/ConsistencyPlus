@@ -5,7 +5,7 @@ import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.core.entries.interfaces.BasicRegistryEntryGroupInterface;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.minecraft.registry.Registries;
+import net.minecraft.util.registry.Registry;
 
 import static io.github.consistencyplus.consistency_plus.registry.CPlusEntries.checkMinecraft;
 
@@ -29,7 +29,7 @@ public class AbstractItemRegistryEntryGroup implements BasicRegistryEntryGroupIn
     }
 
     public Item getItem() {
-        if (checkMinecraft(name)) return Registries.ITEM.get(new Identifier("minecraft", (name)));
-        return Registries.ITEM.get(ConsistencyPlusMain.id(name));
+        if (checkMinecraft(name)) return Registry.ITEM.get(new Identifier("minecraft", (name)));
+        return Registry.ITEM.get(ConsistencyPlusMain.id(name));
     }
 }

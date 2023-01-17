@@ -14,7 +14,7 @@ public class CPlusFenceGateBlock extends FenceGateBlock implements Waterloggable
 	public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 	
 	public CPlusFenceGateBlock(Settings settings) {
-		super(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN);
+		super(settings);
 		setDefaultState(getDefaultState().with(WATERLOGGED, false));
 	}
 	

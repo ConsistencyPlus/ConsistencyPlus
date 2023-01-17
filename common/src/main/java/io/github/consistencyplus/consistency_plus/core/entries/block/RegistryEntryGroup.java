@@ -13,7 +13,7 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.registry.Registries;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
@@ -107,14 +107,14 @@ public abstract class RegistryEntryGroup implements BlockRegistryEntryGroupInter
 
     public Block getBlock(BlockShapes shapes, BlockTypes type) {
         String id = getID(shapes, type);
-        if (checkMinecraft(id)) return Registries.BLOCK.get(new Identifier("minecraft", (id)));
-        return Registries.BLOCK.get(ConsistencyPlusMain.id(id));
+        if (checkMinecraft(id)) return Registry.BLOCK.get(new Identifier("minecraft", (id)));
+        return Registry.BLOCK.get(ConsistencyPlusMain.id(id));
     }
 
     public Item getItem(BlockShapes shapes, BlockTypes type) {
         String id = getID(shapes, type);
-        if (checkMinecraft(id)) return Registries.ITEM.get(new Identifier("minecraft", (id)));
-        return Registries.ITEM.get(ConsistencyPlusMain.id(id));
+        if (checkMinecraft(id)) return Registry.ITEM.get(new Identifier("minecraft", (id)));
+        return Registry.ITEM.get(ConsistencyPlusMain.id(id));
     }
 
     @Nullable

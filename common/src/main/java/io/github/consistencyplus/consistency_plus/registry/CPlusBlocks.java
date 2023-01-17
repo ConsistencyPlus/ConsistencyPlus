@@ -17,12 +17,11 @@ import io.github.consistencyplus.consistency_plus.core.extensions.CPlusStairBloc
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.EntityType;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.registry.tag.TagKey;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.registry.Registries;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
 import java.util.HashSet;
@@ -32,8 +31,8 @@ import java.util.function.Supplier;
 import static net.minecraft.block.Blocks.*;
 
 public class CPlusBlocks {
-	public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(RegistryKeys.BLOCK, ConsistencyPlusMain.id("dirt_slabs"));
-	public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(RegistryKeys.BLOCK, ConsistencyPlusMain.id("dirt_stairs"));
+	public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("dirt_slabs"));
+	public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(Registry.BLOCK_KEY, ConsistencyPlusMain.id("dirt_stairs"));
 
 	public static final Set<RegistrySupplier<Block>> ALL_BLOCKS = new HashSet<>();
 
@@ -204,7 +203,7 @@ public class CPlusBlocks {
 	}
 
 	public static boolean isValidPortalBlock(BlockState state) {
-		/*if ((state.isIn(TagKey.of(Registries.BLOCK.getKey(), Identifier.of("consistency_plus", "valid_portal_blocks"))))) {
+		/*if ((state.isIn(TagKey.of(Registry.BLOCK.getKey(), Identifier.of("consistency_plus", "valid_portal_blocks"))))) {
 			if (state.contains(SlabBlock.TYPE)) {
 				return state.get(SlabBlock.TYPE) == SlabType.DOUBLE;
 			} return true;
@@ -212,6 +211,6 @@ public class CPlusBlocks {
 	}
 	
 	public static boolean isValidConduitBlock(BlockState state) {
-		return false; //(state.isIn(TagKey.of(Registries.BLOCK.getKey(), Identifier.of("consistency_plus", "valid_conduit_blocks"))));
+		return false; //(state.isIn(TagKey.of(Registry.BLOCK.getKey(), Identifier.of("consistency_plus", "valid_conduit_blocks"))));
 	}
 }

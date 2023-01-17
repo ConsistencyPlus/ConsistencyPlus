@@ -12,18 +12,19 @@ import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.GrassColors;
-import net.minecraft.client.item.ClampedModelPredicateProvider;
+import net.minecraft.client.item.ModelPredicateProvider;
+import net.minecraft.client.item.UnclampedModelPredicateProvider;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BundleItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
-import net.minecraft.registry.Registries;
+import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.util.TriConsumer;
 
 @Environment(EnvType.CLIENT)
 public class ConsistencyPlusClientMain {
-	public static void init(TriConsumer<Item, Identifier, ClampedModelPredicateProvider> modelPredicateProviderFactory) {
+	public static void init(TriConsumer<Item, Identifier, UnclampedModelPredicateProvider> modelPredicateProviderFactory) {
 		ConsistencyPlusMain.LOGGER.info("Consistency+ Main - Starting client initialization");
 		
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.WARPED_WART.get());
@@ -32,7 +33,7 @@ public class ConsistencyPlusClientMain {
 		RenderTypeRegistry.register(RenderLayer.getCutout(), CPlusBlocks.GRASS_WALL.get());
 
 		for (DyeColor color : DyeColor.values()) {
-			RenderTypeRegistry.register(RenderLayer.getTranslucent(), Registries.BLOCK.get(ConsistencyPlusMain.id(color + "_" + "tinted_glass")));
+			RenderTypeRegistry.register(RenderLayer.getTranslucent(), Registry.BLOCK.get(ConsistencyPlusMain.id(color + "_" + "tinted_glass")));
 		}
 
 		for (RegistrySupplier<Block> block : IceRegistryEntryGroup.iceBlocks) {
@@ -40,7 +41,7 @@ public class ConsistencyPlusClientMain {
 		}
 
 		for (DyeColor color : DyeColor.values()) {
-			modelPredicateProviderFactory.accept(Registries.ITEM.get(ConsistencyPlusMain.id(color + "_" + "dyed_bundle")), new Identifier("filled"),
+			modelPredicateProviderFactory.accept(Registry.ITEM.get(ConsistencyPlusMain.id(color + "_" + "dyed_bundle")), new Identifier("filled"),
 					(itemStack, clientWorld, livingEntity, i) -> BundleItem.getAmountFilled(itemStack));
 		}
 		

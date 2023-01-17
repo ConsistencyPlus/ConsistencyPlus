@@ -9,7 +9,7 @@ import io.github.consistencyplus.consistency_plus.core.entries.items.DyedItemReg
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.registry.Registries;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
@@ -67,7 +67,7 @@ public class CPlusEntries {
 
     public static boolean checkMinecraft(String id) {
         Identifier MCID = new Identifier("minecraft", id);
-        if (Registries.BLOCK.getOrEmpty(MCID).isPresent() || Registries.ITEM.getOrEmpty(MCID).isPresent()) {
+        if (Registry.BLOCK.getOrEmpty(MCID).isPresent() || Registry.ITEM.getOrEmpty(MCID).isPresent()) {
             return !whitelistedIDs.contains(id);
         } else return false;
     }

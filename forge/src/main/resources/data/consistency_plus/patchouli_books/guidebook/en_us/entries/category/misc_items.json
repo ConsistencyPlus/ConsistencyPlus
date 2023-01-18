@@ -1,0 +1,54 @@
+{
+    "name": "C. Misc Items",
+    "icon": "consistency_plus:withered_bone",
+    "category": "consistency_plus:category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Consistency+ also adds a handful of miscellaneous items to the game, such as withered bones or missing nugget types."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "consistency_plus:withered_bone_meal1",
+            "text": "Withered Bones drop from wither skeletons and are crafted into withered bone meal, which is used to make withered bone blocks."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Copper and Netherite Nuggets can be made using an ingot of the respective metal type, or by smelting down copper/netherite items.  Netherite Nuggets are immune to fire and lava."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "consistency_plus:netherite_nugget",
+            "recipe2": "consistency_plus:copper_nugget"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Using scutes, you can now craft a full set of turtle armor rather than just the helmet.  Wearing different pieces grants temporary water-related potion effects."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "consistency_plus:turtle_chestplate",
+            "recipe2": "consistency_plus:turtle_leggings"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Uncrafting wart blocks now gives you back the respective wart type.  Warped Wart currently has no function outside of being farmable to make Warped Wart Blocks."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "consistency_plus:warped_wart_block",
+            "recipe2": "minecraft:nether_wart_block"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "consistency_plus:netherite_horse_armor",
+            "text": "Consistency+ also adds Netherite Horse Armor, which is made by upgrading diamond horse armor in the smithing table.  It is immune to fire and lava as expected, and can be recovered in the unfortunate event of your steed taking a lava bath."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "consistency_plus:glow_dye",
+            "text": "Consistency+ changes how glow ink works slightly, making it craftable into glow dye.  Glow dye can also be made using glowstone and glow berries."
+        }
+    ],
+    "read_by_default": true
+}

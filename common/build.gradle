@@ -1,10 +1,10 @@
 dependencies {
     // This is only here to get environment annotations and mixin dependencies. DO NOT ADD ANYTHING ELSE FROM FABRIC
-    modImplementation("net.fabricmc:fabric-loader:$rootProject.fabric_version")
+    modImplementation("net.fabricmc:fabric-loader:$fabric_version")
 
     // special cases: arch common has no platform, use WTHIT fabric as common
-    modApi("dev.architectury:architectury:$rootProject.architectury_version")
-    modCompileOnly("mcp.mobius.waila:wthit-api:fabric-$rootProject.wthit_version")
+    modApi("dev.architectury:architectury:$architectury_version")
+    modCompileOnly("mcp.mobius.waila:wthit-api:fabric-$wthit_version")
 }
 
 loom {

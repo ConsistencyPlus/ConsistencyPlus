@@ -11,9 +11,11 @@ repositories {
 }
 
 dependencies {
-    modImplementation("net.fabricmc:fabric-loader:${rootProject.fabric_version}")
-    modApi("net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}")
-    include("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}-fabric") // we can include SCRT on fabric
+    modImplementation("net.fabricmc:fabric-loader:$fabric_version")
+    modApi("net.fabricmc.fabric-api:fabric-api:$fabric_api_version")
+    include("maven.modrinth:stonecutter_recipe_tags:$scrt_version-fabric") // we can include SCRT on fabric
+
+    modLocalRuntime("vazkii.patchouli:Patchouli:$patchouli_version-FABRIC")
 
     // dev QOL
     modRuntimeOnly("maven.modrinth:lazydfu:0.1.3")

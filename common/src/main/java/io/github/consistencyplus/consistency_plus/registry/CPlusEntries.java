@@ -212,6 +212,5 @@ public class CPlusEntries {
     }
 
     public static void init() {
-        if (ConsistencyPlusMain.DEVENV) ConsistencyPlusMain.LOGGER.info("CPlusEntries - initialization point");
     }
 }

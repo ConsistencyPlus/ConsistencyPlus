@@ -1,13 +1,14 @@
 package io.github.consistencyplus.consistency_plus.blocks.nubert;
 
-import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.ActionResult;
@@ -21,20 +22,22 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
 
-import static net.minecraft.block.Blocks.SLIME_BLOCK;
+import java.util.function.Supplier;
+
 import static net.minecraft.state.property.Properties.WATERLOGGED;
 
-public class NubertBlock extends HorizontalFacingBlock implements Waterloggable {
+public class NubertBlock extends HorizontalFacingBlock implements Waterloggable, Nubert {
     public static final VoxelShape NUBERT_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 12, 14);
 
-    public NubertBlock() {
-        super(AbstractBlock.Settings.copy(SLIME_BLOCK)
-                .nonOpaque()
-                .allowsSpawning(CPlusBlocks::never)
-                .breakInstantly()
-                .mapColor(MapColor.BRIGHT_RED)
-                .luminance(state -> 7)
-        );
+    public final Item actionItem;
+    public final SoundEvent actionSound;
+    public final Supplier<? extends Block> counterpart;
+
+    public NubertBlock(Item actionItem, SoundEvent actionSound, Supplier<? extends Block> counterpart, Settings settings) {
+        super(settings);
+        this.actionItem = actionItem;
+        this.actionSound = actionSound;
+        this.counterpart = counterpart;
         setDefaultState(getDefaultState().with(WATERLOGGED, false));
     }
 
@@ -54,26 +57,43 @@ public class NubertBlock extends HorizontalFacingBlock implements Waterloggable 
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (player.getStackInHand(hand).isOf(Items.YELLOW_WOOL)) {
-            if (!world.isClient()) {
-                world.setBlockState(pos, CPlusBlocks.WIGGED_NUBERT.get().getDefaultState()
-                                .with(FACING, state.get(FACING))
-                                .with(WATERLOGGED, state.get(WATERLOGGED))
-                );
-            }
-            world.playSound(pos.getX(),
-                    pos.getY(),
-                    pos.getZ(),
-                    SoundEvents.BLOCK_WOOL_PLACE,
-                    SoundCategory.BLOCKS,
-                    1.0F,
-                    1.0F,
-                    false);
-
+        ItemStack held = player.getStackInHand(hand);
+        if (hand == Hand.MAIN_HAND && held.isEmpty()) {
+            world.playSound(player, pos, SoundEvents.BLOCK_SLIME_BLOCK_PLACE, SoundCategory.BLOCKS, 1, 1);
             return ActionResult.SUCCESS;
+        } else if (!held.isOf(actionItem)) {
+            return ActionResult.PASS;
         }
+        if (!world.isClient()) {
+            BlockState newbert = counterpart.get()
+                    .getDefaultState()
+                    .with(FACING, state.get(FACING))
+                    .with(WATERLOGGED, state.get(WATERLOGGED));
+            world.setBlockState(pos, newbert);
 
-        return super.onUse(state, world, pos, player, hand, hit);
+            if (!player.isCreative()) {
+                ItemStack newHeld = applyAction(world, pos, held, player, hand);
+                player.setStackInHand(hand, newHeld);
+            }
+        }
+        world.playSound(player, pos, actionSound, SoundCategory.BLOCKS, 1, 1);
+        return ActionResult.SUCCESS;
+    }
+
+    public ItemStack applyAction(World world, BlockPos pos, ItemStack held, PlayerEntity player, Hand hand) {
+        held = held.copy();
+        held.decrement(1);
+        return held;
+    }
+
+    @Override
+    public boolean isCart() {
+        return false;
+    }
+
+    @Override
+    public boolean hasWig() {
+        return false;
     }
 
     @Nullable

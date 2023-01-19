@@ -209,6 +209,5 @@ public class CPlusItems {
 	public static final RegistrySupplier<Item> SOUL_ICE_GATE = ConsistencyPlusMain.ITEMS.register("soul_ice_gate", () -> new RedirectedBlockItem((isSoulIceLoaded) ? Registry.BLOCK.get(new Identifier("soul_ice", "soul_ice_gate")) : DYED_ICE.getDyedBlock(DyeColor.BLUE, BlockShapes.GATE, BlockTypes.BASE), CPlusItemGroups.consistencyPlusDeprecatedSettings(), CPlusBlocks.SOUL_ICE_GATE.get()));
 
 	public static void init() {
-		if (ConsistencyPlusMain.DEVENV) ConsistencyPlusMain.LOGGER.info("CPlusItems - initialization point");
 	}
 }

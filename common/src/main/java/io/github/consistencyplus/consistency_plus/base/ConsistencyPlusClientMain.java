@@ -3,9 +3,12 @@ package io.github.consistencyplus.consistency_plus.base;
 import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
 import dev.architectury.registry.registries.RegistrySupplier;
-import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertHandler;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertTooltips;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertMinecartEntity;
 import io.github.consistencyplus.consistency_plus.core.entries.block.IceRegistryEntryGroup;
+import io.github.consistencyplus.consistency_plus.mixin.EntityRenderersAccessor;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.registry.CPlusEntities;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -14,6 +17,9 @@ import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.client.item.UnclampedModelPredicateProvider;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.MinecartEntityRenderer;
+import net.minecraft.client.render.entity.model.EntityModelLayer;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BundleItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.DyeColor;
@@ -23,6 +29,8 @@ import org.apache.logging.log4j.util.TriConsumer;
 
 @Environment(EnvType.CLIENT)
 public class ConsistencyPlusClientMain {
+	public static final EntityModelLayer NUBERT_CART = new EntityModelLayer(ConsistencyPlusMain.id("nubert_minecart"), "main");
+
 	public static void init(TriConsumer<Item, Identifier, UnclampedModelPredicateProvider> modelPredicateProviderFactory) {
 		ConsistencyPlusMain.LOGGER.info("Consistency+ Main - Starting client initialization");
 		
@@ -53,7 +61,10 @@ public class ConsistencyPlusClientMain {
 		ColorHandlerRegistry.registerItemColors((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D),
 				CPlusItems.GRASS_SLAB.get(), CPlusItems.GRASS_STAIRS.get(), CPlusItems.GRASS_WALL.get());
 
-		NubertHandler.init();
+		NubertTooltips.init();
+
+		EntityType<NubertMinecartEntity> type = CPlusEntities.NUBERT_CART.get();
+		EntityRenderersAccessor.cPlus$register(type, ctx -> new MinecartEntityRenderer<>(ctx, NUBERT_CART));
 		
 		ConsistencyPlusMain.LOGGER.info("Consistency+ Main - Finished client initialization");
 	}

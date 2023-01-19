@@ -4,16 +4,19 @@
   "package": "io.github.consistencyplus.consistency_plus.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "AbstractMinecartEntityMixin",
+    "AbstractMinecartEntity$TypeMixin",
     "AreaHelperMixin",
     "ConduitBlockEntityMixin",
     "LivingEntityMixin",
-    "MinecartEntityMixin",
     "PlantBlockMixin",
     "PlayerEntityMixin",
     "SpreadableBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "client": [
+    "EntityModelsMixin",
+    "EntityRenderersAccessor"
+  ]
 }

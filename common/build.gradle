@@ -7,4 +7,8 @@ dependencies {
     modCompileOnly("mcp.mobius.waila:wthit-api:fabric-$rootProject.wthit_version")
 }
 
+loom {
+    accessWidenerPath = file("src/main/resources/consistency_plus.accessWidener")
+}
+
 architectury.common("fabric", "forge")

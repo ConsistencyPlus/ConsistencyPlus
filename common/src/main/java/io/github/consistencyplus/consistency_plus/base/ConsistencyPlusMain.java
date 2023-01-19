@@ -5,11 +5,12 @@ import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
 import io.github.consistencyplus.consistency_plus.blocks.growing.DirtGrowth;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertCartDispenserBehavior;
-import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertDispenserBehavior;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.registry.CPlusEntities;
 import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntries;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -24,23 +25,27 @@ public class ConsistencyPlusMain {
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.BLOCK_KEY);
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.ITEM_KEY);
+	public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ConsistencyPlusMain.ID, Registry.ENTITY_TYPE_KEY);
 
 
 	public static void init() {
-		LOGGER.info("Consistency+ Main - Beginning initialization process");
+		LOGGER.info("Consistency+ beginning initialization!");
 		CPlusEntries.init();
 		CPlusBlocks.init();
 		CPlusItems.init();
+		CPlusEntities.init();
 		BLOCKS.register();
-		LOGGER.info("Consistency+ Main - Registration Checkpoint 1");
+		LOGGER.info("Consistency+ blocks registered");
 		ITEMS.register();
+		LOGGER.info("Consistency+ items registered");
+		ENTITIES.register();
+		LOGGER.info("Consistency+ entities registered");
 		LifecycleEvent.SETUP.register(ConsistencyPlusMain::onRegistryReady);
-		LOGGER.info("Consistency+ Main - Finished initialization process");
+		LOGGER.info("Consistency+ finished initialization successfully!");
 
 	}
 
 	private static void onRegistryReady() {
-		NubertDispenserBehavior.register();
 		NubertCartDispenserBehavior.register();
 		DirtGrowth.registerDefaults();
 	}

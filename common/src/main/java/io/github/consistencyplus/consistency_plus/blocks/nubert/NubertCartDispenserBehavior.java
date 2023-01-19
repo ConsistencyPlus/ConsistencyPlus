@@ -7,8 +7,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.dispenser.ItemDispenserBehavior;
 import net.minecraft.block.enums.RailShape;
-import net.minecraft.entity.vehicle.AbstractMinecartEntity;
-import net.minecraft.entity.vehicle.AbstractMinecartEntity.Type;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPointer;
@@ -18,6 +16,7 @@ import net.minecraft.world.World;
 
 public class NubertCartDispenserBehavior extends ItemDispenserBehavior {
 	public static final NubertCartDispenserBehavior INSTANCE = new NubertCartDispenserBehavior();
+	private static final ItemDispenserBehavior defaultBehavior = new ItemDispenserBehavior();
 
 	public ItemStack dispenseSilently(BlockPointer pointer, ItemStack stack) {
 		Direction direction = pointer.getBlockState().get(DispenserBlock.FACING);
@@ -39,7 +38,7 @@ public class NubertCartDispenserBehavior extends ItemDispenserBehavior {
 			}
 		} else {
 			if (!blockState.isAir() || !world.getBlockState(railPos.down()).isIn(BlockTags.RAILS)) {
-				return NubertDispenserBehavior.DEFAULT_BEHAVIOR.dispense(pointer, stack);
+				return defaultBehavior.dispense(pointer, stack);
 			}
 
 			BlockState belowRail = world.getBlockState(railPos.down());
@@ -53,14 +52,12 @@ public class NubertCartDispenserBehavior extends ItemDispenserBehavior {
 			}
 		}
 
-		AbstractMinecartEntity entity = AbstractMinecartEntity.create(world, xPos, yPos + yOffset, zPos, Type.RIDEABLE); // nubert carts are RIDEABLE internally
+		// only change from the behavior in MinecartItem
+		boolean wig = stack.getItem() instanceof NubertMinecartItem cart && cart.wig;
+		NubertMinecartEntity entity = new NubertMinecartEntity(world, xPos, yPos + yOffset, zPos, wig);
+
 		if (stack.hasCustomName()) {
 			entity.setCustomName(stack.getName());
-		}
-
-		// this is the only thing different from AbstractMinecartEntity, where this is copied from
-		if (stack.getItem() instanceof NubertMinecartItem nubert) {
-			entity.setCustomBlock(nubert.block.getDefaultState());
 		}
 
 		world.spawnEntity(entity);

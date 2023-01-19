@@ -1,0 +1,17 @@
+{
+    "name": "1. Polished Blocks",
+    "icon": "consistency_plus:polished_stone",
+    "category": "consistency_plus:category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Polished blocks in Consistency+ are made in the same way as vanilla.  The only difference is that you can turn a lot more material types into polished blocks.  Experiment with different block types and use the recipe book or stonecutter to see what's available to you!"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe":  "consistency_plus:polished_stone_crafting",
+            "recipe2":  "consistency_plus:polished_prismarine_crafting"
+        }
+    ],
+    "read_by_default": true
+}

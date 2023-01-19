@@ -1,0 +1,17 @@
+{
+    "name": "A. Gates",
+    "icon": "consistency_plus:stone_gate",
+    "category": "consistency_plus:category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Gates are a new block shape added by Consistency+ that act as fence gates but for walls.  Every block that has a wall in C+ has a gate to go with it!"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe":  "consistency_plus:stone_gate_crafting",
+            "recipe2":  "consistency_plus:bone_brick_gate_crafting"
+        }
+    ],
+    "read_by_default": true
+}

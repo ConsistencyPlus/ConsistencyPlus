@@ -1,18 +1,18 @@
 package io.github.consistencyplus.consistency_plus.base;
 
+import dev.architectury.event.events.common.LifecycleEvent;
 import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.Registrar;
+import io.github.consistencyplus.consistency_plus.blocks.growing.DirtGrowth;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertCartDispenserBehavior;
+import io.github.consistencyplus.consistency_plus.core.util.DefaultLoader;
+import io.github.consistencyplus.consistency_plus.core.util.Loader;
 import io.github.consistencyplus.consistency_plus.registry.*;
 import io.github.consistencyplus.consistency_plus.registry.CPlusEntities;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryEntry;
-import net.minecraft.util.registry.RegistryKey;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

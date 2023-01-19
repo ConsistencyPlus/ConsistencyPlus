@@ -136,7 +136,8 @@
     ]
   },
   "mixins": [
-    "consistency_plus.mixins.json"
+    "consistency_plus.mixins.json",
+    "consistency_plus_fabric.mixins.json"
   ],
 
   "depends": {

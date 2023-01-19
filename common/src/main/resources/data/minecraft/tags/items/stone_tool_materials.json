@@ -15,8 +15,6 @@
     "minecraft:calcite",
     "minecraft:tuff",
     "minecraft:dripstone_block",
-    "minecraft:deepslate",
-    "minecraft:basalt",
-    "consistency_plus:cobbled_basalt"
+    "minecraft:deepslate"
   ]
 }

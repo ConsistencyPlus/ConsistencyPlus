@@ -12,24 +12,24 @@ subprojects {
     apply plugin: "dev.architectury.loom"
     apply plugin: "io.github.juuxel.loom-quiltflower"
 
-    archivesBaseName = "$rootProject.archives_base_name-$project.name"
+    archivesBaseName = "$archives_base_name-$project.name"
 
     //Mapping idea: QM on Yarn on parchment on Moj? We need Moj with tweaks tbh
     dependencies {
-        minecraft "com.mojang:minecraft:$rootProject.minecraft_version"
-        mappings "net.fabricmc:yarn:$rootProject.minecraft_version+build.${project.yarn_build}:v2"
+        minecraft "com.mojang:minecraft:$minecraft_version"
+        mappings "net.fabricmc:yarn:1.19.2+build.$yarn_build:v2"
 
         String platform = project.name
         if (platform == "common") return
 
-        modApi("dev.architectury:architectury-${platform}:${rootProject.architectury_version}")
+        modImplementation("dev.architectury:architectury-$platform:$architectury_version")
 
-        modApi("maven.modrinth:stonecutter_recipe_tags:${rootProject.scrt_version}-${platform}")
+        modImplementation("maven.modrinth:stonecutter_recipe_tags:$scrt_version-$platform")
         modImplementation("com.github.LlamaLad7:MixinExtras:0.1.1") // for SCRT
 
-        modCompileOnly("mcp.mobius.waila:wthit-api:${platform}-$rootProject.wthit_version") // compile against the WTHIT API
-        modRuntimeOnly("mcp.mobius.waila:wthit:${platform}-$rootProject.wthit_version") // run against the full jar
-        modImplementation("lol.bai:badpackets:${platform}-${rootProject.badpackets_version}") // for WTHIT
+        modCompileOnly("mcp.mobius.waila:wthit-api:$platform-$wthit_version") // compile against the WTHIT API
+        modLocalRuntime("mcp.mobius.waila:wthit:$platform-$wthit_version") // run against the full jar
+        modLocalRuntime("lol.bai:badpackets:$platform-$badpackets_version") // for WTHIT
     }
 }
 
@@ -54,6 +54,7 @@ allprojects {
         maven { url = "https://maven.quiltmc.org/repository/snapshot/" }
         maven { url = "https://maven.bai.lol" } // WTHIT
         maven { url = "https://api.modrinth.com/maven" }
+        maven { url = "https://maven.blamejared.com" } // Patchouli
     }
 
     jar {

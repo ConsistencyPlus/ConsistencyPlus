@@ -1,8 +1,9 @@
 package io.github.consistencyplus.consistency_plus.items;
 
-import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertBlock;
-import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.Nubert;
+import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertMinecartEntity;
 import net.minecraft.block.AbstractRailBlock;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.enums.RailShape;
 import net.minecraft.entity.vehicle.AbstractMinecartEntity;
@@ -15,13 +16,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
-public class NubertMinecartItem extends MinecartItem {
-	public final boolean wigged;
-	public final NubertBlock block;
+public class NubertMinecartItem extends MinecartItem implements Nubert {
+	public final boolean wig;
+	public final Block block;
 
-	public NubertMinecartItem(Settings settings, NubertBlock block, boolean wigged) {
+	public NubertMinecartItem(Settings settings, Block block, boolean wig) {
 		super(AbstractMinecartEntity.Type.RIDEABLE, settings);
-		this.wigged = wigged;
+		this.wig = wig;
 		this.block = block;
 	}
 	
@@ -40,14 +41,14 @@ public class NubertMinecartItem extends MinecartItem {
 			if (railShape.isAscending()) {
 				d = 0.5;
 			}
-			
-			AbstractMinecartEntity cart = AbstractMinecartEntity.create(
+
+			// only change from MinecartItem
+			AbstractMinecartEntity cart = new NubertMinecartEntity(
 					world, blockPos.getX() + 0.5D,
 					blockPos.getY() + 0.0625D + d,
 					blockPos.getZ() + 0.5D,
-					AbstractMinecartEntity.Type.RIDEABLE);
-			
-			cart.setCustomBlock((wigged ? CPlusBlocks.WIGGED_NUBERT : CPlusBlocks.NUBERT).get().getDefaultState());
+					wig);
+
 			if (itemStack.hasCustomName()) {
 				cart.setCustomName(itemStack.getName());
 			}
@@ -58,5 +59,15 @@ public class NubertMinecartItem extends MinecartItem {
 		
 		itemStack.decrement(1);
 		return ActionResult.success(world.isClient);
+	}
+
+	@Override
+	public boolean hasWig() {
+		return wig;
+	}
+
+	@Override
+	public boolean isCart() {
+		return true;
 	}
 }

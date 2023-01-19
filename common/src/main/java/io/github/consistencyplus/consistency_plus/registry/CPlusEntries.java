@@ -192,7 +192,7 @@ public class CPlusEntries {
         overrides.put("chiseled_quartz", "chiseled_quartz_block");
         return overrides;
     }
-    
+
     public static MapColor toTerracottaMapColor(DyeColor dyeColor) {
         return switch (dyeColor) {
             case RED -> MapColor.TERRACOTTA_RED;
@@ -215,6 +215,5 @@ public class CPlusEntries {
     }
 
     public static void init() {
-        if (ConsistencyPlusMain.LOADER.devEnv()) ConsistencyPlusMain.LOGGER.info("CPlusEntries - initialization point");
     }
 }

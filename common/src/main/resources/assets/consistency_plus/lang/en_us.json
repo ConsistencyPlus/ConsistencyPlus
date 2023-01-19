@@ -3091,8 +3091,10 @@
   "block.consistency_plus.nubert": "Nubert",
   "block.consistency_plus.wigged_nubert": "Wigged Nubert",
   "item.consistency_plus.nubert_minecart": "Minecart with Nubert",
-  "item.consistency_plus.wigged_nubert_minecart": "Minecart with Wigged Nubert",
-  "comment1": "all",
+  "item.consistency_plus.wigged_nubert_minecart": "Minecart with Nubert with Wig",
+
+  "nubert.tooltip.error": "An error has occurred. Please report this to Consistency+.",
+
   "nubert.phrase.0": "Everybody loves him",
   "nubert.phrase.1": "MY MAN!",
   "nubert.phrase.2": "HE",
@@ -3100,19 +3102,19 @@
   "nubert.phrase.4": "\"Everybody loves me, that's why I live in the trash!\"",
   "nubert.phrase.5": "THE",
   "nubert.phrase.6": "\"Don't look sad, you've got Nubert!\"",
-  "comment2": "wig exclusive",
-  "nubert.phrase.7": "\"Nubert's movin' up in the world\"",
-  "nubert.phrase.8": "\"Nubert even stands above Mouseamilliam\"",
-  "nubert.phrase.9": "\"Nubert gives his riches to the weak\"",
-  "comment3": "cart exclusive",
-  "nubert.phrase.10": "\"Nubert is equipped to travel the world\"",
-  "nubert.phrase.11": "\"Nubert's movin' sideways in the world\"",
-  "nubert.phrase.12": "\"Nubert does not know how he ended up in this situation\"",
-  "nubert.phrase.13": "\"Nubert is going on a wild ride!\"",
-  "nubert.phrase.14": "\"No time to settle down\"",
-  "comment4": "wig + cart exclusive",
-  "nubert.phrase.15": "\"Nubert has found himself in the best possible outcome\"",
-  "nubert.phrase.16": "\"Nubert is one of a kind!\"",
+
+  "nubert.phrase.wig.0": "\"Nubert's movin' up in the world\"",
+  "nubert.phrase.wig.1": "\"Nubert even stands above Mouseamilliam\"",
+  "nubert.phrase.wig.2": "\"Nubert gives his riches to the weak\"",
+
+  "nubert.phrase.cart.0": "\"Nubert is equipped to travel the world\"",
+  "nubert.phrase.cart.1": "\"Nubert's movin' sideways in the world\"",
+  "nubert.phrase.cart.2": "\"Nubert does not know how he ended up in this situation\"",
+  "nubert.phrase.cart.3": "\"Nubert is going on a wild ride!\"",
+  "nubert.phrase.cart.4": "\"No time to settle down\"",
+
+  "nubert.phrase.wig_cart.0": "\"Nubert has found himself in the best possible outcome\"",
+  "nubert.phrase.wig_cart.1": "\"Nubert is one of a kind!\"",
 
   "text.consistency_plus.deprecation_warning": "Deprecated - ",
 

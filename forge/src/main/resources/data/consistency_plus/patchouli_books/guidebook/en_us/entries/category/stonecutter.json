@@ -1,0 +1,16 @@
+{
+    "name": "B. Stonecutting",
+    "icon": "minecraft:stonecutter",
+    "category": "consistency_plus:category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Consistency+ uses a mod called Stonecutter Recipe Tags to allow stonecutters to have more functionality without being taxing on performance.  Blocks in stonecutter tags can be infinitely cut back and forth between types without ever wasting material.  Aside from slabs, everything cuts at a 1:1 ratio, and all C+ materials can be cut."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The stonecutter can also now cut cobbled stones back into their base form without the need for a furnace as a quality of life addition, since Consistency+ adds more cobbled stone types.  This does not apply to smooth blocks though - they still have to be smelted."
+        }
+    ],
+    "read_by_default": true
+}

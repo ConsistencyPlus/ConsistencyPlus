@@ -1,0 +1,26 @@
+{
+    "name": "3. Brick Blocks + Item",
+    "icon": "minecraft:stone_bricks",
+    "category": "consistency_plus:category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "In Consistency+, brick blocks are always made from the polished block of that set.  This removes any crafting differences between sets like stone and deepslate."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe":  "minecraft:stone_bricks",
+            "recipe2":  "minecraft:bricks_crafting"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "All sets also have an individual brick item that can be made by uncrafting the full brick block.  Aside from the vanilla brick item, these don't serve much purpose yet."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe":  "consistency_plus:stone_brick",
+            "recipe2":  "consistency_plus:stone_bricks"
+        }
+    ],
+    "read_by_default": true
+}

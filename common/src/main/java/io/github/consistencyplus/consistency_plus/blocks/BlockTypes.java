@@ -2,11 +2,15 @@ package io.github.consistencyplus.consistency_plus.blocks;
 
 import net.minecraft.util.Pair;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
 public enum BlockTypes {
     BASE, POLISHED, BRICK, CUT, TILE, COBBLED, SMOOTH;
+
+    public static final List<BlockTypes> ALL = Arrays.stream(BlockTypes.values()).toList();
 
     @Override
     public String toString() {

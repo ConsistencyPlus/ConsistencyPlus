@@ -2,12 +2,16 @@ package io.github.consistencyplus.consistency_plus.blocks;
 
 import net.minecraft.util.Pair;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
 // RENAME TO BlockOverlay (More descriptive)
 public enum BlockOverlay {
     BASE, CRACKED, MOSSY;
+
+    public static final List<BlockOverlay> ALL = Arrays.stream(BlockOverlay.values()).toList();
 
     public boolean canGenerate(BlockTypes type, BlockShapes shape) {
         if ((this.equals(CRACKED) && type.equals(BlockTypes.BASE)) && shape.withTypes) return false;

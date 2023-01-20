@@ -13,4 +13,5 @@ public interface Loader {
     Block registerBlock(Identifier id, Block block);
     Item registerItem(Identifier id, Item item);
     void createItemGroup(TabSet tabset);
+    boolean registrationReady();
 }

@@ -37,4 +37,10 @@ public class DefaultLoader implements Loader {
     public void createItemGroup(TabSet tabset) {
         ConsistencyPlusMain.LOGGER.fatal("ERR - LOADER CODE USED PRE-INITIALIZATION SOMEHOW");
     }
+
+    @Override
+    public boolean registrationReady() {
+        ConsistencyPlusMain.LOGGER.fatal("ERR - LOADER CODE USED PRE-INITIALIZATION SOMEHOW");
+        return false;
+    }
 }

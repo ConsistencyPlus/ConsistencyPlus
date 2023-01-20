@@ -38,4 +38,9 @@ public class Fabric implements Loader {
     public void createItemGroup(TabSet tabSet) {
         //FabricItemGroup.builder(tabSet.id).icon(tabSet::getIcon).entries((enabledFeatures, entries, operatorEnabled) -> entries.addAll(tabSet.getItemGroup())).build();
     }
+
+    @Override
+    public boolean registrationReady() {
+        return true;
+    }
 }

@@ -3,15 +3,23 @@ package io.github.consistencyplus.consistency_plus;
 import dev.architectury.platform.forge.EventBuses;
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.core.util.Forge;
-import io.github.consistencyplus.consistency_plus.core.util.Loader;
+import io.github.consistencyplus.consistency_plus.registry.family.BlockFamilies;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.RegisterEvent;
 
 @Mod(ConsistencyPlusMain.ID)
 public class ConsistencyPlus {
-	public static Loader LOADER = new Forge();
+	public static Forge LOADER = new Forge();
 	public ConsistencyPlus() {
 		EventBuses.registerModEventBus(ConsistencyPlusMain.ID, FMLJavaModLoadingContext.get().getModEventBus());
 		ConsistencyPlusMain.init(LOADER);
+	}
+
+	@SubscribeEvent
+	public static void register(RegisterEvent event) {
+		LOADER.registrationReady = true;
+		BlockFamilies.init();
 	}
 }

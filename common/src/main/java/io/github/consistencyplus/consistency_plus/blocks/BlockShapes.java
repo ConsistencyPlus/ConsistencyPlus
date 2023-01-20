@@ -4,6 +4,8 @@ import io.github.consistencyplus.consistency_plus.core.extensions.CPlusFenceGate
 import net.minecraft.block.*;
 import net.minecraft.util.Pair;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
@@ -54,6 +56,8 @@ public enum BlockShapes {
             return new Block(settings);
         }
     };
+
+    public static final List<BlockShapes> ALL = Arrays.stream(BlockShapes.values()).toList();
 
     public final boolean withTypes;
 

@@ -10,7 +10,7 @@
         {
             "type": "patchouli:crafting",
             "recipe":  "consistency_plus:cut_stone_crafting",
-            "recipe2":  "consistency_plus:cut_copper_crafting"
+            "recipe2":  "minecraft:cut_sandstone"
         }
     ],
     "read_by_default": true

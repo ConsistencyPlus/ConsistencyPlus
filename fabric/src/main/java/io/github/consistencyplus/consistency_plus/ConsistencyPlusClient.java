@@ -1,10 +1,13 @@
 package io.github.consistencyplus.consistency_plus;
 
 import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusClientMain;
+import io.github.consistencyplus.consistency_plus.base.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.nubert.NubertTooltips;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceReloader;
@@ -21,6 +24,12 @@ public class ConsistencyPlusClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		ConsistencyPlusClientMain.init(ModelPredicateProviderRegistry::register);
+		ResourceManagerHelper.registerBuiltinResourcePack(
+				ConsistencyPlusClientMain.VANILLA_CHANGES_PACK,
+				FabricLoader.getInstance().getModContainer(ConsistencyPlusMain.ID).orElseThrow(),
+				ConsistencyPlusClientMain.VANILLA_CHANGES_PACK_NAME,
+				ResourcePackActivationType.DEFAULT_ENABLED
+		);
 		NubertTooltips.registerTooltipListener((listener, id, dependencies) -> {
 			ResourceManagerHelper helper = ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES);
 			helper.registerReloadListener(new SimpleReloadListenerWrapper(listener, id, dependencies));

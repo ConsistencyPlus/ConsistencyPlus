@@ -13,6 +13,13 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
 }
 
+processResources {
+    from(rootProject.file("common/src/main/resources")) {
+        include("**/**")
+        duplicatesStrategy = DuplicatesStrategy.WARN
+    }
+}
+
 shadowJar {
     configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"

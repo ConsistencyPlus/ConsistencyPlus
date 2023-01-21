@@ -11,4 +11,8 @@ loom {
     accessWidenerPath = file("src/main/resources/consistency_plus.accessWidener")
 }
 
+processResources {
+    exclude("*") // resources will be copied into each loader project
+}
+
 architectury.common("fabric", "forge")

@@ -30,6 +30,8 @@ import org.apache.logging.log4j.util.TriConsumer;
 @Environment(EnvType.CLIENT)
 public class ConsistencyPlusClientMain {
 	public static final EntityModelLayer NUBERT_CART = new EntityModelLayer(ConsistencyPlusMain.id("nubert_minecart"), "main");
+	public static final Identifier VANILLA_CHANGES_PACK = ConsistencyPlusMain.id("vanilla_changes");
+	public static final String VANILLA_CHANGES_PACK_NAME = "Consistency+ Vanilla Changes";
 
 	public static void init(TriConsumer<Item, Identifier, UnclampedModelPredicateProvider> modelPredicateProviderFactory) {
 		ConsistencyPlusMain.LOGGER.info("Consistency+ Main - Starting client initialization");

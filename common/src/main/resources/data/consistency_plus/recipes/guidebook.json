@@ -2,7 +2,7 @@
   "type": "patchouli:shapeless_book_recipe",
   "ingredients": [
     {
-      "tag": "minecraft:stone_crafting_materials"
+      "item": "minecraft:cobblestone"
     },
     {
       "item": "minecraft:book"

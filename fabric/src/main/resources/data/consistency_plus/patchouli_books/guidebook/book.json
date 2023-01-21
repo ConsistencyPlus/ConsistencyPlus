@@ -2,7 +2,7 @@
     "name": "The C+ Guidebook",
     "landing_text": "Welcome to Consistency+!",
     "book_texture": "patchouli:textures/gui/book_blue.png",
-    "book_model": "consistency_plus:models/item/guidebook",
+    "model": "consistency_plus:guidebook",
     "pamphlet": true,
     "show_progress": false,
     "version": 1,

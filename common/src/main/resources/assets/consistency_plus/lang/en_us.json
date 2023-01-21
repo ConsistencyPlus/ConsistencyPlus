@@ -3116,6 +3116,8 @@
   "nubert.phrase.wig_cart.0": "\"Nubert has found himself in the best possible outcome\"",
   "nubert.phrase.wig_cart.1": "\"Nubert is one of a kind!\"",
 
+  "config.jade.plugin_consistency_plus.nubert_component_provider": "Nubert",
+
   "text.consistency_plus.deprecation_warning": "Deprecated - ",
 
   "block.consistency_plus.chiseled_bricks": "Deprecated - Chiseled Bricks [Place to fix]",

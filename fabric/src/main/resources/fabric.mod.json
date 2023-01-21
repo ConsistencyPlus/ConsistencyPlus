@@ -136,6 +136,9 @@
     ],
     "fabric-datagen": [
           "io.github.consistencyplus.consistency_plus.ConsistencyPlusDatagen"
+    ],
+    "jade": [
+      "io.github.consistencyplus.consistency_plus.compat.waila.jade.CPlusJadePlugin"
     ]
   },
   "mixins": [

@@ -113,7 +113,7 @@ public class NubertMinecartEntity extends AbstractMinecartEntity implements Nube
 	@Override
 	protected void readCustomDataFromNbt(NbtCompound nbt) {
 		super.readCustomDataFromNbt(nbt);
-		this.wig = nbt.getBoolean(WIG_KEY);
+		setWig(nbt.getBoolean(WIG_KEY));
 	}
 
 	@Override

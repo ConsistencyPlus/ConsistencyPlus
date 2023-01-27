@@ -1,0 +1,6 @@
+{
+  "consistency_plus:wthit_plugin": {
+    "initializer": "io.github.consistencyplus.consistency_plus.compat.waila.wthit.CPlusWthitPlugin",
+    "side": "client"
+  }
+}

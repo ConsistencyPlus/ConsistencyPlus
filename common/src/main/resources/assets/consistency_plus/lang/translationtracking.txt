@@ -10,6 +10,7 @@ English (Upside-Down) - Managed by MobButcher. Up to date as of 0.5.1. 09.04.23
 Lolcat - Unmanaged. Pretty much every string would need to manually be created rather than using find/replace programs like we did for some of the other meme languages
 Shakespearian english - Unmanaged. Should be up to date with 0.4.x at least.
 Pirate Speak - Unmanaged - The file exists but no strings are translated.  Might be doable via find and replace, however it probably would need the same treatment as lolcat
+Chinese (Simplified and Traditional) - Managed by dodomos. Up to date as of 0.5.2. 10.02.23
 
 
 Translator Comments:
@@ -48,7 +49,11 @@ Carter - Updated the status of a few that weren't correct, and added some more n
 MobButcher - I expected a lot more work, to be honest.
 - 20.08.22
 
+dodomos - Welcome to China! I'm very sorry that I didn't pay attention to the module update for a while before, which led to the missing translation entries in Chinese. If the module is about to be updated, please let me know in the CFPA group or RPMTW group, and I will follow up. Then again, I may consider continuing to add the other two Chinese variants, depending on whether I have time.
+- 10.02.23
+
 MobButcher - Updated Ukrainian, Russian, and Upside-Down to whatever is the latest for Minecraft 1.19.4. So glad that "packed" is now actually translated as "packed" and not as "dry" (for "dry ice"), since "packed mud" and "dry mud" would sound wildly different (and wrong) in target languages.
 Also, I went ahead at replaced all of the dates here to dd.mm.yy. Fight me. <3
 P.S. Why Consistency+ is at 0.5.1 still? :thonk:
 - 09.04.23
+

@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "consistency_plus:grass_wall",
-    "consistency_plus:grass_slab",
-    "consistency_plus:grass_stairs"
-  ]
-}

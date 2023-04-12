@@ -16,8 +16,8 @@ dependencies {
     include("maven.modrinth:stonecutter_recipe_tags:$scrt_version-fabric") // we can include SCRT on fabric
 
     modLocalRuntime("vazkii.patchouli:Patchouli:$patchouli_version-FABRIC")
-    if (waila_fork == "jade")
-        modLocalRuntime("maven.modrinth:jade:$jade_fabric_version_id")
+    /*if (waila_fork == "jade")
+        modLocalRuntime("maven.modrinth:jade:$jade_fabric_version_id")*/
 
     // dev QOL
     modRuntimeOnly("maven.modrinth:lazydfu:0.1.3")

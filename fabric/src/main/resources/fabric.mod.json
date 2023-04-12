@@ -129,7 +129,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.consistencyplus.consistency_plus.ConsistencyPlus"
+      "io.github.consistencyplus.consistency_plus.ConsistencyPlusMain"
     ],
     "client": [
       "io.github.consistencyplus.consistency_plus.ConsistencyPlusClient"

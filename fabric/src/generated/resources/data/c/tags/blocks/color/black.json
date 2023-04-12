@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#consistency_plus:color/black",
-    "minecraft:black_terracotta",
-    "minecraft:black_concrete"
-  ]
-}

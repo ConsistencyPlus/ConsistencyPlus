@@ -18,16 +18,21 @@ import net.minecraft.util.JsonHelper;
 import net.minecraft.util.registry.Registry;
 import org.jetbrains.annotations.Nullable;
 
+import java.io.IOException;
+import java.io.Reader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Function;
 
 // Based on the Json Registry in PortalCubed, found at https://github.com/Fusion-Flux/Portal-Cubed/blob/1.19.2/src/main/java/com/fusionflux/portalcubed/blocks/PortalBlocksLoader.java.
 // The PortalCubed code is licensed under MIT.
-public final class PortalBlocksLoader {
+public final class ConsistencyPlusBlocksLoader {
     private static final Map<String, Function<AbstractBlock.Settings, Block>> BLOCK_TYPES =
         ImmutableMap.<String, Function<AbstractBlock.Settings, Block>>builder()
-            .put("full", Block::new)
+            .put("block", Block::new)
             .put("slab", SlabBlock::new)
             .put("stairs", CPlusStairsBlock::new)
             .put("wall", WallBlock::new)
@@ -47,7 +52,7 @@ public final class PortalBlocksLoader {
             clinitClient();
         }
     }
-    private PortalBlocksLoader() {}
+    private ConsistencyPlusBlocksLoader() {}
 
     @Environment(EnvType.CLIENT)
     private static void clinitClient() {
@@ -58,25 +63,20 @@ public final class PortalBlocksLoader {
     }
 
     /** CHANGE TO CROSS LOADED*/
-    /*public static void init(ModContainer mod) {
-        try (Reader reader = Files.newBufferedReader(mod.getPath("portal_blocks.json"), StandardCharsets.UTF_8)) {
+    public static void init() {
+        try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("portal_blocks.json"), StandardCharsets.UTF_8)) {
             load(JsonHelper.deserialize(reader));
         } catch (IOException e) {
-            PortalCubed.LOGGER.error("Failed to load block data", e);
+            //PortalCubed.LOGGER.error("Failed to load block data", e);
         }
-    }*/
+    }
+    public static Map<String, BlockData> exportBlockData() {
+        return BLOCK_DATA;
+    }
 
-    /*public static void initCommon() {
-        BLOCK_DATA.forEach((key, value) -> {
-            if (value.block == null) return;
-            final Identifier id = id(key);
-            Registry.register(Registry.BLOCK, id, value.block);
-            Registry.register(Registry.ITEM, id, new BlockItem(value.block, new Item.Settings().group(ITEM_GROUP)));
-        });
-    }*/
-
-   @Environment(EnvType.CLIENT)
-    public static void initClient() {
+    @Environment(EnvType.CLIENT)
+    public static Map<BlockData, RenderLayer> exportMapedRenderLayer() {
+        Map<BlockData, RenderLayer> layerMappedBlockData = new HashMap<>();
         BLOCK_DATA.forEach((key, value) -> {
             final Identifier id = new Identifier("consistency_plus", key);
             if (value.renderLayer != null) {
@@ -84,17 +84,11 @@ public final class PortalBlocksLoader {
                 if (renderLayer == null) {
                     throw new IllegalArgumentException("Unknown render_layer " + value.renderLayer);
                 }
-                /*BlockRenderLayerMap.put(
-                    renderLayer,
-                    Registry.BLOCK.getOrEmpty(id) //TODO: REPLACE WITH KEYCHAINS (OLDER REGISTRY REFERENCE)
-                        .orElseThrow(() -> new IllegalArgumentException("Unknown block in portal_blocks.json " + id))
-                );*/
+                layerMappedBlockData.put(value, renderLayer);
             }
         });
-    }
 
-    public static Map<String, BlockData> exportBlockData() {
-        return BLOCK_DATA;
+        return layerMappedBlockData;
     }
     private static void load(JsonObject json) {
         for (final var entry : json.entrySet()) {
@@ -103,7 +97,7 @@ public final class PortalBlocksLoader {
     }
 
     private static BlockData parseBlock(JsonObject json) {
-        final var type = BLOCK_TYPES.get(JsonHelper.getString(json, "type", "default"));
+        final var type = BLOCK_TYPES.get(JsonHelper.getString(json, "type", "block"));
         if (type == null) {
             throw new IllegalArgumentException("Unknown type " + json.get("type"));
         }
@@ -163,7 +157,7 @@ public final class PortalBlocksLoader {
         );
     }
 
-    private record BlockData(@Nullable Block block, @Nullable String renderLayer, @Nullable AdditionalBlockSettings additionalBlockSettings) {}
+    public record BlockData(@Nullable Block block, @Nullable String renderLayer, @Nullable AdditionalBlockSettings additionalBlockSettings) {}
 
     private record AdditionalBlockSettings(@Nullable Boolean opacity, @Nullable Boolean pistonPush, @Nullable Boolean pistonPull, @Nullable String mapColor){}
 }

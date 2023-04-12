@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "io.github.consistencyplus.consistency_plus.mixin.fabric",
+  "package": "io.github.consistencyplus.consistency_plus",
   "compatibilityLevel": "JAVA_17",
   "mixins": [],
   "injectors": {

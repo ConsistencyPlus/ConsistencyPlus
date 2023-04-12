@@ -4,6 +4,8 @@ import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.loader.api.FabricLoader;
 
+import java.nio.file.Path;
+
 public class LoaderVariant implements LoaderHelper {
 
     @Override
@@ -19,5 +21,10 @@ public class LoaderVariant implements LoaderHelper {
     @Override
     public String getLoader() {
         return "fabric";
+    }
+
+    @Override
+    public Path getPath(String string) {
+        return FabricLoader.getInstance().getModContainer("consistency_plus").get().findPath(string).get();
     }
 }

@@ -5,7 +5,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.blocks.CPlusStairsBlock;
-import io.github.consistencyplus.consistency_plus.util.PseudoItemGroup;
+import io.github.consistencyplus.consistency_plus.util.*;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.*;
@@ -30,21 +30,8 @@ import java.util.function.Function;
 // Based on the Json Registry in PortalCubed, found at https://github.com/Fusion-Flux/Portal-Cubed/blob/1.19.2/src/main/java/com/fusionflux/portalcubed/blocks/PortalBlocksLoader.java.
 // The PortalCubed code is licensed under MIT.
 public final class ConsistencyPlusBlocksLoader {
-    private static final Map<String, Function<AbstractBlock.Settings, Block>> BLOCK_TYPES =
-        ImmutableMap.<String, Function<AbstractBlock.Settings, Block>>builder()
-            .put("block", Block::new)
-            .put("slab", SlabBlock::new)
-            .put("stairs", CPlusStairsBlock::new)
-            .put("wall", WallBlock::new)
-            .put("gate", FenceGateBlock::new)
-            .put("fence", FenceBlock::new) // In case it is added, it is here.
-            .put("pillar", PillarBlock::new)
-            .put("directional", GlazedTerracottaBlock::new)
-            .put("provided", settings -> null)
-            .build();
     @Environment(EnvType.CLIENT)
     private static Map<String, RenderLayer> renderLayers;
-    private static final Map<String, BlockData> BLOCK_DATA = new LinkedHashMap<>();
     private static final PseudoItemGroup ITEM_GROUP = new PseudoItemGroup(Items.STICK.getDefaultStack(), new Identifier("consistency_plus", "itemgroup"));
 
     static {
@@ -67,37 +54,37 @@ public final class ConsistencyPlusBlocksLoader {
         try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("portal_blocks.json"), StandardCharsets.UTF_8)) {
             load(JsonHelper.deserialize(reader));
         } catch (IOException e) {
-            //PortalCubed.LOGGER.error("Failed to load block data", e);
+            ConsistencyPlusMain.LOGGER.error("Failed to load block data", e);
         }
     }
-    public static Map<String, BlockData> exportBlockData() {
+    /*public static Map<String, BlockData> exportBlockData() {
         return BLOCK_DATA;
-    }
+    }*/
 
     @Environment(EnvType.CLIENT)
-    public static Map<BlockData, RenderLayer> exportMapedRenderLayer() {
+    /*public static Map<BlockData, RenderLayer> exportMapedRenderLayer() {
         Map<BlockData, RenderLayer> layerMappedBlockData = new HashMap<>();
-        BLOCK_DATA.forEach((key, value) -> {
+        .forEach((key, value) -> {
             final Identifier id = new Identifier("consistency_plus", key);
-            if (value.renderLayer != null) {
-                final RenderLayer renderLayer = renderLayers.get(value.renderLayer);
+            if (value.renderLayer() != null) {
+                final RenderLayer renderLayer = renderLayers.get(value.renderLayer());
                 if (renderLayer == null) {
-                    throw new IllegalArgumentException("Unknown render_layer " + value.renderLayer);
+                    throw new IllegalArgumentException("Unknown render_layer " + value.renderLayer());
                 }
                 layerMappedBlockData.put(value, renderLayer);
             }
         });
 
         return layerMappedBlockData;
-    }
+    }*/
     private static void load(JsonObject json) {
         for (final var entry : json.entrySet()) {
-            BLOCK_DATA.put(entry.getKey(), parseBlock(entry.getValue().getAsJsonObject()));
+            PseudoRegistry.register(new Identifier("consistency_plus", entry.getKey()), parseBlock(entry.getValue().getAsJsonObject()));
         }
     }
 
     private static BlockData parseBlock(JsonObject json) {
-        final var type = BLOCK_TYPES.get(JsonHelper.getString(json, "type", "block"));
+        final var type = BlockShape.fromString(JsonHelper.getString(json, "type", "block"));
         if (type == null) {
             throw new IllegalArgumentException("Unknown type " + json.get("type"));
         }
@@ -136,7 +123,7 @@ public final class ConsistencyPlusBlocksLoader {
             }
         }
 
-        return new BlockData(type.apply(settings), renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull, mapColor));
+        return new BlockData(type, settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull, mapColor));
     }
 
     private static BlockSoundGroup parseBlockSounds(JsonElement sounds) {
@@ -156,8 +143,4 @@ public final class ConsistencyPlusBlocksLoader {
             new SoundEvent(new Identifier(JsonHelper.getString(object, "fall")))
         );
     }
-
-    public record BlockData(@Nullable Block block, @Nullable String renderLayer, @Nullable AdditionalBlockSettings additionalBlockSettings) {}
-
-    private record AdditionalBlockSettings(@Nullable Boolean opacity, @Nullable Boolean pistonPush, @Nullable Boolean pistonPull, @Nullable String mapColor){}
 }

@@ -25,6 +25,8 @@ public class LoaderVariant implements LoaderHelper {
 
     @Override
     public Path getPath(String string) {
-        return FabricLoader.getInstance().getModContainer("consistency_plus").get().findPath(string).get();
+        Path path = FabricLoader.getInstance().getModContainer("consistency_plus").get().findPath(string).get();
+        System.out.println(path);
+        return path;
     }
 }

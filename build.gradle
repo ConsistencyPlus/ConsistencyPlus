@@ -22,19 +22,19 @@ subprojects {
         String platform = project.name
         if (platform == "common") return
 
-        modImplementation("dev.architectury:architectury-$platform:$architectury_version")
+        //modImplementation("dev.architectury:architectury-$platform:$architectury_version")
 
         modImplementation("maven.modrinth:stonecutter_recipe_tags:$scrt_version-$platform")
         modImplementation("com.github.LlamaLad7:MixinExtras:0.1.1") // for SCRT
 
-        modCompileOnly("mcp.mobius.waila:wthit-api:$platform-$wthit_version")// compile against the WTHIT API
+        //modCompileOnly("mcp.mobius.waila:wthit-api:$platform-$wthit_version")// compile against the WTHIT API
 
-        if (waila_fork == "wthit") {
+       /* if (waila_fork == "wthit") {
             modLocalRuntime("mcp.mobius.waila:wthit:$platform-$wthit_version") // run against the full jar
             modLocalRuntime("lol.bai:badpackets:$platform-$badpackets_version") // for WTHIT
         } else if (waila_fork != "jade") { // jade runtime is handled per-subproject
             println("Unknown WAILA fork, must be 'jade' or 'wthit': " + waila_fork)
-        }
+        }*/
     }
 }
 

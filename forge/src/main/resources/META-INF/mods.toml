@@ -43,17 +43,3 @@ mandatory = true
 versionRange = "[1.18.2,)"
 ordering = "NONE"
 side = "BOTH"
-
-[[dependencies.consistency_plus]]
-modId = "architectury"
-mandatory = true
-versionRange = "[4.0.30,)"
-ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.consistency_plus]]
-modId = "stonecutter_recipe_tags"
-mandatory = true
-versionRange = "[3.0.0,)"
-ordering = "NONE"
-side = "BOTH"

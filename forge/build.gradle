@@ -38,9 +38,9 @@ tasks.withType(processResources.class) {
 
 loom {
     forge {
-        dataGen {
+        /*dataGen {
             mod "consistency_plus"
-        }
+        }*/
 
         runs {
             data {
@@ -48,7 +48,7 @@ loom {
             }
         }
 
-        mixinConfigs = [ "consistency_plus.mixins.json" ]
+        //mixinConfigs = [ "consistency_plus.mixins.json" ]
     }
 }
 

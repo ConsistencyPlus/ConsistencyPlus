@@ -1,5 +1,6 @@
 {
   "soul_sandstone": {
+    "inherit": "minecraft:diamond_block",
     "slipperiness": 0.999
   }
 }

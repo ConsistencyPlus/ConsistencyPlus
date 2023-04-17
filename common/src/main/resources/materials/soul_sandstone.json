@@ -1,5 +1,8 @@
 {
-  "soul_sandstone": {},
+  "soul_sandstone": {
+    "inherit": "minecraft:iron_block",
+    "slipperiness": 0.7
+  },
   "soul_sandstone_slab": {
     "type": "slab"
   },

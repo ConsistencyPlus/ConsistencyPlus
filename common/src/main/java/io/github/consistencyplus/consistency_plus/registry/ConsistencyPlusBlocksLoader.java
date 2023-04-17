@@ -103,7 +103,9 @@ public final class ConsistencyPlusBlocksLoader {
                     .strength(3.5f, 3.5f)
                     .requiresTool();
             json.remove("inherit");
-            SettingsBundle settingsBundle = fromJson(entry.getValue().getAsJsonObject(), settings);
+            JsonObject jsonCool = entry.getValue().getAsJsonObject();
+            jsonCool.remove("inherit");
+            SettingsBundle settingsBundle = fromJson(jsonCool, settings);
 
             try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("materials/" + entry.getKey() + ".json"), StandardCharsets.UTF_8)) {
                 load(JsonHelper.deserialize(reader), settingsBundle);
@@ -132,6 +134,7 @@ public final class ConsistencyPlusBlocksLoader {
                 .orElseThrow(() -> new IllegalArgumentException("Unknown block " + json.get("inherit")))
                 : setSettings.settings();
         json.remove("inherit");
+
 
         return new BlockData(type, fromJson(json, settings));
     }

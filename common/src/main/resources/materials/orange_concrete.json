@@ -1,0 +1,88 @@
+{
+  "orange_concrete_slab": {
+    "type": "slab"
+  },
+  "orange_concrete_stairs": {
+    "type": "stairs"
+  },
+  "orange_concrete_wall": {
+    "type": "wall"
+  },
+  "orange_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_orange_concrete": {},
+  "polished_orange_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_orange_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_orange_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_orange_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_orange_concrete": {},
+  "smooth_orange_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_orange_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_orange_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_orange_concrete_gate": {
+    "type": "gate"
+  },
+  "orange_concrete_bricks": {},
+  "orange_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "orange_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "orange_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "orange_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_orange_concrete": {},
+  "cut_orange_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_orange_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_orange_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_orange_concrete_gate": {
+    "type": "gate"
+  },
+  "orange_concrete_tiles": {},
+  "orange_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "orange_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "orange_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "orange_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_orange_concrete": {
+  },
+  "carved_orange_concrete": {
+  },
+  "orange_concrete_pillar": {
+    "type": "pillar"
+  },
+  "orange_concrete_corner_pillar": {
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "prismarine_gate": {
+    "type": "gate"
+  },
+  "polished_prismarine": {},
+  "polished_prismarine_slab": {
+    "type": "slab"
+  },
+  "polished_prismarine_stairs": {
+    "type": "stairs"
+  },
+  "polished_prismarine_wall": {
+    "type": "wall"
+  },
+  "polished_prismarine_gate": {
+    "type": "gate"
+  },
+  "smooth_prismarine": {},
+  "smooth_prismarine_slab": {
+    "type": "slab"
+  },
+  "smooth_prismarine_stairs": {
+    "type": "stairs"
+  },
+  "smooth_prismarine_wall": {
+    "type": "wall"
+  },
+  "smooth_prismarine_gate": {
+    "type": "gate"
+  },
+  "prismarine_brick_wall": {
+    "type": "wall"
+  },
+  "prismarine_brick_gate": {
+    "type": "gate"
+  },
+  "cut_prismarine": {},
+  "cut_prismarine_slab": {
+    "type": "slab"
+  },
+  "cut_prismarine_stairs": {
+    "type": "stairs"
+  },
+  "cut_prismarine_wall": {
+    "type": "wall"
+  },
+  "cut_prismarine_gate": {
+    "type": "gate"
+  },
+  "prismarine_tiles": {},
+  "prismarine_tile_slab": {
+    "type": "slab"
+  },
+  "prismarine_tile_stairs": {
+    "type": "stairs"
+  },
+  "prismarine_tile_wall": {
+    "type": "wall"
+  },
+  "prismarine_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_prismarine": {
+  },
+  "carved_prismarine": {
+  },
+  "prismarine_pillar": {
+    "type": "pillar"
+  },
+  "prismarine_corner_pillar": {
+  }
+}

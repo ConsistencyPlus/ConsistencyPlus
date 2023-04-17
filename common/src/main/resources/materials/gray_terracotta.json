@@ -1,0 +1,102 @@
+{
+  "gray_terracotta_slab": {
+    "type": "slab"
+  },
+  "gray_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "gray_terracotta_wall": {
+    "type": "wall"
+  },
+  "gray_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_gray_terracotta": {},
+  "polished_gray_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_gray_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_gray_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_gray_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_gray_terracotta": {},
+  "smooth_gray_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_gray_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_gray_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_gray_terracotta_gate": {
+    "type": "gate"
+  },
+  "gray_terracotta_bricks": {},
+  "gray_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "gray_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "gray_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "gray_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_gray_terracotta": {},
+  "cut_gray_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_gray_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_gray_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_gray_terracotta_gate": {
+    "type": "gate"
+  },
+  "gray_terracotta_tiles": {},
+  "gray_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "gray_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "gray_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "gray_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_gray_terracotta": {
+  },
+  "carved_gray_terracotta": {
+  },
+  "gray_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "gray_terracotta_corner_pillar": {
+  },
+  "cobbled_gray_terracotta": {
+  },
+  "cobbled_gray_terracotta_slab": {
+    "type": "slab"
+  },
+  "cobbled_gray_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_gray_terracotta_wall": {
+    "type": "wall"
+  },
+  "cobbled_gray_terracotta_gate": {
+    "type": "gate"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "pink_concrete_slab": {
+    "type": "slab"
+  },
+  "pink_concrete_stairs": {
+    "type": "stairs"
+  },
+  "pink_concrete_wall": {
+    "type": "wall"
+  },
+  "pink_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_pink_concrete": {},
+  "polished_pink_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_pink_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_pink_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_pink_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_pink_concrete": {},
+  "smooth_pink_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_pink_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_pink_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_pink_concrete_gate": {
+    "type": "gate"
+  },
+  "pink_concrete_bricks": {},
+  "pink_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "pink_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "pink_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "pink_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_pink_concrete": {},
+  "cut_pink_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_pink_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_pink_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_pink_concrete_gate": {
+    "type": "gate"
+  },
+  "pink_concrete_tiles": {},
+  "pink_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "pink_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "pink_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "pink_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_pink_concrete": {
+  },
+  "carved_pink_concrete": {
+  },
+  "pink_concrete_pillar": {
+    "type": "pillar"
+  },
+  "pink_concrete_corner_pillar": {
+  }
+}

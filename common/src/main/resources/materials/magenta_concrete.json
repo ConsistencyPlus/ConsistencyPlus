@@ -1,0 +1,88 @@
+{
+  "magenta_concrete_slab": {
+    "type": "slab"
+  },
+  "magenta_concrete_stairs": {
+    "type": "stairs"
+  },
+  "magenta_concrete_wall": {
+    "type": "wall"
+  },
+  "magenta_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_magenta_concrete": {},
+  "polished_magenta_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_magenta_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_magenta_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_magenta_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_magenta_concrete": {},
+  "smooth_magenta_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_magenta_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_magenta_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_magenta_concrete_gate": {
+    "type": "gate"
+  },
+  "magenta_concrete_bricks": {},
+  "magenta_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "magenta_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "magenta_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "magenta_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_magenta_concrete": {},
+  "cut_magenta_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_magenta_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_magenta_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_magenta_concrete_gate": {
+    "type": "gate"
+  },
+  "magenta_concrete_tiles": {},
+  "magenta_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "magenta_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "magenta_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "magenta_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_magenta_concrete": {
+  },
+  "carved_magenta_concrete": {
+  },
+  "magenta_concrete_pillar": {
+    "type": "pillar"
+  },
+  "magenta_concrete_corner_pillar": {
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "lime_concrete_slab": {
+    "type": "slab"
+  },
+  "lime_concrete_stairs": {
+    "type": "stairs"
+  },
+  "lime_concrete_wall": {
+    "type": "wall"
+  },
+  "lime_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_lime_concrete": {},
+  "polished_lime_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_lime_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_lime_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_lime_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_lime_concrete": {},
+  "smooth_lime_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_lime_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_lime_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_lime_concrete_gate": {
+    "type": "gate"
+  },
+  "lime_concrete_bricks": {},
+  "lime_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "lime_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "lime_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "lime_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_lime_concrete": {},
+  "cut_lime_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_lime_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_lime_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_lime_concrete_gate": {
+    "type": "gate"
+  },
+  "lime_concrete_tiles": {},
+  "lime_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "lime_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "lime_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "lime_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_lime_concrete": {
+  },
+  "carved_lime_concrete": {
+  },
+  "lime_concrete_pillar": {
+    "type": "pillar"
+  },
+  "lime_concrete_corner_pillar": {
+  }
+}

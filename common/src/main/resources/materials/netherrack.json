@@ -1,0 +1,96 @@
+{
+  "netherrack_slab": {
+    "type": "slab",
+    "inherit": "minecraft:netherrack"
+  },
+  "netherrack_stairs": {
+    "type": "stairs",
+    "inherit": "minecraft:netherrack"
+  },
+  "netherrack_wall": {
+    "type": "wall",
+    "inherit": "minecraft:netherrack"
+  },
+  "netherrack_gate": {
+    "type": "gate",
+    "inherit": "minecraft:netherrack"
+  },
+  "polished_netherrack": {},
+  "polished_netherrack_slab": {
+    "type": "slab"
+  },
+  "polished_netherrack_stairs": {
+    "type": "stairs"
+  },
+  "polished_netherrack_wall": {
+    "type": "wall"
+  },
+  "polished_netherrack_gate": {
+    "type": "gate"
+  },
+  "smooth_netherrack": {},
+  "smooth_netherrack_slab": {
+    "type": "slab"
+  },
+  "smooth_netherrack_stairs": {
+    "type": "stairs"
+  },
+  "smooth_netherrack_wall": {
+    "type": "wall"
+  },
+  "smooth_netherrack_gate": {
+    "type": "gate"
+  },
+  "cut_netherrack": {},
+  "cut_netherrack_slab": {
+    "type": "slab"
+  },
+  "cut_netherrack_stairs": {
+    "type": "stairs"
+  },
+  "cut_netherrack_wall": {
+    "type": "wall"
+  },
+  "cut_netherrack_gate": {
+    "type": "gate"
+  },
+  "netherrack_tiles": {},
+  "netherrack_tile_slab": {
+    "type": "slab"
+  },
+  "netherrack_tile_stairs": {
+    "type": "stairs"
+  },
+  "netherrack_tile_wall": {
+    "type": "wall"
+  },
+  "netherrack_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_netherrack": {
+  },
+  "netherrack_pillar": {
+    "type": "pillar"
+  },
+  "netherrack_corner_pillar": {
+  },
+  "cobbled_netherrack": {
+  "inherit": "minecraft:netherrack"
+  },
+  "cobbled_netherrack_slab": {
+    "type": "slab",
+    "inherit": "minecraft:netherrack"
+  },
+  "cobbled_netherrack_stairs": {
+    "type": "stairs",
+    "inherit": "minecraft:netherrack"
+  },
+  "cobbled_netherrack_wall": {
+    "type": "wall",
+    "inherit": "minecraft:netherrack"
+  },
+  "cobbled_netherrack_gate": {
+    "type": "gate",
+    "inherit": "minecraft:netherrack"
+  }
+}

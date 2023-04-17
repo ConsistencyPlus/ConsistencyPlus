@@ -1,0 +1,74 @@
+{
+  "blackstone_gate": {
+    "type": "gate"
+  },
+  "polished_blackstone_gate": {
+    "type": "gate"
+  },
+  "smooth_blackstone": {
+  },
+  "smooth_blackstone_slab": {
+    "type": "slab"
+  },
+  "smooth_blackstone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_blackstone_wall": {
+    "type": "wall"
+  },
+  "smooth_blackstone_gate": {
+    "type": "gate"
+  },
+  "blackstone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_blackstone": {
+  },
+  "cut_blackstone_slab": {
+    "type": "slab"
+  },
+  "cut_blackstone_stairs": {
+    "type": "stairs"
+  },
+  "cut_blackstone_wall": {
+    "type": "wall"
+  },
+  "cut_blackstone_gate": {
+    "type": "gate"
+  },
+  "blackstone_tiles": {
+  },
+  "blackstone_tile_slab": {
+    "type": "slab"
+  },
+  "blackstone_tile_stairs": {
+    "type": "stairs"
+  },
+  "blackstone_tile_wall": {
+    "type": "wall"
+  },
+  "blackstone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_blackstone": {
+  },
+  "blackstone_pillar": {
+    "type": "pillar"
+  },
+  "blackstone_corner_pillar": {
+  },
+  "cobbled_blackstone": {
+  },
+  "cobbled_blackstone_slab": {
+    "type": "slab"
+  },
+  "cobbled_blackstone_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_blackstone_wall": {
+    "type": "wall"
+  },
+  "cobbled_blackstone_gate": {
+    "type": "gate"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "cyan_concrete_slab": {
+    "type": "slab"
+  },
+  "cyan_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cyan_concrete_wall": {
+    "type": "wall"
+  },
+  "cyan_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_cyan_concrete": {},
+  "polished_cyan_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_cyan_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_cyan_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_cyan_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_cyan_concrete": {},
+  "smooth_cyan_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_cyan_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_cyan_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_cyan_concrete_gate": {
+    "type": "gate"
+  },
+  "cyan_concrete_bricks": {},
+  "cyan_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "cyan_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "cyan_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "cyan_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_cyan_concrete": {},
+  "cut_cyan_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_cyan_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_cyan_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_cyan_concrete_gate": {
+    "type": "gate"
+  },
+  "cyan_concrete_tiles": {},
+  "cyan_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "cyan_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "cyan_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "cyan_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_cyan_concrete": {
+  },
+  "carved_cyan_concrete": {
+  },
+  "cyan_concrete_pillar": {
+    "type": "pillar"
+  },
+  "cyan_concrete_corner_pillar": {
+  }
+}

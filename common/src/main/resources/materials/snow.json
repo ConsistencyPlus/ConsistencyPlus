@@ -1,0 +1,88 @@
+{
+  "snow_slab": {
+    "type": "slab"
+  },
+  "snow_stairs": {
+    "type": "stairs"
+  },
+  "snow_wall": {
+    "type": "wall"
+  },
+  "snow_gate": {
+    "type": "gate"
+  },
+  "polished_snow": {},
+  "polished_snow_slab": {
+    "type": "slab"
+  },
+  "polished_snow_stairs": {
+    "type": "stairs"
+  },
+  "polished_snow_wall": {
+    "type": "wall"
+  },
+  "polished_snow_gate": {
+    "type": "gate"
+  },
+  "smooth_snow": {},
+  "smooth_snow_slab": {
+    "type": "slab"
+  },
+  "smooth_snow_stairs": {
+    "type": "stairs"
+  },
+  "smooth_snow_wall": {
+    "type": "wall"
+  },
+  "smooth_snow_gate": {
+    "type": "gate"
+  },
+  "snow_bricks": {},
+  "snow_brick_slab": {
+    "type": "slab"
+  },
+  "snow_brick_stairs": {
+    "type": "stairs"
+  },
+  "snow_brick_wall": {
+    "type": "wall"
+  },
+  "snow_brick_gate": {
+    "type": "gate"
+  },
+  "cut_snow": {},
+  "cut_snow_slab": {
+    "type": "slab"
+  },
+  "cut_snow_stairs": {
+    "type": "stairs"
+  },
+  "cut_snow_wall": {
+    "type": "wall"
+  },
+  "cut_snow_gate": {
+    "type": "gate"
+  },
+  "snow_tiles": {},
+  "snow_tile_slab": {
+    "type": "slab"
+  },
+  "snow_tile_stairs": {
+    "type": "stairs"
+  },
+  "snow_tile_wall": {
+    "type": "wall"
+  },
+  "snow_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_snow": {
+  },
+  "carved_snow": {
+  },
+  "snow_pillar": {
+    "type": "pillar"
+  },
+  "snow_corner_pillar": {
+  }
+}

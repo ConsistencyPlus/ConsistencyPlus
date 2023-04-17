@@ -1,0 +1,82 @@
+{
+  "crimson_wart_slab": {
+    "type": "slab",
+    "inherit": "minecraft:nether_wart_block"
+  },
+  "crimson_wart_stairs": {
+    "type": "stairs",
+    "inherit": "minecraft:nether_wart_block"
+  },
+  "crimson_wart_wall": {
+    "type": "wall",
+    "inherit": "minecraft:nether_wart_block"
+  },
+  "crimson_wart_gate": {
+    "type": "gate",
+    "inherit": "minecraft:nether_wart_block"
+  },
+  "polished_crimson_wart": {},
+  "polished_crimson_wart_slab": {
+    "type": "slab"
+  },
+  "polished_crimson_wart_stairs": {
+    "type": "stairs"
+  },
+  "polished_crimson_wart_wall": {
+    "type": "wall"
+  },
+  "polished_crimson_wart_gate": {
+    "type": "gate"
+  },
+  "smooth_crimson_wart": {},
+  "smooth_crimson_wart_slab": {
+    "type": "slab"
+  },
+  "smooth_crimson_wart_stairs": {
+    "type": "stairs"
+  },
+  "smooth_crimson_wart_wall": {
+    "type": "wall"
+  },
+  "smooth_crimson_wart_gate": {
+    "type": "gate"
+  },
+  "crimson_wart_brick_gate": {
+    "type": "gate"
+  },
+  "cut_crimson_wart": {},
+  "cut_crimson_wart_slab": {
+    "type": "slab"
+  },
+  "cut_crimson_wart_stairs": {
+    "type": "stairs"
+  },
+  "cut_crimson_wart_wall": {
+    "type": "wall"
+  },
+  "cut_crimson_wart_gate": {
+    "type": "gate"
+  },
+  "crimson_wart_tiles": {},
+  "crimson_wart_tile_slab": {
+    "type": "slab"
+  },
+  "crimson_wart_tile_stairs": {
+    "type": "stairs"
+  },
+  "crimson_wart_tile_wall": {
+    "type": "wall"
+  },
+  "crimson_wart_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_crimson_wart": {
+  },
+  "carved_crimson_wart": {
+  },
+  "crimson_wart_pillar": {
+    "type": "pillar"
+  },
+  "crimson_wart_corner_pillar": {
+  }
+}

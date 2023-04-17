@@ -1,0 +1,92 @@
+{
+  "warped_wart_slab": {
+    "type": "slab",
+    "inherit": "minecraft:warped_wart_block"
+  },
+  "warped_wart_stairs": {
+    "type": "stairs",
+    "inherit": "minecraft:warped_wart_block"
+  },
+  "warped_wart_wall": {
+    "type": "wall",
+    "inherit": "minecraft:warped_wart_block"
+  },
+  "warped_wart_gate": {
+    "type": "gate",
+    "inherit": "minecraft:warped_wart_block"
+  },
+  "polished_warped_wart": {},
+  "polished_warped_wart_slab": {
+    "type": "slab"
+  },
+  "polished_warped_wart_stairs": {
+    "type": "stairs"
+  },
+  "polished_warped_wart_wall": {
+    "type": "wall"
+  },
+  "polished_warped_wart_gate": {
+    "type": "gate"
+  },
+  "smooth_warped_wart": {},
+  "smooth_warped_wart_slab": {
+    "type": "slab"
+  },
+  "smooth_warped_wart_stairs": {
+    "type": "stairs"
+  },
+  "smooth_warped_wart_wall": {
+    "type": "wall"
+  },
+  "smooth_warped_wart_gate": {
+    "type": "gate"
+  },
+  "warped_wart_bricks": {},
+  "warped_wart_brick_slab": {
+    "type": "slab"
+  },
+  "warped_wart_brick_stairs": {
+    "type": "stairs"
+  },
+  "warped_wart_brick_wall": {
+    "type": "wall"
+  },
+  "warped_wart_brick_gate": {
+    "type": "gate"
+  },
+  "cut_warped_wart": {},
+  "cut_warped_wart_slab": {
+    "type": "slab"
+  },
+  "cut_warped_wart_stairs": {
+    "type": "stairs"
+  },
+  "cut_warped_wart_wall": {
+    "type": "wall"
+  },
+  "cut_warped_wart_gate": {
+    "type": "gate"
+  },
+  "warped_wart_tiles": {},
+  "warped_wart_tile_slab": {
+    "type": "slab"
+  },
+  "warped_wart_tile_stairs": {
+    "type": "stairs"
+  },
+  "warped_wart_tile_wall": {
+    "type": "wall"
+  },
+  "warped_wart_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_warped_wart": {
+  },
+  "carved_warped_wart": {
+  },
+  "warped_wart_pillar": {
+    "type": "pillar"
+  },
+  "warped_wart_corner_pillar": {
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "quartz_wall": {
+    "type": "wall"
+  },
+  "quartz_gate": {
+    "type": "gate"
+  },
+  "polished_quartz": {},
+  "polished_quartz_slab": {
+    "type": "slab"
+  },
+  "polished_quartz_stairs": {
+    "type": "stairs"
+  },
+  "polished_quartz_wall": {
+    "type": "wall"
+  },
+  "polished_quartz_gate": {
+    "type": "gate"
+  },
+  "smooth_quartz_wall": {
+    "type": "wall"
+  },
+  "smooth_quartz_gate": {
+    "type": "gate"
+  },
+  "quartz_brick_slab": {
+    "type": "slab"
+  },
+  "quartz_brick_stairs": {
+    "type": "stairs"
+  },
+  "quartz_brick_wall": {
+    "type": "wall"
+  },
+  "quartz_brick_gate": {
+    "type": "gate"
+  },
+  "cut_quartz": {},
+  "cut_quartz_slab": {
+    "type": "slab"
+  },
+  "cut_quartz_stairs": {
+    "type": "stairs"
+  },
+  "cut_quartz_wall": {
+    "type": "wall"
+  },
+  "cut_quartz_gate": {
+    "type": "gate"
+  },
+  "quartz_tiles": {},
+  "quartz_tile_slab": {
+    "type": "slab"
+  },
+  "quartz_tile_stairs": {
+    "type": "stairs"
+  },
+  "quartz_tile_wall": {
+    "type": "wall"
+  },
+  "quartz_tile_gate": {
+    "type": "gate"
+  },
+  "carved_quartz": {
+  },
+  "quartz_corner_pillar": {
+  }
+}

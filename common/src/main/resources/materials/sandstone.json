@@ -1,0 +1,80 @@
+{
+  "sandstone_gate": {
+    "type": "gate"
+  },
+  "polished_sandstone": {},
+  "polished_sandstone_slab": {
+    "type": "slab"
+  },
+  "polished_sandstone_stairs": {
+    "type": "stairs"
+  },
+  "polished_sandstone_wall": {
+    "type": "wall"
+  },
+  "polished_sandstone_gate": {
+    "type": "gate"
+  },
+  "smooth_sandstone_wall": {
+    "type": "wall"
+  },
+  "smooth_sandstone_gate": {
+    "type": "gate"
+  },
+  "sandstone_bricks": {},
+  "sandstone_brick_slab": {
+    "type": "slab"
+  },
+  "sandstone_brick_stairs": {
+    "type": "stairs"
+  },
+  "sandstone_brick_wall": {
+    "type": "wall"
+  },
+  "sandstone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_sandstone_stairs": {
+    "type": "stairs"
+  },
+  "cut_sandstone_wall": {
+    "type": "wall"
+  },
+  "cut_sandstone_gate": {
+    "type": "gate"
+  },
+  "sandstone_tiles": {},
+  "sandstone_tile_slab": {
+    "type": "slab"
+  },
+  "sandstone_tile_stairs": {
+    "type": "stairs"
+  },
+  "sandstone_tile_wall": {
+    "type": "wall"
+  },
+  "sandstone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_sandstone": {
+  },
+  "sandstone_pillar": {
+    "type": "pillar"
+  },
+  "sandstone_corner_pillar": {
+  },
+  "cobbled_sandstone": {
+  },
+  "cobbled_sandstone_slab": {
+    "type": "slab"
+  },
+  "cobbled_sandstone_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_sandstone_wall": {
+    "type": "wall"
+  },
+  "cobbled_sandstone_gate": {
+    "type": "gate"
+  }
+}

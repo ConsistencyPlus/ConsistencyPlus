@@ -1,0 +1,102 @@
+{
+  "pink_terracotta_slab": {
+    "type": "slab"
+  },
+  "pink_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "pink_terracotta_wall": {
+    "type": "wall"
+  },
+  "pink_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_pink_terracotta": {},
+  "polished_pink_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_pink_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_pink_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_pink_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_pink_terracotta": {},
+  "smooth_pink_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_pink_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_pink_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_pink_terracotta_gate": {
+    "type": "gate"
+  },
+  "pink_terracotta_bricks": {},
+  "pink_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "pink_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "pink_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "pink_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_pink_terracotta": {},
+  "cut_pink_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_pink_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_pink_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_pink_terracotta_gate": {
+    "type": "gate"
+  },
+  "pink_terracotta_tiles": {},
+  "pink_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "pink_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "pink_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "pink_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_pink_terracotta": {
+  },
+  "carved_pink_terracotta": {
+  },
+  "pink_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "pink_terracotta_corner_pillar": {
+  },
+  "cobbled_pink_terracotta": {
+  },
+  "cobbled_pink_terracotta_slab": {
+    "type": "slab"
+  },
+  "cobbled_pink_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_pink_terracotta_wall": {
+    "type": "wall"
+  },
+  "cobbled_pink_terracotta_gate": {
+    "type": "gate"
+  }
+}

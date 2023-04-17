@@ -1,0 +1,102 @@
+{
+  "red_terracotta_slab": {
+    "type": "slab"
+  },
+  "red_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "red_terracotta_wall": {
+    "type": "wall"
+  },
+  "red_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_red_terracotta": {},
+  "polished_red_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_red_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_red_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_red_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_red_terracotta": {},
+  "smooth_red_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_red_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_red_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_red_terracotta_gate": {
+    "type": "gate"
+  },
+  "red_terracotta_bricks": {},
+  "red_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "red_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "red_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "red_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_red_terracotta": {},
+  "cut_red_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_red_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_red_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_red_terracotta_gate": {
+    "type": "gate"
+  },
+  "red_terracotta_tiles": {},
+  "red_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "red_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "red_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "red_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_red_terracotta": {
+  },
+  "carved_red_terracotta": {
+  },
+  "red_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "red_terracotta_corner_pillar": {
+  },
+  "cobbled_red_terracotta": {
+  },
+  "cobbled_red_terracotta_slab": {
+    "type": "slab"
+  },
+  "cobbled_red_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_red_terracotta_wall": {
+    "type": "wall"
+  },
+  "cobbled_red_terracotta_gate": {
+    "type": "gate"
+  }
+}

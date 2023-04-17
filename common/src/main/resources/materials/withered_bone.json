@@ -1,0 +1,91 @@
+{
+  "withered_bone_block": {
+    "type": "pillar"
+  },
+  "withered_bone_slab": {
+    "type": "slab"
+  },
+  "withered_bone_stairs": {
+    "type": "stairs"
+  },
+  "withered_bone_wall": {
+    "type": "wall"
+  },
+  "withered_bone_gate": {
+    "type": "gate"
+  },
+  "polished_withered_bone": {},
+  "polished_withered_bone_slab": {
+    "type": "slab"
+  },
+  "polished_withered_bone_stairs": {
+    "type": "stairs"
+  },
+  "polished_withered_bone_wall": {
+    "type": "wall"
+  },
+  "polished_withered_bone_gate": {
+    "type": "gate"
+  },
+  "smooth_withered_bone": {},
+  "smooth_withered_bone_slab": {
+    "type": "slab"
+  },
+  "smooth_withered_bone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_withered_bone_wall": {
+    "type": "wall"
+  },
+  "smooth_withered_bone_gate": {
+    "type": "gate"
+  },
+  "withered_bone_bricks": {},
+  "withered_bone_brick_slab": {
+    "type": "slab"
+  },
+  "withered_bone_brick_stairs": {
+    "type": "stairs"
+  },
+  "withered_bone_brick_wall": {
+    "type": "wall"
+  },
+  "withered_bone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_withered_bone": {},
+  "cut_withered_bone_slab": {
+    "type": "slab"
+  },
+  "cut_withered_bone_stairs": {
+    "type": "stairs"
+  },
+  "cut_withered_bone_wall": {
+    "type": "wall"
+  },
+  "cut_withered_bone_gate": {
+    "type": "gate"
+  },
+  "withered_bone_tiles": {},
+  "withered_bone_tile_slab": {
+    "type": "slab"
+  },
+  "withered_bone_tile_stairs": {
+    "type": "stairs"
+  },
+  "withered_bone_tile_wall": {
+    "type": "wall"
+  },
+  "withered_bone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_withered_bone": {
+  },
+  "carved_withered_bone": {
+  },
+  "withered_bone_pillar": {
+    "type": "pillar"
+  },
+  "withered_bone_corner_pillar": {
+  }
+}

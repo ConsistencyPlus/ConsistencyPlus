@@ -1,0 +1,102 @@
+{
+  "brown_terracotta_slab": {
+    "type": "slab"
+  },
+  "brown_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "brown_terracotta_wall": {
+    "type": "wall"
+  },
+  "brown_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_brown_terracotta": {},
+  "polished_brown_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_brown_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_brown_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_brown_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_brown_terracotta": {},
+  "smooth_brown_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_brown_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_brown_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_brown_terracotta_gate": {
+    "type": "gate"
+  },
+  "brown_terracotta_bricks": {},
+  "brown_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "brown_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "brown_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "brown_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_brown_terracotta": {},
+  "cut_brown_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_brown_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_brown_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_brown_terracotta_gate": {
+    "type": "gate"
+  },
+  "brown_terracotta_tiles": {},
+  "brown_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "brown_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "brown_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "brown_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_brown_terracotta": {
+  },
+  "carved_brown_terracotta": {
+  },
+  "brown_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "brown_terracotta_corner_pillar": {
+  },
+  "cobbled_brown_terracotta": {
+  },
+  "cobbled_brown_terracotta_slab": {
+    "type": "slab"
+  },
+  "cobbled_brown_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_brown_terracotta_wall": {
+    "type": "wall"
+  },
+  "cobbled_brown_terracotta_gate": {
+    "type": "gate"
+  }
+}

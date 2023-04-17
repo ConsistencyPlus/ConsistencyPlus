@@ -1,0 +1,88 @@
+{
+  "green_concrete_slab": {
+    "type": "slab"
+  },
+  "green_concrete_stairs": {
+    "type": "stairs"
+  },
+  "green_concrete_wall": {
+    "type": "wall"
+  },
+  "green_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_green_concrete": {},
+  "polished_green_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_green_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_green_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_green_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_green_concrete": {},
+  "smooth_green_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_green_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_green_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_green_concrete_gate": {
+    "type": "gate"
+  },
+  "green_concrete_bricks": {},
+  "green_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "green_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "green_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "green_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_green_concrete": {},
+  "cut_green_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_green_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_green_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_green_concrete_gate": {
+    "type": "gate"
+  },
+  "green_concrete_tiles": {},
+  "green_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "green_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "green_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "green_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_green_concrete": {
+  },
+  "carved_green_concrete": {
+  },
+  "green_concrete_pillar": {
+    "type": "pillar"
+  },
+  "green_concrete_corner_pillar": {
+  }
+}

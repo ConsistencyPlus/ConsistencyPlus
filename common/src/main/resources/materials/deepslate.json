@@ -1,0 +1,74 @@
+{
+  "deepslate_slab": {
+    "type": "slab"
+  },
+  "deepslate_stairs": {
+    "type": "stairs"
+  },
+  "deepslate_wall": {
+    "type": "wall"
+  },
+  "deepslate_gate": {
+    "type": "gate"
+  },
+
+  "polished_deepslate_gate": {
+    "type": "gate",
+    "inherit": "minecraft:polished_deepslate"
+  },
+  "smooth_deepslate": {
+  },
+  "smooth_deepslate_slab": {
+    "type": "slab"
+  },
+  "smooth_deepslate_stairs": {
+    "type": "stairs"
+  },
+  "smooth_deepslate_wall": {
+    "type": "wall"
+  },
+  "smooth_deepslate_gate": {
+    "type": "gate"
+  },
+  "deepslate_brick_gate": {
+    "type": "gate",
+    "inherit": "minecraft:deepslate_bricks"
+  },
+  "cut_deepslate": {
+  "inherit": "minecraft:deepslate_bricks"
+  },
+  "cut_deepslate_slab": {
+    "type": "slab",
+    "inherit": "minecraft:deepslate_bricks"
+  },
+  "cut_deepslate_stairs": {
+    "type": "stairs",
+    "inherit": "minecraft:deepslate_bricks"
+  },
+  "cut_deepslate_wall": {
+    "type": "wall",
+    "inherit": "minecraft:deepslate_bricks"
+  },
+  "cut_deepslate_gate": {
+    "type": "gate",
+    "inherit": "minecraft:deepslate_bricks"
+  },
+  "deepslate_tile_gate": {
+    "type": "gate",
+    "inherit": "minecraft:deepslate_tiles"
+  },
+  "carved_deepslate": {
+  "inherit": "minecraft:deepslate_bricks"
+  },
+  "deepslate_pillar": {
+  "inherit": "minecraft:deepslate_bricks",
+    "type": "pillar"
+  },
+  "deepslate_corner_pillar": {
+  "inherit": "minecraft:deepslate_bricks"
+  },
+  "cobbled_deepslate_gate": {
+    "type": "gate",
+    "inherit": "minecraft:cobbled_deepslate"
+  }
+}

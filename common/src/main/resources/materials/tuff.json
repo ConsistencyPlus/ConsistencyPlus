@@ -1,0 +1,102 @@
+{
+  "tuff_slab": {
+    "type": "slab"
+  },
+  "tuff_stairs": {
+    "type": "stairs"
+  },
+  "tuff_wall": {
+    "type": "wall"
+  },
+  "tuff_gate": {
+    "type": "gate"
+  },
+  "polished_tuff": {},
+  "polished_tuff_slab": {
+    "type": "slab"
+  },
+  "polished_tuff_stairs": {
+    "type": "stairs"
+  },
+  "polished_tuff_wall": {
+    "type": "wall"
+  },
+  "polished_tuff_gate": {
+    "type": "gate"
+  },
+  "smooth_tuff": {},
+  "smooth_tuff_slab": {
+    "type": "slab"
+  },
+  "smooth_tuff_stairs": {
+    "type": "stairs"
+  },
+  "smooth_tuff_wall": {
+    "type": "wall"
+  },
+  "smooth_tuff_gate": {
+    "type": "gate"
+  },
+  "tuff_bricks": {},
+  "tuff_brick_slab": {
+    "type": "slab"
+  },
+  "tuff_brick_stairs": {
+    "type": "stairs"
+  },
+  "tuff_brick_wall": {
+    "type": "wall"
+  },
+  "tuff_brick_gate": {
+    "type": "gate"
+  },
+  "cut_tuff": {},
+  "cut_tuff_slab": {
+    "type": "slab"
+  },
+  "cut_tuff_stairs": {
+    "type": "stairs"
+  },
+  "cut_tuff_wall": {
+    "type": "wall"
+  },
+  "cut_tuff_gate": {
+    "type": "gate"
+  },
+  "tuff_tiles": {},
+  "tuff_tile_slab": {
+    "type": "slab"
+  },
+  "tuff_tile_stairs": {
+    "type": "stairs"
+  },
+  "tuff_tile_wall": {
+    "type": "wall"
+  },
+  "tuff_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_tuff": {
+  },
+  "carved_tuff": {
+  },
+  "tuff_pillar": {
+    "type": "pillar"
+  },
+  "tuff_corner_pillar": {
+  },
+  "cobbled_tuff": {
+  },
+  "cobbled_tuff_slab": {
+    "type": "slab"
+  },
+  "cobbled_tuff_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_tuff_wall": {
+    "type": "wall"
+  },
+  "cobbled_tuff_gate": {
+    "type": "gate"
+  }
+}

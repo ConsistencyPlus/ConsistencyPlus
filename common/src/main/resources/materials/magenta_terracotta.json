@@ -1,0 +1,102 @@
+{
+  "magenta_terracotta_slab": {
+    "type": "slab"
+  },
+  "magenta_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "magenta_terracotta_wall": {
+    "type": "wall"
+  },
+  "magenta_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_magenta_terracotta": {},
+  "polished_magenta_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_magenta_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_magenta_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_magenta_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_magenta_terracotta": {},
+  "smooth_magenta_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_magenta_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_magenta_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_magenta_terracotta_gate": {
+    "type": "gate"
+  },
+  "magenta_terracotta_bricks": {},
+  "magenta_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "magenta_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "magenta_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "magenta_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_magenta_terracotta": {},
+  "cut_magenta_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_magenta_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_magenta_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_magenta_terracotta_gate": {
+    "type": "gate"
+  },
+  "magenta_terracotta_tiles": {},
+  "magenta_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "magenta_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "magenta_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "magenta_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_magenta_terracotta": {
+  },
+  "carved_magenta_terracotta": {
+  },
+  "magenta_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "magenta_terracotta_corner_pillar": {
+  },
+  "cobbled_magenta_terracotta": {
+  },
+  "cobbled_magenta_terracotta_slab": {
+    "type": "slab"
+  },
+  "cobbled_magenta_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_magenta_terracotta_wall": {
+    "type": "wall"
+  },
+  "cobbled_magenta_terracotta_gate": {
+    "type": "gate"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "stone_wall": {
+    "type": "wall"
+  },
+  "stone_gate": {
+    "type": "gate"
+  },
+  "polished_stone": {
+  },
+  "polished_stone_slab": {
+    "type": "slab"
+  },
+  "polished_stone_stairs": {
+    "type": "stairs"
+  },
+  "polished_stone_wall": {
+    "type": "wall"
+  },
+  "polished_stone_gate": {
+    "type": "gate"
+  },
+  "smooth_stone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_stone_wall": {
+    "type": "wall"
+  },
+  "smooth_stone_gate": {
+    "type": "gate"
+  },
+  "stone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_stone": {
+  },
+  "cut_stone_slab": {
+    "type": "slab"
+  },
+  "cut_stone_stairs": {
+    "type": "stairs"
+  },
+  "cut_stone_wall": {
+    "type": "wall"
+  },
+  "cut_stone_gate": {
+    "type": "gate"
+  },
+  "stone_tiles": {
+  },
+  "stone_tile_slab": {
+    "type": "slab"
+  },
+  "stone_tile_stairs": {
+    "type": "stairs"
+  },
+  "stone_tile_wall": {
+    "type": "wall"
+  },
+  "stone_tile_gate": {
+    "type": "gate"
+  },
+  "carved_stone": {
+  },
+  "stone_pillar": {
+    "type": "pillar"
+  },
+  "stone_corner_pillar": {
+  },
+  "cobblestone_gate": {
+    "type": "gate"
+  }
+}

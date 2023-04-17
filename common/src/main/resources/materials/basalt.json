@@ -1,0 +1,98 @@
+{
+  "basalt_slab": {
+    "type": "slab"
+  },
+  "basalt_stairs": {
+    "type": "stairs"
+  },
+  "basalt_wall": {
+    "type": "wall"
+  },
+  "basalt_gate": {
+    "type": "gate"
+  },
+  "polished_basalt": {},
+  "polished_basalt_slab": {
+    "type": "slab"
+  },
+  "polished_basalt_stairs": {
+    "type": "stairs"
+  },
+  "polished_basalt_wall": {
+    "type": "wall"
+  },
+  "polished_basalt_gate": {
+    "type": "gate"
+  },
+  "smooth_basalt_slab": {
+    "type": "slab"
+  },
+  "smooth_basalt_stairs": {
+    "type": "stairs"
+  },
+  "smooth_basalt_wall": {
+    "type": "wall"
+  },
+  "smooth_basalt_gate": {
+    "type": "gate"
+  },
+  "basalt_bricks": {},
+  "basalt_brick_slab": {
+    "type": "slab"
+  },
+  "basalt_brick_stairs": {
+    "type": "stairs"
+  },
+  "basalt_brick_wall": {
+    "type": "wall"
+  },
+  "basalt_brick_gate": {
+    "type": "gate"
+  },
+  "cut_basalt": {},
+  "cut_basalt_slab": {
+    "type": "slab"
+  },
+  "cut_basalt_stairs": {
+    "type": "stairs"
+  },
+  "cut_basalt_wall": {
+    "type": "wall"
+  },
+  "cut_basalt_gate": {
+    "type": "gate"
+  },
+  "basalt_tiles": {},
+  "basalt_tile_slab": {
+    "type": "slab"
+  },
+  "basalt_tile_stairs": {
+    "type": "stairs"
+  },
+  "basalt_tile_wall": {
+    "type": "wall"
+  },
+  "basalt_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_basalt": {
+  },
+  "carved_basalt": {
+  },
+  "basalt_corner_pillar": {
+  },
+  "cobbled_basalt": {
+  },
+  "cobbled_basalt_slab": {
+    "type": "slab"
+  },
+  "cobbled_basalt_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_basalt_wall": {
+    "type": "wall"
+  },
+  "cobbled_basalt_gate": {
+    "type": "gate"
+  }
+}

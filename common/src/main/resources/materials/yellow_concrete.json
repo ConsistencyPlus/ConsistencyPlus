@@ -1,0 +1,88 @@
+{
+  "yellow_concrete_slab": {
+    "type": "slab"
+  },
+  "yellow_concrete_stairs": {
+    "type": "stairs"
+  },
+  "yellow_concrete_wall": {
+    "type": "wall"
+  },
+  "yellow_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_yellow_concrete": {},
+  "polished_yellow_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_yellow_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_yellow_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_yellow_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_yellow_concrete": {},
+  "smooth_yellow_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_yellow_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_yellow_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_yellow_concrete_gate": {
+    "type": "gate"
+  },
+  "yellow_concrete_bricks": {},
+  "yellow_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "yellow_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "yellow_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "yellow_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_yellow_concrete": {},
+  "cut_yellow_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_yellow_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_yellow_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_yellow_concrete_gate": {
+    "type": "gate"
+  },
+  "yellow_concrete_tiles": {},
+  "yellow_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "yellow_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "yellow_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "yellow_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_yellow_concrete": {
+  },
+  "carved_yellow_concrete": {
+  },
+  "yellow_concrete_pillar": {
+    "type": "pillar"
+  },
+  "yellow_concrete_corner_pillar": {
+  }
+}

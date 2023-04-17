@@ -1,0 +1,92 @@
+{
+  "end_stone_slab": {
+    "type": "slab"
+  },
+  "end_stone_stairs": {
+    "type": "stairs"
+  },
+  "end_stone_wall": {
+    "type": "wall"
+  },
+  "end_stone_gate": {
+    "type": "gate"
+  },
+  "polished_end_stone": {},
+  "polished_end_stone_slab": {
+    "type": "slab"
+  },
+  "polished_end_stone_stairs": {
+    "type": "stairs"
+  },
+  "polished_end_stone_wall": {
+    "type": "wall"
+  },
+  "polished_end_stone_gate": {
+    "type": "gate"
+  },
+  "smooth_end_stone": {},
+  "smooth_end_stone_slab": {
+    "type": "slab"
+  },
+  "smooth_end_stone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_end_stone_wall": {
+    "type": "wall"
+  },
+  "smooth_end_stone_gate": {
+    "type": "gate"
+  },
+  "end_stone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_end_stone": {},
+  "cut_end_stone_slab": {
+    "type": "slab"
+  },
+  "cut_end_stone_stairs": {
+    "type": "stairs"
+  },
+  "cut_end_stone_wall": {
+    "type": "wall"
+  },
+  "cut_end_stone_gate": {
+    "type": "gate"
+  },
+  "end_stone_tiles": {},
+  "end_stone_tile_slab": {
+    "type": "slab"
+  },
+  "end_stone_tile_stairs": {
+    "type": "stairs"
+  },
+  "end_stone_tile_wall": {
+    "type": "wall"
+  },
+  "end_stone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_end_stone": {
+  },
+  "carved_end_stone": {
+  },
+  "end_stone_pillar": {
+    "type": "pillar"
+  },
+  "end_stone_corner_pillar": {
+  },
+  "cobbled_end_stone": {
+  },
+  "cobbled_end_stone_slab": {
+    "type": "slab"
+  },
+  "cobbled_end_stone_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_end_stone_wall": {
+    "type": "wall"
+  },
+  "cobbled_end_stone_gate": {
+    "type": "gate"
+  }
+}

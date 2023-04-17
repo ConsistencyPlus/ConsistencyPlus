@@ -1,0 +1,86 @@
+{
+  "granite_gate": {
+    "type": "gate"
+  },
+  "polished_granite_wall": {
+    "type": "wall"
+  },
+  "polished_granite_gate": {
+    "type": "gate"
+  },
+  "smooth_granite": {},
+  "smooth_granite_slab": {
+    "type": "slab"
+  },
+  "smooth_granite_stairs": {
+    "type": "stairs"
+  },
+  "smooth_granite_wall": {
+    "type": "wall"
+  },
+  "smooth_granite_gate": {
+    "type": "gate"
+  },
+  "granite_bricks": {},
+  "granite_brick_slab": {
+    "type": "slab"
+  },
+  "granite_brick_stairs": {
+    "type": "stairs"
+  },
+  "granite_brick_wall": {
+    "type": "wall"
+  },
+  "granite_brick_gate": {
+    "type": "gate"
+  },
+  "cut_granite": {},
+  "cut_granite_slab": {
+    "type": "slab"
+  },
+  "cut_granite_stairs": {
+    "type": "stairs"
+  },
+  "cut_granite_wall": {
+    "type": "wall"
+  },
+  "cut_granite_gate": {
+    "type": "gate"
+  },
+  "granite_tiles": {},
+  "granite_tile_slab": {
+    "type": "slab"
+  },
+  "granite_tile_stairs": {
+    "type": "stairs"
+  },
+  "granite_tile_wall": {
+    "type": "wall"
+  },
+  "granite_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_granite": {
+  },
+  "carved_granite": {
+  },
+  "granite_pillar": {
+    "type": "pillar"
+  },
+  "granite_corner_pillar": {
+  },
+  "cobbled_granite": {
+  },
+  "cobbled_granite_slab": {
+    "type": "slab"
+  },
+  "cobbled_granite_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_granite_wall": {
+    "type": "wall"
+  },
+  "cobbled_granite_gate": {
+    "type": "gate"
+  }
+}

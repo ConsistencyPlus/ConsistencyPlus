@@ -1,0 +1,102 @@
+{
+  "orange_terracotta_slab": {
+    "type": "slab"
+  },
+  "orange_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "orange_terracotta_wall": {
+    "type": "wall"
+  },
+  "orange_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_orange_terracotta": {},
+  "polished_orange_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_orange_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_orange_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_orange_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_orange_terracotta": {},
+  "smooth_orange_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_orange_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_orange_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_orange_terracotta_gate": {
+    "type": "gate"
+  },
+  "orange_terracotta_bricks": {},
+  "orange_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "orange_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "orange_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "orange_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_orange_terracotta": {},
+  "cut_orange_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_orange_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_orange_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_orange_terracotta_gate": {
+    "type": "gate"
+  },
+  "orange_terracotta_tiles": {},
+  "orange_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "orange_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "orange_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "orange_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_orange_terracotta": {
+  },
+  "carved_orange_terracotta": {
+  },
+  "orange_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "orange_terracotta_corner_pillar": {
+  },
+  "cobbled_orange_terracotta": {
+  },
+  "cobbled_orange_terracotta_slab": {
+    "type": "slab"
+  },
+  "cobbled_orange_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_orange_terracotta_wall": {
+    "type": "wall"
+  },
+  "cobbled_orange_terracotta_gate": {
+    "type": "gate"
+  }
+}

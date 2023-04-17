@@ -1,0 +1,82 @@
+{
+  "dark_prismarine_wall": {
+    "type": "wall"
+  },
+  "dark_prismarine_gate": {
+    "type": "gate"
+  },
+  "polished_dark_prismarine": {},
+  "polished_dark_prismarine_slab": {
+    "type": "slab"
+  },
+  "polished_dark_prismarine_stairs": {
+    "type": "stairs"
+  },
+  "polished_dark_prismarine_wall": {
+    "type": "wall"
+  },
+  "polished_dark_prismarine_gate": {
+    "type": "gate"
+  },
+  "smooth_dark_prismarine": {},
+  "smooth_dark_prismarine_slab": {
+    "type": "slab"
+  },
+  "smooth_dark_prismarine_stairs": {
+    "type": "stairs"
+  },
+  "smooth_dark_prismarine_wall": {
+    "type": "wall"
+  },
+  "smooth_dark_prismarine_gate": {
+    "type": "gate"
+  },
+  "dark_prismarine_bricks": {},
+  "dark_prismarine_brick_slab": {
+    "type": "slab"
+  },
+  "dark_prismarine_brick_stairs": {
+    "type": "stairs"
+  },
+  "dark_prismarine_brick_wall": {
+    "type": "wall"
+  },
+  "dark_prismarine_brick_gate": {
+    "type": "gate"
+  },
+  "cut_dark_prismarine": {},
+  "cut_dark_prismarine_slab": {
+    "type": "slab"
+  },
+  "cut_dark_prismarine_stairs": {
+    "type": "stairs"
+  },
+  "cut_dark_prismarine_wall": {
+    "type": "wall"
+  },
+  "cut_dark_prismarine_gate": {
+    "type": "gate"
+  },
+  "dark_prismarine_tiles": {},
+  "dark_prismarine_tile_slab": {
+    "type": "slab"
+  },
+  "dark_prismarine_tile_stairs": {
+    "type": "stairs"
+  },
+  "dark_prismarine_tile_wall": {
+    "type": "wall"
+  },
+  "dark_prismarine_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_dark_prismarine": {
+  },
+  "carved_dark_prismarine": {
+  },
+  "dark_prismarine_pillar": {
+    "type": "pillar"
+  },
+  "dark_prismarine_corner_pillar": {
+  }
+}

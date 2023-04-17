@@ -1,0 +1,88 @@
+{
+  "clay_slab": {
+    "type": "slab"
+  },
+  "clay_stairs": {
+    "type": "stairs"
+  },
+  "clay_wall": {
+    "type": "wall"
+  },
+  "clay_gate": {
+    "type": "gate"
+  },
+  "polished_clay": {},
+  "polished_clay_slab": {
+    "type": "slab"
+  },
+  "polished_clay_stairs": {
+    "type": "stairs"
+  },
+  "polished_clay_wall": {
+    "type": "wall"
+  },
+  "polished_clay_gate": {
+    "type": "gate"
+  },
+  "smooth_clay": {},
+  "smooth_clay_slab": {
+    "type": "slab"
+  },
+  "smooth_clay_stairs": {
+    "type": "stairs"
+  },
+  "smooth_clay_wall": {
+    "type": "wall"
+  },
+  "smooth_clay_gate": {
+    "type": "gate"
+  },
+  "clay_bricks": {},
+  "clay_brick_slab": {
+    "type": "slab"
+  },
+  "clay_brick_stairs": {
+    "type": "stairs"
+  },
+  "clay_brick_wall": {
+    "type": "wall"
+  },
+  "clay_brick_gate": {
+    "type": "gate"
+  },
+  "cut_clay": {},
+  "cut_clay_slab": {
+    "type": "slab"
+  },
+  "cut_clay_stairs": {
+    "type": "stairs"
+  },
+  "cut_clay_wall": {
+    "type": "wall"
+  },
+  "cut_clay_gate": {
+    "type": "gate"
+  },
+  "clay_tiles": {},
+  "clay_tile_slab": {
+    "type": "slab"
+  },
+  "clay_tile_stairs": {
+    "type": "stairs"
+  },
+  "clay_tile_wall": {
+    "type": "wall"
+  },
+  "clay_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_clay": {
+  },
+  "carved_clay": {
+  },
+  "clay_pillar": {
+    "type": "pillar"
+  },
+  "clay_corner_pillar": {
+  }
+}

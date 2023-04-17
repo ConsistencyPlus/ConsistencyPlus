@@ -1,3 +1,85 @@
 {
-  "soul_sandstone": {}
+  "stone": {"inherit": "minecraft:stone"},
+  "deepslate": {"inherit": "minecraft:deepslate"},
+  "blackstone": {"inherit": "minecraft:blackstone"},
+  "andesite": {"inherit": "minecraft:andesite"},
+  "diorite": {"inherit": "minecraft:diorite"},
+  "granite": {"inherit": "minecraft:granite"},
+  "tuff": {"inherit": "minecraft:tuff"},
+  "calcite": {"inherit": "minecraft:calcite"},
+  "dripstone": {"inherit": "minecraft:dripstone_block"},
+  "end_stone": {"inherit": "minecraft:end_stone"},
+  "sandstone": {"inherit": "minecraft:sandstone"},
+  "red_sandstone": {"inherit": "minecraft:red_sandstone"},
+  "soul_sandstone": {"inherit": "minecraft:sandstone"},
+  "terracotta": {"inherit": "minecraft:terracotta"},
+  "red_terracotta": {"inherit": "minecraft:red_terracotta"},
+  "orange_terracotta": {"inherit": "minecraft:orange_terracotta"},
+  "yellow_terracotta": {"inherit": "minecraft:yellow_terracotta"},
+  "lime_terracotta": {"inherit": "minecraft:lime_terracotta"},
+  "green_terracotta": {"inherit": "minecraft:green_terracotta"},
+  "blue_terracotta": {"inherit": "minecraft:blue_terracotta"},
+  "cyan_terracotta": {"inherit": "minecraft:cyan_terracotta"},
+  "light_blue_terracotta": {"inherit": "minecraft:light_blue_terracotta"},
+  "purple_terracotta": {"inherit": "minecraft:purple_terracotta"},
+  "magenta_terracotta": {"inherit": "minecraft:magenta_terracotta"},
+  "pink_terracotta": {"inherit": "minecraft:pink_terracotta"},
+  "white_terracotta": {"inherit": "minecraft:white_terracotta"},
+  "light_gray_terracotta": {"inherit": "minecraft:light_gray_terracotta"},
+  "gray_terracotta": {"inherit": "minecraft:gray_terracotta"},
+  "black_terracotta": {"inherit": "minecraft:black_terracotta"},
+  "brown_terracotta": {"inherit": "minecraft:brown_terracotta"},
+
+
+  "red_concrete": {"inherit": "minecraft:red_concrete"},
+  "orange_concrete": {"inherit": "minecraft:orange_concrete"},
+  "yellow_concrete": {"inherit": "minecraft:yellow_concrete"},
+  "lime_concrete": {"inherit": "minecraft:lime_concrete"},
+  "green_concrete": {"inherit": "minecraft:green_concrete"},
+  "blue_concrete": {"inherit": "minecraft:blue_concrete"},
+  "cyan_concrete": {"inherit": "minecraft:cyan_concrete"},
+  "light_blue_concrete": {"inherit": "minecraft:light_blue_concrete"},
+  "purple_concrete": {"inherit": "minecraft:purple_concrete"},
+  "magenta_concrete": {"inherit": "minecraft:magenta_concrete"},
+  "pink_concrete": {"inherit": "minecraft:pink_concrete"},
+  "white_concrete": {"inherit": "minecraft:white_concrete"},
+  "light_gray_concrete": {"inherit": "minecraft:light_gray_concrete"},
+  "gray_concrete": {"inherit": "minecraft:gray_concrete"},
+  "black_concrete": {"inherit": "minecraft:black_concrete"},
+  "brown_concrete": {"inherit": "minecraft:brown_concrete"},
+
+
+  "netherrack": {"inherit": "minecraft:nether_bricks"},
+  "crimson_wart": {"inherit": "minecraft:red_nether_bricks"},
+  "warped_wart": {"inherit": "minecraft:nether_bricks"},
+  "basalt": {"inherit": "minecraft:basalt"},
+
+
+  "prismarine": {"inherit": "minecraft:prismarine"},
+  "dark_prismarine": {"inherit": "minecraft:dark_prismarine"},
+  "quartz": {"inherit": "minecraft:quartz_block"},
+  "purpur": {"inherit": "minecraft:purpur_block"},
+  "bone": {"inherit": "minecraft:bone_block"},
+  "withered_bone": {
+    "inherit": "minecraft:bone_block",
+    "sounds": {
+      "break": "minecraft:block.bone_block.break",
+      "step": "minecraft:block.bone_block.step",
+      "place": "minecraft:block.bone_block.place",
+      "hit": "minecraft:block.bone_block.hit",
+      "fall": "minecraft:block.bone_block.fall",
+      "pitch": 0.5
+    }
+  },
+  "snow": {"inherit": "minecraft:snow_block"},
+
+  "packed_ice": {
+    "inherit": "minecraft:packed_ice"
+  },
+  "blue_ice": {
+    "inherit": "minecraft:blue_ice"
+  },
+  "clay": {"inherit": "minecraft:clay"},
+
+  "packed_mud": {"inherit": "minecraft:packed_mud"}
 }

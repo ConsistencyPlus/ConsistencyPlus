@@ -1,0 +1,88 @@
+{
+  "purple_concrete_slab": {
+    "type": "slab"
+  },
+  "purple_concrete_stairs": {
+    "type": "stairs"
+  },
+  "purple_concrete_wall": {
+    "type": "wall"
+  },
+  "purple_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_purple_concrete": {},
+  "polished_purple_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_purple_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_purple_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_purple_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_purple_concrete": {},
+  "smooth_purple_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_purple_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_purple_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_purple_concrete_gate": {
+    "type": "gate"
+  },
+  "purple_concrete_bricks": {},
+  "purple_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "purple_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "purple_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "purple_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_purple_concrete": {},
+  "cut_purple_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_purple_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_purple_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_purple_concrete_gate": {
+    "type": "gate"
+  },
+  "purple_concrete_tiles": {},
+  "purple_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "purple_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "purple_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "purple_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_purple_concrete": {
+  },
+  "carved_purple_concrete": {
+  },
+  "purple_concrete_pillar": {
+    "type": "pillar"
+  },
+  "purple_concrete_corner_pillar": {
+  }
+}

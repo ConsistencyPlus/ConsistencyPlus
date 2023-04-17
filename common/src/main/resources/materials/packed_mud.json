@@ -1,0 +1,78 @@
+{
+  "packed_mud_slab": {
+    "type": "slab"
+  },
+  "packed_mud_stairs": {
+    "type": "stairs"
+  },
+  "packed_mud_wall": {
+    "type": "wall"
+  },
+  "packed_mud_gate": {
+    "type": "gate"
+  },
+  "polished_packed_mud": {},
+  "polished_packed_mud_slab": {
+    "type": "slab"
+  },
+  "polished_packed_mud_stairs": {
+    "type": "stairs"
+  },
+  "polished_packed_mud_wall": {
+    "type": "wall"
+  },
+  "polished_packed_mud_gate": {
+    "type": "gate"
+  },
+  "smooth_packed_mud": {},
+  "smooth_packed_mud_slab": {
+    "type": "slab"
+  },
+  "smooth_packed_mud_stairs": {
+    "type": "stairs"
+  },
+  "smooth_packed_mud_wall": {
+    "type": "wall"
+  },
+  "smooth_packed_mud_gate": {
+    "type": "gate"
+  },
+  "packed_mud_brick_gate": {
+    "type": "gate"
+  },
+  "cut_packed_mud": {},
+  "cut_packed_mud_slab": {
+    "type": "slab"
+  },
+  "cut_packed_mud_stairs": {
+    "type": "stairs"
+  },
+  "cut_packed_mud_wall": {
+    "type": "wall"
+  },
+  "cut_packed_mud_gate": {
+    "type": "gate"
+  },
+  "packed_mud_tiles": {},
+  "packed_mud_tile_slab": {
+    "type": "slab"
+  },
+  "packed_mud_tile_stairs": {
+    "type": "stairs"
+  },
+  "packed_mud_tile_wall": {
+    "type": "wall"
+  },
+  "packed_mud_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_packed_mud": {
+  },
+  "carved_packed_mud": {
+  },
+  "packed_mud_pillar": {
+    "type": "pillar"
+  },
+  "packed_mud_corner_pillar": {
+  }
+}

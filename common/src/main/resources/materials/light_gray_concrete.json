@@ -1,0 +1,88 @@
+{
+  "light_gray_concrete_slab": {
+    "type": "slab"
+  },
+  "light_gray_concrete_stairs": {
+    "type": "stairs"
+  },
+  "light_gray_concrete_wall": {
+    "type": "wall"
+  },
+  "light_gray_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_light_gray_concrete": {},
+  "polished_light_gray_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_light_gray_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_light_gray_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_light_gray_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_light_gray_concrete": {},
+  "smooth_light_gray_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_light_gray_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_light_gray_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_light_gray_concrete_gate": {
+    "type": "gate"
+  },
+  "light_gray_concrete_bricks": {},
+  "light_gray_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "light_gray_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "light_gray_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "light_gray_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_light_gray_concrete": {},
+  "cut_light_gray_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_light_gray_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_light_gray_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_light_gray_concrete_gate": {
+    "type": "gate"
+  },
+  "light_gray_concrete_tiles": {},
+  "light_gray_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "light_gray_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "light_gray_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "light_gray_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_light_gray_concrete": {
+  },
+  "carved_light_gray_concrete": {
+  },
+  "light_gray_concrete_pillar": {
+    "type": "pillar"
+  },
+  "light_gray_concrete_corner_pillar": {
+  }
+}

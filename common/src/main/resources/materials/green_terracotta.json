@@ -1,0 +1,102 @@
+{
+  "green_terracotta_slab": {
+    "type": "slab"
+  },
+  "green_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "green_terracotta_wall": {
+    "type": "wall"
+  },
+  "green_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_green_terracotta": {},
+  "polished_green_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_green_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_green_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_green_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_green_terracotta": {},
+  "smooth_green_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_green_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_green_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_green_terracotta_gate": {
+    "type": "gate"
+  },
+  "green_terracotta_bricks": {},
+  "green_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "green_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "green_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "green_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_green_terracotta": {},
+  "cut_green_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_green_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_green_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_green_terracotta_gate": {
+    "type": "gate"
+  },
+  "green_terracotta_tiles": {},
+  "green_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "green_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "green_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "green_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_green_terracotta": {
+  },
+  "carved_green_terracotta": {
+  },
+  "green_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "green_terracotta_corner_pillar": {
+  },
+  "cobbled_green_terracotta": {
+  },
+  "cobbled_green_terracotta_slab": {
+    "type": "slab"
+  },
+  "cobbled_green_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_green_terracotta_wall": {
+    "type": "wall"
+  },
+  "cobbled_green_terracotta_gate": {
+    "type": "gate"
+  }
+}

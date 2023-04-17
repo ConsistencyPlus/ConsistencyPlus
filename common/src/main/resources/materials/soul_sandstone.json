@@ -11,5 +11,93 @@
   },
   "soul_sandstone_gate": {
     "type": "gate"
+  },
+  "polished_soul_sandstone": {},
+  "polished_soul_sandstone_slab": {
+    "type": "slab"
+  },
+  "polished_soul_sandstone_stairs": {
+    "type": "stairs"
+  },
+  "polished_soul_sandstone_wall": {
+    "type": "wall"
+  },
+  "polished_soul_sandstone_gate": {
+    "type": "gate"
+  },
+  "smooth_soul_sandstone": {},
+  "smooth_soul_sandstone_slab": {
+    "type": "slab"
+  },
+  "smooth_soul_sandstone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_soul_sandstone_wall": {
+    "type": "wall"
+  },
+  "smooth_soul_sandstone_gate": {
+    "type": "gate"
+  },
+  "soul_sandstone_bricks": {},
+  "soul_sandstone_brick_slab": {
+    "type": "slab"
+  },
+  "soul_sandstone_brick_stairs": {
+    "type": "stairs"
+  },
+  "soul_sandstone_brick_wall": {
+    "type": "wall"
+  },
+  "soul_sandstone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_soul_sandstone": {},
+  "cut_soul_sandstone_slab": {
+    "type": "slab"
+  },
+  "cut_soul_sandstone_stairs": {
+    "type": "stairs"
+  },
+  "cut_soul_sandstone_wall": {
+    "type": "wall"
+  },
+  "cut_soul_sandstone_gate": {
+    "type": "gate"
+  },
+  "soul_sandstone_tiles": {},
+  "soul_sandstone_tile_slab": {
+    "type": "slab"
+  },
+  "soul_sandstone_tile_stairs": {
+    "type": "stairs"
+  },
+  "soul_sandstone_tile_wall": {
+    "type": "wall"
+  },
+  "soul_sandstone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_soul_sandstone": {
+  },
+  "carved_soul_sandstone": {
+  },
+  "soul_sandstone_pillar": {
+    "type": "pillar"
+  },
+  "soul_sandstone_corner_pillar": {
+  },
+  "cobbled_soul_sandstone": {
+  },
+  "cobbled_soul_sandstone_slab": {
+    "type": "slab"
+  },
+  "cobbled_soul_sandstone_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_soul_sandstone_wall": {
+    "type": "wall"
+  },
+  "cobbled_soul_sandstone_gate": {
+    "type": "gate"
   }
 }

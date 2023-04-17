@@ -1,0 +1,102 @@
+{
+  "lime_terracotta_slab": {
+    "type": "slab"
+  },
+  "lime_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "lime_terracotta_wall": {
+    "type": "wall"
+  },
+  "lime_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_lime_terracotta": {},
+  "polished_lime_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_lime_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_lime_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_lime_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_lime_terracotta": {},
+  "smooth_lime_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_lime_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_lime_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_lime_terracotta_gate": {
+    "type": "gate"
+  },
+  "lime_terracotta_bricks": {},
+  "lime_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "lime_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "lime_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "lime_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_lime_terracotta": {},
+  "cut_lime_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_lime_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_lime_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_lime_terracotta_gate": {
+    "type": "gate"
+  },
+  "lime_terracotta_tiles": {},
+  "lime_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "lime_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "lime_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "lime_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_lime_terracotta": {
+  },
+  "carved_lime_terracotta": {
+  },
+  "lime_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "lime_terracotta_corner_pillar": {
+  },
+  "cobbled_lime_terracotta": {
+  },
+  "cobbled_lime_terracotta_slab": {
+    "type": "slab"
+  },
+  "cobbled_lime_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_lime_terracotta_wall": {
+    "type": "wall"
+  },
+  "cobbled_lime_terracotta_gate": {
+    "type": "gate"
+  }
+}

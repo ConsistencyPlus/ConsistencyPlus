@@ -1,0 +1,108 @@
+{
+  "calcite_slab": {
+    "type": "slab"
+  },
+  "calcite_stairs": {
+    "type": "stairs"
+  },
+  "calcite_wall": {
+    "type": "wall"
+  },
+  "calcite_gate": {
+    "type": "gate"
+  },
+  "polished_calcite": {
+
+  },
+  "polished_calcite_slab": {
+    "type": "slab"
+  },
+  "polished_calcite_stairs": {
+    "type": "stairs"
+  },
+  "polished_calcite_wall": {
+    "type": "wall"
+  },
+  "polished_calcite_gate": {
+    "type": "gate"
+  },
+  "smooth_calcite": {
+  },
+  "smooth_calcite_slab": {
+    "type": "slab"
+  },
+  "smooth_calcite_stairs": {
+    "type": "stairs"
+  },
+  "smooth_calcite_wall": {
+    "type": "wall"
+  },
+  "smooth_calcite_gate": {
+    "type": "gate"
+  },
+  "calcite_bricks": {
+  },
+  "calcite_brick_slab": {
+    "type": "slab"
+  },
+  "calcite_brick_stairs": {
+    "type": "stairs"
+  },
+  "calcite_brick_wall": {
+    "type": "wall"
+  },
+  "calcite_brick_gate": {
+    "type": "gate"
+  },
+  "cut_calcite": {
+  },
+  "cut_calcite_slab": {
+    "type": "slab"
+  },
+  "cut_calcite_stairs": {
+    "type": "stairs"
+  },
+  "cut_calcite_wall": {
+    "type": "wall"
+  },
+  "cut_calcite_gate": {
+    "type": "gate"
+  },
+  "calcite_tiles": {
+  },
+  "calcite_tile_slab": {
+    "type": "slab"
+  },
+  "calcite_tile_stairs": {
+    "type": "stairs"
+  },
+  "calcite_tile_wall": {
+    "type": "wall"
+  },
+  "calcite_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_calcite": {
+  },
+  "carved_calcite": {
+  },
+  "calcite_pillar": {
+    "type": "pillar"
+  },
+  "calcite_corner_pillar": {
+  },
+  "cobbled_calcite": {
+  },
+  "cobbled_calcite_slab": {
+    "type": "slab"
+  },
+  "cobbled_calcite_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_calcite_wall": {
+    "type": "wall"
+  },
+  "cobbled_calcite_gate": {
+    "type": "gate"
+  }
+}

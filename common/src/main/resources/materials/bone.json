@@ -1,0 +1,88 @@
+{
+  "bone_slab": {
+    "type": "slab"
+  },
+  "bone_stairs": {
+    "type": "stairs"
+  },
+  "bone_wall": {
+    "type": "wall"
+  },
+  "bone_gate": {
+    "type": "gate"
+  },
+  "polished_bone": {},
+  "polished_bone_slab": {
+    "type": "slab"
+  },
+  "polished_bone_stairs": {
+    "type": "stairs"
+  },
+  "polished_bone_wall": {
+    "type": "wall"
+  },
+  "polished_bone_gate": {
+    "type": "gate"
+  },
+  "smooth_bone": {},
+  "smooth_bone_slab": {
+    "type": "slab"
+  },
+  "smooth_bone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_bone_wall": {
+    "type": "wall"
+  },
+  "smooth_bone_gate": {
+    "type": "gate"
+  },
+  "bone_bricks": {},
+  "bone_brick_slab": {
+    "type": "slab"
+  },
+  "bone_brick_stairs": {
+    "type": "stairs"
+  },
+  "bone_brick_wall": {
+    "type": "wall"
+  },
+  "bone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_bone": {},
+  "cut_bone_slab": {
+    "type": "slab"
+  },
+  "cut_bone_stairs": {
+    "type": "stairs"
+  },
+  "cut_bone_wall": {
+    "type": "wall"
+  },
+  "cut_bone_gate": {
+    "type": "gate"
+  },
+  "bone_tiles": {},
+  "bone_tile_slab": {
+    "type": "slab"
+  },
+  "bone_tile_stairs": {
+    "type": "stairs"
+  },
+  "bone_tile_wall": {
+    "type": "wall"
+  },
+  "bone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_bone": {
+  },
+  "carved_bone": {
+  },
+  "bone_pillar": {
+    "type": "pillar"
+  },
+  "bone_corner_pillar": {
+  }
+}

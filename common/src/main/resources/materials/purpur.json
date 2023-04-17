@@ -1,0 +1,79 @@
+{
+  "purpur_block": {},
+  "purpur_slab": {
+    "type": "slab"
+  },
+  "purpur_stairs": {
+    "type": "stairs"
+  },
+  "purpur_wall": {
+    "type": "wall"
+  },
+  "purpur_gate": {
+    "type": "gate"
+  },
+  "polished_purpur": {},
+  "polished_purpur_slab": {
+    "type": "slab"
+  },
+  "polished_purpur_stairs": {
+    "type": "stairs"
+  },
+  "polished_purpur_wall": {
+    "type": "wall"
+  },
+  "polished_purpur_gate": {
+    "type": "gate"
+  },
+  "smooth_purpur": {},
+  "smooth_purpur_slab": {
+    "type": "slab"
+  },
+  "smooth_purpur_stairs": {
+    "type": "stairs"
+  },
+  "smooth_purpur_wall": {
+    "type": "wall"
+  },
+  "smooth_purpur_gate": {
+    "type": "gate"
+  },
+  "purpur_bricks": {},
+  "purpur_brick_slab": {
+    "type": "slab"
+  },
+  "purpur_brick_stairs": {
+    "type": "stairs"
+  },
+  "purpur_brick_wall": {
+    "type": "wall"
+  },
+  "purpur_brick_gate": {
+    "type": "gate"
+  },
+  "cut_purpur": {},
+  "cut_purpur_slab": {
+    "type": "slab"
+  },
+  "cut_purpur_stairs": {
+    "type": "stairs"
+  },
+  "cut_purpur_wall": {
+    "type": "wall"
+  },
+  "cut_purpur_gate": {
+    "type": "gate"
+  },
+  "purpur_tile_wall": {
+    "type": "wall"
+  },
+  "purpur_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_purpur": {
+  },
+  "carved_purpur": {
+  },
+  "purpur_corner_pillar": {
+  }
+}

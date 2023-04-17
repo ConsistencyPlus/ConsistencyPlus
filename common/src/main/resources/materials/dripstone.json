@@ -1,0 +1,102 @@
+{
+  "dripstone_slab": {
+    "type": "slab"
+  },
+  "dripstone_stairs": {
+    "type": "stairs"
+  },
+  "dripstone_wall": {
+    "type": "wall"
+  },
+  "dripstone_gate": {
+    "type": "gate"
+  },
+  "polished_dripstone": {},
+  "polished_dripstone_slab": {
+    "type": "slab"
+  },
+  "polished_dripstone_stairs": {
+    "type": "stairs"
+  },
+  "polished_dripstone_wall": {
+    "type": "wall"
+  },
+  "polished_dripstone_gate": {
+    "type": "gate"
+  },
+  "smooth_dripstone": {},
+  "smooth_dripstone_slab": {
+    "type": "slab"
+  },
+  "smooth_dripstone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_dripstone_wall": {
+    "type": "wall"
+  },
+  "smooth_dripstone_gate": {
+    "type": "gate"
+  },
+  "dripstone_bricks": {},
+  "dripstone_brick_slab": {
+    "type": "slab"
+  },
+  "dripstone_brick_stairs": {
+    "type": "stairs"
+  },
+  "dripstone_brick_wall": {
+    "type": "wall"
+  },
+  "dripstone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_dripstone": {},
+  "cut_dripstone_slab": {
+    "type": "slab"
+  },
+  "cut_dripstone_stairs": {
+    "type": "stairs"
+  },
+  "cut_dripstone_wall": {
+    "type": "wall"
+  },
+  "cut_dripstone_gate": {
+    "type": "gate"
+  },
+  "dripstone_tiles": {},
+  "dripstone_tile_slab": {
+    "type": "slab"
+  },
+  "dripstone_tile_stairs": {
+    "type": "stairs"
+  },
+  "dripstone_tile_wall": {
+    "type": "wall"
+  },
+  "dripstone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_dripstone": {
+  },
+  "carved_dripstone": {
+  },
+  "dripstone_pillar": {
+    "type": "pillar"
+  },
+  "dripstone_corner_pillar": {
+  },
+  "cobbled_dripstone": {
+  },
+  "cobbled_dripstone_slab": {
+    "type": "slab"
+  },
+  "cobbled_dripstone_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_dripstone_wall": {
+    "type": "wall"
+  },
+  "cobbled_dripstone_gate": {
+    "type": "gate"
+  }
+}

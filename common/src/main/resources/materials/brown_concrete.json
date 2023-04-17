@@ -1,0 +1,88 @@
+{
+  "brown_concrete_slab": {
+    "type": "slab"
+  },
+  "brown_concrete_stairs": {
+    "type": "stairs"
+  },
+  "brown_concrete_wall": {
+    "type": "wall"
+  },
+  "brown_concrete_gate": {
+    "type": "gate"
+  },
+  "polished_brown_concrete": {},
+  "polished_brown_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_brown_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_brown_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_brown_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_brown_concrete": {},
+  "smooth_brown_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_brown_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_brown_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_brown_concrete_gate": {
+    "type": "gate"
+  },
+  "brown_concrete_bricks": {},
+  "brown_concrete_brick_slab": {
+    "type": "slab"
+  },
+  "brown_concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "brown_concrete_brick_wall": {
+    "type": "wall"
+  },
+  "brown_concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_brown_concrete": {},
+  "cut_brown_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_brown_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_brown_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_brown_concrete_gate": {
+    "type": "gate"
+  },
+  "brown_concrete_tiles": {},
+  "brown_concrete_tile_slab": {
+    "type": "slab"
+  },
+  "brown_concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "brown_concrete_tile_wall": {
+    "type": "wall"
+  },
+  "brown_concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_brown_concrete": {
+  },
+  "carved_brown_concrete": {
+  },
+  "brown_concrete_pillar": {
+    "type": "pillar"
+  },
+  "brown_concrete_corner_pillar": {
+  }
+}

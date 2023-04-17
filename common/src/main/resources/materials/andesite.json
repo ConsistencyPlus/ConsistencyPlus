@@ -1,0 +1,86 @@
+{
+  "andesite_gate": {
+    "type": "gate"
+  },
+  "polished_andesite_wall": {
+    "type": "wall"
+  },
+  "polished_andesite_gate": {
+    "type": "gate"
+  },
+  "smooth_andesite": {},
+  "smooth_andesite_slab": {
+    "type": "slab"
+  },
+  "smooth_andesite_stairs": {
+    "type": "stairs"
+  },
+  "smooth_andesite_wall": {
+    "type": "wall"
+  },
+  "smooth_andesite_gate": {
+    "type": "gate"
+  },
+  "andesite_bricks": {},
+  "andesite_brick_slab": {
+    "type": "slab"
+  },
+  "andesite_brick_stairs": {
+    "type": "stairs"
+  },
+  "andesite_brick_wall": {
+    "type": "wall"
+  },
+  "andesite_brick_gate": {
+    "type": "gate"
+  },
+  "cut_andesite": {},
+  "cut_andesite_slab": {
+    "type": "slab"
+  },
+  "cut_andesite_stairs": {
+    "type": "stairs"
+  },
+  "cut_andesite_wall": {
+    "type": "wall"
+  },
+  "cut_andesite_gate": {
+    "type": "gate"
+  },
+  "andesite_tiles": {},
+  "andesite_tile_slab": {
+    "type": "slab"
+  },
+  "andesite_tile_stairs": {
+    "type": "stairs"
+  },
+  "andesite_tile_wall": {
+    "type": "wall"
+  },
+  "andesite_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_andesite": {
+  },
+  "carved_andesite": {
+  },
+  "andesite_pillar": {
+    "type": "pillar"
+  },
+  "andesite_corner_pillar": {
+  },
+  "cobbled_andesite": {
+  },
+  "cobbled_andesite_slab": {
+    "type": "slab"
+  },
+  "cobbled_andesite_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_andesite_wall": {
+    "type": "wall"
+  },
+  "cobbled_andesite_gate": {
+    "type": "gate"
+  }
+}

@@ -95,15 +95,15 @@ public final class ConsistencyPlusBlocksLoader {
 
     private static void loadMaterials(JsonObject json) {
         for (final var entry : json.entrySet()) {
-            final AbstractBlock.Settings settings = json.has("inherit")
-                    ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(json, "inherit")))
+            JsonObject jsonCool = entry.getValue().getAsJsonObject();
+            final AbstractBlock.Settings settings = jsonCool.has("inherit")
+                    ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(jsonCool, "inherit")))
                     .map(AbstractBlock.Settings::copy)
-                    .orElseThrow(() -> new IllegalArgumentException("Unknown block " + json.get("inherit")))
+                    .orElseThrow(() -> new IllegalArgumentException("Unknown block " + jsonCool.get("inherit")))
                     : AbstractBlock.Settings.of(Material.STONE)
                     .strength(3.5f, 3.5f)
                     .requiresTool();
-            json.remove("inherit");
-            JsonObject jsonCool = entry.getValue().getAsJsonObject();
+            //json.remove("inherit");
             jsonCool.remove("inherit");
             SettingsBundle settingsBundle = fromJson(jsonCool, settings);
 

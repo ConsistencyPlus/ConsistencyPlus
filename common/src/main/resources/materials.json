@@ -1,3 +1,5 @@
 {
-  "soul_sandstone": {}
+  "soul_sandstone": {
+    "slipperiness": 0.999
+  }
 }

@@ -95,7 +95,6 @@ public final class ConsistencyPlusBlocksLoader {
 
     private static void loadMaterials(JsonObject json) {
         for (final var entry : json.entrySet()) {
-            JsonObject materialSettings = entry.getValue().getAsJsonObject();
             final AbstractBlock.Settings settings = json.has("inherit")
                     ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(json, "inherit")))
                     .map(AbstractBlock.Settings::copy)
@@ -104,7 +103,7 @@ public final class ConsistencyPlusBlocksLoader {
                     .strength(3.5f, 3.5f)
                     .requiresTool();
             json.remove("inherit");
-            SettingsBundle settingsBundle = fromJson(json, settings);
+            SettingsBundle settingsBundle = fromJson(entry.getValue().getAsJsonObject(), settings);
 
             try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("materials/" + entry.getKey() + ".json"), StandardCharsets.UTF_8)) {
                 load(JsonHelper.deserialize(reader), settingsBundle);
@@ -159,7 +158,7 @@ public final class ConsistencyPlusBlocksLoader {
                 case "opaque" -> opacity = JsonHelper.asBoolean(value, "opaque");
                 case "pistonPush" -> pistonPush = JsonHelper.asBoolean(value, "pistonPush");
                 case "pistonPull" -> pistonPull = JsonHelper.asBoolean(value, "pistonPull");
-                default -> throw new IllegalArgumentException("Unknown Portal Block field " + entry.getKey());
+                default -> throw new IllegalArgumentException("Unknown Consistency Plus Block field " + entry.getKey());
             }
         }
 

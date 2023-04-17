@@ -12,6 +12,7 @@ import java.util.List;
  an actual ItemGroup can be initialized on the loader.
  */
 public class PseudoItemGroup {
+    public static final List<PseudoItemGroup> itemGroupRegistry = new ArrayList<>();
     List<ItemStack> itemGroup = new ArrayList<>();
     ItemStack icon;
     Identifier id;

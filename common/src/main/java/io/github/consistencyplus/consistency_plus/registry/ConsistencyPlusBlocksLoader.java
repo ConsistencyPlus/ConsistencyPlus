@@ -22,6 +22,7 @@ import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.Map;
+import java.util.Set;
 
 // Based on the Json Registry in PortalCubed, found at https://github.com/Fusion-Flux/Portal-Cubed/blob/1.19.2/src/main/java/com/fusionflux/portalcubed/blocks/PortalBlocksLoader.java.
 // The PortalCubed code is licensed under MIT.
@@ -74,38 +75,71 @@ public final class ConsistencyPlusBlocksLoader {
         return layerMappedBlockData;
     }*/
 
+    private static BlockSoundGroup parseBlockSounds(JsonElement sounds) {
+        if (sounds.isJsonPrimitive()) {
+            return Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.asString(sounds, "sounds")))
+                    .map(b -> b.getSoundGroup(b.getDefaultState()))
+                    .orElseThrow(() -> new IllegalArgumentException("Unknown block " + sounds));
+        }
+        final JsonObject object = JsonHelper.asObject(sounds, "sounds");
+        return new BlockSoundGroup(
+                JsonHelper.getFloat(object, "volume", 1f),
+                JsonHelper.getFloat(object, "pitch", 1f),
+                new SoundEvent(new Identifier(JsonHelper.getString(object, "break"))),
+                new SoundEvent(new Identifier(JsonHelper.getString(object, "step"))),
+                new SoundEvent(new Identifier(JsonHelper.getString(object, "place"))),
+                new SoundEvent(new Identifier(JsonHelper.getString(object, "hit"))),
+                new SoundEvent(new Identifier(JsonHelper.getString(object, "fall")))
+        );
+    }
+
     private static void loadMaterials(JsonObject json) {
         for (final var entry : json.entrySet()) {
+            JsonObject materialSettings = entry.getValue().getAsJsonObject();
+            final AbstractBlock.Settings settings = json.has("inherit")
+                    ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(json, "inherit")))
+                    .map(AbstractBlock.Settings::copy)
+                    .orElseThrow(() -> new IllegalArgumentException("Unknown block " + json.get("inherit")))
+                    : AbstractBlock.Settings.of(Material.STONE)
+                    .strength(3.5f, 3.5f)
+                    .requiresTool();
+            json.remove("inherit");
+            SettingsBundle settingsBundle = fromJson(json, settings);
+
             try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("materials/" + entry.getKey() + ".json"), StandardCharsets.UTF_8)) {
-                load(JsonHelper.deserialize(reader));
+                load(JsonHelper.deserialize(reader), settingsBundle);
             } catch (IOException e) {
                 ConsistencyPlusMain.LOGGER.error("Failed to load block data", e);
             }
         }
     }
 
-    private static void load(JsonObject json) {
+    private static void load(JsonObject json, SettingsBundle settingsBundle) {
         for (final var entry : json.entrySet()) {
-            PseudoRegistry.register(new Identifier("consistency_plus", entry.getKey()), parseBlock(entry.getValue().getAsJsonObject()));
+            PseudoRegistry.register(new Identifier("consistency_plus", entry.getKey()), parseBlock(entry.getValue().getAsJsonObject(), settingsBundle));
         }
     }
 
-    private static BlockData parseBlock(JsonObject json) {
+    private static BlockData parseBlock(JsonObject json, SettingsBundle setSettings) {
         final var type = BlockShape.fromString(JsonHelper.getString(json, "type", "block"));
         if (type == null) {
             throw new IllegalArgumentException("Unknown type " + json.get("type"));
         }
         json.remove("type");
+
         final AbstractBlock.Settings settings = json.has("inherit")
-            ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(json, "inherit")))
+                ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(json, "inherit")))
                 .map(AbstractBlock.Settings::copy)
                 .orElseThrow(() -> new IllegalArgumentException("Unknown block " + json.get("inherit")))
-            : AbstractBlock.Settings.of(Material.STONE)
-                .strength(3.5f, 3.5f)
-                .requiresTool();
+                : setSettings.settings();
         json.remove("inherit");
+
+        return new BlockData(type, fromJson(json, settings));
+    }
+
+    private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings) {
         String renderLayer = null;
-        boolean opacity = false;
+        boolean opacity = true;
         boolean pistonPush = true;
         boolean pistonPull = true;
         for (final var entry : json.entrySet()) {
@@ -129,24 +163,7 @@ public final class ConsistencyPlusBlocksLoader {
             }
         }
 
-        return new BlockData(type, settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull));
+        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull));
     }
 
-    private static BlockSoundGroup parseBlockSounds(JsonElement sounds) {
-        if (sounds.isJsonPrimitive()) {
-            return Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.asString(sounds, "sounds")))
-                .map(b -> b.getSoundGroup(b.getDefaultState()))
-                .orElseThrow(() -> new IllegalArgumentException("Unknown block " + sounds));
-        }
-        final JsonObject object = JsonHelper.asObject(sounds, "sounds");
-        return new BlockSoundGroup(
-            JsonHelper.getFloat(object, "volume", 1f),
-            JsonHelper.getFloat(object, "pitch", 1f),
-            new SoundEvent(new Identifier(JsonHelper.getString(object, "break"))),
-            new SoundEvent(new Identifier(JsonHelper.getString(object, "step"))),
-            new SoundEvent(new Identifier(JsonHelper.getString(object, "place"))),
-            new SoundEvent(new Identifier(JsonHelper.getString(object, "hit"))),
-            new SoundEvent(new Identifier(JsonHelper.getString(object, "fall")))
-        );
-    }
 }

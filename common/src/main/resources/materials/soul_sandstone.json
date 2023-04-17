@@ -1,3 +1,15 @@
 {
-  "soul_sandstone": {}
+  "soul_sandstone": {},
+  "soul_sandstone_slab": {
+    "type": "slab"
+  },
+  "soul_sandstone_stairs": {
+    "type": "stairs"
+  },
+  "soul_sandstone_wall": {
+    "type": "wall"
+  },
+  "soul_sandstone_gate": {
+    "type": "gate"
+  }
 }

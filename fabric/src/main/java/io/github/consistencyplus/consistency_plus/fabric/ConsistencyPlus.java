@@ -27,8 +27,8 @@ public class ConsistencyPlus implements ModInitializer {
 		Map<Identifier, BlockData> blockDataMap = PseudoRegistry.export();
 		for (Identifier id : blockDataMap.keySet()) {
 			BlockData data = blockDataMap.get(id);
-			AdditionalBlockSettings addBloSet = data.additionalBlockSettings();
-			Block block = Registry.register(Registry.BLOCK, id, data.block().initFunc().apply(data.blockSettings()));
+			AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
+			Block block = Registry.register(Registry.BLOCK, id, data.block().initFunc().apply(data.settings().settings()));
 			Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings()));
 		}
 	}

@@ -32,7 +32,7 @@ public class ConsistencyPlus {
 		event.register(ForgeRegistries.Keys.BLOCKS, helper -> {
 			for (Identifier id : blockDataMap.keySet()) {
 				BlockData data = blockDataMap.get(id);
-				helper.register(id, data.block().initFunc().apply(data.blockSettings()));
+				helper.register(id, data.block().initFunc().apply(data.settings().settings()));
 			}
 		});
 

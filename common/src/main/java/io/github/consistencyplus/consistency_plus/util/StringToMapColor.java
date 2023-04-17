@@ -67,7 +67,6 @@ public class StringToMapColor {
             case "deepslate_gray" -> MapColor.DEEPSLATE_GRAY;
             case "raw_iron_pink" -> MapColor.RAW_IRON_PINK;
             case "lichen_green" -> MapColor.LICHEN_GREEN;
-            default -> MapColor.CLEAR;
         };
     }
 }

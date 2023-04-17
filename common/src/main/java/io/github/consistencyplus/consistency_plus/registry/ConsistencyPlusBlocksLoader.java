@@ -4,28 +4,24 @@ import com.google.common.collect.ImmutableMap;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
-import io.github.consistencyplus.consistency_plus.blocks.CPlusStairsBlock;
 import io.github.consistencyplus.consistency_plus.util.*;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Material;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.item.*;
+import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
 import net.minecraft.util.registry.Registry;
-import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.function.Function;
 
 // Based on the Json Registry in PortalCubed, found at https://github.com/Fusion-Flux/Portal-Cubed/blob/1.19.2/src/main/java/com/fusionflux/portalcubed/blocks/PortalBlocksLoader.java.
 // The PortalCubed code is licensed under MIT.
@@ -51,8 +47,8 @@ public final class ConsistencyPlusBlocksLoader {
 
     /** CHANGE TO CROSS LOADED*/
     public static void init() {
-        try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("portal_blocks.json"), StandardCharsets.UTF_8)) {
-            load(JsonHelper.deserialize(reader));
+        try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("materials.json"), StandardCharsets.UTF_8)) {
+            loadMaterials(JsonHelper.deserialize(reader));
         } catch (IOException e) {
             ConsistencyPlusMain.LOGGER.error("Failed to load block data", e);
         }
@@ -61,7 +57,7 @@ public final class ConsistencyPlusBlocksLoader {
         return BLOCK_DATA;
     }*/
 
-    @Environment(EnvType.CLIENT)
+    //@Environment(EnvType.CLIENT)
     /*public static Map<BlockData, RenderLayer> exportMapedRenderLayer() {
         Map<BlockData, RenderLayer> layerMappedBlockData = new HashMap<>();
         .forEach((key, value) -> {
@@ -77,6 +73,17 @@ public final class ConsistencyPlusBlocksLoader {
 
         return layerMappedBlockData;
     }*/
+
+    private static void loadMaterials(JsonObject json) {
+        for (final var entry : json.entrySet()) {
+            try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("materials/" + entry.getKey() + ".json"), StandardCharsets.UTF_8)) {
+                load(JsonHelper.deserialize(reader));
+            } catch (IOException e) {
+                ConsistencyPlusMain.LOGGER.error("Failed to load block data", e);
+            }
+        }
+    }
+
     private static void load(JsonObject json) {
         for (final var entry : json.entrySet()) {
             PseudoRegistry.register(new Identifier("consistency_plus", entry.getKey()), parseBlock(entry.getValue().getAsJsonObject()));
@@ -98,7 +105,6 @@ public final class ConsistencyPlusBlocksLoader {
                 .requiresTool();
         json.remove("inherit");
         String renderLayer = null;
-        String mapColor = null;
         boolean opacity = false;
         boolean pistonPush = true;
         boolean pistonPull = true;
@@ -112,7 +118,7 @@ public final class ConsistencyPlusBlocksLoader {
                 case "sounds" -> settings.sounds(parseBlockSounds(value));
                 case "light_level" -> settings.luminance((lum) -> JsonHelper.asInt(value, "light_level"));
                 case "render_layer" -> renderLayer = JsonHelper.asString(value, "render_layer");
-                case "mapColor" -> mapColor = JsonHelper.asString(value, "mapColor");
+                case "mapColor" -> settings.mapColor(StringToMapColor.stringToMapColor(JsonHelper.asString(value, "mapColor")));
 
 
                 // EXTRA SETTINGS
@@ -123,7 +129,7 @@ public final class ConsistencyPlusBlocksLoader {
             }
         }
 
-        return new BlockData(type, settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull, mapColor));
+        return new BlockData(type, settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull));
     }
 
     private static BlockSoundGroup parseBlockSounds(JsonElement sounds) {

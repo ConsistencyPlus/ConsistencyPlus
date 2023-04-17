@@ -1,4 +1,4 @@
-package io.github.consistencyplus.consistency_plus;
+package io.github.consistencyplus.consistency_plus.fabric;
 
 import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import net.fabricmc.api.EnvType;

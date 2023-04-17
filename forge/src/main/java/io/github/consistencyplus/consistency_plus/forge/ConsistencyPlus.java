@@ -1,16 +1,12 @@
 package io.github.consistencyplus.consistency_plus.forge;
 
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
-import io.github.consistencyplus.consistency_plus.registry.ConsistencyPlusBlocksLoader;
 import io.github.consistencyplus.consistency_plus.registry.PseudoRegistry;
 import io.github.consistencyplus.consistency_plus.util.BlockData;
 import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
-import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

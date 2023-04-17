@@ -3,18 +3,11 @@ package io.github.consistencyplus.consistency_plus.forge;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusClientMain;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
-import net.minecraft.resource.ResourcePackProfile;
-import net.minecraft.resource.ResourcePackProfile.InsertionPosition;
-import net.minecraft.resource.ResourcePackSource;
-import net.minecraft.resource.ResourceType;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.event.AddPackFindersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.forgespi.language.IModFileInfo;
-import net.minecraftforge.forgespi.locating.IModFile;
+
 @Mod.EventBusSubscriber(modid = ConsistencyPlusMain.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ConsistencyPlusClient {
 	@SubscribeEvent

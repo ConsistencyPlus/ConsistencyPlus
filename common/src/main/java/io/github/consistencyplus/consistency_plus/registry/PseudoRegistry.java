@@ -1,13 +1,10 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
-import io.github.consistencyplus.consistency_plus.registry.ConsistencyPlusBlocksLoader;
 import io.github.consistencyplus.consistency_plus.util.BlockData;
 import net.minecraft.util.Identifier;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 // This class' purpose is to facilitate a way to store FalseBlock entries in a system that is similar to the Vanilla's Registries until they can reach a point where they can be registered safely on loader.

@@ -42,11 +42,11 @@ loom {
             mod "consistency_plus"
         }*/
 
-        runs {
+        /*runs {
             data {
                 vmArgs("--existing", file("src/main/resources").absolutePath)
             }
-        }
+        }*/
 
         //mixinConfigs = [ "consistency_plus.mixins.json" ]
     }

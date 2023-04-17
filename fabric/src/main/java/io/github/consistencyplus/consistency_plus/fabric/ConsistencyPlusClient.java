@@ -1,5 +1,6 @@
-package io.github.consistencyplus.consistency_plus;
+package io.github.consistencyplus.consistency_plus.fabric;
 
+import io.github.consistencyplus.consistency_plus.ConsistencyPlusClientMain;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 

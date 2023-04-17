@@ -1,10 +1,15 @@
-package io.github.consistencyplus.consistency_plus;
+package io.github.consistencyplus.consistency_plus.fabric;
 
+import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.util.AdditionalBlockSettings;
 import io.github.consistencyplus.consistency_plus.util.BlockData;
 import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import io.github.consistencyplus.consistency_plus.registry.PseudoRegistry;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -22,6 +27,7 @@ public class ConsistencyPlus implements ModInitializer {
 		Map<Identifier, BlockData> blockDataMap = PseudoRegistry.export();
 		for (Identifier id : blockDataMap.keySet()) {
 			BlockData data = blockDataMap.get(id);
+			AdditionalBlockSettings addBloSet = data.additionalBlockSettings();
 			Block block = Registry.register(Registry.BLOCK, id, data.block().initFunc().apply(data.blockSettings()));
 			Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings()));
 		}

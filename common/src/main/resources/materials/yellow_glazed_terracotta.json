@@ -1,0 +1,90 @@
+{
+  "yellow_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "yellow_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "yellow_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "yellow_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_yellow_glazed_terracotta": {},
+  "polished_yellow_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_yellow_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_yellow_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_yellow_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_yellow_glazed_terracotta": {
+    "type": "directional"
+  },
+  "smooth_yellow_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_yellow_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_yellow_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_yellow_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "yellow_glazed_terracotta_bricks": {},
+  "yellow_glazed_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "yellow_glazed_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "yellow_glazed_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "yellow_glazed_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_yellow_glazed_terracotta": {},
+  "cut_yellow_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_yellow_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_yellow_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_yellow_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "yellow_glazed_terracotta_tiles": {},
+  "yellow_glazed_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "yellow_glazed_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "yellow_glazed_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "yellow_glazed_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_yellow_glazed_terracotta": {
+  },
+  "carved_yellow_glazed_terracotta": {
+  },
+  "yellow_glazed_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "yellow_glazed_terracotta_corner_pillar": {
+  }
+}

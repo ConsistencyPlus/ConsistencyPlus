@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:glowstone"
-    },
-    "result": "consistency_plus:glowstone_gate",
-    "count": 1
-}

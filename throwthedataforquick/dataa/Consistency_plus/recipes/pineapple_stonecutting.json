@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:pumpkin"
-    },
-    "result": "consistency_plus:pineapple",
-    "count": 1
-}

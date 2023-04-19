@@ -1,10 +1,10 @@
-THIS FOLDER IS A TEMPLATE FOR A FULL SET CREATION.
+THIS FOLDER IS A TEMPLATE FOR CREATING ASSETS AND DATA FOR A FULL BLOCKSET.
 
 IT CONTAINS:
 - BLOCKSTATES
 - BLOCK MODELS
 - ITEM MODELS
-- LANG
+- LANG (PASTE INTO FULL LANG)
 - LOOT TABLES
 - RECIPES
 - ADVANCEMENTS
@@ -13,11 +13,10 @@ IT CONTAINS:
 To use this, you'll need a plugin that lets you change mass filenames.  
 https://plugins.jetbrains.com/plugin/17063-regex-rename-files/versions
 
-
-STEP 1: Copy "blank" (the folder inside "blank_guide") and rename it to the block of your choosing.
-STEP 2: Install the plugin
-STEP 3: Once you've installed the plugin, go through every folder and replace the word "blank" with the block of your choosing.  This will change the filenames.
-STEP 4: For changing the actual contents of the files, use intellij's built in refactor options to search for uses of "blank" and "Blank"*
-STEP 5: Copy the contents of the new folders into the actual source.
+STEP 1:   Copy "blank" (the folder inside "blank_guide") and rename it to the block of your choosing.
+STEP 1.5: Install the plugin if you haven't already
+STEP 2:   Go through every folder using the plugin and replace the word "blank" with the block of your choosing.  This will change the filenames.
+STEP 3:   For changing the actual contents of the files, use intellij's built in refactor options to search for uses of "blank" and "Blank"*
+STEP 4:   Copy the contents of the new folders into the actual source.
 
 *"Blank" with a capital B is used in the lang file.

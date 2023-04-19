@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "consistency_plus:block/lime_ice",
-    "top": "consistency_plus:block/lime_ice",
-    "side": "consistency_plus:block/lime_ice"
-  }
-}

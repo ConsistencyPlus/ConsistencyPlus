@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:light_gray_concrete_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cut_light_gray_concrete",
+        "count": 4
+    }
+}

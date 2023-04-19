@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:warped_wart_slab",
+    "consistency_plus:warped_wart_stairs",
+    "consistency_plus:warped_wart_wall",
+    "consistency_plus:warped_wart_gate",
+    "consistency_plus:crimson_wart_slab",
+    "consistency_plus:crimson_wart_stairs",
+    "consistency_plus:crimson_wart_wall",
+    "consistency_plus:crimson_wart_gate"
+  ]
+}

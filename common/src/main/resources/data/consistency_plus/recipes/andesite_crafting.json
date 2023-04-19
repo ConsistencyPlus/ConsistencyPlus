@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cobbled_andesite"
+        }
+    },
+    "result": {
+        "item": "minecraft:andesite",
+        "count": 1
+    }
+}

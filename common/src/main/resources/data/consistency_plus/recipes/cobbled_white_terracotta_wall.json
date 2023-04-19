@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cobbled_white_terracotta"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cobbled_white_terracotta_wall",
+        "count": 6
+    }
+}

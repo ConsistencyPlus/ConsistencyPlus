@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:pink_concrete"
+        },
+        "Y": {
+            "item": "consistency_plus:pink_concrete_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:pink_concrete_gate",
+        "count": 4
+    }
+}

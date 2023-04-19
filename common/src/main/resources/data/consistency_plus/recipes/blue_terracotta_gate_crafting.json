@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:blue_terracotta"
+        },
+        "Y": {
+            "item": "consistency_plus:blue_terracotta_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:blue_terracotta_gate",
+        "count": 4
+    }
+}

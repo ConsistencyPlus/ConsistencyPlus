@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:smooth_netherrack"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:smooth_netherrack_stairs",
+        "count": 4
+    }
+}

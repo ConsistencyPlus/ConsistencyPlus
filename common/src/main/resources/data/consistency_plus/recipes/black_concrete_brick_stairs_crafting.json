@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:black_concrete_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:black_concrete_brick_stairs",
+        "count": 4
+    }
+}

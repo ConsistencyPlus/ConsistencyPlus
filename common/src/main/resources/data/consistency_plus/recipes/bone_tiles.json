@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "XX ",
+        "XX "
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cut_bone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:bone_tiles",
+        "count": 4
+    }
+}

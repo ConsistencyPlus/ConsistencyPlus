@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:magenta_terracotta_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cut_magenta_terracotta",
+        "count": 4
+    }
+}

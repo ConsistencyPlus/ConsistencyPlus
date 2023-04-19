@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "XX ",
+        "XX "
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cobbled_basalt"
+        }
+    },
+    "result": {
+        "item": "minecraft:basalt",
+        "count": 1
+    }
+}

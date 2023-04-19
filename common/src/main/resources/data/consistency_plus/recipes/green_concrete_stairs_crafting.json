@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:green_concrete"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:green_concrete_stairs",
+        "count": 4
+    }
+}

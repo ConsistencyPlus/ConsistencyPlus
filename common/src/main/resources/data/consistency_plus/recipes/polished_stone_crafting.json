@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_stone",
+        "count": 4
+    }
+}

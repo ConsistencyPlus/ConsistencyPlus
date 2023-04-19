@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_magenta_terracotta",
+    "consistency_plus:smooth_magenta_terracotta_slab",
+    "consistency_plus:smooth_magenta_terracotta_stairs",
+    "consistency_plus:smooth_magenta_terracotta_wall",
+    "consistency_plus:smooth_magenta_terracotta_gate"
+  ]
+}

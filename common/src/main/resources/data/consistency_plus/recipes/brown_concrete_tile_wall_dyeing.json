@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:brown_dye"
+    },
+    "#": {
+      "item": "consistency_plus:white_concrete_tile_wall"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:brown_concrete_tile_wall",
+    "count": 8
+  }
+}

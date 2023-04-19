@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:chiseled_ice"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:carved_ice",
+        "count": 4
+    }
+}

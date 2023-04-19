@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:polished_snow"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:snow_bricks",
+        "count": 4
+    }
+}

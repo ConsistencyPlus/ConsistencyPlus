@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cobbled_andesite"
+        },
+        "Y": {
+            "item": "consistency_plus:cobbled_andesite_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cobbled_andesite_gate",
+        "count": 4
+    }
+}

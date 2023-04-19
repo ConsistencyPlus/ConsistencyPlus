@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_netherrack",
+    "consistency_plus:smooth_netherrack_slab",
+    "consistency_plus:smooth_netherrack_stairs",
+    "consistency_plus:smooth_netherrack_wall",
+    "consistency_plus:smooth_netherrack_gate"
+  ]
+}

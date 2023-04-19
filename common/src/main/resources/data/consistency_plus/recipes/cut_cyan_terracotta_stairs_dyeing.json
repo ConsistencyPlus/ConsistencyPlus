@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:cyan_dye"
+    },
+    "#": {
+      "item": "consistency_plus:cut_terracotta_stairs"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:cut_cyan_terracotta_stairs",
+    "count": 8
+  }
+}

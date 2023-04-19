@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:tuff"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:tuff_wall",
+        "count": 6
+    }
+}

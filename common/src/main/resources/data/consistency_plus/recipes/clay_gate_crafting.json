@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:clay"
+        },
+        "Y": {
+            "item": "consistency_plus:clay_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:clay_gate",
+        "count": 4
+    }
+}

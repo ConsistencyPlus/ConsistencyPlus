@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:soul_sandstone_bricks"
+        },
+        "Y": {
+            "item": "consistency_plus:soul_sandstone_brick_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:soul_sandstone_brick_gate",
+        "count": 4
+    }
+}

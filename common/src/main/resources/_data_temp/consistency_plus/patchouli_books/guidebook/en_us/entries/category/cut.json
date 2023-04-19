@@ -1,0 +1,17 @@
+{
+    "name": "4. Cut Blocks",
+    "icon": "consistency_plus:cut_stone",
+    "category": "consistency_plus:category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Cut blocks in Consistency+ are made from bricks, which is different from how all of the vanilla cut blocks are crafted.  "
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe":  "consistency_plus:cut_stone_crafting",
+            "recipe2":  "minecraft:cut_sandstone"
+        }
+    ],
+    "read_by_default": true
+}

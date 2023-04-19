@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:white_dye"
+    },
+    "#": {
+      "item": "minecraft:brick_stairs"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:white_terracotta_brick_stairs",
+    "count": 8
+  }
+}

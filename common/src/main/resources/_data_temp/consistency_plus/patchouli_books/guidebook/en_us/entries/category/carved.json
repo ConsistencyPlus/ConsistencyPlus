@@ -1,0 +1,17 @@
+{
+    "name": "8. Carved Blocks",
+    "icon": "consistency_plus:carved_stone",
+    "category": "consistency_plus:category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Carved blocks in Consistency+ are made out of that set's chiseled blocks.  They also do not have slabs, stairs, walls or gates.  They are almost always decorated with an animal or mob face inspired by the material."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe":  "consistency_plus:carved_stone_crafting",
+            "recipe2":  "minecraft:chiseled_sandstone"
+        }
+    ],
+    "read_by_default": true
+}

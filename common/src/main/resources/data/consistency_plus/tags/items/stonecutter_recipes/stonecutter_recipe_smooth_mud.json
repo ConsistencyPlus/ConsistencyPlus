@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_mud",
+    "consistency_plus:smooth_mud_slab",
+    "consistency_plus:smooth_mud_stairs",
+    "consistency_plus:smooth_mud_wall",
+    "consistency_plus:smooth_mud_gate"
+  ]
+}

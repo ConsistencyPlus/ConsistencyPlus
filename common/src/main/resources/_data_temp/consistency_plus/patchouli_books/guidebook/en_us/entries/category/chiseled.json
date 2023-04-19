@@ -1,0 +1,17 @@
+{
+    "name": "7. Chiseled Blocks",
+    "icon": "minecraft:chiseled_stone_bricks",
+    "category": "consistency_plus:category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Chiseled blocks in Consistency+ are crafted using cut slabs of that material.  They do not have slabs, stairs, walls, or gates."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe":  "minecraft:chiseled_stone_bricks",
+            "recipe2":  "consistency_plus:chiseled_blackstone_crafting"
+        }
+    ],
+    "read_by_default": true
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:gray_dye"
+    },
+    "#": {
+      "item": "consistency_plus:white_concrete_brick_stairs"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:gray_concrete_brick_stairs",
+    "count": 8
+  }
+}

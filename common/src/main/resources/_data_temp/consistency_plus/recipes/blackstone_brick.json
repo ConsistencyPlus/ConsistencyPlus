@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:polished_blackstone_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:blackstone_brick",
+        "count": 4
+    }
+}

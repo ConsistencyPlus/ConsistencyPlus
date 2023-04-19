@@ -1,0 +1,35 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:exposed_copper",
+    "consistency_plus:exposed_copper_slab",
+    "consistency_plus:exposed_copper_stairs",
+    "consistency_plus:exposed_copper_wall",
+    "consistency_plus:exposed_copper_gate",
+    "consistency_plus:exposed_polished_copper",
+    "consistency_plus:exposed_polished_copper_slab",
+    "consistency_plus:exposed_polished_copper_stairs",
+    "consistency_plus:exposed_polished_copper_wall",
+    "consistency_plus:exposed_polished_copper_gate",
+    "consistency_plus:exposed_copper_bricks",
+    "consistency_plus:exposed_copper_brick_slab",
+    "consistency_plus:exposed_copper_brick_stairs",
+    "consistency_plus:exposed_copper_brick_wall",
+    "consistency_plus:exposed_copper_brick_gate",
+    "consistency_plus:exposed_cut_copper",
+    "consistency_plus:exposed_cut_copper_slab",
+    "consistency_plus:exposed_cut_copper_stairs",
+    "consistency_plus:exposed_cut_copper_wall",
+    "consistency_plus:exposed_cut_copper_gate",
+    "minecraft:exposed_cut_copper",
+    "minecraft:exposed_cut_copper_slab",
+    "minecraft:exposed_cut_copper_stairs",
+    "consistency_plus:exposed_copper_tile_wall",
+    "consistency_plus:exposed_copper_tile_gate",
+    "consistency_plus:exposed_copper_pillar",
+    "consistency_plus:exposed_copper_corner_pillar",
+    "consistency_plus:exposed_chiseled_copper",
+    "consistency_plus:exposed_carved_copper"
+
+  ]
+}

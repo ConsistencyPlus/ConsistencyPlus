@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/cut_white_glazed_terracotta",
+    "top": "consistency_plus:block/cut_white_glazed_terracotta",
+    "side": "consistency_plus:block/cut_white_glazed_terracotta"
+  }
+}

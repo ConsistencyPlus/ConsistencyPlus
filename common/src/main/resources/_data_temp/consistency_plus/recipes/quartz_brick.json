@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:quartz_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:quartz_brick",
+        "count": 4
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "consistency_plus:block/template_consistency_wall_side_tall_tri",
+  "textures": {
+    "wall": "minecraft:block/white_glazed_terracotta",
+    "wall_top": "minecraft:block/white_glazed_terracotta",
+    "wall_bottom": "minecraft:block/white_glazed_terracotta"
+  }
+}

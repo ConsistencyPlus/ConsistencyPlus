@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:packed_ice_bricks"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:packed_ice_brick_stairs",
+        "count": 4
+    }
+}

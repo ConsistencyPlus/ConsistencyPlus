@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:deepslate_tiles"
+        },
+        "Y": {
+            "item": "minecraft:deepslate_tile_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:deepslate_tile_gate",
+        "count": 4
+    }
+}

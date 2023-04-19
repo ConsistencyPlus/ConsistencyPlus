@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:weathered_smooth_copper"
+        },
+        "Y": {
+            "item": "consistency_plus:weathered_smooth_copper_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:weathered_smooth_copper_gate",
+        "count": 4
+    }
+}

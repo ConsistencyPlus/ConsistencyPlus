@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X"
+  ],
+  "key": {
+    "X": {
+      "item": "consistency_plus:polished_quartz"
+    }
+  },
+  "result": {
+    "item": "minecraft:quartz_pillar",
+    "count": 2
+  }
+}

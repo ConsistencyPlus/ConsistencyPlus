@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:brown_dye"
+    },
+    "#": {
+      "item": "minecraft:brick_slab"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:brown_terracotta_brick_slab",
+    "count": 8
+  }
+}

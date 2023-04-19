@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:calcite"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:calcite_wall",
+        "count": 6
+    }
+}

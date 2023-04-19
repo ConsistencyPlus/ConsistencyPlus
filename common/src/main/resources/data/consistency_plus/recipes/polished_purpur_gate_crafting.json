@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:polished_purpur"
+        },
+        "Y": {
+            "item": "consistency_plus:polished_purpur_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_purpur_gate",
+        "count": 4
+    }
+}

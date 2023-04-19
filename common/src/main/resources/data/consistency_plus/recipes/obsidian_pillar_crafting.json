@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X",
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:polished_obsidian"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:obsidian_pillar",
+        "count": 2
+    }
+}

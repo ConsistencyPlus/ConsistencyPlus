@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:red_dye"
+    },
+    "#": {
+      "item": "consistency_plus:white_concrete_tile_stairs"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:red_concrete_tile_stairs",
+    "count": 8
+  }
+}

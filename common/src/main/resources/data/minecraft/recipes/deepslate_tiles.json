@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cut_deepslate"
+        }
+    },
+    "result": {
+        "item": "minecraft:deepslate_tiles",
+        "count": 4
+    }
+}

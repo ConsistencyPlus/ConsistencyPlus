@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:cyan_dye"
+    },
+    "#": {
+      "item": "consistency_plus:smooth_white_concrete"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:smooth_cyan_concrete",
+    "count": 8
+  }
+}

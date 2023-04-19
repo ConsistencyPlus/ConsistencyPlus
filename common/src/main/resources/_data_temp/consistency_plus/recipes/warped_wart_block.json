@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:warped_wart"
+        }
+    },
+    "result": {
+        "item": "minecraft:warped_wart_block",
+        "count": 1
+    }
+}

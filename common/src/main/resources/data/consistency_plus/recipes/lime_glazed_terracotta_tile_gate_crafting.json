@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "YXY",
+        "YXY"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:lime_glazed_terracotta_tiles"
+        },
+        "Y": {
+            "item": "consistency_plus:lime_glazed_terracotta_tile_wall"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:lime_glazed_terracotta_tile_gate",
+        "count": 4
+    }
+}

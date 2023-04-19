@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:light_gray_glazed_terracotta"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:light_gray_glazed_terracotta_wall",
+        "count": 6
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "consistency_plus:green_terracotta_brick_wall"
+    },
+    "result": "consistency_plus:green_glazed_terracotta_brick_wall",
+    "count": 1,
+    "experience": 0.1,
+    "cookingtime": 100
+}

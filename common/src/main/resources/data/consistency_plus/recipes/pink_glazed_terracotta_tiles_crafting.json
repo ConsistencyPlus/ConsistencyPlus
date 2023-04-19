@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cut_pink_glazed_terracotta"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:pink_glazed_terracotta_tiles",
+        "count": 4
+    }
+}

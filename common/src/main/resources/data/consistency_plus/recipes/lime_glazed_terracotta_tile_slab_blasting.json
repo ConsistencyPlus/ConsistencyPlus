@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "consistency_plus:lime_terracotta_tile_slab"
+    },
+    "result": "consistency_plus:lime_glazed_terracotta_tile_slab",
+    "count": 1,
+    "experience": 0.1,
+    "cookingtime": 100
+}

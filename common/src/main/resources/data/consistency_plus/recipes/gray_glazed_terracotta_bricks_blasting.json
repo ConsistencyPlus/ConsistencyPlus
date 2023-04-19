@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "consistency_plus:gray_terracotta_bricks"
+    },
+    "result": "consistency_plus:gray_glazed_terracotta_bricks",
+    "count": 1,
+    "experience": 0.1,
+    "cookingtime": 100
+}

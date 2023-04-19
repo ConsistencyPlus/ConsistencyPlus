@@ -6,6 +6,8 @@ import io.github.consistencyplus.consistency_plus.util.BlockData;
 import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -39,8 +41,39 @@ public class ConsistencyPlus {
 		event.register(ForgeRegistries.Keys.ITEMS, helper -> {
 			for (Identifier id : blockDataMap.keySet()) {
 				BlockData data = blockDataMap.get(id);
-				helper.register(id, new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings()));
+				helper.register(id, new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings().group(getItemGroup(data.settings().additionalBlockSettings().itemGroup()))));
 			}
 		});
 	}
+
+	public static ItemGroup getItemGroup(String string) {
+		return switch (string) {
+			case "stones" -> CPLUS_STONES;
+			case "dyables" -> CPLUS_DYABLES;
+			case "misc" -> CPLUS_MISC;
+			default -> CPLUS_STONES;
+		};
+	}
+
+
+	public static final	ItemGroup CPLUS_STONES = new ItemGroup("consistency_plus_stones") {
+		@Override
+		public ItemStack createIcon() {
+			return RegistryObject.create(new Identifier("consistency_plus", "polished_stone"), ForgeRegistries.ITEMS).get().getDefaultStack();
+		}
+	};
+
+	public static final	ItemGroup CPLUS_DYABLES = new ItemGroup("consistency_plus_dyables") {
+		@Override
+		public ItemStack createIcon() {
+			return RegistryObject.create(new Identifier("consistency_plus", "polished_white_terracotta"), ForgeRegistries.ITEMS).get().getDefaultStack();
+		}
+	};
+
+	public static final	ItemGroup CPLUS_MISC = new ItemGroup("consistency_plus_misc") {
+		@Override
+		public ItemStack createIcon() {
+			return RegistryObject.create(new Identifier("consistency_plus", "polished_netherrack"), ForgeRegistries.ITEMS).get().getDefaultStack();
+		}
+	};
 }

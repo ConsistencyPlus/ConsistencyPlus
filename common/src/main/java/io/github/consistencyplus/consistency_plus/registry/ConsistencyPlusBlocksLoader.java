@@ -136,14 +136,19 @@ public final class ConsistencyPlusBlocksLoader {
         json.remove("inherit");
 
 
-        return new BlockData(type, fromJson(json, settings));
+        return new BlockData(type, fromJson(json, settings, setSettings));
     }
 
     private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings) {
-        String renderLayer = null;
-        boolean opacity = true;
-        boolean pistonPush = true;
-        boolean pistonPull = true;
+        return fromJson(json, settings, new SettingsBundle(settings, null, new AdditionalBlockSettings(null,null, null, null)));
+    }
+
+    private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings, SettingsBundle settingsBundle) {
+        String renderLayer = settingsBundle.layer();
+        boolean opacity = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().opacity());
+        boolean pistonPush = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().pistonPush());
+        boolean pistonPull = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().pistonPull());
+        String itemGroup = settingsBundle.additionalBlockSettings().itemGroup();
         for (final var entry : json.entrySet()) {
             final JsonElement value = entry.getValue();
             switch (entry.getKey()) {
@@ -154,18 +159,18 @@ public final class ConsistencyPlusBlocksLoader {
                 case "sounds" -> settings.sounds(parseBlockSounds(value));
                 case "light_level" -> settings.luminance((lum) -> JsonHelper.asInt(value, "light_level"));
                 case "render_layer" -> renderLayer = JsonHelper.asString(value, "render_layer");
-                case "mapColor" -> settings.mapColor(StringToMapColor.stringToMapColor(JsonHelper.asString(value, "mapColor")));
-
+                case "map_color" -> settings.mapColor(StringToMapColor.stringToMapColor(JsonHelper.asString(value, "map_color")));
 
                 // EXTRA SETTINGS
                 case "opaque" -> opacity = JsonHelper.asBoolean(value, "opaque");
-                case "pistonPush" -> pistonPush = JsonHelper.asBoolean(value, "pistonPush");
-                case "pistonPull" -> pistonPull = JsonHelper.asBoolean(value, "pistonPull");
+                case "piston_push" -> pistonPush = JsonHelper.asBoolean(value, "piston_push");
+                case "piston_pull" -> pistonPull = JsonHelper.asBoolean(value, "piston_pull");
+                case "item_group" -> itemGroup = JsonHelper.asString(value, "item_group");
                 default -> throw new IllegalArgumentException("Unknown Consistency Plus Block field " + entry.getKey());
             }
         }
 
-        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull));
+        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull, itemGroup));
     }
 
 }

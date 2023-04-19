@@ -5,11 +5,13 @@ import io.github.consistencyplus.consistency_plus.util.BlockData;
 import net.minecraft.util.Identifier;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 // This class' purpose is to facilitate a way to store FalseBlock entries in a system that is similar to the Vanilla's Registries until they can reach a point where they can be registered safely on loader.
 public class PseudoRegistry {
-    private static final Map<Identifier, BlockData> registry = new HashMap<>();
+    private static final Map<Identifier, BlockData> registry = new LinkedHashMap<>();
     private static boolean initialized = false;
 
     public static void register(Identifier id, BlockData blockData) {

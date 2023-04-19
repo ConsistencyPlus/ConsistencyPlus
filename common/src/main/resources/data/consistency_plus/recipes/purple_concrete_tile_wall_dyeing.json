@@ -10,7 +10,7 @@
       "item": "minecraft:purple_dye"
     },
     "#": {
-      "item": "consistency_plus:white_concrete_tile_wall"
+      "item": "consistency_plus:concrete_tile_wall"
     }
   },
   "result": {

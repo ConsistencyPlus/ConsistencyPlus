@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/concrete_slab"
+    },
+    "type=double": {
+      "model": "consistency_plus:block/concrete"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/concrete_slab_top"
+    }
+  }
+}

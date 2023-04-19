@@ -5,11 +5,11 @@
     ],
     "key": {
         "X": {
-            "item": "minecraft:bricks"
+            "item": "consistency_plus:concrete_bricks"
         }
     },
     "result": {
-        "item": "minecraft:brick",
+        "item": "consistency_plus:concrete_brick",
         "count": 4
     }
 }

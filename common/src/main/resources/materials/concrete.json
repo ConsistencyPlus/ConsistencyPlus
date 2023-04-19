@@ -1,0 +1,89 @@
+{
+  "concrete": {},
+  "concrete_slab": {
+    "type": "slab"
+  },
+  "concrete_stairs": {
+    "type": "stairs"
+  },
+  "concrete_wall": {
+    "type": "wall"
+  },
+  "concrete_gate": {
+    "type": "gate"
+  },
+  "polished_concrete": {},
+  "polished_concrete_slab": {
+    "type": "slab"
+  },
+  "polished_concrete_stairs": {
+    "type": "stairs"
+  },
+  "polished_concrete_wall": {
+    "type": "wall"
+  },
+  "polished_concrete_gate": {
+    "type": "gate"
+  },
+  "smooth_concrete": {},
+  "smooth_concrete_slab": {
+    "type": "slab"
+  },
+  "smooth_concrete_stairs": {
+    "type": "stairs"
+  },
+  "smooth_concrete_wall": {
+    "type": "wall"
+  },
+  "smooth_concrete_gate": {
+    "type": "gate"
+  },
+  "concrete_bricks": {},
+  "concrete_brick_slab": {
+    "type": "slab"
+  },
+  "concrete_brick_stairs": {
+    "type": "stairs"
+  },
+  "concrete_brick_wall": {
+    "type": "wall"
+  },
+  "concrete_brick_gate": {
+    "type": "gate"
+  },
+  "cut_concrete": {},
+  "cut_concrete_slab": {
+    "type": "slab"
+  },
+  "cut_concrete_stairs": {
+    "type": "stairs"
+  },
+  "cut_concrete_wall": {
+    "type": "wall"
+  },
+  "cut_concrete_gate": {
+    "type": "gate"
+  },
+  "concrete_tiles": {},
+  "concrete_tile_slab": {
+    "type": "slab"
+  },
+  "concrete_tile_stairs": {
+    "type": "stairs"
+  },
+  "concrete_tile_wall": {
+    "type": "wall"
+  },
+  "concrete_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_concrete": {
+  },
+  "carved_concrete": {
+  },
+  "concrete_pillar": {
+    "type": "pillar"
+  },
+  "concrete_corner_pillar": {
+  }
+}

@@ -10,7 +10,7 @@
       "item": "minecraft:red_dye"
     },
     "#": {
-      "item": "consistency_plus:cut_white_concrete_wall"
+      "item": "consistency_plus:cut_concrete_wall"
     }
   },
   "result": {

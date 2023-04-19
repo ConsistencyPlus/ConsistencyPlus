@@ -1,6 +1,6 @@
 {
-    "parent": "consistency_plus:block/template_consistency_gate_open",
-    "textures": {
-        "texture": "consistency_plus:block/polished_light_blue_glazed_terracotta"
-    }
+  "parent": "consistency_plus:block/template_consistency_gate_open",
+  "textures": {
+    "texture": "consistency_plus:block/polished_light_blue_glazed_terracotta"
+  }
 }

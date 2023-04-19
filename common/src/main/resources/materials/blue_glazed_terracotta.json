@@ -1,0 +1,90 @@
+{
+  "blue_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "blue_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "blue_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "blue_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_blue_glazed_terracotta": {},
+  "polished_blue_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_blue_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_blue_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_blue_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_blue_glazed_terracotta": {
+    "type": "directional"
+  },
+  "smooth_blue_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_blue_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_blue_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_blue_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "blue_glazed_terracotta_bricks": {},
+  "blue_glazed_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "blue_glazed_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "blue_glazed_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "blue_glazed_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_blue_glazed_terracotta": {},
+  "cut_blue_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_blue_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_blue_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_blue_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "blue_glazed_terracotta_tiles": {},
+  "blue_glazed_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "blue_glazed_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "blue_glazed_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "blue_glazed_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_blue_glazed_terracotta": {
+  },
+  "carved_blue_glazed_terracotta": {
+  },
+  "blue_glazed_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "blue_glazed_terracotta_corner_pillar": {
+  }
+}

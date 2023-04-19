@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_wall_side",
-  "textures": {
-    "wall": "consistency_plus:block/cracked_purpur_bricks"
-  }
-}

@@ -1,0 +1,88 @@
+{
+  "crying_obsidian_slab": {
+    "type": "slab"
+  },
+  "crying_obsidian_stairs": {
+    "type": "stairs"
+  },
+  "crying_obsidian_wall": {
+    "type": "wall"
+  },
+  "crying_obsidian_gate": {
+    "type": "gate"
+  },
+  "polished_crying_obsidian": {},
+  "polished_crying_obsidian_slab": {
+    "type": "slab"
+  },
+  "polished_crying_obsidian_stairs": {
+    "type": "stairs"
+  },
+  "polished_crying_obsidian_wall": {
+    "type": "wall"
+  },
+  "polished_crying_obsidian_gate": {
+    "type": "gate"
+  },
+  "smooth_crying_obsidian": {},
+  "smooth_crying_obsidian_slab": {
+    "type": "slab"
+  },
+  "smooth_crying_obsidian_stairs": {
+    "type": "stairs"
+  },
+  "smooth_crying_obsidian_wall": {
+    "type": "wall"
+  },
+  "smooth_crying_obsidian_gate": {
+    "type": "gate"
+  },
+  "crying_obsidian_bricks": {},
+  "crying_obsidian_brick_slab": {
+    "type": "slab"
+  },
+  "crying_obsidian_brick_stairs": {
+    "type": "stairs"
+  },
+  "crying_obsidian_brick_wall": {
+    "type": "wall"
+  },
+  "crying_obsidian_brick_gate": {
+    "type": "gate"
+  },
+  "cut_crying_obsidian": {},
+  "cut_crying_obsidian_slab": {
+    "type": "slab"
+  },
+  "cut_crying_obsidian_stairs": {
+    "type": "stairs"
+  },
+  "cut_crying_obsidian_wall": {
+    "type": "wall"
+  },
+  "cut_crying_obsidian_gate": {
+    "type": "gate"
+  },
+  "crying_obsidian_tiles": {},
+  "crying_obsidian_tile_slab": {
+    "type": "slab"
+  },
+  "crying_obsidian_tile_stairs": {
+    "type": "stairs"
+  },
+  "crying_obsidian_tile_wall": {
+    "type": "wall"
+  },
+  "crying_obsidian_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_crying_obsidian": {
+  },
+  "carved_crying_obsidian": {
+  },
+  "crying_obsidian_pillar": {
+    "type": "pillar"
+  },
+  "crying_obsidian_corner_pillar": {
+  }
+}

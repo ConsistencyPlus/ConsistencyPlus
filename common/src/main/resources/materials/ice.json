@@ -1,0 +1,124 @@
+{
+  "ice_slab": {
+    "type": "slab",
+    "render_layer": "translucent"
+  },
+  "ice_stairs": {
+    "type": "stairs",
+    "render_layer": "translucent"
+  },
+  "ice_wall": {
+    "type": "wall",
+    "render_layer": "translucent"
+  },
+  "ice_gate": {
+    "type": "gate",
+    "render_layer": "translucent"
+  },
+  "polished_ice": {
+  "render_layer": "translucent"
+  },
+  "polished_ice_slab": {
+    "type": "slab",
+    "render_layer": "translucent"
+  },
+  "polished_ice_stairs": {
+    "type": "stairs",
+    "render_layer": "translucent"
+  },
+  "polished_ice_wall": {
+    "type": "wall",
+    "render_layer": "translucent"
+  },
+  "polished_ice_gate": {
+    "type": "gate",
+    "render_layer": "translucent"
+  },
+  "smooth_ice": {
+  "render_layer": "translucent"
+  },
+  "smooth_ice_slab": {
+    "type": "slab",
+    "render_layer": "translucent"
+  },
+  "smooth_ice_stairs": {
+    "type": "stairs",
+    "render_layer": "translucent"
+  },
+  "smooth_ice_wall": {
+    "type": "wall",
+    "render_layer": "translucent"
+  },
+  "smooth_ice_gate": {
+    "type": "gate",
+    "render_layer": "translucent"
+  },
+  "ice_bricks": {
+  "render_layer": "translucent"
+},
+  "ice_brick_slab": {
+    "type": "slab",
+    "render_layer": "translucent"
+  },
+  "ice_brick_stairs": {
+    "type": "stairs",
+    "render_layer": "translucent"
+  },
+  "ice_brick_wall": {
+    "type": "wall",
+    "render_layer": "translucent"
+  },
+  "ice_brick_gate": {
+    "type": "gate",
+    "render_layer": "translucent"
+  },
+  "cut_ice": {
+  "render_layer": "translucent"
+},
+  "cut_ice_slab": {
+    "type": "slab",
+    "render_layer": "translucent"
+  },
+  "cut_ice_stairs": {
+    "type": "stairs",
+    "render_layer": "translucent"
+  },
+  "cut_ice_wall": {
+    "type": "wall",
+    "render_layer": "translucent"
+  },
+  "cut_ice_gate": {
+    "type": "gate",
+    "render_layer": "translucent"
+  },
+  "ice_tiles": {},
+  "ice_tile_slab": {
+    "type": "slab",
+    "render_layer": "translucent"
+  },
+  "ice_tile_stairs": {
+    "type": "stairs",
+    "render_layer": "translucent"
+  },
+  "ice_tile_wall": {
+    "type": "wall",
+    "render_layer": "translucent"
+  },
+  "ice_tile_gate": {
+    "type": "gate",
+    "render_layer": "translucent"
+  },
+  "chiseled_ice": {
+  "render_layer": "translucent"
+  },
+  "carved_ice": {
+  "render_layer": "translucent"
+  },
+  "ice_pillar": {
+    "type": "pillar",
+    "render_layer": "translucent"
+  },
+  "ice_corner_pillar": {
+  "render_layer": "translucent"
+  }
+}

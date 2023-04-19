@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "": {
-            "model": "consistency_plus:block/polished_orange_glazed_terracotta"
-        }
+  "variants": {
+    "": {
+      "model": "consistency_plus:block/polished_orange_glazed_terracotta"
     }
+  }
 }

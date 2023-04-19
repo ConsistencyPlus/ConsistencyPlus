@@ -1,0 +1,90 @@
+{
+  "red_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "red_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "red_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "red_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_red_glazed_terracotta": {},
+  "polished_red_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_red_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_red_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_red_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_red_glazed_terracotta": {
+    "type": "directional"
+  },
+  "smooth_red_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_red_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_red_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_red_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "red_glazed_terracotta_bricks": {},
+  "red_glazed_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "red_glazed_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "red_glazed_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "red_glazed_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_red_glazed_terracotta": {},
+  "cut_red_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_red_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_red_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_red_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "red_glazed_terracotta_tiles": {},
+  "red_glazed_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "red_glazed_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "red_glazed_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "red_glazed_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_red_glazed_terracotta": {
+  },
+  "carved_red_glazed_terracotta": {
+  },
+  "red_glazed_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "red_glazed_terracotta_corner_pillar": {
+  }
+}

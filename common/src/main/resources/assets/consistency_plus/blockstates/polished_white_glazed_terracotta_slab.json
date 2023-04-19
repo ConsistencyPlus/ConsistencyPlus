@@ -1,13 +1,13 @@
 {
-    "variants": {
-        "type=bottom": {
-            "model": "consistency_plus:block/polished_white_glazed_terracotta_slab"
-        },
-        "type=double": {
-            "model": "consistency_plus:block/polished_white_glazed_terracotta"
-        },
-        "type=top": {
-            "model": "consistency_plus:block/polished_white_glazed_terracotta_slab_top"
-        }
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/polished_white_glazed_terracotta_slab"
+    },
+    "type=double": {
+      "model": "consistency_plus:block/polished_white_glazed_terracotta"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/polished_white_glazed_terracotta_slab_top"
     }
+  }
 }

@@ -1,0 +1,88 @@
+{
+  "obsidian_slab": {
+    "type": "slab"
+  },
+  "obsidian_stairs": {
+    "type": "stairs"
+  },
+  "obsidian_wall": {
+    "type": "wall"
+  },
+  "obsidian_gate": {
+    "type": "gate"
+  },
+  "polished_obsidian": {},
+  "polished_obsidian_slab": {
+    "type": "slab"
+  },
+  "polished_obsidian_stairs": {
+    "type": "stairs"
+  },
+  "polished_obsidian_wall": {
+    "type": "wall"
+  },
+  "polished_obsidian_gate": {
+    "type": "gate"
+  },
+  "smooth_obsidian": {},
+  "smooth_obsidian_slab": {
+    "type": "slab"
+  },
+  "smooth_obsidian_stairs": {
+    "type": "stairs"
+  },
+  "smooth_obsidian_wall": {
+    "type": "wall"
+  },
+  "smooth_obsidian_gate": {
+    "type": "gate"
+  },
+  "obsidian_bricks": {},
+  "obsidian_brick_slab": {
+    "type": "slab"
+  },
+  "obsidian_brick_stairs": {
+    "type": "stairs"
+  },
+  "obsidian_brick_wall": {
+    "type": "wall"
+  },
+  "obsidian_brick_gate": {
+    "type": "gate"
+  },
+  "cut_obsidian": {},
+  "cut_obsidian_slab": {
+    "type": "slab"
+  },
+  "cut_obsidian_stairs": {
+    "type": "stairs"
+  },
+  "cut_obsidian_wall": {
+    "type": "wall"
+  },
+  "cut_obsidian_gate": {
+    "type": "gate"
+  },
+  "obsidian_tiles": {},
+  "obsidian_tile_slab": {
+    "type": "slab"
+  },
+  "obsidian_tile_stairs": {
+    "type": "stairs"
+  },
+  "obsidian_tile_wall": {
+    "type": "wall"
+  },
+  "obsidian_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_obsidian": {
+  },
+  "carved_obsidian": {
+  },
+  "obsidian_pillar": {
+    "type": "pillar"
+  },
+  "obsidian_corner_pillar": {
+  }
+}

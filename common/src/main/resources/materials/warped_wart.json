@@ -28,18 +28,54 @@
   "polished_warped_wart_gate": {
     "type": "gate"
   },
-  "smooth_warped_wart": {},
+  "smooth_warped_wart": {
+    "sounds": {
+      "break": "minecraft:block.nether_wart_block.break",
+      "step": "minecraft:block.nether_wart_block.step",
+      "place": "minecraft:block.nether_wart_block.place",
+      "hit": "minecraft:block.nether_wart_block.hit",
+      "fall": "minecraft:block.nether_wart_block.fall"
+    }
+  },
   "smooth_warped_wart_slab": {
-    "type": "slab"
+    "type": "slab",
+    "sounds": {
+      "break": "minecraft:block.nether_wart_block.break",
+      "step": "minecraft:block.nether_wart_block.step",
+      "place": "minecraft:block.nether_wart_block.place",
+      "hit": "minecraft:block.nether_wart_block.hit",
+      "fall": "minecraft:block.nether_wart_block.fall"
+    }
   },
   "smooth_warped_wart_stairs": {
-    "type": "stairs"
+    "type": "stairs",
+    "sounds": {
+      "break": "minecraft:block.nether_wart_block.break",
+      "step": "minecraft:block.nether_wart_block.step",
+      "place": "minecraft:block.nether_wart_block.place",
+      "hit": "minecraft:block.nether_wart_block.hit",
+      "fall": "minecraft:block.nether_wart_block.fall"
+    }
   },
   "smooth_warped_wart_wall": {
-    "type": "wall"
+    "type": "wall",
+    "sounds": {
+      "break": "minecraft:block.nether_wart_block.break",
+      "step": "minecraft:block.nether_wart_block.step",
+      "place": "minecraft:block.nether_wart_block.place",
+      "hit": "minecraft:block.nether_wart_block.hit",
+      "fall": "minecraft:block.nether_wart_block.fall"
+    }
   },
   "smooth_warped_wart_gate": {
-    "type": "gate"
+    "type": "gate",
+    "sounds": {
+      "break": "minecraft:block.nether_wart_block.break",
+      "step": "minecraft:block.nether_wart_block.step",
+      "place": "minecraft:block.nether_wart_block.place",
+      "hit": "minecraft:block.nether_wart_block.hit",
+      "fall": "minecraft:block.nether_wart_block.fall"
+    }
   },
   "warped_wart_bricks": {},
   "warped_wart_brick_slab": {

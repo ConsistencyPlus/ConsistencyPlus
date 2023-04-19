@@ -1,8 +1,8 @@
 {
-    "parent": "minecraft:block/inner_stairs",
-    "textures": {
-        "bottom": "consistency_plus:block/polished_cyan_glazed_terracotta",
-        "top": "consistency_plus:block/polished_cyan_glazed_terracotta",
-        "side": "consistency_plus:block/polished_cyan_glazed_terracotta"
-    }
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/polished_cyan_glazed_terracotta",
+    "top": "consistency_plus:block/polished_cyan_glazed_terracotta",
+    "side": "consistency_plus:block/polished_cyan_glazed_terracotta"
+  }
 }

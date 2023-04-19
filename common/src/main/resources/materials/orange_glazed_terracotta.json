@@ -1,0 +1,90 @@
+{
+  "orange_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "orange_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "orange_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "orange_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_orange_glazed_terracotta": {},
+  "polished_orange_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_orange_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_orange_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_orange_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_orange_glazed_terracotta": {
+    "type": "directional"
+  },
+  "smooth_orange_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_orange_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_orange_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_orange_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "orange_glazed_terracotta_bricks": {},
+  "orange_glazed_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "orange_glazed_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "orange_glazed_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "orange_glazed_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_orange_glazed_terracotta": {},
+  "cut_orange_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_orange_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_orange_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_orange_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "orange_glazed_terracotta_tiles": {},
+  "orange_glazed_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "orange_glazed_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "orange_glazed_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "orange_glazed_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_orange_glazed_terracotta": {
+  },
+  "carved_orange_glazed_terracotta": {
+  },
+  "orange_glazed_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "orange_glazed_terracotta_corner_pillar": {
+  }
+}

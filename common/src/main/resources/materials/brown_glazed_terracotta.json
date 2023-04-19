@@ -1,0 +1,90 @@
+{
+  "brown_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "brown_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "brown_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "brown_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "polished_brown_glazed_terracotta": {},
+  "polished_brown_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "polished_brown_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "polished_brown_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "polished_brown_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "smooth_brown_glazed_terracotta": {
+    "type": "directional"
+  },
+  "smooth_brown_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "smooth_brown_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "smooth_brown_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "smooth_brown_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "brown_glazed_terracotta_bricks": {},
+  "brown_glazed_terracotta_brick_slab": {
+    "type": "slab"
+  },
+  "brown_glazed_terracotta_brick_stairs": {
+    "type": "stairs"
+  },
+  "brown_glazed_terracotta_brick_wall": {
+    "type": "wall"
+  },
+  "brown_glazed_terracotta_brick_gate": {
+    "type": "gate"
+  },
+  "cut_brown_glazed_terracotta": {},
+  "cut_brown_glazed_terracotta_slab": {
+    "type": "slab"
+  },
+  "cut_brown_glazed_terracotta_stairs": {
+    "type": "stairs"
+  },
+  "cut_brown_glazed_terracotta_wall": {
+    "type": "wall"
+  },
+  "cut_brown_glazed_terracotta_gate": {
+    "type": "gate"
+  },
+  "brown_glazed_terracotta_tiles": {},
+  "brown_glazed_terracotta_tile_slab": {
+    "type": "slab"
+  },
+  "brown_glazed_terracotta_tile_stairs": {
+    "type": "stairs"
+  },
+  "brown_glazed_terracotta_tile_wall": {
+    "type": "wall"
+  },
+  "brown_glazed_terracotta_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_brown_glazed_terracotta": {
+  },
+  "carved_brown_glazed_terracotta": {
+  },
+  "brown_glazed_terracotta_pillar": {
+    "type": "pillar"
+  },
+  "brown_glazed_terracotta_corner_pillar": {
+  }
+}

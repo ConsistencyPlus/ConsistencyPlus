@@ -1,0 +1,88 @@
+{
+  "bedrock_slab": {
+    "type": "slab"
+  },
+  "bedrock_stairs": {
+    "type": "stairs"
+  },
+  "bedrock_wall": {
+    "type": "wall"
+  },
+  "bedrock_gate": {
+    "type": "gate"
+  },
+  "polished_bedrock": {},
+  "polished_bedrock_slab": {
+    "type": "slab"
+  },
+  "polished_bedrock_stairs": {
+    "type": "stairs"
+  },
+  "polished_bedrock_wall": {
+    "type": "wall"
+  },
+  "polished_bedrock_gate": {
+    "type": "gate"
+  },
+  "smooth_bedrock": {},
+  "smooth_bedrock_slab": {
+    "type": "slab"
+  },
+  "smooth_bedrock_stairs": {
+    "type": "stairs"
+  },
+  "smooth_bedrock_wall": {
+    "type": "wall"
+  },
+  "smooth_bedrock_gate": {
+    "type": "gate"
+  },
+  "bedrock_bricks": {},
+  "bedrock_brick_slab": {
+    "type": "slab"
+  },
+  "bedrock_brick_stairs": {
+    "type": "stairs"
+  },
+  "bedrock_brick_wall": {
+    "type": "wall"
+  },
+  "bedrock_brick_gate": {
+    "type": "gate"
+  },
+  "cut_bedrock": {},
+  "cut_bedrock_slab": {
+    "type": "slab"
+  },
+  "cut_bedrock_stairs": {
+    "type": "stairs"
+  },
+  "cut_bedrock_wall": {
+    "type": "wall"
+  },
+  "cut_bedrock_gate": {
+    "type": "gate"
+  },
+  "bedrock_tiles": {},
+  "bedrock_tile_slab": {
+    "type": "slab"
+  },
+  "bedrock_tile_stairs": {
+    "type": "stairs"
+  },
+  "bedrock_tile_wall": {
+    "type": "wall"
+  },
+  "bedrock_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_bedrock": {
+  },
+  "carved_bedrock": {
+  },
+  "bedrock_pillar": {
+    "type": "pillar"
+  },
+  "bedrock_corner_pillar": {
+  }
+}

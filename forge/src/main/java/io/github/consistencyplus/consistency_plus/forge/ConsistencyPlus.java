@@ -75,7 +75,7 @@ public class ConsistencyPlus {
 	public static final	ItemGroup CPLUS_MISC = new ItemGroup("misc") {
 		@Override
 		public ItemStack createIcon() {
-			return RegistryObject.create(new Identifier("consistency_plus", "polished_netherrack"), ForgeRegistries.ITEMS).get().getDefaultStack();
+			return RegistryObject.create(new Identifier("consistency_plus", "polished_purpur"), ForgeRegistries.ITEMS).get().getDefaultStack();
 		}
 	};
 }

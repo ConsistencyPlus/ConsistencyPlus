@@ -8,10 +8,13 @@
   "tuff": {"inherit": "minecraft:tuff", "item_group": "stones"},
   "calcite": {"inherit": "minecraft:calcite", "item_group": "stones"},
   "dripstone": {"inherit": "minecraft:dripstone_block", "item_group": "stones"},
-  "end_stone": {"inherit": "minecraft:end_stone", "item_group": "stones"},
   "sandstone": {"inherit": "minecraft:sandstone", "item_group": "stones"},
   "red_sandstone": {"inherit": "minecraft:red_sandstone", "item_group": "stones"},
   "soul_sandstone": {"inherit": "minecraft:sandstone", "map_color": "brown", "item_group": "stones"},
+  "end_stone": {"inherit": "minecraft:end_stone", "item_group": "stones"},
+  "bedrock": {"inherit": "minecraft:bedrock", "item_group": "stones"},
+
+
   "terracotta": {"inherit": "minecraft:terracotta", "item_group": "dyeables"},
   "red_terracotta": {"inherit": "minecraft:red_terracotta", "item_group": "dyeables"},
   "orange_terracotta": {"inherit": "minecraft:orange_terracotta", "item_group": "dyeables"},
@@ -63,6 +66,8 @@
   "gray_concrete": {"inherit": "minecraft:gray_concrete", "item_group": "dyeables"},
   "black_concrete": {"inherit": "minecraft:black_concrete", "item_group": "dyeables"},
   "brown_concrete": {"inherit": "minecraft:brown_concrete", "item_group": "dyeables"},
+
+
   "netherrack": {"inherit": "minecraft:nether_bricks", "item_group": "misc"},
   "crimson_wart": {"inherit": "minecraft:red_nether_bricks", "item_group": "misc"},
   "warped_wart": {
@@ -70,7 +75,7 @@
     "map_color": "teal",
     "item_group": "misc"
   },
-  "basalt": {"inherit": "minecraft:basalt"},
+  "basalt": {"inherit": "minecraft:basalt", "item_group": "misc"},
   "glowstone": {
     "inherit": "minecraft:glowstone",
     "light_level": 15,
@@ -96,7 +101,6 @@
     "piston_push": false,
     "piston_pull": false,
     "item_group": "misc"
-
   },
   "crying_obsidian": {
     "inherit": "minecraft:crying_obsidian",
@@ -116,6 +120,15 @@
     "map_color": "cyan",
     "item_group": "misc"
   },
+  "copper": {"inherit": "minecraft:copper_block", "item_group": "misc"},
+  "waxed_copper": {"inherit": "minecraft:waxed_copper_block", "item_group": "misc"},
+  "exposed_copper": {"inherit": "minecraft:exposed_copper", "item_group": "misc"},
+  "waxed_exposed_copper": {"inherit": "minecraft:waxed_exposed_copper", "item_group": "misc"},
+  "weathered_copper": {"inherit": "minecraft:weathered_copper", "item_group": "misc"},
+  "waxed_weathered_copper": {"inherit": "minecraft:waxed_weathered_copper", "item_group": "misc"},
+  "oxidized_copper": {"inherit": "minecraft:oxidized_copper", "item_group": "misc"},
+  "waxed_oxidized_copper": {"inherit": "minecraft:waxed_oxidized_copper", "item_group": "misc"},
+
   "snow": {"inherit": "minecraft:snow_block", "item_group": "misc"},
   "ice": {"inherit": "minecraft:ice", "item_group": "misc"},
   "packed_ice": {"inherit": "minecraft:packed_ice", "item_group": "misc"},

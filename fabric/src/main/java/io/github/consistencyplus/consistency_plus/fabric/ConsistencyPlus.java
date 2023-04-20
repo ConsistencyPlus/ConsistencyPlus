@@ -73,6 +73,6 @@ public class ConsistencyPlus implements ModInitializer {
 
 	public static final	ItemGroup CPLUS_DYEABLE = FabricItemGroupBuilder.create(new Identifier("consistency_plus", "dyeable")).icon(() -> Registry.ITEM.get(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete")).getDefaultStack()).build();
 
-	public static final	ItemGroup CPLUS_MISC = FabricItemGroupBuilder.create(new Identifier("consistency_plus", "misc")).icon(() -> Registry.ITEM.get(new Identifier("consistency_plus", "polished_netherrack")).getDefaultStack()).build();
+	public static final	ItemGroup CPLUS_MISC = FabricItemGroupBuilder.create(new Identifier("consistency_plus", "misc")).icon(() -> Registry.ITEM.get(new Identifier("consistency_plus", "polished_purpur")).getDefaultStack()).build();
 
 }

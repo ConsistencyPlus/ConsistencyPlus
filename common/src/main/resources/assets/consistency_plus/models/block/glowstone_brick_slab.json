@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "top": "consistency_plus:block/glowstone_bricks",
+    "bottom": "consistency_plus:block/glowstone_bricks",
+    "side": "consistency_plus:block/glowstone_bricks"
+  }
+}

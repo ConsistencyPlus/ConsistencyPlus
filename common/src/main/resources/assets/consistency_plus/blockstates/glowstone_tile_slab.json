@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "consistency_plus:block/glowstone_tile_slab"
+        },
+        "type=double": {
+            "model": "consistency_plus:block/glowstone_tiles"
+        },
+        "type=top": {
+            "model": "consistency_plus:block/glowstone_tile_slab_top"
+        }
+    }
+}

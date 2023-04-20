@@ -1,0 +1,88 @@
+{
+  "glowstone_slab": {
+    "type": "slab"
+  },
+  "glowstone_stairs": {
+    "type": "stairs"
+  },
+  "glowstone_wall": {
+    "type": "wall"
+  },
+  "glowstone_gate": {
+    "type": "gate"
+  },
+  "polished_glowstone": {},
+  "polished_glowstone_slab": {
+    "type": "slab"
+  },
+  "polished_glowstone_stairs": {
+    "type": "stairs"
+  },
+  "polished_glowstone_wall": {
+    "type": "wall"
+  },
+  "polished_glowstone_gate": {
+    "type": "gate"
+  },
+  "smooth_glowstone": {},
+  "smooth_glowstone_slab": {
+    "type": "slab"
+  },
+  "smooth_glowstone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_glowstone_wall": {
+    "type": "wall"
+  },
+  "smooth_glowstone_gate": {
+    "type": "gate"
+  },
+  "glowstone_bricks": {},
+  "glowstone_brick_slab": {
+    "type": "slab"
+  },
+  "glowstone_brick_stairs": {
+    "type": "stairs"
+  },
+  "glowstone_brick_wall": {
+    "type": "wall"
+  },
+  "glowstone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_glowstone": {},
+  "cut_glowstone_slab": {
+    "type": "slab"
+  },
+  "cut_glowstone_stairs": {
+    "type": "stairs"
+  },
+  "cut_glowstone_wall": {
+    "type": "wall"
+  },
+  "cut_glowstone_gate": {
+    "type": "gate"
+  },
+  "glowstone_tiles": {},
+  "glowstone_tile_slab": {
+    "type": "slab"
+  },
+  "glowstone_tile_stairs": {
+    "type": "stairs"
+  },
+  "glowstone_tile_wall": {
+    "type": "wall"
+  },
+  "glowstone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_glowstone": {
+  },
+  "carved_glowstone": {
+  },
+  "glowstone_pillar": {
+    "type": "pillar"
+  },
+  "glowstone_corner_pillar": {
+  }
+}

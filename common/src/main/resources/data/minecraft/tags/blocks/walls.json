@@ -510,6 +510,12 @@
     "consistency_plus:smooth_packed_mud_wall",
     "consistency_plus:polished_packed_mud_wall",
     "consistency_plus:cut_packed_mud_wall",
-    "consistency_plus:packed_mud_tile_wall"
+    "consistency_plus:packed_mud_tile_wall",
+    "consistency_plus:glowstone_wall",
+    "consistency_plus:smooth_glowstone_wall",
+    "consistency_plus:polished_glowstone_wall",
+    "consistency_plus:glowstone_brick_wall",
+    "consistency_plus:cut_glowstone_wall",
+    "consistency_plus:glowstone_tile_wall"
   ]
 }

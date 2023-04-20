@@ -71,6 +71,26 @@
     "item_group": "misc"
   },
   "basalt": {"inherit": "minecraft:basalt"},
+  "glowstone": {
+    "inherit": "minecraft:glowstone",
+    "light_level": 15,
+    "item_group": "misc"
+  },
+  "quartz": {"inherit": "minecraft:quartz_block", "item_group": "misc"},
+  "bone": {"inherit": "minecraft:bone_block", "item_group": "misc"},
+  "withered_bone": {
+    "inherit": "minecraft:bone_block",
+    "sounds": {
+      "break": "minecraft:block.bone_block.break",
+      "step": "minecraft:block.bone_block.step",
+      "place": "minecraft:block.bone_block.place",
+      "hit": "minecraft:block.bone_block.hit",
+      "fall": "minecraft:block.bone_block.fall",
+      "pitch": 0.5
+    },
+    "map_color": "terracotta_gray",
+    "item_group": "misc"
+  },
   "obsidian": {
     "inherit": "minecraft:obsidian",
     "piston_push": false,
@@ -85,6 +105,7 @@
     "piston_pull": false,
     "item_group": "misc"
   },
+  "purpur": {"inherit": "minecraft:purpur_block", "item_group": "misc"},
   "prismarine": {
     "inherit": "minecraft:prismarine",
     "map_color": "diamond_blue",
@@ -93,22 +114,6 @@
   "dark_prismarine": {
     "inherit": "minecraft:dark_prismarine",
     "map_color": "cyan",
-    "item_group": "misc"
-  },
-  "quartz": {"inherit": "minecraft:quartz_block", "item_group": "misc"},
-  "purpur": {"inherit": "minecraft:purpur_block", "item_group": "misc"},
-  "bone": {"inherit": "minecraft:bone_block", "item_group": "misc"},
-  "withered_bone": {
-    "inherit": "minecraft:bone_block",
-    "sounds": {
-      "break": "minecraft:block.bone_block.break",
-      "step": "minecraft:block.bone_block.step",
-      "place": "minecraft:block.bone_block.place",
-      "hit": "minecraft:block.bone_block.hit",
-      "fall": "minecraft:block.bone_block.fall",
-      "pitch": 0.5
-    },
-    "map_color": "terracotta_gray",
     "item_group": "misc"
   },
   "snow": {"inherit": "minecraft:snow_block", "item_group": "misc"},

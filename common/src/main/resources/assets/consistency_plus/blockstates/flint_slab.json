@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "consistency_plus:block/flint_slab"
+    },
+    "type=double": {
+      "model": "consistency_plus:block/flint_block"
+    },
+    "type=top": {
+      "model": "consistency_plus:block/flint_slab_top"
+    }
+  }
+}

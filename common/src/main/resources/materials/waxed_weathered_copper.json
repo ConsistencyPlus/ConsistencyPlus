@@ -1,81 +1,92 @@
 {
   "waxed_weathered_copper_slab": {
-    "type": "slab"
+    "type": "provided"
   },
   "waxed_weathered_copper_stairs": {
-    "type": "stairs"
+    "type": "provided"
   },
   "waxed_weathered_copper_wall": {
-    "type": "wall"
+    "type": "provided"
   },
   "waxed_weathered_copper_gate": {
-    "type": "gate"
+    "type": "provided"
   },
-  "waxed_weathered_polished_copper": {},
+  "waxed_weathered_polished_copper": {
+    "type": "provided"
+  },
   "waxed_weathered_polished_copper_slab": {
-    "type": "slab"
+    "type": "provided"
   },
   "waxed_weathered_polished_copper_stairs": {
-    "type": "stairs"
+    "type": "provided"
   },
   "waxed_weathered_polished_copper_wall": {
-    "type": "wall"
+    "type": "provided"
   },
   "waxed_weathered_polished_copper_gate": {
-    "type": "gate"
+    "type": "provided"
   },
-  "waxed_weathered_smooth_copper": {},
+  "waxed_weathered_smooth_copper": {
+    "type": "provided"
+  },
   "waxed_weathered_smooth_copper_slab": {
-    "type": "slab"
+    "type": "provided"
   },
   "waxed_weathered_smooth_copper_stairs": {
-    "type": "stairs"
+    "type": "provided"
   },
   "waxed_weathered_smooth_copper_wall": {
-    "type": "wall"
+    "type": "provided"
   },
   "waxed_weathered_smooth_copper_gate": {
-    "type": "gate"
+    "type": "provided"
   },
-  "waxed_weathered_copper_bricks": {},
+  "waxed_weathered_copper_bricks": {
+    "type": "provided"
+  },
   "waxed_weathered_copper_brick_slab": {
-    "type": "slab"
+    "type": "provided"
   },
   "waxed_weathered_copper_brick_stairs": {
-    "type": "stairs"
+    "type": "provided"
   },
   "waxed_weathered_copper_brick_wall": {
-    "type": "wall"
+    "type": "provided"
   },
   "waxed_weathered_copper_brick_gate": {
-    "type": "gate"
+    "type": "provided"
   },
-  "waxed_weathered_cut_copper": {},
+  "waxed_weathered_cut_copper": {
+    "type": "provided"
+  },
   "waxed_weathered_cut_copper_slab": {
-    "type": "slab"
+    "type": "provided"
   },
   "waxed_weathered_cut_copper_stairs": {
-    "type": "stairs"
+    "type": "provided"
   },
   "waxed_weathered_cut_copper_wall": {
-    "type": "wall"
+    "type": "provided"
   },
   "waxed_weathered_cut_copper_gate": {
-    "type": "gate"
+    "type": "provided"
   },
   "waxed_weathered_copper_tile_wall": {
-    "type": "wall"
+    "type": "provided"
   },
   "waxed_weathered_copper_tile_gate": {
-    "type": "gate"
+    "type": "provided"
   },
   "waxed_weathered_chiseled_copper": {
+    "type": "provided"
   },
   "waxed_weathered_carved_copper": {
+    "type": "provided"
   },
   "waxed_weathered_copper_pillar": {
-    "type": "pillar"
+    "type": "provided"
   },
   "waxed_weathered_copper_corner_pillar": {
+    "type": "provided"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "consistency_plus:block/carved_flint",
+    "bottom": "consistency_plus:block/carved_flint",
+    "side": "consistency_plus:block/carved_flint"
+  }
+}

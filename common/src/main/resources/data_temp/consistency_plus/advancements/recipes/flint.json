@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+
+      "consistency_plus:chiseled_flint_crafting",
+      "consistency_plus:carved_flint_crafting",
+      "consistency_plus:cut_flint_crafting",
+      "consistency_plus:cut_flint_gate_crafting",
+      "consistency_plus:cut_flint_slab_crafting",
+      "consistency_plus:cut_flint_stairs_crafting",
+      "consistency_plus:cut_flint_wall_crafting",
+      "consistency_plus:flint_block_crafting",
+      "consistency_plus:flint_crafting",
+      "consistency_plus:flint_brick",
+      "consistency_plus:flint_bricks",
+      "consistency_plus:flint_bricks_crafting",
+      "consistency_plus:flint_corner_pillar",
+      "consistency_plus:flint_gate_crafting",
+      "consistency_plus:flint_pillar_crafting",
+      "consistency_plus:flint_slab_crafting",
+      "consistency_plus:flint_stairs_crafting",
+      "consistency_plus:flint_tiles_crafting",
+      "consistency_plus:flint_tile_gate_crafting",
+      "consistency_plus:flint_tile_slab_crafting",
+      "consistency_plus:flint_tile_stairs_crafting",
+      "consistency_plus:flint_tile_wall_crafting",
+      "consistency_plus:flint_wall_crafting",
+      "consistency_plus:polished_flint_crafting",
+      "consistency_plus:polished_flint_gate_crafting",
+      "consistency_plus:polished_flint_slab_crafting",
+      "consistency_plus:polished_flint_stairs_crafting",
+      "consistency_plus:polished_flint_wall_crafting",
+      "consistency_plus:smooth_flint",
+      "consistency_plus:smooth_flint_gate",
+      "consistency_plus:smooth_flint_gate_crafting",
+      "consistency_plus:smooth_flint_slab",
+      "consistency_plus:smooth_flint_slab_crafting",
+      "consistency_plus:smooth_flint_stairs",
+      "consistency_plus:smooth_flint_stairs_crafting",
+      "consistency_plus:smooth_flint_wall",
+      "consistency_plus:smooth_flint_wall_crafting"
+
+    ]
+  },
+  "criteria": {
+    "has_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+"consistency_plus:cobbled_flint",
+"minecraft:flint"
+]
+          }
+        ]
+      }
+    }
+  }
+}

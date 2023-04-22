@@ -1,93 +1,96 @@
 {
   "copper_slab": {
-    "type": "slab",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_slab",
     "oxidize_into": "consistency_plus:exposed_copper_slab"
   },
   "copper_stairs": {
-    "type": "stairs",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_stairs",
     "oxidize_into": "consistency_plus:exposed_copper_stairs"
   },
   "copper_wall": {
-    "type": "wall",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_wall",
     "oxidize_into": "consistency_plus:exposed_copper_wall"
   },
   "copper_gate": {
-    "type": "gate",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_gate",
     "oxidize_into": "consistency_plus:exposed_copper_gate"
   },
   "polished_copper": {
-  "wax_into": "consistency_plus:waxed_polished_copper",
+    "type": "provided",
+    "wax_into": "consistency_plus:waxed_polished_copper",
     "oxidize_into": "consistency_plus:exposed_polished_copper"
   },
   "polished_copper_slab": {
-    "type": "slab",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_polished_copper_slab",
     "oxidize_into": "consistency_plus:exposed_polished_copper_slab"
   },
   "polished_copper_stairs": {
-    "type": "stairs",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_polished_copper_stairs",
     "oxidize_into": "consistency_plus:exposed_polished_copper_stairs"
   },
   "polished_copper_wall": {
-    "type": "wall",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_polished_copper_wall",
     "oxidize_into": "consistency_plus:exposed_polished_copper_wall"
   },
   "polished_copper_gate": {
-    "type": "gate",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_polished_copper_gate",
     "oxidize_into": "consistency_plus:exposed_polished_copper_gate"
   },
   "smooth_copper": {
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_smooth_copper",
     "oxidize_into": "consistency_plus:exposed_smooth_copper"
   },
   "smooth_copper_slab": {
-    "type": "slab",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_smooth_copper_slab",
     "oxidize_into": "consistency_plus:exposed_smooth_copper_slab"
   },
   "smooth_copper_stairs": {
-    "type": "stairs",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_smooth_copper_stairs",
     "oxidize_into": "consistency_plus:exposed_smooth_copper_stairs"
   },
   "smooth_copper_wall": {
-    "type": "wall",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_smooth_copper_wall",
     "oxidize_into": "consistency_plus:exposed_smooth_copper_wall"
   },
   "smooth_copper_gate": {
-    "type": "gate",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_smooth_copper_gate",
     "oxidize_into": "consistency_plus:exposed_smooth_copper_gate"
   },
   "copper_bricks": {
+    "type": "provided",
   "wax_into": "consistency_plus:waxed_copper_bricks",
     "oxidize_into": "consistency_plus:exposed_copper_bricks"
 },
   "copper_brick_slab": {
-    "type": "slab",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_brick_slab",
     "oxidize_into": "consistency_plus:exposed_copper_brick_slab"
   },
   "copper_brick_stairs": {
-    "type": "stairs",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_brick_stairs",
     "oxidize_into": "consistency_plus:exposed_copper_brick_stairs"
   },
   "copper_brick_wall": {
-    "type": "wall",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_brick_wall",
     "oxidize_into": "consistency_plus:exposed_copper_brick_wall"
   },
   "copper_brick_gate": {
-    "type": "gate",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_brick_gate",
     "oxidize_into": "consistency_plus:exposed_copper_brick_gate"
   },
@@ -96,49 +99,52 @@
     "oxidize_into": "consistency_plus:exposed_cut_copper"
   },
   "cut_copper_slab": {
-    "type": "slab",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_cut_copper_slab",
     "oxidize_into": "consistency_plus:exposed_cut_copper_slab"
   },
   "cut_copper_stairs": {
-    "type": "stairs",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_cut_copper_stairs",
     "oxidize_into": "consistency_plus:exposed_cut_copper_stairs"
   },
   "cut_copper_wall": {
-    "type": "wall",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_cut_copper_wall",
     "oxidize_into": "consistency_plus:exposed_cut_copper_wall"
   },
   "cut_copper_gate": {
-    "type": "gate",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_cut_copper_gate",
     "oxidize_into": "consistency_plus:exposed_cut_copper_gate"
   },
   "copper_tile_wall": {
-    "type": "wall",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_tile_wall",
     "oxidize_into": "consistency_plus:exposed_copper_tile_wall"
   },
   "copper_tile_gate": {
-    "type": "gate",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_tile_gate",
     "oxidize_into": "consistency_plus:exposed_copper_tile_gate"
   },
   "chiseled_copper": {
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_chiseled_copper",
     "oxidize_into": "consistency_plus:exposed_chiseled_copper"
   },
   "carved_copper": {
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_carved_copper",
     "oxidize_into": "consistency_plus:exposed_carved_copper"
   },
   "copper_pillar": {
-    "type": "pillar",
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_pillar",
     "oxidize_into": "consistency_plus:exposed_copper_pillar"
   },
   "copper_corner_pillar": {
+    "type": "provided",
     "wax_into": "consistency_plus:waxed_copper_corner_pillar",
     "oxidize_into": "consistency_plus:exposed_copper_corner_pillar"
   }

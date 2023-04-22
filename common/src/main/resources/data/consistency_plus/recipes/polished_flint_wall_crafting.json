@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:polished_flint"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:polished_flint_wall",
+        "count": 6
+    }
+}

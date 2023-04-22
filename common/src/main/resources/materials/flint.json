@@ -1,0 +1,89 @@
+{
+  "flint_block": {},
+  "flint_slab": {
+    "type": "slab"
+  },
+  "flint_stairs": {
+    "type": "stairs"
+  },
+  "flint_wall": {
+    "type": "wall"
+  },
+  "flint_gate": {
+    "type": "gate"
+  },
+  "polished_flint": {},
+  "polished_flint_slab": {
+    "type": "slab"
+  },
+  "polished_flint_stairs": {
+    "type": "stairs"
+  },
+  "polished_flint_wall": {
+    "type": "wall"
+  },
+  "polished_flint_gate": {
+    "type": "gate"
+  },
+  "smooth_flint": {},
+  "smooth_flint_slab": {
+    "type": "slab"
+  },
+  "smooth_flint_stairs": {
+    "type": "stairs"
+  },
+  "smooth_flint_wall": {
+    "type": "wall"
+  },
+  "smooth_flint_gate": {
+    "type": "gate"
+  },
+  "flint_bricks": {},
+  "flint_brick_slab": {
+    "type": "slab"
+  },
+  "flint_brick_stairs": {
+    "type": "stairs"
+  },
+  "flint_brick_wall": {
+    "type": "wall"
+  },
+  "flint_brick_gate": {
+    "type": "gate"
+  },
+  "cut_flint": {},
+  "cut_flint_slab": {
+    "type": "slab"
+  },
+  "cut_flint_stairs": {
+    "type": "stairs"
+  },
+  "cut_flint_wall": {
+    "type": "wall"
+  },
+  "cut_flint_gate": {
+    "type": "gate"
+  },
+  "flint_tiles": {},
+  "flint_tile_slab": {
+    "type": "slab"
+  },
+  "flint_tile_stairs": {
+    "type": "stairs"
+  },
+  "flint_tile_wall": {
+    "type": "wall"
+  },
+  "flint_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_flint": {
+  },
+  "carved_flint": {
+  },
+  "flint_pillar": {
+    "type": "pillar"
+  },
+  "flint_corner_pillar": {
+  }
+}

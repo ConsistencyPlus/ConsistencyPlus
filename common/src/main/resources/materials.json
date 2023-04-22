@@ -12,6 +12,7 @@
   "red_sandstone": {"inherit": "minecraft:red_sandstone", "item_group": "stones"},
   "soul_sandstone": {"inherit": "minecraft:sandstone", "map_color": "brown", "item_group": "stones"},
   "end_stone": {"inherit": "minecraft:end_stone", "item_group": "stones"},
+  "flint": {"inherit": "minecraft:basalt", "item_group": "stones"},
   "bedrock": {"inherit": "minecraft:bedrock", "item_group": "stones"},
 
 
@@ -130,7 +131,12 @@
   "waxed_oxidized_copper": {"inherit": "minecraft:waxed_oxidized_copper", "item_group": "misc"},
 
   "snow": {"inherit": "minecraft:snow_block", "item_group": "misc"},
-  "ice": {"inherit": "minecraft:ice", "item_group": "misc"},
+  "ice": {
+    "inherit": "minecraft:ice",
+    "item_group": "misc",
+    "opaque": false,
+    "render_layer": "translucent"
+  },
   "packed_ice": {"inherit": "minecraft:packed_ice", "item_group": "misc"},
   "blue_ice": {"inherit": "minecraft:blue_ice", "item_group": "misc"},
   "clay": {"inherit": "minecraft:clay", "item_group": "misc"},

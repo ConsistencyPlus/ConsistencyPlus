@@ -561,6 +561,12 @@
     "consistency_plus:waxed_oxidized_smooth_copper_stairs",
     "consistency_plus:waxed_oxidized_polished_copper_stairs",
     "consistency_plus:waxed_oxidized_copper_brick_stairs",
-    "consistency_plus:waxed_oxidized_cut_copper_stairs"
+    "consistency_plus:waxed_oxidized_cut_copper_stairs",
+    "consistency_plus:flint_stairs",
+    "consistency_plus:smooth_flint_stairs",
+    "consistency_plus:polished_flint_stairs",
+    "consistency_plus:flint_brick_stairs",
+    "consistency_plus:cut_flint_stairs",
+    "consistency_plus:flint_tile_stairs"
   ]
 }

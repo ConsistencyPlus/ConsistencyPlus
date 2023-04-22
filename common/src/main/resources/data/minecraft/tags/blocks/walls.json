@@ -571,7 +571,12 @@
     "consistency_plus:waxed_copper_tile_wall",
     "consistency_plus:waxed_exposed_copper_tile_wall",
     "consistency_plus:waxed_weathered_copper_tile_wall",
-    "consistency_plus:waxed_oxidized_copper_tile_wall"
-
+    "consistency_plus:waxed_oxidized_copper_tile_wall",
+    "consistency_plus:flint_wall",
+    "consistency_plus:smooth_flint_wall",
+    "consistency_plus:polished_flint_wall",
+    "consistency_plus:flint_brick_wall",
+    "consistency_plus:cut_flint_wall",
+    "consistency_plus:flint_tile_wall"
   ]
 }

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:flint_block"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:flint_stairs",
+        "count": 4
+    }
+}

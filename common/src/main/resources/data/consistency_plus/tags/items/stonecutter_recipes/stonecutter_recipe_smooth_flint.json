@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_flint",
+    "consistency_plus:smooth_flint_slab",
+    "consistency_plus:smooth_flint_stairs",
+    "consistency_plus:smooth_flint_wall",
+    "consistency_plus:smooth_flint_gate"
+  ]
+}

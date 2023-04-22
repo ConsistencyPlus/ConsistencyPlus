@@ -1,8 +1,8 @@
 {
     "parent": "minecraft:block/stairs",
     "textures": {
-        "bottom": "consistency_plus:block/blank",
-        "top": "consistency_plus:block/blank",
-        "side": "consistency_plus:block/blank"
+        "bottom": "consistency_plus:block/cobbled_blank",
+        "top": "consistency_plus:block/cobbled_blank",
+        "side": "consistency_plus:block/cobbled_blank"
     }
 }

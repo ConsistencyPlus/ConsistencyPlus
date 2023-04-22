@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_gilded_blackstone",
+    "consistency_plus:smooth_gilded_blackstone_slab",
+    "consistency_plus:smooth_gilded_blackstone_stairs",
+    "consistency_plus:smooth_gilded_blackstone_wall",
+    "consistency_plus:smooth_gilded_blackstone_gate"
+  ]
+}

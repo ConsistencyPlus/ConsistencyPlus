@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XX",
+        "XX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cut_gilded_blackstone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:gilded_blackstone_tiles",
+        "count": 4
+    }
+}

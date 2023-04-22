@@ -1,0 +1,102 @@
+{
+  "gilded_blackstone_slab": {
+    "type": "slab"
+  },
+  "gilded_blackstone_stairs": {
+    "type": "stairs"
+  },
+  "gilded_blackstone_wall": {
+    "type": "wall"
+  },
+  "gilded_blackstone_gate": {
+    "type": "gate"
+  },
+  "polished_gilded_blackstone": {},
+  "polished_gilded_blackstone_slab": {
+    "type": "slab"
+  },
+  "polished_gilded_blackstone_stairs": {
+    "type": "stairs"
+  },
+  "polished_gilded_blackstone_wall": {
+    "type": "wall"
+  },
+  "polished_gilded_blackstone_gate": {
+    "type": "gate"
+  },
+  "smooth_gilded_blackstone": {},
+  "smooth_gilded_blackstone_slab": {
+    "type": "slab"
+  },
+  "smooth_gilded_blackstone_stairs": {
+    "type": "stairs"
+  },
+  "smooth_gilded_blackstone_wall": {
+    "type": "wall"
+  },
+  "smooth_gilded_blackstone_gate": {
+    "type": "gate"
+  },
+  "gilded_blackstone_bricks": {},
+  "gilded_blackstone_brick_slab": {
+    "type": "slab"
+  },
+  "gilded_blackstone_brick_stairs": {
+    "type": "stairs"
+  },
+  "gilded_blackstone_brick_wall": {
+    "type": "wall"
+  },
+  "gilded_blackstone_brick_gate": {
+    "type": "gate"
+  },
+  "cut_gilded_blackstone": {},
+  "cut_gilded_blackstone_slab": {
+    "type": "slab"
+  },
+  "cut_gilded_blackstone_stairs": {
+    "type": "stairs"
+  },
+  "cut_gilded_blackstone_wall": {
+    "type": "wall"
+  },
+  "cut_gilded_blackstone_gate": {
+    "type": "gate"
+  },
+  "gilded_blackstone_tiles": {},
+  "gilded_blackstone_tile_slab": {
+    "type": "slab"
+  },
+  "gilded_blackstone_tile_stairs": {
+    "type": "stairs"
+  },
+  "gilded_blackstone_tile_wall": {
+    "type": "wall"
+  },
+  "gilded_blackstone_tile_gate": {
+    "type": "gate"
+  },
+  "chiseled_gilded_blackstone": {
+  },
+  "carved_gilded_blackstone": {
+  },
+  "gilded_blackstone_pillar": {
+    "type": "pillar"
+  },
+  "gilded_blackstone_corner_pillar": {
+  },
+  "cobbled_gilded_blackstone": {
+  },
+  "cobbled_gilded_blackstone_slab": {
+    "type": "slab"
+  },
+  "cobbled_gilded_blackstone_stairs": {
+    "type": "stairs"
+  },
+  "cobbled_gilded_blackstone_wall": {
+    "type": "wall"
+  },
+  "cobbled_gilded_blackstone_gate": {
+    "type": "gate"
+  }
+}

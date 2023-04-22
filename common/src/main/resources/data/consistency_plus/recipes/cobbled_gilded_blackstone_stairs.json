@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "consistency_plus:cobbled_gilded_blackstone"
+        }
+    },
+    "result": {
+        "item": "consistency_plus:cobbled_gilded_blackstone_stairs",
+        "count": 4
+    }
+}

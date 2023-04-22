@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "consistency_plus:block/gilded_blackstone_pillar_top"
+    }
+}

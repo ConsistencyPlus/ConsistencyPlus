@@ -577,6 +577,13 @@
     "consistency_plus:polished_flint_wall",
     "consistency_plus:flint_brick_wall",
     "consistency_plus:cut_flint_wall",
-    "consistency_plus:flint_tile_wall"
+    "consistency_plus:flint_tile_wall",
+    "consistency_plus:gilded_blackstone_wall",
+    "consistency_plus:smooth_gilded_blackstone_wall",
+    "consistency_plus:polished_gilded_blackstone_wall",
+    "consistency_plus:gilded_blackstone_brick_wall",
+    "consistency_plus:cut_gilded_blackstone_wall",
+    "consistency_plus:gilded_blackstone_tile_wall",
+    "consistency_plus:cobbled_gilded_blackstone_wall"
   ]
 }

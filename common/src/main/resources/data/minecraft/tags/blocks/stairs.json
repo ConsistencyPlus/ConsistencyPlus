@@ -567,6 +567,13 @@
     "consistency_plus:polished_flint_stairs",
     "consistency_plus:flint_brick_stairs",
     "consistency_plus:cut_flint_stairs",
-    "consistency_plus:flint_tile_stairs"
+    "consistency_plus:flint_tile_stairs",
+    "consistency_plus:gilded_blackstone_stairs",
+    "consistency_plus:smooth_gilded_blackstone_stairs",
+    "consistency_plus:polished_gilded_blackstone_stairs",
+    "consistency_plus:gilded_blackstone_brick_stairs",
+    "consistency_plus:cut_gilded_blackstone_stairs",
+    "consistency_plus:gilded_blackstone_tile_stairs",
+    "consistency_plus:cobbled_gilded_blackstone_stairs"
   ]
 }

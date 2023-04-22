@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "consistency_plus:block/smooth_gilded_blackstone",
+    "top": "consistency_plus:block/smooth_gilded_blackstone",
+    "side": "consistency_plus:block/smooth_gilded_blackstone"
+  }
+}

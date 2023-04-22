@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/wall_inventory",
+    "textures": {
+        "wall": "consistency_plus:block/gilded_blackstone_tiles"
+    }
+}

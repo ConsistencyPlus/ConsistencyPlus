@@ -2,6 +2,7 @@
   "stone": {"inherit": "minecraft:stone", "item_group": "stones"},
   "deepslate": {"inherit": "minecraft:deepslate", "item_group": "stones"},
   "blackstone": {"inherit": "minecraft:blackstone", "item_group": "stones"},
+  "gilded_blackstone": {"inherit": "minecraft:gilded_blackstone", "item_group": "stones"},
   "andesite": {"inherit": "minecraft:andesite", "item_group": "stones"},
   "diorite": {"inherit": "minecraft:diorite", "item_group": "stones"},
   "granite": {"inherit": "minecraft:granite", "item_group": "stones"},

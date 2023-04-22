@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -56,23 +57,6 @@ public final class ConsistencyPlusBlocksLoader {
     }
     /*public static Map<String, BlockData> exportBlockData() {
         return BLOCK_DATA;
-    }*/
-
-    //@Environment(EnvType.CLIENT)
-    /*public static Map<BlockData, RenderLayer> exportMapedRenderLayer() {
-        Map<BlockData, RenderLayer> layerMappedBlockData = new HashMap<>();
-        .forEach((key, value) -> {
-            final Identifier id = new Identifier("consistency_plus", key);
-            if (value.renderLayer() != null) {
-                final RenderLayer renderLayer = renderLayers.get(value.renderLayer());
-                if (renderLayer == null) {
-                    throw new IllegalArgumentException("Unknown render_layer " + value.renderLayer());
-                }
-                layerMappedBlockData.put(value, renderLayer);
-            }
-        });
-
-        return layerMappedBlockData;
     }*/
 
     private static BlockSoundGroup parseBlockSounds(JsonElement sounds) {
@@ -140,12 +124,11 @@ public final class ConsistencyPlusBlocksLoader {
     }
 
     private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings) {
-        return fromJson(json, settings, new SettingsBundle(settings, null, new AdditionalBlockSettings(null,null, null, null, null, null)));
+        return fromJson(json, settings, new SettingsBundle(settings, null, new AdditionalBlockSettings(null, null, null, null, null)));
     }
 
     private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings, SettingsBundle settingsBundle) {
         String renderLayer = settingsBundle.layer();
-        boolean opacity = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().opacity());
         boolean pistonPush = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().pistonPush());
         boolean pistonPull = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().pistonPull());
         String itemGroup = settingsBundle.additionalBlockSettings().itemGroup();
@@ -162,9 +145,11 @@ public final class ConsistencyPlusBlocksLoader {
                 case "light_level" -> settings.luminance((lum) -> JsonHelper.asInt(value, "light_level"));
                 case "render_layer" -> renderLayer = JsonHelper.asString(value, "render_layer");
                 case "map_color" -> settings.mapColor(StringToMapColor.stringToMapColor(JsonHelper.asString(value, "map_color")));
+                case "opaque" -> {
+                    if (!JsonHelper.asBoolean(value, "opaque")) settings.nonOpaque();
+                }
 
                 // EXTRA SETTINGS
-                case "opaque" -> opacity = JsonHelper.asBoolean(value, "opaque");
                 case "piston_push" -> pistonPush = JsonHelper.asBoolean(value, "piston_push");
                 case "piston_pull" -> pistonPull = JsonHelper.asBoolean(value, "piston_pull");
                 case "item_group" -> itemGroup = JsonHelper.asString(value, "item_group");
@@ -174,7 +159,7 @@ public final class ConsistencyPlusBlocksLoader {
             }
         }
 
-        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull, itemGroup, oxidizeToBlock, waxToBlock));
+        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(pistonPush, pistonPull, itemGroup, oxidizeToBlock, waxToBlock));
     }
 
 }

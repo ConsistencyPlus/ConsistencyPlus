@@ -1,16 +1,23 @@
 package io.github.consistencyplus.consistency_plus.forge;
 
+import com.google.common.base.Suppliers;
+import com.google.common.collect.BiMap;
+import com.google.common.collect.ImmutableBiMap;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.PseudoRegistry;
+import io.github.consistencyplus.consistency_plus.util.AdditionalBlockSettings;
 import io.github.consistencyplus.consistency_plus.util.BlockData;
+import io.github.consistencyplus.consistency_plus.util.BlockShape;
 import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Oxidizable;
+import net.minecraft.item.*;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.util.registry.Registry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -18,11 +25,18 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.lang.reflect.Field;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 @Mod(ConsistencyPlusMain.MOD_ID)
 public class ConsistencyPlus {
 	LoaderHelper forge = new LoaderVariant();
+	public static Map<Identifier, Identifier> oxidizationMap = new HashMap<>();
+	public static Map<Identifier, Identifier> waxingMap = new HashMap<>();
+	public static Map<Identifier, String> blockToRenderLayers = new HashMap<>();
 
 	public ConsistencyPlus() {
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -36,6 +50,10 @@ public class ConsistencyPlus {
 		event.register(ForgeRegistries.Keys.BLOCKS, helper -> {
 			for (Identifier id : blockDataMap.keySet()) {
 				BlockData data = blockDataMap.get(id);
+				if (data.block() == BlockShape.PROVIDED) {
+					accessRegistry(id, data, helper);
+					continue;
+				}
 				helper.register(id, data.block().initFunc().apply(data.settings().settings()));
 			}
 		});
@@ -43,9 +61,64 @@ public class ConsistencyPlus {
 		event.register(ForgeRegistries.Keys.ITEMS, helper -> {
 			for (Identifier id : blockDataMap.keySet()) {
 				BlockData data = blockDataMap.get(id);
+				/*if (data.block() == BlockShape.PROVIDED) {
+					helper.register(id, new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings().group(getItemGroup(data.settings().additionalBlockSettings().itemGroup()))));
+					continue;
+				}*/
 				helper.register(id, new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings().group(getItemGroup(data.settings().additionalBlockSettings().itemGroup()))));
 			}
 		});
+
+		finish();
+	}
+
+	public void accessRegistry(Identifier id, BlockData data, RegisterEvent.RegisterHelper<Block> helper) {
+		AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
+		Function<AbstractBlock.Settings, Block> blockFunc = CPlusBlocks.registry.get(id);
+		helper.register(id, data.block().initFunc().apply(data.settings().settings()));
+
+		if (addBloSet.oxidizeToBlock() != null) {
+			oxidizationMap.put(id, new Identifier("consistency_plus", addBloSet.oxidizeToBlock()));
+		}
+
+		if (addBloSet.waxToBlock() != null) {
+			waxingMap.put(id, new Identifier("consistency_plus", addBloSet.waxToBlock()));
+		}
+	}
+
+	// this is yoinked from Create, which is licensed under MIT, so this is as well.
+	// https://github.com/Creators-of-Create/Create/blob/mc1.18/dev/src/main/java/com/simibubi/create/foundation/block/CopperRegistries.java
+	public static void finish() {
+		try {
+			Field delegateField = Oxidizable.OXIDATION_LEVEL_INCREASES.getClass().getDeclaredField("delegate");
+			delegateField.setAccessible(true);
+			// Get the original delegate to prevent an infinite loop
+			@SuppressWarnings("unchecked")
+			Supplier<BiMap<Block, Block>> originalWeatheringMapDelegate = (Supplier<BiMap<Block, Block>>) delegateField.get(Oxidizable.OXIDATION_LEVEL_INCREASES);
+			com.google.common.base.Supplier<BiMap<Block, Block>> weatheringMapDelegate = () -> {
+				ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.builder();
+				builder.putAll(originalWeatheringMapDelegate.get());
+				ConsistencyPlus.oxidizationMap.forEach((lesserID, greaterID) -> {
+					builder.put(RegistryObject.create(lesserID, ForgeRegistries.BLOCKS).get(), RegistryObject.create(greaterID, ForgeRegistries.BLOCKS).get());
+				});
+				return builder.build();
+			};
+			// Replace the memoized supplier's delegate, since interface fields cannot be reassigned
+			delegateField.set(Oxidizable.OXIDATION_LEVEL_INCREASES, weatheringMapDelegate);
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to initialize Consistency+ copper blocks", e);
+		}
+
+		Supplier<BiMap<Block, Block>> originalWaxableMapSupplier = HoneycombItem.UNWAXED_TO_WAXED_BLOCKS;
+		Supplier<BiMap<Block, Block>> waxableMapSupplier = Suppliers.memoize(() -> {
+			ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.builder();
+			builder.putAll(originalWaxableMapSupplier.get());
+			ConsistencyPlus.waxingMap.forEach((unwaxedID, waxedID) -> {
+				builder.put(RegistryObject.create(unwaxedID, ForgeRegistries.BLOCKS).get(), RegistryObject.create(waxedID, ForgeRegistries.BLOCKS).get());
+			});
+			return builder.build();
+		});
+		HoneycombItem.UNWAXED_TO_WAXED_BLOCKS = waxableMapSupplier;
 	}
 
 	public static ItemGroup getItemGroup(String string) {

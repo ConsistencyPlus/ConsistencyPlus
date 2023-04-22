@@ -1,19 +1,43 @@
 package io.github.consistencyplus.consistency_plus.forge;
 
+import com.google.common.collect.ImmutableMap;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusClientMain;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import net.minecraft.block.BlockRenderType;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.RenderLayers;
+import net.minecraft.util.Identifier;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.ForgeRenderTypes;
+import net.minecraftforge.client.RenderTypeGroup;
+import net.minecraftforge.client.RenderTypeHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Map;
+import java.util.Objects;
 
 @Mod.EventBusSubscriber(modid = ConsistencyPlusMain.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ConsistencyPlusClient {
 	@SubscribeEvent
 	public static void onInitializeClient(final FMLClientSetupEvent event) {
 		event.enqueueWork(() -> ConsistencyPlusClientMain.init(ModelPredicateProviderRegistry::register));
+
+		Map<String, RenderLayer> renderLayers = ImmutableMap.<String, RenderLayer>builder()
+				.put("cutout", RenderLayer.getCutout())
+				.put("translucent", RenderLayer.getTranslucent())
+				.build();
+
+		for (Identifier id : ConsistencyPlus.blockToRenderLayers.keySet()) {
+			RenderLayers.setRenderLayer(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), Objects.requireNonNull(renderLayers.get(ConsistencyPlus.blockToRenderLayers.get(id))));
+		}
 	}
+
+
 
 	// based on Create's copper legacy pack impl
 	/*@SubscribeEvent

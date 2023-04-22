@@ -1,17 +1,19 @@
 package io.github.consistencyplus.consistency_plus.fabric;
 
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.util.AdditionalBlockSettings;
 import io.github.consistencyplus.consistency_plus.util.BlockData;
+import io.github.consistencyplus.consistency_plus.util.BlockShape;
 import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import io.github.consistencyplus.consistency_plus.registry.PseudoRegistry;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricMaterialBuilder;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -29,6 +31,8 @@ public class ConsistencyPlus implements ModInitializer {
 	//private static final Identifier WITHER_SKELE_LOOT = EntityType.WITHER_SKELETON.getLootTableId();
 	LoaderHelper fabric = new LoaderVariant();
 
+	public static Map<Block, String> blockToRenderLayers = new HashMap<>();
+
 	Map<Block, String> oxidizationMap = new HashMap<>();
 	Map<Block, String> waxingMap = new HashMap<>();
 
@@ -38,21 +42,41 @@ public class ConsistencyPlus implements ModInitializer {
 		Map<Identifier, BlockData> blockDataMap = PseudoRegistry.export();
 		for (Identifier id : blockDataMap.keySet()) {
 			BlockData data = blockDataMap.get(id);
-			AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
-			Block block = Registry.register(Registry.BLOCK, id, data.block().initFunc().apply(data.settings().settings()));
-			Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(getItemGroup(addBloSet.itemGroup()))));
-			if (addBloSet.oxidizeToBlock() != null) {
-				oxidizationMap.put(block, addBloSet.oxidizeToBlock());
+			if (data.block() == BlockShape.PROVIDED) {
+				accessRegistry(id, data);
+				continue;
 			}
-			if (addBloSet.waxToBlock() != null) {
-				waxingMap.put(block, addBloSet.waxToBlock());
+
+			FabricBlockSettings blockSettings = FabricBlockSettings.copyOf(data.settings().settings());
+			AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
+
+			Block block = Registry.register(Registry.BLOCK, id, data.block().initFunc().apply(blockSettings));
+			Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(getItemGroup(addBloSet.itemGroup()))));
+			if (fabric.getIsClient() && data.settings().layer() != null) {
+				blockToRenderLayers.put(block, data.settings().layer());
 			}
 		}
+
 		for (Block block : oxidizationMap.keySet()) {
 			OxidizableBlocksRegistry.registerOxidizableBlockPair(block, Registry.BLOCK.get(new Identifier(oxidizationMap.get(block))));
 		}
 		for (Block block : waxingMap.keySet()) {
 			OxidizableBlocksRegistry.registerWaxableBlockPair(block, Registry.BLOCK.get(new Identifier(waxingMap.get(block))));
+		}
+	}
+
+	public void accessRegistry(Identifier id, BlockData data) {
+		AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
+		Function<AbstractBlock.Settings, Block> blockFunc = CPlusBlocks.registry.get(id);
+		Block block = Registry.register(Registry.BLOCK, id, blockFunc.apply(data.settings().settings()));
+		Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(getItemGroup(addBloSet.itemGroup()))));
+
+		if (addBloSet.oxidizeToBlock() != null) {
+			oxidizationMap.put(block, addBloSet.oxidizeToBlock());
+		}
+
+		if (addBloSet.waxToBlock() != null) {
+			waxingMap.put(block, addBloSet.waxToBlock());
 		}
 	}
 

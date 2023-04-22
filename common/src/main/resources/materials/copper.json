@@ -44,7 +44,7 @@
     "oxidize_into": "consistency_plus:exposed_polished_copper_gate"
   },
   "smooth_copper": {
-  "wax_into": "consistency_plus:waxed_smooth_copper",
+    "wax_into": "consistency_plus:waxed_smooth_copper",
     "oxidize_into": "consistency_plus:exposed_smooth_copper"
   },
   "smooth_copper_slab": {

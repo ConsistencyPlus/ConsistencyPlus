@@ -1,0 +1,115 @@
+{
+  "oxidized_copper_slab": {
+    "type": "slab",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_slab"
+  },
+  "oxidized_copper_stairs": {
+    "type": "stairs",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_stairs"
+  },
+  "oxidized_copper_wall": {
+    "type": "wall",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_wall"
+  },
+  "oxidized_copper_gate": {
+    "type": "gate",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_gate"
+  },
+  "oxidized_polished_copper": {
+    "wax_into": "consistency_plus:waxed_oxidized_polished_copper"
+  },
+  "oxidized_polished_copper_slab": {
+    "type": "slab",
+    "wax_into": "consistency_plus:waxed_oxidized_polished_copper_slab"
+  },
+  "oxidized_polished_copper_stairs": {
+    "type": "stairs",
+    "wax_into": "consistency_plus:waxed_oxidized_polished_copper_stairs"
+  },
+  "oxidized_polished_copper_wall": {
+    "type": "wall",
+    "wax_into": "consistency_plus:waxed_oxidized_polished_copper_wall"
+  },
+  "oxidized_polished_copper_gate": {
+    "type": "gate",
+    "wax_into": "consistency_plus:waxed_oxidized_polished_copper_gate"
+  },
+  "oxidized_smooth_copper": {
+    "wax_into": "consistency_plus:waxed_oxidized_smooth_copper"
+  },
+  "oxidized_smooth_copper_slab": {
+    "type": "slab",
+    "wax_into": "consistency_plus:waxed_oxidized_smooth_copper_slab"
+  },
+  "oxidized_smooth_copper_stairs": {
+    "type": "stairs",
+    "wax_into": "consistency_plus:waxed_oxidized_smooth_copper_stairs"
+  },
+  "oxidized_smooth_copper_wall": {
+    "type": "wall",
+    "wax_into": "consistency_plus:waxed_oxidized_smooth_copper_wall"
+  },
+  "oxidized_smooth_copper_gate": {
+    "type": "gate",
+    "wax_into": "consistency_plus:waxed_oxidized_smooth_copper_gate"
+  },
+  "oxidized_copper_bricks": {
+    "wax_into": "consistency_plus:waxed_oxidized_copper_bricks"
+},
+  "oxidized_copper_brick_slab": {
+    "type": "slab",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_brick_slab"
+  },
+  "oxidized_copper_brick_stairs": {
+    "type": "stairs",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_brick_stairs"
+  },
+  "oxidized_copper_brick_wall": {
+    "type": "wall",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_brick_wall"
+  },
+  "oxidized_copper_brick_gate": {
+    "type": "gate",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_brick_gate"
+  },
+  "oxidized_cut_copper": {
+    "wax_into": "consistency_plus:waxed_oxidized_cut_copper"
+  },
+  "oxidized_cut_copper_slab": {
+    "type": "slab",
+    "wax_into": "consistency_plus:waxed_oxidized_cut_copper_slab"
+  },
+  "oxidized_cut_copper_stairs": {
+    "type": "stairs",
+    "wax_into": "consistency_plus:waxed_oxidized_cut_copper_stairs"
+  },
+  "oxidized_cut_copper_wall": {
+    "type": "wall",
+    "wax_into": "consistency_plus:waxed_oxidized_cut_copper_wall"
+  },
+  "oxidized_cut_copper_gate": {
+    "type": "gate",
+    "wax_into": "consistency_plus:waxed_oxidized_cut_copper_gate"
+  },
+  "oxidized_copper_tile_wall": {
+    "type": "wall",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_tile_wall"
+  },
+  "oxidized_copper_tile_gate": {
+    "type": "gate",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_tile_gate"
+  },
+  "oxidized_chiseled_copper": {
+    "wax_into": "consistency_plus:waxed_oxidized_chiseled_copper"
+  },
+  "oxidized_carved_copper": {
+    "wax_into": "consistency_plus:waxed_oxidized_carved_copper"
+  },
+  "oxidized_copper_pillar": {
+    "type": "pillar",
+    "wax_into": "consistency_plus:waxed_oxidized_copper_pillar"
+  },
+  "oxidized_copper_corner_pillar": {
+    "wax_into": "consistency_plus:waxed_oxidized_copper_corner_pillar"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "waxed_exposed_copper_slab": {
+    "type": "slab"
+  },
+  "waxed_exposed_copper_stairs": {
+    "type": "stairs"
+  },
+  "waxed_exposed_copper_wall": {
+    "type": "wall"
+  },
+  "waxed_exposed_copper_gate": {
+    "type": "gate"
+  },
+  "waxed_exposed_polished_copper": {},
+  "waxed_exposed_polished_copper_slab": {
+    "type": "slab"
+  },
+  "waxed_exposed_polished_copper_stairs": {
+    "type": "stairs"
+  },
+  "waxed_exposed_polished_copper_wall": {
+    "type": "wall"
+  },
+  "waxed_exposed_polished_copper_gate": {
+    "type": "gate"
+  },
+  "waxed_exposed_smooth_copper": {},
+  "waxed_exposed_smooth_copper_slab": {
+    "type": "slab"
+  },
+  "waxed_exposed_smooth_copper_stairs": {
+    "type": "stairs"
+  },
+  "waxed_exposed_smooth_copper_wall": {
+    "type": "wall"
+  },
+  "waxed_exposed_smooth_copper_gate": {
+    "type": "gate"
+  },
+  "waxed_exposed_copper_bricks": {},
+  "waxed_exposed_copper_brick_slab": {
+    "type": "slab"
+  },
+  "waxed_exposed_copper_brick_stairs": {
+    "type": "stairs"
+  },
+  "waxed_exposed_copper_brick_wall": {
+    "type": "wall"
+  },
+  "waxed_exposed_copper_brick_gate": {
+    "type": "gate"
+  },
+  "waxed_exposed_cut_copper": {},
+  "waxed_exposed_cut_copper_slab": {
+    "type": "slab"
+  },
+  "waxed_exposed_cut_copper_stairs": {
+    "type": "stairs"
+  },
+  "waxed_exposed_cut_copper_wall": {
+    "type": "wall"
+  },
+  "waxed_exposed_cut_copper_gate": {
+    "type": "gate"
+  },
+  "waxed_exposed_copper_tile_wall": {
+    "type": "wall"
+  },
+  "waxed_exposed_copper_tile_gate": {
+    "type": "gate"
+  },
+  "waxed_exposed_chiseled_copper": {
+  },
+  "waxed_exposed_carved_copper": {
+  },
+  "waxed_exposed_copper_pillar": {
+    "type": "pillar"
+  },
+  "waxed_exposed_copper_corner_pillar": {
+  }
+}

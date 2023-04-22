@@ -140,7 +140,7 @@ public final class ConsistencyPlusBlocksLoader {
     }
 
     private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings) {
-        return fromJson(json, settings, new SettingsBundle(settings, null, new AdditionalBlockSettings(null,null, null, null)));
+        return fromJson(json, settings, new SettingsBundle(settings, null, new AdditionalBlockSettings(null,null, null, null, null, null)));
     }
 
     private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings, SettingsBundle settingsBundle) {
@@ -149,6 +149,8 @@ public final class ConsistencyPlusBlocksLoader {
         boolean pistonPush = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().pistonPush());
         boolean pistonPull = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().pistonPull());
         String itemGroup = settingsBundle.additionalBlockSettings().itemGroup();
+        String oxidizeToBlock = settingsBundle.additionalBlockSettings().oxidizeToBlock();
+        String waxToBlock = settingsBundle.additionalBlockSettings().waxToBlock();
         for (final var entry : json.entrySet()) {
             final JsonElement value = entry.getValue();
             switch (entry.getKey()) {
@@ -166,11 +168,13 @@ public final class ConsistencyPlusBlocksLoader {
                 case "piston_push" -> pistonPush = JsonHelper.asBoolean(value, "piston_push");
                 case "piston_pull" -> pistonPull = JsonHelper.asBoolean(value, "piston_pull");
                 case "item_group" -> itemGroup = JsonHelper.asString(value, "item_group");
+                case "oxidize_into" -> oxidizeToBlock = JsonHelper.asString(value, "oxidize_into");
+                case "wax_into" -> waxToBlock = JsonHelper.asString(value, "wax_into");
                 default -> throw new IllegalArgumentException("Unknown Consistency Plus Block field " + entry.getKey());
             }
         }
 
-        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull, itemGroup));
+        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(opacity, pistonPush, pistonPull, itemGroup, oxidizeToBlock, waxToBlock));
     }
 
 }

@@ -8,7 +8,9 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.random.Random;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -49,31 +51,31 @@ public class ConsistencyPlus {
 	public static ItemGroup getItemGroup(String string) {
 		return switch (string) {
 			case "stones" -> CPLUS_STONES;
-			case "dyables" -> CPLUS_DYABLES;
+			case "dyeable" -> CPLUS_DYABLE;
 			case "misc" -> CPLUS_MISC;
 			default -> CPLUS_STONES;
 		};
 	}
 
 
-	public static final	ItemGroup CPLUS_STONES = new ItemGroup("consistency_plus_stones") {
+	public static final	ItemGroup CPLUS_STONES = new ItemGroup("stones") {
 		@Override
 		public ItemStack createIcon() {
 			return RegistryObject.create(new Identifier("consistency_plus", "polished_stone"), ForgeRegistries.ITEMS).get().getDefaultStack();
 		}
 	};
 
-	public static final	ItemGroup CPLUS_DYABLES = new ItemGroup("consistency_plus_dyables") {
+	public static final	ItemGroup CPLUS_DYABLE = new ItemGroup("dyeable") {
 		@Override
 		public ItemStack createIcon() {
-			return RegistryObject.create(new Identifier("consistency_plus", "polished_white_terracotta"), ForgeRegistries.ITEMS).get().getDefaultStack();
+			return RegistryObject.create(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete"), ForgeRegistries.ITEMS).get().getDefaultStack();
 		}
 	};
 
-	public static final	ItemGroup CPLUS_MISC = new ItemGroup("consistency_plus_misc") {
+	public static final	ItemGroup CPLUS_MISC = new ItemGroup("misc") {
 		@Override
 		public ItemStack createIcon() {
-			return RegistryObject.create(new Identifier("consistency_plus", "polished_netherrack"), ForgeRegistries.ITEMS).get().getDefaultStack();
+			return RegistryObject.create(new Identifier("consistency_plus", "polished_purpur"), ForgeRegistries.ITEMS).get().getDefaultStack();
 		}
 	};
 }

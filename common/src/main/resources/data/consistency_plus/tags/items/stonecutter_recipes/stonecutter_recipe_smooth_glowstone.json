@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "consistency_plus:smooth_glowstone",
+    "consistency_plus:smooth_glowstone_slab",
+    "consistency_plus:smooth_glowstone_stairs",
+    "consistency_plus:smooth_glowstone_wall",
+    "consistency_plus:smooth_glowstone_gate"
+  ]
+}

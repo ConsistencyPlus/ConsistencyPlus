@@ -9,21 +9,26 @@ version = "${version}"
 displayName = "Consistency Plus"
 displayURL = "https://github.com/ConsistencyPlus/ConsistencyPlus"
 authors = [
-    "Carter",
-    "Siuol",
-    "Tropheus Jay",
-    "IMS",
-    "Devious",
-    "Emmaffle",
-    "Ibex",
-    "Tyler",
-    "Pepper",
-    "Devin",
-    "Jingy",
-    "Seska",
-    "RDKRACZ",
-    "MobButcher",
-    "Dodomos"
+    "Carter [Project Lead]",
+    "Siuol [Assistant Project Lead]",
+    "Tropheus Jay [Assistant Project Lead]",
+    "IMS [Former Developer]",
+    "Devious [Generator Developer]",
+    "Emmaffle [Developer]",
+    "Andrew Grant [Developer]",
+    "Blodhgarm [Contributor]",
+    "Ibex [Contributor]",
+    "Tyler [Contributor]",
+    "Pepper [Contributor]",
+    "Devin [Contributor]",
+    "Pythagoras341 [Texture Artist]",
+    "CLASSICA! [Texture Artist]",
+    "Jingy [Texture Contributor]",
+    "Seska [Texture Contributor]",
+    "ParanormalChicken [Translator/Texture Contributor]",
+    "RDKRACZ [Translator]",
+    "MobButcher [Translator]",
+    "Dodomos [Translator]"
 ]
 description = '''
 Builders rejoice; we've added all the missing block variants (and a whole lot more)!

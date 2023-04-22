@@ -43,28 +43,22 @@
       }
     },
     {
-      "name": "Ibex [Developer]",
-      "contact": {
-        "Discord": "Ibex#3641"
-      }
-    },
-    {
-      "name": "Pythagoras_314 [Texture Artist]",
-      "contact": {
-        "Discord": "Pythagoras_314#5176"
-      }
-    },
-    {
-      "name": "CLASSICA! [Texture Artist]",
-      "contact": {
-        "Discord": "CLASSICA!#1993"
-      }
-    },
-    {
-      "name": "Andrew Grant [Contributor]",
+      "name": "Andrew Grant [Developer]",
       "contact": {
         "Github": "Andrew6rant",
         "Discord": "AndrewIsntCool#5829"
+      }
+    },
+    {
+      "name": "Blodhgarm [Contributor]",
+      "contact": {
+        "Discord": "    Blodhgarm#6853"
+      }
+    },
+    {
+      "name": "Ibex [Contributor]",
+      "contact": {
+        "Discord": "Ibex#3641"
       }
     },
     {
@@ -86,31 +80,49 @@
       }
     },
     {
-      "name": "Jingy [Contributor]",
+      "name": "Pythagoras_314 [Texture Artist]",
+      "contact": {
+        "Discord": "Pythagoras_314#5176"
+      }
+    },
+    {
+      "name": "CLASSICA! [Texture Artist]",
+      "contact": {
+        "Discord": "CLASSICA!#1993"
+      }
+    },
+    {
+      "name": "Jingy [Texture Contributor]",
       "contact": {
         "Discord": "Jingy#0001"
       }
     },
     {
-      "name": "Seska [Contributor]",
+      "name": "Seska [Texture Contributor]",
       "contact": {
         "Discord": "seska#6343"
       }
     },
     {
-      "name": "RDKRACZ [Translations]",
+      "name": "ParanormalChicken [Translator/Texture Contributor]",
+      "contact": {
+        "Discord": "ParanormalChicken#1756"
+      }
+    },
+    {
+      "name": "RDKRACZ [Translator]",
       "contact": {
         "Discord": "K0RR#3476"
       }
     },
     {
-      "name": "MobButcher [Translations]",
+      "name": "MobButcher [Translator]",
       "contact": {
         "Discord": "MobButcher#5874"
       }
     },
     {
-      "name": "Dodomos [Translations]",
+      "name": "Dodomos [Translator]",
       "contact": {
         "Discord": "dodomos#4353"
       }

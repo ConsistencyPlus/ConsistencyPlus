@@ -9,6 +9,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -25,21 +27,17 @@ import java.util.function.Supplier;
 public abstract class PlayerEntityMixin extends LivingEntity {
 	protected PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
 		super(entityType, world);
-	}/*
+	}
 	@Shadow
 	public abstract ItemStack getEquippedStack(EquipmentSlot slot);
 
 	@Unique
-	private static final Map<EquipmentSlot, Supplier<Item>> cPlus$turtleEquipment = Map.of(
-			EquipmentSlot.HEAD, () -> Items.TURTLE_HELMET,
-			EquipmentSlot.CHEST, CPlusItems.TURTLE_CHESTPLATE,
-			EquipmentSlot.LEGS, CPlusItems.TURTLE_LEGGINGS,
-			EquipmentSlot.FEET, CPlusItems.TURTLE_BOOTS
+	private static final Map<EquipmentSlot, Item> cPlus$turtleEquipment = Map.of(
+			EquipmentSlot.HEAD, Items.TURTLE_HELMET,
+			EquipmentSlot.CHEST, Registry.ITEM.get(new Identifier("consistency_plus", "turtle_chestplate")),
+			EquipmentSlot.LEGS, Registry.ITEM.get(new Identifier("consistency_plus", "turtle_leggings")),
+			EquipmentSlot.FEET, Registry.ITEM.get(new Identifier("consistency_plus", "turtle_boots"))
 	);
-
-	protected PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
-		super(entityType, world);
-	}
 	
 	@Inject(at = @At("TAIL"), method = "updateTurtleHelmet()V")
 	private void cPlus$updateTurtleArmor(CallbackInfo ci) {
@@ -48,7 +46,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 			return;
 
 		// turtle boots give dolphin's grace
-		if (getEquippedStack(EquipmentSlot.FEET).isOf(CPlusItems.TURTLE_BOOTS.get())) {
+		if (getEquippedStack(EquipmentSlot.FEET).isOf(Registry.ITEM.get(new Identifier("consistency_plus", "turtle_boots")))) {
 			addStatusEffect(new StatusEffectInstance(
 					StatusEffects.DOLPHINS_GRACE,
 					200,
@@ -61,10 +59,10 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
 		// full armor set gives resistance
 		boolean allEquipped = true;
-		for (Entry<EquipmentSlot, Supplier<Item>> entry : cPlus$turtleEquipment.entrySet()) {
+		for (Entry<EquipmentSlot, Item> entry : cPlus$turtleEquipment.entrySet()) {
 			EquipmentSlot slot = entry.getKey();
-			Supplier<Item> item = entry.getValue();
-			if (!getEquippedStack(slot).isOf(item.get()))
+			Item item = entry.getValue();
+			if (!getEquippedStack(slot).isOf(item))
 				allEquipped = false;
 		}
 		if (allEquipped) {
@@ -77,5 +75,5 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 					true
 			));
 		}
-	}*/
+	}
 }

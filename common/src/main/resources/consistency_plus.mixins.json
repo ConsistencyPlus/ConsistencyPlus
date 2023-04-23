@@ -8,7 +8,7 @@
     "ConduitBlockEntityMixin",
     "LivingEntityMixin",
     "PistonBlockMixin",
-    "PlantBlockMixin"
+    "PlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

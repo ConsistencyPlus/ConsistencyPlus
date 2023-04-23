@@ -54,6 +54,9 @@ public class ConsistencyPlus {
 					accessRegistry(id, data, helper);
 					continue;
 				}
+				if (forge.getIsClient() && data.settings().layer() != null) {
+					blockToRenderLayers.put(id, data.settings().layer());
+				}
 				helper.register(id, data.block().initFunc().apply(data.settings().settings()));
 			}
 		});
@@ -67,6 +70,11 @@ public class ConsistencyPlus {
 				}*/
 				helper.register(id, new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings().group(getItemGroup(data.settings().additionalBlockSettings().itemGroup()))));
 			}
+
+			for (Identifier id : CPlusBlocks.itemRegistry.keySet()) {
+				helper.register(id, CPlusBlocks.itemRegistry.get(id).apply(new Item.Settings()));
+			}
+
 		});
 
 		finish();
@@ -75,14 +83,14 @@ public class ConsistencyPlus {
 	public void accessRegistry(Identifier id, BlockData data, RegisterEvent.RegisterHelper<Block> helper) {
 		AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
 		Function<AbstractBlock.Settings, Block> blockFunc = CPlusBlocks.registry.get(id);
-		helper.register(id, data.block().initFunc().apply(data.settings().settings()));
+		helper.register(id, blockFunc.apply(data.settings().settings()));
 
 		if (addBloSet.oxidizeToBlock() != null) {
-			oxidizationMap.put(id, new Identifier("consistency_plus", addBloSet.oxidizeToBlock()));
+			oxidizationMap.put(id, new Identifier(addBloSet.oxidizeToBlock()));
 		}
 
 		if (addBloSet.waxToBlock() != null) {
-			waxingMap.put(id, new Identifier("consistency_plus", addBloSet.waxToBlock()));
+			waxingMap.put(id, new Identifier(addBloSet.waxToBlock()));
 		}
 	}
 
@@ -131,21 +139,21 @@ public class ConsistencyPlus {
 	}
 
 
-	public static final	ItemGroup CPLUS_STONES = new ItemGroup("stones") {
+	public static final	ItemGroup CPLUS_STONES = new ItemGroup("consistency_plus.stones") {
 		@Override
 		public ItemStack createIcon() {
 			return RegistryObject.create(new Identifier("consistency_plus", "polished_stone"), ForgeRegistries.ITEMS).get().getDefaultStack();
 		}
 	};
 
-	public static final	ItemGroup CPLUS_DYABLE = new ItemGroup("dyeable") {
+	public static final	ItemGroup CPLUS_DYABLE = new ItemGroup("consistency_plus.dyeable") {
 		@Override
 		public ItemStack createIcon() {
 			return RegistryObject.create(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete"), ForgeRegistries.ITEMS).get().getDefaultStack();
 		}
 	};
 
-	public static final	ItemGroup CPLUS_MISC = new ItemGroup("misc") {
+	public static final	ItemGroup CPLUS_MISC = new ItemGroup("consistency_plus.misc") {
 		@Override
 		public ItemStack createIcon() {
 			return RegistryObject.create(new Identifier("consistency_plus", "polished_purpur"), ForgeRegistries.ITEMS).get().getDefaultStack();

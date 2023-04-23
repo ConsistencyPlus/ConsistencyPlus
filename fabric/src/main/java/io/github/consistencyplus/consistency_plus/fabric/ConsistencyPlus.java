@@ -63,6 +63,10 @@ public class ConsistencyPlus implements ModInitializer {
 		for (Block block : waxingMap.keySet()) {
 			OxidizableBlocksRegistry.registerWaxableBlockPair(block, Registry.BLOCK.get(new Identifier(waxingMap.get(block))));
 		}
+
+		for (Identifier id : CPlusBlocks.itemRegistry.keySet()) {
+			Registry.register(Registry.ITEM, id, CPlusBlocks.itemRegistry.get(id).apply(new Item.Settings()));
+		}
 	}
 
 	public void accessRegistry(Identifier id, BlockData data) {

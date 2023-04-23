@@ -4,18 +4,28 @@ import io.github.consistencyplus.consistency_plus.blocks.CPlusStairsBlock;
 import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableGateBlock;
 import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizablePillarBlock;
 import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableWallBlock;
+import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class CPlusBlocks {
     public static Map<Identifier, Function<AbstractBlock.Settings, Block>> registry = new TreeMap<>();
+    public static Map<Identifier, Function<Item.Settings, Item>> itemRegistry = new LinkedHashMap<>();
+    //block only
+    //item only
+
     public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "dirt_stairs"));
     public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "dirt_stairs"));
     public static final TagKey<Block> VALID_PORTAL_BLOCKS = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "valid_portal_blocks"));
@@ -35,6 +45,7 @@ public class CPlusBlocks {
         waxedWeatheredExposedCopper();
         oxidizedCopper();
         waxedOxidizedExposedCopper();
+        miscItems();
     }
 
     private static void copper() {
@@ -299,6 +310,21 @@ public class CPlusBlocks {
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_carved_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_pillar"), PillarBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_corner_pillar"), Block::new);
+    }
+
+    private static void miscItems() {
+
+         itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registry.BLOCK.get(new Identifier("consistency_plus", "warped_wart")), new Item.Settings().group(ItemGroup.MISC)));
+	     itemRegistry.put(new Identifier("consistency_plus", "copper_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+	     itemRegistry.put(new Identifier("consistency_plus", "netherite_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC).fireproof()));
+	     itemRegistry.put(new Identifier("consistency_plus", "netherite_horse_armor"), (a) -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
+	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone_meal"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+
+	// 🐢
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_chestplate"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT)));
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_leggings"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT)));
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_boots"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT)));
     }
 
     public static boolean isValidPortalBlock(BlockState state) {

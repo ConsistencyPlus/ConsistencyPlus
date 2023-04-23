@@ -10,6 +10,8 @@ import net.fabricmc.api.Environment;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Material;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
@@ -79,6 +81,7 @@ public final class ConsistencyPlusBlocksLoader {
 
     private static void loadMaterials(JsonObject json) {
         for (final var entry : json.entrySet()) {
+            boolean hasBrick = true;
             JsonObject jsonCool = entry.getValue().getAsJsonObject();
             final AbstractBlock.Settings settings = jsonCool.has("inherit")
                     ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(jsonCool, "inherit")))
@@ -89,12 +92,19 @@ public final class ConsistencyPlusBlocksLoader {
                     .requiresTool();
             //json.remove("inherit");
             jsonCool.remove("inherit");
+            if (jsonCool.has("has_brick")) {
+                hasBrick = JsonHelper.getBoolean(jsonCool, "has_brick");
+            }
             SettingsBundle settingsBundle = fromJson(jsonCool, settings);
 
             try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("materials/" + entry.getKey() + ".json"), StandardCharsets.UTF_8)) {
                 load(JsonHelper.deserialize(reader), settingsBundle);
             } catch (IOException e) {
                 ConsistencyPlusMain.LOGGER.error("Failed to load block data", e);
+            }
+
+            if (hasBrick) {
+                CPlusBlocks.itemRegistry.put(new Identifier("consistency_plus", entry.getKey() + "_brick"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
             }
         }
     }

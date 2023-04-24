@@ -43,11 +43,6 @@
             "type": "patchouli:spotlight",
             "item": "consistency_plus:netherite_horse_armor",
             "text": "Consistency+ also adds Netherite Horse Armor, which is made by upgrading diamond horse armor in the smithing table.  It is immune to fire and lava as expected, and can be recovered in the unfortunate event of your steed taking a lava bath."
-        },
-        {
-            "type": "patchouli:crafting",
-            "recipe": "consistency_plus:glow_dye",
-            "text": "Consistency+ changes how glow ink works slightly, making it craftable into glow dye.  Glow dye can also be made using glowstone and glow berries."
         }
     ],
     "read_by_default": true

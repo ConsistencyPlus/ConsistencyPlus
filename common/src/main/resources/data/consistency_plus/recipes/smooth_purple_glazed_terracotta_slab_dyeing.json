@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:purple_dye"
+    },
+    "#": {
+      "item": "consistency_plus:smooth_glazed_terracotta_slab"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:smooth_purple_glazed_terracotta_slab",
+    "count": 8
+  }
+}

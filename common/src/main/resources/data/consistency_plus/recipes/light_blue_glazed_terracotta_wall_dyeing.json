@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "#": {
+      "item": "consistency_plus:glazed_terracotta_wall"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:light_blue_glazed_terracotta_wall",
+    "count": 8
+  }
+}

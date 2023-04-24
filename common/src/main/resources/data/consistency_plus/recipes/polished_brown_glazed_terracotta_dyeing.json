@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:brown_dye"
+    },
+    "#": {
+      "item": "consistency_plus:polished_glazed_terracotta"
+    }
+  },
+  "result": {
+    "item": "consistency_plus:polished_brown_glazed_terracotta",
+    "count": 8
+  }
+}

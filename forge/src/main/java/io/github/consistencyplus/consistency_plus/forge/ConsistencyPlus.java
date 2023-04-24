@@ -37,6 +37,10 @@ public class ConsistencyPlus {
 	public static Map<Identifier, Identifier> oxidizationMap = new HashMap<>();
 	public static Map<Identifier, Identifier> waxingMap = new HashMap<>();
 	public static Map<Identifier, String> blockToRenderLayers = new HashMap<>();
+	public static Map<Identifier, BlockData> blockDataMap;
+
+
+	public static boolean hasAccessedRegistry = false;
 
 	public ConsistencyPlus() {
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -45,8 +49,11 @@ public class ConsistencyPlus {
 	@SubscribeEvent
 	public void onInitialize(RegisterEvent event) {
 		ConsistencyPlusMain.init(forge);
-		Map<Identifier, BlockData> blockDataMap = PseudoRegistry.export();
 
+		if (!hasAccessedRegistry) {
+			blockDataMap = PseudoRegistry.export();
+			hasAccessedRegistry = true;
+		}
 		event.register(ForgeRegistries.Keys.BLOCKS, helper -> {
 			for (Identifier id : blockDataMap.keySet()) {
 				BlockData data = blockDataMap.get(id);

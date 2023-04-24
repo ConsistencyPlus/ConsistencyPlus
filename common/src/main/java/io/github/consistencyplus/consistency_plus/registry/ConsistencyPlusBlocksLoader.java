@@ -95,6 +95,7 @@ public final class ConsistencyPlusBlocksLoader {
             if (jsonCool.has("has_brick")) {
                 hasBrick = JsonHelper.getBoolean(jsonCool, "has_brick");
             }
+            jsonCool.remove("has_brick");
             SettingsBundle settingsBundle = fromJson(jsonCool, settings);
 
             try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("materials/" + entry.getKey() + ".json"), StandardCharsets.UTF_8)) {

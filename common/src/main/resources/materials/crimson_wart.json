@@ -28,54 +28,18 @@
   "polished_crimson_wart_gate": {
     "type": "gate"
   },
-  "smooth_crimson_wart": {
-    "sounds": {
-      "break": "minecraft:block.nether_wart_block.break",
-      "step": "minecraft:block.nether_wart_block.step",
-      "place": "minecraft:block.nether_wart_block.place",
-      "hit": "minecraft:block.nether_wart_block.hit",
-      "fall": "minecraft:block.nether_wart_block.fall"
-    }
-  },
+  "smooth_crimson_wart": {},
   "smooth_crimson_wart_slab": {
-    "type": "slab",
-    "sounds": {
-      "break": "minecraft:block.nether_wart_block.break",
-      "step": "minecraft:block.nether_wart_block.step",
-      "place": "minecraft:block.nether_wart_block.place",
-      "hit": "minecraft:block.nether_wart_block.hit",
-      "fall": "minecraft:block.nether_wart_block.fall"
-    }
+    "type": "slab"
   },
   "smooth_crimson_wart_stairs": {
-    "type": "stairs",
-    "sounds": {
-      "break": "minecraft:block.nether_wart_block.break",
-      "step": "minecraft:block.nether_wart_block.step",
-      "place": "minecraft:block.nether_wart_block.place",
-      "hit": "minecraft:block.nether_wart_block.hit",
-      "fall": "minecraft:block.nether_wart_block.fall"
-    }
+    "type": "stairs"
   },
   "smooth_crimson_wart_wall": {
-    "type": "wall",
-    "sounds": {
-      "break": "minecraft:block.nether_wart_block.break",
-      "step": "minecraft:block.nether_wart_block.step",
-      "place": "minecraft:block.nether_wart_block.place",
-      "hit": "minecraft:block.nether_wart_block.hit",
-      "fall": "minecraft:block.nether_wart_block.fall"
-    }
+    "type": "wall"
   },
   "smooth_crimson_wart_gate": {
-    "type": "gate",
-    "sounds": {
-      "break": "minecraft:block.nether_wart_block.break",
-      "step": "minecraft:block.nether_wart_block.step",
-      "place": "minecraft:block.nether_wart_block.place",
-      "hit": "minecraft:block.nether_wart_block.hit",
-      "fall": "minecraft:block.nether_wart_block.fall"
-    }
+    "type": "gate"
   },
   "crimson_wart_brick_gate": {
     "type": "gate"

@@ -3086,8 +3086,6 @@
   "block.consistency_plus.mycelium_slab": "supa pi ma soko",
   "block.consistency_plus.mycelium_stairs": "leko sewi pi ma soko",
   "block.consistency_plus.mycelium_wall": "sinpin pi ma soko",
-
-  "nubert.tooltip.error": "mi pakala. o toki ni tawa kulupu Consistency+.",
   
   "block.consistency_plus.polished_pink_glazed_terracotta_gate:": "sinpin palisa pi kiwen namako pi loje walo pi selo pona",
   "block.consistency_plus.smooth_pink_glazed_terracotta:": "kiwen namako pi loje walo pi selo sama",
@@ -3296,11 +3294,6 @@
   "block.consistency_plus.concrete_stairs:": "leko sewi pi kiwen kule",
   "block.consistency_plus.concrete_wall:": "sinpin pi kiwen kule",
   "block.consistency_plus.concrete_gate:": "sinpin palisa pi kiwen kule",
-  "block.consistency_plus.cobbled_concrete:": "kiwen kule nena",
-  "block.consistency_plus.cobbled_concrete_slab:": "supa pi kiwen kule nena",
-  "block.consistency_plus.cobbled_concrete_stairs:": "leko sewi pi kiwen kule nena",
-  "block.consistency_plus.cobbled_concrete_wall:": "sinpin pi kiwen kule nena",
-  "block.consistency_plus.cobbled_concrete_gate:": "sinpin palisa pi kiwen kule nena",
   "block.consistency_plus.polished_concrete:": "kiwen kule pi selo pona",
   "block.consistency_plus.polished_concrete_slab:": "supa pi kiwen kule pi selo pona",
   "block.consistency_plus.polished_concrete_stairs:": "leko sewi pi kiwen kule pi selo pona",

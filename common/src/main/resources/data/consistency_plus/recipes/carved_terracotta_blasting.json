@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "consistency_plus:carved_clay"
+    },
+    "result": "consistency_plus:carved_terracotta",
+    "count": 1,
+    "experience": 0.1,
+    "cookingtime": 100
+}

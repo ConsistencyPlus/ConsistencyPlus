@@ -3,10 +3,10 @@ Translation Statuses:
 English-US (Base) - Obviously up to date
 English (Non-US Variants) - Unmanaged. Up to date with 0.4.x, however this one being behind only causes issues for blocks where vanilla lang that is changed, or where slight spelling alterations occur.
 Polish - Managed by RDK. Up to date to 0.3.0-RC1. 04.22.21
-Russian - Managed by MobButcher. Up to date as of 0.5.1. 09.04.23
-Ukrainian - Managed by MobButcher. Up to date as of 0.5.1. 09.04.23
+Russian - Managed by MobButcher. Up to date as of 0.5.1. 09.05.23
+Ukrainian - Managed by MobButcher. Up to date as of 0.5.1. 09.05.23
 
-English (Upside-Down) - Managed by MobButcher. Up to date as of 0.5.1. 09.04.23
+English (Upside-Down) - Managed by MobButcher. Up to date as of 0.5.1. 09.05.23
 Lolcat - Unmanaged. Pretty much every string would need to manually be created rather than using find/replace programs like we did for some of the other meme languages
 Shakespearian english - Unmanaged. Should be up to date with 0.4.x at least.
 Pirate Speak - Unmanaged - The file exists but no strings are translated.  Might be doable via find and replace, however it probably would need the same treatment as lolcat
@@ -56,4 +56,7 @@ MobButcher - Updated Ukrainian, Russian, and Upside-Down to whatever is the late
 Also, I went ahead at replaced all of the dates here to dd.mm.yy. Fight me. <3
 P.S. Why Consistency+ is at 0.5.1 still? :thonk:
 - 09.04.23
+
+MobButcher — Updated Ukrainian, Russian, and Upside-Down once again.
+- 09.05.23
 

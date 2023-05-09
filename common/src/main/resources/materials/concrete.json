@@ -1,4 +1,7 @@
 {
+  "concrete_powder": {
+    "type": "provided"
+  },
   "concrete": {},
   "concrete_slab": {
     "type": "slab"

@@ -3,6 +3,7 @@ package io.github.consistencyplus.consistency_plus.forge;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableBiMap;
+import com.mojang.serialization.Codec;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.PseudoRegistry;
@@ -13,14 +14,21 @@ import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Oxidizable;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.item.*;
+import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.registry.Registry;
+import net.minecraftforge.common.data.GlobalLootModifierProvider;
+import net.minecraftforge.common.loot.IGlobalLootModifier;
+import net.minecraftforge.common.loot.LootTableIdCondition;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
@@ -28,6 +36,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -39,11 +48,15 @@ public class ConsistencyPlus {
 	public static Map<Identifier, String> blockToRenderLayers = new HashMap<>();
 	public static Map<Identifier, BlockData> blockDataMap;
 
+	private static final DeferredRegister<Codec<? extends IGlobalLootModifier>> GLOBAL_LOOT = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, "consistency_plus");
+
+	private static final RegistryObject<Codec<WitheredBonesModifier>> CPLUS_WITHERED_BONES = GLOBAL_LOOT.register("withered_bones", WitheredBonesModifier.CODEC);
 
 	public static boolean hasAccessedRegistry = false;
 
 	public ConsistencyPlus() {
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		GLOBAL_LOOT.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
 	@SubscribeEvent
@@ -70,6 +83,7 @@ public class ConsistencyPlus {
 
 		event.register(ForgeRegistries.Keys.ITEMS, helper -> {
 			for (Identifier id : blockDataMap.keySet()) {
+				if (Objects.equals(id.getPath(), "warped_wart")) continue;
 				BlockData data = blockDataMap.get(id);
 				/*if (data.block() == BlockShape.PROVIDED) {
 					helper.register(id, new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings().group(getItemGroup(data.settings().additionalBlockSettings().itemGroup()))));
@@ -85,6 +99,13 @@ public class ConsistencyPlus {
 		});
 
 		finish();
+
+
+	}
+
+	@SubscribeEvent
+	public static void lootEvent(GatherDataEvent event) {
+		event.getGenerator().addProvider(event.includeServer(), new DataProvider(event.getGenerator(), "consistency_plus"));
 	}
 
 	public void accessRegistry(Identifier id, BlockData data, RegisterEvent.RegisterHelper<Block> helper) {
@@ -166,4 +187,17 @@ public class ConsistencyPlus {
 			return RegistryObject.create(new Identifier("consistency_plus", "polished_purpur"), ForgeRegistries.ITEMS).get().getDefaultStack();
 		}
 	};
+
+	private static class DataProvider extends GlobalLootModifierProvider {
+		public DataProvider(DataGenerator output, String modid) {
+			super(output, modid);
+		}
+
+		@Override
+		protected void start() {
+			add("withered_bones", new WitheredBonesModifier(new LootCondition[] {
+					LootTableIdCondition.builder(new Identifier("entities/wither_skeleton")).build()
+			}));
+		}
+	}
 }

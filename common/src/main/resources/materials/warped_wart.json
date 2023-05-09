@@ -1,4 +1,8 @@
 {
+  "warped_wart_plant": {
+    "type": "provided",
+    "inherit": "minecraft:nether_wart"
+  },
   "warped_wart_slab": {
     "type": "slab",
     "inherit": "minecraft:warped_wart_block"

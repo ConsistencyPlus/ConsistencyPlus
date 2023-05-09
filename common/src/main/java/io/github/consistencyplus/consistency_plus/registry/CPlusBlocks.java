@@ -1,6 +1,7 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
 import io.github.consistencyplus.consistency_plus.blocks.CPlusStairsBlock;
+import io.github.consistencyplus.consistency_plus.blocks.WarpedWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableGateBlock;
 import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizablePillarBlock;
 import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableWallBlock;
@@ -310,11 +311,13 @@ public class CPlusBlocks {
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_carved_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_pillar"), PillarBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_corner_pillar"), Block::new);
+        registry.put(new Identifier("consistency_plus", "concrete_powder"), a -> new ConcretePowderBlock((Registry.BLOCK.get(new Identifier("consistency_plus", "concrete_block"))), a));
+
     }
 
     private static void miscItems() {
-
-         itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registry.BLOCK.get(new Identifier("consistency_plus", "warped_wart")), new Item.Settings().group(ItemGroup.MISC)));
+         registry.put(new Identifier("consistency_plus", "warped_wart_plant"), WarpedWartPlantBlock::new);
+         itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registry.BLOCK.get(new Identifier("consistency_plus", "warped_wart_plant")), new Item.Settings().group(ItemGroup.MISC)));
 	     itemRegistry.put(new Identifier("consistency_plus", "copper_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
 	     itemRegistry.put(new Identifier("consistency_plus", "netherite_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC).fireproof()));
 	     itemRegistry.put(new Identifier("consistency_plus", "netherite_horse_armor"), (a) -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));

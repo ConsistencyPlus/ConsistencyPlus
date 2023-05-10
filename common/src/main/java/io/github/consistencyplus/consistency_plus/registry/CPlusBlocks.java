@@ -22,6 +22,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class CPlusBlocks {
+    // Todo: Make a better solution for this. Perhaps custom class that takes Identifier, and possibly a nullable Block.
     public static Map<Identifier, Function<AbstractBlock.Settings, Block>> registry = new TreeMap<>();
     public static Map<Identifier, Function<Item.Settings, Item>> itemRegistry = new LinkedHashMap<>();
     //block only
@@ -311,12 +312,11 @@ public class CPlusBlocks {
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_carved_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_pillar"), PillarBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_corner_pillar"), Block::new);
-        registry.put(new Identifier("consistency_plus", "concrete_powder"), a -> new ConcretePowderBlock((Registry.BLOCK.get(new Identifier("consistency_plus", "concrete_block"))), a));
-
     }
 
     private static void miscItems() {
          registry.put(new Identifier("consistency_plus", "warped_wart_plant"), WarpedWartPlantBlock::new);
+         registry.put(new Identifier("consistency_plus", "concrete_powder"), a -> new ConcretePowderBlock((Registry.BLOCK.get(new Identifier("consistency_plus", "concrete"))), a));
          itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registry.BLOCK.get(new Identifier("consistency_plus", "warped_wart_plant")), new Item.Settings().group(ItemGroup.MISC)));
 	     itemRegistry.put(new Identifier("consistency_plus", "copper_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
 	     itemRegistry.put(new Identifier("consistency_plus", "netherite_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC).fireproof()));

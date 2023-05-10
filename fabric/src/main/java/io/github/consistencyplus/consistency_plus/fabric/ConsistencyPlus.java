@@ -72,6 +72,8 @@ public class ConsistencyPlus implements ModInitializer {
 		for (Identifier id : CPlusBlocks.itemRegistry.keySet()) {
 			Registry.register(Registry.ITEM, id, CPlusBlocks.itemRegistry.get(id).apply(new Item.Settings()));
 		}
+
+		lootModification();
 	}
 
 	public void accessRegistry(Identifier id, BlockData data) {
@@ -79,6 +81,9 @@ public class ConsistencyPlus implements ModInitializer {
 		Function<AbstractBlock.Settings, Block> blockFunc = CPlusBlocks.registry.get(id);
 		Block block = Registry.register(Registry.BLOCK, id, blockFunc.apply(data.settings().settings()));
 		if (!Objects.equals(id.getPath(), "warped_wart")) Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(getItemGroup(addBloSet.itemGroup()))));
+		if (fabric.getIsClient() && data.settings().layer() != null) {
+			blockToRenderLayers.put(block, data.settings().layer());
+		}
 
 		if (addBloSet.oxidizeToBlock() != null) {
 			oxidizationMap.put(block, addBloSet.oxidizeToBlock());

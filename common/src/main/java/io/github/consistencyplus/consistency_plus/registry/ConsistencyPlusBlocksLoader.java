@@ -154,15 +154,18 @@ public final class ConsistencyPlusBlocksLoader {
                 case "slipperiness" -> settings.slipperiness(JsonHelper.asFloat(value, "slipperiness"));
                 case "sounds" -> settings.sounds(parseBlockSounds(value));
                 case "light_level" -> settings.luminance((lum) -> JsonHelper.asInt(value, "light_level"));
-                case "render_layer" -> renderLayer = JsonHelper.asString(value, "render_layer");
+                case "render_layer" -> {
+                    renderLayer = JsonHelper.asString(value, "render_layer");
+                    ConsistencyPlusMain.LOGGER.info("Render Layer (JSON) - " + renderLayer);
+                }
                 case "map_color" -> settings.mapColor(StringToMapColor.stringToMapColor(JsonHelper.asString(value, "map_color")));
                 case "opaque" -> {
                     if (!JsonHelper.asBoolean(value, "opaque")) settings.nonOpaque();
                 }
 
                 // EXTRA SETTINGS
-                case "piston_push" -> pistonPush = JsonHelper.asBoolean(value, "piston_push");
-                case "piston_pull" -> pistonPull = JsonHelper.asBoolean(value, "piston_pull");
+                case "piston_push" -> pistonPush = JsonHelper.asBoolean(value, "piston_push"); // Used in 1.20, 1.19 uses tags
+                case "piston_pull" -> pistonPull = JsonHelper.asBoolean(value, "piston_pull"); // Used in 1.20, 1.19 uses tags
                 case "item_group" -> itemGroup = JsonHelper.asString(value, "item_group");
                 case "oxidize_into" -> oxidizeToBlock = JsonHelper.asString(value, "oxidize_into");
                 case "wax_into" -> waxToBlock = JsonHelper.asString(value, "wax_into");

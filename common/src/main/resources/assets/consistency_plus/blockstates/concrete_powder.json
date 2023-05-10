@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "consistency_plus:block/concrete_powder"
+      },
+      {
+        "model": "consistency_plus:block/concrete_powder",
+        "y": 90
+      },
+      {
+        "model": "consistency_plus:block/concrete_powder",
+        "y": 180
+      },
+      {
+        "model": "consistency_plus:block/concrete_powder",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -99,6 +99,7 @@
     "consistency_plus:carved_mud",
     "consistency_plus:chiseled_mud",
     "consistency_plus:mud_pillar",
-    "consistency_plus:mud_corner_pillar"
+    "consistency_plus:mud_corner_pillar",
+    "consistency_plus:concrete_powder"
   ]
 }

@@ -10,7 +10,7 @@
       "consistency_plus:cut_concrete_slab_crafting",
       "consistency_plus:cut_concrete_stairs_crafting",
       "consistency_plus:cut_concrete_wall_crafting",
-      "consistency_plus:concrete",
+      "consistency_plus:concrete_powder_crafting",
       "consistency_plus:concrete_brick",
       "consistency_plus:concrete_bricks",
       "consistency_plus:concrete_bricks_crafting",
@@ -38,7 +38,23 @@
       "consistency_plus:smooth_concrete_stairs",
       "consistency_plus:smooth_concrete_stairs_crafting",
       "consistency_plus:smooth_concrete_wall",
-      "consistency_plus:smooth_concrete_wall_crafting"
+      "consistency_plus:smooth_concrete_wall_crafting",
+      "consistency_plus:red_concrete_powder_dyeing",
+      "consistency_plus:orange_concrete_powder_dyeing",
+      "consistency_plus:yellow_concrete_powder_dyeing",
+      "consistency_plus:lime_concrete_powder_dyeing",
+      "consistency_plus:green_concrete_powder_dyeing",
+      "consistency_plus:blue_concrete_powder_dyeing",
+      "consistency_plus:cyan_concrete_powder_dyeing",
+      "consistency_plus:light_blue_concrete_powder_dyeing",
+      "consistency_plus:purple_concrete_powder_dyeing",
+      "consistency_plus:magenta_concrete_powder_dyeing",
+      "consistency_plus:pink_concrete_powder_dyeing",
+      "consistency_plus:white_concrete_powder_dyeing",
+      "consistency_plus:light_gray_concrete_powder_dyeing",
+      "consistency_plus:gray_concrete_powder_dyeing",
+      "consistency_plus:black_concrete_powder_dyeing",
+      "consistency_plus:brown_concrete_powder_dyeing"
 
     ]
   },

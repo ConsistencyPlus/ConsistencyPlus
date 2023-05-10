@@ -1,6 +1,7 @@
 {
   "warped_wart_plant": {
     "type": "provided",
+    "render_layer": "transparent",
     "inherit": "minecraft:nether_wart"
   },
   "warped_wart_slab": {

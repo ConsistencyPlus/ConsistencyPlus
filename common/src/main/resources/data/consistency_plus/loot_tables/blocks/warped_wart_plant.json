@@ -13,7 +13,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "consistency_plus:warped_wart",
+                  "block": "consistency_plus:warped_wart_plant",
                   "properties": {
                     "age": "3"
                   }
@@ -31,7 +31,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "consistency_plus:warped_wart",
+                  "block": "consistency_plus:warped_wart_plant",
                   "properties": {
                     "age": "3"
                   }

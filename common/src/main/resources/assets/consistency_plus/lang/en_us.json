@@ -2352,6 +2352,7 @@
   "block.consistency_plus.carved_brown_glazed_terracotta": "Carved Brown Glazed Terracotta",
   "item.consistency_plus.brown_glazed_terracotta_brick": "Brown Glazed Terracotta Brick",
 
+  "block.consistency_plus.concrete_powder": "Concrete Powder",
   "block.consistency_plus.concrete": "Concrete",
   "block.consistency_plus.concrete_slab": "Concrete Slab",
   "block.consistency_plus.concrete_stairs": "Concrete Stairs",
@@ -3345,7 +3346,7 @@
   "block.consistency_plus.carved_bedrock": "Carved Bedrock",
   "item.consistency_plus.bedrock_brick": "Bedrock Brick",
 
-  "block.consistency_plus.flint_block": "Flint Block",
+  "block.consistency_plus.flint_block": "Block of Flint",
   "block.consistency_plus.flint_slab": "Flint Slab",
   "block.consistency_plus.flint_stairs": "Flint Stairs",
   "block.consistency_plus.flint_wall": "Flint Wall",

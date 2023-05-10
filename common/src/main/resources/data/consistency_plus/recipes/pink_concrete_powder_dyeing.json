@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:pink_dye"
+    },
+    "#": {
+      "item": "consistency_plus:concrete_powder"
+    }
+  },
+  "result": {
+    "item": "minecraft:pink_concrete_powder",
+    "count": 8
+  }
+}

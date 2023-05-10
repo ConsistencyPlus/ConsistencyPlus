@@ -3,6 +3,8 @@ package io.github.consistencyplus.consistency_plus.forge;
 import com.google.common.collect.ImmutableMap;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusClientMain;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+
+import net.minecraft.block.Block;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.RenderLayers;
@@ -22,28 +24,23 @@ import net.minecraftforge.forgespi.locating.IModFile;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.Map;
-import java.util.Objects;
-
 @Mod.EventBusSubscriber(modid = ConsistencyPlusMain.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ConsistencyPlusClient {
 	@SubscribeEvent
 	public static void onInitializeClient(final FMLClientSetupEvent event) {
-		event.enqueueWork(() -> ConsistencyPlusClientMain.init(ModelPredicateProviderRegistry::register));
-
-		Map<String, RenderLayer> renderLayers = ImmutableMap.<String, RenderLayer>builder()
-				.put("cutout", RenderLayer.getCutout())
-				.put("translucent", RenderLayer.getTranslucent())
-				.build();
-
-		for (Identifier id : ConsistencyPlus.blockToRenderLayers.keySet()) {
-			RenderLayers.setRenderLayer(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), Objects.requireNonNull(renderLayers.get(ConsistencyPlus.blockToRenderLayers.get(id))));
-		}
-
-
+		event.enqueueWork(() -> ConsistencyPlusClientMain.init(() -> {
+			ConsistencyPlus.blockToRenderLayers.forEach((id, layerName) -> {
+				RenderLayer layer = ConsistencyPlusClientMain.SUPPORTED_LAYERS.get(layerName);
+				if (layer != null) {
+					Block block = RegistryObject.create(id, ForgeRegistries.BLOCKS).get();
+					//noinspection removal
+					RenderLayers.setRenderLayer(block, layer);
+				} else {
+					ConsistencyPlusMain.LOGGER.error("Unknown/unsupported RenderLayer '{}', skipping", layerName);
+				}
+			});
+		}));
 	}
-
-
 
 	// based on Create's copper legacy pack impl
 	@SubscribeEvent

@@ -7,19 +7,21 @@ import io.github.consistencyplus.consistency_plus.util.BlockData;
 import io.github.consistencyplus.consistency_plus.util.BlockShape;
 import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import io.github.consistencyplus.consistency_plus.registry.PseudoRegistry;
+import io.github.consistencyplus.consistency_plus.util.RegistryDump;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricMaterialBuilder;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
-import net.minecraft.block.*;
-import net.minecraft.block.piston.PistonBehavior;
+import net.fabricmc.loader.api.FabricLoader;
+
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.util.DyeColor;
@@ -27,7 +29,14 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.registry.Registry;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.function.Function;
@@ -74,6 +83,8 @@ public class ConsistencyPlus implements ModInitializer {
 		}
 
 		lootModification();
+
+//		ServerWorldEvents.LOAD.register(((server, world) -> RegistryDump.run()));
 	}
 
 	public void accessRegistry(Identifier id, BlockData data) {

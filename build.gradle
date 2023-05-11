@@ -20,12 +20,15 @@ subprojects {
         mappings "net.fabricmc:yarn:1.19.2+build.$yarn_build:v2"
 
         String platform = project.name
-        if (platform == "common") return
+
+        String scrt = "io.github.tropheusj.stonecutter_recipe_tags:$platform:$scrt_version"
+        if (platform != "common") {
+            scrt += ".$platform"
+            include(scrt)
+        }
+        modImplementation(scrt)
 
         //modImplementation("dev.architectury:architectury-$platform:$architectury_version")
-
-        modImplementation("maven.modrinth:stonecutter_recipe_tags:$scrt_version-$platform")
-        modImplementation("com.github.LlamaLad7:MixinExtras:0.1.1") // for SCRT
 
         //modCompileOnly("mcp.mobius.waila:wthit-api:$platform-$wthit_version")// compile against the WTHIT API
 
@@ -55,6 +58,8 @@ allprojects {
     }
 
     repositories {
+        maven { url = "https://mvn.devos.one/snapshots/" } // SCRT
+        maven { url = "https://jitpack.io/" } // Mixin Extras, for SCRT
         maven { url = "https://maven.quiltmc.org/repository/release/" }
         maven { url = "https://maven.quiltmc.org/repository/snapshot/" }
         maven { url = "https://maven.bai.lol" } // WTHIT

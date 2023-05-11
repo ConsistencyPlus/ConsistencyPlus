@@ -88,13 +88,6 @@
   },
   "concrete_powder": {
     "type": "provided",
-    "sounds": {
-      "break": "minecraft:block.sand.break",
-      "step": "minecraft:block.sand.step",
-      "place": "minecraft:block.sand.place",
-      "hit": "minecraft:block.sand.hit",
-      "fall": "minecraft:block.sand.fall",
-      "pitch": 1
-    }
+    "inherit": "minecraft:white_concrete_powder"
   }
 }

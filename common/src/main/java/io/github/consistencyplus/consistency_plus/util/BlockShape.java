@@ -11,7 +11,7 @@ public enum BlockShape {
         SLAB("slab", SlabBlock::new),
         STAIRS("stairs", CPlusStairsBlock::new),
         WALL("wall", WallBlock::new),
-        GATE("gate", (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN)),
+        GATE("gate", (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE)),
         FENCE("fence", FenceBlock::new), // In case it is added, it is here.
         PILLAR("pillar", PillarBlock::new),
         DIRECTIONAL("directional", GlazedTerracottaBlock::new),

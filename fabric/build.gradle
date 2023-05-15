@@ -14,7 +14,7 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:$fabric_version")
     modApi("net.fabricmc.fabric-api:fabric-api:$fabric_api_version")
 
-    modLocalRuntime("vazkii.patchouli:Patchouli:$patchouli_version-FABRIC")
+    //xmodLocalRuntime("vazkii.patchouli:Patchouli:$patchouli_version-FABRIC")
     /*if (waila_fork == "jade")
         modLocalRuntime("maven.modrinth:jade:$jade_fabric_version_id")*/
 

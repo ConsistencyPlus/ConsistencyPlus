@@ -10,7 +10,7 @@ public class CPlusOxidizableGateBlock extends FenceGateBlock implements Oxidizab
     private final Oxidizable.OxidationLevel oxidationLevel;
 
     public CPlusOxidizableGateBlock(Oxidizable.OxidationLevel level, AbstractBlock.Settings settings) {
-        super(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN);
+        super(settings, WoodType.SPRUCE);
         this.oxidationLevel = level;
     }
 

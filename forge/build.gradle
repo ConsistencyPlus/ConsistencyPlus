@@ -12,8 +12,10 @@ dependencies {
     modLocalRuntime("vazkii.patchouli:Patchouli:$patchouli_version")
    /* if (waila_fork == "jade")
         modLocalRuntime("maven.modrinth:jade:$jade_forge_version_id")*/
+    modImplementation("dev.architectury:architectury-forge:$architectury_version")
 
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+
 }
 
 processResources {

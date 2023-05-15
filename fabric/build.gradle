@@ -24,6 +24,8 @@ dependencies {
     modRuntimeOnly("com.terraformersmc:modmenu:${rootProject.mod_menu_version}") { transitive = false }
 
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
+
+    modImplementation("dev.architectury:architectury-fabric:$architectury_version")
 }
 
 sourceSets.main {

@@ -2,6 +2,7 @@ package io.github.consistencyplus.consistency_plus.blocks.oxidizable;
 
 import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 
@@ -9,7 +10,7 @@ public class CPlusOxidizableGateBlock extends FenceGateBlock implements Oxidizab
     private final Oxidizable.OxidationLevel oxidationLevel;
 
     public CPlusOxidizableGateBlock(Oxidizable.OxidationLevel level, AbstractBlock.Settings settings) {
-        super(settings);
+        super(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN);
         this.oxidationLevel = level;
     }
 

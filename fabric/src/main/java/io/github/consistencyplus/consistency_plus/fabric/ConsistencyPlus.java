@@ -9,8 +9,9 @@ import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import io.github.consistencyplus.consistency_plus.registry.PseudoRegistry;
 import io.github.consistencyplus.consistency_plus.util.RegistryDump;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
@@ -22,12 +23,14 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registry;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -57,22 +60,24 @@ public class ConsistencyPlus implements ModInitializer {
 			FabricBlockSettings blockSettings = FabricBlockSettings.copyOf(data.settings().settings());
 			AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
 
-			Block block = Registry.register(Registry.BLOCK, id, data.block().initFunc().apply(blockSettings));
-			Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(getItemGroup(addBloSet.itemGroup()))));
+			Block block = Registry.register(Registries.BLOCK, id, data.block().initFunc().apply(blockSettings));
+			Item item = new BlockItem(block, new Item.Settings());
+			Registry.register(Registries.ITEM, id, item);
+			ItemGroupEvents.modifyEntriesEvent(getItemGroup(addBloSet.itemGroup())).register(listener -> listener.add(item));
 			if (fabric.getIsClient() && data.settings().layer() != null) {
 				blockToRenderLayers.put(block, data.settings().layer());
 			}
 		}
 
 		for (Block block : oxidizationMap.keySet()) {
-			OxidizableBlocksRegistry.registerOxidizableBlockPair(block, Registry.BLOCK.get(new Identifier(oxidizationMap.get(block))));
+			OxidizableBlocksRegistry.registerOxidizableBlockPair(block, Registries.BLOCK.get(new Identifier(oxidizationMap.get(block))));
 		}
 		for (Block block : waxingMap.keySet()) {
-			OxidizableBlocksRegistry.registerWaxableBlockPair(block, Registry.BLOCK.get(new Identifier(waxingMap.get(block))));
+			OxidizableBlocksRegistry.registerWaxableBlockPair(block, Registries.BLOCK.get(new Identifier(waxingMap.get(block))));
 		}
 
 		for (Identifier id : CPlusBlocks.itemRegistry.keySet()) {
-			Registry.register(Registry.ITEM, id, CPlusBlocks.itemRegistry.get(id).apply(new Item.Settings()));
+			Registry.register(Registries.ITEM, id, CPlusBlocks.itemRegistry.get(id).apply(new Item.Settings()));
 		}
 
 		lootModification();
@@ -83,8 +88,12 @@ public class ConsistencyPlus implements ModInitializer {
 	public void accessRegistry(Identifier id, BlockData data) {
 		AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
 		Function<AbstractBlock.Settings, Block> blockFunc = CPlusBlocks.registry.get(id);
-		Block block = Registry.register(Registry.BLOCK, id, blockFunc.apply(data.settings().settings()));
-		if (!Objects.equals(id.getPath(), "warped_wart")) Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(getItemGroup(addBloSet.itemGroup()))));
+		Block block = Registry.register(Registries.BLOCK, id, blockFunc.apply(data.settings().settings()));
+		if (!Objects.equals(id.getPath(), "warped_wart")) {
+			Item item = new BlockItem(block, new Item.Settings());
+			Registry.register(Registries.ITEM, id, item);
+			ItemGroupEvents.modifyEntriesEvent(getItemGroup(addBloSet.itemGroup())).register(listener -> listener.add(item));
+		}
 		if (fabric.getIsClient() && data.settings().layer() != null) {
 			blockToRenderLayers.put(block, data.settings().layer());
 		}
@@ -107,21 +116,21 @@ public class ConsistencyPlus implements ModInitializer {
 				default -> CPLUS_STONES;
 			};
 		} catch (NullPointerException npe) {
-			return ItemGroup.BUILDING_BLOCKS;
+			return ItemGroups.BUILDING_BLOCKS;
 		}
 	}
 
-	public static final ItemGroup CPLUS_STONES = FabricItemGroupBuilder.create(new Identifier("consistency_plus", "stone")).icon(() -> Registry.ITEM.get(new Identifier("consistency_plus", "polished_stone")).getDefaultStack()).build();
+	public static final ItemGroup CPLUS_STONES = FabricItemGroup.builder(new Identifier("consistency_plus", "stone")).icon(() -> Registries.ITEM.get(new Identifier("consistency_plus", "polished_stone")).getDefaultStack()).build();
 
-	public static final	ItemGroup CPLUS_DYEABLE = FabricItemGroupBuilder.create(new Identifier("consistency_plus", "dyeable")).icon(() -> Registry.ITEM.get(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete")).getDefaultStack()).build();
+	public static final	ItemGroup CPLUS_DYEABLE = FabricItemGroup.builder(new Identifier("consistency_plus", "dyeable")).icon(() -> Registries.ITEM.get(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete")).getDefaultStack()).build();
 
-	public static final	ItemGroup CPLUS_MISC = FabricItemGroupBuilder.create(new Identifier("consistency_plus", "misc")).icon(() -> Registry.ITEM.get(new Identifier("consistency_plus", "polished_purpur")).getDefaultStack()).build();
+	public static final	ItemGroup CPLUS_MISC = FabricItemGroup.builder(new Identifier("consistency_plus", "misc")).icon(() -> Registries.ITEM.get(new Identifier("consistency_plus", "polished_purpur")).getDefaultStack()).build();
 
 	public static void lootModification() {
 		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
 			if (source.isBuiltin() && WITHER_SKELE_LOOT.equals(id)) {
 				LootPool.Builder poolBuilder = LootPool.builder()
-						.with(ItemEntry.builder(Registry.ITEM.get(new Identifier("consistency_plus", "withered_bone"))));
+						.with(ItemEntry.builder(Registries.ITEM.get(new Identifier("consistency_plus", "withered_bone"))));
 
 				tableBuilder.pool(poolBuilder);
 			}

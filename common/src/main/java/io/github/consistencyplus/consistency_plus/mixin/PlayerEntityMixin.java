@@ -9,8 +9,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registry;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -34,9 +35,9 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 	@Unique
 	private static final Map<EquipmentSlot, Item> cPlus$turtleEquipment = Map.of(
 			EquipmentSlot.HEAD, Items.TURTLE_HELMET,
-			EquipmentSlot.CHEST, Registry.ITEM.get(new Identifier("consistency_plus", "turtle_chestplate")),
-			EquipmentSlot.LEGS, Registry.ITEM.get(new Identifier("consistency_plus", "turtle_leggings")),
-			EquipmentSlot.FEET, Registry.ITEM.get(new Identifier("consistency_plus", "turtle_boots"))
+			EquipmentSlot.CHEST, Registries.ITEM.get(new Identifier("consistency_plus", "turtle_chestplate")),
+			EquipmentSlot.LEGS, Registries.ITEM.get(new Identifier("consistency_plus", "turtle_leggings")),
+			EquipmentSlot.FEET, Registries.ITEM.get(new Identifier("consistency_plus", "turtle_boots"))
 	);
 	
 	@Inject(at = @At("TAIL"), method = "updateTurtleHelmet()V")
@@ -46,7 +47,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 			return;
 
 		// turtle boots give dolphin's grace
-		if (getEquippedStack(EquipmentSlot.FEET).isOf(Registry.ITEM.get(new Identifier("consistency_plus", "turtle_boots")))) {
+		if (getEquippedStack(EquipmentSlot.FEET).isOf(Registries.ITEM.get(new Identifier("consistency_plus", "turtle_boots")))) {
 			addStatusEffect(new StatusEffectInstance(
 					StatusEffects.DOLPHINS_GRACE,
 					200,

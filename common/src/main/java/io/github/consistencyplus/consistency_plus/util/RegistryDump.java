@@ -10,12 +10,13 @@ import java.util.List;
 
 import net.fabricmc.loader.api.FabricLoader;
 
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 
 public class RegistryDump {
 	public static void run() {
-		export("blocks_new", Registry.BLOCK);
-		export("items_new", Registry.ITEM);
+		export("blocks_new", Registries.BLOCK);
+		export("items_new", Registries.ITEM);
 	}
 
 	private static void export(String name, Registry<?> registry) {

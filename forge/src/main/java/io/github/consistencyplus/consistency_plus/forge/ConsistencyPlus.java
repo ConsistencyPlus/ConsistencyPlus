@@ -15,16 +15,19 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Oxidizable;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.DataOutput;
 import net.minecraft.item.*;
 import net.minecraft.loot.condition.LootCondition;
+import net.minecraft.text.Text;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registry;
 import net.minecraftforge.common.data.GlobalLootModifierProvider;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootTableIdCondition;
 import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -59,6 +62,8 @@ public class ConsistencyPlus {
 		GLOBAL_LOOT.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
+	private static Map<BlockItem, PossibleGroups> creativeTabs = new HashMap<>();
+
 	@SubscribeEvent
 	public void onInitialize(RegisterEvent event) {
 		ConsistencyPlusMain.init(forge);
@@ -89,7 +94,10 @@ public class ConsistencyPlus {
 					helper.register(id, new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings().group(getItemGroup(data.settings().additionalBlockSettings().itemGroup()))));
 					continue;
 				}*/
-				helper.register(id, new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings().group(getItemGroup(data.settings().additionalBlockSettings().itemGroup()))));
+				BlockItem item = new BlockItem(RegistryObject.create(id, ForgeRegistries.BLOCKS).get(), new Item.Settings());
+
+				helper.register(id, item);
+				creativeTabs.put(item, getItemGroup(data.settings().additionalBlockSettings().itemGroup()));
 			}
 
 			for (Identifier id : CPlusBlocks.itemRegistry.keySet()) {
@@ -104,8 +112,45 @@ public class ConsistencyPlus {
 	}
 
 	@SubscribeEvent
+	public void buildContents(CreativeModeTabEvent.BuildContents event) {
+		creativeTabs.forEach((item, group) -> {
+			ItemGroup group2 = switch (group) {
+				case STONES -> CPLUS_STONES;
+				case DYEABLE -> CPLUS_DYABLE;
+				case MISC -> CPLUS_MISC;
+			};
+			if (event.getTab() == group2) {
+				event.accept(() -> item);
+			}
+		});
+	}
+
+
+	@SubscribeEvent
+	public void buildContents2(CreativeModeTabEvent.Register event) {
+		CPLUS_DYABLE = event.registerCreativeModeTab(new Identifier("consistency_plus:dyeable"), builder ->
+				// Set name of tab to display
+				builder.displayName(Text.translatable("itemGroup.consistency_plus.dyeable"))
+						// Set icon of creative tab
+						.icon(() -> RegistryObject.create(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete"), ForgeRegistries.ITEMS).get().getDefaultStack()));
+
+		CPLUS_MISC = event.registerCreativeModeTab(new Identifier("consistency_plus:misc"), builder ->
+				// Set name of tab to display
+				builder.displayName(Text.translatable("itemGroup.consistency_plus.misc"))
+						// Set icon of creative tab
+						.icon(() -> RegistryObject.create(new Identifier("consistency_plus", "polished_purpur"), ForgeRegistries.ITEMS).get().getDefaultStack()));
+
+
+		CPLUS_STONES = event.registerCreativeModeTab(new Identifier("consistency_plus:stones"), builder ->
+				// Set name of tab to display
+				builder.displayName(Text.translatable("itemGroup.consistency_plus.stone"))
+						// Set icon of creative tab
+						.icon(() -> RegistryObject.create(new Identifier("consistency_plus", "polished_stone"), ForgeRegistries.ITEMS).get().getDefaultStack()));
+	};
+
+	@SubscribeEvent
 	public static void lootEvent(GatherDataEvent event) {
-		event.getGenerator().addProvider(event.includeServer(), new DataProvider(event.getGenerator(), "consistency_plus"));
+		event.getGenerator().addProvider(event.includeServer(), new DataProvider(event.getGenerator().getPackOutput(), "consistency_plus"));
 	}
 
 	public void accessRegistry(Identifier id, BlockData data, RegisterEvent.RegisterHelper<Block> helper) {
@@ -130,10 +175,8 @@ public class ConsistencyPlus {
 			delegateField.setAccessible(true);
 			// Get the original delegate to prevent an infinite loop
 			@SuppressWarnings("unchecked")
-			Supplier<BiMap<Block, Block>> originalWeatheringMapDelegate = (Supplier<BiMap<Block, Block>>) delegateField.get(Oxidizable.OXIDATION_LEVEL_INCREASES);
 			com.google.common.base.Supplier<BiMap<Block, Block>> weatheringMapDelegate = () -> {
 				ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.builder();
-				builder.putAll(originalWeatheringMapDelegate.get());
 				ConsistencyPlus.oxidizationMap.forEach((lesserID, greaterID) -> {
 					builder.put(RegistryObject.create(lesserID, ForgeRegistries.BLOCKS).get(), RegistryObject.create(greaterID, ForgeRegistries.BLOCKS).get());
 				});
@@ -157,39 +200,30 @@ public class ConsistencyPlus {
 		HoneycombItem.UNWAXED_TO_WAXED_BLOCKS = waxableMapSupplier;
 	}
 
-	public static ItemGroup getItemGroup(String string) {
+	public static PossibleGroups getItemGroup(String string) {
 		return switch (string) {
-			case "stones" -> CPLUS_STONES;
-			case "dyeable" -> CPLUS_DYABLE;
-			case "misc" -> CPLUS_MISC;
-			default -> CPLUS_STONES;
+			case "stones" -> PossibleGroups.STONES;
+			case "dyeables" -> PossibleGroups.DYEABLE;
+			case "misc" -> PossibleGroups.MISC;
+			default -> PossibleGroups.STONES;
 		};
 	}
 
+	enum PossibleGroups {
+		STONES,
+		DYEABLE,
+		MISC
+	}
 
-	public static final	ItemGroup CPLUS_STONES = new ItemGroup("consistency_plus.stones") {
-		@Override
-		public ItemStack createIcon() {
-			return RegistryObject.create(new Identifier("consistency_plus", "polished_stone"), ForgeRegistries.ITEMS).get().getDefaultStack();
-		}
-	};
 
-	public static final	ItemGroup CPLUS_DYABLE = new ItemGroup("consistency_plus.dyeable") {
-		@Override
-		public ItemStack createIcon() {
-			return RegistryObject.create(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete"), ForgeRegistries.ITEMS).get().getDefaultStack();
-		}
-	};
+	public static ItemGroup CPLUS_STONES;
 
-	public static final	ItemGroup CPLUS_MISC = new ItemGroup("consistency_plus.misc") {
-		@Override
-		public ItemStack createIcon() {
-			return RegistryObject.create(new Identifier("consistency_plus", "polished_purpur"), ForgeRegistries.ITEMS).get().getDefaultStack();
-		}
-	};
+	public static ItemGroup CPLUS_DYABLE;
+
+	public static ItemGroup CPLUS_MISC;
 
 	private static class DataProvider extends GlobalLootModifierProvider {
-		public DataProvider(DataGenerator output, String modid) {
+		public DataProvider(DataOutput output, String modid) {
 			super(output, modid);
 		}
 

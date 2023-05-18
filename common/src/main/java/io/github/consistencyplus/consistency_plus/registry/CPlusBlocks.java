@@ -315,9 +315,9 @@ public class CPlusBlocks {
     }
 
     private static void miscItems() {
-         registry.put(new Identifier("consistency_plus", "warped_wart_plant"), WarpedWartPlantBlock::new);
+         registry.put(new Identifier("consistency_plus", "warped_wart"), WarpedWartPlantBlock::new);
          registry.put(new Identifier("consistency_plus", "concrete_powder"), a -> new ConcretePowderBlock((Registry.BLOCK.get(new Identifier("consistency_plus", "concrete"))), a));
-         itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registry.BLOCK.get(new Identifier("consistency_plus", "warped_wart_plant")), new Item.Settings().group(ItemGroup.MISC)));
+         itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registry.BLOCK.get(new Identifier("consistency_plus", "warped_wart")), new Item.Settings().group(ItemGroup.MISC)));
 	     itemRegistry.put(new Identifier("consistency_plus", "copper_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
 	     itemRegistry.put(new Identifier("consistency_plus", "netherite_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC).fireproof()));
 	     itemRegistry.put(new Identifier("consistency_plus", "netherite_horse_armor"), (a) -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));

@@ -158,7 +158,6 @@ public final class ConsistencyPlusBlocksLoader {
                 case "light_level" -> settings.luminance((lum) -> JsonHelper.asInt(value, "light_level"));
                 case "render_layer" -> {
                     renderLayer = JsonHelper.asString(value, "render_layer");
-                    ConsistencyPlusMain.LOGGER.info("Render Layer (JSON) - " + renderLayer);
                 }
                 case "map_color" -> settings.mapColor(StringToMapColor.stringToMapColor(JsonHelper.asString(value, "map_color")));
                 case "opaque" -> {

@@ -1,5 +1,5 @@
 {
-  "type": "consistency_plus:withered_bone",
+  "type": "consistency_plus:withered_bones",
   "conditions": [
     {
       "condition": "minecraft:killed_by_player"

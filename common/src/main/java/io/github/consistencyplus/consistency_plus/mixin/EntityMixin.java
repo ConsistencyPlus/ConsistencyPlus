@@ -2,7 +2,10 @@ package io.github.consistencyplus.consistency_plus.mixin;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
-import net.minecraft.tag.BlockTags;
+import net.minecraft.data.server.tag.VanillaBlockTagProvider;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

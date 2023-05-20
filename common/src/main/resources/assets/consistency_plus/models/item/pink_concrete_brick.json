@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "consistency_plus:items/pink_concrete_brick"
+    "layer0": "consistency_plus:item/pink_concrete_brick"
   }
 }

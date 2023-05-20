@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "consistency_plus:items/basalt_brick"
+    "layer0": "consistency_plus:item/basalt_brick"
   }
 }

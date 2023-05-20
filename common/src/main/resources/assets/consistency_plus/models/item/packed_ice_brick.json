@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "consistency_plus:items/packed_ice_brick"
+    "layer0": "consistency_plus:item/packed_ice_brick"
   }
 }

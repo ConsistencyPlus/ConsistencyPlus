@@ -8,8 +8,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.context.LootContext;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registry;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
 import org.jetbrains.annotations.NotNull;
@@ -27,7 +28,7 @@ public class WitheredBonesModifier extends LootModifier {
 
     @Override
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        generatedLoot.add(Registry.ITEM.get(new Identifier("consistency_plus", "withered_bone")).getDefaultStack());
+        generatedLoot.add(Registries.ITEM.get(new Identifier("consistency_plus", "withered_bone")).getDefaultStack());
         return generatedLoot;
     }
 

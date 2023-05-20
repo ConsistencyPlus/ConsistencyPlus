@@ -2,11 +2,9 @@ dependencies {
     // This is only here to get environment annotations and mixin dependencies. DO NOT ADD ANYTHING ELSE FROM FABRIC
     // Whoopsies we added stuff from Fabric
     modImplementation("net.fabricmc:fabric-loader:$fabric_version")
-
     // special cases: arch common has no platform, use WTHIT and Jade fabric as common
-    /*modApi("dev.architectury:architectury:$architectury_version")
-    modCompileOnly("mcp.mobius.waila:wthit-api:fabric-$wthit_version")
-    modCompileOnly("maven.modrinth:jade:$jade_fabric_version_id")
+    modApi("dev.architectury:architectury:$architectury_version")
+    /*modCompileOnly("maven.modrinth:jade:$jade_fabric_version_id")
     if (waila_fork == "jade") {
         // to avoid remapping issues, we need FAPI here. fun.
         modCompileOnly("net.fabricmc.fabric-api:fabric-api:$fabric_api_version")

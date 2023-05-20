@@ -10,9 +10,12 @@ import net.minecraft.block.*;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
-import net.minecraft.tag.TagKey;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registry;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -28,13 +31,13 @@ public class CPlusBlocks {
     //block only
     //item only
 
-    public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "dirt_stairs"));
-    public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "dirt_stairs"));
-    public static final TagKey<Block> VALID_PORTAL_BLOCKS = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "valid_portal_blocks"));
-    public static final TagKey<Block> VALID_CONDUIT_BLOCKS = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "valid_conduit_blocks"));
+    public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "dirt_stairs"));
+    public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "dirt_stairs"));
+    public static final TagKey<Block> VALID_PORTAL_BLOCKS = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "valid_portal_blocks"));
+    public static final TagKey<Block> VALID_CONDUIT_BLOCKS = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "valid_conduit_blocks"));
 
-    public static final TagKey<Block> BLOCKS_PISTONS = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "blocks_pistons"));
-    public static final TagKey<Block> PISTON_PUSH_ONLY = TagKey.of(Registry.BLOCK_KEY, new Identifier("consistency_plus", "piston_push_only"));
+    public static final TagKey<Block> BLOCKS_PISTONS = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "blocks_pistons"));
+    public static final TagKey<Block> PISTON_PUSH_ONLY = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "piston_push_only"));
 
 
 
@@ -84,32 +87,33 @@ public class CPlusBlocks {
     }
 
     private static void waxedCopper() {
+        // TODO: Fix WoodType
         registry.put(new Identifier("consistency_plus", "waxed_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_polished_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_polished_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_polished_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_polished_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_polished_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_polished_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_copper_bricks"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_brick_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_brick_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_brick_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_copper_brick_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_copper_brick_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_cut_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_cut_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_cut_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_cut_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_cut_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_cut_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_copper_tile_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_copper_tile_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_copper_tile_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_smooth_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_chiseled_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_carved_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_pillar"), PillarBlock::new);
@@ -153,29 +157,29 @@ public class CPlusBlocks {
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_bricks"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_tile_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_tile_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_tile_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_chiseled_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_carved_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_pillar"), PillarBlock::new);
@@ -219,29 +223,29 @@ public class CPlusBlocks {
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_bricks"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_tile_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_tile_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_tile_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_chiseled_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_carved_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_pillar"), PillarBlock::new);
@@ -285,29 +289,29 @@ public class CPlusBlocks {
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_bricks"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_tile_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_tile_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_tile_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_slab"), SlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_wall"), WallBlock::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_gate"), FenceGateBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_gate"), (settings) -> new FenceGateBlock(settings, SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_chiseled_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_carved_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_pillar"), PillarBlock::new);
@@ -315,19 +319,19 @@ public class CPlusBlocks {
     }
 
     private static void miscItems() {
-         registry.put(new Identifier("consistency_plus", "warped_wart"), WarpedWartPlantBlock::new);
-         registry.put(new Identifier("consistency_plus", "concrete_powder"), a -> new ConcretePowderBlock((Registry.BLOCK.get(new Identifier("consistency_plus", "concrete"))), a));
-         itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registry.BLOCK.get(new Identifier("consistency_plus", "warped_wart")), new Item.Settings().group(ItemGroup.MISC)));
-	     itemRegistry.put(new Identifier("consistency_plus", "copper_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
-	     itemRegistry.put(new Identifier("consistency_plus", "netherite_nugget"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC).fireproof()));
-	     itemRegistry.put(new Identifier("consistency_plus", "netherite_horse_armor"), (a) -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().group(ItemGroup.MISC)));
-	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
-	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone_meal"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+       registry.put(new Identifier("consistency_plus", "warped_wart"), WarpedWartPlantBlock::new);
+       registry.put(new Identifier("consistency_plus", "concrete_powder"), a -> new ConcretePowderBlock((Registries.BLOCK.get(new Identifier("consistency_plus", "concrete"))), a));
+       itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registries.BLOCK.get(new Identifier("consistency_plus", "warped_wart")), new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
+	     itemRegistry.put(new Identifier("consistency_plus", "copper_nugget"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
+	     itemRegistry.put(new Identifier("consistency_plus", "netherite_nugget"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS).fireproof()));
+	     itemRegistry.put(new Identifier("consistency_plus", "netherite_horse_armor"), (a) -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().arch$tab(ItemGroups.INGREDIENTS)));
+	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
+	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone_meal"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
 
 	// 🐢
-	    itemRegistry.put(new Identifier("consistency_plus", "turtle_chestplate"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT)));
-	    itemRegistry.put(new Identifier("consistency_plus", "turtle_leggings"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT)));
-	    itemRegistry.put(new Identifier("consistency_plus", "turtle_boots"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT)));
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_chestplate"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, new Item.Settings().arch$tab(ItemGroups.COMBAT)));
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_leggings"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, new Item.Settings().arch$tab(ItemGroups.COMBAT)));
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_boots"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, new Item.Settings().arch$tab(ItemGroups.COMBAT)));
     }
 
     public static boolean isValidPortalBlock(BlockState state) {

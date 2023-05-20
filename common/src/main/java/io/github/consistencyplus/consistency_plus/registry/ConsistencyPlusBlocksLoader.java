@@ -12,12 +12,14 @@ import net.minecraft.block.Material;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registry;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -63,7 +65,7 @@ public final class ConsistencyPlusBlocksLoader {
 
     private static BlockSoundGroup parseBlockSounds(JsonElement sounds) {
         if (sounds.isJsonPrimitive()) {
-            return Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.asString(sounds, "sounds")))
+            return Registries.BLOCK.getOrEmpty(new Identifier(JsonHelper.asString(sounds, "sounds")))
                     .map(b -> b.getSoundGroup(b.getDefaultState()))
                     .orElseThrow(() -> new IllegalArgumentException("Unknown block " + sounds));
         }
@@ -71,11 +73,11 @@ public final class ConsistencyPlusBlocksLoader {
         return new BlockSoundGroup(
                 JsonHelper.getFloat(object, "volume", 1f),
                 JsonHelper.getFloat(object, "pitch", 1f),
-                new SoundEvent(new Identifier(JsonHelper.getString(object, "break"))),
-                new SoundEvent(new Identifier(JsonHelper.getString(object, "step"))),
-                new SoundEvent(new Identifier(JsonHelper.getString(object, "place"))),
-                new SoundEvent(new Identifier(JsonHelper.getString(object, "hit"))),
-                new SoundEvent(new Identifier(JsonHelper.getString(object, "fall")))
+                SoundEvent.of(new Identifier(JsonHelper.getString(object, "break"))),
+                SoundEvent.of(new Identifier(JsonHelper.getString(object, "step"))),
+                SoundEvent.of(new Identifier(JsonHelper.getString(object, "place"))),
+                SoundEvent.of(new Identifier(JsonHelper.getString(object, "hit"))),
+                SoundEvent.of(new Identifier(JsonHelper.getString(object, "fall")))
         );
     }
 
@@ -84,7 +86,7 @@ public final class ConsistencyPlusBlocksLoader {
             boolean hasBrick = true;
             JsonObject jsonCool = entry.getValue().getAsJsonObject();
             final AbstractBlock.Settings settings = jsonCool.has("inherit")
-                    ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(jsonCool, "inherit")))
+                    ? Registries.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(jsonCool, "inherit")))
                     .map(AbstractBlock.Settings::copy)
                     .orElseThrow(() -> new IllegalArgumentException("Unknown block " + jsonCool.get("inherit")))
                     : AbstractBlock.Settings.of(Material.STONE)
@@ -105,7 +107,7 @@ public final class ConsistencyPlusBlocksLoader {
             }
 
             if (hasBrick) {
-                CPlusBlocks.itemRegistry.put(new Identifier("consistency_plus", entry.getKey() + "_brick"), (a) -> new Item(new Item.Settings().group(ItemGroup.MISC)));
+                CPlusBlocks.itemRegistry.put(new Identifier("consistency_plus", entry.getKey() + "_brick"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
             }
         }
     }
@@ -124,7 +126,7 @@ public final class ConsistencyPlusBlocksLoader {
         json.remove("type");
 
         final AbstractBlock.Settings settings = json.has("inherit")
-                ? Registry.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(json, "inherit")))
+                ? Registries.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(json, "inherit")))
                 .map(AbstractBlock.Settings::copy)
                 .orElseThrow(() -> new IllegalArgumentException("Unknown block " + json.get("inherit")))
                 : setSettings.settings();

@@ -8,13 +8,17 @@ import net.minecraft.block.Block;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.RenderLayers;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.resource.ResourcePackProfile;
 import net.minecraft.resource.ResourcePackProfile.InsertionPosition;
 import net.minecraft.resource.ResourcePackSource;
 import net.minecraft.resource.ResourceType;
+import net.minecraft.resource.featuretoggle.FeatureSet;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.AddPackFindersEvent;
+import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
@@ -49,18 +53,21 @@ public class ConsistencyPlusClient {
 			return;
 		IModFileInfo mod = ModList.get().getModFileById(ConsistencyPlusMain.MOD_ID);
 		IModFile file = mod.getFile();
-		event.addRepositorySource((adder, factory) ->
-				adder.accept(ResourcePackProfile.of(
+		event.addRepositorySource((provider) ->
+				provider.accept(ResourcePackProfile.of(
 						ConsistencyPlusClientMain.VANILLA_CHANGES_PACK.toString(),
+						Text.translatable(ConsistencyPlusClientMain.VANILLA_CHANGES_PACK.toTranslationKey()),
 						true,
-						() -> new ModFilePackResources(
+						(factory2) -> new ModFilePackResources(
 								ConsistencyPlusClientMain.VANILLA_CHANGES_PACK_NAME,
 								file,
 								"resourcepacks/vanilla_changes"
 						),
-						factory,
+						new ResourcePackProfile.Metadata(Text.translatable(ConsistencyPlusClientMain.VANILLA_CHANGES_PACK.toTranslationKey()), 14, FeatureSet.empty()),
+						ResourceType.CLIENT_RESOURCES,
 						InsertionPosition.TOP,
-						ResourcePackSource.PACK_SOURCE_BUILTIN
+						false,
+						ResourcePackSource.BUILTIN
 				))
 		);
 	}

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "consistency_plus:items/black_terracotta_brick"
+    "layer0": "consistency_plus:item/black_terracotta_brick"
   }
 }

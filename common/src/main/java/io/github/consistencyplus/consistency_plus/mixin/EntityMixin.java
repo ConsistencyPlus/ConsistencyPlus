@@ -22,7 +22,7 @@ public abstract class EntityMixin {
         BlockState underBlock = entity.getWorld().getBlockState(entity.getBlockPos().down());
         BlockPos velocityAffectingPos;
         if (underBlock.isIn(BlockTags.WALLS) || underBlock.isIn(BlockTags.FENCE_GATES) || underBlock.isIn(BlockTags.FENCES)) yvalue = entity.getBoundingBox().minY - 0.5000001;
-        velocityAffectingPos = new BlockPos(entity.getBlockPos().getX(), yvalue, entity.getBlockPos().getZ());
+        velocityAffectingPos = new BlockPos(entity.getBlockPos().getX(), (int) yvalue, entity.getBlockPos().getZ());
         return velocityAffectingPos;
     }
 }

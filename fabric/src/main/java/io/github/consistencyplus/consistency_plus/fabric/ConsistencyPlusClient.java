@@ -28,7 +28,7 @@ public class ConsistencyPlusClient implements ClientModInitializer {
 		ResourceManagerHelper.registerBuiltinResourcePack(
 				ConsistencyPlusClientMain.VANILLA_CHANGES_PACK,
 				FabricLoader.getInstance().getModContainer(ConsistencyPlusMain.MOD_ID).orElseThrow(),
-				ConsistencyPlusClientMain.VANILLA_CHANGES_PACK_NAME,
+				Text.literal(ConsistencyPlusClientMain.VANILLA_CHANGES_PACK_NAME),
 				ResourcePackActivationType.DEFAULT_ENABLED
 		);
 	}

@@ -158,7 +158,7 @@
     "fabric-blockrenderlayer-v1": "*",
     "fabric-rendering-v1": "*",
     "fabric-object-builder-api-v1": "*",
-    "minecraft": "1.19.3"
+    "minecraft": ">=1.19.4"
   },
   "breaks": {
     "consistency_plus_core": "*",

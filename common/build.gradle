@@ -13,12 +13,8 @@ dependencies {
     }*/
 }
 
-loom {
-    accessWidenerPath = file("src/main/resources/consistency_plus.accessWidener")
-}
-
 processResources {
-    exclude("*") // resources will be copied into each loader project
+    exclude("resourcepacks") // needs to be copied into each loader
 }
 
 architectury.common("fabric", "forge")

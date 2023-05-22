@@ -15,12 +15,13 @@ dependencies {
 
 processResources {
     from(rootProject.file("common/src/main/resources")) {
-        include("**/**")
-        duplicatesStrategy = DuplicatesStrategy.WARN
+        include("resourcepacks")
     }
 }
 
 shadowJar {
+    exclude "architectury.common.json"
+
     configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"
 }
@@ -31,7 +32,7 @@ remapJar {
     classifier null
 }
 
-jar.classifier "dev"
+jar.classifier = "dev"
 
 sourcesJar {
     duplicatesStrategy(DuplicatesStrategy.WARN)

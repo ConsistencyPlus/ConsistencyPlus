@@ -130,7 +130,7 @@
   ],
 
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/consistencyplus",
+    "homepage": "https://modrinth.com/mod/consistencyplus/versions",
     "issues": "https://github.com/ConsistencyPlus/ConsistencyPlus/issues",
     "sources": "https://github.com/ConsistencyPlus/ConsistencyPlus",
     "wiki": "https://github.com/ConsistencyPlus/ConsistencyPlus/wiki"
@@ -158,7 +158,7 @@
     "fabric-blockrenderlayer-v1": "*",
     "fabric-rendering-v1": "*",
     "fabric-object-builder-api-v1": "*",
-    "minecraft": ">=1.18.2"
+    "minecraft": "1.19.2"
   },
   "breaks": {
     "consistency_plus_core": "*",

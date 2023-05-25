@@ -1,6 +1,6 @@
 plugins {
-    id "architectury-plugin" version "3.+"
-    id "dev.architectury.loom" version "1.1.+" apply false
+    id "architectury-plugin" version "3.4-SNAPSHOT"
+    id "dev.architectury.loom" version "1.1-SNAPSHOT" apply false
     id "io.github.juuxel.loom-quiltflower" version "1.+" apply false
     id "com.github.johnrengelman.shadow" version "7.+" apply false
     id "maven-publish"
@@ -20,14 +20,12 @@ subprojects {
         mappings "net.fabricmc:yarn:1.19.3+build.$yarn_build:v2"
 
         String platform = project.name
-        String scrt = "io.github.tropheusj.stonecutter_recipe_tags:$platform:$scrt_version"
+        String scrt = "io.github.tropheusj.stonecutter_recipe_tags:$platform:$scrt_version+1.19.3.$platform"
         if (platform != "common") {
-            scrt += ".$platform"
             include(scrt)
+            modImplementation(scrt)
+            modImplementation(implementation("com.github.LlamaLad7:MixinExtras:0.1.1"))
         }
-
-        modImplementation(scrt)
-        modImplementation(implementation("com.github.LlamaLad7:MixinExtras:0.1.1"))
 
         //modImplementation("dev.architectury:architectury-$platform:$architectury_version")
 

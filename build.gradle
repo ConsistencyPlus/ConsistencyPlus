@@ -20,15 +20,12 @@ subprojects {
         mappings "net.fabricmc:yarn:1.19.3+build.$yarn_build:v2"
 
         String platform = project.name
-
-        String scrt = "maven.modrinth:stonecutter_recipe_tags:$scrt_version" + "-"
+        String scrt = "io.github.tropheusj.stonecutter_recipe_tags:$platform:$scrt_version"
         if (platform != "common") {
-            scrt += "$platform"
+            scrt += ".$platform"
             include(scrt)
-            include("com.github.LlamaLad7:MixinExtras:0.1.1")
-        } else {
-            scrt += "fabric"
         }
+
         modImplementation(scrt)
         modImplementation(implementation("com.github.LlamaLad7:MixinExtras:0.1.1"))
 
@@ -62,7 +59,7 @@ allprojects {
     }
 
     repositories {
-        maven { url = "https://mvn.devos.one/snapshots/" } // SCRT
+        maven { url = "https://mvn.devos.one/snapshots/" } // SCRT // We did not use this for SCRT until now why
         maven { url = "https://jitpack.io/" } // Mixin Extras, for SCRT
         maven { url = "https://maven.quiltmc.org/repository/release/" }
         maven { url = "https://maven.quiltmc.org/repository/snapshot/" }

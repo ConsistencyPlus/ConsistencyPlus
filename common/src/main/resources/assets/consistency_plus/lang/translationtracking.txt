@@ -11,6 +11,7 @@ Lolcat - Unmanaged. Pretty much every string would need to manually be created r
 Shakespearian english - Unmanaged. Should be up to date with 0.4.x at least.
 Pirate Speak - Unmanaged - The file exists but no strings are translated.  Might be doable via find and replace, however it probably would need the same treatment as lolcat
 Chinese (Simplified and Traditional) - Managed by dodomos. Up to date as of 0.5.2. 10.02.23
+toki pona - Managed by ParanormalChicken. Up to date as of 0.5.2. 24.5.23
 
 
 Translator Comments:
@@ -60,3 +61,5 @@ P.S. Why Consistency+ is at 0.5.1 still? :thonk:
 MobButcher — Updated Ukrainian, Russian, and Upside-Down once again.
 - 09.05.23
 
+ParanormalChicken - I did toki pona and it took me at least 3 different attempts but I did it
+- nanpa pi tenpo sike: mute tu tu.luka.mute tu wan

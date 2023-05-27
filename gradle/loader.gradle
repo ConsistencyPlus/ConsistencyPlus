@@ -14,6 +14,7 @@ dependencies {
 }
 
 processResources {
+    include("**/**")
     from(rootProject.file("common/src/main/resources")) {
         include("resourcepacks/**")
     }

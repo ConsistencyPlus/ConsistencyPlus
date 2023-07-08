@@ -16,7 +16,8 @@ public abstract class AreaHelperMixin {
 			method = { // IS_VALID_FRAME_BLOCK predicate
 					"method_30487", // yarn
 					"m_uenhrluo", // qm
-					"lambda$static$0" // moj
+					"lambda$static$0", // moj
+					"m_77719_" // srg
 			},
 			at = @At("RETURN"),
 			cancellable = true,

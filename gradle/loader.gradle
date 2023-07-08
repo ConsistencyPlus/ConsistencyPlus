@@ -14,9 +14,16 @@ dependencies {
 }
 
 processResources {
-    include("**/**")
+    // these files must be in C+'s jar directly for reading.
+    // if they are in the generated common jar, stuff won't work.
     from(rootProject.file("common/src/main/resources")) {
         include("resourcepacks/**")
+    }
+    from(rootProject.file("common/src/main/resources")) {
+        include("materials/**")
+    }
+    from(rootProject.file("common/src/main/resources")) {
+        include("materials.json")
     }
 }
 
@@ -24,16 +31,16 @@ shadowJar {
     exclude "architectury.common.json"
 
     configurations = [project.configurations.shadowCommon]
-    classifier "dev-shadow"
+    archiveClassifier = "dev-shadow"
 }
 
 remapJar {
     inputFile.set shadowJar.archiveFile
     dependsOn shadowJar
-    classifier null
+    archiveClassifier = null
 }
 
-jar.classifier = "dev"
+jar.archiveClassifier = "dev"
 
 sourcesJar {
     duplicatesStrategy(DuplicatesStrategy.WARN)

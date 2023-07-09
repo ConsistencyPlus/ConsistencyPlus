@@ -38,6 +38,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.function.Function;
@@ -62,7 +63,7 @@ public class ConsistencyPlus {
 		GLOBAL_LOOT.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
-	private static Map<BlockItem, PossibleGroups> creativeTabs = new HashMap<>();
+	private static Map<BlockItem, PossibleGroups> creativeTabs = new LinkedHashMap<>();
 
 	@SubscribeEvent
 	public void onInitialize(RegisterEvent event) {

@@ -175,6 +175,7 @@ public class ConsistencyPlus {
 			delegateField.setAccessible(true);
 			// Get the original delegate to prevent an infinite loop
 			@SuppressWarnings("unchecked")
+			Supplier<BiMap<Block, Block>> originalWeatheringMapDelegate = (Supplier<BiMap<Block, Block>>) delegateField.get(Oxidizable.OXIDATION_LEVEL_INCREASES);
 			com.google.common.base.Supplier<BiMap<Block, Block>> weatheringMapDelegate = () -> {
 				BiMap<Block, Block> newMap = HashBiMap.create(originalWeatheringMapDelegate.get());
 				ConsistencyPlus.oxidizationMap.forEach((lesserID, greaterID) -> {

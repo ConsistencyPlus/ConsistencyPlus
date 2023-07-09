@@ -20,11 +20,10 @@ subprojects {
         mappings "net.fabricmc:yarn:1.19.4+build.$yarn_build:v2"
 
         String platform = project.name
-        String scrt = "io.github.tropheusj.stonecutter_recipe_tags:$platform:$scrt_version+1.19.3.$platform"
+        String scrt = "io.github.tropheusj.stonecutter_recipe_tags:$platform:$scrt_version.$platform"
         if (platform != "common") {
             include(scrt)
             modImplementation(scrt)
-            modImplementation(implementation("com.github.LlamaLad7:MixinExtras:0.1.1"))
         }
 
         //modImplementation("dev.architectury:architectury-$platform:$architectury_version")

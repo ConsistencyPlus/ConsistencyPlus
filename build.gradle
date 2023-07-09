@@ -60,12 +60,12 @@ allprojects {
 
     repositories {
         maven { url = "https://mvn.devos.one/snapshots/" } // SCRT // We did not use this for SCRT until now why
-        maven { url = "https://jitpack.io/" } // Mixin Extras, for SCRT
         maven { url = "https://maven.quiltmc.org/repository/release/" }
         maven { url = "https://maven.quiltmc.org/repository/snapshot/" }
         maven { url = "https://maven.bai.lol" } // WTHIT
         maven { url = "https://api.modrinth.com/maven" }
         maven { url = "https://maven.blamejared.com" } // Patchouli
+        maven { url = "https://jitpack.io/" } // Mixin Extras, for SCRT
     }
 
     jar {

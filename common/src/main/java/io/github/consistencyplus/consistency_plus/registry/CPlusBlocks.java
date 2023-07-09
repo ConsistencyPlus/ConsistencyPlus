@@ -335,7 +335,7 @@ public class CPlusBlocks {
     }
 
     public static boolean isValidPortalBlock(BlockState state) {
-        if ((state.isIn(VALID_PORTAL_BLOCKS))) {
+        if ((state.isIn(CPlusTags.VALID_PORTAL_BLOCKS))) {
             if (state.contains(SlabBlock.TYPE)) {
                 return state.get(SlabBlock.TYPE) == SlabType.DOUBLE;
             } return true;
@@ -343,7 +343,7 @@ public class CPlusBlocks {
     }
 
     public static boolean isValidConduitBlock(BlockState state) {
-        return state.isIn(VALID_CONDUIT_BLOCKS);
+        return state.isIn(CPlusTags.VALID_CONDUIT_BLOCKS);
     }
 
     public static void init() {}

@@ -12,7 +12,10 @@ dependencies {
 }
 
 processResources {
-    exclude("resourcepacks") // needs to be copied into each loader
+    // these files are copied into each loader, since they need to be read directly
+    exclude("resourcepacks")
+    exclude("materials")
+    exclude("materials.json")
 }
 
 architectury.common("fabric", "forge")

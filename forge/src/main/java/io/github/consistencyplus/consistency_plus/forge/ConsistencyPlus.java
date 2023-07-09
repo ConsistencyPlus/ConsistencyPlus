@@ -2,7 +2,7 @@ package io.github.consistencyplus.consistency_plus.forge;
 
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
-import com.google.common.collect.ImmutableBiMap;
+import com.google.common.collect.HashBiMap;
 import com.mojang.serialization.Codec;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
@@ -38,6 +38,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.function.Function;
@@ -62,7 +63,7 @@ public class ConsistencyPlus {
 		GLOBAL_LOOT.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
-	private static Map<BlockItem, PossibleGroups> creativeTabs = new HashMap<>();
+	private static Map<BlockItem, PossibleGroups> creativeTabs = new LinkedHashMap<>();
 
 	@SubscribeEvent
 	public void onInitialize(RegisterEvent event) {
@@ -167,7 +168,7 @@ public class ConsistencyPlus {
 		}
 	}
 
-	// this is yoinked from Create, which is licensed under MIT, so this is as well.
+	// this is based on code from Create, which is licensed under MIT, so this is as well.
 	// https://github.com/Creators-of-Create/Create/blob/mc1.18/dev/src/main/java/com/simibubi/create/foundation/block/CopperRegistries.java
 	public static void finish() {
 		try {
@@ -175,12 +176,16 @@ public class ConsistencyPlus {
 			delegateField.setAccessible(true);
 			// Get the original delegate to prevent an infinite loop
 			@SuppressWarnings("unchecked")
+			Supplier<BiMap<Block, Block>> originalWeatheringMapDelegate = (Supplier<BiMap<Block, Block>>) delegateField.get(Oxidizable.OXIDATION_LEVEL_INCREASES);
 			com.google.common.base.Supplier<BiMap<Block, Block>> weatheringMapDelegate = () -> {
-				ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.builder();
+				BiMap<Block, Block> newMap = HashBiMap.create(originalWeatheringMapDelegate.get());
 				ConsistencyPlus.oxidizationMap.forEach((lesserID, greaterID) -> {
-					builder.put(RegistryObject.create(lesserID, ForgeRegistries.BLOCKS).get(), RegistryObject.create(greaterID, ForgeRegistries.BLOCKS).get());
+					Block lesser = ForgeRegistries.BLOCKS.getValue(lesserID);
+					Block greater = ForgeRegistries.BLOCKS.getValue(greaterID);
+					if (!newMap.containsKey(lesser) && !newMap.containsValue(greater))
+						newMap.put(lesser, greater);
 				});
-				return builder.build();
+				return newMap;
 			};
 			// Replace the memoized supplier's delegate, since interface fields cannot be reassigned
 			delegateField.set(Oxidizable.OXIDATION_LEVEL_INCREASES, weatheringMapDelegate);
@@ -190,12 +195,14 @@ public class ConsistencyPlus {
 
 		Supplier<BiMap<Block, Block>> originalWaxableMapSupplier = HoneycombItem.UNWAXED_TO_WAXED_BLOCKS;
 		Supplier<BiMap<Block, Block>> waxableMapSupplier = Suppliers.memoize(() -> {
-			ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.builder();
-			builder.putAll(originalWaxableMapSupplier.get());
+			BiMap<Block, Block> newMap = HashBiMap.create(originalWaxableMapSupplier.get());
 			ConsistencyPlus.waxingMap.forEach((unwaxedID, waxedID) -> {
-				builder.put(RegistryObject.create(unwaxedID, ForgeRegistries.BLOCKS).get(), RegistryObject.create(waxedID, ForgeRegistries.BLOCKS).get());
+				Block unwaxed = ForgeRegistries.BLOCKS.getValue(unwaxedID);
+				Block waxed = ForgeRegistries.BLOCKS.getValue(waxedID);
+				if (!newMap.containsKey(unwaxed) && !newMap.containsValue(waxed))
+					newMap.put(unwaxed, waxed);
 			});
-			return builder.build();
+			return newMap;
 		});
 		HoneycombItem.UNWAXED_TO_WAXED_BLOCKS = waxableMapSupplier;
 	}

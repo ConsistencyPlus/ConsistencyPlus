@@ -11,17 +11,12 @@ import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import net.minecraft.registry.Registry;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class CPlusBlocks {
@@ -30,16 +25,6 @@ public class CPlusBlocks {
     public static Map<Identifier, Function<Item.Settings, Item>> itemRegistry = new LinkedHashMap<>();
     //block only
     //item only
-
-    public static final TagKey<Block> DIRT_SLABS_TAG = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "dirt_stairs"));
-    public static final TagKey<Block> DIRT_STAIRS_TAG = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "dirt_stairs"));
-    public static final TagKey<Block> VALID_PORTAL_BLOCKS = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "valid_portal_blocks"));
-    public static final TagKey<Block> VALID_CONDUIT_BLOCKS = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "valid_conduit_blocks"));
-
-    public static final TagKey<Block> BLOCKS_PISTONS = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "blocks_pistons"));
-    public static final TagKey<Block> PISTON_PUSH_ONLY = TagKey.of(RegistryKeys.BLOCK, new Identifier("consistency_plus", "piston_push_only"));
-
-
 
     static {
         copper();
@@ -335,7 +320,7 @@ public class CPlusBlocks {
     }
 
     public static boolean isValidPortalBlock(BlockState state) {
-        if ((state.isIn(VALID_PORTAL_BLOCKS))) {
+        if ((state.isIn(CPlusTags.VALID_PORTAL_BLOCKS))) {
             if (state.contains(SlabBlock.TYPE)) {
                 return state.get(SlabBlock.TYPE) == SlabType.DOUBLE;
             } return true;
@@ -343,7 +328,7 @@ public class CPlusBlocks {
     }
 
     public static boolean isValidConduitBlock(BlockState state) {
-        return state.isIn(VALID_CONDUIT_BLOCKS);
+        return state.isIn(CPlusTags.VALID_CONDUIT_BLOCKS);
     }
 
     public static void init() {}

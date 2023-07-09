@@ -7,6 +7,8 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+
+import io.github.consistencyplus.consistency_plus.registry.CPlusTags;
 import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,9 +20,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class PistonBlockMixin {
     @Inject(at = @At("HEAD"), method = "isMovable(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/Direction;ZLnet/minecraft/util/math/Direction;)Z", cancellable = true)
     private static void cPlus$injectOurTag(BlockState state, World world, BlockPos pos, Direction direction, boolean canBreak, Direction pistonDir, CallbackInfoReturnable<Boolean> cir) {
-        if (state.isIn(CPlusBlocks.BLOCKS_PISTONS)) {
+        if (state.isIn(CPlusTags.BLOCKS_PISTONS)) {
             cir.setReturnValue(false);
-        } else if (state.isIn(CPlusBlocks.PISTON_PUSH_ONLY)) {
+        } else if (state.isIn(CPlusTags.PISTON_PUSH_ONLY)) {
             cir.setReturnValue(direction == pistonDir);
         }
     }

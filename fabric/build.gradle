@@ -10,6 +10,14 @@ repositories {
     maven { url = "https://maven.terraformersmc.com" } // Mod Menu
 }
 
+configurations.configureEach {
+    resolutionStrategy.eachDependency {
+        if (requested.module.name == "fabric-loader") {
+            useVersion(fabric_version)
+        }
+    }
+}
+
 dependencies {
     modImplementation("net.fabricmc:fabric-loader:$fabric_version")
     modApi("net.fabricmc.fabric-api:fabric-api:$fabric_api_version")

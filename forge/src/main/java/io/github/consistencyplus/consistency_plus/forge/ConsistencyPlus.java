@@ -164,14 +164,14 @@ public class ConsistencyPlus {
 	public static ItemGroup getItemGroup(String string) {
 		return switch (string) {
 			case "stones" -> CPLUS_STONES;
-			case "dyeable" -> CPLUS_DYABLE;
+			case "dyeables" -> CPLUS_DYABLE;
 			case "misc" -> CPLUS_MISC;
 			default -> CPLUS_STONES;
 		};
 	}
 
 
-	public static final	ItemGroup CPLUS_STONES = new ItemGroup("consistency_plus.stones") {
+	public static final	ItemGroup CPLUS_STONES = new ItemGroup("consistency_plus.stone") {
 		@Override
 		public ItemStack createIcon() {
 			return RegistryObject.create(new Identifier("consistency_plus", "polished_stone"), ForgeRegistries.ITEMS).get().getDefaultStack();

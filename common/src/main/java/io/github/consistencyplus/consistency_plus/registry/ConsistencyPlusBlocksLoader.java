@@ -8,10 +8,9 @@ import io.github.consistencyplus.consistency_plus.util.*;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
@@ -19,15 +18,12 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
-import net.minecraft.registry.Registry;
 
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 // Based on the Json Registry in PortalCubed, found at https://github.com/Fusion-Flux/Portal-Cubed/blob/1.19.2/src/main/java/com/fusionflux/portalcubed/blocks/PortalBlocksLoader.java.
 // The PortalCubed code is licensed under MIT.
@@ -89,7 +85,7 @@ public final class ConsistencyPlusBlocksLoader {
                     ? Registries.BLOCK.getOrEmpty(new Identifier(JsonHelper.getString(jsonCool, "inherit")))
                     .map(AbstractBlock.Settings::copy)
                     .orElseThrow(() -> new IllegalArgumentException("Unknown block " + jsonCool.get("inherit")))
-                    : AbstractBlock.Settings.of(Material.STONE)
+                    : AbstractBlock.Settings.copy(Blocks.STONE)
                     .strength(3.5f, 3.5f)
                     .requiresTool();
             //json.remove("inherit");
@@ -107,7 +103,7 @@ public final class ConsistencyPlusBlocksLoader {
             }
 
             if (hasBrick) {
-                CPlusBlocks.itemRegistry.put(new Identifier("consistency_plus", entry.getKey() + "_brick"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
+                CPlusBlocks.itemRegistry.put(new Identifier("consistency_plus", entry.getKey() + "_brick"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.field_41062)));
             }
         }
     }

@@ -1,6 +1,8 @@
 package io.github.consistencyplus.consistency_plus.fabric;
 
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups;
+import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups.GroupInfo;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.util.AdditionalBlockSettings;
 import io.github.consistencyplus.consistency_plus.util.BlockData;
@@ -27,6 +29,8 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.text.Text;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
@@ -82,6 +86,14 @@ public class ConsistencyPlus implements ModInitializer {
 
 		lootModification();
 
+		for (GroupInfo info : CPlusItemGroups.ALL) {
+			ItemGroup group = FabricItemGroup.builder()
+					.icon(info.icon())
+					.displayName(info.name())
+					.build();
+			Registry.register(Registries.field_44687, info.key(), group);
+		}
+
 //		ServerWorldEvents.LOAD.register(((server, world) -> RegistryDump.run()));
 	}
 
@@ -107,24 +119,13 @@ public class ConsistencyPlus implements ModInitializer {
 		}
 	}
 
-	public static ItemGroup getItemGroup(String string) {
-		try {
-			return switch (string) {
-				case "stones" -> CPLUS_STONES;
-				case "dyeables" -> CPLUS_DYEABLE;
-				case "misc" -> CPLUS_MISC;
-				default -> CPLUS_STONES;
-			};
-		} catch (NullPointerException npe) {
-			return ItemGroups.BUILDING_BLOCKS;
-		}
+	public static RegistryKey<ItemGroup> getItemGroup(String string) {
+		return string == null ? ItemGroups.field_40195 : switch (string) {
+			case "dyeables" -> CPlusItemGroups.DYEABLES.key();
+			case "misc" -> CPlusItemGroups.MISC.key();
+			default -> CPlusItemGroups.STONES.key();
+		};
 	}
-
-	public static final ItemGroup CPLUS_STONES = FabricItemGroup.builder(new Identifier("consistency_plus", "stone")).icon(() -> Registries.ITEM.get(new Identifier("consistency_plus", "polished_stone")).getDefaultStack()).build();
-
-	public static final	ItemGroup CPLUS_DYEABLE = FabricItemGroup.builder(new Identifier("consistency_plus", "dyeable")).icon(() -> Registries.ITEM.get(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete")).getDefaultStack()).build();
-
-	public static final	ItemGroup CPLUS_MISC = FabricItemGroup.builder(new Identifier("consistency_plus", "misc")).icon(() -> Registries.ITEM.get(new Identifier("consistency_plus", "polished_purpur")).getDefaultStack()).build();
 
 	public static void lootModification() {
 		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {

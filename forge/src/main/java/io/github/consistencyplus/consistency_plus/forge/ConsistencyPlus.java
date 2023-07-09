@@ -5,6 +5,8 @@ import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import com.mojang.serialization.Codec;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups;
+import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups.GroupInfo;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
 import io.github.consistencyplus.consistency_plus.registry.PseudoRegistry;
 import io.github.consistencyplus.consistency_plus.util.AdditionalBlockSettings;
@@ -14,20 +16,20 @@ import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Oxidizable;
-import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataOutput;
 import net.minecraft.item.*;
 import net.minecraft.loot.condition.LootCondition;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.registry.Registry;
 import net.minecraftforge.common.data.GlobalLootModifierProvider;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootTableIdCondition;
 import net.minecraftforge.data.event.GatherDataEvent;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -63,7 +65,7 @@ public class ConsistencyPlus {
 		GLOBAL_LOOT.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
-	private static Map<BlockItem, PossibleGroups> creativeTabs = new LinkedHashMap<>();
+	private static Map<BlockItem, RegistryKey<ItemGroup>> creativeTabs = new LinkedHashMap<>();
 
 	@SubscribeEvent
 	public void onInitialize(RegisterEvent event) {
@@ -107,47 +109,35 @@ public class ConsistencyPlus {
 
 		});
 
+		event.register(RegistryKeys.field_44688, helper -> {
+			helper.register(CPlusItemGroups.STONES.key(), ItemGroup.builder()
+					.icon(CPlusItemGroups.STONES.icon()).displayName(CPlusItemGroups.STONES.name())
+					.build()
+			);
+			helper.register(CPlusItemGroups.DYEABLES.key(), ItemGroup.builder()
+					.icon(CPlusItemGroups.DYEABLES.icon()).displayName(CPlusItemGroups.DYEABLES.name())
+					.withTabsBefore(CPlusItemGroups.STONES.key()).withTabsAfter(CPlusItemGroups.MISC.key()) // sorting
+					.build()
+			);
+			helper.register(CPlusItemGroups.MISC.key(), ItemGroup.builder()
+					.icon(CPlusItemGroups.MISC.icon()).displayName(CPlusItemGroups.MISC.name())
+					.build()
+			);
+		});
+
 		finish();
 
 
 	}
 
 	@SubscribeEvent
-	public void buildContents(CreativeModeTabEvent.BuildContents event) {
+	public void buildContents(BuildCreativeModeTabContentsEvent event) {
 		creativeTabs.forEach((item, group) -> {
-			ItemGroup group2 = switch (group) {
-				case STONES -> CPLUS_STONES;
-				case DYEABLE -> CPLUS_DYABLE;
-				case MISC -> CPLUS_MISC;
-			};
-			if (event.getTab() == group2) {
-				event.accept(() -> item);
+			if (event.getTabKey() == group) {
+				event.add(item);
 			}
 		});
 	}
-
-
-	@SubscribeEvent
-	public void buildContents2(CreativeModeTabEvent.Register event) {
-		CPLUS_DYABLE = event.registerCreativeModeTab(new Identifier("consistency_plus:dyeable"), builder ->
-				// Set name of tab to display
-				builder.displayName(Text.translatable("itemGroup.consistency_plus.dyeable"))
-						// Set icon of creative tab
-						.icon(() -> RegistryObject.create(new Identifier("consistency_plus", "polished_" + DyeColor.byId(Random.create().nextBetween(0, 15)).getName() + "_concrete"), ForgeRegistries.ITEMS).get().getDefaultStack()));
-
-		CPLUS_MISC = event.registerCreativeModeTab(new Identifier("consistency_plus:misc"), builder ->
-				// Set name of tab to display
-				builder.displayName(Text.translatable("itemGroup.consistency_plus.misc"))
-						// Set icon of creative tab
-						.icon(() -> RegistryObject.create(new Identifier("consistency_plus", "polished_purpur"), ForgeRegistries.ITEMS).get().getDefaultStack()));
-
-
-		CPLUS_STONES = event.registerCreativeModeTab(new Identifier("consistency_plus:stones"), builder ->
-				// Set name of tab to display
-				builder.displayName(Text.translatable("itemGroup.consistency_plus.stone"))
-						// Set icon of creative tab
-						.icon(() -> RegistryObject.create(new Identifier("consistency_plus", "polished_stone"), ForgeRegistries.ITEMS).get().getDefaultStack()));
-	};
 
 	@SubscribeEvent
 	public static void lootEvent(GatherDataEvent event) {
@@ -207,27 +197,13 @@ public class ConsistencyPlus {
 		HoneycombItem.UNWAXED_TO_WAXED_BLOCKS = waxableMapSupplier;
 	}
 
-	public static PossibleGroups getItemGroup(String string) {
-		return switch (string) {
-			case "stones" -> PossibleGroups.STONES;
-			case "dyeables" -> PossibleGroups.DYEABLE;
-			case "misc" -> PossibleGroups.MISC;
-			default -> PossibleGroups.STONES;
+	public static RegistryKey<ItemGroup> getItemGroup(String string) {
+		return string == null ? ItemGroups.field_40195 : switch (string) {
+			case "dyeables" -> CPlusItemGroups.DYEABLES.key();
+			case "misc" -> CPlusItemGroups.MISC.key();
+			default -> CPlusItemGroups.STONES.key();
 		};
 	}
-
-	enum PossibleGroups {
-		STONES,
-		DYEABLE,
-		MISC
-	}
-
-
-	public static ItemGroup CPLUS_STONES;
-
-	public static ItemGroup CPLUS_DYABLE;
-
-	public static ItemGroup CPLUS_MISC;
 
 	private static class DataProvider extends GlobalLootModifierProvider {
 		public DataProvider(DataOutput output, String modid) {

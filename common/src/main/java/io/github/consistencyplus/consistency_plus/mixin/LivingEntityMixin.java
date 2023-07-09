@@ -19,7 +19,7 @@ public abstract class LivingEntityMixin extends Entity {
 	@Inject(at = @At("HEAD"), method = "isOnSoulSpeedBlock()Z", cancellable = true)
 	protected void cPlus$handleSoulSpeedForSlabsAndFences(CallbackInfoReturnable<Boolean> cir) {
 		// check feet pos block, not just the block below
-		if (world.getBlockState(getBlockPos()).isIn(BlockTags.SOUL_SPEED_BLOCKS)) {
+		if (getWorld().getBlockState(getBlockPos()).isIn(BlockTags.SOUL_SPEED_BLOCKS)) {
 			cir.setReturnValue(true);
 		}
 	}

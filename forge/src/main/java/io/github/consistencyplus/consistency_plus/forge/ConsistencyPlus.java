@@ -59,6 +59,7 @@ public class ConsistencyPlus {
 		GLOBAL_LOOT.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
+	//Todo: Remake all of this code, its not that well written in my opinon - Siuol
 	@SubscribeEvent
 	public void onInitialize(RegisterEvent event) {
 		ConsistencyPlusMain.init(forge);
@@ -70,13 +71,14 @@ public class ConsistencyPlus {
 		event.register(ForgeRegistries.Keys.BLOCKS, helper -> {
 			for (Identifier id : blockDataMap.keySet()) {
 				BlockData data = blockDataMap.get(id);
+				if (forge.getIsClient() && data.settings().layer() != null) {
+					blockToRenderLayers.put(id, data.settings().layer());
+				}
 				if (data.block() == BlockShape.PROVIDED) {
 					accessRegistry(id, data, helper);
 					continue;
 				}
-				if (forge.getIsClient() && data.settings().layer() != null) {
-					blockToRenderLayers.put(id, data.settings().layer());
-				}
+
 				helper.register(id, data.block().initFunc().apply(data.settings().settings()));
 			}
 		});

@@ -1,0 +1,50 @@
+{
+  "red_tinted_glass": {
+    "type": "provided"
+  },
+  "yellow_tinted_glass": {
+    "type": "provided"
+  },
+  "orange_tinted_glass": {
+    "type": "provided"
+  },
+  "lime_tinted_glass": {
+    "type": "provided"
+  },
+  "green_tinted_glass": {
+    "type": "provided"
+  },
+  "blue_tinted_glass": {
+    "type": "provided"
+  },
+  "cyan_tinted_glass": {
+    "type": "provided"
+  },
+  "light_blue_tinted_glass": {
+    "type": "provided"
+  },
+  "purple_tinted_glass": {
+    "type": "provided"
+  },
+  "magenta_tinted_glass": {
+    "type": "provided"
+  },
+  "pink_tinted_glass": {
+    "type": "provided"
+  },
+  "white_tinted_glass": {
+    "type": "provided"
+  },
+  "light_gray_tinted_glass": {
+    "type": "provided"
+  },
+  "gray_tinted_glass": {
+    "type": "provided"
+  },
+  "black_tinted_glass": {
+    "type": "provided"
+  },
+  "brown_tinted_glass": {
+    "type": "provided"
+  }
+}

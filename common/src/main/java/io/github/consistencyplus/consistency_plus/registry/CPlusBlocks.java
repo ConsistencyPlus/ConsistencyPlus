@@ -35,6 +35,7 @@ public class CPlusBlocks {
         waxedWeatheredExposedCopper();
         oxidizedCopper();
         waxedOxidizedExposedCopper();
+        dyedTintedGlass();
         miscItems();
     }
 
@@ -301,6 +302,25 @@ public class CPlusBlocks {
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_carved_copper"), Block::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_pillar"), PillarBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_corner_pillar"), Block::new);
+    }
+
+    private static void dyedTintedGlass() {
+        registry.put(new Identifier("consistency_plus", "red_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "yellow_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "orange_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "lime_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "green_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "blue_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "cyan_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "light_blue_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "magenta_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "purple_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "pink_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "white_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "light_gray_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "gray_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "black_tinted_glass"), TintedGlassBlock::new);
+        registry.put(new Identifier("consistency_plus", "brown_tinted_glass"), TintedGlassBlock::new);
     }
 
     private static void miscItems() {

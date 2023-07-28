@@ -37,6 +37,7 @@ public class ConsistencyPlusClient {
 				RenderLayer layer = ConsistencyPlusClientMain.SUPPORTED_LAYERS.get(layerName);
 				if (layer != null) {
 					Block block = RegistryObject.create(id, ForgeRegistries.BLOCKS).get();
+					ConsistencyPlusMain.LOGGER.info("RenderLayer requested - " + id.toString());
 					//noinspection removal
 					RenderLayers.setRenderLayer(block, layer);
 				} else {

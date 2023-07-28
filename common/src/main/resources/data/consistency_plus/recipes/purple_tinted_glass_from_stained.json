@@ -1,0 +1,20 @@
+{
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+            " # ",
+            "#O#",
+            " # "
+      ],
+      "key": {
+            "#": {
+                  "item": "minecraft:amethyst_shard"
+            },
+            "O": {
+                  "item": "minecraft:purple_stained_glass"
+            }
+      },
+      "result": {
+            "item": "consistency_plus:purple_tinted_glass",
+            "count": 2
+      }
+}

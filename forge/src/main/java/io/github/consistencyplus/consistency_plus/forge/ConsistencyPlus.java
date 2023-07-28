@@ -78,12 +78,12 @@ public class ConsistencyPlus {
 		event.register(ForgeRegistries.Keys.BLOCKS, helper -> {
 			for (Identifier id : blockDataMap.keySet()) {
 				BlockData data = blockDataMap.get(id);
+				if (forge.getIsClient() && data.settings().layer() != null) {
+					blockToRenderLayers.put(id, data.settings().layer());
+				}
 				if (data.block() == BlockShape.PROVIDED) {
 					accessRegistry(id, data, helper);
 					continue;
-				}
-				if (forge.getIsClient() && data.settings().layer() != null) {
-					blockToRenderLayers.put(id, data.settings().layer());
 				}
 				helper.register(id, data.block().initFunc().apply(data.settings().settings()));
 			}

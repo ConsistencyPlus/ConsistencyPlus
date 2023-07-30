@@ -1,8 +1,11 @@
 package io.github.consistencyplus.consistency_plus.util;
 
+import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import net.minecraft.block.MapColor;
+import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.piston.PistonBehavior;
 
-public class StringToMapColor {
+public class StringConverter {
     public static MapColor stringToMapColor(String string) {
         return switch (string) {
             case "clear" -> MapColor.CLEAR;
@@ -68,6 +71,26 @@ public class StringToMapColor {
             case "raw_iron_pink" -> MapColor.RAW_IRON_PINK;
             case "lichen_green" -> MapColor.LICHEN_GREEN;
             default -> MapColor.CLEAR;
+        };
+    }
+
+    public static Instrument stringToInstrument(String string) {
+        //todo: I dont fully know if we need to loop through all of these like this, but eh. We could also do a switch like above.
+        for (Instrument instrument : Instrument.values()) {
+            if (instrument.asString().equals(string)) return instrument;
+        }
+        ConsistencyPlusMain.LOGGER.info("Instrument " + string + " not found! Did you format its id correctly? Using Banjo as a fill in");
+        return Instrument.BANJO;
+    }
+
+    public static PistonBehavior stringToPistonBehavior(String string) {
+        return switch (string) {
+            case "normal" -> PistonBehavior.NORMAL;
+            case "destroy" -> PistonBehavior.DESTROY;
+            case "block" -> PistonBehavior.BLOCK;
+            case "push_only" -> PistonBehavior.PUSH_ONLY;
+            case "ignore" -> PistonBehavior.IGNORE;
+            default -> PistonBehavior.BLOCK;
         };
     }
 }

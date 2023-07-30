@@ -22,7 +22,7 @@ public class CPlusItemGroups {
 
 	private static GroupInfo register(String name, String itemPath) {
 		MutableText text = Text.translatable("itemGroup.consistency_plus." + name);
-		RegistryKey<ItemGroup> key = RegistryKey.of(RegistryKeys.field_44688, new Identifier(ConsistencyPlusMain.MOD_ID, name));
+		RegistryKey<ItemGroup> key = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(ConsistencyPlusMain.MOD_ID, name));
 		Identifier itemId = new Identifier(ConsistencyPlusMain.MOD_ID, itemPath);
 		Supplier<ItemStack> supplier = () -> new ItemStack(Registries.ITEM.get(itemId));
 		return new GroupInfo(text, key, supplier);

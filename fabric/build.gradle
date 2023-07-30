@@ -27,13 +27,13 @@ dependencies {
         modLocalRuntime("maven.modrinth:jade:$jade_fabric_version_id")*/
 
     // dev QOL
-    modRuntimeOnly("maven.modrinth:lazydfu:0.1.3")
-    modImplementation("maven.modrinth:isnrmn:v1_03")
+    //modRuntimeOnly("maven.modrinth:lazydfu:0.1.3")
+    //modImplementation("maven.modrinth:isnrmn:v1_03")
     modRuntimeOnly("com.terraformersmc:modmenu:${rootProject.mod_menu_version}") { transitive = false }
 
-    shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
+    shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive = false }
 
-    modImplementation("dev.architectury:architectury-fabric:$architectury_version")
+    modImplementation("dev.architectury:architectury-fabric:$architectury_version") { transitive = false }
 }
 
 sourceSets.main {

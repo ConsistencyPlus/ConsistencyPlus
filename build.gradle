@@ -1,7 +1,7 @@
 plugins {
     id "architectury-plugin" version "3.+"
     id "dev.architectury.loom" version "1.2.+" apply false
-    id "io.github.juuxel.loom-quiltflower" version "1.+" apply false
+    id "io.github.juuxel.loom-vineflower" version "1.+" apply false
     id "com.github.johnrengelman.shadow" version "7.+" apply false
     id "maven-publish"
 }
@@ -10,7 +10,7 @@ architectury.minecraft = rootProject.minecraft_version
 
 subprojects {
     apply plugin: "dev.architectury.loom"
-    apply plugin: "io.github.juuxel.loom-quiltflower"
+    apply plugin: "io.github.juuxel.loom-vineflower"
 
     archivesBaseName = "$archives_base_name-$project.name"
 
@@ -18,13 +18,19 @@ subprojects {
     // Who let bro (me) cook
     dependencies {
         minecraft "com.mojang:minecraft:$minecraft_version"
-        mappings "net.fabricmc:yarn:1.19.4+build.$yarn_build:v2"
+        mappings "net.fabricmc:yarn:1.20.1+build.$yarn_build:v2"
 
         String platform = project.name
         String scrt = "io.github.tropheusj.stonecutter_recipe_tags:$platform:$scrt_version.$platform"
         if (platform != "common") {
-            include(scrt)
-            modImplementation(scrt)
+            include(scrt) {
+                exclude(group: "net.fabricmc")
+                exclude(group: "net.fabricmc.fabric-api")
+            }
+            modImplementation(scrt) {
+                exclude(group: "net.fabricmc")
+                exclude(group: "net.fabricmc.fabric-api")
+            }
         }
 
         //modImplementation("dev.architectury:architectury-$platform:$architectury_version")

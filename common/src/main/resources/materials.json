@@ -87,8 +87,8 @@
       "pitch": 0.5
     }
   },
-  "obsidian": {"inherit": "minecraft:obsidian", "piston_push": false, "piston_pull": false, "item_group": "misc"},
-  "crying_obsidian": {"inherit": "minecraft:crying_obsidian", "light_level": 10, "piston_push": false, "piston_pull": false, "item_group": "misc"},
+  "obsidian": {"inherit": "minecraft:obsidian", "piston_behavior": "block", "item_group": "misc"},
+  "crying_obsidian": {"inherit": "minecraft:crying_obsidian", "light_level": 10, "piston_behavior": "block", "item_group": "misc"},
   "purpur": {"inherit": "minecraft:purpur_block", "item_group": "misc"},
   "prismarine": {"inherit": "minecraft:prismarine", "map_color": "diamond_blue", "item_group": "misc", "has_brick": false},
   "dark_prismarine": {"inherit": "minecraft:dark_prismarine", "map_color": "cyan", "item_group": "misc"},

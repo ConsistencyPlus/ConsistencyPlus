@@ -91,7 +91,7 @@ public class ConsistencyPlus implements ModInitializer {
 					.icon(info.icon())
 					.displayName(info.name())
 					.build();
-			Registry.register(Registries.field_44687, info.key(), group);
+			Registry.register(Registries.ITEM_GROUP, info.key(), group);
 		}
 
 //		ServerWorldEvents.LOAD.register(((server, world) -> RegistryDump.run()));
@@ -120,7 +120,7 @@ public class ConsistencyPlus implements ModInitializer {
 	}
 
 	public static RegistryKey<ItemGroup> getItemGroup(String string) {
-		return string == null ? ItemGroups.field_40195 : switch (string) {
+		return string == null ? ItemGroups.INGREDIENTS : switch (string) {
 			case "dyeables" -> CPlusItemGroups.DYEABLES.key();
 			case "misc" -> CPlusItemGroups.MISC.key();
 			default -> CPlusItemGroups.STONES.key();

@@ -9,6 +9,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -102,8 +103,8 @@ public final class ConsistencyPlusBlocksLoader {
                 ConsistencyPlusMain.LOGGER.error("Failed to load block data", e);
             }
 
-            if (hasBrick) {
-                CPlusBlocks.itemRegistry.put(new Identifier("consistency_plus", entry.getKey() + "_brick"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.field_41062)));
+            if (hasBrick) { // Mannnn do we really need this??? We can do this on the platform.
+                CPlusBlocks.itemRegistry.put(new Identifier("consistency_plus", entry.getKey() + "_brick"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
             }
         }
     }
@@ -133,13 +134,11 @@ public final class ConsistencyPlusBlocksLoader {
     }
 
     private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings) {
-        return fromJson(json, settings, new SettingsBundle(settings, null, new AdditionalBlockSettings(null, null, null, null, null)));
+        return fromJson(json, settings, new SettingsBundle(settings, null, new AdditionalBlockSettings(null, null, null)));
     }
 
     private static SettingsBundle fromJson(JsonObject json, AbstractBlock.Settings settings, SettingsBundle settingsBundle) {
         String renderLayer = settingsBundle.layer();
-        boolean pistonPush = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().pistonPush());
-        boolean pistonPull = Boolean.TRUE.equals(settingsBundle.additionalBlockSettings().pistonPull());
         String itemGroup = settingsBundle.additionalBlockSettings().itemGroup();
         String oxidizeToBlock = settingsBundle.additionalBlockSettings().oxidizeToBlock();
         String waxToBlock = settingsBundle.additionalBlockSettings().waxToBlock();
@@ -155,14 +154,19 @@ public final class ConsistencyPlusBlocksLoader {
                 case "render_layer" -> {
                     renderLayer = JsonHelper.asString(value, "render_layer");
                 }
-                case "map_color" -> settings.mapColor(StringToMapColor.stringToMapColor(JsonHelper.asString(value, "map_color")));
+                case "map_color" -> settings.mapColor(StringConverter.stringToMapColor(JsonHelper.asString(value, "map_color")));
                 case "opaque" -> {
                     if (!JsonHelper.asBoolean(value, "opaque")) settings.nonOpaque();
                 }
+                case "noteblock_instrument" -> {
+                    settings.instrument(StringConverter.stringToInstrument(JsonHelper.asString(value, "noteblock_instrument")));
+                }
+                case "piston_behavior" -> {
+                    settings.pistonBehavior(StringConverter.stringToPistonBehavior(JsonHelper.asString(value, "piston_behavior")));
+                    //ConsistencyPlusMain.LOGGER.info();
+                }
 
                 // EXTRA SETTINGS
-                case "piston_push" -> pistonPush = JsonHelper.asBoolean(value, "piston_push"); // Used in 1.20, 1.19 uses tags
-                case "piston_pull" -> pistonPull = JsonHelper.asBoolean(value, "piston_pull"); // Used in 1.20, 1.19 uses tags
                 case "item_group" -> itemGroup = JsonHelper.asString(value, "item_group");
                 case "oxidize_into" -> oxidizeToBlock = JsonHelper.asString(value, "oxidize_into");
                 case "wax_into" -> waxToBlock = JsonHelper.asString(value, "wax_into");
@@ -170,7 +174,7 @@ public final class ConsistencyPlusBlocksLoader {
             }
         }
 
-        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(pistonPush, pistonPull, itemGroup, oxidizeToBlock, waxToBlock));
+        return new SettingsBundle(settings, renderLayer, new AdditionalBlockSettings(itemGroup, oxidizeToBlock, waxToBlock));
     }
 
 }

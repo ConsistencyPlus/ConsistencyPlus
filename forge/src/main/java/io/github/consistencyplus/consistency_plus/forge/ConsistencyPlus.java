@@ -109,7 +109,7 @@ public class ConsistencyPlus {
 
 		});
 
-		event.register(RegistryKeys.field_44688, helper -> {
+		event.register(RegistryKeys.ITEM_GROUP, helper -> {
 			helper.register(CPlusItemGroups.STONES.key(), ItemGroup.builder()
 					.icon(CPlusItemGroups.STONES.icon()).displayName(CPlusItemGroups.STONES.name())
 					.build()
@@ -198,7 +198,7 @@ public class ConsistencyPlus {
 	}
 
 	public static RegistryKey<ItemGroup> getItemGroup(String string) {
-		return string == null ? ItemGroups.field_40195 : switch (string) {
+		return string == null ? ItemGroups.INGREDIENTS : switch (string) {
 			case "dyeables" -> CPlusItemGroups.DYEABLES.key();
 			case "misc" -> CPlusItemGroups.MISC.key();
 			default -> CPlusItemGroups.STONES.key();

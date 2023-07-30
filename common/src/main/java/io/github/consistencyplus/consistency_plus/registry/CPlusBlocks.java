@@ -326,17 +326,17 @@ public class CPlusBlocks {
     private static void miscItems() {
        registry.put(new Identifier("consistency_plus", "warped_wart"), WarpedWartPlantBlock::new);
        registry.put(new Identifier("consistency_plus", "concrete_powder"), a -> new ConcretePowderBlock((Registries.BLOCK.get(new Identifier("consistency_plus", "concrete"))), a));
-       itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registries.BLOCK.get(new Identifier("consistency_plus", "warped_wart")), new Item.Settings().arch$tab(ItemGroups.field_41062)));
-	     itemRegistry.put(new Identifier("consistency_plus", "copper_nugget"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.field_41062)));
-	     itemRegistry.put(new Identifier("consistency_plus", "netherite_nugget"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.field_41062).fireproof()));
-	     itemRegistry.put(new Identifier("consistency_plus", "netherite_horse_armor"), (a) -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().arch$tab(ItemGroups.field_41062)));
-	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.field_41062)));
-	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone_meal"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.field_41062)));
+       itemRegistry.put(new Identifier("consistency_plus", "warped_wart"), (a) -> new AliasedBlockItem(Registries.BLOCK.get(new Identifier("consistency_plus", "warped_wart")), new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
+	     itemRegistry.put(new Identifier("consistency_plus", "copper_nugget"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
+	     itemRegistry.put(new Identifier("consistency_plus", "netherite_nugget"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS).fireproof()));
+	     itemRegistry.put(new Identifier("consistency_plus", "netherite_horse_armor"), (a) -> new NetheriteHorseArmorItem(15, "netherite", new Item.Settings().maxCount(1).fireproof().arch$tab(ItemGroups.COMBAT)));
+	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
+	     itemRegistry.put(new Identifier("consistency_plus", "withered_bone_meal"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
 
 	// 🐢
-	    itemRegistry.put(new Identifier("consistency_plus", "turtle_chestplate"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, ArmorItem.Type.CHESTPLATE, new Item.Settings().arch$tab(ItemGroups.field_40202)));
-	    itemRegistry.put(new Identifier("consistency_plus", "turtle_leggings"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, ArmorItem.Type.LEGGINGS, new Item.Settings().arch$tab(ItemGroups.field_40202)));
-	    itemRegistry.put(new Identifier("consistency_plus", "turtle_boots"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, ArmorItem.Type.BOOTS, new Item.Settings().arch$tab(ItemGroups.field_40202)));
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_chestplate"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, ArmorItem.Type.CHESTPLATE, new Item.Settings().arch$tab(ItemGroups.COMBAT)));
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_leggings"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, ArmorItem.Type.LEGGINGS, new Item.Settings().arch$tab(ItemGroups.COMBAT)));
+	    itemRegistry.put(new Identifier("consistency_plus", "turtle_boots"), (a) -> new ArmorItem(ArmorMaterials.TURTLE, ArmorItem.Type.BOOTS, new Item.Settings().arch$tab(ItemGroups.COMBAT)));
     }
 
     public static boolean isValidPortalBlock(BlockState state) {

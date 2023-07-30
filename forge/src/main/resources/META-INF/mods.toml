@@ -38,13 +38,13 @@ logoFile = "icon.png"
 [[dependencies.consistency_plus]]
 modId = "forge"
 mandatory = true
-versionRange = "[40,)"
+versionRange = "[47.1.0, 47.1.3]"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.consistency_plus]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19.4,)"
+versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "BOTH"

@@ -28,6 +28,5 @@ public class CPlusItemGroups {
 		return new GroupInfo(text, key, supplier);
 	}
 
-	public record GroupInfo(Text name, RegistryKey<ItemGroup> key, Supplier<ItemStack> icon) {
-	}
+	public record GroupInfo(Text name, RegistryKey<ItemGroup> key, Supplier<ItemStack> icon) {}
 }

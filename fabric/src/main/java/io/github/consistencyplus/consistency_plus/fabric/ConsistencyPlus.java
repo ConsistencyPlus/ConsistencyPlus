@@ -61,10 +61,11 @@ public class ConsistencyPlus implements ModInitializer {
 				continue;
 			}
 
-			FabricBlockSettings blockSettings = FabricBlockSettings.copyOf(data.settings().settings());
+
 			AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
 
-			Block block = Registry.register(Registries.BLOCK, id, data.block().initFunc().apply(blockSettings));
+
+			Block block = Registry.register(Registries.BLOCK, id, data.block().initFunc().apply(data.settings().settings()));
 			Item item = new BlockItem(block, new Item.Settings());
 			Registry.register(Registries.ITEM, id, item);
 			ItemGroupEvents.modifyEntriesEvent(getItemGroup(addBloSet.itemGroup())).register(listener -> listener.add(item));

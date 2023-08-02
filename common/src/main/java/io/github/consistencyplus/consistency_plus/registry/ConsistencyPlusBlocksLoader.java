@@ -48,7 +48,6 @@ public final class ConsistencyPlusBlocksLoader {
             .build();
     }
 
-    /** CHANGE TO CROSS LOADED*/
     public static void init() {
         try (Reader reader = Files.newBufferedReader(ConsistencyPlusMain.LOADER_HELPER.getPath("materials.json"), StandardCharsets.UTF_8)) {
             loadMaterials(JsonHelper.deserialize(reader));
@@ -103,7 +102,7 @@ public final class ConsistencyPlusBlocksLoader {
                 ConsistencyPlusMain.LOGGER.error("Failed to load block data", e);
             }
 
-            if (hasBrick) { // Mannnn do we really need this??? We can do this on the platform.
+            if (hasBrick) {
                 CPlusBlocks.itemRegistry.put(new Identifier("consistency_plus", entry.getKey() + "_brick"), (a) -> new Item(new Item.Settings().arch$tab(ItemGroups.INGREDIENTS)));
             }
         }
@@ -151,20 +150,13 @@ public final class ConsistencyPlusBlocksLoader {
                 case "slipperiness" -> settings.slipperiness(JsonHelper.asFloat(value, "slipperiness"));
                 case "sounds" -> settings.sounds(parseBlockSounds(value));
                 case "light_level" -> settings.luminance((lum) -> JsonHelper.asInt(value, "light_level"));
-                case "render_layer" -> {
-                    renderLayer = JsonHelper.asString(value, "render_layer");
-                }
+                case "render_layer" -> renderLayer = JsonHelper.asString(value, "render_layer");
                 case "map_color" -> settings.mapColor(StringConverter.stringToMapColor(JsonHelper.asString(value, "map_color")));
                 case "opaque" -> {
                     if (!JsonHelper.asBoolean(value, "opaque")) settings.nonOpaque();
                 }
-                case "noteblock_instrument" -> {
-                    settings.instrument(StringConverter.stringToInstrument(JsonHelper.asString(value, "noteblock_instrument")));
-                }
-                case "piston_behavior" -> {
-                    settings.pistonBehavior(StringConverter.stringToPistonBehavior(JsonHelper.asString(value, "piston_behavior")));
-                    //ConsistencyPlusMain.LOGGER.info();
-                }
+                case "noteblock_instrument" -> settings.instrument(StringConverter.stringToInstrument(JsonHelper.asString(value, "noteblock_instrument")));
+                case "piston_behavior" -> settings.pistonBehavior(StringConverter.stringToPistonBehavior(JsonHelper.asString(value, "piston_behavior")));
 
                 // EXTRA SETTINGS
                 case "item_group" -> itemGroup = JsonHelper.asString(value, "item_group");

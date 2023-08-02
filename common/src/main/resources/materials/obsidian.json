@@ -1,6 +1,7 @@
 {
   "obsidian_slab": {
-    "type": "slab"
+    "type": "slab",
+    "piston_behavior": "block"
   },
   "obsidian_stairs": {
     "type": "stairs"

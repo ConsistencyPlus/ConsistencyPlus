@@ -1,0 +1,8 @@
+{
+  "replace": "false",
+  "values": [
+    "consistency_plus:turtle_chestplate",
+    "consistency_plus:turtle_leggings",
+    "consistency_plus:turtle_boots"
+  ]
+}

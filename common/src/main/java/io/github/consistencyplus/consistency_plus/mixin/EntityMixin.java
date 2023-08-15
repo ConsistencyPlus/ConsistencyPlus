@@ -2,8 +2,13 @@ package io.github.consistencyplus.consistency_plus.mixin;
 
 import io.github.consistencyplus.consistency_plus.blocks.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Direction;
+import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -14,10 +19,16 @@ public abstract class EntityMixin {
     @Inject(method = "getVelocityAffectingPos()Lnet/minecraft/util/math/BlockPos;", at = @At("RETURN"), cancellable = true)
     private void consistencyPlus$UseSlabsAndWallsForVelocity(CallbackInfoReturnable<BlockPos> cir) {
         Entity self = (Entity)((Object) this);
-        Block inBlock = self.getWorld().getBlockState(self.getBlockPos()).getBlock();
+        World world = self.getWorld();
+        BlockPos inPos = self.getBlockPos();
+        Block inBlock = world.getBlockState(inPos).getBlock();
         if (inBlock instanceof CPlusSlabBlock || inBlock instanceof CPlusStairsBlock) {
-            Block underBlock = self.getWorld().getBlockState(self.getBlockPos().down()).getBlock();
-            cir.setReturnValue(new BlockPos(self.getBlockPos().getX(), (int) Math.floor(self.getBoundingBox().minY - (underBlock instanceof CPlusFenceBlock || underBlock instanceof CPlusFenceGateBlock || underBlock instanceof CPlusWallBlock ? 0.5000001 : 0.2500001)), self.getBlockPos().getZ()));
+            BlockPos underPos = inPos.down();
+            BlockState underBlockState = world.getBlockState(underPos);
+            Box underBlockBox = underBlockState.getCollisionShape(world, underPos, ShapeContext.of(self)).getBoundingBox();
+            if (underBlockBox.getYLength() != 1.5 /* Use to vanilla behaviour over ANY wall */) {
+                cir.setReturnValue(self.getBlockPos().offset(Direction.Axis.Y, (int) Math.floor(0.2500001)));
+            }
         }
     }
 }

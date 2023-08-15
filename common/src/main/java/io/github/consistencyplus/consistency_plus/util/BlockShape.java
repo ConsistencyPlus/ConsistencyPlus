@@ -1,6 +1,7 @@
 package io.github.consistencyplus.consistency_plus.util;
 
 import io.github.consistencyplus.consistency_plus.blocks.CPlusFenceGateBlock;
+import io.github.consistencyplus.consistency_plus.blocks.CPlusSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.CPlusStairsBlock;
 import io.github.consistencyplus.consistency_plus.blocks.CPlusWallBlock;
 import net.minecraft.block.*;
@@ -9,7 +10,7 @@ import java.util.function.Function;
 
 public enum BlockShape {
         BLOCK("block", Block::new),
-        SLAB("slab", SlabBlock::new),
+        SLAB("slab", CPlusSlabBlock::new),
         STAIRS("stairs", CPlusStairsBlock::new),
         WALL("wall", CPlusWallBlock::new),
         GATE("gate", (settings) -> new CPlusFenceGateBlock(settings, WoodType.SPRUCE)),

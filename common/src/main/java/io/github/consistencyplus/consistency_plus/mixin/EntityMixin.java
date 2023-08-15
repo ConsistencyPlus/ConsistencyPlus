@@ -7,7 +7,6 @@ import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
-import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class EntityMixin {
     @Inject(method = "getVelocityAffectingPos()Lnet/minecraft/util/math/BlockPos;", at = @At("RETURN"), cancellable = true)
     private void consistencyPlus$UseSlabsAndStairsForVelocity(CallbackInfoReturnable<BlockPos> cir) {
-        Entity self = (Entity)((Object) this);
+        Entity self = (Entity) (Object) this;
         World world = self.getWorld();
         BlockPos inPos = self.getBlockPos();
         Block inBlock = world.getBlockState(inPos).getBlock();
@@ -27,7 +26,7 @@ public abstract class EntityMixin {
             BlockState underBlockState = world.getBlockState(underPos);
             Box underBlockBox = underBlockState.getCollisionShape(world, underPos, ShapeContext.of(self)).getBoundingBox();
             if (underBlockBox.getYLength() != 1.5 /* Use vanilla behaviour over ANY wall */) {
-                cir.setReturnValue(self.getBlockPos().offset(Direction.Axis.Y, (int) Math.floor(0.2500001)));
+                cir.setReturnValue(self.getBlockPos().withY((int) Math.floor(self.getBoundingBox().minY - 0.2500001)));
             }
         }
     }

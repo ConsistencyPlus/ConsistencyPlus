@@ -1,9 +1,6 @@
 package io.github.consistencyplus.consistency_plus.mixin;
 
-import io.github.consistencyplus.consistency_plus.blocks.CPlusFenceBlock;
-import io.github.consistencyplus.consistency_plus.blocks.CPlusFenceGateBlock;
-import io.github.consistencyplus.consistency_plus.blocks.CPlusSlabBlock;
-import io.github.consistencyplus.consistency_plus.blocks.CPlusWallBlock;
+import io.github.consistencyplus.consistency_plus.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.BlockPos;
@@ -18,8 +15,8 @@ public abstract class EntityMixin {
     private void consistencyPlus$UseSlabsAndWallsForVelocity(CallbackInfoReturnable<BlockPos> cir) {
         Entity self = (Entity)((Object) this);
         Block inBlock = self.getWorld().getBlockState(self.getBlockPos()).getBlock();
-        Block underBlock = self.getWorld().getBlockState(self.getBlockPos().down()).getBlock();
-        if (inBlock instanceof CPlusSlabBlock) {
+        if (inBlock instanceof CPlusSlabBlock || inBlock instanceof CPlusStairsBlock) {
+            Block underBlock = self.getWorld().getBlockState(self.getBlockPos().down()).getBlock();
             cir.setReturnValue(new BlockPos(self.getBlockPos().getX(), (int) Math.floor(self.getBoundingBox().minY - (underBlock instanceof CPlusFenceBlock || underBlock instanceof CPlusFenceGateBlock || underBlock instanceof CPlusWallBlock ? 0.5000001 : 0.2500001)), self.getBlockPos().getZ()));
         }
     }

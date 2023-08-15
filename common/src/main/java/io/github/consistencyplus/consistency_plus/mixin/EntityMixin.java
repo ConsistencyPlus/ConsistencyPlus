@@ -2,7 +2,6 @@ package io.github.consistencyplus.consistency_plus.mixin;
 
 import io.github.consistencyplus.consistency_plus.blocks.*;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.BlockPos;
@@ -19,14 +18,13 @@ public abstract class EntityMixin {
     private void consistencyPlus$UseSlabsAndStairsForVelocity(CallbackInfoReturnable<BlockPos> cir) {
         Entity self = (Entity) (Object) this;
         World world = self.getWorld();
-        BlockPos inPos = self.getBlockPos();
+        BlockPos inPos = new BlockPos(self.getBlockPos());
         Block inBlock = world.getBlockState(inPos).getBlock();
         if (inBlock instanceof CPlusSlabBlock || inBlock instanceof CPlusStairsBlock) {
             BlockPos underPos = inPos.down();
-            BlockState underBlockState = world.getBlockState(underPos);
-            Box underBlockBox = underBlockState.getCollisionShape(world, underPos, ShapeContext.of(self)).getBoundingBox();
+            Box underBlockBox = world.getBlockState(underPos).getCollisionShape(world, underPos, ShapeContext.of(self)).getBoundingBox();
             if (underBlockBox.getYLength() != 1.5 /* Use vanilla behaviour over ANY wall */) {
-                cir.setReturnValue(self.getBlockPos().withY((int) Math.floor(self.getBoundingBox().minY - 0.2500001)));
+                cir.setReturnValue(inPos);
             }
         }
     }

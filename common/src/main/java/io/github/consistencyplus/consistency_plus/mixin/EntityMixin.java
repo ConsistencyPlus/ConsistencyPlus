@@ -26,7 +26,7 @@ public abstract class EntityMixin {
             BlockPos underPos = inPos.down();
             BlockState underBlockState = world.getBlockState(underPos);
             Box underBlockBox = underBlockState.getCollisionShape(world, underPos, ShapeContext.of(self)).getBoundingBox();
-            if (underBlockBox.getYLength() != 1.5 /* Use to vanilla behaviour over ANY wall */) {
+            if (underBlockBox.getYLength() != 1.5 /* Use vanilla behaviour over ANY wall */) {
                 cir.setReturnValue(self.getBlockPos().offset(Direction.Axis.Y, (int) Math.floor(0.2500001)));
             }
         }

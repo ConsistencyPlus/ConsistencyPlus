@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(value = Entity.class, priority = 999)
 public abstract class EntityMixin {
     @Inject(method = "getVelocityAffectingPos()Lnet/minecraft/util/math/BlockPos;", at = @At("RETURN"), cancellable = true)
-    private void consistencyPlus$UseSlabsAndWallsForVelocity(CallbackInfoReturnable<BlockPos> cir) {
+    private void consistencyPlus$UseSlabsAndStairsForVelocity(CallbackInfoReturnable<BlockPos> cir) {
         Entity self = (Entity)((Object) this);
         World world = self.getWorld();
         BlockPos inPos = self.getBlockPos();

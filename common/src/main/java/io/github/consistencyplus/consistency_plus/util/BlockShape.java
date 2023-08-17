@@ -1,14 +1,14 @@
 package io.github.consistencyplus.consistency_plus.util;
 
+import io.github.consistencyplus.consistency_plus.blocks.CPlusSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.CPlusStairsBlock;
 import net.minecraft.block.*;
-import net.minecraft.sound.SoundEvents;
 
 import java.util.function.Function;
 
 public enum BlockShape {
         BLOCK("block", Block::new),
-        SLAB("slab", SlabBlock::new),
+        SLAB("slab", CPlusSlabBlock::new),
         STAIRS("stairs", CPlusStairsBlock::new),
         WALL("wall", WallBlock::new),
         GATE("gate", (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE)),

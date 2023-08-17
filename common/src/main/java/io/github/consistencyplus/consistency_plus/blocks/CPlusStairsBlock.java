@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus.blocks;
 
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.StairsBlock;
 

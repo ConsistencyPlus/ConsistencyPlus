@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
+import io.github.consistencyplus.consistency_plus.blocks.CPlusSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.CPlusStairsBlock;
 import io.github.consistencyplus.consistency_plus.blocks.WarpedWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableGateBlock;
@@ -74,29 +75,29 @@ public class CPlusBlocks {
 
     private static void waxedCopper() {
         // TODO: Fix WoodType
-        registry.put(new Identifier("consistency_plus", "waxed_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_polished_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_polished_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_polished_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_polished_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_polished_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_polished_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_copper_bricks"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_copper_brick_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_copper_brick_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_brick_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_brick_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_brick_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_cut_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_cut_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_cut_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_cut_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_cut_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_cut_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_copper_tile_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_copper_tile_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_smooth_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_smooth_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
@@ -140,29 +141,29 @@ public class CPlusBlocks {
     }
 
     private static void waxedExposedCopper() {
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_polished_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_bricks"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_brick_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_cut_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_tile_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_copper_tile_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_exposed_smooth_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
@@ -206,29 +207,29 @@ public class CPlusBlocks {
     }
 
     private static void waxedWeatheredExposedCopper() {
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_polished_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_bricks"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_brick_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_cut_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_tile_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_copper_tile_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_weathered_smooth_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
@@ -272,29 +273,29 @@ public class CPlusBlocks {
     }
 
     private static void waxedOxidizedExposedCopper() {
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_polished_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_bricks"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_brick_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_cut_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_tile_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_copper_tile_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper"), Block::new);
-        registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_slab"), SlabBlock::new);
+        registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_slab"), CPlusSlabBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_stairs"), CPlusStairsBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_wall"), WallBlock::new);
         registry.put(new Identifier("consistency_plus", "waxed_oxidized_smooth_copper_gate"), (settings) -> new FenceGateBlock(settings, WoodType.SPRUCE));

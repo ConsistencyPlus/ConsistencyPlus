@@ -61,9 +61,7 @@ public class ConsistencyPlus implements ModInitializer {
 				continue;
 			}
 
-
 			AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
-
 
 			Block block = Registry.register(Registries.BLOCK, id, data.block().initFunc().apply(data.settings().settings()));
 			Item item = new BlockItem(block, new Item.Settings());

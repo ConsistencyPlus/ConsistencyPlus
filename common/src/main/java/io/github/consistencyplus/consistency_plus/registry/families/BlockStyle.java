@@ -35,7 +35,8 @@ public enum BlockStyle {
         String name = pluralize ? this + "s" : toString();
         String prefix = this.suffix ? "" : name + "_";
         String suffix = this.suffix ? "_" + name : "";
-        return prefix + familyName + suffix + "_" + shape;
+        String shapeSuffix = shape == BlockShape.CUBE ? "" : "_" + shape;
+        return prefix + familyName + suffix + shapeSuffix;
     }
 
     @Override

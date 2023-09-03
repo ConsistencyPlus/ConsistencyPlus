@@ -9,7 +9,7 @@ import java.util.function.Function;
 public enum BlockShape {
     CUBE(Block::new),
     SLAB(SlabBlock::new),
-    STAIR((s, b) -> new StairsBlock(b.getDefaultState(), s)),
+    STAIRS((s, b) -> new StairsBlock(b.getDefaultState(), s)),
     WALL(WallBlock::new),
     GATE((s, b) -> new FenceGateBlock(s, WoodType.OAK)), // todo: wood??
     FENCE(FenceBlock::new),

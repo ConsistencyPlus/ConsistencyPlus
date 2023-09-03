@@ -1,5 +1,7 @@
 package io.github.consistencyplus.consistency_plus.util.fabric;
 
+import java.nio.file.Path;
+
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -12,6 +14,10 @@ import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 
 public class LoaderUtilsImpl {
+	public static Path getGameDir() {
+		return FabricLoader.getInstance().getGameDir();
+	}
+
 	public static boolean isDevEnv() {
 		return FabricLoader.getInstance().isDevelopmentEnvironment();
 	}

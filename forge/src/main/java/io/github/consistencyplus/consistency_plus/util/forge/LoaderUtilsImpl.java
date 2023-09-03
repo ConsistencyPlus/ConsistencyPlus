@@ -1,8 +1,11 @@
 package io.github.consistencyplus.consistency_plus.util.forge;
 
+import java.nio.file.Path;
+
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.loading.FMLEnvironment;
+import net.minecraftforge.fml.loading.FMLPaths;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.AbstractBlock.Settings;
@@ -12,6 +15,10 @@ import net.minecraft.client.render.RenderLayers;
 import net.minecraft.item.Item;
 
 public class LoaderUtilsImpl {
+	public static Path getGameDir() {
+		return FMLPaths.GAMEDIR.get();
+	}
+
 	public static boolean isDevEnv() {
 		return !FMLEnvironment.production;
 	}

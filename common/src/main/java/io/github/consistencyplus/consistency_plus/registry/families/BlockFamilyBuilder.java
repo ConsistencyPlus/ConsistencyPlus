@@ -8,9 +8,11 @@ import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 import io.github.consistencyplus.consistency_plus.util.RequiredValue;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
@@ -132,9 +134,15 @@ public class BlockFamilyBuilder {
 
     private Block getOrCreateBaseBlock(Table<BlockStyle, BlockShape, BlockEntry> table, BlockStyle style) {
         return baseBlocks.computeIfAbsent(style, $ -> {
+            String name = style.makeBlockName(this.name, BlockShape.CUBE);
+            Identifier mcId = new Identifier("minecraft", name);
+            Block vanilla = Registries.BLOCK.get(mcId);
+            if (vanilla != Blocks.AIR) {
+                return vanilla;
+            }
+            // not found, create it
             BlockFactory factory = blockFactories.get(BlockShape.CUBE);
             Block block = factory.create(getSettings(), null);
-            String name = style.makeBlockName(this.name, BlockShape.CUBE);
             Identifier id = ConsistencyPlusMain.id(name);
             BlockItem item = new BlockItem(block, new Settings());
             table.put(style, BlockShape.CUBE, new BlockEntry(id, block, item));

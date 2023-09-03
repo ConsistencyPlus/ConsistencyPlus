@@ -1,5 +1,7 @@
 package io.github.consistencyplus.consistency_plus.util;
 
+import java.nio.file.Path;
+
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -9,6 +11,11 @@ import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 
 public class LoaderUtils {
+    @ExpectPlatform
+    public static Path getGameDir() {
+        throw new AssertionError();
+    }
+
     @ExpectPlatform
     public static boolean isDevEnv() {
         throw new AssertionError();

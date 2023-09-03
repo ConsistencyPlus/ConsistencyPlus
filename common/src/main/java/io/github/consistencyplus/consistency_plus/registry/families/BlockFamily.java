@@ -30,7 +30,6 @@ public class BlockFamily {
 
     public void register() {
         blockTable.values().forEach(entry -> {
-            System.out.println("registered " + entry.id());
             Registry.register(Registries.BLOCK, entry.id(), entry.block());
             Registry.register(Registries.ITEM, entry.id(), entry.item());
         });

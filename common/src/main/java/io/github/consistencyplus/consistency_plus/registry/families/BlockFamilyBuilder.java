@@ -36,6 +36,7 @@ public class BlockFamilyBuilder {
     private AbstractBlock.Settings baseSettings = AbstractBlock.Settings.create();
     private CPlusRenderType renderType = CPlusRenderType.SOLID;
     private BlockFilter filter = NotRegisteredBlockFilter.INSTANCE;
+    private BlockNameFactory nameFactory = StandardBlockNameFactory.INSTANCE;
     private BlockFamily oxidizedOf = null;
     private BlockFamily waxedOf = null;
 
@@ -85,6 +86,11 @@ public class BlockFamilyBuilder {
         return this;
     }
 
+    public BlockFamilyBuilder nameFactory(BlockNameFactory factory) {
+        this.nameFactory = factory;
+        return this;
+    }
+
     public BlockFamilyBuilder oxidizedOf(BlockFamily family) {
         this.oxidizedOf = family;
         return this;
@@ -102,13 +108,15 @@ public class BlockFamilyBuilder {
             if (style.hasShapes) {
                 for (BlockShape shape : BlockShape.NON_CUBE) {
                     if (!knownVariants.contains(style, shape)) {
-                        String name = style.makeBlockName(this.name, shape);
+                        String name = nameFactory.makeName(this.name, style, shape);
                         if (filter.shouldCreate(style, shape, this.name, name)) {
                             BlockFactory factory = blockFactories.get(shape);
                             Block block = factory.create(getSettings(), baseBlock);
-                            Identifier id = ConsistencyPlusMain.id(name);
-                            BlockItem item = new BlockItem(block, new Settings());
-                            table.put(style, shape, new BlockEntry(id, block, item));
+                            if (block != null) {
+                                Identifier id = ConsistencyPlusMain.id(name);
+                                BlockItem item = new BlockItem(block, new Settings());
+                                table.put(style, shape, new BlockEntry(id, block, item));
+                            }
                         }
                     }
                 }
@@ -134,19 +142,22 @@ public class BlockFamilyBuilder {
 
     private Block getOrCreateBaseBlock(Table<BlockStyle, BlockShape, BlockEntry> table, BlockStyle style) {
         return baseBlocks.computeIfAbsent(style, $ -> {
-            String name = style.makeBlockName(this.name, BlockShape.CUBE);
-            Identifier mcId = new Identifier("minecraft", name);
-            Block vanilla = Registries.BLOCK.get(mcId);
-            if (vanilla != Blocks.AIR) {
-                return vanilla;
+            String name = nameFactory.makeName(this.name, style, BlockShape.CUBE);
+            if (filter.shouldCreate(style, BlockShape.CUBE, this.name, name)) {
+                BlockFactory factory = blockFactories.get(BlockShape.CUBE);
+                Block block = factory.create(getSettings(), null);
+                Identifier id = ConsistencyPlusMain.id(name);
+                BlockItem item = new BlockItem(block, new Settings());
+                table.put(style, BlockShape.CUBE, new BlockEntry(id, block, item));
+                return block;
+            } else {
+                Identifier mcId = new Identifier("minecraft", name);
+                Block vanilla = Registries.BLOCK.get(mcId);
+                if (vanilla != Blocks.AIR) {
+                    return vanilla;
+                }
+                throw new IllegalStateException("Could not create " + name + ", but no vanilla block could be found");
             }
-            // not found, create it
-            BlockFactory factory = blockFactories.get(BlockShape.CUBE);
-            Block block = factory.create(getSettings(), null);
-            Identifier id = ConsistencyPlusMain.id(name);
-            BlockItem item = new BlockItem(block, new Settings());
-            table.put(style, BlockShape.CUBE, new BlockEntry(id, block, item));
-            return block;
         });
     }
 

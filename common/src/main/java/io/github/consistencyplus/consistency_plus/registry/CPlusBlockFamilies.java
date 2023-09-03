@@ -10,6 +10,8 @@ import io.github.consistencyplus.consistency_plus.registry.families.BlockEntry;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockFamily;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockFamilyBuilder;
 import io.github.consistencyplus.consistency_plus.registry.families.CPlusRenderType;
+import io.github.consistencyplus.consistency_plus.registry.families.CopperBlockNameFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.CopperFilter;
 import io.github.consistencyplus.consistency_plus.util.ColoredSet;
 import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 import io.github.consistencyplus.consistency_plus.util.VanillaDyeables;
@@ -171,10 +173,15 @@ public class CPlusBlockFamilies {
             .buildTo(ALL_FAMILIES);
 
     public static final Map<OxidationLevel, BlockFamily> COPPER = Util.make(new HashMap<>(), finalMap -> {
-        BlockFamilyBuilder unaffectedBuilder = makeCopperFamily(OxidationLevel.UNAFFECTED);
-        BlockFamilyBuilder exposedBuilder = makeCopperFamily(OxidationLevel.EXPOSED);
-        BlockFamilyBuilder weatheredBuilder = makeCopperFamily(OxidationLevel.WEATHERED);
-        BlockFamilyBuilder oxidizedBuilder = makeCopperFamily(OxidationLevel.OXIDIZED);
+        // we rename vanilla's cut to tiles, need to add those variants
+        BlockFamilyBuilder unaffectedBuilder = makeCopperFamily(OxidationLevel.UNAFFECTED)
+                .addKnownVariant(Blocks.CUT_COPPER, TILE, CUBE);
+        BlockFamilyBuilder exposedBuilder = makeCopperFamily(OxidationLevel.EXPOSED)
+                .addKnownVariant(Blocks.EXPOSED_CUT_COPPER, TILE, CUBE);
+        BlockFamilyBuilder weatheredBuilder = makeCopperFamily(OxidationLevel.WEATHERED)
+                .addKnownVariant(Blocks.WEATHERED_CUT_COPPER, TILE, CUBE);
+        BlockFamilyBuilder oxidizedBuilder = makeCopperFamily(OxidationLevel.OXIDIZED)
+                .addKnownVariant(Blocks.OXIDIZED_CUT_COPPER, TILE, CUBE);
 
         BlockFamily unaffected = unaffectedBuilder.buildTo(ALL_FAMILIES);
         finalMap.put(OxidationLevel.UNAFFECTED, unaffected);
@@ -187,9 +194,19 @@ public class CPlusBlockFamilies {
     });
 
     public static final Map<OxidationLevel, BlockFamily> WAXED_COPPER = Util.make(new HashMap<>(), map -> {
+        // we rename vanilla's cut to tiles, need to add those variants
+        Map<OxidationLevel, Block> baseTiles = Map.of(
+                OxidationLevel.UNAFFECTED, Blocks.WAXED_CUT_COPPER,
+                OxidationLevel.WEATHERED, Blocks.WAXED_WEATHERED_COPPER,
+                OxidationLevel.EXPOSED, Blocks.WAXED_EXPOSED_CUT_COPPER,
+                OxidationLevel.OXIDIZED, Blocks.WAXED_OXIDIZED_CUT_COPPER
+        );
         for (OxidationLevel level : OxidationLevel.values()) {
-            map.put(level, builder("waxed_" + getOxidationLevelName(level) + "_copper")
+            map.put(level, builder("waxed_" + getOxidationLevelName(level) + "copper")
                     .baseSettingsFrom(Blocks.WAXED_COPPER_BLOCK)
+                    .addKnownVariant(baseTiles.get(level), TILE, CUBE)
+                    .filter(CopperFilter.INSTANCE)
+                    .nameFactory(new CopperBlockNameFactory(level, true))
                     .itemGroup(CPlusItemGroups.MISC)
                     .waxedOf(COPPER.get(level))
                     .buildTo(ALL_FAMILIES)
@@ -252,9 +269,11 @@ public class CPlusBlockFamilies {
     }
 
     private static BlockFamilyBuilder makeCopperFamily(OxidationLevel level) {
-        return builder(getOxidationLevelName(level) + "_copper")
+        return builder(getOxidationLevelName(level) + "copper")
                 .baseSettingsFrom(Blocks.COPPER_BLOCK)
                 .itemGroup(CPlusItemGroups.MISC)
+                .filter(CopperFilter.INSTANCE)
+                .nameFactory(new CopperBlockNameFactory(level, false))
                 .setShapeFactory(CUBE, (settings, base) -> new OxidizableBlock(level, settings))
                 .setShapeFactory(SLAB, (settings, base) -> new OxidizableSlabBlock(level, settings))
                 .setShapeFactory(STAIRS, (settings, base) -> new OxidizableStairsBlock(level, base.getDefaultState(), settings))
@@ -264,13 +283,13 @@ public class CPlusBlockFamilies {
                 .setShapeFactory(PILLAR, (settings, base) -> new CPlusOxidizablePillarBlock(level, settings));
     }
 
-    private static String getOxidationLevelName(OxidationLevel level) {
-        // obfuscated and not StringRepresentable
+    public static String getOxidationLevelName(OxidationLevel level) {
+        // note: obfuscated and not StringRepresentable
         return switch (level) {
-            case UNAFFECTED -> "unaffected";
-            case EXPOSED -> "exposed";
-            case WEATHERED -> "weathered";
-            case OXIDIZED -> "oxidized";
+            case UNAFFECTED -> "";
+            case EXPOSED -> "exposed_";
+            case WEATHERED -> "weathered_";
+            case OXIDIZED -> "oxidized_";
         };
     }
 }

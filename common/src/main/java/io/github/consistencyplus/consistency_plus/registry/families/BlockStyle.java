@@ -27,18 +27,6 @@ public enum BlockStyle {
         this.basePlural = arrayContains(attributes, BASE_PLURAL);
     }
 
-    public String makeBlockName(String familyName, BlockShape shape) {
-        if (empty) {
-            return shape == BlockShape.CUBE ? familyName : familyName + "_" + shape;
-        }
-        boolean pluralize = basePlural && shape == BlockShape.CUBE;
-        String name = pluralize ? this + "s" : toString();
-        String prefix = this.suffix ? "" : name + "_";
-        String suffix = this.suffix ? "_" + name : "";
-        String shapeSuffix = shape == BlockShape.CUBE ? "" : "_" + shape;
-        return prefix + familyName + suffix + shapeSuffix;
-    }
-
     @Override
     public String toString() {
         return name().toLowerCase(Locale.ROOT);

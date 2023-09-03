@@ -3,8 +3,12 @@ package io.github.consistencyplus.consistency_plus.fabric;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups;
 import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups.GroupInfo;
+import io.github.consistencyplus.consistency_plus.registry.CPlusBlockFamilies;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
+import io.github.consistencyplus.consistency_plus.util.RegistryDump;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
@@ -31,45 +35,10 @@ import java.util.function.Function;
 
 public class ConsistencyPlus implements ModInitializer {
 	private static final Identifier WITHER_SKELE_LOOT = EntityType.WITHER_SKELETON.getLootTableId();
-	LoaderHelper fabric = new LoaderVariant();
-
-	public static Map<Block, String> blockToRenderLayers = new HashMap<>();
-
-	Map<Block, String> oxidizationMap = new HashMap<>();
-	Map<Block, String> waxingMap = new HashMap<>();
 
 	@Override
 	public void onInitialize() {
-		ConsistencyPlusMain.init(fabric);
-		Map<Identifier, BlockData> blockDataMap = PseudoRegistry.export();
-		for (Identifier id : blockDataMap.keySet()) {
-			BlockData data = blockDataMap.get(id);
-			if (data.block() == BlockShape.PROVIDED) {
-				accessRegistry(id, data);
-				continue;
-			}
-
-			AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
-
-			Block block = Registry.register(Registries.BLOCK, id, data.block().initFunc().apply(data.settings().settings()));
-			Item item = new BlockItem(block, new Item.Settings());
-			Registry.register(Registries.ITEM, id, item);
-			ItemGroupEvents.modifyEntriesEvent(getItemGroup(addBloSet.itemGroup())).register(listener -> listener.add(item));
-			if (fabric.getIsClient() && data.settings().layer() != null) {
-				blockToRenderLayers.put(block, data.settings().layer());
-			}
-		}
-
-		for (Block block : oxidizationMap.keySet()) {
-			OxidizableBlocksRegistry.registerOxidizableBlockPair(block, Registries.BLOCK.get(new Identifier(oxidizationMap.get(block))));
-		}
-		for (Block block : waxingMap.keySet()) {
-			OxidizableBlocksRegistry.registerWaxableBlockPair(block, Registries.BLOCK.get(new Identifier(waxingMap.get(block))));
-		}
-
-		for (Identifier id : CPlusBlocks.itemRegistry.keySet()) {
-			Registry.register(Registries.ITEM, id, CPlusBlocks.itemRegistry.get(id).apply(new Item.Settings()));
-		}
+		ConsistencyPlusMain.init();
 
 		lootModification();
 
@@ -81,37 +50,7 @@ public class ConsistencyPlus implements ModInitializer {
 			Registry.register(Registries.ITEM_GROUP, info.key(), group);
 		}
 
-//		ServerWorldEvents.LOAD.register(((server, world) -> RegistryDump.run()));
-	}
-
-	public void accessRegistry(Identifier id, BlockData data) {
-		AdditionalBlockSettings addBloSet = data.settings().additionalBlockSettings();
-		Function<AbstractBlock.Settings, Block> blockFunc = CPlusBlocks.registry.get(id);
-		Block block = Registry.register(Registries.BLOCK, id, blockFunc.apply(data.settings().settings()));
-		if (!Objects.equals(id.getPath(), "warped_wart")) {
-			Item item = new BlockItem(block, new Item.Settings());
-			Registry.register(Registries.ITEM, id, item);
-			ItemGroupEvents.modifyEntriesEvent(getItemGroup(addBloSet.itemGroup())).register(listener -> listener.add(item));
-		}
-		if (fabric.getIsClient() && data.settings().layer() != null) {
-			blockToRenderLayers.put(block, data.settings().layer());
-		}
-
-		if (addBloSet.oxidizeToBlock() != null) {
-			oxidizationMap.put(block, addBloSet.oxidizeToBlock());
-		}
-
-		if (addBloSet.waxToBlock() != null) {
-			waxingMap.put(block, addBloSet.waxToBlock());
-		}
-	}
-
-	public static RegistryKey<ItemGroup> getItemGroup(String string) {
-		return string == null ? ItemGroups.INGREDIENTS : switch (string) {
-			case "dyeables" -> CPlusItemGroups.DYEABLES.key();
-			case "misc" -> CPlusItemGroups.MISC.key();
-			default -> CPlusItemGroups.STONES.key();
-		};
+		ServerWorldEvents.LOAD.register(((server, world) -> RegistryDump.run()));
 	}
 
 	public static void lootModification() {

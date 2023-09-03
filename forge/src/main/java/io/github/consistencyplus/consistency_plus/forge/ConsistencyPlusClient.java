@@ -30,19 +30,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ConsistencyPlusClient {
 	@SubscribeEvent
 	public static void onInitializeClient(final FMLClientSetupEvent event) {
-		event.enqueueWork(() -> ConsistencyPlusClientMain.init(() -> {
-			ConsistencyPlus.blockToRenderLayers.forEach((id, layerName) -> {
-				RenderLayer layer = ConsistencyPlusClientMain.SUPPORTED_LAYERS.get(layerName);
-				if (layer != null) {
-					Block block = RegistryObject.create(id, ForgeRegistries.BLOCKS).get();
-					ConsistencyPlusMain.LOGGER.info("RenderLayer requested - " + id.toString());
-					//noinspection removal
-					RenderLayers.setRenderLayer(block, layer);
-				} else {
-					ConsistencyPlusMain.LOGGER.error("Unknown/unsupported RenderLayer '{}', skipping", layerName);
-				}
-			});
-		}));
+		event.enqueueWork(() -> ConsistencyPlusClientMain.init());
 	}
 
 	// based on Create's copper legacy pack impl

@@ -2,7 +2,6 @@ package io.github.consistencyplus.consistency_plus;
 
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlockFamilies;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlocks;
-import io.github.consistencyplus.consistency_plus.registry.ConsistencyPlusBlocksLoader;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

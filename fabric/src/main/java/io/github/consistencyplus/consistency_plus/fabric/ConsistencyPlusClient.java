@@ -2,6 +2,8 @@ package io.github.consistencyplus.consistency_plus.fabric;
 
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusClientMain;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.registry.CPlusBlockFamilies;
+import io.github.consistencyplus.consistency_plus.registry.families.CPlusRenderType;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
@@ -14,16 +16,7 @@ import net.minecraft.text.Text;
 public class ConsistencyPlusClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		ConsistencyPlusClientMain.init(() -> {
-			ConsistencyPlus.blockToRenderLayers.forEach((block, layerName) -> {
-				RenderLayer layer = ConsistencyPlusClientMain.SUPPORTED_LAYERS.get(layerName);
-				if (layer != null) {
-					BlockRenderLayerMap.INSTANCE.putBlock(block, layer);
-				} else {
-					ConsistencyPlusMain.LOGGER.error("Unknown/unsupported RenderLayer '{}', skipping", layerName);
-				}
-			});
-		});
+		ConsistencyPlusClientMain.init();
 
 		ResourceManagerHelper.registerBuiltinResourcePack(
 				ConsistencyPlusClientMain.VANILLA_CHANGES_PACK,

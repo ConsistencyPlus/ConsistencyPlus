@@ -8,10 +8,12 @@ import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidiza
 import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableWallBlock;
 import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
 import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 
@@ -352,5 +354,6 @@ public class CPlusBlocks {
         return state.isIn(CPlusTags.VALID_CONDUIT_BLOCKS);
     }
 
-    public static void init() {}
+    public static void init() {
+    }
 }

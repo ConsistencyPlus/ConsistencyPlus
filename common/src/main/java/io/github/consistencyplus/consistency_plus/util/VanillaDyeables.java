@@ -12,6 +12,7 @@ import net.minecraft.util.Util;
 
 public class VanillaDyeables {
 	public static final Map<DyeColor, Block> CONCRETE = findByName("concrete");
+	public static final Map<DyeColor, Block> CONCRETE_POWDER = findByName("concrete_powder");
 	public static final Map<DyeColor, Block> GLAZED_TERRACOTTA = findByName("glazed_terracotta");
 	public static final ColoredSet<Block> TERRACOTTA = Util.make(() -> {
 		Map<DyeColor, Block> dyedTerracotta = findByName("terracotta");

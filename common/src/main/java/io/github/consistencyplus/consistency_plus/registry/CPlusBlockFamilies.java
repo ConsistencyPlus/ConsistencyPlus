@@ -10,8 +10,8 @@ import io.github.consistencyplus.consistency_plus.registry.families.BlockEntry;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockFamily;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockFamilyBuilder;
 import io.github.consistencyplus.consistency_plus.registry.families.CPlusRenderType;
-import io.github.consistencyplus.consistency_plus.registry.families.CopperBlockNameFactory;
-import io.github.consistencyplus.consistency_plus.registry.families.CopperFilter;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.names.CopperBlockNameFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.filters.CopperFilter;
 import io.github.consistencyplus.consistency_plus.util.ColoredSet;
 import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 import io.github.consistencyplus.consistency_plus.util.VanillaDyeables;
@@ -21,6 +21,7 @@ import net.fabricmc.api.Environment;
 import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.GlazedTerracottaBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Oxidizable.OxidationLevel;
 import net.minecraft.block.OxidizableBlock;
@@ -86,7 +87,11 @@ public class CPlusBlockFamilies {
     public static final ColoredSet<BlockFamily> GLAZED_TERRACOTTA = ColoredSet.of(color -> {
         String name = color == null ? "glazed_terracotta" : color.getName() + "_glazed_terracotta";
         Block base = color == null ? Blocks.WHITE_GLAZED_TERRACOTTA : VanillaDyeables.GLAZED_TERRACOTTA.get(color);
-        return standardDyed(name, base);
+        return builder(name)
+                .baseSettingsFrom(base)
+                .setShapeFactory(CUBE, (style, settings, b) -> style == PLAIN ? new GlazedTerracottaBlock(settings) : new Block(settings))
+                .itemGroup(CPlusItemGroups.DYEABLES)
+                .buildTo(ALL_FAMILIES);
     });
 
     public static final ColoredSet<BlockFamily> CONCRETE = ColoredSet.of(color -> {
@@ -274,13 +279,13 @@ public class CPlusBlockFamilies {
                 .itemGroup(CPlusItemGroups.MISC)
                 .filter(CopperFilter.INSTANCE)
                 .nameFactory(new CopperBlockNameFactory(level, false))
-                .setShapeFactory(CUBE, (settings, base) -> new OxidizableBlock(level, settings))
-                .setShapeFactory(SLAB, (settings, base) -> new OxidizableSlabBlock(level, settings))
+                .setShapeFactory(CUBE, (settings) -> new OxidizableBlock(level, settings))
+                .setShapeFactory(SLAB, (settings) -> new OxidizableSlabBlock(level, settings))
                 .setShapeFactory(STAIRS, (settings, base) -> new OxidizableStairsBlock(level, base.getDefaultState(), settings))
-                .setShapeFactory(WALL, (settings, base) -> new CPlusOxidizableWallBlock(level, settings))
-                .setShapeFactory(GATE, (settings, base) -> new CPlusOxidizableGateBlock(level, settings))
-                .setShapeFactory(FENCE, (settings, base) -> new CPlusOxidizableFenceBlock(level, settings))
-                .setShapeFactory(PILLAR, (settings, base) -> new CPlusOxidizablePillarBlock(level, settings));
+                .setShapeFactory(WALL, (settings) -> new CPlusOxidizableWallBlock(level, settings))
+                .setShapeFactory(GATE, (settings) -> new CPlusOxidizableGateBlock(level, settings))
+                .setShapeFactory(FENCE, (settings) -> new CPlusOxidizableFenceBlock(level, settings))
+                .setShapeFactory(PILLAR, (settings) -> new CPlusOxidizablePillarBlock(level, settings));
     }
 
     public static String getOxidationLevelName(OxidationLevel level) {

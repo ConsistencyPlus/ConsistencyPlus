@@ -4,6 +4,13 @@ import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.blocks.BlockFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.blocks.JustSettingsBlockFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.blocks.NoStyleBlockFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.names.BlockNameFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.names.StandardBlockNameFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.filters.BlockFilter;
+import io.github.consistencyplus.consistency_plus.registry.families.filters.NotRegisteredBlockFilter;
 import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 import io.github.consistencyplus.consistency_plus.util.RequiredValue;
 import net.minecraft.block.AbstractBlock;
@@ -71,6 +78,14 @@ public class BlockFamilyBuilder {
         return this;
     }
 
+    public BlockFamilyBuilder setShapeFactory(BlockShape shape, NoStyleBlockFactory factory) {
+        return setShapeFactory(shape, (style, settings, base) -> factory.create(settings, base));
+    }
+
+    public BlockFamilyBuilder setShapeFactory(BlockShape shape, JustSettingsBlockFactory factory) {
+        return setShapeFactory(shape, (settings, base) -> factory.create(settings));
+    }
+
     public BlockFamilyBuilder settings(Consumer<AbstractBlock.Settings> consumer) {
         consumer.accept(baseSettings);
         return this;
@@ -111,7 +126,7 @@ public class BlockFamilyBuilder {
                         String name = nameFactory.makeName(this.name, style, shape);
                         if (filter.shouldCreate(style, shape, this.name, name)) {
                             BlockFactory factory = blockFactories.get(shape);
-                            Block block = factory.create(getSettings(), baseBlock);
+                            Block block = factory.create(style, getSettings(), baseBlock);
                             if (block != null) {
                                 Identifier id = ConsistencyPlusMain.id(name);
                                 BlockItem item = new BlockItem(block, new Settings());
@@ -145,7 +160,7 @@ public class BlockFamilyBuilder {
             String name = nameFactory.makeName(this.name, style, BlockShape.CUBE);
             if (filter.shouldCreate(style, BlockShape.CUBE, this.name, name)) {
                 BlockFactory factory = blockFactories.get(BlockShape.CUBE);
-                Block block = factory.create(getSettings(), null);
+                Block block = factory.create(style, getSettings(), null);
                 Identifier id = ConsistencyPlusMain.id(name);
                 BlockItem item = new BlockItem(block, new Settings());
                 table.put(style, BlockShape.CUBE, new BlockEntry(id, block, item));

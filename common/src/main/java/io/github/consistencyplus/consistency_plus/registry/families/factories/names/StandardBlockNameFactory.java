@@ -1,4 +1,7 @@
-package io.github.consistencyplus.consistency_plus.registry.families;
+package io.github.consistencyplus.consistency_plus.registry.families.factories.names;
+
+import io.github.consistencyplus.consistency_plus.registry.families.BlockShape;
+import io.github.consistencyplus.consistency_plus.registry.families.BlockStyle;
 
 public class StandardBlockNameFactory implements BlockNameFactory {
 	public static final BlockNameFactory INSTANCE = new StandardBlockNameFactory();

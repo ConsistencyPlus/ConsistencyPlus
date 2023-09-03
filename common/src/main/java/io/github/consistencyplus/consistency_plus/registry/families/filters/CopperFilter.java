@@ -1,4 +1,7 @@
-package io.github.consistencyplus.consistency_plus.registry.families;
+package io.github.consistencyplus.consistency_plus.registry.families.filters;
+
+import io.github.consistencyplus.consistency_plus.registry.families.BlockShape;
+import io.github.consistencyplus.consistency_plus.registry.families.BlockStyle;
 
 public class CopperFilter extends NotRegisteredBlockFilter {
 	public static final BlockFilter INSTANCE = new CopperFilter();

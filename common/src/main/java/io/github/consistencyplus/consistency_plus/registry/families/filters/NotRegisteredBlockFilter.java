@@ -1,6 +1,8 @@
-package io.github.consistencyplus.consistency_plus.registry.families;
+package io.github.consistencyplus.consistency_plus.registry.families.filters;
 
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.registry.families.BlockShape;
+import io.github.consistencyplus.consistency_plus.registry.families.BlockStyle;
 import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 
 import net.minecraft.registry.Registries;

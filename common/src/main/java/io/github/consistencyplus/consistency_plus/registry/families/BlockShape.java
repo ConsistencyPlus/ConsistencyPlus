@@ -6,24 +6,22 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.function.Function;
 
+import io.github.consistencyplus.consistency_plus.registry.families.factories.blocks.BlockFactory;
+
 public enum BlockShape {
     CUBE(Block::new),
     SLAB(SlabBlock::new),
-    STAIRS((s, b) -> new StairsBlock(b.getDefaultState(), s)),
+    STAIRS((style, settings, base) -> new StairsBlock(base.getDefaultState(), settings)),
     WALL(WallBlock::new),
-    GATE((s, b) -> new FenceGateBlock(s, WoodType.OAK)), // todo: wood??
+    GATE((settings) -> new FenceGateBlock(settings, WoodType.OAK)), // todo: wood??
     FENCE(FenceBlock::new),
     PILLAR(PillarBlock::new),
-    CORNER_PILLAR(Block::new),
-    /**
-     * Like glazed terracotta
-     */
-    DIRECTIONAL(GlazedTerracottaBlock::new);
+    CORNER_PILLAR(Block::new);
 
     public final BlockFactory defaultFactory;
 
     BlockShape(Function<AbstractBlock.Settings, Block> factory) {
-        this((settings, base) -> factory.apply(settings));
+        this((style, settings, base) -> factory.apply(settings));
     }
 
     BlockShape(BlockFactory factory) {

@@ -23,7 +23,6 @@ public class ConsistencyPlusMain {
         RegistrySummary.print();
         RegistryDiff.run(Registries.BLOCK, "blocks");
         RegistryDiff.run(Registries.ITEM, "items");
-        System.exit(0);
     }
 
     public static Identifier id(String path) {

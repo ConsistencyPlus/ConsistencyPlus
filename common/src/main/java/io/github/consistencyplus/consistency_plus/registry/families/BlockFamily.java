@@ -24,6 +24,10 @@ public class BlockFamily {
         return entry == null ? null : entry.block();
     }
 
+    public Block getBaseBlock() {
+        return getBlock(BlockStyle.PLAIN, BlockShape.CUBE);
+    }
+
     public static BlockFamilyBuilder builder(String name) {
         return new BlockFamilyBuilder(name);
     }

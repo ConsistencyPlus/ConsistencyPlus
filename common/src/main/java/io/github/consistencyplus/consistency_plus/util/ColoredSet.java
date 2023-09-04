@@ -19,6 +19,10 @@ public class ColoredSet<T> {
 		return values[getIndex(color)];
 	}
 
+	public T getColorless() {
+		return get(null);
+	}
+
 	public static <T> ColoredSet<T> of(Function<DyeColor, T> factory) {
 		//noinspection unchecked
 		T[] values = (T[]) new Object[SIZE];

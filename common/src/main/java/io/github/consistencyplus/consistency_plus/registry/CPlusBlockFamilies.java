@@ -9,8 +9,11 @@ import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups.GroupInf
 import io.github.consistencyplus.consistency_plus.registry.families.BlockEntry;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockFamily;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockFamilyBuilder;
+import io.github.consistencyplus.consistency_plus.registry.families.BlockShape;
 import io.github.consistencyplus.consistency_plus.registry.families.CPlusRenderType;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.names.BlockSuffixBaseNameFactory;
 import io.github.consistencyplus.consistency_plus.registry.families.factories.names.CopperBlockNameFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.filters.BlockFilter;
 import io.github.consistencyplus.consistency_plus.registry.families.filters.CopperFilter;
 import io.github.consistencyplus.consistency_plus.util.ColoredSet;
 import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
@@ -108,11 +111,34 @@ public class CPlusBlockFamilies {
             .itemGroup(CPlusItemGroups.MISC)
             .buildTo(ALL_FAMILIES);
 
-    // TODO: these are both weird
-    public static final BlockFamily CRIMSON_WART = standardMisc("crimson_wart", Blocks.RED_NETHER_BRICKS);
-    public static final BlockFamily WARPED_WART = standardMisc("warped_wart", Blocks.RED_NETHER_BRICKS);
-    // TODO: not stone? and base is a pillar
-    public static final BlockFamily BASALT = standardMisc("basalt", Blocks.BASALT);
+    public static final BlockFamily CRIMSON_WART = builder("crimson_wart")
+            .baseSettingsFrom(Blocks.NETHER_WART_BLOCK)
+            .addKnownVariant(Blocks.NETHER_WART_BLOCK, PLAIN, CUBE)
+            .itemGroup(CPlusItemGroups.MISC)
+            .buildTo(ALL_FAMILIES);
+
+    public static final BlockFamily WARPED_WART = builder("warped_wart")
+            .baseSettingsFrom(Blocks.WARPED_WART_BLOCK)
+            .settings(settings -> settings.mapColor(MapColor.CYAN))
+            .addKnownVariant(Blocks.WARPED_WART_BLOCK, PLAIN, CUBE)
+            .itemGroup(CPlusItemGroups.MISC)
+            .buildTo(ALL_FAMILIES);
+
+    // TODO: not stones? and base is a pillar
+    public static final BlockFamily BASALT = builder("basalt")
+            .baseSettingsFrom(Blocks.BASALT)
+            .addKnownVariant(Blocks.POLISHED_BASALT, PLAIN, PILLAR)
+            // we rename polished basalt to basalt pillar
+            .filter((style, shape, familyName, name) -> {
+                if (style == POLISHED && shape == CUBE) {
+                    return true;
+                } else if (style == PLAIN && shape == PILLAR) {
+                    return false;
+                }
+                return !BlockFilter.isRegistered(name);
+            })
+            .itemGroup(CPlusItemGroups.MISC)
+            .buildTo(ALL_FAMILIES);
 
     public static final BlockFamily GLOWSTONE = builder("glowstone")
             .baseSettingsFrom(Blocks.GLOWSTONE)
@@ -134,6 +160,7 @@ public class CPlusBlockFamilies {
 
     public static final BlockFamily WITHERED_BONE = builder("withered_bone")
             .baseSettingsFrom(Blocks.BONE_BLOCK)
+            .nameFactory(BlockSuffixBaseNameFactory.INSTANCE) // base is withered_bone_block
             .settings(settings -> settings
                     .mapColor(MapColor.TERRACOTTA_GRAY)
                     .sounds(new BlockSoundGroup(
@@ -163,7 +190,22 @@ public class CPlusBlockFamilies {
             .itemGroup(CPlusItemGroups.MISC)
             .buildTo(ALL_FAMILIES);
 
-    public static final BlockFamily PURPUR = standardMisc("purpur", Blocks.PURPUR_BLOCK);
+    public static final BlockFamily PURPUR = builder("purpur")
+            .baseSettingsFrom(Blocks.PURPUR_BLOCK)
+            .addKnownVariant(Blocks.PURPUR_BLOCK, TILE, CUBE)
+            .addKnownVariant(Blocks.PURPUR_SLAB, TILE, SLAB)
+            .addKnownVariant(Blocks.PURPUR_STAIRS, TILE, STAIRS)
+            // we rename vanilla's plain purpur to tiles
+            // register our plain in its place, do not register some of our tiles
+            .filter((style, shape, familyName, name) -> switch (style) {
+                case PLAIN -> true;
+                case TILE -> shape != BlockShape.CUBE && shape != BlockShape.SLAB && shape != BlockShape.STAIRS;
+                default -> !BlockFilter.isRegistered(name);
+            })
+            .nameFactory(BlockSuffixBaseNameFactory.INSTANCE) // purpur_block
+            .itemGroup(CPlusItemGroups.MISC)
+            .buildTo(ALL_FAMILIES);
+
     // TODO: brickless
     public static final BlockFamily PRISMARINE = builder("prismarine")
             .baseSettingsFrom(Blocks.PRISMARINE)
@@ -241,6 +283,8 @@ public class CPlusBlockFamilies {
             .baseSettingsFrom(Blocks.MUD_BRICKS) // TODO: why?
             .itemGroup(CPlusItemGroups.MISC)
             .buildTo(ALL_FAMILIES);
+
+    // utils and stuff
 
     public static void init() {
         ALL_FAMILIES.forEach(BlockFamily::register);

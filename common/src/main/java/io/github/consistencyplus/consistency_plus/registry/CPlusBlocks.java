@@ -40,7 +40,7 @@ public class CPlusBlocks {
             return VanillaDyeables.CONCRETE_POWDER.get(color);
         } else {
             Settings settings = Settings.copy(Blocks.WHITE_CONCRETE_POWDER).mapColor(MapColor.OFF_WHITE);
-            Block hardened = CPlusBlockFamilies.CONCRETE.get(null).getBlock(BlockStyle.PLAIN, BlockShape.CUBE);
+            Block hardened = CPlusBlockFamilies.CONCRETE.getColorless().getBaseBlock();
             if (hardened == null) {
                 throw new IllegalStateException("Colorless concrete does not exist");
             }

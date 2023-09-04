@@ -12,9 +12,12 @@ import io.github.consistencyplus.consistency_plus.registry.families.BlockFamilyB
 import io.github.consistencyplus.consistency_plus.registry.families.BlockShape;
 import io.github.consistencyplus.consistency_plus.registry.families.CPlusRenderType;
 import io.github.consistencyplus.consistency_plus.registry.families.factories.names.BlockSuffixBaseNameFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.names.BrickNameFactory;
+import io.github.consistencyplus.consistency_plus.registry.families.factories.names.CobblestoneNameFactory;
 import io.github.consistencyplus.consistency_plus.registry.families.factories.names.CopperBlockNameFactory;
 import io.github.consistencyplus.consistency_plus.registry.families.filters.BlockFilter;
 import io.github.consistencyplus.consistency_plus.registry.families.filters.CopperFilter;
+import io.github.consistencyplus.consistency_plus.registry.families.filters.SandstoneFilter;
 import io.github.consistencyplus.consistency_plus.util.ColoredSet;
 import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 import io.github.consistencyplus.consistency_plus.util.VanillaDyeables;
@@ -50,11 +53,7 @@ public class CPlusBlockFamilies {
 
     public static final BlockFamily STONE = builder("stone")
             .baseSettingsFrom(Blocks.STONE)
-            // cobblestone is cobblestone, not cobbled_stone, so it needs to be explicitly defined
-            .addKnownVariant(Blocks.COBBLESTONE, COBBLED, CUBE)
-            .addKnownVariant(Blocks.COBBLESTONE_SLAB, COBBLED, SLAB)
-            .addKnownVariant(Blocks.COBBLESTONE_STAIRS, COBBLED, STAIRS)
-            .addKnownVariant(Blocks.COBBLESTONE_WALL, COBBLED, WALL)
+            .nameFactory(CobblestoneNameFactory.INSTANCE)
             .itemGroup(CPlusItemGroups.STONES)
             .buildTo(ALL_FAMILIES);
 
@@ -74,17 +73,41 @@ public class CPlusBlockFamilies {
             .itemGroup(CPlusItemGroups.STONES)
             .buildTo(ALL_FAMILIES);
 
-    public static final BlockFamily SANDSTONE = standardStone("sandstone", Blocks.SANDSTONE);
-    public static final BlockFamily RED_SANDSTONE = standardStone("red_sandstone", Blocks.RED_SANDSTONE);
+    public static final BlockFamily SANDSTONE = builder("sandstone")
+            .baseSettingsFrom(Blocks.SANDSTONE)
+            .addKnownVariant(Blocks.CHISELED_SANDSTONE, CARVED, CUBE)
+            // chiseled is renamed to carved
+            .filter(SandstoneFilter.INSTANCE)
+            .itemGroup(CPlusItemGroups.STONES)
+            .buildTo(ALL_FAMILIES);
+
+    public static final BlockFamily RED_SANDSTONE = builder("red_sandstone")
+            .baseSettingsFrom(Blocks.RED_SANDSTONE)
+            .addKnownVariant(Blocks.CHISELED_RED_SANDSTONE, CARVED, CUBE)
+            // chiseled is renamed to carved
+            .filter(SandstoneFilter.INSTANCE)
+            .itemGroup(CPlusItemGroups.STONES)
+            .buildTo(ALL_FAMILIES);
+
     public static final BlockFamily SOUL_SANDSTONE = standardStone("soul_sandstone", Blocks.SANDSTONE);
     public static final BlockFamily END_STONE = standardStone("end_stone", Blocks.END_STONE);
-    public static final BlockFamily FLINT = standardStone("flint", Blocks.BASALT);
+
+    public static final BlockFamily FLINT = builder("flint")
+            .baseSettingsFrom(Blocks.BASALT)
+            .nameFactory(BlockSuffixBaseNameFactory.INSTANCE)
+            .itemGroup(CPlusItemGroups.STONES)
+            .buildTo(ALL_FAMILIES);
+
     public static final BlockFamily BEDROCK = standardStone("bedrock", Blocks.BEDROCK);
 
     public static final ColoredSet<BlockFamily> TERRACOTTA = ColoredSet.of(color -> {
        String name = color == null ? "terracotta" : color.getName() + "_terracotta";
        Block base = VanillaDyeables.TERRACOTTA.get(color);
-       return standardDyed(name, base);
+       return color != null ? standardDyed(name, base) : builder(name)
+               .baseSettingsFrom(base)
+               .itemGroup(CPlusItemGroups.DYEABLES)
+               .nameFactory(BrickNameFactory.INSTANCE)
+               .buildTo(ALL_FAMILIES);
     });
 
     public static final ColoredSet<BlockFamily> GLAZED_TERRACOTTA = ColoredSet.of(color -> {
@@ -277,10 +300,24 @@ public class CPlusBlockFamilies {
     public static final BlockFamily PACKED_ICE = standardMisc("packed_ice", Blocks.PACKED_ICE);
     public static final BlockFamily BLUE_ICE = standardMisc("blue_ice", Blocks.BLUE_ICE);
     public static final BlockFamily CLAY = standardMisc("clay", Blocks.CLAY);
-    public static final BlockFamily MUD = standardMisc("mud", Blocks.MUD);
+    public static final BlockFamily MUD = builder("mud")
+            .baseSettingsFrom(Blocks.MUD)
+            .filter((style, shape, familyName, name) -> {
+                if (style == BRICK) {
+                    return true; // vanilla has mud bricks, but they're for packed mud
+                }
+                return !BlockFilter.isRegistered(name);
+            })
+            .itemGroup(CPlusItemGroups.MISC)
+            .buildTo(ALL_FAMILIES);
 
     public static final BlockFamily PACKED_MUD = builder("packed_mud")
-            .baseSettingsFrom(Blocks.MUD_BRICKS) // TODO: why?
+            .baseSettingsFrom(Blocks.MUD_BRICKS)
+            // these are just mud, not packed mud, despite actually being packed mud
+            .addKnownVariant(Blocks.MUD_BRICKS, BRICK, CUBE)
+            .addKnownVariant(Blocks.MUD_BRICK_SLAB, BRICK, SLAB)
+            .addKnownVariant(Blocks.MUD_BRICK_STAIRS, BRICK, STAIRS)
+            .addKnownVariant(Blocks.MUD_BRICK_WALL, BRICK, WALL)
             .itemGroup(CPlusItemGroups.MISC)
             .buildTo(ALL_FAMILIES);
 

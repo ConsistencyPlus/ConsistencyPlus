@@ -3,10 +3,9 @@ package io.github.consistencyplus.consistency_plus.registry.families.filters;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockShape;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockStyle;
-import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 
 public class NotRegisteredBlockFilter implements BlockFilter {
-    protected static final boolean printCollisions = LoaderUtils.isDevEnv();
+    protected static final boolean printCollisions = false;
 
     public static final BlockFilter INSTANCE = new NotRegisteredBlockFilter();
 

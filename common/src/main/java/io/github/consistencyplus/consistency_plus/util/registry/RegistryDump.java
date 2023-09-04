@@ -1,4 +1,4 @@
-package io.github.consistencyplus.consistency_plus.util;
+package io.github.consistencyplus.consistency_plus.util.registry;
 
 import java.io.IOException;
 import java.nio.file.Files;

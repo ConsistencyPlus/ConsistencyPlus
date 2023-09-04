@@ -1,4 +1,4 @@
-package io.github.consistencyplus.consistency_plus.util;
+package io.github.consistencyplus.consistency_plus.util.registry;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,6 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;

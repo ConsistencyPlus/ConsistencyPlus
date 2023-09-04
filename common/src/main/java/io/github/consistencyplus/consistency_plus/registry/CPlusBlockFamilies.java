@@ -107,6 +107,7 @@ public class CPlusBlockFamilies {
                .baseSettingsFrom(base)
                .itemGroup(CPlusItemGroups.DYEABLES)
                .nameFactory(BrickNameFactory.INSTANCE)
+               .noBrickItem()
                .buildTo(ALL_FAMILIES);
     });
 
@@ -127,11 +128,11 @@ public class CPlusBlockFamilies {
     });
 
     // TODO: tinted glass
-    // TODO: brick items
 
     public static final BlockFamily NETHERRACK = BlockFamily.builder("netherrack")
             .baseSettingsFrom(Blocks.NETHER_BRICKS) // TODO: ???
             .itemGroup(CPlusItemGroups.MISC)
+            .noBrickItem()
             .buildTo(ALL_FAMILIES);
 
     public static final BlockFamily CRIMSON_WART = builder("crimson_wart")
@@ -229,11 +230,11 @@ public class CPlusBlockFamilies {
             .itemGroup(CPlusItemGroups.MISC)
             .buildTo(ALL_FAMILIES);
 
-    // TODO: brickless
     public static final BlockFamily PRISMARINE = builder("prismarine")
             .baseSettingsFrom(Blocks.PRISMARINE)
             .settings(settings -> settings.mapColor(MapColor.DIAMOND_BLUE)) // TODO: why?
             .itemGroup(CPlusItemGroups.MISC)
+            .noBrickItem()
             .buildTo(ALL_FAMILIES);
 
     public static final BlockFamily DARK_PRISMARINE = builder("dark_prismarine")
@@ -304,7 +305,7 @@ public class CPlusBlockFamilies {
             .baseSettingsFrom(Blocks.MUD)
             .filter((style, shape, familyName, name) -> {
                 if (style == BRICK) {
-                    return true; // vanilla has mud bricks, but they're for packed mud
+                    return true; // vanilla has mud bricks, which will be automatically detected. They're for packed mud though
                 }
                 return !BlockFilter.isRegistered(name);
             })
@@ -313,7 +314,7 @@ public class CPlusBlockFamilies {
 
     public static final BlockFamily PACKED_MUD = builder("packed_mud")
             .baseSettingsFrom(Blocks.MUD_BRICKS)
-            // these are just mud, not packed mud, despite actually being packed mud
+            // named wrong, won't be detected automatically
             .addKnownVariant(Blocks.MUD_BRICKS, BRICK, CUBE)
             .addKnownVariant(Blocks.MUD_BRICK_SLAB, BRICK, SLAB)
             .addKnownVariant(Blocks.MUD_BRICK_STAIRS, BRICK, STAIRS)

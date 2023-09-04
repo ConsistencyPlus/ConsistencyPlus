@@ -17,8 +17,10 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
@@ -46,6 +48,7 @@ public class BlockFamilyBuilder {
     private BlockNameFactory nameFactory = StandardBlockNameFactory.INSTANCE;
     private BlockFamily oxidizedOf = null;
     private BlockFamily waxedOf = null;
+    private boolean hasBrickItem = true;
 
     public BlockFamilyBuilder(String name) {
         this.name = name;
@@ -116,6 +119,11 @@ public class BlockFamilyBuilder {
         return this;
     }
 
+    public BlockFamilyBuilder noBrickItem() {
+        this.hasBrickItem = false;
+        return this;
+    }
+
     public BlockFamily build() {
         Table<BlockStyle, BlockShape, BlockEntry> table = HashBasedTable.create();
         for (BlockStyle style : BlockStyle.values()) {
@@ -146,7 +154,9 @@ public class BlockFamilyBuilder {
             mapWith(table, waxedOf, (to, from) -> LoaderUtils.registerWaxing(from, to));
         }
 
-        return new BlockFamily(table, renderType);
+        Item brickItem = hasBrickItem ? new Item(new Settings().arch$tab(ItemGroups.INGREDIENTS)) : null;
+
+        return new BlockFamily(this.name, table, brickItem, this.renderType);
     }
 
     public BlockFamily buildTo(List<BlockFamily> list) {

@@ -6,21 +6,25 @@ import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class BlockFamily {
     public final String name;
     public final Table<BlockStyle, BlockShape, BlockEntry> blockTable;
-    public final CPlusRenderType renderLayer;
     @Nullable
     public final Item brickItem;
+    public final RegistryKey<ItemGroup> groupKey;
+    public final CPlusRenderType renderLayer;
 
-    protected BlockFamily(String name, Table<BlockStyle, BlockShape, BlockEntry> blockTable, @Nullable Item brickItem, CPlusRenderType renderLayer) {
+    protected BlockFamily(String name, Table<BlockStyle, BlockShape, BlockEntry> blockTable, @Nullable Item brickItem, RegistryKey<ItemGroup> groupKey, CPlusRenderType renderLayer) {
         this.name = name;
         this.blockTable = blockTable;
         this.brickItem = brickItem;
+        this.groupKey = groupKey;
         this.renderLayer = renderLayer;
     }
 
@@ -49,6 +53,15 @@ public class BlockFamily {
         if (this.brickItem != null) {
             Identifier id = ConsistencyPlusMain.id(this.name + "_brick");
             Registry.register(Registries.ITEM, id, this.brickItem);
+        }
+    }
+
+    public void addItemsToGroup(RegistryKey<ItemGroup> groupKey, ItemGroup.Entries entries) {
+        if (groupKey.equals(this.groupKey)) {
+            blockTable.values().forEach(entry -> entries.add(entry.item()));
+            if (this.brickItem != null) {
+                entries.add(brickItem);
+            }
         }
     }
 }

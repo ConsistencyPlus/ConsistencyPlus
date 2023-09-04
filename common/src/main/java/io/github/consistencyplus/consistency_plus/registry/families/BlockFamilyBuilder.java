@@ -156,7 +156,7 @@ public class BlockFamilyBuilder {
 
         Item brickItem = hasBrickItem ? new Item(new Settings().arch$tab(ItemGroups.INGREDIENTS)) : null;
 
-        return new BlockFamily(this.name, table, brickItem, this.renderType);
+        return new BlockFamily(this.name, table, brickItem, itemGroup.get(), this.renderType);
     }
 
     public BlockFamily buildTo(List<BlockFamily> list) {

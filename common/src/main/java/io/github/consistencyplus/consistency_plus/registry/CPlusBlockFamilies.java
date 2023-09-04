@@ -35,6 +35,8 @@ import net.minecraft.block.OxidizableSlabBlock;
 import net.minecraft.block.OxidizableStairsBlock;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Util;
@@ -326,6 +328,10 @@ public class CPlusBlockFamilies {
 
     public static void init() {
         ALL_FAMILIES.forEach(BlockFamily::register);
+    }
+
+    public static void addItemsToGroup(RegistryKey<ItemGroup> groupKey, ItemGroup.Entries entries) {
+        ALL_FAMILIES.forEach(family -> family.addItemsToGroup(groupKey, entries));
     }
 
     @Environment(EnvType.CLIENT)

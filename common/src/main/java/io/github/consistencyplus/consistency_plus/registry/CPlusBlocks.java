@@ -5,6 +5,7 @@ import io.github.consistencyplus.consistency_plus.blocks.WarpedWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockShape;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockStyle;
 import io.github.consistencyplus.consistency_plus.util.ColoredSet;
+import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 import io.github.consistencyplus.consistency_plus.util.VanillaDyeables;
 
 import net.minecraft.block.*;
@@ -73,7 +74,7 @@ public class CPlusBlocks {
     }
 
     public static void init() {
-        blocks.forEach((name, block) -> Registry.register(Registries.BLOCK, ConsistencyPlusMain.id(name), block));
-        items.forEach((name, item) -> Registry.register(Registries.ITEM, ConsistencyPlusMain.id(name), item));
+        blocks.forEach((name, block) -> LoaderUtils.registerBlock(ConsistencyPlusMain.id(name), block));
+        items.forEach((name, item) -> LoaderUtils.registerItem(ConsistencyPlusMain.id(name), item));
     }
 }

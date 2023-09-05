@@ -2,6 +2,7 @@ package io.github.consistencyplus.consistency_plus.registry.families;
 
 import com.google.common.collect.Table;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
+import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.block.Block;
@@ -47,12 +48,12 @@ public class BlockFamily {
 
     public void register() {
         blockTable.values().forEach(entry -> {
-            Registry.register(Registries.BLOCK, entry.id(), entry.block());
-            Registry.register(Registries.ITEM, entry.id(), entry.item());
+            LoaderUtils.registerBlock(entry.id(), entry.block());
+            LoaderUtils.registerItem(entry.id(), entry.item());
         });
         if (this.brickItem != null) {
             Identifier id = ConsistencyPlusMain.id(this.name + "_brick");
-            Registry.register(Registries.ITEM, id, this.brickItem);
+            LoaderUtils.registerItem(id, this.brickItem);
         }
     }
 

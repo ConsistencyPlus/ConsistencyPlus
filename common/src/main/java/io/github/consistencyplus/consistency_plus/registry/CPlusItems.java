@@ -6,6 +6,7 @@ import java.util.Map;
 import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.items.NetheriteHorseArmorItem;
 
+import io.github.consistencyplus.consistency_plus.util.LoaderUtils;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorItem.Type;
@@ -52,6 +53,6 @@ public class CPlusItems {
 	}
 
 	public static void init() {
-		items.forEach((name, item) -> Registry.register(Registries.ITEM, ConsistencyPlusMain.id(name), item));
+		items.forEach((name, item) -> LoaderUtils.registerItem(ConsistencyPlusMain.id(name), item));
 	}
 }

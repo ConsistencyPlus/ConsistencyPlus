@@ -9,6 +9,8 @@ import net.fabricmc.api.Environment;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
 
 public class LoaderUtils {
     @ExpectPlatform
@@ -23,6 +25,16 @@ public class LoaderUtils {
 
     @ExpectPlatform
     public static AbstractBlock.Settings copySettings(AbstractBlock.Settings settings) {
+        throw new AssertionError();
+    }
+
+    @ExpectPlatform
+    public static void registerBlock(Identifier id, Block block) {
+        throw new AssertionError();
+    }
+
+    @ExpectPlatform
+    public static void registerItem(Identifier id, Item item) {
         throw new AssertionError();
     }
 

@@ -41,6 +41,8 @@ public class RegistryDiff {
 
 	private static List<String> getTxtLines(Path file) {
 		try {
+			if (!Files.exists(file))
+				return List.of();
 			return Files.readAllLines(file).stream().map(String::trim).toList();
 		} catch (IOException e) {
 			throw new RuntimeException(e);

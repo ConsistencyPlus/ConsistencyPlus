@@ -12,8 +12,8 @@ public enum BlockStyle {
     CUT,
     TILE(SUFFIX, BASE_PLURAL),
     COBBLED,
-    CHISELED,
-    CARVED;
+    CHISELED(NO_SHAPES),
+    CARVED(NO_SHAPES);
 
     public final boolean empty;
     public final boolean hasShapes;

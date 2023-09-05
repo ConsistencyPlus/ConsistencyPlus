@@ -4,8 +4,10 @@ import io.github.consistencyplus.consistency_plus.ConsistencyPlusMain;
 import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups;
 import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups.GroupInfo;
 import io.github.consistencyplus.consistency_plus.registry.CPlusBlockFamilies;
+import io.github.consistencyplus.consistency_plus.util.registry.DisplayBlocksCommand;
 import io.github.consistencyplus.consistency_plus.util.registry.RegistryDump;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -43,6 +45,9 @@ public class ConsistencyPlus implements ModInitializer {
 		});
 
 		ServerWorldEvents.LOAD.register(((server, world) -> RegistryDump.run()));
+		CommandRegistrationCallback.EVENT.register((dispatcher, registries, env) -> {
+			dispatcher.register(DisplayBlocksCommand.build());
+		});
 	}
 
 	public static void lootModification() {

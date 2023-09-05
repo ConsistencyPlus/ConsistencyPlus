@@ -4,6 +4,7 @@
   "package": "io.github.consistencyplus.consistency_plus.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AbstractBlockMixin",
     "AreaHelperMixin",
     "ConduitBlockEntityMixin",
     "EntityMixin",

@@ -1,5 +1,6 @@
 package io.github.consistencyplus.consistency_plus.registry.families;
 
+import io.github.consistencyplus.consistency_plus.blocks.base.*;
 import net.minecraft.block.*;
 
 import java.util.Arrays;
@@ -9,14 +10,14 @@ import java.util.function.Function;
 import io.github.consistencyplus.consistency_plus.registry.families.factories.blocks.BlockFactory;
 
 public enum BlockShape {
-    CUBE(Block::new),
-    SLAB(SlabBlock::new),
-    STAIRS((style, settings, base) -> new StairsBlock(base.getDefaultState(), settings)),
-    WALL(WallBlock::new),
-    GATE((settings) -> new FenceGateBlock(settings, WoodType.OAK)), // todo: wood??
-    FENCE(FenceBlock::new),
-    PILLAR(PillarBlock::new),
-    CORNER_PILLAR(Block::new);
+    CUBE(CPlusBlock::new),
+    SLAB(CPlusSlabBlock::new),
+    STAIRS((style, settings, base) -> new CPlusStairsBlock(base.getDefaultState(), settings)),
+    WALL(CPlusWallBlock::new),
+    GATE((settings) -> new CPlusFenceGateBlock(settings, WoodType.OAK)), // todo: wood??
+    FENCE(CPlusFenceBlock::new),
+    PILLAR(CPlusPillarBlock::new),
+    CORNER_PILLAR(CPlusBlock::new);
 
     public final BlockFactory defaultFactory;
 

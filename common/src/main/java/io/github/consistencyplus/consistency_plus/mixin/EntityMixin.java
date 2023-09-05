@@ -1,6 +1,7 @@
 package io.github.consistencyplus.consistency_plus.mixin;
 
-import io.github.consistencyplus.consistency_plus.blocks.*;
+import io.github.consistencyplus.consistency_plus.blocks.base.CPlusSlabBlock;
+import io.github.consistencyplus.consistency_plus.blocks.base.CPlusStairsBlock;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.BlockPos;

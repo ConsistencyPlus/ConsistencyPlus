@@ -1,11 +1,12 @@
 package io.github.consistencyplus.consistency_plus.blocks.oxidizable;
 
+import io.github.consistencyplus.consistency_plus.blocks.SelfDroppingBlock;
 import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 
-public class CPlusOxidizablePillarBlock extends PillarBlock implements Oxidizable {
+public class CPlusOxidizablePillarBlock extends PillarBlock implements Oxidizable, SelfDroppingBlock {
     private final Oxidizable.OxidationLevel oxidationLevel;
 
     public CPlusOxidizablePillarBlock(Oxidizable.OxidationLevel level, AbstractBlock.Settings settings) {

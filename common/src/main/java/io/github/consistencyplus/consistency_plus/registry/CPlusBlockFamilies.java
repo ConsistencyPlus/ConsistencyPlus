@@ -1,9 +1,8 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableFenceBlock;
-import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableGateBlock;
-import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizablePillarBlock;
-import io.github.consistencyplus.consistency_plus.blocks.oxidizable.CPlusOxidizableWallBlock;
+import io.github.consistencyplus.consistency_plus.blocks.base.CPlusBlock;
+import io.github.consistencyplus.consistency_plus.blocks.base.CPlusPillarBlock;
+import io.github.consistencyplus.consistency_plus.blocks.oxidizable.*;
 import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups;
 import io.github.consistencyplus.consistency_plus.items.CPlusItemGroups.GroupInfo;
 import io.github.consistencyplus.consistency_plus.registry.families.BlockEntry;
@@ -183,7 +182,7 @@ public class CPlusBlockFamilies {
             .baseSettingsFrom(Blocks.BONE_BLOCK)
             .nameFactory(BlockSuffixBaseNameFactory.INSTANCE) // base is withered_bone_block
             // base block is a pillar, matches bone
-            .setShapeFactory(CUBE, (style, settings, base) -> style == PLAIN ? new PillarBlock(settings) : new Block(settings))
+            .setShapeFactory(CUBE, (style, settings, base) -> style == PLAIN ? new CPlusPillarBlock(settings) : new CPlusBlock(settings))
             .settings(settings -> settings
                     .mapColor(MapColor.TERRACOTTA_GRAY)
                     .sounds(new BlockSoundGroup(
@@ -364,13 +363,14 @@ public class CPlusBlockFamilies {
                 .itemGroup(CPlusItemGroups.MISC)
                 .filter(CopperFilter.INSTANCE)
                 .nameFactory(new CopperBlockNameFactory(level, false))
-                .setShapeFactory(CUBE, (settings) -> new OxidizableBlock(level, settings))
-                .setShapeFactory(SLAB, (settings) -> new OxidizableSlabBlock(level, settings))
-                .setShapeFactory(STAIRS, (settings, base) -> new OxidizableStairsBlock(level, base.getDefaultState(), settings))
+                .setShapeFactory(CUBE, (settings) -> new CPlusOxidizableBlock(level, settings))
+                .setShapeFactory(SLAB, (settings) -> new CPlusOxidizableSlabBlock(level, settings))
+                .setShapeFactory(STAIRS, (settings, base) -> new CPlusOxidizableStairsBlock(level, base.getDefaultState(), settings))
                 .setShapeFactory(WALL, (settings) -> new CPlusOxidizableWallBlock(level, settings))
                 .setShapeFactory(GATE, (settings) -> new CPlusOxidizableGateBlock(level, settings))
                 .setShapeFactory(FENCE, (settings) -> new CPlusOxidizableFenceBlock(level, settings))
-                .setShapeFactory(PILLAR, (settings) -> new CPlusOxidizablePillarBlock(level, settings));
+                .setShapeFactory(PILLAR, (settings) -> new CPlusOxidizablePillarBlock(level, settings))
+                .setShapeFactory(CORNER_PILLAR, (settings -> new CPlusOxidizableBlock(level, settings)));
     }
 
     public static String getOxidationLevelName(OxidationLevel level) {

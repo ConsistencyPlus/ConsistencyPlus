@@ -22,6 +22,9 @@ public class CopperBlockNameFactory extends StandardBlockNameFactory {
 
 	@Override
 	public String makeName(String familyName, BlockStyle style, BlockShape shape) {
+		if (style == BlockStyle.PLAIN && shape == BlockShape.CUBE && level == OxidationLevel.UNAFFECTED) {
+			return "copper_block"; // copper_block exists, but not weathered_copper_block. that's just weathered_copper.
+		}
 		String name = super.makeName("copper", style, shape);
 		return this.prefix + name;
 	}

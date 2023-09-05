@@ -24,15 +24,9 @@ import io.github.consistencyplus.consistency_plus.util.VanillaDyeables;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 
+import net.minecraft.block.*;
 import net.minecraft.block.AbstractBlock.Settings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.GlazedTerracottaBlock;
-import net.minecraft.block.MapColor;
 import net.minecraft.block.Oxidizable.OxidationLevel;
-import net.minecraft.block.OxidizableBlock;
-import net.minecraft.block.OxidizableSlabBlock;
-import net.minecraft.block.OxidizableStairsBlock;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.ItemGroup;
@@ -181,12 +175,15 @@ public class CPlusBlockFamilies {
 
     public static final BlockFamily BONE = builder("bone")
             .baseSettingsFrom(Blocks.BONE_BLOCK)
+            .nameFactory(BlockSuffixBaseNameFactory.INSTANCE)
             .itemGroup(CPlusItemGroups.MISC)
             .buildTo(ALL_FAMILIES);
 
     public static final BlockFamily WITHERED_BONE = builder("withered_bone")
             .baseSettingsFrom(Blocks.BONE_BLOCK)
             .nameFactory(BlockSuffixBaseNameFactory.INSTANCE) // base is withered_bone_block
+            // base block is a pillar, matches bone
+            .setShapeFactory(CUBE, (style, settings, base) -> style == PLAIN ? new PillarBlock(settings) : new Block(settings))
             .settings(settings -> settings
                     .mapColor(MapColor.TERRACOTTA_GRAY)
                     .sounds(new BlockSoundGroup(

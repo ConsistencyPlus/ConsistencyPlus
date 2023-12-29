@@ -38,7 +38,7 @@ logoFile = "icon.png"
 [[dependencies.consistency_plus]]
 modId = "forge"
 mandatory = true
-versionRange = "[47.1.0, 47.1.3]"
+versionRange = "[${forge_version},)"
 ordering = "NONE"
 side = "BOTH"
 

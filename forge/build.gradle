@@ -14,15 +14,19 @@ dependencies {
         modLocalRuntime("maven.modrinth:jade:$jade_forge_version_id")*/
     modImplementation("dev.architectury:architectury-forge:$architectury_version")
 
-    shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+    // glue to get SCRT working, because I am not updating that mod again.
+    // it's version of mixin extras seems to no longer work on forge.
+    implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:0.3.2"))
+    implementation(include("io.github.llamalad7:mixinextras-forge:0.3.2"))
 
+    shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
 
 processResources {
     inputs.property "version", project.version
 
     filesMatching("META-INF/mods.toml") {
-        expand "version": project.version
+        expand "version": project.version, "forge_version": forge_version
     }
 }
 
